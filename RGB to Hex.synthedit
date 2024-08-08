@@ -10,13 +10,13 @@
             <Parameters>
                 <param type="6" handle="38844284" shortName="Float To Int Float Val" vstParameterNumber="21" module="1296532968" moduleParamId="0" RangeMaximum="255">
                     <patch-list>
-                        <s>177.225</s>
+                        <s>132.6</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="422746242" vstParameterNumber="25" module="1946094910" moduleParamId="0">
                     <patch-list>
-                        <s>24</s>
+                        <s>74</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -28,13 +28,13 @@
                 </param>
                 <param type="8" handle="694637392" vstParameterNumber="26" module="1946094910" moduleParamId="2">
                     <patch-list>
-                        <s>127</s>
+                        <s>184</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="944845359" shortName="IntRGB to Hex B(0-255)" vstParameterNumber="28" module="372629303" moduleParamId="0" RangeMaximum="255">
                     <patch-list>
-                        <s>127</s>
+                        <s>184</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -45,7 +45,7 @@
                 </param>
                 <param type="8" handle="994233788" vstParameterNumber="27" module="1946094910" moduleParamId="1">
                     <patch-list>
-                        <s>95</s>
+                        <s>173</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -57,37 +57,60 @@
                 </param>
                 <param type="6" handle="1314287342" shortName="Float To Int Float Val" vstParameterNumber="20" module="1002386008" moduleParamId="0" RangeMaximum="255">
                     <patch-list>
-                        <s>95.625</s>
+                        <s>73.95</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1417821012" shortName="IntRGB to Hex G(0-255)" vstParameterNumber="29" module="1481724009" moduleParamId="0" RangeMaximum="255">
                     <patch-list>
-                        <s>95</s>
+                        <s>173</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1521288702" shortName="IntRGB to Hex R(0-255)" vstParameterNumber="30" module="31884974" moduleParamId="0" RangeMaximum="255">
                     <patch-list>
-                        <s>24</s>
+                        <s>74</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1677861719" vstParameterNumber="23" module="1993833407" moduleParamId="1">
                     <patch-list>
-                        <s>95.625</s>
+                        <s>73.95</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1680467521" vstParameterNumber="31" module="1946094910" moduleParamId="3">
+                    <patch-list>
+                        <s>255</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1864774891" vstParameterNumber="24" module="1993833407" moduleParamId="2">
                     <patch-list>
-                        <s>177.225</s>
+                        <s>132.6</s>
                         <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1942726519" shortName="IntRGB to Hex Alpha(0-255)" vstParameterNumber="32" module="1331199343" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s repeat="128">255</s>
                     </patch-list>
                 </param>
             </Parameters>
         </PatchManager>
         <modules>
+            <module type="SE Vector Knob2" handle="1989801015">
+                <plugs>
+                    <plug default="Display Length" idx="1"/>
+                    <plug default="FF635aa1" idx="5"/>
+                </plugs>
+                <structRect l="648" r="768" t="348" b="492"/>
+                <panelRect l="309" r="351" t="210" b="256"/>
+            </module>
+            <module type="SE PatchMemory Int" handle="1331199343">
+                <structRect l="648" r="768" t="528" b="612"/>
+                <panelRect l="304" r="304" t="200" b="200"/>
+            </module>
             <module type="SE PatchMemory Int" handle="372629303">
                 <structRect l="1008" r="1128" t="216" b="300"/>
                 <panelRect l="312" r="312" t="256" b="256"/>
@@ -129,7 +152,10 @@
                 <panelRect l="240" r="240" t="168" b="168"/>
             </module>
             <module type="IntRGB to Hex" handle="1946094910">
-                <structRect l="864" r="936" t="360" b="408"/>
+                <plugs>
+                    <plug default="255" idx="9"/>
+                </plugs>
+                <structRect l="864" r="960" t="360" b="420"/>
                 <panelRect l="256" r="256" t="160" b="160"/>
             </module>
             <module type="RGB to Hex" handle="1993833407">
@@ -188,16 +214,18 @@
             <line type="Line" handle="713461269" lineType="1" fMod="1993833407" tMod="260553486" fPlg="7" tPlg="5"/>
             <line type="Line" handle="293668960" lineType="1" fMod="1993833407" tMod="1944436439" fPlg="7" tPlg="5"/>
             <line type="Line" handle="154814313" lineType="1" fMod="1993833407" tMod="826973807" fPlg="7" tPlg="5"/>
-            <line type="Line" handle="923625077" lineType="1" fMod="31884974" tMod="1946094910" fPlg="13" tPlg="8"/>
-            <line type="Line" handle="838486360" lineType="1" fMod="1946094910" tMod="832478144" fPlg="7"/>
             <line type="Line" handle="398760269" lineType="1" fMod="31884974" tMod="536489902" fPlg="8"/>
-            <line type="Line" handle="661016838" lineType="1" fMod="1946094910" tMod="536489902" fPlg="7" tPlg="5"/>
             <line type="Line" handle="2013541488" lineType="1" fMod="1481724009" tMod="234329781" fPlg="8"/>
             <line type="Line" handle="551304028" lineType="1" fMod="372629303" tMod="1641125284" fPlg="8"/>
-            <line type="Line" handle="379381964" lineType="1" fMod="1481724009" tMod="1946094910" fPlg="13" tPlg="9"/>
-            <line type="Line" handle="1553726275" lineType="1" fMod="372629303" tMod="1946094910" fPlg="13" tPlg="10"/>
-            <line type="Line" handle="1202132697" lineType="1" fMod="1946094910" tMod="234329781" fPlg="7" tPlg="5"/>
-            <line type="Line" handle="991791300" lineType="1" fMod="1946094910" tMod="1641125284" fPlg="7" tPlg="5"/>
+            <line type="Line" handle="1982188692" lineType="1" fMod="1946094910" tMod="1641125284" fPlg="8" tPlg="5"/>
+            <line type="Line" handle="1096459447" lineType="1" fMod="1946094910" tMod="234329781" fPlg="8" tPlg="5"/>
+            <line type="Line" handle="312002175" lineType="1" fMod="1946094910" tMod="536489902" fPlg="8" tPlg="5"/>
+            <line type="Line" handle="354173014" lineType="1" fMod="1946094910" tMod="832478144" fPlg="8"/>
+            <line type="Line" handle="168245027" lineType="1" fMod="31884974" tMod="1946094910" fPlg="13" tPlg="10"/>
+            <line type="Line" handle="1720029010" lineType="1" fMod="1481724009" tMod="1946094910" fPlg="13" tPlg="11"/>
+            <line type="Line" handle="1507581396" lineType="1" fMod="372629303" tMod="1946094910" fPlg="13" tPlg="12"/>
+            <line type="Line" handle="1035901453" lineType="1" fMod="1331199343" tMod="1989801015" fPlg="8"/>
+            <line type="Line" handle="1317800419" lineType="1" fMod="1331199343" tMod="1946094910" fPlg="13" tPlg="9"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
@@ -227,20 +255,24 @@
                 <Parameter id="0" datatype="int" name=""/>
                 <Parameter id="1" datatype="int" name=""/>
                 <Parameter id="2" datatype="int" name=""/>
+                <Parameter id="3" datatype="int" name=""/>
             </Parameters>
             <Audio>
+                <Pin name="Alpha(0-255)" datatype="int" default="255"/>
                 <Pin name="R(0-255)" datatype="int"/>
                 <Pin name="G(0-255)" datatype="int"/>
                 <Pin name="B(0-255)" datatype="int"/>
                 <Pin name="Rout" datatype="int" direction="out" private="true" parameterId="0"/>
                 <Pin name="Gout" datatype="int" direction="out" private="true" parameterId="1"/>
                 <Pin name="Bout" datatype="int" direction="out" private="true" parameterId="2"/>
+                <Pin name="Alpha2Gui" datatype="int" direction="out" private="true" parameterId="3"/>
             </Audio>
             <GUI>
                 <Pin name="Rin" datatype="int" private="true" parameterId="0"/>
                 <Pin name="Gin" datatype="int" private="true" parameterId="1"/>
                 <Pin name="Bin" datatype="int" private="true" parameterId="2"/>
-                <Pin name="Alpha" datatype="string" default="ff" private="true"/>
+                <Pin name="AlphaFromDSP" datatype="int" private="true" parameterId="3"/>
+                <Pin name="Alpha" datatype="string" private="true"/>
                 <Pin name="R" datatype="string" direction="out" private="true"/>
                 <Pin name="G" datatype="string" direction="out" private="true"/>
                 <Pin name="B" datatype="string" direction="out" private="true"/>
