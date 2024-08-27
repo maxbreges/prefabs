@@ -91,7 +91,7 @@
                 <structRect l="817" r="877" t="164" b="212"/>
             </module>
             <module type="NOT Gate" handle="1820595855">
-                <structRect l="709" r="793" t="260" b="284"/>
+                <structRect l="684" r="768" t="240" b="264"/>
             </module>
             <module type="AND Gate" handle="1241432833">
                 <plugs>
