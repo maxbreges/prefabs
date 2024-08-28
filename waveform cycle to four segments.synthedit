@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Jeff McClintock" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
-    <master_container type="Container" handle="1482113384" name="Main" ViewOpenFlags="256" skin="default2">
+    <master_container type="Container" handle="1482113384" name="Main" ViewOpenFlags="384" skin="default2">
         <plugs>
             <plug idx="7"/>
         </plugs>
@@ -23,6 +23,18 @@
             </Parameters>
         </PatchManager>
         <modules>
+            <module type="Delay2" handle="549510201">
+                <plugs>
+                    <plug default="0.00004" idx="3"/>
+                </plugs>
+                <structRect l="350" r="434" t="267" b="315"/>
+            </module>
+            <module type="Delay2" handle="412010084">
+                <plugs>
+                    <plug default="0.00004" idx="3"/>
+                </plugs>
+                <structRect l="342" r="426" t="510" b="558"/>
+            </module>
             <module type="Container" handle="445108061" name="LED2" m_locked="true" skin="default">
                 <plugs>
                     <plug default="1" idx="1"/>
@@ -31,9 +43,9 @@
                     <plug default="0" idx="5"/>
                     <plug default="2"/>
                     <plug name="Signal in" default="10"/>
-                    <plug default="" direction="1"/>
+                    <plug direction="1"/>
                 </plugs>
-                <structRect l="828" r="900" t="511" b="571"/>
+                <structRect l="820" r="892" t="514" b="574"/>
                 <modules>
                     <module type="SE PatchMemory Float Out" handle="1991932378">
                         <structRect l="267" r="387" t="36" b="108"/>
@@ -61,8 +73,8 @@
                     </module>
                     <module type="IO Mod" handle="1513379055">
                         <plugs>
-                            <plug name="Signal in" default="" direction="1" tiedtomod="445108061" tiedtopin="7"/>
-                            <plug default="" direction="1"/>
+                            <plug name="Signal in" direction="1" tiedtomod="445108061" tiedtopin="7"/>
+                            <plug direction="1"/>
                         </plugs>
                         <structRect l="9" r="81" t="42" b="66"/>
                     </module>
@@ -72,12 +84,12 @@
                     <line type="Line" handle="1203319118" lineType="1" fMod="1369143906" tMod="1991932378" fPlg="3" tPlg="11"/>
                     <line type="Line" handle="237324296" lineType="1" fMod="1513379055" tMod="1369143906"/>
                 </lines>
-                <PanelWndPosition l="342" r="362" t="240" b="260"/>
+                <PanelWndPosition l="160" r="180" t="152" b="172"/>
                 <PanelLocation l="318" r="429" t="12" b="75"/>
                 <StructLocation l="257" r="883" t="12" b="384"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
-                <PanelWndOffset cx="296" cy="216"/>
+                <PanelWndOffset cx="114" cy="128"/>
                 <panel_rect l="0" r="93" t="0" b="45"/>
             </module>
             <module type="Container" handle="1135007660" name="LED2" m_locked="true" skin="default">
@@ -88,9 +100,9 @@
                     <plug default="0" idx="5"/>
                     <plug default="2"/>
                     <plug name="Signal in" default="10"/>
-                    <plug default="" direction="1"/>
+                    <plug direction="1"/>
                 </plugs>
-                <structRect l="826" r="898" t="426" b="486"/>
+                <structRect l="823" r="895" t="436" b="496"/>
                 <modules>
                     <module type="SE PatchMemory Float Out" handle="722159157">
                         <structRect l="267" r="387" t="36" b="108"/>
@@ -118,8 +130,8 @@
                     </module>
                     <module type="IO Mod" handle="478570457">
                         <plugs>
-                            <plug name="Signal in" default="" direction="1" tiedtomod="1135007660" tiedtopin="7"/>
-                            <plug default="" direction="1"/>
+                            <plug name="Signal in" direction="1" tiedtomod="1135007660" tiedtopin="7"/>
+                            <plug direction="1"/>
                         </plugs>
                         <structRect l="9" r="81" t="42" b="66"/>
                     </module>
@@ -129,12 +141,12 @@
                     <line type="Line" handle="271483833" lineType="1" fMod="592939068" tMod="722159157" fPlg="3" tPlg="11"/>
                     <line type="Line" handle="1351953596" lineType="1" fMod="478570457" tMod="592939068"/>
                 </lines>
-                <PanelWndPosition l="350" r="370" t="200" b="220"/>
+                <PanelWndPosition l="160" r="180" t="120" b="140"/>
                 <PanelLocation l="318" r="429" t="12" b="75"/>
                 <StructLocation l="257" r="883" t="12" b="384"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
-                <PanelWndOffset cx="304" cy="176"/>
+                <PanelWndOffset cx="114" cy="96"/>
                 <panel_rect l="0" r="93" t="0" b="45"/>
             </module>
             <module type="Container" handle="665846660" name="LED2" m_locked="true" skin="default">
@@ -145,9 +157,9 @@
                     <plug default="0" idx="5"/>
                     <plug default="2"/>
                     <plug name="Signal in" default="10"/>
-                    <plug default="" direction="1"/>
+                    <plug direction="1"/>
                 </plugs>
-                <structRect l="825" r="897" t="345" b="405"/>
+                <structRect l="823" r="895" t="361" b="421"/>
                 <modules>
                     <module type="SE PatchMemory Float Out" handle="1988935215">
                         <structRect l="267" r="387" t="36" b="108"/>
@@ -175,8 +187,8 @@
                     </module>
                     <module type="IO Mod" handle="1844528090">
                         <plugs>
-                            <plug name="Signal in" default="" direction="1" tiedtomod="665846660" tiedtopin="7"/>
-                            <plug default="" direction="1"/>
+                            <plug name="Signal in" direction="1" tiedtomod="665846660" tiedtopin="7"/>
+                            <plug direction="1"/>
                         </plugs>
                         <structRect l="9" r="81" t="42" b="66"/>
                     </module>
@@ -186,12 +198,12 @@
                     <line type="Line" handle="545055956" lineType="1" fMod="395944123" tMod="1988935215" fPlg="3" tPlg="11"/>
                     <line type="Line" handle="1843863858" lineType="1" fMod="1988935215" tMod="1079455256" fPlg="8"/>
                 </lines>
-                <PanelWndPosition l="254" r="274" t="248" b="268"/>
+                <PanelWndPosition l="160" r="180" t="88" b="108"/>
                 <PanelLocation l="318" r="429" t="12" b="75"/>
                 <StructLocation l="257" r="883" t="12" b="384"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
-                <PanelWndOffset cx="208" cy="224"/>
+                <PanelWndOffset cx="114" cy="64"/>
                 <panel_rect l="0" r="93" t="0" b="45"/>
             </module>
             <module type="Container" handle="521682633" name="LED2" m_locked="true" skin="default">
@@ -202,9 +214,9 @@
                     <plug default="0" idx="5"/>
                     <plug default="2"/>
                     <plug name="Signal in" default="10"/>
-                    <plug default="" direction="1"/>
+                    <plug direction="1"/>
                 </plugs>
-                <structRect l="827" r="899" t="257" b="317"/>
+                <structRect l="823" r="895" t="282" b="342"/>
                 <modules>
                     <module type="SE PatchMemory Float Out" handle="1944289904">
                         <structRect l="267" r="387" t="36" b="108"/>
@@ -232,8 +244,8 @@
                     </module>
                     <module type="IO Mod" handle="1368240875">
                         <plugs>
-                            <plug name="Signal in" default="" direction="1" tiedtomod="521682633" tiedtopin="7"/>
-                            <plug default="" direction="1"/>
+                            <plug name="Signal in" direction="1" tiedtomod="521682633" tiedtopin="7"/>
+                            <plug direction="1"/>
                         </plugs>
                         <structRect l="9" r="81" t="42" b="66"/>
                     </module>
@@ -243,37 +255,37 @@
                     <line type="Line" handle="2060754305" lineType="1" fMod="495713640" tMod="1944289904" fPlg="3" tPlg="11"/>
                     <line type="Line" handle="749132821" lineType="1" fMod="1944289904" tMod="1896299792" fPlg="8"/>
                 </lines>
-                <PanelWndPosition l="262" r="282" t="208" b="228"/>
+                <PanelWndPosition l="160" r="180" t="56" b="76"/>
                 <PanelLocation l="318" r="429" t="12" b="75"/>
                 <StructLocation l="257" r="883" t="12" b="384"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
-                <PanelWndOffset cx="216" cy="184"/>
+                <PanelWndOffset cx="114" cy="32"/>
                 <panel_rect l="0" r="93" t="0" b="45"/>
             </module>
             <module type="AND Gate" handle="1680464172">
                 <plugs>
                     <plug idx="3"/>
                 </plugs>
-                <structRect l="722" r="782" t="499" b="547"/>
+                <structRect l="697" r="757" t="501" b="549"/>
             </module>
             <module type="AND Gate" handle="1080932795">
                 <plugs>
                     <plug idx="3"/>
                 </plugs>
-                <structRect l="724" r="784" t="426" b="474"/>
+                <structRect l="697" r="757" t="439" b="487"/>
             </module>
             <module type="AND Gate" handle="784661653">
                 <plugs>
                     <plug idx="3"/>
                 </plugs>
-                <structRect l="724" r="784" t="353" b="401"/>
+                <structRect l="701" r="761" t="371" b="419"/>
             </module>
             <module type="AND Gate" handle="693667354">
                 <plugs>
                     <plug idx="3"/>
                 </plugs>
-                <structRect l="723" r="783" t="280" b="328"/>
+                <structRect l="705" r="765" t="299" b="347"/>
             </module>
             <module type="Comparator" handle="667306767">
                 <plugs>
@@ -283,23 +295,9 @@
                 </plugs>
                 <structRect l="486" r="570" t="434" b="494"/>
             </module>
-            <module type="FracDelay" handle="1663255284">
-                <plugs>
-                    <plug default="1" idx="1"/>
-                </plugs>
-                <structRect l="345" r="453" t="512" b="548"/>
-                <panelRect l="0" r="0" t="0" b="0"/>
-            </module>
-            <module type="FracDelay" handle="1379190055">
-                <plugs>
-                    <plug default="1" idx="1"/>
-                </plugs>
-                <structRect l="354" r="462" t="280" b="316"/>
-                <panelRect l="0" r="0" t="0" b="0"/>
-            </module>
             <module type="SE Scope3 XP" handle="570713922">
                 <structRect l="161" r="317" t="45" b="226"/>
-                <panelRect l="224" r="224" t="176" b="176"/>
+                <panelRect l="32" r="132" t="64" b="164"/>
             </module>
             <module type="Comparator" handle="1181139682">
                 <plugs>
@@ -307,7 +305,7 @@
                     <plug default="10" idx="3"/>
                     <plug default="0"/>
                 </plugs>
-                <structRect l="488" r="572" t="345" b="405"/>
+                <structRect l="487" r="571" t="357" b="417"/>
             </module>
             <module type="Comparator" handle="1356282669">
                 <plugs>
@@ -324,43 +322,43 @@
                     <plug default="10" idx="3"/>
                     <plug default="0"/>
                 </plugs>
-                <structRect l="244" r="328" t="337" b="397"/>
+                <structRect l="240" r="324" t="333" b="393"/>
             </module>
             <module type="Oscillator" handle="2039815586">
                 <plugs>
-                    <plug default="0.0002"/>
+                    <plug default="0.001"/>
                     <plug default="3" idx="2"/>
                     <plug default="1" idx="6"/>
                 </plugs>
-                <structRect l="88" r="172" t="364" b="448"/>
+                <structRect l="63" r="147" t="372" b="456"/>
             </module>
         </modules>
         <lines>
-            <line type="Line" handle="168877079" lineType="1" fMod="2039815586" tMod="1812936856" fPlg="3"/>
-            <line type="Line" handle="934252857" lineType="1" fMod="2039815586" tMod="1356282669" fPlg="3" tPlg="1"/>
+            <line type="Line" handle="168877079" fMod="2039815586" tMod="1812936856" fPlg="3"/>
+            <line type="Line" handle="934252857" fMod="2039815586" tMod="1356282669" fPlg="3" tPlg="1"/>
             <line type="Line" handle="2133098084" lineType="1" fMod="2039815586" tMod="570713922" fPlg="3" tPlg="6"/>
-            <line type="Line" handle="742604258" lineType="1" fMod="2039815586" tMod="1379190055" fPlg="3"/>
-            <line type="Line" handle="453102194" lineType="1" fMod="2039815586" tMod="1181139682" fPlg="3" tPlg="1"/>
-            <line type="Line" handle="1722545526" lineType="1" fMod="1379190055" tMod="1181139682" fPlg="2"/>
-            <line type="Line" handle="1867207859" lineType="1" fMod="2039815586" tMod="1663255284" fPlg="3"/>
-            <line type="Line" handle="1457728504" lineType="1" fMod="2039815586" tMod="667306767" fPlg="3"/>
-            <line type="Line" handle="451820910" lineType="1" fMod="667306767" tMod="693667354" fPlg="2" tPlg="1"/>
-            <line type="Line" handle="3227678" lineType="1" fMod="1812936856" tMod="693667354" fPlg="2" tPlg="2"/>
-            <line type="Line" handle="1233569824" lineType="1" fMod="1812936856" tMod="784661653" fPlg="2" tPlg="1"/>
-            <line type="Line" handle="222410288" lineType="1" fMod="1181139682" tMod="784661653" fPlg="2" tPlg="2"/>
-            <line type="Line" handle="296776286" lineType="1" fMod="1181139682" tMod="1080932795" fPlg="2" tPlg="1"/>
-            <line type="Line" handle="1972176016" lineType="1" fMod="1356282669" tMod="1080932795" fPlg="2" tPlg="2"/>
-            <line type="Line" handle="786248481" lineType="1" fMod="1356282669" tMod="1680464172" fPlg="2" tPlg="1"/>
-            <line type="Line" handle="521932920" lineType="1" fMod="667306767" tMod="1680464172" fPlg="2" tPlg="2"/>
+            <line type="Line" handle="453102194" fMod="2039815586" tMod="1181139682" fPlg="3" tPlg="1"/>
+            <line type="Line" handle="1457728504" fMod="2039815586" tMod="667306767" fPlg="3"/>
+            <line type="Line" handle="451820910" fMod="667306767" tMod="693667354" fPlg="2" tPlg="1"/>
+            <line type="Line" handle="3227678" fMod="1812936856" tMod="693667354" fPlg="2" tPlg="2"/>
+            <line type="Line" handle="1233569824" fMod="1812936856" tMod="784661653" fPlg="2" tPlg="1"/>
+            <line type="Line" handle="222410288" fMod="1181139682" tMod="784661653" fPlg="2" tPlg="2"/>
+            <line type="Line" handle="296776286" fMod="1181139682" tMod="1080932795" fPlg="2" tPlg="1"/>
+            <line type="Line" handle="1972176016" fMod="1356282669" tMod="1080932795" fPlg="2" tPlg="2"/>
+            <line type="Line" handle="786248481" fMod="1356282669" tMod="1680464172" fPlg="2" tPlg="1"/>
+            <line type="Line" handle="521932920" fMod="667306767" tMod="1680464172" fPlg="2" tPlg="2"/>
             <line type="Line" handle="1340131143" lineType="1" fMod="693667354" tMod="521682633" tPlg="7"/>
             <line type="Line" handle="340356836" lineType="1" fMod="784661653" tMod="665846660" tPlg="7"/>
             <line type="Line" handle="1390109443" lineType="1" fMod="1080932795" tMod="1135007660" tPlg="7"/>
             <line type="Line" handle="1698888891" lineType="1" fMod="1680464172" tMod="445108061" tPlg="7"/>
-            <line type="Line" handle="481883553" lineType="1" fMod="1663255284" tMod="667306767" fPlg="2" tPlg="1"/>
+            <line type="Line" handle="1104524474" fMod="2039815586" tMod="412010084" fPlg="3"/>
+            <line type="Line" handle="164820474" fMod="412010084" tMod="667306767" fPlg="2" tPlg="1"/>
+            <line type="Line" handle="473220488" fMod="2039815586" tMod="549510201" fPlg="3"/>
+            <line type="Line" handle="170760713" fMod="549510201" tMod="1181139682" fPlg="2"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
-        <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="1333" t="0" b="901"/>
+        <PanelLocation l="983" r="1427" t="10" b="438"/>
+        <StructLocation l="0" r="966" t="0" b="901"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
@@ -396,11 +394,14 @@
                 <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
             </GUI>
         </Plugin>
-        <Plugin id="FracDelay" name="Fractional Delay" flags="256" category="ELENA/DSP" helpUrl="ELENA_DSPModules/FractionalDelay.txt">
+        <Plugin id="Delay2" class="1" name="Delay2" flags="4352" category="Effects">
             <Audio>
-                <Pin name="Input" datatype="float" rate="audio"/>
-                <Pin name="Delay (samples)" datatype="float"/>
-                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Signal In" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Modulation" datatype="float" rate="audio" default="1" metadata="10,0,10,0"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Delay Time (secs)" datatype="float" default="1" isMinimised="true"/>
+                <Pin name="Interpolate Output" datatype="bool" isMinimised="true"/>
+                <Pin name="Feedback" datatype="float" rate="audio" metadata="10,0,10,0"/>
             </Audio>
         </Plugin>
         <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
