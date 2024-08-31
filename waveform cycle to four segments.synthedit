@@ -23,6 +23,10 @@
             </Parameters>
         </PatchManager>
         <modules>
+            <module type="RadiantCircle" handle="77361792">
+                <structRect l="1068" r="1344" t="456" b="840"/>
+                <panelRect l="232" r="332" t="216" b="316"/>
+            </module>
             <module type="Delay2" handle="549510201">
                 <plugs>
                     <plug default="0.00004" idx="3"/>
@@ -358,7 +362,7 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="983" r="1427" t="10" b="438"/>
-        <StructLocation l="0" r="966" t="0" b="901"/>
+        <StructLocation l="0" r="1438" t="0" b="953"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
@@ -436,6 +440,23 @@
                 <Pin name="Smooth Peaks (Gibbs Effect)" datatype="bool" default="1" isMinimised="true"/>
                 <Pin name="Sync X-Fade (Anti Alias)" datatype="bool" default="1" isMinimised="true"/>
             </Audio>
+        </Plugin>
+        <Plugin id="RadiantCircle" name="Radiant Circle" flags="384" category="mx/Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Background Color" datatype="string" default="FF000000"/>
+                <Pin name="TopCircleSize" datatype="float" default="0.88" isMinimised="true"/>
+                <Pin name="Top Color" datatype="string" default="CCFFFFFF" private="true"/>
+                <Pin name="Bottom Color" datatype="string" default="11FFFFFF" private="true"/>
+                <Pin name="Top Color Dot" datatype="string" default="CCFFFFFF" isMinimised="true"/>
+                <Pin name="Bottom Color Dot" datatype="string" default="11FFFFFF" isMinimised="true"/>
+                <Pin name="Bool" datatype="bool"/>
+                <Pin name="Top Color" datatype="string" default="FF00FF00"/>
+                <Pin name="Bottom Color" datatype="string" default="DD00FF00"/>
+                <Pin name="X" datatype="float" default="0.5"/>
+                <Pin name="Y" datatype="float" default="0.5"/>
+                <Pin name="Width" datatype="float" direction="out"/>
+                <Pin name="Height" datatype="float" direction="out"/>
+            </GUI>
         </Plugin>
         <Plugin id="SE ImageTinted XP" name="Image Tinted (XP)" flags="384" category="Debug/DirectX">
             <GUI graphicsApi="GmpiGui">
