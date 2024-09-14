@@ -15,13 +15,13 @@
                 </param>
                 <param type="6" handle="396162518" vstParameterNumber="15" module="1698251319" moduleParamId="0">
                     <patch-list>
-                        <s>6.33333</s>
+                        <s>8.66667</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1263800813" vstParameterNumber="17" module="770778056" moduleParamId="0">
                     <patch-list>
-                        <s>0.666667</s>
+                        <s>0.333333</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -33,7 +33,7 @@
                 </param>
                 <param type="6" handle="1505506218" vstParameterNumber="13" module="1444034598" moduleParamId="0">
                     <patch-list>
-                        <s>0.633333</s>
+                        <s>0.866667</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -45,7 +45,7 @@
                 </param>
                 <param type="6" handle="2067890318" vstParameterNumber="23" module="643486126" moduleParamId="0">
                     <patch-list>
-                        <s>0.0666667</s>
+                        <s>0.0333333</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -58,13 +58,13 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Container" handle="692448922" ViewOpenFlags="384" skin="prophetblack">
+            <module type="Container" handle="692448922" name="Clock" ViewOpenFlags="384" skin="prophetblack">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
                     <plug idx="7"/>
                 </plugs>
-                <structRect l="24" r="216" t="24" b="298"/>
+                <structRect l="12" r="204" t="24" b="298"/>
                 <modules>
                     <module type="Multiply" handle="909967716">
                         <plugs>
@@ -189,18 +189,18 @@
                     <line type="Line" handle="1835819103" fMod="1960182895" tMod="909967716" fPlg="2" tPlg="1"/>
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
-                <PanelLocation l="1114" r="1415" t="19" b="313"/>
-                <StructLocation l="0" r="1029" t="0" b="586"/>
-                <PanelScroll x="0" y="0"/>
+                <PanelLocation l="1106" r="1408" t="637" b="931"/>
+                <StructLocation l="271" r="1300" t="1" b="587"/>
+                <PanelScroll x="1" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
-                <panel_rect l="16" r="256" t="16" b="216"/>
+                <panel_rect l="40" r="240" t="16" b="216"/>
             </module>
         </modules>
         <lines/>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="1054" r="1403" t="14" b="415"/>
-        <StructLocation l="0" r="315" t="0" b="415"/>
+        <StructLocation l="0" r="249" t="0" b="382"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="1" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
