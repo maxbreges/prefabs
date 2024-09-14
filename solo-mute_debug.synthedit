@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+    <master_container type="Container" handle="851809031" name="Main" ViewOpenFlags="384" skin="prophetblack">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="10" handle="269165350" shortName="Capture Data A" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="1771735339" moduleParamId="0"/>
+                <param type="6" handle="309079392" vstParameterNumber="0" module="765112238" moduleParamId="0">
+                    <patch-list>
+                        <s>1</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="4" handle="477543062" shortName="polyDetect" ignorePC="true" private="true" stateful="false" module="391678904" moduleParamId="2"/>
+                <param type="10" handle="517033596" shortName="Capture Data A" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="2055882320" moduleParamId="0"/>
+                <param type="4" handle="575130137" shortName="polyDetect" ignorePC="true" private="true" stateful="false" module="2047790741" moduleParamId="2"/>
+                <param type="4" handle="604545500" shortName="polyDetect" ignorePC="true" private="true" stateful="false" module="1771735339" moduleParamId="2"/>
+                <param type="10" handle="668896892" shortName="Capture Data B" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="1488041776" moduleParamId="1"/>
+                <param type="6" handle="740175983" vstParameterNumber="1" module="765112238" moduleParamId="6">
+                    <patch-list>
+                        <s>1</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="768836237" shortName="Capture Data B" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="391678904" moduleParamId="1"/>
+                <param type="10" handle="790855481" shortName="Capture Data B" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="234587401" moduleParamId="1"/>
+                <param type="10" handle="851291142" shortName="Capture Data A" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="2047790741" moduleParamId="0"/>
+                <param type="6" handle="899319567" vstParameterNumber="2" module="765112238" moduleParamId="4">
+                    <patch-list>
+                        <s>1</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="905241087" shortName="Capture Data A" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="1488041776" moduleParamId="0"/>
+                <param type="4" handle="983377883" shortName="polyDetect" ignorePC="true" private="true" stateful="false" module="655257005" moduleParamId="2"/>
+                <param type="6" handle="1002435523" vstParameterNumber="3" module="765112238" moduleParamId="1">
+                    <patch-list>
+                        <s>1</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="4" handle="1004982348" shortName="polyDetect" ignorePC="true" private="true" stateful="false" module="234587401" moduleParamId="2"/>
+                <param type="10" handle="1038683352" shortName="Capture Data A" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="655257005" moduleParamId="0"/>
+                <param type="6" handle="1349440254" vstParameterNumber="4" module="765112238" moduleParamId="7">
+                    <patch-list>
+                        <s>1</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1351032353" vstParameterNumber="5" module="765112238" moduleParamId="3">
+                    <patch-list>
+                        <s>1</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="1419764914" shortName="Capture Data B" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="1487249638" moduleParamId="1"/>
+                <param type="6" handle="1463596529" vstParameterNumber="6" module="765112238" moduleParamId="2">
+                    <patch-list>
+                        <s>1</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="1527321072" shortName="Capture Data A" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="1487249638" moduleParamId="0"/>
+                <param type="10" handle="1585738358" shortName="Capture Data B" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="1771735339" moduleParamId="1"/>
+                <param type="10" handle="1715614279" shortName="Capture Data A" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="234587401" moduleParamId="0"/>
+                <param type="10" handle="1758268230" shortName="Capture Data B" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="2055882320" moduleParamId="1"/>
+                <param type="6" handle="1820378199" vstParameterNumber="7" module="765112238" moduleParamId="5">
+                    <patch-list>
+                        <s>1</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="4" handle="1821250729" shortName="polyDetect" ignorePC="true" private="true" stateful="false" module="2055882320" moduleParamId="2"/>
+                <param type="10" handle="1829092420" shortName="Capture Data A" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="391678904" moduleParamId="0"/>
+                <param type="10" handle="1951829939" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="1994818225" shortName="Capture Data B" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="2047790741" moduleParamId="1"/>
+                <param type="10" handle="2008035064" shortName="Capture Data B" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="655257005" moduleParamId="1"/>
+                <param type="4" handle="2042745068" shortName="polyDetect" ignorePC="true" private="true" stateful="false" module="1488041776" moduleParamId="2"/>
+                <param type="4" handle="2067164153" shortName="polyDetect" ignorePC="true" private="true" stateful="false" module="1487249638" moduleParamId="2"/>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="Container" handle="1622263952" name="solo / mute 8" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug idx="7"/>
+                </plugs>
+                <structRect l="24" r="252" t="36" b="440"/>
+                <modules>
+                    <module type="SE Scope3 XP" handle="655257005">
+                        <structRect l="312" r="420" t="516" b="576"/>
+                        <panelRect l="192" r="292" t="424" b="456"/>
+                    </module>
+                    <module type="SE Scope3 XP" handle="1771735339">
+                        <structRect l="312" r="420" t="456" b="516"/>
+                        <panelRect l="192" r="292" t="384" b="416"/>
+                    </module>
+                    <module type="SE Scope3 XP" handle="2047790741">
+                        <structRect l="312" r="420" t="396" b="456"/>
+                        <panelRect l="192" r="292" t="344" b="376"/>
+                    </module>
+                    <module type="SE Scope3 XP" handle="234587401">
+                        <structRect l="312" r="420" t="336" b="396"/>
+                        <panelRect l="192" r="292" t="304" b="336"/>
+                    </module>
+                    <module type="SE Scope3 XP" handle="391678904">
+                        <structRect l="312" r="420" t="276" b="336"/>
+                        <panelRect l="192" r="292" t="264" b="296"/>
+                    </module>
+                    <module type="SE Scope3 XP" handle="2055882320">
+                        <structRect l="312" r="420" t="216" b="276"/>
+                        <panelRect l="192" r="292" t="224" b="256"/>
+                    </module>
+                    <module type="SE Scope3 XP" handle="1488041776">
+                        <structRect l="312" r="420" t="156" b="216"/>
+                        <panelRect l="192" r="292" t="184" b="216"/>
+                    </module>
+                    <module type="Oscillator" handle="1342960900">
+                        <plugs>
+                            <plug default="5" idx="2"/>
+                        </plugs>
+                        <structRect l="24" r="108" t="348" b="432"/>
+                    </module>
+                    <module type="Oscillator" handle="116875108">
+                        <plugs>
+                            <plug default="3" idx="2"/>
+                        </plugs>
+                        <structRect l="24" r="108" t="240" b="324"/>
+                    </module>
+                    <module type="Oscillator" handle="1454167880">
+                        <plugs>
+                            <plug default="0" idx="2"/>
+                        </plugs>
+                        <structRect l="24" r="108" t="132" b="216"/>
+                    </module>
+                    <module type="SE Scope3 XP" handle="1487249638">
+                        <structRect l="312" r="420" t="96" b="156"/>
+                        <panelRect l="192" r="292" t="144" b="176"/>
+                    </module>
+                    <module type="Oscillator" handle="648956688">
+                        <plugs>
+                            <plug default="0" idx="6"/>
+                        </plugs>
+                        <structRect l="24" r="108" t="24" b="108"/>
+                    </module>
+                    <module type="Container" handle="444327659" name="solo / mute" ViewOpenFlags="256" skin="resized">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="Input 1" idx="7"/>
+                            <plug name="Input 2"/>
+                            <plug name="Input 3"/>
+                            <plug name="Input 4"/>
+                            <plug name="Output 1" direction="1"/>
+                            <plug name="Output 2" direction="1"/>
+                            <plug name="Output 3" direction="1"/>
+                            <plug name="Output 4" direction="1"/>
+                            <plug name="Volts Out5" direction="1"/>
+                            <plug name="Volts Out6" direction="1"/>
+                            <plug name="Volts Out7" direction="1"/>
+                            <plug name="Volts Out8" direction="1"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="168" r="276" t="48" b="586"/>
+                        <modules>
+                            <module type="Image3" handle="219241915" name="solo">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_solo.png" idx="1"/>
+                                    <plug default="solo4"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="576" r="696" t="1068" b="1178"/>
+                                <panelRect l="152" r="201" t="376" b="398"/>
+                            </module>
+                            <module type="Image3" handle="227066549" name="mute">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_mute.png" idx="1"/>
+                                    <plug default="mute4"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="444" r="564" t="1068" b="1178"/>
+                                <panelRect l="112" r="161" t="376" b="398"/>
+                            </module>
+                            <module type="Image3" handle="2120336138" name="solo">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_solo.png" idx="1"/>
+                                    <plug default="solo3"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="576" r="696" t="936" b="1046"/>
+                                <panelRect l="152" r="201" t="336" b="358"/>
+                            </module>
+                            <module type="Image3" handle="1675101378" name="mute">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_mute.png" idx="1"/>
+                                    <plug default="mute3"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="444" r="564" t="936" b="1046"/>
+                                <panelRect l="112" r="161" t="336" b="358"/>
+                            </module>
+                            <module type="Image3" handle="1764340594" name="solo">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_solo.png" idx="1"/>
+                                    <plug default="solo2"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="576" r="696" t="804" b="914"/>
+                                <panelRect l="152" r="201" t="296" b="318"/>
+                            </module>
+                            <module type="Image3" handle="1578340248" name="mute">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_mute.png" idx="1"/>
+                                    <plug default="mute2"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="444" r="564" t="804" b="914"/>
+                                <panelRect l="112" r="161" t="296" b="318"/>
+                            </module>
+                            <module type="Image3" handle="1784766589" name="solo">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_solo.png" idx="1"/>
+                                    <plug default="solo1"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="576" r="696" t="672" b="782"/>
+                                <panelRect l="152" r="201" t="256" b="278"/>
+                            </module>
+                            <module type="Image3" handle="1866550920" name="mute">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_mute.png" idx="1"/>
+                                    <plug default="mute1"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="444" r="564" t="672" b="782"/>
+                                <panelRect l="112" r="161" t="256" b="278"/>
+                            </module>
+                            <module type="SOLOMUTE8" handle="1953152388">
+                                <structRect l="252" r="396" t="204" b="732"/>
+                                <panelRect l="352" r="352" t="208" b="208"/>
+                            </module>
+                            <module type="mxSoloMute4" handle="765112238">
+                                <structRect l="84" r="168" t="204" b="492"/>
+                                <panelRect l="400" r="400" t="192" b="192"/>
+                            </module>
+                            <module type="Image3" handle="591580517" name="solo">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_solo.png" idx="1"/>
+                                    <plug default="solo4"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="576" r="696" t="528" b="638"/>
+                                <panelRect l="152" r="201" t="216" b="238"/>
+                            </module>
+                            <module type="Image3" handle="541209632" name="mute">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_mute.png" idx="1"/>
+                                    <plug default="mute4"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="444" r="564" t="528" b="638"/>
+                                <panelRect l="112" r="161" t="216" b="238"/>
+                            </module>
+                            <module type="Image3" handle="1892311287" name="solo">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_solo.png" idx="1"/>
+                                    <plug default="solo3"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="576" r="696" t="396" b="506"/>
+                                <panelRect l="152" r="201" t="176" b="198"/>
+                            </module>
+                            <module type="Image3" handle="211802417" name="mute">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_mute.png" idx="1"/>
+                                    <plug default="mute3"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="444" r="564" t="396" b="506"/>
+                                <panelRect l="112" r="161" t="176" b="198"/>
+                            </module>
+                            <module type="Image3" handle="1256792377" name="solo">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_solo.png" idx="1"/>
+                                    <plug default="solo2"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="576" r="696" t="264" b="374"/>
+                                <panelRect l="152" r="201" t="136" b="158"/>
+                            </module>
+                            <module type="Image3" handle="1625531153" name="mute">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_mute.png" idx="1"/>
+                                    <plug default="mute2"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="444" r="564" t="264" b="374"/>
+                                <panelRect l="112" r="161" t="136" b="158"/>
+                            </module>
+                            <module type="Image3" handle="139592752" name="solo">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_solo.png" idx="1"/>
+                                    <plug default="solo1"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="576" r="696" t="132" b="242"/>
+                                <panelRect l="152" r="201" t="96" b="118"/>
+                            </module>
+                            <module type="Image3" handle="2125464944" name="mute">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_mute.png" idx="1"/>
+                                    <plug default="mute1"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="444" r="564" t="132" b="242"/>
+                                <panelRect l="112" r="161" t="96" b="118"/>
+                            </module>
+                            <module type="Image3" handle="2025007533" name="Deactivate All Solo States">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_reset_solo.png" idx="1"/>
+                                    <plug default="Reset All Solos"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="576" r="696" t="0" b="109"/>
+                                <panelRect l="152" r="173" t="32" b="53"/>
+                            </module>
+                            <module type="Image3" handle="1361688322" name="Deactivate All Mute States">
+                                <plugs>
+                                    <plug default="G:\Users\max\Desktop\san cruise backup\SynthEdit\skins\Modus_Vera\button_unmute_all.png" idx="1"/>
+                                    <plug default="Unmute all"/>
+                                    <plug default="4" idx="9"/>
+                                </plugs>
+                                <structRect l="444" r="564" t="0" b="109"/>
+                                <panelRect l="112" r="133" t="32" b="53"/>
+                            </module>
+                            <module type="IO Mod" handle="1336761261">
+                                <plugs>
+                                    <plug name="Output 1" tiedtomod="444327659" tiedtopin="11"/>
+                                    <plug name="Output 2" tiedtomod="444327659" tiedtopin="12"/>
+                                    <plug name="Output 3" tiedtomod="444327659" tiedtopin="13"/>
+                                    <plug name="Output 4" tiedtomod="444327659" tiedtopin="14"/>
+                                    <plug name="Volts Out5" tiedtomod="444327659" tiedtopin="15"/>
+                                    <plug name="Volts Out6" tiedtomod="444327659" tiedtopin="16"/>
+                                    <plug name="Volts Out7" tiedtomod="444327659" tiedtopin="17"/>
+                                    <plug name="Volts Out8" tiedtomod="444327659" tiedtopin="18"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="180" r="264" t="396" b="504"/>
+                            </module>
+                            <module type="IO Mod" handle="1726832146">
+                                <plugs>
+                                    <plug name="Input 1" direction="1" tiedtomod="444327659" tiedtopin="7"/>
+                                    <plug name="Input 2" direction="1" tiedtomod="444327659" tiedtopin="8"/>
+                                    <plug name="Input 3" direction="1" tiedtomod="444327659" tiedtopin="9"/>
+                                    <plug name="Input 4" direction="1" tiedtomod="444327659" tiedtopin="10"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="0" r="60" t="324" b="384"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="304793609" lineType="1" fMod="1726832146" tMod="765112238" fPlg="3" tPlg="31"/>
+                            <line type="Line" handle="716895253" lineType="1" fMod="1726832146" tMod="765112238" fPlg="2" tPlg="30"/>
+                            <line type="Line" handle="897898086" lineType="1" fMod="1726832146" tMod="765112238" fPlg="1" tPlg="29"/>
+                            <line type="Line" handle="1862682235" lineType="1" fMod="1726832146" tMod="765112238" tPlg="28"/>
+                            <line type="Line" handle="2010171159" lineType="1" fMod="1726832146" tMod="765112238" fPlg="3" tPlg="27"/>
+                            <line type="Line" handle="1339799884" lineType="1" fMod="1726832146" tMod="765112238" fPlg="2" tPlg="26"/>
+                            <line type="Line" handle="768425708" lineType="1" fMod="1726832146" tMod="765112238" fPlg="1" tPlg="25"/>
+                            <line type="Line" handle="701948694" lineType="1" fMod="1726832146" tMod="765112238" tPlg="24"/>
+                            <line type="Line" handle="657192318" lineType="1" fMod="765112238" tMod="1953152388" fPlg="15" tPlg="7"/>
+                            <line type="Line" handle="1279001151" lineType="1" fMod="765112238" tMod="1953152388" fPlg="14" tPlg="6"/>
+                            <line type="Line" handle="638608259" lineType="1" fMod="765112238" tMod="1953152388" fPlg="13" tPlg="5"/>
+                            <line type="Line" handle="1642913182" lineType="1" fMod="765112238" tMod="1953152388" fPlg="12" tPlg="4"/>
+                            <line type="Line" handle="1425876692" lineType="1" fMod="765112238" tMod="1953152388" fPlg="11" tPlg="3"/>
+                            <line type="Line" handle="1027970894" lineType="1" fMod="765112238" tMod="1953152388" fPlg="10" tPlg="2"/>
+                            <line type="Line" handle="1632066159" lineType="1" fMod="765112238" tMod="1953152388" fPlg="9" tPlg="1"/>
+                            <line type="Line" handle="1303756714" lineType="1" fMod="765112238" tMod="1953152388" fPlg="8"/>
+                            <line type="Line" handle="1384228832" lineType="1" fMod="1953152388" tMod="219241915" fPlg="43" tPlg="6"/>
+                            <line type="Line" handle="1501056172" lineType="1" fMod="1953152388" tMod="219241915" fPlg="42"/>
+                            <line type="Line" handle="257528048" lineType="1" fMod="1953152388" tMod="227066549" fPlg="41" tPlg="6"/>
+                            <line type="Line" handle="27143058" lineType="1" fMod="1953152388" tMod="227066549" fPlg="40"/>
+                            <line type="Line" handle="471129228" lineType="1" fMod="1953152388" tMod="2120336138" fPlg="39" tPlg="6"/>
+                            <line type="Line" handle="1674852147" lineType="1" fMod="1953152388" tMod="2120336138" fPlg="38"/>
+                            <line type="Line" handle="667934098" lineType="1" fMod="1953152388" tMod="1675101378" fPlg="37" tPlg="6"/>
+                            <line type="Line" handle="261470227" lineType="1" fMod="1953152388" tMod="1675101378" fPlg="36"/>
+                            <line type="Line" handle="473402974" lineType="1" fMod="1953152388" tMod="1764340594" fPlg="35" tPlg="6"/>
+                            <line type="Line" handle="218490721" lineType="1" fMod="1953152388" tMod="1764340594" fPlg="34"/>
+                            <line type="Line" handle="1221691428" lineType="1" fMod="1953152388" tMod="1578340248" fPlg="33" tPlg="6"/>
+                            <line type="Line" handle="1157471437" lineType="1" fMod="1953152388" tMod="1578340248" fPlg="32"/>
+                            <line type="Line" handle="1011148843" lineType="1" fMod="1953152388" tMod="1784766589" fPlg="31" tPlg="6"/>
+                            <line type="Line" handle="2134024709" lineType="1" fMod="1953152388" tMod="1784766589" fPlg="30"/>
+                            <line type="Line" handle="2127152320" lineType="1" fMod="1953152388" tMod="1866550920" fPlg="29" tPlg="6"/>
+                            <line type="Line" handle="364668292" lineType="1" fMod="1953152388" tMod="1866550920" fPlg="28"/>
+                            <line type="Line" handle="568876511" lineType="1" fMod="1953152388" tMod="591580517" fPlg="27" tPlg="6"/>
+                            <line type="Line" handle="1823978184" lineType="1" fMod="1953152388" tMod="591580517" fPlg="26"/>
+                            <line type="Line" handle="410573700" lineType="1" fMod="1953152388" tMod="541209632" fPlg="25" tPlg="6"/>
+                            <line type="Line" handle="778638714" lineType="1" fMod="1953152388" tMod="541209632" fPlg="24"/>
+                            <line type="Line" handle="695898528" lineType="1" fMod="1953152388" tMod="1892311287" fPlg="23" tPlg="6"/>
+                            <line type="Line" handle="247368088" lineType="1" fMod="1953152388" tMod="1892311287" fPlg="22"/>
+                            <line type="Line" handle="695887522" lineType="1" fMod="1953152388" tMod="211802417" fPlg="21" tPlg="6"/>
+                            <line type="Line" handle="892578573" lineType="1" fMod="1953152388" tMod="211802417" fPlg="20"/>
+                            <line type="Line" handle="601497203" lineType="1" fMod="1953152388" tMod="1256792377" fPlg="19" tPlg="6"/>
+                            <line type="Line" handle="547883048" lineType="1" fMod="1953152388" tMod="1256792377" fPlg="18"/>
+                            <line type="Line" handle="1865618583" lineType="1" fMod="1953152388" tMod="1625531153" fPlg="17" tPlg="6"/>
+                            <line type="Line" handle="930773570" lineType="1" fMod="1953152388" tMod="1625531153" fPlg="16"/>
+                            <line type="Line" handle="2136603352" lineType="1" fMod="1953152388" tMod="139592752" fPlg="15" tPlg="6"/>
+                            <line type="Line" handle="295934419" lineType="1" fMod="1953152388" tMod="139592752" fPlg="14"/>
+                            <line type="Line" handle="810801214" lineType="1" fMod="1953152388" tMod="2125464944" fPlg="13" tPlg="6"/>
+                            <line type="Line" handle="250929514" lineType="1" fMod="1953152388" tMod="2125464944" fPlg="12"/>
+                            <line type="Line" handle="65491638" lineType="1" fMod="1953152388" tMod="2025007533" fPlg="11" tPlg="6"/>
+                            <line type="Line" handle="1089380737" lineType="1" fMod="1953152388" tMod="2025007533" fPlg="10"/>
+                            <line type="Line" handle="1502429194" lineType="1" fMod="1953152388" tMod="1361688322" fPlg="9" tPlg="6"/>
+                            <line type="Line" handle="383607268" lineType="1" fMod="1953152388" tMod="1361688322" fPlg="8"/>
+                            <line type="Line" handle="156825011" lineType="1" fMod="765112238" tMod="1336761261" fPlg="39" tPlg="7"/>
+                            <line type="Line" handle="579460366" lineType="1" fMod="765112238" tMod="1336761261" fPlg="38" tPlg="6"/>
+                            <line type="Line" handle="1195806849" lineType="1" fMod="765112238" tMod="1336761261" fPlg="37" tPlg="5"/>
+                            <line type="Line" handle="855619343" lineType="1" fMod="765112238" tMod="1336761261" fPlg="36" tPlg="4"/>
+                            <line type="Line" handle="226532125" lineType="1" fMod="765112238" tMod="1336761261" fPlg="35" tPlg="3"/>
+                            <line type="Line" handle="379132029" lineType="1" fMod="765112238" tMod="1336761261" fPlg="33" tPlg="1"/>
+                            <line type="Line" handle="1656432180" lineType="1" fMod="765112238" tMod="1336761261" fPlg="34" tPlg="2"/>
+                            <line type="Line" handle="882201601" lineType="1" fMod="765112238" tMod="1336761261" fPlg="32"/>
+                        </lines>
+                        <PanelWndPosition l="80" r="169" t="80" b="446"/>
+                        <PanelLocation l="30" r="513" t="30" b="569"/>
+                        <StructLocation l="370" r="1097" t="13" b="925"/>
+                        <PanelScroll x="0" y="22"/>
+                        <StructScroll x="1" y="0"/>
+                        <PanelWndOffset cx="-32" cy="48"/>
+                        <panel_rect l="16" r="280" t="16" b="432"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1231654547" fMod="648956688" tMod="444327659" fPlg="3" tPlg="7"/>
+                    <line type="Line" handle="1106043434" fMod="1454167880" tMod="444327659" fPlg="3" tPlg="8"/>
+                    <line type="Line" handle="968439230" fMod="116875108" tMod="444327659" fPlg="3" tPlg="9"/>
+                    <line type="Line" handle="237230454" fMod="1342960900" tMod="444327659" fPlg="3" tPlg="10"/>
+                    <line type="Line" handle="526639367" lineType="1" fMod="444327659" tMod="655257005" fPlg="18" tPlg="6"/>
+                    <line type="Line" handle="410998953" lineType="1" fMod="444327659" tMod="1771735339" fPlg="17" tPlg="6"/>
+                    <line type="Line" handle="1221916873" lineType="1" fMod="444327659" tMod="2047790741" fPlg="16" tPlg="6"/>
+                    <line type="Line" handle="775118314" lineType="1" fMod="444327659" tMod="234587401" fPlg="15" tPlg="6"/>
+                    <line type="Line" handle="1321542740" lineType="1" fMod="444327659" tMod="1487249638" fPlg="11" tPlg="6"/>
+                    <line type="Line" handle="1782402855" lineType="1" fMod="444327659" tMod="1488041776" fPlg="12" tPlg="6"/>
+                    <line type="Line" handle="259836110" lineType="1" fMod="444327659" tMod="2055882320" fPlg="13" tPlg="6"/>
+                    <line type="Line" handle="1737779840" lineType="1" fMod="444327659" tMod="391678904" fPlg="14" tPlg="6"/>
+                </lines>
+                <PanelWndPosition l="32" r="244" t="32" b="408"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="407" r="916" t="69" b="800"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-48" cy="-48"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+        </modules>
+        <lines/>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="1110" r="1440" t="12" b="526"/>
+        <StructLocation l="2" r="350" t="13" b="547"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="1"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="264" t="16" b="416"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Image3" name="Image2" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Filename" datatype="string" default="knob_sm" isFilename="true" metadata="bmp"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Frame Count" datatype="int" private="true"/>
+                <Pin name="Frame Count" datatype="int" direction="out"/>
+                <Pin name="Mouse Response" datatype="enum" default="-1" isMinimised="true" metadata="off=-2, auto=-1, vertical=0, horizontal=1, clicks=2, rotary=3, step=4"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Oscillator" class="1" name="Oscillator" flags="4352" category="Waveform">
+            <Audio>
+                <Pin name="Pitch" datatype="float" rate="audio" default="0.5" metadata="100, 0, 10, 0"/>
+                <Pin name="Pulse Width" datatype="float" rate="audio" default="0.5"/>
+                <Pin name="Waveform" datatype="enum" default="1" metadata="Sine, Saw, Ramp, Triangle, Pulse,White Noise,Pink Noise"/>
+                <Pin name="Audio Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Sync" datatype="float" rate="audio" metadata="100, 0, 5, -5"/>
+                <Pin name="Phase Mod" datatype="float" rate="audio" metadata="100, 0, 10, 0"/>
+                <Pin name="Freq Scale" datatype="enum" isMinimised="true" metadata="1 Volt/Octave, 1 Volt/kHz "/>
+                <Pin name="PM Depth" datatype="float" rate="audio" default="0.5" metadata="100, 0, 10, 0"/>
+                <Pin name="Smooth Peaks (Gibbs Effect)" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Sync X-Fade (Anti Alias)" datatype="bool" default="1" isMinimised="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE Scope3 XP" name="Scope3" flags="384" category="Controls">
+            <Parameters>
+                <Parameter id="0" datatype="blob" name="Capture Data A" private="true" ignorePatchChange="true" isPolyphonic="true" persistant="false"/>
+                <Parameter id="1" datatype="blob" name="Capture Data B" private="true" ignorePatchChange="true" isPolyphonic="true" persistant="false"/>
+                <Parameter id="2" datatype="bool" name="polyDetect" private="true" ignorePatchChange="true" persistant="false"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Capture Data A" datatype="blob" direction="out" private="true" isPolyphonic="true" parameterId="0"/>
+                <Pin name="Capture Data B" datatype="blob" direction="out" private="true" isPolyphonic="true" parameterId="1"/>
+                <Pin name="Signal A" datatype="float" rate="audio"/>
+                <Pin name="Signal B" datatype="float" rate="audio"/>
+                <Pin name="VoiceActive" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Active"/>
+                <Pin name="polydetect" datatype="bool" direction="out" private="true" parameterId="2"/>
+            </Audio>
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Capture Data A" datatype="blob" private="true" isPolyphonic="true" parameterId="0"/>
+                <Pin name="Capture Data B" datatype="blob" private="true" isPolyphonic="true" parameterId="1"/>
+                <Pin id="3" name="VoiceGate" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Gate"/>
+                <Pin name="polydetect" datatype="bool" private="true" parameterId="2"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SOLOMUTE8" name="GUI_SoloMute8" flags="384" category="mx/Tools">
+            <GUI>
+                <Pin name="Channel 1" datatype="float"/>
+                <Pin name="Channel 2" datatype="float"/>
+                <Pin name="Channel 3" datatype="float"/>
+                <Pin name="Channel 4" datatype="float"/>
+                <Pin name="Channel 5" datatype="float"/>
+                <Pin name="Channel 6" datatype="float"/>
+                <Pin name="Channel 7" datatype="float"/>
+                <Pin name="Channel 8" datatype="float"/>
+                <Pin name="Unmute All" datatype="float" direction="out"/>
+                <Pin name="Unmute mDown" datatype="bool" direction="out"/>
+                <Pin name="Reset All Solos" datatype="float" direction="out"/>
+                <Pin name="Reset All Solos mDown" datatype="bool" direction="out"/>
+                <Pin name="Mute 1" datatype="float" direction="out"/>
+                <Pin name="mDownM1" datatype="bool" direction="out"/>
+                <Pin name="Solo 1" datatype="float" direction="out"/>
+                <Pin name="mDownS1" datatype="bool" direction="out"/>
+                <Pin name="Mute 2" datatype="float" direction="out"/>
+                <Pin name="mDownM2" datatype="bool" direction="out"/>
+                <Pin name="Solo 2" datatype="float" direction="out"/>
+                <Pin name="mDownS2" datatype="bool" direction="out"/>
+                <Pin name="Mute 3" datatype="float" direction="out"/>
+                <Pin name="mDownM3" datatype="bool" direction="out"/>
+                <Pin name="Solo 3" datatype="float" direction="out"/>
+                <Pin name="mDownS3" datatype="bool" direction="out"/>
+                <Pin name="Mute 4" datatype="float" direction="out"/>
+                <Pin name="mDownM4" datatype="bool" direction="out"/>
+                <Pin name="Solo 4" datatype="float" direction="out"/>
+                <Pin name="mDownS4" datatype="bool" direction="out"/>
+                <Pin name="Mute 5" datatype="float" direction="out"/>
+                <Pin name="mDownM5" datatype="bool" direction="out"/>
+                <Pin name="Solo 5" datatype="float" direction="out"/>
+                <Pin name="mDownS5" datatype="bool" direction="out"/>
+                <Pin name="Mute 6" datatype="float" direction="out"/>
+                <Pin name="mDownM6" datatype="bool" direction="out"/>
+                <Pin name="Solo 6" datatype="float" direction="out"/>
+                <Pin name="mDownS6" datatype="bool" direction="out"/>
+                <Pin name="Mute 7" datatype="float" direction="out"/>
+                <Pin name="mDownM7" datatype="bool" direction="out"/>
+                <Pin name="Solo 7" datatype="float" direction="out"/>
+                <Pin name="mDownS7" datatype="bool" direction="out"/>
+                <Pin name="Mute 8" datatype="float" direction="out"/>
+                <Pin name="mDownM8" datatype="bool" direction="out"/>
+                <Pin name="Solo 8" datatype="float" direction="out"/>
+                <Pin name="mDownS8" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="mxSoloMute4" name="DSP_SoloMute8" flags="384" category="mx/Tools">
+            <Parameters>
+                <Parameter id="0" datatype="float" name=""/>
+                <Parameter id="1" datatype="float" name=""/>
+                <Parameter id="2" datatype="float" name=""/>
+                <Parameter id="3" datatype="float" name=""/>
+                <Parameter id="4" datatype="float" name=""/>
+                <Parameter id="5" datatype="float" name=""/>
+                <Parameter id="6" datatype="float" name=""/>
+                <Parameter id="7" datatype="float" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="ChannelM1" datatype="float" private="true" parameterId="0"/>
+                <Pin name="ChannelM2" datatype="float" private="true" parameterId="1"/>
+                <Pin name="ChannelM3" datatype="float" private="true" parameterId="2"/>
+                <Pin name="ChannelM4" datatype="float" private="true" parameterId="3"/>
+                <Pin name="ChannelM5" datatype="float" private="true" parameterId="4"/>
+                <Pin name="ChannelM6" datatype="float" private="true" parameterId="5"/>
+                <Pin name="ChannelM7" datatype="float" private="true" parameterId="6"/>
+                <Pin name="ChannelM8" datatype="float" private="true" parameterId="7"/>
+                <Pin name="Audio In1" datatype="float" rate="audio"/>
+                <Pin name="Audio In2" datatype="float" rate="audio"/>
+                <Pin name="Audio In3" datatype="float" rate="audio"/>
+                <Pin name="Audio In4" datatype="float" rate="audio"/>
+                <Pin name="Audio In5" datatype="float" rate="audio"/>
+                <Pin name="Audio In6" datatype="float" rate="audio"/>
+                <Pin name="Audio In7" datatype="float" rate="audio"/>
+                <Pin name="Audio In8" datatype="float" rate="audio"/>
+                <Pin name="Audio Out1" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Audio Out2" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Audio Out3" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Audio Out4" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Audio Out5" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Audio Out6" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Audio Out7" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Audio Out8" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+            <GUI>
+                <Pin name="ChannelM1" datatype="float" private="true" parameterId="0"/>
+                <Pin name="ChannelM2" datatype="float" private="true" parameterId="1"/>
+                <Pin name="ChannelM3" datatype="float" private="true" parameterId="2"/>
+                <Pin name="ChannelM4" datatype="float" private="true" parameterId="3"/>
+                <Pin name="ChannelM5" datatype="float" private="true" parameterId="4"/>
+                <Pin name="ChannelM6" datatype="float" private="true" parameterId="5"/>
+                <Pin name="ChannelM7" datatype="float" private="true" parameterId="6"/>
+                <Pin name="ChannelM8" datatype="float" private="true" parameterId="7"/>
+                <Pin name="Channel 1" datatype="float" direction="out"/>
+                <Pin name="Channel 2" datatype="float" direction="out"/>
+                <Pin name="Channel 3" datatype="float" direction="out"/>
+                <Pin name="Channel 4" datatype="float" direction="out"/>
+                <Pin name="Channel 5" datatype="float" direction="out"/>
+                <Pin name="Channel 6" datatype="float" direction="out"/>
+                <Pin name="Channel 7" datatype="float" direction="out"/>
+                <Pin name="Channel 8" datatype="float" direction="out"/>
+            </GUI>
+        </Plugin>
+    </PluginList>
+</Document>

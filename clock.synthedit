@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Maxim Brezhestovski" vst_preset_count="64">
+    <master_container type="Container" handle="561845134" name="Main" ViewOpenFlags="256" skin="prophetblack">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="10" handle="255485351" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="396162518" vstParameterNumber="15" module="1698251319" moduleParamId="0">
+                    <patch-list>
+                        <s>0.166667</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1263800813" vstParameterNumber="17" module="770778056" moduleParamId="0">
+                    <patch-list>
+                        <s>0.666667</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="1361083994" vstParameterNumber="18" module="770778056" moduleParamId="2">
+                    <patch-list>
+                        <s>ffc5ff00</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1505506218" vstParameterNumber="13" module="1444034598" moduleParamId="0">
+                    <patch-list>
+                        <s>0.0166667</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="1966513490" vstParameterNumber="16" module="1698251319" moduleParamId="2">
+                    <patch-list>
+                        <s>ffc5ff00</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="2067890318" vstParameterNumber="23" module="643486126" moduleParamId="0">
+                    <patch-list>
+                        <s>0.0666667</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="2133217144" shortName="Multiply Input 1" vstParameterNumber="14" module="1894479695" moduleParamId="0" RangeMaximum="1">
+                    <patch-list>
+                        <s>1</s>
+                        <s repeat="127">8</s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="Container" handle="692448922" ViewOpenFlags="384" skin="prophetblack">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug idx="7"/>
+                </plugs>
+                <structRect l="24" r="216" t="24" b="298"/>
+                <modules>
+                    <module type="Multiply" handle="909967716">
+                        <plugs>
+                            <plug default="0.02" idx="1"/>
+                        </plugs>
+                        <structRect l="588" r="648" t="324" b="360"/>
+                    </module>
+                    <module type="Float2FloatGui" handle="643486126">
+                        <structRect l="756" r="828" t="264" b="300"/>
+                        <panelRect l="312" r="313" t="272" b="273"/>
+                    </module>
+                    <module type="My VoltsToFloats" handle="515317938">
+                        <structRect l="672" r="732" t="312" b="336"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="Comparator" handle="1088721848">
+                        <plugs>
+                            <plug default="1"/>
+                            <plug default="10" idx="3"/>
+                            <plug default="0"/>
+                        </plugs>
+                        <structRect l="396" r="480" t="204" b="264"/>
+                    </module>
+                    <module type="Counter" handle="1829182990">
+                        <plugs>
+                            <plug default="59" idx="2"/>
+                        </plugs>
+                        <structRect l="504" r="564" t="264" b="312"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="ColorKnob2" handle="770778056">
+                        <plugs>
+                            <plug default="1" idx="3"/>
+                            <plug default="8" idx="9"/>
+                            <plug default="FFff9300"/>
+                            <plug default="00000000"/>
+                            <plug default="Round" idx="16"/>
+                            <plug default="0"/>
+                            <plug default="3"/>
+                        </plugs>
+                        <structRect l="840" r="972" t="276" b="492"/>
+                        <panelRect l="88" r="192" t="72" b="168"/>
+                    </module>
+                    <module type="ColorKnob2" handle="1698251319">
+                        <plugs>
+                            <plug default="FFff9300" idx="10"/>
+                            <plug default="0" idx="17"/>
+                            <plug default="3"/>
+                        </plugs>
+                        <structRect l="756" r="888" t="36" b="252"/>
+                        <panelRect l="56" r="224" t="32" b="208"/>
+                    </module>
+                    <module type="Multiply" handle="610557022">
+                        <plugs>
+                            <plug default="0.0195" idx="1"/>
+                        </plugs>
+                        <structRect l="228" r="288" t="156" b="192"/>
+                    </module>
+                    <module type="Divide" handle="1960182895">
+                        <plugs>
+                            <plug default="1"/>
+                            <plug default="60"/>
+                        </plugs>
+                        <structRect l="228" r="288" t="228" b="264"/>
+                    </module>
+                    <module type="Multiply" handle="1845949552">
+                        <plugs>
+                            <plug default="0.02" idx="1"/>
+                        </plugs>
+                        <structRect l="456" r="516" t="144" b="180"/>
+                    </module>
+                    <module type="Slider" handle="1894479695" name="on/off">
+                        <plugs>
+                            <plug default="5" idx="9"/>
+                            <plug default="0"/>
+                            <plug parameterId="-1" idx="13"/>
+                            <plug parameterId="-1"/>
+                        </plugs>
+                        <structRect l="0" r="84" t="204" b="264"/>
+                        <panelRect l="112" r="153" t="232" b="278"/>
+                    </module>
+                    <module type="Float2FloatGui" handle="1444034598">
+                        <structRect l="648" r="720" t="96" b="132"/>
+                        <panelRect l="248" r="249" t="176" b="177"/>
+                    </module>
+                    <module type="My VoltsToFloats" handle="1660737127">
+                        <structRect l="552" r="612" t="132" b="156"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="Oscillator" handle="764936629">
+                        <plugs>
+                            <plug default="0.001"/>
+                            <plug default="3" idx="2"/>
+                            <plug default="1" idx="6"/>
+                        </plugs>
+                        <structRect l="120" r="204" t="204" b="288"/>
+                    </module>
+                    <module type="Counter" handle="1711677728">
+                        <plugs>
+                            <plug default="59" idx="2"/>
+                        </plugs>
+                        <structRect l="312" r="372" t="132" b="180"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1107827506" fMod="1660737127" tMod="1444034598" fPlg="1" tPlg="4"/>
+                    <line type="Line" handle="863040971" fMod="1711677728" tMod="1845949552" fPlg="3"/>
+                    <line type="Line" handle="873003714" fMod="1845949552" tMod="1660737127" fPlg="2"/>
+                    <line type="Line" handle="1980870242" fMod="764936629" tMod="610557022" fPlg="3" tPlg="1"/>
+                    <line type="Line" handle="1766184852" fMod="1894479695" tMod="610557022" fPlg="6"/>
+                    <line type="Line" handle="477510158" fMod="610557022" tMod="1711677728" fPlg="2"/>
+                    <line type="Line" handle="484545326" fMod="1894479695" tMod="764936629" fPlg="6" tPlg="4"/>
+                    <line type="Line" handle="296490071" fMod="1960182895" tMod="1845949552" fPlg="2" tPlg="1"/>
+                    <line type="Line" handle="584335710" fMod="1444034598" tMod="1698251319" fPlg="1" tPlg="3"/>
+                    <line type="Line" handle="368217117" fMod="1711677728" tMod="1088721848" fPlg="3" tPlg="1"/>
+                    <line type="Line" handle="590696157" fMod="1088721848" tMod="1829182990" fPlg="2"/>
+                    <line type="Line" handle="1946143971" fMod="515317938" tMod="643486126" fPlg="1" tPlg="4"/>
+                    <line type="Line" handle="1717969758" fMod="643486126" tMod="770778056" fPlg="1" tPlg="3"/>
+                    <line type="Line" handle="1144578903" fMod="1829182990" tMod="909967716" fPlg="3"/>
+                    <line type="Line" handle="666583323" fMod="909967716" tMod="515317938" fPlg="2"/>
+                    <line type="Line" handle="1835819103" fMod="1960182895" tMod="909967716" fPlg="2" tPlg="1"/>
+                </lines>
+                <PanelWndPosition l="0" r="0" t="0" b="0"/>
+                <PanelLocation l="1114" r="1415" t="19" b="313"/>
+                <StructLocation l="0" r="1029" t="0" b="586"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="256" t="16" b="216"/>
+            </module>
+        </modules>
+        <lines/>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="1054" r="1403" t="14" b="415"/>
+        <StructLocation l="0" r="315" t="0" b="415"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="1" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="304" t="16" b="336"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="ColorKnob2" name="Color Knob2" flags="384" category="mx/Sub-Controls" helpUrl="ColorKnob.htm">
+            <Parameters>
+                <Parameter id="0" datatype="float" name=""/>
+                <Parameter id="2" datatype="string" name=""/>
+            </Parameters>
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Scale In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Scaled" datatype="float" direction="out"/>
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Hint" datatype="string" isMinimised="true"/>
+                <Pin name="Hex Out" datatype="string" direction="out"/>
+                <Pin name="ColorAdj" datatype="bool" private="true"/>
+                <Pin name="Circle Size" datatype="float" default="1" isMinimised="true"/>
+                <Pin name="Hex" datatype="string" private="true" parameterId="2"/>
+                <Pin name="Line Thickness" datatype="float" default="5"/>
+                <Pin name="Line Color" datatype="string" default="FFFFFFFF"/>
+                <Pin name="Background Color" datatype="string" default="FF000000" isMinimised="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Shift Key" datatype="bool" private="true"/>
+                <Pin name="Mouse Over" datatype="bool" private="true"/>
+                <Pin name="Reset Value" datatype="float" default="0.5" isMinimised="true"/>
+                <Pin name="CapStyle" datatype="string" default="Triangle"/>
+                <Pin name="DashStyle" datatype="int" metadata="Solid,Dash,Dot,DashDot,DashDotDot,Custom"/>
+                <Pin name="Style" datatype="int" metadata="Flat,Square,Round,Triangle"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Comparator" class="1" name="Comparator" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Input A" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Input B" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Hi Out Val" datatype="float" default="5"/>
+                <Pin name="Lo Out Val" datatype="float" default="-5"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Counter" name="Counter" flags="256" category="mx/Logic">
+            <Audio>
+                <Pin name="Clock" datatype="float" rate="audio"/>
+                <Pin name="Reset" datatype="float" rate="audio"/>
+                <Pin name="Steps" datatype="float" rate="audio" default="10"/>
+                <Pin name="Count" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Divide" class="1" name="Divide" flags="4352" category="Math">
+            <Audio>
+                <Pin name="Input 1" datatype="float" rate="audio" default="0.8" linearInput="true"/>
+                <Pin name="Input 2" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Float2FloatGui" name="Float2FloatGui" flags="384" category="mx/Conversion">
+            <Parameters>
+                <Parameter id="0" datatype="float" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="ChannelM1" datatype="float" direction="out" private="true" parameterId="0"/>
+                <Pin name="Float In" datatype="float"/>
+            </Audio>
+            <GUI>
+                <Pin name="ChannelM1" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Float Out" datatype="float" direction="out"/>
+                <Pin name="Float Out" datatype="float"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Multiply" class="1" name="Multiply" flags="4352" category="Math">
+            <Audio>
+                <Pin name="Input 1" datatype="float" rate="audio" default="0.8" linearInput="true"/>
+                <Pin name="Input 2" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="My VoltsToFloats" name="VoltsToFloats" flags="256" category="mx/Conversion">
+            <Audio>
+                <Pin name="Volts" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Floats" datatype="float" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Oscillator" class="1" name="Oscillator" flags="4352" category="Waveform">
+            <Audio>
+                <Pin name="Pitch" datatype="float" rate="audio" default="0.5" metadata="100, 0, 10, 0"/>
+                <Pin name="Pulse Width" datatype="float" rate="audio" default="0.5"/>
+                <Pin name="Waveform" datatype="enum" default="1" metadata="Sine, Saw, Ramp, Triangle, Pulse,White Noise,Pink Noise"/>
+                <Pin name="Audio Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Sync" datatype="float" rate="audio" metadata="100, 0, 5, -5"/>
+                <Pin name="Phase Mod" datatype="float" rate="audio" metadata="100, 0, 10, 0"/>
+                <Pin name="Freq Scale" datatype="enum" isMinimised="true" metadata="1 Volt/Octave, 1 Volt/kHz "/>
+                <Pin name="PM Depth" datatype="float" rate="audio" default="0.5" metadata="100, 0, 10, 0"/>
+                <Pin name="Smooth Peaks (Gibbs Effect)" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Sync X-Fade (Anti Alias)" datatype="bool" default="1" isMinimised="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Slider" class="1" name="Slider" flags="4480" category="Controls">
+            <Parameters>
+                <Parameter id="0" datatype="float" name="patchValue"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI In" datatype="midi" private="true"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out" private="true"/>
+                <Pin name="MIDI Controller ID" datatype="enum" default="-1" private="true"/>
+                <Pin name="Ignore Program Change" datatype="bool" private="true"/>
+                <Pin name="MIDI NRPN" datatype="enum" private="true" metadata="range 0,16255"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out" autoConfigureParameter="true"/>
+                <Pin name="Lo Value" datatype="float" private="true"/>
+                <Pin name="Hi Value" datatype="float" default="10" private="true"/>
+                <Pin name="Appearance" datatype="enum" default="1" isMinimised="true" metadata="None=-1,Plain Slider, Vert Slider, Horiz Slider, Knob, Button, Button (toggle),Plain Button, Small Knob, Small Button, Small Button (Toggle)"/>
+                <Pin name="Show Readout" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Show Title On Panel" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="patchValue" datatype="float" private="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin id="13" name="patchValue" datatype="float" direction="out" private="true" parameterId="0"/>
+                <Pin name="Hint" datatype="string" direction="out" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+    </PluginList>
+</Document>
