@@ -15,13 +15,13 @@
                 </param>
                 <param type="6" handle="396162518" vstParameterNumber="15" module="1698251319" moduleParamId="0">
                     <patch-list>
-                        <s>8.66667</s>
+                        <s>2.83333</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1263800813" vstParameterNumber="17" module="770778056" moduleParamId="0">
                     <patch-list>
-                        <s>0.333333</s>
+                        <s>6.83333</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -33,7 +33,7 @@
                 </param>
                 <param type="6" handle="1505506218" vstParameterNumber="13" module="1444034598" moduleParamId="0">
                     <patch-list>
-                        <s>0.866667</s>
+                        <s>0.283333</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -45,7 +45,7 @@
                 </param>
                 <param type="6" handle="2067890318" vstParameterNumber="23" module="643486126" moduleParamId="0">
                     <patch-list>
-                        <s>0.0333333</s>
+                        <s>0.683333</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
