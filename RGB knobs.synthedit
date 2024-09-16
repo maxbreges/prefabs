@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" AutoPlay="true" vst_user_email="Maxim Brezhestovski" autoplay="true" vst_preset_count="64">
+    <master_container type="Container" handle="1528041554" name="Main" ViewOpenFlags="256" skin="prophetblack">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="6" handle="12926816" shortName="RGB to Hex R(0-255)" vstParameterNumber="30" module="1220077506" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s>255</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="369096325" vstParameterNumber="0" module="1634680223" moduleParamId="2">
+                    <patch-list>
+                        <s>ff00bbff</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="385070904" vstParameterNumber="1" module="1286642199" moduleParamId="2">
+                    <patch-list>
+                        <s>ffff0000</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="406661745" vstParameterNumber="2" module="322798262" moduleParamId="0">
+                    <patch-list>
+                        <s>7.3</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="425762646" vstParameterNumber="3" module="401717421" moduleParamId="2">
+                    <patch-list>
+                        <s>ffff0000</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="473029625" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="485525396" vstParameterNumber="4" module="1879298162" moduleParamId="3">
+                    <patch-list>
+                        <s>255</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="570183276" vstParameterNumber="5" module="1671780328" moduleParamId="0">
+                    <patch-list>
+                        <s repeat="128">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="583212216" vstParameterNumber="6" module="77065420" moduleParamId="0">
+                    <patch-list>
+                        <s>10</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="593654551" shortName="RGB to Hex B(0-255)" vstParameterNumber="26" module="277045753" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s>249.9</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="731734221" vstParameterNumber="7" module="1491604347" moduleParamId="0">
+                    <patch-list>
+                        <s>10</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="770250463" vstParameterNumber="8" module="693198521" moduleParamId="0">
+                    <patch-list>
+                        <s>9.8</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="828318353" vstParameterNumber="9" module="1879298162" moduleParamId="1">
+                    <patch-list>
+                        <s>186.15</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="873750013" vstParameterNumber="10" module="77065420" moduleParamId="2">
+                    <patch-list>
+                        <s>ff8e00ff</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="899661384" shortName="RGB to Hex G(0-255)" vstParameterNumber="28" module="367725922" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s repeat="128">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1054984404" vstParameterNumber="11" module="509919065" moduleParamId="1">
+                    <patch-list>
+                        <s repeat="128">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1066845784" vstParameterNumber="12" module="509919065" moduleParamId="0">
+                    <patch-list>
+                        <s>255</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1140357430" shortName="RGB to Hex B(0-255)" vstParameterNumber="27" module="1545638407" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s>11.475</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="1166495844" vstParameterNumber="13" module="1671780328" moduleParamId="2">
+                    <patch-list>
+                        <s>ff00ff6d</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="1375718962" vstParameterNumber="14" module="693198521" moduleParamId="2">
+                    <patch-list>
+                        <s>ff00bbff</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1460939947" vstParameterNumber="15" module="509919065" moduleParamId="3">
+                    <patch-list>
+                        <s>255</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1597361328" vstParameterNumber="16" module="1879298162" moduleParamId="0">
+                    <patch-list>
+                        <s>255</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1599806171" shortName="RGB to Hex R(0-255)" vstParameterNumber="31" module="1303664828" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s>255</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1711805106" shortName="RGB to Hex G(0-255)" vstParameterNumber="29" module="1815986107" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s>186.15</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1787503089" shortName="RGB to Hex Alpha(0-255)" vstParameterNumber="24" module="1166603213" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s repeat="128">255</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1872444173" vstParameterNumber="17" module="509919065" moduleParamId="2">
+                    <patch-list>
+                        <s>11.475</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="1879039682" vstParameterNumber="18" module="1491604347" moduleParamId="2">
+                    <patch-list>
+                        <s>ff8e00ff</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1892663626" vstParameterNumber="19" module="1634680223" moduleParamId="0">
+                    <patch-list>
+                        <s>0.45</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1904677817" vstParameterNumber="20" module="1879298162" moduleParamId="2">
+                    <patch-list>
+                        <s>249.9</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1964181451" shortName="RGB to Hex Alpha(0-255)" vstParameterNumber="25" module="1454297541" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s repeat="128">255</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="1968559315" vstParameterNumber="21" module="322798262" moduleParamId="2">
+                    <patch-list>
+                        <s>ff00ff3f</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="2005175130" vstParameterNumber="22" module="401717421" moduleParamId="0">
+                    <patch-list>
+                        <s>10</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="2008955773" vstParameterNumber="23" module="1286642199" moduleParamId="0">
+                    <patch-list>
+                        <s>10</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="Container" handle="772565201" name="RGB knobs" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Alpha(0-255)" direction="1" datatype="6" idx="7"/>
+                    <plug name="R(0-255)" direction="1" datatype="6"/>
+                    <plug name="G(0-255)" direction="1" datatype="6"/>
+                    <plug name="B(0-255)" direction="1" datatype="6"/>
+                    <plug/>
+                </plugs>
+                <structRect l="36" r="468" t="276" b="452"/>
+                <modules>
+                    <module type="ColorKnob2" handle="1634680223">
+                        <structRect l="600" r="720" t="288" b="504"/>
+                        <panelRect l="336" r="436" t="24" b="124"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1545638407">
+                        <structRect l="72" r="192" t="444" b="528"/>
+                        <panelRect l="464" r="465" t="296" b="297"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="367725922">
+                        <structRect l="72" r="192" t="324" b="408"/>
+                        <panelRect l="400" r="401" t="216" b="217"/>
+                    </module>
+                    <module type="ColorKnob2" handle="1671780328">
+                        <structRect l="468" r="588" t="288" b="504"/>
+                        <panelRect l="232" r="332" t="24" b="124"/>
+                    </module>
+                    <module type="ColorKnob2" handle="401717421">
+                        <structRect l="336" r="456" t="288" b="504"/>
+                        <panelRect l="128" r="228" t="24" b="124"/>
+                    </module>
+                    <module type="ColorKnob2" handle="1491604347">
+                        <structRect l="252" r="372" t="24" b="240"/>
+                        <panelRect l="24" r="124" t="24" b="124"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1303664828">
+                        <structRect l="72" r="192" t="204" b="288"/>
+                        <panelRect l="392" r="393" t="216" b="217"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1454297541">
+                        <structRect l="72" r="192" t="96" b="180"/>
+                        <panelRect l="328" r="329" t="288" b="289"/>
+                    </module>
+                    <module type="IO Mod" handle="1206279669">
+                        <plugs>
+                            <plug name="Alpha(0-255)" default="255" datatype="6" tiedtomod="772565201" tiedtopin="7"/>
+                            <plug name="R(0-255)" datatype="6" tiedtomod="772565201" tiedtopin="8"/>
+                            <plug name="G(0-255)" datatype="6" tiedtomod="772565201" tiedtopin="9"/>
+                            <plug name="B(0-255)" datatype="6" tiedtomod="772565201" tiedtopin="10"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="516" r="612" t="192" b="252"/>
+                    </module>
+                    <module type="IO Mod" handle="1192394253">
+                        <plugs>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="80" t="20" b="32"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="900285295" lineType="1" fMod="1545638407" tMod="1206279669" fPlg="13" tPlg="3"/>
+                    <line type="Line" handle="232112914" lineType="1" fMod="1545638407" tMod="1634680223" fPlg="8" tPlg="3"/>
+                    <line type="Line" handle="1500187031" lineType="1" fMod="367725922" tMod="1671780328" fPlg="8" tPlg="3"/>
+                    <line type="Line" handle="968936764" lineType="1" fMod="367725922" tMod="1206279669" fPlg="13" tPlg="2"/>
+                    <line type="Line" handle="1047002322" lineType="1" fMod="1303664828" tMod="401717421" fPlg="8" tPlg="3"/>
+                    <line type="Line" handle="856683974" lineType="1" fMod="1454297541" tMod="1491604347" fPlg="8" tPlg="3"/>
+                    <line type="Line" handle="352318777" lineType="1" fMod="1303664828" tMod="1206279669" fPlg="13" tPlg="1"/>
+                    <line type="Line" handle="1441287316" lineType="1" fMod="1454297541" tMod="1206279669" fPlg="13"/>
+                </lines>
+                <PanelWndPosition l="24" r="436" t="136" b="236"/>
+                <PanelLocation l="30" r="586" t="30" b="315"/>
+                <StructLocation l="220" r="1009" t="95" b="764"/>
+                <PanelScroll x="1" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="0" cy="112"/>
+                <panel_rect l="16" r="456" t="16" b="136"/>
+            </module>
+            <module type="RGB to Hex" handle="509919065">
+                <structRect l="492" r="588" t="276" b="336"/>
+                <panelRect l="376" r="377" t="296" b="297"/>
+            </module>
+            <module type="Container" handle="195634496" name="RGB knobs" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Alpha(0-255)" direction="1" datatype="6" idx="7"/>
+                    <plug name="R(0-255)" direction="1" datatype="6"/>
+                    <plug name="G(0-255)" direction="1" datatype="6"/>
+                    <plug name="B(0-255)" direction="1" datatype="6"/>
+                    <plug/>
+                </plugs>
+                <structRect l="36" r="468" t="84" b="260"/>
+                <modules>
+                    <module type="ColorKnob2" handle="693198521">
+                        <structRect l="600" r="720" t="288" b="504"/>
+                        <panelRect l="336" r="436" t="24" b="124"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="277045753">
+                        <structRect l="72" r="192" t="444" b="528"/>
+                        <panelRect l="464" r="465" t="296" b="297"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1815986107">
+                        <structRect l="72" r="192" t="324" b="408"/>
+                        <panelRect l="400" r="401" t="216" b="217"/>
+                    </module>
+                    <module type="ColorKnob2" handle="322798262">
+                        <structRect l="468" r="588" t="288" b="504"/>
+                        <panelRect l="232" r="332" t="24" b="124"/>
+                    </module>
+                    <module type="ColorKnob2" handle="1286642199">
+                        <structRect l="336" r="456" t="288" b="504"/>
+                        <panelRect l="128" r="228" t="24" b="124"/>
+                    </module>
+                    <module type="ColorKnob2" handle="77065420">
+                        <structRect l="252" r="372" t="24" b="240"/>
+                        <panelRect l="24" r="124" t="24" b="124"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1220077506">
+                        <structRect l="72" r="192" t="204" b="288"/>
+                        <panelRect l="392" r="393" t="216" b="217"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1166603213">
+                        <structRect l="72" r="192" t="96" b="180"/>
+                        <panelRect l="328" r="329" t="288" b="289"/>
+                    </module>
+                    <module type="IO Mod" handle="712603664">
+                        <plugs>
+                            <plug name="Alpha(0-255)" default="255" datatype="6" tiedtomod="195634496" tiedtopin="7"/>
+                            <plug name="R(0-255)" datatype="6" tiedtomod="195634496" tiedtopin="8"/>
+                            <plug name="G(0-255)" datatype="6" tiedtomod="195634496" tiedtopin="9"/>
+                            <plug name="B(0-255)" datatype="6" tiedtomod="195634496" tiedtopin="10"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="516" r="612" t="192" b="252"/>
+                    </module>
+                    <module type="IO Mod" handle="987160557">
+                        <plugs>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="80" t="20" b="32"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1030918598" lineType="1" fMod="1166603213" tMod="712603664" fPlg="13"/>
+                    <line type="Line" handle="548705961" lineType="1" fMod="1220077506" tMod="712603664" fPlg="13" tPlg="1"/>
+                    <line type="Line" handle="208050443" lineType="1" fMod="1166603213" tMod="77065420" fPlg="8" tPlg="3"/>
+                    <line type="Line" handle="756629967" lineType="1" fMod="1220077506" tMod="1286642199" fPlg="8" tPlg="3"/>
+                    <line type="Line" handle="1330384104" lineType="1" fMod="1815986107" tMod="712603664" fPlg="13" tPlg="2"/>
+                    <line type="Line" handle="1427400330" lineType="1" fMod="1815986107" tMod="322798262" fPlg="8" tPlg="3"/>
+                    <line type="Line" handle="2111564225" lineType="1" fMod="277045753" tMod="693198521" fPlg="8" tPlg="3"/>
+                    <line type="Line" handle="1300367414" lineType="1" fMod="277045753" tMod="712603664" fPlg="13" tPlg="3"/>
+                </lines>
+                <PanelWndPosition l="24" r="436" t="24" b="124"/>
+                <PanelLocation l="30" r="586" t="30" b="315"/>
+                <StructLocation l="220" r="1009" t="95" b="764"/>
+                <PanelScroll x="1" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="0" cy="0"/>
+                <panel_rect l="16" r="456" t="16" b="136"/>
+            </module>
+            <module type="RGB to Hex" handle="1879298162">
+                <structRect l="492" r="588" t="84" b="144"/>
+                <panelRect l="296" r="297" t="232" b="233"/>
+            </module>
+            <module type="My RectangleX" handle="1311813199">
+                <structRect l="660" r="780" t="180" b="372"/>
+                <panelRect l="136" r="312" t="256" b="432"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="371863531" lineType="1" fMod="195634496" tMod="1879298162" fPlg="7" tPlg="9"/>
+            <line type="Line" handle="1692379112" lineType="1" fMod="195634496" tMod="1879298162" fPlg="8" tPlg="10"/>
+            <line type="Line" handle="1659235348" lineType="1" fMod="195634496" tMod="1879298162" fPlg="9" tPlg="11"/>
+            <line type="Line" handle="742788597" lineType="1" fMod="195634496" tMod="1879298162" fPlg="10" tPlg="12"/>
+            <line type="Line" handle="78790683" lineType="1" fMod="1879298162" tMod="1311813199" fPlg="8" tPlg="10"/>
+            <line type="Line" handle="1496906110" lineType="1" fMod="772565201" tMod="509919065" fPlg="7" tPlg="9"/>
+            <line type="Line" handle="1399803658" lineType="1" fMod="772565201" tMod="509919065" fPlg="8" tPlg="10"/>
+            <line type="Line" handle="1040693942" lineType="1" fMod="772565201" tMod="509919065" fPlg="9" tPlg="11"/>
+            <line type="Line" handle="1124368563" lineType="1" fMod="772565201" tMod="509919065" fPlg="10" tPlg="12"/>
+            <line type="Line" handle="2065680708" lineType="1" fMod="509919065" tMod="1311813199" fPlg="8" tPlg="11"/>
+        </lines>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="923" r="1434" t="2" b="554"/>
+        <StructLocation l="0" r="904" t="0" b="560"/>
+        <PanelScroll x="1" y="1"/>
+        <StructScroll x="1" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="448" t="16" b="464"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="ColorKnob2" name="Color Knob2" flags="384" category="mx/Sub-Controls" helpUrl="ColorKnob.htm">
+            <Parameters>
+                <Parameter id="0" datatype="float" name=""/>
+                <Parameter id="2" datatype="string" name=""/>
+            </Parameters>
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Scale In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Scaled" datatype="float" direction="out"/>
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Hint" datatype="string" isMinimised="true"/>
+                <Pin name="Hex Out" datatype="string" direction="out"/>
+                <Pin name="ColorAdj" datatype="bool" private="true"/>
+                <Pin name="Circle Size" datatype="float" default="1" isMinimised="true"/>
+                <Pin name="Hex" datatype="string" private="true" parameterId="2"/>
+                <Pin name="Line Thickness" datatype="float" default="5"/>
+                <Pin name="Line Color" datatype="string" default="FFFFFFFF"/>
+                <Pin name="Background Color" datatype="string" default="FF000000" isMinimised="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Shift Key" datatype="bool" private="true"/>
+                <Pin name="Mouse Over" datatype="bool" private="true"/>
+                <Pin name="Reset Value" datatype="float" default="0.5" isMinimised="true"/>
+                <Pin name="CapStyle" datatype="string" default="Triangle"/>
+                <Pin name="DashStyle" datatype="int" metadata="Solid,Dash,Dot,DashDot,DashDotDot,Custom"/>
+                <Pin name="Style" datatype="int" metadata="Flat,Square,Round,Triangle"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="My RectangleX" name="RectangleX" flags="384" category="mx/Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="OnPointerDown" datatype="float" private="true"/>
+                <Pin name="Value (+Shift)" datatype="float"/>
+                <Pin name="Value (+Ctrl)" datatype="float"/>
+                <Pin name="OnPointerUp" datatype="float" private="true"/>
+                <Pin name="OnPointerUpALT" datatype="float" private="true"/>
+                <Pin name="Corner Radius" datatype="float" default="100" isMinimised="true"/>
+                <Pin name="Top Left" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Top Right" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Bottom Left" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Bottom Right" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Top Color" datatype="string" default="FF9A9AAA"/>
+                <Pin name="Bottom Color" datatype="string" default="FF858595"/>
+                <Pin name="MinShift" datatype="float" isMinimised="true"/>
+                <Pin name="MaxShift" datatype="float" default="255" isMinimised="true"/>
+                <Pin name="MinCtrl" datatype="float" default="-120" isMinimised="true"/>
+                <Pin name="MaxCtrl" datatype="float" default="255" isMinimised="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="MouseDown+Shift" datatype="bool"/>
+                <Pin name="MouseDown+Ctrl" datatype="bool"/>
+                <Pin name="Hint" datatype="string" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="RGB to Hex" name="RGB to Hex" flags="384" category="mx/Conversion">
+            <Parameters>
+                <Parameter id="0" datatype="float" name=""/>
+                <Parameter id="1" datatype="float" name=""/>
+                <Parameter id="2" datatype="float" name=""/>
+                <Parameter id="3" datatype="float" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Alpha(0-255)" datatype="float" default="255"/>
+                <Pin name="R(0-255)" datatype="float"/>
+                <Pin name="G(0-255)" datatype="float"/>
+                <Pin name="B(0-255)" datatype="float"/>
+                <Pin name="Rout" datatype="float" direction="out" private="true" parameterId="0"/>
+                <Pin name="Gout" datatype="float" direction="out" private="true" parameterId="1"/>
+                <Pin name="Bout" datatype="float" direction="out" private="true" parameterId="2"/>
+                <Pin name="Alpha2Gui" datatype="float" direction="out" private="true" parameterId="3"/>
+            </Audio>
+            <GUI>
+                <Pin name="Rin" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Gin" datatype="float" private="true" parameterId="1"/>
+                <Pin name="Bin" datatype="float" private="true" parameterId="2"/>
+                <Pin name="AlphaFromDSP" datatype="float" private="true" parameterId="3"/>
+                <Pin name="Alpha" datatype="string" default="ff" private="true"/>
+                <Pin name="R" datatype="string" direction="out" private="true"/>
+                <Pin name="G" datatype="string" direction="out" private="true"/>
+                <Pin name="B" datatype="string" direction="out" private="true"/>
+                <Pin name="#Hex" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Float" name="PatchMemory Float3" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="float" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="float" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="float" direction="out"/>
+                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+    </PluginList>
+</Document>

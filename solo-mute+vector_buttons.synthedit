@@ -152,229 +152,229 @@
                         </plugs>
                         <structRect l="24" r="108" t="24" b="108"/>
                     </module>
-                    <module type="Container" handle="444327659" name="solo / mute" skin="resized">
+                    <module type="Container" handle="444327659" name="solo / mute" ViewOpenFlags="256" skin="resized">
                         <plugs>
                             <plug default="1" idx="1"/>
                             <plug default="1"/>
-                            <plug name="Input 1" idx="7"/>
-                            <plug name="Input 2"/>
-                            <plug name="Input 3"/>
-                            <plug name="Input 4"/>
-                            <plug name="Output 1" direction="1"/>
-                            <plug name="Output 2" direction="1"/>
-                            <plug name="Output 3" direction="1"/>
-                            <plug name="Output 4" direction="1"/>
-                            <plug name="Volts Out5" direction="1"/>
-                            <plug name="Volts Out6" direction="1"/>
-                            <plug name="Volts Out7" direction="1"/>
-                            <plug name="Volts Out8" direction="1"/>
+                            <plug name="Audio In1" idx="7"/>
+                            <plug name="Audio In2"/>
+                            <plug name="Audio In3"/>
+                            <plug name="Audio In4"/>
+                            <plug name="Audio In5"/>
+                            <plug name="Audio In6"/>
+                            <plug name="Audio In7"/>
+                            <plug name="Audio In8"/>
+                            <plug name="Audio Out1" direction="1"/>
+                            <plug name="Audio Out2" direction="1"/>
+                            <plug name="Audio Out3" direction="1"/>
+                            <plug name="Audio Out4" direction="1"/>
+                            <plug name="Audio Out5" direction="1"/>
+                            <plug name="Audio Out6" direction="1"/>
+                            <plug name="Audio Out7" direction="1"/>
+                            <plug name="Audio Out8" direction="1"/>
                             <plug/>
                         </plugs>
-                        <structRect l="132" r="288" t="120" b="588"/>
+                        <structRect l="132" r="288" t="120" b="636"/>
                         <modules>
+                            <module type="IO Mod" handle="921002849">
+                                <plugs>
+                                    <plug name="Audio Out1" tiedtomod="444327659" tiedtopin="15"/>
+                                    <plug name="Audio Out2" tiedtomod="444327659" tiedtopin="16"/>
+                                    <plug name="Audio Out3" tiedtomod="444327659" tiedtopin="17"/>
+                                    <plug name="Audio Out4" tiedtomod="444327659" tiedtopin="18"/>
+                                    <plug name="Audio Out5" tiedtomod="444327659" tiedtopin="19"/>
+                                    <plug name="Audio Out6" tiedtomod="444327659" tiedtopin="20"/>
+                                    <plug name="Audio Out7" tiedtomod="444327659" tiedtopin="21"/>
+                                    <plug name="Audio Out8" tiedtomod="444327659" tiedtopin="22"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="204" r="288" t="276" b="384"/>
+                            </module>
+                            <module type="IO Mod" handle="84918653">
+                                <plugs>
+                                    <plug name="Audio In1" direction="1" tiedtomod="444327659" tiedtopin="7"/>
+                                    <plug name="Audio In2" direction="1" tiedtomod="444327659" tiedtopin="8"/>
+                                    <plug name="Audio In3" direction="1" tiedtomod="444327659" tiedtopin="9"/>
+                                    <plug name="Audio In4" direction="1" tiedtomod="444327659" tiedtopin="10"/>
+                                    <plug name="Audio In5" direction="1" tiedtomod="444327659" tiedtopin="11"/>
+                                    <plug name="Audio In6" direction="1" tiedtomod="444327659" tiedtopin="12"/>
+                                    <plug name="Audio In7" direction="1" tiedtomod="444327659" tiedtopin="13"/>
+                                    <plug name="Audio In8" direction="1" tiedtomod="444327659" tiedtopin="14"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="24" r="96" t="180" b="288"/>
+                            </module>
                             <module type="Button" handle="1953104561">
                                 <plugs>
-                                    <plug default="ff00ff00" idx="11"/>
+                                    <plug default="ff00ff00" idx="12"/>
                                     <plug default="ff00ff00"/>
                                     <plug default="solo"/>
                                     <plug default="ff000000"/>
                                 </plugs>
-                                <structRect l="576" r="660" t="636" b="677"/>
+                                <structRect l="564" r="648" t="648" b="701"/>
                                 <panelRect l="88" r="128" t="296" b="320"/>
                             </module>
                             <module type="Button" handle="1630677084">
                                 <plugs>
-                                    <plug default="mute" idx="13"/>
+                                    <plug default="mute" idx="14"/>
                                     <plug default="FFFFFFFF"/>
                                 </plugs>
-                                <structRect l="492" r="576" t="636" b="677"/>
+                                <structRect l="480" r="564" t="648" b="701"/>
                                 <panelRect l="40" r="80" t="296" b="320"/>
                             </module>
                             <module type="Button" handle="547924626">
                                 <plugs>
-                                    <plug default="ff00ff00" idx="11"/>
+                                    <plug default="ff00ff00" idx="12"/>
                                     <plug default="ff00ff00"/>
                                     <plug default="solo"/>
                                     <plug default="ff000000"/>
                                 </plugs>
-                                <structRect l="576" r="660" t="564" b="605"/>
+                                <structRect l="564" r="648" t="576" b="629"/>
                                 <panelRect l="88" r="128" t="264" b="288"/>
                             </module>
                             <module type="Button" handle="461025194">
                                 <plugs>
-                                    <plug default="mute" idx="13"/>
+                                    <plug default="mute" idx="14"/>
                                     <plug default="FFFFFFFF"/>
                                 </plugs>
-                                <structRect l="492" r="576" t="564" b="605"/>
+                                <structRect l="480" r="564" t="576" b="629"/>
                                 <panelRect l="40" r="80" t="264" b="288"/>
                             </module>
                             <module type="Button" handle="1921589360">
                                 <plugs>
-                                    <plug default="ff00ff00" idx="11"/>
+                                    <plug default="ff00ff00" idx="12"/>
                                     <plug default="ff00ff00"/>
                                     <plug default="solo"/>
                                     <plug default="ff000000"/>
                                 </plugs>
-                                <structRect l="576" r="660" t="492" b="533"/>
+                                <structRect l="564" r="648" t="504" b="557"/>
                                 <panelRect l="88" r="128" t="232" b="256"/>
                             </module>
                             <module type="Button" handle="778831689">
                                 <plugs>
-                                    <plug default="mute" idx="13"/>
+                                    <plug default="mute" idx="14"/>
                                     <plug default="FFFFFFFF"/>
                                 </plugs>
-                                <structRect l="492" r="576" t="492" b="533"/>
+                                <structRect l="480" r="564" t="504" b="557"/>
                                 <panelRect l="40" r="80" t="232" b="256"/>
                             </module>
                             <module type="Button" handle="1135735337">
                                 <plugs>
-                                    <plug default="ff00ff00" idx="11"/>
+                                    <plug default="ff00ff00" idx="12"/>
                                     <plug default="ff00ff00"/>
                                     <plug default="solo"/>
                                     <plug default="ff000000"/>
                                 </plugs>
-                                <structRect l="576" r="660" t="420" b="461"/>
+                                <structRect l="564" r="648" t="432" b="485"/>
                                 <panelRect l="88" r="128" t="200" b="224"/>
                             </module>
                             <module type="Button" handle="2117911711">
                                 <plugs>
-                                    <plug default="mute" idx="13"/>
+                                    <plug default="mute" idx="14"/>
                                     <plug default="FFFFFFFF"/>
                                 </plugs>
-                                <structRect l="492" r="576" t="420" b="461"/>
+                                <structRect l="480" r="564" t="432" b="485"/>
                                 <panelRect l="40" r="80" t="200" b="224"/>
                             </module>
                             <module type="Button" handle="309459247">
                                 <plugs>
-                                    <plug default="ff00ff00" idx="11"/>
+                                    <plug default="ff00ff00" idx="12"/>
                                     <plug default="ff00ff00"/>
                                     <plug default="solo"/>
                                     <plug default="ff000000"/>
                                 </plugs>
-                                <structRect l="576" r="660" t="348" b="389"/>
+                                <structRect l="564" r="648" t="360" b="413"/>
                                 <panelRect l="88" r="128" t="168" b="192"/>
                             </module>
                             <module type="Button" handle="11063405">
                                 <plugs>
-                                    <plug default="mute" idx="13"/>
+                                    <plug default="mute" idx="14"/>
                                     <plug default="FFFFFFFF"/>
                                 </plugs>
-                                <structRect l="492" r="576" t="348" b="389"/>
+                                <structRect l="480" r="564" t="360" b="413"/>
                                 <panelRect l="40" r="80" t="168" b="192"/>
                             </module>
                             <module type="Button" handle="1465678299">
                                 <plugs>
-                                    <plug default="ff00ff00" idx="11"/>
+                                    <plug default="ff00ff00" idx="12"/>
                                     <plug default="ff00ff00"/>
                                     <plug default="solo"/>
                                     <plug default="ff000000"/>
                                 </plugs>
-                                <structRect l="576" r="660" t="276" b="317"/>
+                                <structRect l="564" r="648" t="288" b="341"/>
                                 <panelRect l="88" r="128" t="136" b="160"/>
                             </module>
                             <module type="Button" handle="908420614">
                                 <plugs>
-                                    <plug default="mute" idx="13"/>
+                                    <plug default="mute" idx="14"/>
                                     <plug default="FFFFFFFF"/>
                                 </plugs>
-                                <structRect l="492" r="576" t="276" b="317"/>
+                                <structRect l="480" r="564" t="288" b="341"/>
                                 <panelRect l="40" r="80" t="136" b="160"/>
                             </module>
                             <module type="Button" handle="1547780090">
                                 <plugs>
-                                    <plug default="ff00ff00" idx="11"/>
+                                    <plug default="ff00ff00" idx="12"/>
                                     <plug default="ff00ff00"/>
                                     <plug default="solo"/>
                                     <plug default="ff000000"/>
                                 </plugs>
-                                <structRect l="576" r="660" t="204" b="245"/>
+                                <structRect l="564" r="648" t="216" b="269"/>
                                 <panelRect l="88" r="128" t="104" b="128"/>
                             </module>
                             <module type="Button" handle="1936645260">
                                 <plugs>
-                                    <plug default="mute" idx="13"/>
+                                    <plug default="mute" idx="14"/>
                                     <plug default="FFFFFFFF"/>
                                 </plugs>
-                                <structRect l="492" r="576" t="204" b="245"/>
+                                <structRect l="480" r="564" t="216" b="269"/>
                                 <panelRect l="40" r="80" t="104" b="128"/>
                             </module>
                             <module type="Button" handle="2013949642">
                                 <plugs>
-                                    <plug default="ff00ff00" idx="11"/>
+                                    <plug default="ff00ff00" idx="12"/>
                                     <plug default="ff00ff00"/>
                                     <plug default="solo"/>
                                 </plugs>
-                                <structRect l="576" r="660" t="132" b="173"/>
+                                <structRect l="564" r="648" t="144" b="197"/>
                                 <panelRect l="88" r="128" t="72" b="96"/>
                             </module>
                             <module type="Button" handle="1799327450">
                                 <plugs>
-                                    <plug default="mute" idx="13"/>
+                                    <plug default="mute" idx="14"/>
                                     <plug default="FFFFFFFF"/>
                                 </plugs>
-                                <structRect l="492" r="576" t="132" b="173"/>
+                                <structRect l="480" r="564" t="144" b="197"/>
                                 <panelRect l="40" r="80" t="72" b="96"/>
                             </module>
                             <module type="Button" handle="1814165271">
                                 <plugs>
-                                    <plug default="ff00ff00" idx="11"/>
+                                    <plug default="ff00ff00" idx="12"/>
                                     <plug default="ff00ff00"/>
                                     <plug default="Unsolo"/>
                                     <plug default="ff000000"/>
                                 </plugs>
-                                <structRect l="576" r="660" t="48" b="89"/>
+                                <structRect l="564" r="648" t="60" b="113"/>
                                 <panelRect l="88" r="152" t="24" b="48"/>
                             </module>
                             <module type="Button" handle="1334850829">
                                 <plugs>
-                                    <plug default="Unmute" idx="13"/>
+                                    <plug default="Unmute" idx="14"/>
                                     <plug default="FFFFFFFF"/>
                                 </plugs>
-                                <structRect l="492" r="576" t="48" b="89"/>
+                                <structRect l="480" r="564" t="60" b="113"/>
                                 <panelRect l="16" r="80" t="24" b="48"/>
                             </module>
                             <module type="SOLOMUTE8" handle="1953152388">
-                                <structRect l="276" r="420" t="84" b="612"/>
+                                <structRect l="288" r="432" t="84" b="612"/>
                                 <panelRect l="352" r="352" t="208" b="208"/>
                             </module>
                             <module type="mxSoloMute4" handle="765112238">
                                 <structRect l="108" r="192" t="84" b="372"/>
                                 <panelRect l="400" r="400" t="192" b="192"/>
                             </module>
-                            <module type="IO Mod" handle="1336761261">
-                                <plugs>
-                                    <plug name="Output 1" tiedtomod="444327659" tiedtopin="11"/>
-                                    <plug name="Output 2" tiedtomod="444327659" tiedtopin="12"/>
-                                    <plug name="Output 3" tiedtomod="444327659" tiedtopin="13"/>
-                                    <plug name="Output 4" tiedtomod="444327659" tiedtopin="14"/>
-                                    <plug name="Volts Out5" tiedtomod="444327659" tiedtopin="15"/>
-                                    <plug name="Volts Out6" tiedtomod="444327659" tiedtopin="16"/>
-                                    <plug name="Volts Out7" tiedtomod="444327659" tiedtopin="17"/>
-                                    <plug name="Volts Out8" tiedtomod="444327659" tiedtopin="18"/>
-                                    <plug/>
-                                </plugs>
-                                <structRect l="204" r="288" t="276" b="384"/>
-                            </module>
-                            <module type="IO Mod" handle="1726832146">
-                                <plugs>
-                                    <plug name="Input 1" direction="1" tiedtomod="444327659" tiedtopin="7"/>
-                                    <plug name="Input 2" direction="1" tiedtomod="444327659" tiedtopin="8"/>
-                                    <plug name="Input 3" direction="1" tiedtomod="444327659" tiedtopin="9"/>
-                                    <plug name="Input 4" direction="1" tiedtomod="444327659" tiedtopin="10"/>
-                                    <plug/>
-                                </plugs>
-                                <structRect l="24" r="84" t="204" b="264"/>
-                            </module>
                         </modules>
                         <lines>
-                            <line type="Line" handle="304793609" lineType="1" fMod="1726832146" tMod="765112238" fPlg="3" tPlg="31"/>
-                            <line type="Line" handle="716895253" lineType="1" fMod="1726832146" tMod="765112238" fPlg="2" tPlg="30"/>
-                            <line type="Line" handle="897898086" lineType="1" fMod="1726832146" tMod="765112238" fPlg="1" tPlg="29"/>
-                            <line type="Line" handle="1862682235" lineType="1" fMod="1726832146" tMod="765112238" tPlg="28"/>
-                            <line type="Line" handle="2010171159" lineType="1" fMod="1726832146" tMod="765112238" fPlg="3" tPlg="27"/>
-                            <line type="Line" handle="1339799884" lineType="1" fMod="1726832146" tMod="765112238" fPlg="2" tPlg="26"/>
-                            <line type="Line" handle="768425708" lineType="1" fMod="1726832146" tMod="765112238" fPlg="1" tPlg="25"/>
-                            <line type="Line" handle="701948694" lineType="1" fMod="1726832146" tMod="765112238" tPlg="24"/>
                             <line type="Line" handle="657192318" lineType="1" fMod="765112238" tMod="1953152388" fPlg="15" tPlg="7"/>
                             <line type="Line" handle="1279001151" lineType="1" fMod="765112238" tMod="1953152388" fPlg="14" tPlg="6"/>
                             <line type="Line" handle="638608259" lineType="1" fMod="765112238" tMod="1953152388" fPlg="13" tPlg="5"/>
@@ -383,77 +383,89 @@
                             <line type="Line" handle="1027970894" lineType="1" fMod="765112238" tMod="1953152388" fPlg="10" tPlg="2"/>
                             <line type="Line" handle="1632066159" lineType="1" fMod="765112238" tMod="1953152388" fPlg="9" tPlg="1"/>
                             <line type="Line" handle="1303756714" lineType="1" fMod="765112238" tMod="1953152388" fPlg="8"/>
-                            <line type="Line" handle="156825011" lineType="1" fMod="765112238" tMod="1336761261" fPlg="39" tPlg="7"/>
-                            <line type="Line" handle="579460366" lineType="1" fMod="765112238" tMod="1336761261" fPlg="38" tPlg="6"/>
-                            <line type="Line" handle="1195806849" lineType="1" fMod="765112238" tMod="1336761261" fPlg="37" tPlg="5"/>
-                            <line type="Line" handle="855619343" lineType="1" fMod="765112238" tMod="1336761261" fPlg="36" tPlg="4"/>
-                            <line type="Line" handle="226532125" lineType="1" fMod="765112238" tMod="1336761261" fPlg="35" tPlg="3"/>
-                            <line type="Line" handle="379132029" lineType="1" fMod="765112238" tMod="1336761261" fPlg="33" tPlg="1"/>
-                            <line type="Line" handle="1656432180" lineType="1" fMod="765112238" tMod="1336761261" fPlg="34" tPlg="2"/>
-                            <line type="Line" handle="882201601" lineType="1" fMod="765112238" tMod="1336761261" fPlg="32"/>
-                            <line type="Line" handle="597535675" lineType="1" fMod="1953152388" tMod="1334850829" fPlg="8" tPlg="5"/>
-                            <line type="Line" handle="791705068" lineType="1" fMod="1953152388" tMod="1334850829" fPlg="9" tPlg="6"/>
-                            <line type="Line" handle="2000062852" lineType="1" fMod="1953152388" tMod="1814165271" fPlg="10" tPlg="5"/>
-                            <line type="Line" handle="611610713" lineType="1" fMod="1953152388" tMod="1814165271" fPlg="11" tPlg="6"/>
-                            <line type="Line" handle="1822751990" lineType="1" fMod="1953152388" tMod="1799327450" fPlg="12" tPlg="5"/>
-                            <line type="Line" handle="1508808053" lineType="1" fMod="1953152388" tMod="1799327450" fPlg="13" tPlg="6"/>
-                            <line type="Line" handle="73031414" lineType="1" fMod="1953152388" tMod="2013949642" fPlg="14" tPlg="5"/>
-                            <line type="Line" handle="1278720467" lineType="1" fMod="1953152388" tMod="2013949642" fPlg="15" tPlg="6"/>
-                            <line type="Line" handle="169468547" lineType="1" fMod="1953152388" tMod="1936645260" fPlg="16" tPlg="5"/>
-                            <line type="Line" handle="651020814" lineType="1" fMod="1953152388" tMod="1936645260" fPlg="17" tPlg="6"/>
-                            <line type="Line" handle="553636898" lineType="1" fMod="1953152388" tMod="1547780090" fPlg="18" tPlg="5"/>
-                            <line type="Line" handle="1320200090" lineType="1" fMod="1953152388" tMod="1547780090" fPlg="19" tPlg="6"/>
-                            <line type="Line" handle="26099451" lineType="1" fMod="1953152388" tMod="908420614" fPlg="20" tPlg="5"/>
-                            <line type="Line" handle="1421182079" lineType="1" fMod="1953152388" tMod="908420614" fPlg="21" tPlg="6"/>
-                            <line type="Line" handle="1838684702" lineType="1" fMod="1953152388" tMod="1465678299" fPlg="22" tPlg="5"/>
-                            <line type="Line" handle="1797603379" lineType="1" fMod="1953152388" tMod="1465678299" fPlg="23" tPlg="6"/>
-                            <line type="Line" handle="1943429727" lineType="1" fMod="1953152388" tMod="11063405" fPlg="24" tPlg="5"/>
-                            <line type="Line" handle="620716469" lineType="1" fMod="1953152388" tMod="11063405" fPlg="25" tPlg="6"/>
-                            <line type="Line" handle="1251484859" lineType="1" fMod="1953152388" tMod="309459247" fPlg="26" tPlg="5"/>
-                            <line type="Line" handle="1710638679" lineType="1" fMod="1953152388" tMod="309459247" fPlg="27" tPlg="6"/>
-                            <line type="Line" handle="1019950114" lineType="1" fMod="1953152388" tMod="2117911711" fPlg="28" tPlg="5"/>
-                            <line type="Line" handle="801861772" lineType="1" fMod="1953152388" tMod="2117911711" fPlg="29" tPlg="6"/>
-                            <line type="Line" handle="746674278" lineType="1" fMod="1953152388" tMod="1135735337" fPlg="30" tPlg="5"/>
-                            <line type="Line" handle="1496025737" lineType="1" fMod="1953152388" tMod="1135735337" fPlg="31" tPlg="6"/>
-                            <line type="Line" handle="856420574" lineType="1" fMod="1953152388" tMod="778831689" fPlg="32" tPlg="5"/>
-                            <line type="Line" handle="1217322804" lineType="1" fMod="1953152388" tMod="778831689" fPlg="33" tPlg="6"/>
-                            <line type="Line" handle="906964843" lineType="1" fMod="1953152388" tMod="1921589360" fPlg="34" tPlg="5"/>
-                            <line type="Line" handle="1498308711" lineType="1" fMod="1953152388" tMod="1921589360" fPlg="35" tPlg="6"/>
-                            <line type="Line" handle="578430761" lineType="1" fMod="1953152388" tMod="461025194" fPlg="36" tPlg="5"/>
-                            <line type="Line" handle="1996369584" lineType="1" fMod="1953152388" tMod="461025194" fPlg="37" tPlg="6"/>
-                            <line type="Line" handle="264326531" lineType="1" fMod="1953152388" tMod="547924626" fPlg="38" tPlg="5"/>
-                            <line type="Line" handle="1105631074" lineType="1" fMod="1953152388" tMod="547924626" fPlg="39" tPlg="6"/>
-                            <line type="Line" handle="153255610" lineType="1" fMod="1953152388" tMod="1630677084" fPlg="40" tPlg="5"/>
-                            <line type="Line" handle="1867870042" lineType="1" fMod="1953152388" tMod="1630677084" fPlg="41" tPlg="6"/>
-                            <line type="Line" handle="758083440" lineType="1" fMod="1953152388" tMod="1953104561" fPlg="42" tPlg="5"/>
-                            <line type="Line" handle="324387360" lineType="1" fMod="1953152388" tMod="1953104561" fPlg="43" tPlg="6"/>
+                            <line type="Line" handle="270903273" lineType="1" fMod="1953152388" tMod="1334850829" fPlg="8" tPlg="5"/>
+                            <line type="Line" handle="743964400" lineType="1" fMod="1953152388" tMod="1334850829" fPlg="9" tPlg="7"/>
+                            <line type="Line" handle="16247195" lineType="1" fMod="1953152388" tMod="1814165271" fPlg="10" tPlg="5"/>
+                            <line type="Line" handle="436818690" lineType="1" fMod="1953152388" tMod="1814165271" fPlg="11" tPlg="7"/>
+                            <line type="Line" handle="90946199" lineType="1" fMod="1953152388" tMod="1799327450" fPlg="12" tPlg="5"/>
+                            <line type="Line" handle="607397461" lineType="1" fMod="1953152388" tMod="1799327450" fPlg="13" tPlg="7"/>
+                            <line type="Line" handle="1529795063" lineType="1" fMod="1953152388" tMod="2013949642" fPlg="14" tPlg="5"/>
+                            <line type="Line" handle="1364800331" lineType="1" fMod="1953152388" tMod="2013949642" fPlg="15" tPlg="7"/>
+                            <line type="Line" handle="1582208656" lineType="1" fMod="1953152388" tMod="1936645260" fPlg="16" tPlg="5"/>
+                            <line type="Line" handle="1685611868" lineType="1" fMod="1953152388" tMod="1936645260" fPlg="17" tPlg="7"/>
+                            <line type="Line" handle="947835057" lineType="1" fMod="1953152388" tMod="1547780090" fPlg="18" tPlg="5"/>
+                            <line type="Line" handle="806937112" lineType="1" fMod="1953152388" tMod="1547780090" fPlg="19" tPlg="7"/>
+                            <line type="Line" handle="2014625742" lineType="1" fMod="1953152388" tMod="908420614" fPlg="20" tPlg="5"/>
+                            <line type="Line" handle="1349721334" lineType="1" fMod="1953152388" tMod="908420614" fPlg="21" tPlg="7"/>
+                            <line type="Line" handle="1484418026" lineType="1" fMod="1953152388" tMod="1465678299" fPlg="22" tPlg="5"/>
+                            <line type="Line" handle="1403167244" lineType="1" fMod="1953152388" tMod="1465678299" fPlg="23" tPlg="7"/>
+                            <line type="Line" handle="676969427" lineType="1" fMod="1953152388" tMod="11063405" fPlg="24" tPlg="5"/>
+                            <line type="Line" handle="1880037965" lineType="1" fMod="1953152388" tMod="11063405" fPlg="25" tPlg="7"/>
+                            <line type="Line" handle="1388755106" lineType="1" fMod="1953152388" tMod="309459247" fPlg="26" tPlg="5"/>
+                            <line type="Line" handle="748196974" lineType="1" fMod="1953152388" tMod="309459247" fPlg="27" tPlg="7"/>
+                            <line type="Line" handle="302723769" lineType="1" fMod="1953152388" tMod="2117911711" fPlg="28" tPlg="5"/>
+                            <line type="Line" handle="1300319211" lineType="1" fMod="1953152388" tMod="2117911711" fPlg="29" tPlg="7"/>
+                            <line type="Line" handle="385812965" lineType="1" fMod="1953152388" tMod="1135735337" fPlg="30" tPlg="5"/>
+                            <line type="Line" handle="599446731" lineType="1" fMod="1953152388" tMod="1135735337" fPlg="31" tPlg="7"/>
+                            <line type="Line" handle="1434492733" lineType="1" fMod="1953152388" tMod="778831689" fPlg="32" tPlg="5"/>
+                            <line type="Line" handle="936000775" lineType="1" fMod="1953152388" tMod="778831689" fPlg="33" tPlg="7"/>
+                            <line type="Line" handle="640922964" lineType="1" fMod="1953152388" tMod="1921589360" fPlg="34" tPlg="5"/>
+                            <line type="Line" handle="1342976562" lineType="1" fMod="1953152388" tMod="1921589360" fPlg="35" tPlg="7"/>
+                            <line type="Line" handle="449171086" lineType="1" fMod="1953152388" tMod="461025194" fPlg="36" tPlg="5"/>
+                            <line type="Line" handle="942592194" lineType="1" fMod="1953152388" tMod="461025194" fPlg="37" tPlg="7"/>
+                            <line type="Line" handle="1716599502" lineType="1" fMod="1953152388" tMod="547924626" fPlg="38" tPlg="5"/>
+                            <line type="Line" handle="1318041547" lineType="1" fMod="1953152388" tMod="547924626" fPlg="39" tPlg="7"/>
+                            <line type="Line" handle="1748657218" lineType="1" fMod="1953152388" tMod="1630677084" fPlg="40" tPlg="5"/>
+                            <line type="Line" handle="440341096" lineType="1" fMod="1953152388" tMod="1630677084" fPlg="41" tPlg="7"/>
+                            <line type="Line" handle="1828384417" lineType="1" fMod="1953152388" tMod="1953104561" fPlg="42" tPlg="5"/>
+                            <line type="Line" handle="661268601" lineType="1" fMod="1953152388" tMod="1953104561" fPlg="43" tPlg="7"/>
+                            <line type="Line" handle="91388355" lineType="1" fMod="84918653" tMod="765112238" tPlg="24"/>
+                            <line type="Line" handle="1393383045" lineType="1" fMod="84918653" tMod="765112238" fPlg="1" tPlg="25"/>
+                            <line type="Line" handle="1957133246" lineType="1" fMod="84918653" tMod="765112238" fPlg="2" tPlg="26"/>
+                            <line type="Line" handle="445656373" lineType="1" fMod="84918653" tMod="765112238" fPlg="3" tPlg="27"/>
+                            <line type="Line" handle="1873881118" lineType="1" fMod="84918653" tMod="765112238" fPlg="4" tPlg="28"/>
+                            <line type="Line" handle="1862464792" lineType="1" fMod="84918653" tMod="765112238" fPlg="5" tPlg="29"/>
+                            <line type="Line" handle="1518866374" lineType="1" fMod="84918653" tMod="765112238" fPlg="6" tPlg="30"/>
+                            <line type="Line" handle="1509486187" lineType="1" fMod="84918653" tMod="765112238" fPlg="7" tPlg="31"/>
+                            <line type="Line" handle="1972678937" lineType="1" fMod="765112238" tMod="921002849" fPlg="32"/>
+                            <line type="Line" handle="830824491" lineType="1" fMod="765112238" tMod="921002849" fPlg="33" tPlg="1"/>
+                            <line type="Line" handle="597262327" lineType="1" fMod="765112238" tMod="921002849" fPlg="34" tPlg="2"/>
+                            <line type="Line" handle="957667972" lineType="1" fMod="765112238" tMod="921002849" fPlg="35" tPlg="3"/>
+                            <line type="Line" handle="269374877" lineType="1" fMod="765112238" tMod="921002849" fPlg="36" tPlg="4"/>
+                            <line type="Line" handle="1136095903" lineType="1" fMod="765112238" tMod="921002849" fPlg="37" tPlg="5"/>
+                            <line type="Line" handle="629399994" lineType="1" fMod="765112238" tMod="921002849" fPlg="38" tPlg="6"/>
+                            <line type="Line" handle="2106073202" lineType="1" fMod="765112238" tMod="921002849" fPlg="39" tPlg="7"/>
                         </lines>
                         <PanelWndPosition l="32" r="168" t="104" b="400"/>
                         <PanelLocation l="763" r="1246" t="195" b="734"/>
-                        <StructLocation l="370" r="1128" t="13" b="827"/>
+                        <StructLocation l="742" r="1500" t="24" b="838"/>
                         <PanelScroll x="0" y="0"/>
-                        <StructScroll x="1" y="0"/>
+                        <StructScroll x="0" y="0"/>
                         <PanelWndOffset cx="8" cy="80"/>
                         <panel_rect l="16" r="280" t="16" b="432"/>
                     </module>
                 </modules>
                 <lines>
-                    <line type="Line" handle="1231654547" fMod="648956688" tMod="444327659" fPlg="3" tPlg="7"/>
-                    <line type="Line" handle="1106043434" fMod="1454167880" tMod="444327659" fPlg="3" tPlg="8"/>
-                    <line type="Line" handle="968439230" fMod="116875108" tMod="444327659" fPlg="3" tPlg="9"/>
-                    <line type="Line" handle="237230454" fMod="1342960900" tMod="444327659" fPlg="3" tPlg="10"/>
-                    <line type="Line" handle="526639367" lineType="1" fMod="444327659" tMod="655257005" fPlg="18" tPlg="6"/>
-                    <line type="Line" handle="410998953" lineType="1" fMod="444327659" tMod="1771735339" fPlg="17" tPlg="6"/>
-                    <line type="Line" handle="1221916873" lineType="1" fMod="444327659" tMod="2047790741" fPlg="16" tPlg="6"/>
-                    <line type="Line" handle="775118314" lineType="1" fMod="444327659" tMod="234587401" fPlg="15" tPlg="6"/>
-                    <line type="Line" handle="1321542740" lineType="1" fMod="444327659" tMod="1487249638" fPlg="11" tPlg="6"/>
-                    <line type="Line" handle="1782402855" lineType="1" fMod="444327659" tMod="1488041776" fPlg="12" tPlg="6"/>
-                    <line type="Line" handle="259836110" lineType="1" fMod="444327659" tMod="2055882320" fPlg="13" tPlg="6"/>
-                    <line type="Line" handle="1737779840" lineType="1" fMod="444327659" tMod="391678904" fPlg="14" tPlg="6"/>
+                    <line type="Line" handle="948174774" lineType="1" fMod="648956688" tMod="444327659" fPlg="3" tPlg="7"/>
+                    <line type="Line" handle="535353475" lineType="1" fMod="1454167880" tMod="444327659" fPlg="3" tPlg="8"/>
+                    <line type="Line" handle="293619351" lineType="1" fMod="116875108" tMod="444327659" fPlg="3" tPlg="9"/>
+                    <line type="Line" handle="1141283410" lineType="1" fMod="1342960900" tMod="444327659" fPlg="3" tPlg="10"/>
+                    <line type="Line" handle="1114826959" lineType="1" fMod="648956688" tMod="444327659" fPlg="3" tPlg="11"/>
+                    <line type="Line" handle="1492408944" lineType="1" fMod="1454167880" tMod="444327659" fPlg="3" tPlg="12"/>
+                    <line type="Line" handle="1357138547" lineType="1" fMod="116875108" tMod="444327659" fPlg="3" tPlg="13"/>
+                    <line type="Line" handle="1027452660" lineType="1" fMod="1342960900" tMod="444327659" fPlg="3" tPlg="14"/>
+                    <line type="Line" handle="1040397686" lineType="1" fMod="444327659" tMod="1487249638" fPlg="15" tPlg="7"/>
+                    <line type="Line" handle="695350423" lineType="1" fMod="444327659" tMod="1488041776" fPlg="16" tPlg="7"/>
+                    <line type="Line" handle="1032189059" lineType="1" fMod="444327659" tMod="2055882320" fPlg="17" tPlg="7"/>
+                    <line type="Line" handle="1429971585" lineType="1" fMod="444327659" tMod="391678904" fPlg="18" tPlg="7"/>
+                    <line type="Line" handle="167816548" lineType="1" fMod="444327659" tMod="234587401" fPlg="19" tPlg="7"/>
+                    <line type="Line" handle="178768868" lineType="1" fMod="444327659" tMod="2047790741" fPlg="20" tPlg="7"/>
+                    <line type="Line" handle="1453092554" lineType="1" fMod="444327659" tMod="1771735339" fPlg="21" tPlg="7"/>
+                    <line type="Line" handle="1500632230" lineType="1" fMod="444327659" tMod="655257005" fPlg="22" tPlg="7"/>
                 </lines>
                 <PanelWndPosition l="32" r="300" t="56" b="352"/>
                 <PanelLocation l="388" r="818" t="254" b="852"/>
-                <StructLocation l="458" r="967" t="24" b="755"/>
+                <StructLocation l="255" r="764" t="-9" b="722"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="0" cy="-48"/>
@@ -478,6 +490,7 @@
                 <Pin name="Bottom Left" datatype="bool" default="1" isMinimised="true"/>
                 <Pin name="Bottom Right" datatype="bool" default="1" isMinimised="true"/>
                 <Pin name="AnimPos" datatype="float" default="1"/>
+                <Pin name="AnimPosOut" datatype="int" direction="out"/>
                 <Pin name="mDown" datatype="bool"/>
                 <Pin name="Color" datatype="string" default="ffff0000" private="true"/>
                 <Pin name="ColorB" datatype="string" default="ff000000" private="true"/>

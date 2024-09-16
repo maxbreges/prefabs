@@ -121,11 +121,11 @@
                             <plug default="100"/>
                             <plug default="ff3e00ff" idx="7"/>
                             <plug default="FF000000" idx="9"/>
-                            <plug default="ffff0000" idx="12"/>
-                            <plug default=""/>
+                            <plug default="" idx="13"/>
+                            <plug default="FFFFFFFF"/>
                             <plug default="0" idx="17"/>
                         </plugs>
-                        <structRect l="504" r="588" t="324" b="408"/>
+                        <structRect l="504" r="552" t="324" b="432"/>
                         <panelRect l="40" r="80" t="88" b="128"/>
                     </module>
                     <module type="SE Text Entry4" handle="1037820004">
@@ -333,10 +333,10 @@
                             <plug default="4"/>
                             <plug default="ff3e00ff" idx="7"/>
                             <plug default="FF000000" idx="9"/>
-                            <plug default="ffff0000" idx="12"/>
+                            <plug default="FFFFFFFF" idx="14"/>
                             <plug default="0" idx="17"/>
                         </plugs>
-                        <structRect l="384" r="468" t="336" b="408"/>
+                        <structRect l="372" r="456" t="360" b="420"/>
                         <panelRect l="40" r="80" t="40" b="64"/>
                     </module>
                     <module type="ColorKnob" handle="2137151666">
@@ -378,8 +378,8 @@
                     <line type="Line" handle="1758148212" lineType="1" fMod="1764017545" tMod="538279248" fPlg="7" tPlg="11"/>
                     <line type="Line" handle="909684072" lineType="1" fMod="5585891" tMod="538279248" fPlg="7" tPlg="12"/>
                     <line type="Line" handle="549611883" lineType="1" fMod="538279248" tMod="1037820004" fPlg="8"/>
-                    <line type="Line" handle="745472102" lineType="1" fMod="1273662468" tMod="882737321" fPlg="1" tPlg="5"/>
-                    <line type="Line" handle="1447846510" lineType="1" fMod="1273662468" tMod="1487937551" fPlg="1" tPlg="5"/>
+                    <line type="Line" handle="1525965901" lineType="1" fMod="1273662468" tMod="882737321" fPlg="1" tPlg="5"/>
+                    <line type="Line" handle="1210915071" lineType="1" fMod="1273662468" tMod="1487937551" fPlg="1" tPlg="5"/>
                 </lines>
                 <PanelWndPosition l="40" r="240" t="32" b="380"/>
                 <PanelLocation l="1101" r="1402" t="468" b="923"/>
@@ -414,9 +414,9 @@
                 <Pin name="botColor0" datatype="string" default="ff000000" isMinimised="true"/>
                 <Pin name="botColor1" datatype="string" default="ffffffff" isMinimised="true"/>
                 <Pin name="topColor0" datatype="string" default="ffff0000" isMinimised="true"/>
-                <Pin name="topColor1" datatype="string" default="ffffffff" isMinimised="true"/>
+                <Pin name="topColor1" datatype="string" default="ffff0000" isMinimised="true"/>
                 <Pin name="Text" datatype="string" default="btn" isMinimised="true"/>
-                <Pin name="Text Color" datatype="string" default="FFFFFFFF"/>
+                <Pin name="Text Color" datatype="string" default="FF000000"/>
                 <Pin name="Font" datatype="string" default="Times New Roman" isMinimised="true"/>
                 <Pin name="Font Size" datatype="float" default="16" isMinimised="true"/>
                 <Pin name="Align" datatype="enum" isMinimised="true" metadata="Top, Bottom, Center"/>
