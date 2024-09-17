@@ -15,7 +15,7 @@
                 </param>
                 <param type="6" handle="1359999868" module="1544609491" moduleParamId="0">
                     <patch-list>
-                        <s>3.9</s>
+                        <s>4.85</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -32,6 +32,9 @@
                 <plugs>
                     <plug default="100"/>
                     <plug default="0" idx="5"/>
+                    <plug default="ffff0000" idx="8"/>
+                    <plug default="ff000000"/>
+                    <plug default="ffff0000" idx="12"/>
                     <plug default="" idx="14"/>
                 </plugs>
                 <structRect l="408" r="492" t="156" b="276"/>
@@ -50,7 +53,9 @@
                             <plug default="100"/>
                             <plug default="0" idx="7"/>
                             <plug default="ff3e00ff"/>
-                            <plug default="FF000000" idx="10"/>
+                            <plug default="ff000000"/>
+                            <plug default="FF000000"/>
+                            <plug default="ffff0000"/>
                             <plug default="ffff0000"/>
                             <plug default="" idx="14"/>
                             <plug default="ffffde00"/>
@@ -94,7 +99,9 @@
                             <plug default="100"/>
                             <plug default="0" idx="7"/>
                             <plug default="ff3e00ff"/>
-                            <plug default="FF000000" idx="10"/>
+                            <plug default="ff000000"/>
+                            <plug default="FF000000"/>
+                            <plug default="ffff0000"/>
                             <plug default="ffff0000"/>
                             <plug default="" idx="14"/>
                             <plug default="ffffde00"/>
@@ -138,7 +145,9 @@
                             <plug default="100"/>
                             <plug default="0" idx="7"/>
                             <plug default="ff3e00ff"/>
-                            <plug default="FF000000" idx="10"/>
+                            <plug default="ff000000"/>
+                            <plug default="FF000000"/>
+                            <plug default="ffff0000"/>
                             <plug default="ffff0000"/>
                             <plug default="" idx="14"/>
                             <plug default="ffffde00"/>
@@ -182,7 +191,9 @@
                             <plug default="100"/>
                             <plug default="0" idx="7"/>
                             <plug default="ff3e00ff"/>
-                            <plug default="FF000000" idx="10"/>
+                            <plug default="ff000000"/>
+                            <plug default="FF000000"/>
+                            <plug default="ffff0000"/>
                             <plug default="ffff0000"/>
                             <plug default="" idx="14"/>
                             <plug default="ffffde00"/>
@@ -226,7 +237,9 @@
                             <plug default="100"/>
                             <plug default="0" idx="7"/>
                             <plug default="ff3e00ff"/>
-                            <plug default="FF000000" idx="10"/>
+                            <plug default="ff000000"/>
+                            <plug default="FF000000"/>
+                            <plug default="ffff0000"/>
                             <plug default="ffff0000"/>
                             <plug default="" idx="14"/>
                             <plug default="ffffde00"/>
@@ -270,7 +283,9 @@
                             <plug default="100"/>
                             <plug default="0" idx="7"/>
                             <plug default="ff3e00ff"/>
-                            <plug default="FF000000" idx="10"/>
+                            <plug default="ff000000"/>
+                            <plug default="FF000000"/>
+                            <plug default="ffff0000"/>
                             <plug default="ffff0000"/>
                             <plug default="" idx="14"/>
                             <plug default="ffffde00"/>
@@ -314,7 +329,9 @@
                             <plug default="100"/>
                             <plug default="0" idx="7"/>
                             <plug default="ff3e00ff"/>
-                            <plug default="FF000000" idx="10"/>
+                            <plug default="ff000000"/>
+                            <plug default="FF000000"/>
+                            <plug default="ffff0000"/>
                             <plug default="ffff0000"/>
                             <plug default="" idx="14"/>
                             <plug default="ffffde00"/>
@@ -358,7 +375,9 @@
                             <plug default="100"/>
                             <plug default="0" idx="7"/>
                             <plug default="ff3e00ff"/>
-                            <plug default="FF000000" idx="10"/>
+                            <plug default="ff000000"/>
+                            <plug default="FF000000"/>
+                            <plug default="ffff0000"/>
                             <plug default="ffff0000"/>
                             <plug default="" idx="14"/>
                             <plug default="ffffde00"/>
@@ -424,9 +443,11 @@
                         <plugs>
                             <plug default="4"/>
                             <plug default="ff3e00ff" idx="8"/>
-                            <plug default="FF000000" idx="10"/>
+                            <plug default="ff000000"/>
+                            <plug default="FF000000"/>
                             <plug default="ffff0000"/>
-                            <plug default="ff000000" idx="13"/>
+                            <plug default="ffff0000"/>
+                            <plug default="ff000000"/>
                             <plug default="ffffde00" idx="15"/>
                             <plug default="0" idx="18"/>
                         </plugs>
@@ -447,10 +468,10 @@
                     </module>
                 </modules>
                 <lines>
-                    <line type="Line" handle="664633525" lineType="1" fMod="882737321" tMod="427821767" fPlg="6"/>
-                    <line type="Line" handle="888241698" lineType="1" fMod="427821767" tMod="882737321" fPlg="1" tPlg="15"/>
                     <line type="Line" handle="1514654468" lineType="1" fMod="26436763" tMod="427821767" fPlg="1" tPlg="2"/>
                     <line type="Line" handle="1748578272" lineType="1" fMod="1046828378" tMod="427821767" fPlg="1" tPlg="3"/>
+                    <line type="Line" handle="2010886170" lineType="1" fMod="882737321" tMod="427821767" fPlg="6"/>
+                    <line type="Line" handle="1225467670" lineType="1" fMod="427821767" tMod="882737321" fPlg="1" tPlg="15"/>
                 </lines>
                 <PanelWndPosition l="32" r="72" t="40" b="64"/>
                 <PanelLocation l="30" r="530" t="30" b="330"/>
@@ -496,11 +517,11 @@
                 <Pin name="AnimPos" datatype="float" default="1"/>
                 <Pin name="AnimPosOut" datatype="int" direction="out"/>
                 <Pin name="mDown" datatype="bool"/>
-                <Pin name="Color" datatype="string" default="ffff0000" private="true"/>
-                <Pin name="ColorB" datatype="string" default="ff000000" private="true"/>
+                <Pin name="Color" datatype="string" default="ff000000" private="true"/>
+                <Pin name="ColorB" datatype="string" default="ffaa0000" private="true"/>
                 <Pin name="botColor0" datatype="string" default="ff000000" isMinimised="true"/>
                 <Pin name="botColor1" datatype="string" default="ffffffff" isMinimised="true"/>
-                <Pin name="topColor0" datatype="string" default="ffff0000" isMinimised="true"/>
+                <Pin name="topColor0" datatype="string" default="ffaa0000" isMinimised="true"/>
                 <Pin name="topColor1" datatype="string" default="ffff0000" isMinimised="true"/>
                 <Pin name="Text" datatype="string" default="btn" isMinimised="true"/>
                 <Pin name="Text Color" datatype="string" default="FF000000"/>
