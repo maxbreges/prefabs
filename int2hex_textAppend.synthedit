@@ -15,7 +15,7 @@
                 <param type="8" handle="865476285" ignorePC="true" stateful="false" module="869613870" moduleParamId="0"/>
                 <param type="6" handle="895109013" shortName="Float to Volts Float In" vstParameterNumber="14" module="1256406140" moduleParamId="0" RangeMaximum="255">
                     <patch-list>
-                        <s>121.125</s>
+                        <s>76.5</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -34,11 +34,12 @@
                 <plugs>
                     <plug default="Display Length" idx="1"/>
                     <plug default="FF635aa1" idx="5"/>
+                    <plug default="00FFFFFF"/>
                 </plugs>
-                <structRect l="588" r="708" t="324" b="468"/>
+                <structRect l="600" r="720" t="312" b="456"/>
                 <panelRect l="181" r="223" t="178" b="224"/>
             </module>
-            <module type="Container" handle="258884497" name="color driver" ViewOpenFlags="256" skin="default2">
+            <module type="Container" handle="258884497" name="color driver" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -314,7 +315,7 @@
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
-                    <plug name="Hue (0-11)" idx="7"/>
+                    <plug name="Hue (0-11)" default="8" idx="7"/>
                     <plug name="Saturation (0-255)"/>
                     <plug name="Brightness (-255) to (255)"/>
                     <plug name="Background" direction="1" datatype="1"/>

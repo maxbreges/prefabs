@@ -203,24 +203,6 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="ButtonX" handle="1208705217">
-                <plugs>
-                    <plug default="ffffbaf9" idx="7"/>
-                    <plug default="ffffbaf9" idx="9"/>
-                </plugs>
-                <structRect l="756" r="888" t="336" b="456"/>
-                <panelRect l="48" r="104" t="288" b="312"/>
-            </module>
-            <module type="Button" handle="1824035927">
-                <plugs>
-                    <plug default="ffff000b" idx="10"/>
-                    <plug default="ffffbaf9"/>
-                    <plug default="ffffbaf9"/>
-                    <plug default="ffff000b"/>
-                </plugs>
-                <structRect l="768" r="876" t="492" b="564"/>
-                <panelRect l="336" r="400" t="288" b="312"/>
-            </module>
             <module type="Container" handle="772565201" name="RGB knobs" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
@@ -388,7 +370,7 @@
                 <panelRect l="296" r="297" t="232" b="233"/>
             </module>
             <module type="My RectangleX" handle="1311813199">
-                <structRect l="756" r="876" t="108" b="300"/>
+                <structRect l="672" r="792" t="168" b="360"/>
                 <panelRect l="136" r="312" t="256" b="432"/>
             </module>
         </modules>
@@ -403,8 +385,6 @@
             <line type="Line" handle="1040693942" lineType="1" fMod="772565201" tMod="509919065" fPlg="9" tPlg="11"/>
             <line type="Line" handle="1124368563" lineType="1" fMod="772565201" tMod="509919065" fPlg="10" tPlg="12"/>
             <line type="Line" handle="2065680708" lineType="1" fMod="509919065" tMod="1311813199" fPlg="8" tPlg="11"/>
-            <line type="Line" handle="1919896190" lineType="1" fMod="1879298162" tMod="1208705217" fPlg="8" tPlg="6"/>
-            <line type="Line" handle="294101535" lineType="1" fMod="509919065" tMod="1208705217" fPlg="8" tPlg="8"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="923" r="1434" t="2" b="554"/>
@@ -415,50 +395,6 @@
         <panel_rect l="16" r="448" t="16" b="464"/>
     </master_container>
     <PluginList>
-        <Plugin id="Button" name="Button" flags="384" category="mx/Sub-Controls">
-            <GUI graphicsApi="GmpiGui">
-                <Pin name="Corner Radius" datatype="float" default="5" isMinimised="true"/>
-                <Pin name="Top Left" datatype="bool" default="1" isMinimised="true"/>
-                <Pin name="Top Right" datatype="bool" default="1" isMinimised="true"/>
-                <Pin name="Bottom Left" datatype="bool" default="1" isMinimised="true"/>
-                <Pin name="Bottom Right" datatype="bool" default="1" isMinimised="true"/>
-                <Pin name="AnimPos" datatype="float" default="1"/>
-                <Pin name="AnimPosOut" datatype="int" direction="out"/>
-                <Pin name="mDown" datatype="bool"/>
-                <Pin name="Color" datatype="string" default="ff000000" private="true"/>
-                <Pin name="ColorB" datatype="string" default="ffaa0000" private="true"/>
-                <Pin name="botColor0" datatype="string" default="ff000000" isMinimised="true"/>
-                <Pin name="botColor1" datatype="string" default="ffffffff" isMinimised="true"/>
-                <Pin name="topColor0" datatype="string" default="ffaa0000" isMinimised="true"/>
-                <Pin name="topColor1" datatype="string" default="ffff0000" isMinimised="true"/>
-                <Pin name="Text" datatype="string" default="btn" isMinimised="true"/>
-                <Pin name="Text Color" datatype="string" default="FF000000"/>
-                <Pin name="Font" datatype="string" default="Times New Roman" isMinimised="true"/>
-                <Pin name="Font Size" datatype="float" default="16" isMinimised="true"/>
-                <Pin name="Align" datatype="enum" isMinimised="true" metadata="Top, Bottom, Center"/>
-            </GUI>
-        </Plugin>
-        <Plugin id="ButtonX" name="ButtonX" flags="384" category="mx/Sub-Controls">
-            <GUI graphicsApi="GmpiGui">
-                <Pin name="Corner Radius" datatype="float" default="5" isMinimised="true"/>
-                <Pin name="Top Left" datatype="bool" default="1" isMinimised="true"/>
-                <Pin name="Top Right" datatype="bool" default="1" isMinimised="true"/>
-                <Pin name="Bottom Left" datatype="bool" default="1" isMinimised="true"/>
-                <Pin name="Bottom Right" datatype="bool" default="1" isMinimised="true"/>
-                <Pin name="Anim Pos" datatype="float"/>
-                <Pin name="topColorMouseUp" datatype="string" default="FF9A9AAA"/>
-                <Pin name="topColorMouseDown" datatype="string" default="FF9A9AAA"/>
-                <Pin name="btmColorMouseUp" datatype="string" default="FF858595"/>
-                <Pin name="btmColorMouseDown" datatype="string" default="FF858595"/>
-                <Pin name="mDown" datatype="bool"/>
-                <Pin name="Text" datatype="string" default="mute" isMinimised="true"/>
-                <Pin name="Text Color" datatype="string" default="FFFFFFFF"/>
-                <Pin name="Font" datatype="string" default="Times New Roman" isMinimised="true"/>
-                <Pin name="Font Size" datatype="float" default="16" isMinimised="true"/>
-                <Pin name="Align" datatype="enum" isMinimised="true" metadata="Top, Bottom, Center"/>
-                <Pin name="DefaultColor" datatype="string" default="FF000000" private="true"/>
-            </GUI>
-        </Plugin>
         <Plugin id="ColorKnob2" name="Color Knob2" flags="384" category="mx/Sub-Controls" helpUrl="ColorKnob.htm">
             <Parameters>
                 <Parameter id="0" datatype="float" name=""/>
