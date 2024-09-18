@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Jeff McClintock" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
+<Document file_format="150000" vst_latencyCompensation="1" AutoPlay="true" vst_user_email="Jeff McClintock" autoplay="true" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
     <master_container type="Container" handle="414759235" name="Main" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -48,7 +48,7 @@
                     <plug default="0" idx="5"/>
                     <plug default="2"/>
                     <plug name="Signal in" default="10"/>
-                    <plug default="" direction="1"/>
+                    <plug direction="1"/>
                 </plugs>
                 <structRect l="944" r="1016" t="348" b="408"/>
                 <modules>
@@ -79,8 +79,8 @@
                     </module>
                     <module type="IO Mod" handle="2037183638">
                         <plugs>
-                            <plug name="Signal in" default="" direction="1" tiedtomod="731668027" tiedtopin="7"/>
-                            <plug default="" direction="1"/>
+                            <plug name="Signal in" direction="1" tiedtomod="731668027" tiedtopin="7"/>
+                            <plug direction="1"/>
                         </plugs>
                         <structRect l="9" r="81" t="42" b="66"/>
                     </module>
@@ -106,7 +106,7 @@
                     <plug default="0" idx="5"/>
                     <plug default="2"/>
                     <plug name="Signal in" default="10"/>
-                    <plug default="" direction="1"/>
+                    <plug direction="1"/>
                 </plugs>
                 <structRect l="626" r="698" t="65" b="125"/>
                 <modules>
@@ -137,8 +137,8 @@
                     </module>
                     <module type="IO Mod" handle="4631">
                         <plugs>
-                            <plug name="Signal in" default="" direction="1" tiedtomod="13981" tiedtopin="7"/>
-                            <plug default="" direction="1"/>
+                            <plug name="Signal in" direction="1" tiedtomod="13981" tiedtopin="7"/>
+                            <plug direction="1"/>
                         </plugs>
                         <structRect l="9" r="81" t="42" b="66"/>
                     </module>
@@ -180,10 +180,10 @@
                     <plug parameterId="-1" idx="13"/>
                     <plug parameterId="-1"/>
                 </plugs>
-                <structRect l="108" r="192" t="576" b="648"/>
+                <structRect l="108" r="192" t="576" b="654"/>
                 <panelRect l="384" r="384" t="256" b="256"/>
             </module>
-            <module type="Container" handle="15572069" name="Show Volts" skin="default2">
+            <module type="Container" handle="15572069" name="only one true btn = true " skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -334,7 +334,7 @@
                     <plug parameterId="-1" idx="13"/>
                     <plug parameterId="-1"/>
                 </plugs>
-                <structRect l="108" r="192" t="480" b="552"/>
+                <structRect l="108" r="192" t="480" b="558"/>
                 <panelRect l="320" r="320" t="176" b="176"/>
             </module>
             <module type="Slider" handle="1305549537">
@@ -343,7 +343,7 @@
                     <plug parameterId="-1" idx="13"/>
                     <plug parameterId="-1"/>
                 </plugs>
-                <structRect l="108" r="192" t="384" b="456"/>
+                <structRect l="108" r="192" t="384" b="462"/>
                 <panelRect l="352" r="352" t="168" b="168"/>
             </module>
             <module type="Slider" handle="1174048948">
@@ -352,10 +352,10 @@
                     <plug parameterId="-1" idx="13"/>
                     <plug parameterId="-1"/>
                 </plugs>
-                <structRect l="108" r="192" t="288" b="360"/>
+                <structRect l="108" r="192" t="288" b="366"/>
                 <panelRect l="280" r="280" t="120" b="120"/>
             </module>
-            <module type="XOR Gate" handle="1195997119" name="XOR Gate bug">
+            <module type="XOR Gate" handle="1195997119" name="even number of true btns = true">
                 <plugs>
                     <plug idx="5"/>
                 </plugs>

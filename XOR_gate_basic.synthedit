@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Jeff McClintock" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
+<Document file_format="150000" vst_latencyCompensation="1" AutoPlay="true" vst_user_email="Jeff McClintock" autoplay="true" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
     <master_container type="Container" handle="414759235" name="Main" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -35,7 +35,7 @@
                     <plug default="0" idx="5"/>
                     <plug default="2"/>
                     <plug name="Signal in" default="10"/>
-                    <plug default="" direction="1"/>
+                    <plug direction="1"/>
                 </plugs>
                 <structRect l="943" r="1015" t="73" b="133"/>
                 <modules>
@@ -65,8 +65,8 @@
                     </module>
                     <module type="IO Mod" handle="4631">
                         <plugs>
-                            <plug name="Signal in" default="" direction="1" tiedtomod="13981" tiedtopin="7"/>
-                            <plug default="" direction="1"/>
+                            <plug name="Signal in" direction="1" tiedtomod="13981" tiedtopin="7"/>
+                            <plug direction="1"/>
                         </plugs>
                         <structRect l="9" r="81" t="42" b="66"/>
                     </module>
@@ -111,7 +111,7 @@
                     <plug parameterId="-1" idx="13"/>
                     <plug parameterId="-1"/>
                 </plugs>
-                <structRect l="108" r="192" t="264" b="336"/>
+                <structRect l="108" r="192" t="264" b="342"/>
                 <panelRect l="352" r="352" t="168" b="168"/>
             </module>
             <module type="Slider" handle="1174048948">
@@ -120,7 +120,7 @@
                     <plug parameterId="-1" idx="13"/>
                     <plug parameterId="-1"/>
                 </plugs>
-                <structRect l="109" r="193" t="164" b="236"/>
+                <structRect l="109" r="193" t="164" b="242"/>
                 <panelRect l="280" r="280" t="120" b="120"/>
             </module>
         </modules>
