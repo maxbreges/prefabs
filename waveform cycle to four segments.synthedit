@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Jeff McClintock" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
+<Document file_format="150000" vst_latencyCompensation="1" AutoPlay="true" vst_user_email="Jeff McClintock" autoplay="true" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
     <master_container type="Container" handle="1482113384" name="Main" ViewOpenFlags="384" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -444,13 +444,13 @@
         <Plugin id="RadiantCircle" name="Radiant Circle" flags="384" category="mx/Sub-Controls">
             <GUI graphicsApi="GmpiGui">
                 <Pin name="Background Color" datatype="string" default="FF000000"/>
-                <Pin name="TopCircleSize" datatype="float" default="0.88" isMinimised="true"/>
+                <Pin name="TopCircleSize" datatype="float" default="0.88"/>
                 <Pin name="Top Color" datatype="string" default="CCFFFFFF" private="true"/>
                 <Pin name="Bottom Color" datatype="string" default="11FFFFFF" private="true"/>
                 <Pin name="Top Color Dot" datatype="string" default="CCFFFFFF" isMinimised="true"/>
                 <Pin name="Bottom Color Dot" datatype="string" default="11FFFFFF" isMinimised="true"/>
                 <Pin name="Bool" datatype="bool"/>
-                <Pin name="Top Color" datatype="string" default="FF00FF00"/>
+                <Pin name="Top Color" datatype="string" default="FF000000"/>
                 <Pin name="Bottom Color" datatype="string" default="DD00FF00"/>
                 <Pin name="X" datatype="float" default="0.5"/>
                 <Pin name="Y" datatype="float" default="0.5"/>
