@@ -15,13 +15,13 @@
                 </param>
                 <param type="6" handle="1359999868" module="1544609491" moduleParamId="0">
                     <patch-list>
-                        <s>3.35</s>
+                        <s>5</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="1" handle="2126023085" module="1544609491" moduleParamId="2">
                     <patch-list>
-                        <s>ff00ff02</s>
+                        <s>ff00e1ff</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
@@ -30,11 +30,11 @@
         <modules>
             <module type="ShowIntGui" handle="1063459682">
                 <structRect l="360" r="444" t="300" b="340"/>
-                <panelRect l="256" r="320" t="208" b="232"/>
+                <panelRect l="152" r="200" t="304" b="328"/>
             </module>
             <module type="Show Float" handle="795143011">
                 <structRect l="48" r="156" t="396" b="460"/>
-                <panelRect l="216" r="280" t="224" b="248"/>
+                <panelRect l="88" r="152" t="304" b="328"/>
             </module>
             <module type="Sasha-Constant Text" handle="326856319">
                 <plugs>
@@ -80,8 +80,6 @@
                                     <plug default="100"/>
                                     <plug default="0" idx="5"/>
                                     <plug default="ffff0000" idx="8"/>
-                                    <plug default="ffff0000" idx="10"/>
-                                    <plug default="ffaa0000" idx="12"/>
                                     <plug default="" idx="14"/>
                                 </plugs>
                                 <structRect l="240" r="324" t="24" b="144"/>
@@ -122,8 +120,6 @@
                                     <plug default="100"/>
                                     <plug default="0" idx="5"/>
                                     <plug default="ffff0000" idx="8"/>
-                                    <plug default="ffff0000" idx="10"/>
-                                    <plug default="ffaa0000" idx="12"/>
                                     <plug default="" idx="14"/>
                                 </plugs>
                                 <structRect l="240" r="324" t="24" b="144"/>
@@ -164,8 +160,6 @@
                                     <plug default="100"/>
                                     <plug default="0" idx="5"/>
                                     <plug default="ffff0000" idx="8"/>
-                                    <plug default="ffff0000" idx="10"/>
-                                    <plug default="ffaa0000" idx="12"/>
                                     <plug default="" idx="14"/>
                                 </plugs>
                                 <structRect l="240" r="324" t="24" b="144"/>
@@ -206,8 +200,6 @@
                                     <plug default="100"/>
                                     <plug default="0" idx="5"/>
                                     <plug default="ffff0000" idx="8"/>
-                                    <plug default="ffff0000" idx="10"/>
-                                    <plug default="ffaa0000" idx="12"/>
                                     <plug default="" idx="14"/>
                                 </plugs>
                                 <structRect l="240" r="324" t="24" b="144"/>
@@ -248,8 +240,6 @@
                                     <plug default="100"/>
                                     <plug default="0" idx="5"/>
                                     <plug default="ffff0000" idx="8"/>
-                                    <plug default="ffff0000" idx="10"/>
-                                    <plug default="ffaa0000" idx="12"/>
                                     <plug default="" idx="14"/>
                                 </plugs>
                                 <structRect l="240" r="324" t="24" b="144"/>
@@ -290,8 +280,6 @@
                                     <plug default="100"/>
                                     <plug default="0" idx="5"/>
                                     <plug default="ffff0000" idx="8"/>
-                                    <plug default="ffff0000" idx="10"/>
-                                    <plug default="ffaa0000" idx="12"/>
                                     <plug default="" idx="14"/>
                                 </plugs>
                                 <structRect l="240" r="324" t="24" b="144"/>
@@ -332,8 +320,6 @@
                                     <plug default="100"/>
                                     <plug default="0" idx="5"/>
                                     <plug default="ffff0000" idx="8"/>
-                                    <plug default="ffff0000" idx="10"/>
-                                    <plug default="ffaa0000" idx="12"/>
                                     <plug default="" idx="14"/>
                                 </plugs>
                                 <structRect l="240" r="324" t="24" b="144"/>
@@ -374,8 +360,6 @@
                                     <plug default="100"/>
                                     <plug default="0" idx="5"/>
                                     <plug default="ffff0000" idx="8"/>
-                                    <plug default="ffff0000" idx="10"/>
-                                    <plug default="ffaa0000" idx="12"/>
                                     <plug default="" idx="14"/>
                                 </plugs>
                                 <structRect l="240" r="324" t="24" b="144"/>
@@ -431,7 +415,7 @@
                     <plug default="0" idx="5"/>
                     <plug default="ffff0000" idx="8"/>
                     <plug default="ff00ff00" idx="10"/>
-                    <plug default="ff005500" idx="12"/>
+                    <plug default="ff000000" idx="12"/>
                     <plug default="ff00ff00"/>
                     <plug default="LED"/>
                     <plug default="Georgia" idx="16"/>
