@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+    <master_container type="Container" handle="1548567611" name="Main" ViewOpenFlags="256" skin="default2">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="10" handle="1296365805" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="SE IntToFloat GUI" handle="467641462">
+                <structRect l="156" r="228" t="48" b="72"/>
+                <panelRect l="232" r="232" t="128" b="128"/>
+            </module>
+            <module type="Button" handle="20963569" name="Button Clicked">
+                <plugs>
+                    <plug default="0" idx="19"/>
+                </plugs>
+                <structRect l="240" r="348" t="132" b="232"/>
+                <panelRect l="296" r="296" t="240" b="240"/>
+            </module>
+            <module type="Button" handle="1077647691" name="Button Stepped">
+                <plugs>
+                    <plug default="1" idx="19"/>
+                </plugs>
+                <structRect l="96" r="204" t="132" b="232"/>
+                <panelRect l="232" r="232" t="176" b="176"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="1792937222" lineType="1" fMod="467641462" tMod="20963569" fPlg="1" tPlg="5"/>
+            <line type="Line" handle="1134185415" lineType="1" fMod="467641462" tMod="1077647691" fPlg="1" tPlg="5"/>
+        </lines>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="30" r="530" t="30" b="330"/>
+        <StructLocation l="0" r="618" t="0" b="465"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="70" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="312" t="16" b="216"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Button" name="Button" flags="384" category="mx/Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Corner Radius" datatype="float" default="5" isMinimised="true"/>
+                <Pin name="Top Left" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Top Right" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Bottom Left" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Bottom Right" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="AnimPos" datatype="float"/>
+                <Pin name="AnimPosOut" datatype="int" direction="out"/>
+                <Pin name="mDown" datatype="bool"/>
+                <Pin name="Color" datatype="string" default="ffff0000" private="true"/>
+                <Pin name="ColorB" datatype="string" default="ffaa0000" private="true"/>
+                <Pin name="botColor0" datatype="string" default="ffff0000" isMinimised="true"/>
+                <Pin name="botColor1" datatype="string" default="ffffffff" isMinimised="true"/>
+                <Pin name="topColor0" datatype="string" default="ffaa0000" isMinimised="true"/>
+                <Pin name="topColor1" datatype="string" default="ffff0000" isMinimised="true"/>
+                <Pin name="Text" datatype="string" default="text" isMinimised="true"/>
+                <Pin name="Text Color" datatype="string" default="ffffffff"/>
+                <Pin name="Font" datatype="string" default="Times New Roman" isMinimised="true"/>
+                <Pin name="Font Size" datatype="float" default="16" isMinimised="true"/>
+                <Pin name="Align" datatype="enum" isMinimised="true" metadata="Center, Top, Bottom"/>
+                <Pin name="Mouse Response" datatype="enum" isMinimised="true" metadata="Clicked, Stepped"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE IntToFloat GUI" name="Int To Float" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Int Val" datatype="int"/>
+                <Pin name="Float Val" datatype="float" direction="out"/>
+            </GUI>
+        </Plugin>
+    </PluginList>
+</Document>
