@@ -89,8 +89,7 @@
             <line type="Line" handle="2030795294" lineType="1" fMod="733407206" tMod="915306548" fPlg="6" tPlg="3"/>
             <line type="Line" handle="2028622337" lineType="1" fMod="1198059877" tMod="1077647691" fPlg="8" tPlg="5"/>
             <line type="Line" handle="1508170503" lineType="1" fMod="1198059877" tMod="20963569" fPlg="8" tPlg="5"/>
-            <line type="Line" handle="1280021525" lineType="1" fMod="1198059877" tMod="707394572" fPlg="8" tPlg="5"/>
-            <line type="Line" handle="1265141403" lineType="1" fMod="915306548" tMod="20963569" fPlg="1" tPlg="15"/>
+            <line type="Line" handle="1194810666" lineType="1" fMod="1198059877" tMod="707394572" fPlg="8" tPlg="5"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="931" r="1393" t="33" b="240"/>
