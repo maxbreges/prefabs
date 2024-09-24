@@ -16,14 +16,293 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Container" handle="1236032180" skin="default2">
+            <module type="Container" handle="1236032180" ViewOpenFlags="256" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
                     <plug idx="7"/>
                 </plugs>
-                <structRect l="72" r="156" t="84" b="248"/>
+                <structRect l="72" r="204" t="84" b="296"/>
                 <modules>
+                    <module type="VectorButton" handle="330024761">
+                        <plugs>
+                            <plug default="1" idx="19"/>
+                        </plugs>
+                        <structRect l="312" r="396" t="684" b="780"/>
+                        <panelRect l="168" r="200" t="240" b="264"/>
+                    </module>
+                    <module type="VectorButton" handle="591544785">
+                        <plugs>
+                            <plug default="1" idx="19"/>
+                        </plugs>
+                        <structRect l="312" r="396" t="552" b="648"/>
+                        <panelRect l="168" r="200" t="208" b="232"/>
+                    </module>
+                    <module type="VectorButton" handle="1515746223">
+                        <plugs>
+                            <plug default="1" idx="19"/>
+                        </plugs>
+                        <structRect l="312" r="396" t="432" b="528"/>
+                        <panelRect l="168" r="200" t="176" b="200"/>
+                    </module>
+                    <module type="BooleanOR" handle="586699271">
+                        <plugs>
+                            <plug name="AnimPos" idx="1"/>
+                            <plug name="AnimPos" id="2"/>
+                            <plug name="AnimPos" id="3"/>
+                            <plug id="4"/>
+                        </plugs>
+                        <structRect l="180" r="252" t="552" b="612"/>
+                        <panelRect l="232" r="232" t="160" b="160"/>
+                    </module>
+                    <module type="Container" handle="1208239536" name="LED2" m_locked="true" skin="default">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="0"/>
+                            <plug default="1"/>
+                            <plug default="0" idx="5"/>
+                            <plug default="2"/>
+                            <plug name="Mouse Down" direction="1" datatype="4"/>
+                            <plug name="In" datatype="4"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="36" r="132" t="528" b="600"/>
+                        <modules>
+                            <module type="SE Bool Splitter" handle="762812295">
+                                <plugs>
+                                    <plug id="2" idx="2"/>
+                                </plugs>
+                                <structRect l="120" r="168" t="168" b="204"/>
+                                <panelRect l="56" r="56" t="0" b="0"/>
+                            </module>
+                            <module type="SE BoolToFloat GUI" handle="573244590">
+                                <structRect l="192" r="264" t="144" b="168"/>
+                                <panelRect l="32" r="32" t="40" b="40"/>
+                            </module>
+                            <module type="Image3" handle="1811032246">
+                                <plugs>
+                                    <plug default="led2.bmp" idx="1"/>
+                                </plugs>
+                                <structRect l="481" r="601" t="42" b="150"/>
+                                <panelRect l="46" r="66" t="24" b="44"/>
+                            </module>
+                            <module type="SE ImageTinted XP" handle="1922589481" name="Tinted Bitmap Image">
+                                <plugs>
+                                    <plug default="led2_L2.bmp" idx="1"/>
+                                    <plug default=".44" idx="12"/>
+                                </plugs>
+                                <structRect l="470" r="590" t="184" b="328"/>
+                                <panelRect l="46" r="66" t="24" b="44"/>
+                            </module>
+                            <module type="IO Mod" handle="464361820">
+                                <plugs>
+                                    <plug name="Mouse Down" datatype="4" tiedtomod="1208239536" tiedtopin="7"/>
+                                    <plug name="In" direction="1" datatype="4" tiedtomod="1208239536" tiedtopin="8"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="180" r="276" t="204" b="240"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="1515762667" lineType="1" fMod="464361820" tMod="762812295" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="1763316072" lineType="1" fMod="573244590" tMod="1811032246" fPlg="1"/>
+                            <line type="Line" handle="1928594382" lineType="1" fMod="762812295" tMod="573244590"/>
+                            <line type="Line" handle="1569757030" lineType="1" fMod="762812295" tMod="464361820"/>
+                        </lines>
+                        <PanelWndPosition l="430" r="450" t="240" b="260"/>
+                        <PanelLocation l="318" r="429" t="12" b="75"/>
+                        <StructLocation l="257" r="943" t="12" b="503"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="384" cy="216"/>
+                        <panel_rect l="0" r="93" t="0" b="45"/>
+                    </module>
+                    <module type="Container" handle="1723063809" name="LED2" m_locked="true" skin="default">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="0"/>
+                            <plug default="1"/>
+                            <plug default="0" idx="5"/>
+                            <plug default="2"/>
+                            <plug name="Mouse Down" direction="1" datatype="4"/>
+                            <plug name="In" datatype="4"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="456" r="552" t="648" b="720"/>
+                        <modules>
+                            <module type="SE Bool Splitter" handle="1826180613">
+                                <plugs>
+                                    <plug id="2" idx="2"/>
+                                </plugs>
+                                <structRect l="120" r="168" t="168" b="204"/>
+                                <panelRect l="56" r="56" t="0" b="0"/>
+                            </module>
+                            <module type="SE BoolToFloat GUI" handle="779780242">
+                                <structRect l="192" r="264" t="144" b="168"/>
+                                <panelRect l="32" r="32" t="40" b="40"/>
+                            </module>
+                            <module type="Image3" handle="285451614">
+                                <plugs>
+                                    <plug default="led2.bmp" idx="1"/>
+                                </plugs>
+                                <structRect l="481" r="601" t="42" b="150"/>
+                                <panelRect l="46" r="66" t="24" b="44"/>
+                            </module>
+                            <module type="SE ImageTinted XP" handle="1656252287" name="Tinted Bitmap Image">
+                                <plugs>
+                                    <plug default="led2_L2.bmp" idx="1"/>
+                                    <plug default=".44" idx="12"/>
+                                </plugs>
+                                <structRect l="470" r="590" t="184" b="328"/>
+                                <panelRect l="46" r="66" t="24" b="44"/>
+                            </module>
+                            <module type="IO Mod" handle="1672696783">
+                                <plugs>
+                                    <plug name="Mouse Down" datatype="4" tiedtomod="1723063809" tiedtopin="7"/>
+                                    <plug name="In" direction="1" datatype="4" tiedtomod="1723063809" tiedtopin="8"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="180" r="276" t="204" b="240"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="482596752" lineType="1" fMod="1826180613" tMod="1672696783"/>
+                            <line type="Line" handle="1439466004" lineType="1" fMod="1826180613" tMod="779780242"/>
+                            <line type="Line" handle="1524235601" lineType="1" fMod="779780242" tMod="285451614" fPlg="1"/>
+                            <line type="Line" handle="1971475929" lineType="1" fMod="1672696783" tMod="1826180613" fPlg="1" tPlg="1"/>
+                        </lines>
+                        <PanelWndPosition l="446" r="466" t="240" b="260"/>
+                        <PanelLocation l="318" r="429" t="12" b="75"/>
+                        <StructLocation l="257" r="943" t="12" b="503"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="400" cy="216"/>
+                        <panel_rect l="0" r="93" t="0" b="45"/>
+                    </module>
+                    <module type="Container" handle="1655628067" name="LED2" m_locked="true" skin="default">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="0"/>
+                            <plug default="1"/>
+                            <plug default="0" idx="5"/>
+                            <plug default="2"/>
+                            <plug name="Mouse Down" direction="1" datatype="4"/>
+                            <plug name="In" datatype="4"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="456" r="552" t="552" b="624"/>
+                        <modules>
+                            <module type="SE Bool Splitter" handle="1088485875">
+                                <plugs>
+                                    <plug id="2" idx="2"/>
+                                </plugs>
+                                <structRect l="120" r="168" t="168" b="204"/>
+                                <panelRect l="56" r="56" t="0" b="0"/>
+                            </module>
+                            <module type="SE BoolToFloat GUI" handle="823585709">
+                                <structRect l="192" r="264" t="144" b="168"/>
+                                <panelRect l="32" r="32" t="40" b="40"/>
+                            </module>
+                            <module type="Image3" handle="683175871">
+                                <plugs>
+                                    <plug default="led2.bmp" idx="1"/>
+                                </plugs>
+                                <structRect l="481" r="601" t="42" b="150"/>
+                                <panelRect l="46" r="66" t="24" b="44"/>
+                            </module>
+                            <module type="SE ImageTinted XP" handle="554780391" name="Tinted Bitmap Image">
+                                <plugs>
+                                    <plug default="led2_L2.bmp" idx="1"/>
+                                    <plug default=".44" idx="12"/>
+                                </plugs>
+                                <structRect l="470" r="590" t="184" b="328"/>
+                                <panelRect l="46" r="66" t="24" b="44"/>
+                            </module>
+                            <module type="IO Mod" handle="1703949078">
+                                <plugs>
+                                    <plug name="Mouse Down" datatype="4" tiedtomod="1655628067" tiedtopin="7"/>
+                                    <plug name="In" direction="1" datatype="4" tiedtomod="1655628067" tiedtopin="8"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="180" r="276" t="204" b="240"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="385657894" lineType="1" fMod="1703949078" tMod="1088485875" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="1131917965" lineType="1" fMod="823585709" tMod="683175871" fPlg="1"/>
+                            <line type="Line" handle="875548675" lineType="1" fMod="1088485875" tMod="823585709"/>
+                            <line type="Line" handle="218499052" lineType="1" fMod="1088485875" tMod="1703949078"/>
+                        </lines>
+                        <PanelWndPosition l="382" r="402" t="248" b="268"/>
+                        <PanelLocation l="318" r="429" t="12" b="75"/>
+                        <StructLocation l="257" r="943" t="12" b="503"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="336" cy="224"/>
+                        <panel_rect l="0" r="93" t="0" b="45"/>
+                    </module>
+                    <module type="Container" handle="1966764623" name="LED2" m_locked="true" skin="default">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="0"/>
+                            <plug default="1"/>
+                            <plug default="0" idx="5"/>
+                            <plug default="2"/>
+                            <plug name="Mouse Down" direction="1" datatype="4"/>
+                            <plug name="In" datatype="4"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="456" r="552" t="456" b="528"/>
+                        <modules>
+                            <module type="SE Bool Splitter" handle="807966878">
+                                <plugs>
+                                    <plug id="2" idx="2"/>
+                                </plugs>
+                                <structRect l="120" r="168" t="168" b="204"/>
+                                <panelRect l="56" r="56" t="0" b="0"/>
+                            </module>
+                            <module type="SE BoolToFloat GUI" handle="1166227016">
+                                <structRect l="192" r="264" t="144" b="168"/>
+                                <panelRect l="32" r="32" t="40" b="40"/>
+                            </module>
+                            <module type="Image3" handle="1444952199">
+                                <plugs>
+                                    <plug default="led2.bmp" idx="1"/>
+                                </plugs>
+                                <structRect l="481" r="601" t="42" b="150"/>
+                                <panelRect l="46" r="66" t="24" b="44"/>
+                            </module>
+                            <module type="SE ImageTinted XP" handle="1230036105" name="Tinted Bitmap Image">
+                                <plugs>
+                                    <plug default="led2_L2.bmp" idx="1"/>
+                                    <plug default=".44" idx="12"/>
+                                </plugs>
+                                <structRect l="470" r="590" t="184" b="328"/>
+                                <panelRect l="46" r="66" t="24" b="44"/>
+                            </module>
+                            <module type="IO Mod" handle="568716486">
+                                <plugs>
+                                    <plug name="Mouse Down" datatype="4" tiedtomod="1966764623" tiedtopin="7"/>
+                                    <plug name="In" direction="1" datatype="4" tiedtomod="1966764623" tiedtopin="8"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="180" r="276" t="204" b="240"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="471496352" lineType="1" fMod="807966878" tMod="568716486"/>
+                            <line type="Line" handle="187215568" lineType="1" fMod="807966878" tMod="1166227016"/>
+                            <line type="Line" handle="1680318298" lineType="1" fMod="1166227016" tMod="1444952199" fPlg="1"/>
+                            <line type="Line" handle="1738050257" lineType="1" fMod="568716486" tMod="807966878" fPlg="1" tPlg="1"/>
+                        </lines>
+                        <PanelWndPosition l="342" r="362" t="272" b="292"/>
+                        <PanelLocation l="318" r="429" t="12" b="75"/>
+                        <StructLocation l="257" r="943" t="12" b="503"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="296" cy="248"/>
+                        <panel_rect l="0" r="93" t="0" b="45"/>
+                    </module>
                     <module type="Container" handle="1684628222" name="LED2" m_locked="true" skin="default">
                         <plugs>
                             <plug default="1" idx="1"/>
@@ -31,8 +310,8 @@
                             <plug default="1"/>
                             <plug default="0" idx="5"/>
                             <plug default="2"/>
-                            <plug name="Mouse Down" default="" direction="1" datatype="4"/>
-                            <plug name="In" default="" datatype="4"/>
+                            <plug name="Mouse Down" direction="1" datatype="4"/>
+                            <plug name="In" datatype="4"/>
                             <plug/>
                         </plugs>
                         <structRect l="12" r="108" t="336" b="408"/>
@@ -65,7 +344,7 @@
                             </module>
                             <module type="IO Mod" handle="394522131">
                                 <plugs>
-                                    <plug name="Mouse Down" default="" datatype="4" tiedtomod="1684628222" tiedtopin="7"/>
+                                    <plug name="Mouse Down" datatype="4" tiedtomod="1684628222" tiedtopin="7"/>
                                     <plug name="In" direction="1" datatype="4" tiedtomod="1684628222" tiedtopin="8"/>
                                     <plug/>
                                 </plugs>
@@ -93,8 +372,8 @@
                             <plug default="1"/>
                             <plug default="0" idx="5"/>
                             <plug default="2"/>
-                            <plug name="Mouse Down" default="" direction="1" datatype="4"/>
-                            <plug name="In" default="" datatype="4"/>
+                            <plug name="Mouse Down" direction="1" datatype="4"/>
+                            <plug name="In" datatype="4"/>
                             <plug/>
                         </plugs>
                         <structRect l="12" r="108" t="240" b="312"/>
@@ -127,7 +406,7 @@
                             </module>
                             <module type="IO Mod" handle="1994981285">
                                 <plugs>
-                                    <plug name="Mouse Down" default="" datatype="4" tiedtomod="569434414" tiedtopin="7"/>
+                                    <plug name="Mouse Down" datatype="4" tiedtomod="569434414" tiedtopin="7"/>
                                     <plug name="In" direction="1" datatype="4" tiedtomod="569434414" tiedtopin="8"/>
                                     <plug/>
                                 </plugs>
@@ -155,8 +434,8 @@
                             <plug default="1"/>
                             <plug default="0" idx="5"/>
                             <plug default="2"/>
-                            <plug name="Mouse Down" default="" direction="1" datatype="4"/>
-                            <plug name="In" default="" datatype="4"/>
+                            <plug name="Mouse Down" direction="1" datatype="4"/>
+                            <plug name="In" datatype="4"/>
                             <plug/>
                         </plugs>
                         <structRect l="540" r="636" t="228" b="300"/>
@@ -189,7 +468,7 @@
                             </module>
                             <module type="IO Mod" handle="312350974">
                                 <plugs>
-                                    <plug name="Mouse Down" default="" datatype="4" tiedtomod="160530084" tiedtopin="7"/>
+                                    <plug name="Mouse Down" datatype="4" tiedtomod="160530084" tiedtopin="7"/>
                                     <plug name="In" direction="1" datatype="4" tiedtomod="160530084" tiedtopin="8"/>
                                     <plug/>
                                 </plugs>
@@ -217,8 +496,8 @@
                             <plug default="1"/>
                             <plug default="0" idx="5"/>
                             <plug default="2"/>
-                            <plug name="Mouse Down" default="" direction="1" datatype="4"/>
-                            <plug name="In" default="" datatype="4"/>
+                            <plug name="Mouse Down" direction="1" datatype="4"/>
+                            <plug name="In" datatype="4"/>
                             <plug/>
                         </plugs>
                         <structRect l="12" r="108" t="144" b="216"/>
@@ -251,7 +530,7 @@
                             </module>
                             <module type="IO Mod" handle="4631">
                                 <plugs>
-                                    <plug name="Mouse Down" default="" datatype="4" tiedtomod="13981" tiedtopin="7"/>
+                                    <plug name="Mouse Down" datatype="4" tiedtomod="13981" tiedtopin="7"/>
                                     <plug name="In" direction="1" datatype="4" tiedtomod="13981" tiedtopin="8"/>
                                     <plug/>
                                 </plugs>
@@ -286,7 +565,7 @@
                         <plugs>
                             <plug default="1" idx="19"/>
                         </plugs>
-                        <structRect l="228" r="312" t="324" b="420"/>
+                        <structRect l="228" r="312" t="336" b="432"/>
                         <panelRect l="104" r="136" t="144" b="168"/>
                     </module>
                     <module type="VectorButton" handle="169425755">
@@ -336,10 +615,17 @@
                     <line type="Line" handle="948250128" lineType="1" fMod="569434414" tMod="121852940" fPlg="7" tPlg="2"/>
                     <line type="Line" handle="546803309" lineType="1" fMod="1684628222" tMod="121852940" fPlg="7" tPlg="3"/>
                     <line type="Line" handle="21023462" lineType="1" fMod="1684628222" tMod="380363437" fPlg="7" tPlg="6"/>
+                    <line type="Line" handle="1693657452" lineType="1" fMod="1208239536" tMod="586699271" fPlg="7"/>
+                    <line type="Line" handle="1818077143" lineType="1" fMod="586699271" tMod="1515746223" fPlg="1" tPlg="6"/>
+                    <line type="Line" handle="1335051451" lineType="1" fMod="586699271" tMod="591544785" fPlg="2" tPlg="6"/>
+                    <line type="Line" handle="1312322076" lineType="1" fMod="586699271" tMod="1966764623" fPlg="1" tPlg="8"/>
+                    <line type="Line" handle="626311390" lineType="1" fMod="586699271" tMod="1655628067" fPlg="2" tPlg="8"/>
+                    <line type="Line" handle="402324224" lineType="1" fMod="586699271" tMod="330024761" fPlg="3" tPlg="6"/>
+                    <line type="Line" handle="897996883" lineType="1" fMod="586699271" tMod="1723063809" fPlg="3" tPlg="8"/>
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
                 <PanelLocation l="30" r="530" t="30" b="330"/>
-                <StructLocation l="437" r="1173" t="10" b="677"/>
+                <StructLocation l="437" r="1395" t="10" b="954"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
@@ -360,6 +646,12 @@
             <GUI>
                 <Pin name="Out" datatype="bool" direction="out"/>
                 <Pin name="In" datatype="bool" autoRename="true" autoDuplicate="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="BooleanOR" name="Boolean OR" flags="384" category="mx/Sub-Controls">
+            <GUI>
+                <Pin name="Bool" datatype="bool"/>
+                <Pin name="Spare" datatype="bool" direction="out" autoRename="true" autoDuplicate="true"/>
             </GUI>
         </Plugin>
         <Plugin id="Container" class="1" name="Container" flags="384" category="">
