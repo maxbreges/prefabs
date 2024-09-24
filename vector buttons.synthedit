@@ -22,38 +22,49 @@
                     <plug default="1"/>
                     <plug idx="7"/>
                 </plugs>
-                <structRect l="72" r="204" t="84" b="296"/>
+                <structRect l="72" r="324" t="84" b="296"/>
                 <modules>
-                    <module type="VectorButton" handle="330024761">
-                        <plugs>
-                            <plug default="1" idx="19"/>
-                        </plugs>
-                        <structRect l="312" r="396" t="684" b="780"/>
-                        <panelRect l="168" r="200" t="240" b="264"/>
-                    </module>
-                    <module type="VectorButton" handle="591544785">
-                        <plugs>
-                            <plug default="1" idx="19"/>
-                        </plugs>
-                        <structRect l="312" r="396" t="552" b="648"/>
-                        <panelRect l="168" r="200" t="208" b="232"/>
-                    </module>
-                    <module type="VectorButton" handle="1515746223">
-                        <plugs>
-                            <plug default="1" idx="19"/>
-                        </plugs>
-                        <structRect l="312" r="396" t="432" b="528"/>
-                        <panelRect l="168" r="200" t="176" b="200"/>
-                    </module>
-                    <module type="BooleanOR" handle="586699271">
+                    <module type="BooleanOR" handle="900987846">
                         <plugs>
                             <plug name="AnimPos" idx="1"/>
                             <plug name="AnimPos" id="2"/>
                             <plug name="AnimPos" id="3"/>
                             <plug id="4"/>
                         </plugs>
-                        <structRect l="180" r="252" t="552" b="612"/>
-                        <panelRect l="232" r="232" t="160" b="160"/>
+                        <structRect l="156" r="228" t="612" b="672"/>
+                        <panelRect l="240" r="240" t="136" b="136"/>
+                    </module>
+                    <module type="IntSplitterX" handle="341386383">
+                        <plugs>
+                            <plug idx="1"/>
+                        </plugs>
+                        <structRect l="24" r="72" t="636" b="660"/>
+                        <panelRect l="248" r="248" t="136" b="136"/>
+                    </module>
+                    <module type="ShowIntGui" handle="611406624">
+                        <structRect l="48" r="132" t="456" b="496"/>
+                        <panelRect l="256" r="256" t="152" b="152"/>
+                    </module>
+                    <module type="VectorButton" handle="330024761">
+                        <plugs>
+                            <plug default="1" idx="19"/>
+                        </plugs>
+                        <structRect l="300" r="384" t="720" b="816"/>
+                        <panelRect l="168" r="200" t="240" b="264"/>
+                    </module>
+                    <module type="VectorButton" handle="591544785">
+                        <plugs>
+                            <plug default="1" idx="19"/>
+                        </plugs>
+                        <structRect l="300" r="384" t="612" b="708"/>
+                        <panelRect l="168" r="200" t="208" b="232"/>
+                    </module>
+                    <module type="VectorButton" handle="1515746223">
+                        <plugs>
+                            <plug default="1" idx="19"/>
+                        </plugs>
+                        <structRect l="300" r="384" t="504" b="600"/>
+                        <panelRect l="168" r="200" t="176" b="200"/>
                     </module>
                     <module type="Container" handle="1208239536" name="LED2" m_locked="true" skin="default">
                         <plugs>
@@ -128,7 +139,7 @@
                             <plug name="In" datatype="4"/>
                             <plug/>
                         </plugs>
-                        <structRect l="456" r="552" t="648" b="720"/>
+                        <structRect l="456" r="552" t="636" b="708"/>
                         <modules>
                             <module type="SE Bool Splitter" handle="1826180613">
                                 <plugs>
@@ -615,13 +626,11 @@
                     <line type="Line" handle="948250128" lineType="1" fMod="569434414" tMod="121852940" fPlg="7" tPlg="2"/>
                     <line type="Line" handle="546803309" lineType="1" fMod="1684628222" tMod="121852940" fPlg="7" tPlg="3"/>
                     <line type="Line" handle="21023462" lineType="1" fMod="1684628222" tMod="380363437" fPlg="7" tPlg="6"/>
-                    <line type="Line" handle="1693657452" lineType="1" fMod="1208239536" tMod="586699271" fPlg="7"/>
-                    <line type="Line" handle="1818077143" lineType="1" fMod="586699271" tMod="1515746223" fPlg="1" tPlg="6"/>
-                    <line type="Line" handle="1335051451" lineType="1" fMod="586699271" tMod="591544785" fPlg="2" tPlg="6"/>
-                    <line type="Line" handle="1312322076" lineType="1" fMod="586699271" tMod="1966764623" fPlg="1" tPlg="8"/>
-                    <line type="Line" handle="626311390" lineType="1" fMod="586699271" tMod="1655628067" fPlg="2" tPlg="8"/>
-                    <line type="Line" handle="402324224" lineType="1" fMod="586699271" tMod="330024761" fPlg="3" tPlg="6"/>
-                    <line type="Line" handle="897996883" lineType="1" fMod="586699271" tMod="1723063809" fPlg="3" tPlg="8"/>
+                    <line type="Line" handle="1420070362" lineType="1" fMod="341386383" tMod="611406624"/>
+                    <line type="Line" handle="745495222" lineType="1" fMod="341386383" tMod="900987846"/>
+                    <line type="Line" handle="416388383" lineType="1" fMod="900987846" tMod="1515746223" fPlg="1" tPlg="6"/>
+                    <line type="Line" handle="1184183520" lineType="1" fMod="900987846" tMod="591544785" fPlg="2" tPlg="6"/>
+                    <line type="Line" handle="2978074" lineType="1" fMod="900987846" tMod="330024761" fPlg="3" tPlg="6"/>
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
                 <PanelLocation l="30" r="530" t="30" b="330"/>
@@ -650,7 +659,7 @@
         </Plugin>
         <Plugin id="BooleanOR" name="Boolean OR" flags="384" category="mx/Sub-Controls">
             <GUI>
-                <Pin name="Bool" datatype="bool"/>
+                <Pin name="Pin Count" datatype="int"/>
                 <Pin name="Spare" datatype="bool" direction="out" autoRename="true" autoDuplicate="true"/>
             </GUI>
         </Plugin>
