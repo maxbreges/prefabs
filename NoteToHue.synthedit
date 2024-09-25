@@ -25,13 +25,12 @@
                 </param>
                 <param type="6" handle="435064296" shortName="MIDI Player2 Gate" vstParameterNumber="4" module="1794346357" moduleParamId="0">
                     <patch-list>
-                        <s>10</s>
-                        <s repeat="127">0</s>
+                        <s repeat="128">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="961329429" vstParameterNumber="0" module="640652739" moduleParamId="1">
                     <patch-list>
-                        <s>57</s>
+                        <s>68</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -58,14 +57,12 @@
                 </param>
                 <param type="6" handle="1506222883" vstParameterNumber="2" module="640652739" moduleParamId="2">
                     <patch-list>
-                        <s>99</s>
-                        <s repeat="127">0</s>
+                        <s repeat="128">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1678432461" vstParameterNumber="3" module="640652739" moduleParamId="3">
                     <patch-list>
-                        <s>0.000000</s>
-                        <s repeat="127">0</s>
+                        <s repeat="128">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1797126409" ignorePC="true" private="true" stateful="false" module="1875253886" moduleParamId="0"/>
@@ -264,7 +261,7 @@
                             <plug name="Pitch" tiedtomod="2127089738" tiedtopin="10"/>
                             <plug/>
                         </plugs>
-                        <structRect l="264" r="324" t="60" b="108"/>
+                        <structRect l="324" r="384" t="60" b="108"/>
                     </module>
                     <module type="IO Mod" handle="1260612634">
                         <plugs>
@@ -275,7 +272,6 @@
                     </module>
                 </modules>
                 <lines>
-                    <line type="Line" handle="575455484" lineType="1" fMod="2006002571" tMod="1069451178" fPlg="4" tPlg="2"/>
                     <line type="Line" handle="1639308340" lineType="1" fMod="2006002571" tMod="1069451178" fPlg="3" tPlg="1"/>
                     <line type="Line" handle="85629008" lineType="1" fMod="2006002571" tMod="1069451178" fPlg="2"/>
                     <line type="Line" handle="1240415148" lineType="1" fMod="691856181" tMod="998704072" fPlg="8" tPlg="8"/>
@@ -283,10 +279,11 @@
                     <line type="Line" handle="1449317422" lineType="1" fMod="691856181" tMod="237211096" fPlg="6" tPlg="8"/>
                     <line type="Line" handle="517527216" lineType="1" fMod="691856181" tMod="237211096" fPlg="5" tPlg="7"/>
                     <line type="Line" handle="1871522111" lineType="1" fMod="1260612634" tMod="2006002571"/>
+                    <line type="Line" handle="299998596" lineType="1" fMod="2006002571" tMod="1069451178" fPlg="4" tPlg="2"/>
                 </lines>
                 <PanelWndPosition l="434" r="434" t="217" b="217"/>
                 <PanelLocation l="30" r="530" t="30" b="330"/>
-                <StructLocation l="389" r="1160" t="287" b="884"/>
+                <StructLocation l="567" r="1338" t="318" b="915"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
@@ -306,7 +303,7 @@
                 <panelRect l="344" r="344" t="248" b="248"/>
             </module>
             <module type="MIDIToFloatGui" handle="640652739">
-                <structRect l="336" r="408" t="132" b="192"/>
+                <structRect l="348" r="420" t="132" b="192"/>
                 <panelRect l="280" r="280" t="120" b="120"/>
             </module>
             <module type="SE Keyboard (MIDI)" handle="1902990484">
