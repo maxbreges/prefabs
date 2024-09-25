@@ -77,11 +77,11 @@
                 <plugs>
                     <plug default="FF888800" idx="2"/>
                 </plugs>
-                <structRect l="480" r="588" t="336" b="408"/>
+                <structRect l="456" r="564" t="324" b="396"/>
                 <panelRect l="232" r="232" t="144" b="144"/>
             </module>
             <module type="ModulusGui" handle="78523134">
-                <structRect l="504" r="564" t="180" b="204"/>
+                <structRect l="492" r="552" t="192" b="216"/>
                 <panelRect l="224" r="224" t="128" b="128"/>
             </module>
             <module type="Slider" handle="1794346357" name="play/stop">
@@ -153,7 +153,7 @@
                 </lines>
                 <PanelWndPosition l="134" r="154" t="112" b="132"/>
                 <PanelLocation l="318" r="429" t="12" b="75"/>
-                <StructLocation l="836" r="1447" t="13" b="439"/>
+                <StructLocation l="836" r="1447" t="2" b="428"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="88" cy="88"/>
@@ -167,7 +167,7 @@
                     <plug name="Pitch" direction="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="288" r="360" t="264" b="336"/>
+                <structRect l="312" r="384" t="252" b="324"/>
                 <modules>
                     <module type="Container" handle="998704072" skin="default">
                         <plugs>
@@ -327,7 +327,7 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="829" t="0" b="861"/>
+        <StructLocation l="0" r="833" t="0" b="840"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
