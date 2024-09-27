@@ -23,7 +23,7 @@
                 </param>
                 <param type="6" handle="374605602" shortName="Float to Volts Float In" vstParameterNumber="2" module="1594371228" moduleParamId="0" RangeMinimum="4">
                     <patch-list>
-                        <s>6.46</s>
+                        <s>6.46001</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -42,7 +42,8 @@
                 </param>
                 <param type="6" handle="729395166" vstParameterNumber="6" module="1972939583" moduleParamId="0">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>5</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="855999269" vstParameterNumber="9" module="1830212462" moduleParamId="0">
@@ -65,7 +66,7 @@
                 </param>
                 <param type="6" handle="1290425748" shortName="Float to Volts Float In" vstParameterNumber="4" module="230616826" moduleParamId="0" RangeMinimum="2" RangeMaximum="8">
                     <patch-list>
-                        <s>4.46</s>
+                        <s>4.46001</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -84,7 +85,8 @@
                 <param type="6" handle="1926468890" shortName="patchValue" ignorePC="true" stateful="false" module="1214074863" moduleParamId="0"/>
                 <param type="6" handle="1984604474" private="true" module="837929432" moduleParamId="0">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>0.5</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
             </Parameters>
@@ -96,10 +98,10 @@
                     <plug default="1"/>
                     <plug idx="7"/>
                 </plugs>
-                <structRect l="180" r="456" t="552" b="780"/>
+                <structRect l="180" r="528" t="552" b="692"/>
                 <modules>
                     <module type="FloatKnob" handle="85966246">
-                        <structRect l="0" r="108" t="48" b="108"/>
+                        <structRect l="0" r="108" t="60" b="120"/>
                         <panelRect l="24" r="124" t="24" b="72"/>
                     </module>
                     <module type="FloatKnob" handle="1830212462">
@@ -107,7 +109,7 @@
                         <panelRect l="24" r="124" t="88" b="136"/>
                     </module>
                     <module type="PatchMemoryFloat" handle="837929432">
-                        <structRect l="132" r="252" t="84" b="132"/>
+                        <structRect l="132" r="252" t="72" b="120"/>
                         <panelRect l="280" r="280" t="144" b="144"/>
                     </module>
                     <module type="ShowFloat" handle="410269264">
@@ -124,10 +126,10 @@
                     </module>
                 </modules>
                 <lines>
-                    <line type="Line" handle="1744555431" fMod="837929432" tMod="1972939583" fPlg="1" tPlg="3"/>
-                    <line type="Line" handle="2071255674" fMod="837929432" tMod="410269264" fPlg="3" tPlg="6"/>
-                    <line type="Line" handle="1208937004" fMod="1830212462" tMod="837929432" fPlg="14" tPlg="4"/>
-                    <line type="Line" handle="738254662" fMod="85966246" tMod="837929432" fPlg="14" tPlg="5"/>
+                    <line type="Line" handle="1123149020" fMod="837929432" tMod="1972939583" fPlg="1" tPlg="3"/>
+                    <line type="Line" handle="154192258" fMod="837929432" tMod="410269264" fPlg="3" tPlg="6"/>
+                    <line type="Line" handle="1983649063" fMod="1830212462" tMod="837929432" fPlg="14" tPlg="5"/>
+                    <line type="Line" handle="723067637" fMod="85966246" tMod="837929432" fPlg="14" tPlg="4"/>
                 </lines>
                 <PanelWndPosition l="24" r="356" t="32" b="144"/>
                 <PanelLocation l="945" r="1368" t="567" b="805"/>
@@ -349,8 +351,8 @@
             <Audio>
                 <Pin name="Value In" datatype="float" private="true" parameterId="0"/>
                 <Pin name="Scaled" datatype="float" direction="out"/>
-                <Pin name="Min" datatype="float" default="2"/>
                 <Pin name="Max" datatype="float" default="8"/>
+                <Pin name="Min" datatype="float" default="2"/>
             </Audio>
             <GUI>
                 <Pin name="AnimationOut" datatype="float" private="true" parameterId="0"/>
