@@ -1,4 +1,4 @@
-SynthEdit prefabs
+SynthEdit prefabs (not recommended for use or exploring since the repository is used as online scope for developing)
 
 MIT License
 
