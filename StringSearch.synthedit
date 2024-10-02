@@ -73,7 +73,7 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="3" r="1210" t="132" b="626"/>
+        <StructLocation l="3" r="1138" t="132" b="609"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
