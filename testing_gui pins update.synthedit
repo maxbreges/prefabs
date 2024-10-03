@@ -58,7 +58,7 @@
                     <plug default="1"/>
                     <plug default="0" idx="5"/>
                     <plug default="2"/>
-                    <plug name="In" default="" datatype="4"/>
+                    <plug name="In" datatype="4"/>
                     <plug name="Bool" direction="1" datatype="4"/>
                     <plug/>
                 </plugs>
@@ -133,7 +133,7 @@
                 <modules>
                     <module type="SE Bool Splitter" handle="90087813">
                         <plugs>
-                            <plug id="1" idx="1"/>
+                            <plug idx="1"/>
                         </plugs>
                         <structRect l="36" r="84" t="84" b="108"/>
                         <panelRect l="56" r="56" t="0" b="0"/>
@@ -253,13 +253,13 @@
             <line type="Line" handle="336581184" lineType="1" fMod="1042006558" tMod="1934619029" tPlg="1"/>
             <line type="Line" handle="1931062787" lineType="1" fMod="1042006558" tMod="882905762" fPlg="1" tPlg="5"/>
             <line type="Line" handle="1155019222" lineType="1" fMod="1934619029" tMod="390200833" fPlg="2"/>
-            <line type="Line" handle="1759488775" lineType="1" fMod="1934619029" tMod="1232533953" tPlg="5"/>
             <line type="Line" handle="666328890" lineType="1" fMod="1934619029" tMod="1979022579" fPlg="8" tPlg="7"/>
             <line type="Line" handle="1499268071" lineType="1" fMod="13981" tMod="1934619029" fPlg="7" tPlg="9"/>
+            <line type="Line" handle="1841772075" lineType="1" fMod="1934619029" tMod="1232533953" tPlg="5"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="788" t="0" b="948"/>
+        <StructLocation l="0" r="874" t="0" b="947"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="1" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
