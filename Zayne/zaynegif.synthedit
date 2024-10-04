@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+<Document file_format="150000" vst_latencyCompensation="1" AutoPlay="true" autoplay="true" vst_preset_count="64">
     <master_container type="Container" handle="1280288960" name="Main" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -10,8 +10,7 @@
             <Parameters>
                 <param type="6" handle="233957690" vstParameterNumber="0" module="625640581" moduleParamId="0">
                     <patch-list>
-                        <s>1</s>
-                        <s repeat="127">0</s>
+                        <s repeat="128">0</s>
                     </patch-list>
                 </param>
                 <param type="10" handle="543994794" private="true" hostControl="49">
@@ -21,8 +20,7 @@
                 </param>
                 <param type="6" handle="808856095" vstParameterNumber="1" module="625640581" moduleParamId="2">
                     <patch-list>
-                        <s>63</s>
-                        <s repeat="127">0</s>
+                        <s repeat="128">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="892375638" vstParameterNumber="2" module="625640581" moduleParamId="3">
@@ -42,8 +40,7 @@
                 </param>
                 <param type="6" handle="1902638064" vstParameterNumber="3" module="625640581" moduleParamId="1">
                     <patch-list>
-                        <s>40</s>
-                        <s repeat="127">0</s>
+                        <s repeat="128">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1945842220" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1280288960" hostControl="14" RangeMinimum="1" RangeMaximum="128">
