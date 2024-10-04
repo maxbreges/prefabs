@@ -10,37 +10,37 @@
             <Parameters>
                 <param type="1" handle="117604223" private="true" module="1950592162" moduleParamId="0">
                     <patch-list>
-                        <s>ff05ff00</s>
+                        <s>ff00ffff</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="207260527" private="true" module="1318333898" moduleParamId="0">
                     <patch-list>
-                        <s>ff00f1ff</s>
+                        <s>ff0000ff</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="355989218" private="true" module="1436310807" moduleParamId="0">
                     <patch-list>
-                        <s>ffff00b9</s>
+                        <s>ffff00ff</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="515808466" private="true" module="912678807" moduleParamId="0">
                     <patch-list>
-                        <s>ffffb800</s>
+                        <s>fffff500</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="984575654" private="true" module="1710829157" moduleParamId="0">
                     <patch-list>
-                        <s>ffebff00</s>
+                        <s>ffff7300</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="1287533009" private="true" module="736619339" moduleParamId="2">
                     <patch-list>
-                        <s>ff24ff00</s>
+                        <s>ffff0000</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
@@ -57,13 +57,13 @@
                 </param>
                 <param type="1" handle="1925267623" private="true" module="778191570" moduleParamId="0">
                     <patch-list>
-                        <s>ff24ff00</s>
+                        <s>ff00ff00</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="2096262895" private="true" module="1867866233" moduleParamId="0">
                     <patch-list>
-                        <s>ffff00c0</s>
+                        <s>ffff0000</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
@@ -80,7 +80,7 @@
                     <plug name="ColorAdj" direction="1" datatype="4"/>
                     <plug/>
                 </plugs>
-                <structRect l="168" r="240" t="120" b="206"/>
+                <structRect l="192" r="264" t="108" b="194"/>
                 <modules>
                     <module type="TextHold" handle="1436310807">
                         <structRect l="12" r="84" t="348" b="384"/>
@@ -211,7 +211,7 @@
                 <panelRect l="272" r="272" t="168" b="168"/>
             </module>
             <module type="SE PatchMemory List3" handle="1402384734">
-                <structRect l="24" r="132" t="48" b="132"/>
+                <structRect l="24" r="132" t="60" b="144"/>
                 <panelRect l="296" r="296" t="160" b="160"/>
             </module>
             <module type="Oscillator" handle="1902356925">
@@ -231,7 +231,7 @@
         <PanelLocation l="18" r="609" t="541" b="841"/>
         <StructLocation l="458" r="966" t="3" b="470"/>
         <PanelScroll x="0" y="0"/>
-        <StructScroll x="0" y="1"/>
+        <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
         <panel_rect l="16" r="368" t="16" b="216"/>
     </master_container>
