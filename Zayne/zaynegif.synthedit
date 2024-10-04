@@ -10,7 +10,8 @@
             <Parameters>
                 <param type="6" handle="233957690" vstParameterNumber="0" module="625640581" moduleParamId="0">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>1</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="10" handle="543994794" private="true" hostControl="49">
@@ -20,7 +21,8 @@
                 </param>
                 <param type="6" handle="808856095" vstParameterNumber="1" module="625640581" moduleParamId="2">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>63</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="892375638" vstParameterNumber="2" module="625640581" moduleParamId="3">
@@ -40,7 +42,8 @@
                 </param>
                 <param type="6" handle="1902638064" vstParameterNumber="3" module="625640581" moduleParamId="1">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>57</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1945842220" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1280288960" hostControl="14" RangeMinimum="1" RangeMaximum="128">
@@ -68,7 +71,7 @@
                 <panelRect l="240" r="240" t="176" b="176"/>
             </module>
             <module type="SE Keyboard (MIDI)" handle="226262950">
-                <structRect l="24" r="396" t="36" b="168"/>
+                <structRect l="60" r="432" t="84" b="216"/>
                 <panelRect l="224" r="224" t="176" b="176"/>
             </module>
             <module type="Image3" handle="1890149305">
