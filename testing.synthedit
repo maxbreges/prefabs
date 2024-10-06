@@ -45,9 +45,9 @@
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
-                <param type="6" handle="690305806" vstParameterNumber="2" module="1723793565" moduleParamId="0">
+                <param type="6" handle="690305806" vstParameterNumber="2" module="1723793565" moduleParamId="0" RangeMaximum="5">
                     <patch-list>
-                        <s>5.05</s>
+                        <s>1.65</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -76,7 +76,7 @@
                 </param>
                 <param type="1" handle="1395294574" vstParameterNumber="4" module="1723793565" moduleParamId="2">
                     <patch-list>
-                        <s>ff00f8ff</s>
+                        <s>ff0057ff</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
