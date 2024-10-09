@@ -15,7 +15,7 @@
                 <param type="8" handle="865476285" ignorePC="true" stateful="false" module="869613870" moduleParamId="0"/>
                 <param type="6" handle="895109013" shortName="Float to Volts Float In" vstParameterNumber="14" module="1256406140" moduleParamId="0" RangeMaximum="255">
                     <patch-list>
-                        <s>76.5</s>
+                        <s>164.475</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
