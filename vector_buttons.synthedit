@@ -27,29 +27,12 @@
                 </param>
                 <param type="6" handle="1961192604" module="1198059877" moduleParamId="0">
                     <patch-list>
-                        <s>10</s>
-                        <s repeat="127">0</s>
+                        <s repeat="128">0</s>
                     </patch-list>
                 </param>
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="ShowIntGui" handle="264929852">
-                <structRect l="204" r="288" t="288" b="348"/>
-                <panelRect l="256" r="320" t="136" b="168"/>
-            </module>
-            <module type="Show Float" handle="1622987076">
-                <structRect l="288" r="396" t="420" b="484"/>
-                <panelRect l="288" r="352" t="96" b="120"/>
-            </module>
-            <module type="IntDivide" handle="797648350">
-                <plugs>
-                    <plug default="10"/>
-                    <plug default="3"/>
-                </plugs>
-                <structRect l="180" r="252" t="396" b="432"/>
-                <panelRect l="264" r="265" t="128" b="129"/>
-            </module>
             <module type="SE PatchMemory Float" handle="1198059877">
                 <structRect l="120" r="240" t="24" b="108"/>
                 <panelRect l="232" r="233" t="104" b="105"/>
@@ -107,8 +90,6 @@
             <line type="Line" handle="2028622337" lineType="1" fMod="1198059877" tMod="1077647691" fPlg="8" tPlg="5"/>
             <line type="Line" handle="1508170503" lineType="1" fMod="1198059877" tMod="20963569" fPlg="8" tPlg="5"/>
             <line type="Line" handle="1194810666" lineType="1" fMod="1198059877" tMod="707394572" fPlg="8" tPlg="5"/>
-            <line type="Line" handle="1092142" lineType="1" fMod="797648350" tMod="1622987076" fPlg="2"/>
-            <line type="Line" handle="358161290" lineType="1" fMod="1077647691" tMod="264929852" fPlg="6"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="931" r="1393" t="33" b="240"/>
@@ -155,13 +136,6 @@
                 <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
                 <Pin name="Visible" datatype="bool"/>
                 <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
-            </GUI>
-        </Plugin>
-        <Plugin id="IntDivide" name="Int Divide" flags="384" category="mx/Sub-Controls/Math">
-            <GUI>
-                <Pin name="Value In" datatype="int"/>
-                <Pin name="Divide" datatype="int"/>
-                <Pin name="Value Out" datatype="float" direction="out"/>
             </GUI>
         </Plugin>
         <Plugin id="SE GuiSwitch &lt; (Text)" name="Switch &lt; (Text)" flags="384" category="Switches/GUI">
@@ -213,25 +187,6 @@
                 <Pin name="File Extension" datatype="string" direction="out"/>
                 <Pin name="Menu Items" datatype="string" direction="out"/>
                 <Pin name="Menu Selection" datatype="int" direction="out"/>
-            </GUI>
-        </Plugin>
-        <Plugin id="Show Float" name="Show Float Gui" flags="384" category="mx/Show">
-            <GUI graphicsApi="GmpiGui">
-                <Pin name="Float" datatype="float"/>
-                <Pin name="Float" datatype="float" direction="out"/>
-                <Pin name="TextColor" datatype="string" isMinimised="true"/>
-                <Pin name="Font" datatype="string" default="Georgia" isMinimised="true"/>
-                <Pin name="Text" datatype="string" private="true"/>
-                <Pin name="Decimal Places" datatype="int" default="2"/>
-            </GUI>
-        </Plugin>
-        <Plugin id="ShowIntGui" name="Show Int Gui" flags="384" category="mx/Show">
-            <GUI graphicsApi="GmpiGui">
-                <Pin name="Int" datatype="int"/>
-                <Pin name="Int" datatype="int" direction="out"/>
-                <Pin name="TextColor" datatype="string" isMinimised="true"/>
-                <Pin name="Font" datatype="string" default="Georgia" isMinimised="true"/>
-                <Pin name="Text" datatype="string" private="true"/>
             </GUI>
         </Plugin>
     </PluginList>

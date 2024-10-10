@@ -10,8 +10,7 @@
             <Parameters>
                 <param type="6" handle="38844284" shortName="Float To Int Float Val" vstParameterNumber="21" module="1296532968" moduleParamId="0" RangeMaximum="255">
                     <patch-list>
-                        <s>132.6</s>
-                        <s repeat="127">0</s>
+                        <s repeat="128">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="422746242" vstParameterNumber="25" module="1946094910" moduleParamId="0">
@@ -28,7 +27,7 @@
                 </param>
                 <param type="6" handle="557781698" vstParameterNumber="22" module="1993833407" moduleParamId="0">
                     <patch-list>
-                        <s>175.95</s>
+                        <s>62.4751</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -62,13 +61,13 @@
                 </param>
                 <param type="6" handle="1153566558" vstParameterNumber="19" module="1131755921" moduleParamId="0" RangeMaximum="255">
                     <patch-list>
-                        <s>175.95</s>
+                        <s>62.4751</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1314287342" shortName="Float To Int Float Val" vstParameterNumber="20" module="1002386008" moduleParamId="0" RangeMaximum="255">
                     <patch-list>
-                        <s>65.025</s>
+                        <s>255</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -86,7 +85,7 @@
                 </param>
                 <param type="6" handle="1677861719" vstParameterNumber="23" module="1993833407" moduleParamId="1">
                     <patch-list>
-                        <s>65.025</s>
+                        <s>255</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -98,8 +97,7 @@
                 </param>
                 <param type="6" handle="1864774891" vstParameterNumber="24" module="1993833407" moduleParamId="2">
                     <patch-list>
-                        <s>132.6</s>
-                        <s repeat="127">0</s>
+                        <s repeat="128">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1942726519" shortName="IntRGB to Hex Alpha(0-255)" vstParameterNumber="32" module="1331199343" moduleParamId="0" RangeMaximum="255">
