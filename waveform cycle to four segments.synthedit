@@ -24,7 +24,7 @@
         </PatchManager>
         <modules>
             <module type="RadiantCircle" handle="77361792">
-                <structRect l="1068" r="1344" t="456" b="840"/>
+                <structRect l="1068" r="1320" t="456" b="804"/>
                 <panelRect l="232" r="332" t="216" b="316"/>
             </module>
             <module type="Delay2" handle="549510201">
@@ -49,7 +49,7 @@
                     <plug name="Signal in" default="10"/>
                     <plug direction="1"/>
                 </plugs>
-                <structRect l="820" r="892" t="514" b="574"/>
+                <structRect l="828" r="900" t="516" b="576"/>
                 <modules>
                     <module type="SE PatchMemory Float Out" handle="1991932378">
                         <structRect l="267" r="387" t="36" b="108"/>
@@ -106,7 +106,7 @@
                     <plug name="Signal in" default="10"/>
                     <plug direction="1"/>
                 </plugs>
-                <structRect l="823" r="895" t="436" b="496"/>
+                <structRect l="828" r="900" t="432" b="492"/>
                 <modules>
                     <module type="SE PatchMemory Float Out" handle="722159157">
                         <structRect l="267" r="387" t="36" b="108"/>
@@ -163,7 +163,7 @@
                     <plug name="Signal in" default="10"/>
                     <plug direction="1"/>
                 </plugs>
-                <structRect l="823" r="895" t="361" b="421"/>
+                <structRect l="828" r="900" t="348" b="408"/>
                 <modules>
                     <module type="SE PatchMemory Float Out" handle="1988935215">
                         <structRect l="267" r="387" t="36" b="108"/>
@@ -220,7 +220,7 @@
                     <plug name="Signal in" default="10"/>
                     <plug direction="1"/>
                 </plugs>
-                <structRect l="823" r="895" t="282" b="342"/>
+                <structRect l="828" r="900" t="264" b="324"/>
                 <modules>
                     <module type="SE PatchMemory Float Out" handle="1944289904">
                         <structRect l="267" r="387" t="36" b="108"/>
@@ -340,7 +340,7 @@
         <lines>
             <line type="Line" handle="168877079" fMod="2039815586" tMod="1812936856" fPlg="3"/>
             <line type="Line" handle="934252857" fMod="2039815586" tMod="1356282669" fPlg="3" tPlg="1"/>
-            <line type="Line" handle="2133098084" lineType="1" fMod="2039815586" tMod="570713922" fPlg="3" tPlg="6"/>
+            <line type="Line" handle="2133098084" fMod="2039815586" tMod="570713922" fPlg="3" tPlg="6"/>
             <line type="Line" handle="453102194" fMod="2039815586" tMod="1181139682" fPlg="3" tPlg="1"/>
             <line type="Line" handle="1457728504" fMod="2039815586" tMod="667306767" fPlg="3"/>
             <line type="Line" handle="451820910" fMod="667306767" tMod="693667354" fPlg="2" tPlg="1"/>
@@ -351,10 +351,10 @@
             <line type="Line" handle="1972176016" fMod="1356282669" tMod="1080932795" fPlg="2" tPlg="2"/>
             <line type="Line" handle="786248481" fMod="1356282669" tMod="1680464172" fPlg="2" tPlg="1"/>
             <line type="Line" handle="521932920" fMod="667306767" tMod="1680464172" fPlg="2" tPlg="2"/>
-            <line type="Line" handle="1340131143" lineType="1" fMod="693667354" tMod="521682633" tPlg="7"/>
-            <line type="Line" handle="340356836" lineType="1" fMod="784661653" tMod="665846660" tPlg="7"/>
-            <line type="Line" handle="1390109443" lineType="1" fMod="1080932795" tMod="1135007660" tPlg="7"/>
-            <line type="Line" handle="1698888891" lineType="1" fMod="1680464172" tMod="445108061" tPlg="7"/>
+            <line type="Line" handle="1340131143" fMod="693667354" tMod="521682633" tPlg="7"/>
+            <line type="Line" handle="340356836" fMod="784661653" tMod="665846660" tPlg="7"/>
+            <line type="Line" handle="1390109443" fMod="1080932795" tMod="1135007660" tPlg="7"/>
+            <line type="Line" handle="1698888891" fMod="1680464172" tMod="445108061" tPlg="7"/>
             <line type="Line" handle="1104524474" fMod="2039815586" tMod="412010084" fPlg="3"/>
             <line type="Line" handle="164820474" fMod="412010084" tMod="667306767" fPlg="2" tPlg="1"/>
             <line type="Line" handle="473220488" fMod="2039815586" tMod="549510201" fPlg="3"/>
