@@ -14,44 +14,27 @@
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
-                <param type="1" handle="342498282" vstParameterNumber="4" module="655449334" moduleParamId="2">
-                    <patch-list>
-                        <s>ff00ffff</s>
-                        <s repeat="127"></s>
-                    </patch-list>
-                </param>
-                <param type="1" handle="580333443" vstParameterNumber="5" module="2134461739" moduleParamId="2">
-                    <patch-list>
-                        <s>ffffe600</s>
-                        <s repeat="127"></s>
-                    </patch-list>
-                </param>
-                <param type="6" handle="632187503" vstParameterNumber="6" module="2134461739" moduleParamId="0">
-                    <patch-list>
-                        <s repeat="128">0</s>
-                    </patch-list>
-                </param>
                 <param type="10" handle="1147822866" private="true" hostControl="49">
                     <patch-list>
                         <s repeat="128"></s>
                     </patch-list>
                 </param>
-                <param type="10" handle="2071169203" shortName="PatchMemory Blob Out Value In" vstParameterNumber="2" module="1152372907" moduleParamId="0">
+                <param type="1" handle="2025321472" module="655449334" moduleParamId="2">
                     <patch-list>
-                        <s>/wD//w==</s>
+                        <s>ffff00d0</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
-                <param type="1" handle="2100588811" private="true" module="1498935585" moduleParamId="2">
+                <param type="10" handle="2071169203" shortName="PatchMemory Blob Out Value In" vstParameterNumber="2" module="1152372907" moduleParamId="0">
                     <patch-list>
-                        <s>ffff00e7</s>
+                        <s>//8A0A==</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Container" handle="1979022579" name="LED" ViewOpenFlags="256" m_locked="true" skin="default">
+            <module type="Container" handle="1979022579" name="LED" m_locked="true" skin="default">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="0"/>
@@ -187,7 +170,7 @@
                 <panelRect l="320" r="320" t="224" b="224"/>
             </module>
             <module type="TextRedirect" handle="1042006558">
-                <structRect l="36" r="84" t="312" b="336"/>
+                <structRect l="36" r="84" t="288" b="312"/>
                 <panelRect l="256" r="256" t="144" b="144"/>
             </module>
             <module type="ShowIntGui" handle="687288785">
@@ -210,22 +193,11 @@
                 <structRect l="324" r="384" t="396" b="516"/>
                 <panelRect l="240" r="240" t="152" b="152"/>
             </module>
-            <module type="EnumKnob" handle="1498935585">
-                <structRect l="600" r="708" t="228" b="324"/>
-                <panelRect l="272" r="272" t="152" b="152"/>
-            </module>
-            <module type="FloatKnob" handle="2134461739">
-                <structRect l="600" r="708" t="348" b="408"/>
-                <panelRect l="256" r="256" t="152" b="152"/>
-            </module>
             <module type="SE BlobToText GUI" handle="1310217124">
                 <structRect l="228" r="300" t="216" b="240"/>
                 <panelRect l="336" r="336" t="224" b="224"/>
             </module>
             <module type="ColorKnob2" handle="655449334">
-                <plugs>
-                    <plug default="2" idx="17"/>
-                </plugs>
                 <structRect l="336" r="456" t="24" b="264"/>
                 <panelRect l="256" r="256" t="136" b="136"/>
             </module>
@@ -244,7 +216,6 @@
         </modules>
         <lines>
             <line type="Line" handle="1307411928" fMod="1152372907" tMod="1958516586" fPlg="5"/>
-            <line type="Line" handle="1405455816" fMod="1958516586" tMod="655449334" fPlg="1" tPlg="5"/>
             <line type="Line" handle="2069008866" fMod="1310217124" tMod="2138299017" fPlg="1" tPlg="5"/>
             <line type="Line" handle="104999657" fMod="1152372907" tMod="1310217124" fPlg="5"/>
             <line type="Line" handle="1047583798" lineType="1" fMod="1934619029" tMod="556909749" fPlg="4"/>
@@ -256,6 +227,7 @@
             <line type="Line" handle="666328890" lineType="1" fMod="1934619029" tMod="1979022579" fPlg="8" tPlg="7"/>
             <line type="Line" handle="1499268071" lineType="1" fMod="13981" tMod="1934619029" fPlg="7" tPlg="9"/>
             <line type="Line" handle="1841772075" lineType="1" fMod="1934619029" tMod="1232533953" tPlg="5"/>
+            <line type="Line" handle="1075662078" fMod="1958516586" tMod="655449334" fPlg="1" tPlg="5"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
@@ -278,18 +250,19 @@
                 <Pin name="Animation Position" datatype="float"/>
                 <Pin name="Hint" datatype="string" isMinimised="true"/>
                 <Pin name="Hex Out" datatype="string"/>
-                <Pin name="ColorAdj" datatype="bool" private="true"/>
+                <Pin name="ColorAdj" datatype="bool"/>
                 <Pin name="Circle Size" datatype="float" default="1" isMinimised="true"/>
                 <Pin name="Hex" datatype="string" private="true" parameterId="2"/>
-                <Pin name="Line Thickness" datatype="float" default="5"/>
-                <Pin name="Line Color" datatype="string" default="FFFFFFFF"/>
+                <Pin name="Line Thickness" datatype="float" default="5" isMinimised="true"/>
+                <Pin name="Line Color" datatype="string" default="FFFFFFFF" isMinimised="true"/>
                 <Pin name="Background Color" datatype="string" default="FF000000" isMinimised="true"/>
                 <Pin name="Mouse Down" datatype="bool"/>
                 <Pin name="Shift Key" datatype="bool" private="true"/>
                 <Pin name="Mouse Over" datatype="bool" private="true"/>
                 <Pin name="Reset Value" datatype="float" default="0.5" isMinimised="true"/>
-                <Pin name="DashStyle" datatype="enum" metadata="Solid,Dash,Dot,DashDot,DashDotDot"/>
-                <Pin name="Style" datatype="enum" metadata="Flat,Square,Round,Triangle"/>
+                <Pin name="DashStyle" datatype="enum" isMinimised="true" metadata="Solid,Dash,Dot,DashDot,DashDotDot"/>
+                <Pin name="Style" datatype="enum" default="2" isMinimised="true" metadata="Flat,Square,Round,Triangle"/>
+                <Pin name="Shift" datatype="bool" private="true"/>
             </GUI>
         </Plugin>
         <Plugin id="Container" class="1" name="Container" flags="384" category="">
@@ -304,51 +277,6 @@
                 <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
                 <Pin name="Visible" datatype="bool"/>
                 <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
-            </GUI>
-        </Plugin>
-        <Plugin id="EnumKnob" name="Display List" flags="384" category="mx/Controls">
-            <Parameters>
-                <Parameter id="2" datatype="string" name="" private="true"/>
-            </Parameters>
-            <GUI graphicsApi="GmpiGui">
-                <Pin name="Hint" datatype="string" isMinimised="true"/>
-                <Pin name="BgColor" datatype="string" default="FF000000" private="true"/>
-                <Pin name="TopColor" datatype="string" default="FF660000" private="true"/>
-                <Pin name="Text" datatype="string" direction="out" private="true"/>
-                <Pin name="Text Color" datatype="string" default="ffffffff" isMinimised="true"/>
-                <Pin name="Text Font" datatype="string" default="Times New Roman" isMinimised="true"/>
-                <Pin name="Font Size" datatype="int" default="16" isMinimised="true"/>
-                <Pin name="Animation Position" datatype="float" private="true"/>
-                <Pin name="Hex In" datatype="string" direction="out" private="true"/>
-                <Pin name="HexMem" datatype="string" private="true" parameterId="2"/>
-                <Pin name="Choice" datatype="int"/>
-                <Pin name="List Items" datatype="string"/>
-                <Pin name="Mouse Down" datatype="bool"/>
-            </GUI>
-        </Plugin>
-        <Plugin id="FloatKnob" name="Display Knob" flags="384" category="mx/Controls" helpUrl="DisplayKnob.htm">
-            <Parameters>
-                <Parameter id="0" datatype="float" name=""/>
-                <Parameter id="2" datatype="string" name=""/>
-            </Parameters>
-            <Audio>
-                <Pin name="ValueIn" datatype="float" private="true" parameterId="0"/>
-                <Pin name="Float Out" datatype="float" direction="out"/>
-            </Audio>
-            <GUI graphicsApi="GmpiGui">
-                <Pin name="Hint" datatype="string" isMinimised="true"/>
-                <Pin name="ValueOut" datatype="float" private="true" parameterId="0"/>
-                <Pin name="BgColor" datatype="string" default="FF000000" private="true"/>
-                <Pin name="TopColor" datatype="string" default="FF660000" private="true"/>
-                <Pin name="Text" datatype="string" direction="out" private="true"/>
-                <Pin name="Text Color" datatype="string" default="ffffffff" isMinimised="true"/>
-                <Pin name="Text Font" datatype="string" default="Times New Roman" isMinimised="true"/>
-                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
-                <Pin name="Animation Position" datatype="float" private="true"/>
-                <Pin name="Hex In" datatype="string" direction="out" private="true"/>
-                <Pin name="Hex" datatype="string" private="true" parameterId="2"/>
-                <Pin name="ColorAdj" datatype="bool" private="true"/>
-                <Pin name="Mouse Down" datatype="bool" private="true"/>
             </GUI>
         </Plugin>
         <Plugin id="GuiPinUpdate" name="GuiPinUpdate" flags="384" category="mx/Sub-Controls">
