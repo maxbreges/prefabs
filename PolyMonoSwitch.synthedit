@@ -13,25 +13,14 @@
                         <s>3</s>
                     </patch-list>
                 </param>
-                <param type="1" handle="670262691" private="true" module="99578187" moduleParamId="2">
+                <param type="1" handle="213073707" private="true" module="99578187" moduleParamId="2">
                     <patch-list>
-                        <s>ff00ffff</s>
-                        <s repeat="127"></s>
+                        <s repeat="128"></s>
                     </patch-list>
                 </param>
                 <param type="10" handle="867665287" private="true" hostControl="49">
                     <patch-list>
                         <s repeat="128"></s>
-                    </patch-list>
-                </param>
-                <param type="6" handle="933785573" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="1756495971" hostControl="40">
-                    <patch-list>
-                        <s>0</s>
-                    </patch-list>
-                </param>
-                <param type="6" handle="1229127400" shortName="BenderRange" ignorePC="true" automation="50331648" private="true" module="1756495971" hostControl="42" RangeMaximum="127.99219">
-                    <patch-list>
-                        <s>2</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1248043184" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1756495971" hostControl="14" RangeMinimum="1" RangeMaximum="128">
@@ -50,16 +39,11 @@
                         <s>6</s>
                     </patch-list>
                 </param>
-                <param type="29" handle="1812203485" shortName="ProgramCategory" private="true" hostControl="51">
-                    <patch-list>
-                        <s repeat="128"></s>
-                    </patch-list>
-                </param>
             </Parameters>
         </PatchManager>
         <modules>
             <module type="EnumKnob" handle="99578187">
-                <structRect l="492" r="600" t="324" b="424"/>
+                <structRect l="492" r="600" t="324" b="444"/>
                 <panelRect l="232" r="232" t="128" b="128"/>
             </module>
             <module type="ShowIntGui" handle="662315829">
@@ -109,8 +93,8 @@
             <line type="Line" handle="292735721" fMod="1600464644" tMod="2062561985" fPlg="1" tPlg="1"/>
             <line type="Line" handle="203591131" fMod="530526084" tMod="2062561985" fPlg="7" tPlg="2"/>
             <line type="Line" handle="1058328770" fMod="2062561985" tMod="662315829"/>
-            <line type="Line" handle="261731559" fMod="1600464644" tMod="99578187" fPlg="1" tPlg="10"/>
-            <line type="Line" handle="397789188" fMod="530526084" tMod="99578187" fPlg="8" tPlg="11"/>
+            <line type="Line" handle="1102645567" lineType="1" fMod="1600464644" tMod="99578187" fPlg="1" tPlg="10"/>
+            <line type="Line" handle="421973762" lineType="1" fMod="530526084" tMod="99578187" fPlg="8" tPlg="11"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
@@ -142,17 +126,19 @@
             <GUI graphicsApi="GmpiGui">
                 <Pin name="Hint" datatype="string" isMinimised="true"/>
                 <Pin name="BgColor" datatype="string" default="FF000000" private="true"/>
-                <Pin name="TopColor" datatype="string" default="FF660000" private="true"/>
+                <Pin name="Color" datatype="string" default="FF660000"/>
                 <Pin name="Text" datatype="string" direction="out" private="true"/>
                 <Pin name="Text Color" datatype="string" default="ffffffff" isMinimised="true"/>
                 <Pin name="Text Font" datatype="string" default="Times New Roman" isMinimised="true"/>
                 <Pin name="Font Size" datatype="int" default="16" isMinimised="true"/>
                 <Pin name="Animation Position" datatype="float" private="true"/>
-                <Pin name="Hex In" datatype="string" direction="out" private="true"/>
+                <Pin name="Hex Out" datatype="string"/>
                 <Pin name="HexMem" datatype="string" private="true" parameterId="2"/>
                 <Pin name="Choice" datatype="int"/>
                 <Pin name="List Items" datatype="string"/>
+                <Pin name="List Size" datatype="int"/>
                 <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Shift" datatype="bool"/>
             </GUI>
         </Plugin>
         <Plugin id="FloatToVolts" class="1" name="Float to Volts" flags="256" category="Conversion">

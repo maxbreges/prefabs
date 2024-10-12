@@ -15,7 +15,7 @@
                 <param type="8" handle="865476285" ignorePC="true" stateful="false" module="869613870" moduleParamId="0"/>
                 <param type="6" handle="895109013" shortName="Float to Volts Float In" vstParameterNumber="14" module="1256406140" moduleParamId="0" RangeMaximum="255">
                     <patch-list>
-                        <s>164.475</s>
+                        <s>146.625</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -605,7 +605,7 @@
                 <structRect l="252" r="360" t="36" b="192"/>
                 <panelRect l="264" r="264" t="168" b="168"/>
             </module>
-            <module type="Container" handle="20406793" name="Release btn" skin="bass fretboard">
+            <module type="Container" handle="20406793" name="" skin="bass fretboard">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="0"/>
