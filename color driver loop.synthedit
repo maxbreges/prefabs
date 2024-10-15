@@ -45,7 +45,8 @@
                 <param type="6" handle="390315027" ignorePC="true" stateful="false" module="1274500383" moduleParamId="0"/>
                 <param type="6" handle="424260861" shortName="Float to Volts Float In" vstParameterNumber="20" module="1575643562" moduleParamId="0" RangeMinimum="1535" RangeMaximum="1280">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>1535</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="431758681" shortName="Float to Volts Float In" vstParameterNumber="34" module="1719785069" moduleParamId="0">
@@ -85,20 +86,23 @@
                 <param type="6" handle="1006314769" ignorePC="true" stateful="false" module="1405903568" moduleParamId="0"/>
                 <param type="6" handle="1014520379" shortName="Float to Volts Float In" vstParameterNumber="16" module="696128521" moduleParamId="0" RangeMinimum="1023" RangeMaximum="768">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>1535</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1033711184" ignorePC="true" stateful="false" module="1180611440" moduleParamId="0"/>
                 <param type="6" handle="1049481667" ignorePC="true" stateful="false" module="573015115" moduleParamId="0"/>
                 <param type="6" handle="1056105009" shortName="Float to Volts Float In" vstParameterNumber="18" module="130593306" moduleParamId="0" RangeMinimum="1024" RangeMaximum="1279">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>1535</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="1" handle="1079055384" ignorePC="true" stateful="false" module="992506717" moduleParamId="0"/>
                 <param type="6" handle="1099299792" shortName="Float to Volts Float In" vstParameterNumber="14" module="2126825909" moduleParamId="0" RangeMinimum="511" RangeMaximum="256">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>1535</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1124871183" ignorePC="true" stateful="false" module="1214485822" moduleParamId="0"/>
@@ -109,7 +113,7 @@
                 <param type="8" handle="1224775549" ignorePC="true" stateful="false" module="487941907" moduleParamId="0"/>
                 <param type="6" handle="1298373230" shortName="Float to Volts Float In" vstParameterNumber="38" module="509564169" moduleParamId="0" RangeMaximum="12">
                     <patch-list>
-                        <s>11.4656</s>
+                        <s>3.30364</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -138,7 +142,8 @@
                 <param type="8" handle="1514669434" ignorePC="true" stateful="false" module="505647787" moduleParamId="0"/>
                 <param type="6" handle="1531385814" shortName="Float to Volts Float In" vstParameterNumber="15" module="842530560" moduleParamId="0" RangeMinimum="512" RangeMaximum="767">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>1535</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1552036022" ignorePC="true" stateful="false" module="1079554400" moduleParamId="0"/>
@@ -146,7 +151,8 @@
                 <param type="8" handle="1607608577" ignorePC="true" stateful="false" module="54049584" moduleParamId="0"/>
                 <param type="6" handle="1626458345" shortName="Float to Volts Float In" vstParameterNumber="22" module="1772660860" moduleParamId="0" RangeMaximum="1">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>1</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1630268897" shortName="Float to Volts Float In" vstParameterNumber="26" module="559201479" moduleParamId="0">
@@ -156,7 +162,8 @@
                 </param>
                 <param type="6" handle="1648924855" shortName="Float to Volts Float In" vstParameterNumber="13" module="380540626" moduleParamId="0" RangeMaximum="255">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>1535</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="1" handle="1655419789" ignorePC="true" stateful="false" module="205166475" moduleParamId="0"/>
@@ -185,7 +192,8 @@
                 <param type="8" handle="1990645763" ignorePC="true" stateful="false" module="1526163514" moduleParamId="0"/>
                 <param type="6" handle="2020474280" shortName="Float to Volts Float In" vstParameterNumber="24" module="1791887869" moduleParamId="0" RangeMaximum="12">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>12</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="2046491161" ignorePC="true" stateful="false" module="1852731415" moduleParamId="0"/>
