@@ -102,8 +102,8 @@
                             <module type="Container" handle="998704072" skin="default">
                                 <plugs>
                                     <plug default="1" idx="1"/>
-                                    <plug name="Choice" default="" datatype="8" idx="7"/>
-                                    <plug name="Item List" default="" datatype="1"/>
+                                    <plug name="Choice" datatype="8" idx="7"/>
+                                    <plug name="Item List" datatype="1"/>
                                     <plug/>
                                 </plugs>
                                 <structRect l="336" r="456" t="252" b="336"/>
@@ -142,8 +142,8 @@
                             <module type="Container" handle="237211096" skin="default">
                                 <plugs>
                                     <plug default="1" idx="1"/>
-                                    <plug name="Choice" default="" datatype="8" idx="7"/>
-                                    <plug name="Item List" default="" datatype="1"/>
+                                    <plug name="Choice" datatype="8" idx="7"/>
+                                    <plug name="Item List" datatype="1"/>
                                     <plug/>
                                 </plugs>
                                 <structRect l="240" r="360" t="192" b="276"/>
