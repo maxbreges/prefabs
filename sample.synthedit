@@ -68,7 +68,7 @@
                     <plug name="Right Out" direction="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="156" r="276" t="132" b="228"/>
+                <structRect l="144" r="264" t="132" b="228"/>
                 <modules>
                     <module type="VCA" handle="1021426362">
                         <structRect l="468" r="576" t="144" b="192"/>
