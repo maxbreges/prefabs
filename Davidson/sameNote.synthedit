@@ -131,9 +131,6 @@
                         <panelRect l="0" r="0" t="0" b="0"/>
                     </module>
                     <module type="SynthEdit ADSR" handle="407911352">
-                        <plugs>
-                            <plug default="" idx="2"/>
-                        </plugs>
                         <structRect l="252" r="348" t="192" b="288"/>
                         <panelRect l="235" r="235" t="149" b="149"/>
                     </module>
@@ -194,9 +191,6 @@
                         <panelRect l="0" r="0" t="0" b="0"/>
                     </module>
                     <module type="SynthEdit ADSR" handle="2122409645">
-                        <plugs>
-                            <plug default="" idx="2"/>
-                        </plugs>
                         <structRect l="252" r="348" t="192" b="288"/>
                         <panelRect l="235" r="235" t="149" b="149"/>
                     </module>
@@ -257,9 +251,6 @@
                         <panelRect l="0" r="0" t="0" b="0"/>
                     </module>
                     <module type="SynthEdit ADSR" handle="656379088">
-                        <plugs>
-                            <plug default="" idx="2"/>
-                        </plugs>
                         <structRect l="252" r="348" t="192" b="288"/>
                         <panelRect l="235" r="235" t="149" b="149"/>
                     </module>
@@ -320,9 +311,6 @@
                         <panelRect l="0" r="0" t="0" b="0"/>
                     </module>
                     <module type="SynthEdit ADSR" handle="1552942143">
-                        <plugs>
-                            <plug default="" idx="2"/>
-                        </plugs>
                         <structRect l="252" r="348" t="192" b="288"/>
                         <panelRect l="235" r="235" t="149" b="149"/>
                     </module>
@@ -400,7 +388,7 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="549" r="1253" t="64" b="433"/>
-        <StructLocation l="0" r="785" t="0" b="571"/>
+        <StructLocation l="0" r="999" t="0" b="552"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
