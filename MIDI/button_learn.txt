@@ -1,0 +1,4 @@
+; 440 button with light
+type animated
+mouse_response stepped
+frame_size 56,20
