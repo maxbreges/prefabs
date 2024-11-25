@@ -40,7 +40,7 @@
                 </param>
                 <param type="0" handle="1212657105" shortName="Oscillator Waveform" vstParameterNumber="0" module="724157444" moduleParamId="0" MetaData="Sine, Saw, Ramp, Triangle, Pulse,White Noise,Pink Noise">
                     <patch-list>
-                        <s>2</s>
+                        <s>4</s>
                         <s repeat="127">1</s>
                     </patch-list>
                 </param>
@@ -266,7 +266,7 @@
                         <plugs>
                             <plug default="Hold Alt and use Mouse Wheel to change items. Hold Shift+drag to change color."/>
                         </plugs>
-                        <structRect l="468" r="576" t="120" b="252"/>
+                        <structRect l="468" r="564" t="120" b="256"/>
                         <panelRect l="48" r="148" t="56" b="96"/>
                     </module>
                     <module type="SE PatchMemory List3" handle="724157444">
@@ -300,7 +300,7 @@
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
                 <PanelLocation l="30" r="814" t="30" b="457"/>
-                <StructLocation l="21" r="666" t="470" b="912"/>
+                <StructLocation l="22" r="667" t="424" b="866"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="1" y="1"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
