@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+<Document file_format="150000" vst_latencyCompensation="1" AutoPlay="true" autoplay="true" vst_preset_count="64">
     <master_container type="Container" handle="2117820083" name="Main" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -48,7 +48,7 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Container" handle="1176308379" name="MIDI Learn" ViewOpenFlags="256" skin="default2">
+            <module type="Container" handle="1176308379" name="MIDI Learn" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -57,7 +57,7 @@
                     <plug name="Animation Position" direction="1" datatype="6"/>
                     <plug/>
                 </plugs>
-                <structRect l="98" r="218" t="228" b="302"/>
+                <structRect l="358" r="478" t="249" b="323"/>
                 <modules>
                     <module type="SE BoolToFloat GUI" handle="1404811627">
                         <structRect l="599" r="671" t="424" b="448"/>
@@ -306,7 +306,7 @@
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
                 <PanelLocation l="30" r="530" t="30" b="330"/>
-                <StructLocation l="0" r="1224" t="0" b="568"/>
+                <StructLocation l="0" r="1133" t="0" b="568"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
@@ -316,32 +316,32 @@
                 <plugs>
                     <plug default="button_learn.png" idx="1"/>
                 </plugs>
-                <structRect l="380" r="500" t="297" b="405"/>
+                <structRect l="537" r="657" t="382" b="490"/>
                 <panelRect l="240" r="240" t="136" b="136"/>
             </module>
             <module type="SE Midi Monitor" handle="728892950">
-                <structRect l="630" r="930" t="161" b="415"/>
+                <structRect l="774" r="1085" t="163" b="417"/>
                 <panelRect l="224" r="224" t="176" b="176"/>
             </module>
             <module type="SE Keyboard (MIDI)" handle="1777954669">
-                <structRect l="29" r="281" t="54" b="154"/>
+                <structRect l="15" r="267" t="163" b="263"/>
                 <panelRect l="232" r="232" t="128" b="128"/>
             </module>
             <module type="MIDI Filter" handle="1085767810">
-                <structRect l="390" r="498" t="150" b="270"/>
+                <structRect l="535" r="643" t="90" b="210"/>
             </module>
         </modules>
         <lines>
-            <line type="Line" handle="2085571353" lineType="1" fMod="1777954669" tMod="1085767810" fPlg="1"/>
-            <line type="Line" handle="1507366156" lineType="1" fMod="1085767810" tMod="728892950" fPlg="1" tPlg="1"/>
-            <line type="Line" handle="74238471" lineType="1" fMod="1777954669" tMod="1176308379" fPlg="1" tPlg="7"/>
-            <line type="Line" handle="21040661" lineType="1" fMod="1176308379" tMod="1085767810" fPlg="8" tPlg="4"/>
-            <line type="Line" handle="2041465747" lineType="1" fMod="1176308379" tMod="1085767810" fPlg="8" tPlg="5"/>
-            <line type="Line" handle="665613814" lineType="1" fMod="1176308379" tMod="1320301035" fPlg="9"/>
+            <line type="Line" handle="2085571353" fMod="1777954669" tMod="1085767810" fPlg="1"/>
+            <line type="Line" handle="1507366156" fMod="1085767810" tMod="728892950" fPlg="1" tPlg="1"/>
+            <line type="Line" handle="74238471" fMod="1777954669" tMod="1176308379" fPlg="1" tPlg="7"/>
+            <line type="Line" handle="21040661" fMod="1176308379" tMod="1085767810" fPlg="8" tPlg="4"/>
+            <line type="Line" handle="2041465747" fMod="1176308379" tMod="1085767810" fPlg="8" tPlg="5"/>
+            <line type="Line" handle="665613814" fMod="1176308379" tMod="1320301035" fPlg="9"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="1126" t="0" b="646"/>
+        <StructLocation l="0" r="1246" t="0" b="646"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
