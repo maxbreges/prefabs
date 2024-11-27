@@ -21,7 +21,8 @@
                 </param>
                 <param type="4" handle="1773489223" vstParameterNumber="1" module="1905526131" moduleParamId="1">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>1</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="1" handle="1936835187" ignorePC="true" stateful="false" module="1742415402" moduleParamId="0"/>
