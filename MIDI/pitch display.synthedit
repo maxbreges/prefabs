@@ -15,18 +15,64 @@
                 </param>
                 <param type="6" handle="1299857563" shortName="Float to Volts Float In" vstParameterNumber="1" module="218418866" moduleParamId="0">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>10</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1817312880" vstParameterNumber="0" module="1422766140" moduleParamId="0">
                     <patch-list>
-                        <s>63</s>
+                        <s>64</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
             </Parameters>
         </PatchManager>
         <modules>
+            <module type="ShowTextGui" handle="1262826010">
+                <structRect l="768" r="864" t="468" b="576"/>
+                <panelRect l="48" r="96" t="256" b="296"/>
+            </module>
+            <module type="Button" handle="659950757">
+                <plugs>
+                    <plug default="♯♭" idx="14"/>
+                    <plug default="42" idx="17"/>
+                    <plug default="1"/>
+                </plugs>
+                <structRect l="264" r="384" t="564" b="684"/>
+                <panelRect l="264" r="364" t="160" b="260"/>
+            </module>
+            <module type="SE BoolToInt GUI" handle="1417643912">
+                <structRect l="216" r="288" t="300" b="324"/>
+                <panelRect l="240" r="240" t="136" b="136"/>
+            </module>
+            <module type="SE Concat" handle="1982390322">
+                <structRect l="528" r="624" t="324" b="360"/>
+                <panelRect l="240" r="240" t="168" b="168"/>
+            </module>
+            <module type="Sasha-Constant Text" handle="1596196773">
+                <plugs>
+                    <plug default="♭"/>
+                </plugs>
+                <structRect l="228" r="276" t="444" b="456"/>
+                <panelRect l="256" r="256" t="160" b="160"/>
+            </module>
+            <module type="Sasha-Constant Text" handle="178384933">
+                <plugs>
+                    <plug default="♯"/>
+                </plugs>
+                <structRect l="228" r="276" t="372" b="384"/>
+                <panelRect l="280" r="280" t="120" b="120"/>
+            </module>
+            <module type="SE GuiSwitch &lt; (Text)" handle="744892329">
+                <plugs>
+                    <plug default="2"/>
+                    <plug name="Text" idx="2"/>
+                    <plug name="Text" id="3"/>
+                    <plug id="4"/>
+                </plugs>
+                <structRect l="324" r="384" t="372" b="432"/>
+                <panelRect l="264" r="264" t="152" b="152"/>
+            </module>
             <module type="Container" handle="1035410859" name="sharp/flat" skin="prophetblack">
                 <plugs>
                     <plug default="1" idx="1"/>
@@ -65,7 +111,7 @@
                     <line type="Line" handle="318187574" lineType="1" fMod="218418866" tMod="1168396785" fPlg="7"/>
                     <line type="Line" handle="429341210" lineType="1" fMod="1168396785" tMod="452115959" fPlg="1"/>
                 </lines>
-                <PanelWndPosition l="130" r="179" t="143" b="195"/>
+                <PanelWndPosition l="382" r="383" t="427" b="457"/>
                 <PanelLocation l="30" r="748" t="30" b="627"/>
                 <StructLocation l="0" r="607" t="0" b="555"/>
                 <PanelScroll x="0" y="0"/>
@@ -74,32 +120,63 @@
                 <panel_rect l="16" r="110" t="16" b="117"/>
             </module>
             <module type="PitchDisplay" handle="1422766140">
-                <structRect l="276" r="348" t="192" b="228"/>
-                <panelRect l="256" r="256" t="152" b="152"/>
+                <structRect l="324" r="396" t="276" b="324"/>
+                <panelRect l="256" r="257" t="152" b="153"/>
             </module>
             <module type="SE Text Entry4" handle="1408872079">
-                <structRect l="432" r="540" t="192" b="336"/>
-                <panelRect l="272" r="272" t="160" b="160"/>
+                <structRect l="732" r="900" t="240" b="420"/>
+                <panelRect l="360" r="416" t="32" b="56"/>
             </module>
             <module type="SE Keyboard (MIDI)" handle="1402035084">
                 <structRect l="55" r="619" t="27" b="144"/>
-                <panelRect l="264" r="264" t="152" b="152"/>
+                <panelRect l="264" r="364" t="152" b="252"/>
             </module>
         </modules>
         <lines>
-            <line type="Line" handle="950534177" lineType="1" fMod="1402035084" tMod="1422766140" fPlg="1" tPlg="3"/>
-            <line type="Line" handle="99656165" lineType="1" fMod="1422766140" tMod="1408872079" fPlg="1"/>
-            <line type="Line" handle="1512354360" lineType="1" fMod="1035410859" tMod="1422766140" fPlg="7" tPlg="2"/>
+            <line type="Line" handle="352351131" lineType="1" fMod="1035410859" tMod="1422766140" fPlg="7" tPlg="3"/>
+            <line type="Line" handle="270960261" lineType="1" fMod="1402035084" tMod="1422766140" fPlg="1" tPlg="4"/>
+            <line type="Line" handle="1557160020" lineType="1" fMod="178384933" tMod="744892329" fPlg="1" tPlg="2"/>
+            <line type="Line" handle="448658770" lineType="1" fMod="1596196773" tMod="744892329" fPlg="1" tPlg="3"/>
+            <line type="Line" handle="91922942" lineType="1" fMod="1422766140" tMod="1982390322" fPlg="1"/>
+            <line type="Line" handle="511118580" lineType="1" fMod="744892329" tMod="1982390322" fPlg="1" tPlg="1"/>
+            <line type="Line" handle="1912838444" lineType="1" fMod="1982390322" tMod="1408872079" fPlg="2"/>
+            <line type="Line" handle="1522864497" lineType="1" fMod="1035410859" tMod="1417643912" fPlg="7"/>
+            <line type="Line" handle="1826897877" lineType="1" fMod="1417643912" tMod="744892329" fPlg="1"/>
+            <line type="Line" handle="1014469304" lineType="1" fMod="1422766140" tMod="1262826010" fPlg="2" tPlg="5"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
-        <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="775" t="0" b="472"/>
+        <PanelLocation l="906" r="1406" t="50" b="524"/>
+        <StructLocation l="0" r="1036" t="0" b="824"/>
         <PanelScroll x="0" y="0"/>
-        <StructScroll x="1" y="0"/>
+        <StructScroll x="1" y="1"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
         <panel_rect l="16" r="312" t="16" b="216"/>
     </master_container>
     <PluginList>
+        <Plugin id="Button" name="Button" flags="384" category="mx/Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Corner Radius" datatype="float" default="5" isMinimised="true"/>
+                <Pin name="Top Left" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Top Right" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Bottom Left" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Bottom Right" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="AnimPos" datatype="float"/>
+                <Pin name="AnimPosOut" datatype="int" direction="out"/>
+                <Pin name="mDown" datatype="bool"/>
+                <Pin name="Color" datatype="string" default="ffff0000" private="true"/>
+                <Pin name="ColorB" datatype="string" default="ffaa0000" private="true"/>
+                <Pin name="botColor0" datatype="string" default="ffff0000" isMinimised="true"/>
+                <Pin name="botColor1" datatype="string" default="ffffffff" isMinimised="true"/>
+                <Pin name="topColor0" datatype="string" default="ffaa0000" isMinimised="true"/>
+                <Pin name="topColor1" datatype="string" default="ffff0000" isMinimised="true"/>
+                <Pin name="Text" datatype="string" default="text" isMinimised="true"/>
+                <Pin name="Text Color" datatype="string" default="ffffffff"/>
+                <Pin name="Font" datatype="string" default="Times New Roman" isMinimised="true"/>
+                <Pin name="Font Size" datatype="float" default="16" isMinimised="true"/>
+                <Pin name="Align" datatype="enum" isMinimised="true" metadata="Center, Top, Bottom"/>
+                <Pin name="Mouse Response" datatype="enum" isMinimised="true" metadata="Stepped, Clicked"/>
+            </GUI>
+        </Plugin>
         <Plugin id="Container" class="1" name="Container" flags="384" category="">
             <Audio>
                 <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
@@ -144,13 +221,34 @@
             <GUI>
                 <Pin name="Pitch In" datatype="int" private="true" parameterId="0"/>
                 <Pin name="Text" datatype="string" direction="out"/>
+                <Pin name="♯/♭" datatype="string" direction="out"/>
                 <Pin name="♯/♭" datatype="bool"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE BoolToInt GUI" name="Bool To Int" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Bool Val" datatype="bool"/>
+                <Pin name="Int Val" datatype="int" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Concat" name="Concat" flags="384" category="Sub-Controls/Conversion/String" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Text" datatype="string"/>
+                <Pin name="Text" datatype="string"/>
+                <Pin name="Concatenated" datatype="string" direction="out"/>
             </GUI>
         </Plugin>
         <Plugin id="SE FloatToBool GUI" name="Float To Bool" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
             <GUI>
                 <Pin name="Float Val" datatype="float"/>
                 <Pin name="Bool Val" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE GuiSwitch &lt; (Text)" name="Switch &lt; (Text)" flags="384" category="Switches/GUI">
+            <GUI>
+                <Pin name="Choice" datatype="int"/>
+                <Pin name="Value" datatype="string" direction="out"/>
+                <Pin name="Spare" datatype="string" autoRename="true" autoDuplicate="true"/>
             </GUI>
         </Plugin>
         <Plugin id="SE Keyboard (MIDI)" name="Keyboard (MIDI)" flags="384" category="Controls">
@@ -195,6 +293,22 @@
                 <Pin name="Menu Selection" datatype="int"/>
                 <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
                 <Pin name="Mouse Down" datatype="bool"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Sasha-Constant Text" name="s Const" flags="384" category="Sasha Modules\Sub-Controls\Text" helpUrl="..\Sasha\Help\s-Const.html">
+            <GUI>
+                <Pin name="Text" datatype="string" isMinimised="true"/>
+                <Pin name="Text" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="ShowTextGui" name="Show Text Gui" flags="384" category="mx/Show">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Top Color" datatype="string"/>
+                <Pin name="Bottom Color" datatype="string"/>
+                <Pin name="Text Color" datatype="string" default="FF000000"/>
+                <Pin name="Font" datatype="string" default="Times New Roman" isMinimised="true"/>
+                <Pin name="Text" datatype="string"/>
             </GUI>
         </Plugin>
     </PluginList>
