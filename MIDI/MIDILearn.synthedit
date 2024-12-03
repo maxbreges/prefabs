@@ -14,14 +14,20 @@
                         <s repeat="128"></s>
                     </patch-list>
                 </param>
-                <param type="4" handle="632301197" vstParameterNumber="0" module="1905526131" moduleParamId="0">
+                <param type="4" handle="636600890" vstParameterNumber="0" module="1513764272" moduleParamId="0">
                     <patch-list>
                         <s repeat="128">0</s>
                     </patch-list>
                 </param>
-                <param type="4" handle="1773489223" vstParameterNumber="1" module="1905526131" moduleParamId="1">
+                <param type="4" handle="1018056267" vstParameterNumber="1" module="1513764272" moduleParamId="1">
                     <patch-list>
                         <s>1</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1725770056" vstParameterNumber="2" module="1513764272" moduleParamId="2">
+                    <patch-list>
+                        <s>58</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -29,45 +35,59 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="ShowInt" handle="1684453908">
-                <structRect l="438" r="546" t="365" b="465"/>
-                <panelRect l="272" r="272" t="176" b="176"/>
+            <module type="ShowIntGui" handle="793750454">
+                <structRect l="612" r="696" t="336" b="396"/>
+                <panelRect l="240" r="240" t="136" b="136"/>
             </module>
-            <module type="MIDI Learn" handle="1905526131">
-                <structRect l="283" r="403" t="298" b="346"/>
-                <panelRect l="232" r="232" t="168" b="168"/>
+            <module type="ShowTextGui" handle="2133520941">
+                <structRect l="744" r="852" t="192" b="292"/>
+                <panelRect l="240" r="240" t="168" b="168"/>
+            </module>
+            <module type="MIDI Learn2" handle="1513764272">
+                <structRect l="348" r="468" t="300" b="384"/>
+                <panelRect l="256" r="256" t="160" b="160"/>
+            </module>
+            <module type="ShowInt" handle="1684453908">
+                <plugs>
+                    <plug default="FF666600" idx="2"/>
+                    <plug default="FFFFFF00" idx="4"/>
+                </plugs>
+                <structRect l="552" r="660" t="492" b="552"/>
+                <panelRect l="272" r="272" t="176" b="176"/>
             </module>
             <module type="Image3" handle="538929990" name="Learn">
                 <plugs>
                     <plug default="button_learn.png" idx="1"/>
                 </plugs>
-                <structRect l="518" r="638" t="141" b="249"/>
+                <structRect l="552" r="672" t="144" b="252"/>
                 <panelRect l="310" r="366" t="103" b="123"/>
             </module>
             <module type="MIDI Filter" handle="2090288544">
-                <structRect l="581" r="689" t="287" b="407"/>
+                <structRect l="744" r="852" t="420" b="540"/>
             </module>
             <module type="SE Midi Monitor" handle="1742415402">
-                <structRect l="782" r="986" t="172" b="459"/>
+                <structRect l="960" r="1224" t="252" b="539"/>
                 <panelRect l="416" r="516" t="320" b="420"/>
             </module>
             <module type="SE Keyboard (MIDI)" handle="147463324">
-                <structRect l="41" r="257" t="160" b="268"/>
+                <structRect l="12" r="288" t="156" b="264"/>
                 <panelRect l="400" r="500" t="272" b="372"/>
             </module>
         </modules>
         <lines>
-            <line type="Line" handle="353081480" lineType="1" fMod="147463324" tMod="2090288544" fPlg="1"/>
-            <line type="Line" handle="2129460966" lineType="1" fMod="2090288544" tMod="1742415402" fPlg="1" tPlg="1"/>
-            <line type="Line" handle="810179425" lineType="1" fMod="147463324" tMod="1905526131" fPlg="1" tPlg="3"/>
-            <line type="Line" handle="346328658" lineType="1" fMod="1905526131" tMod="538929990"/>
-            <line type="Line" handle="1617942070" lineType="1" fMod="1905526131" tMod="2090288544" fPlg="4" tPlg="4"/>
-            <line type="Line" handle="2143870521" lineType="1" fMod="1905526131" tMod="2090288544" fPlg="4" tPlg="5"/>
-            <line type="Line" handle="572433025" lineType="1" fMod="1905526131" tMod="1684453908" fPlg="7" tPlg="6"/>
+            <line type="Line" handle="353081480" fMod="147463324" tMod="2090288544" fPlg="1"/>
+            <line type="Line" handle="2129460966" fMod="2090288544" tMod="1742415402" fPlg="1" tPlg="1"/>
+            <line type="Line" handle="1608222399" fMod="1513764272" tMod="538929990"/>
+            <line type="Line" handle="1117066726" fMod="1513764272" tMod="2090288544" fPlg="9" tPlg="4"/>
+            <line type="Line" handle="761038223" fMod="1513764272" tMod="2090288544" fPlg="9" tPlg="5"/>
+            <line type="Line" handle="1220796851" fMod="1513764272" tMod="1684453908" fPlg="12" tPlg="6"/>
+            <line type="Line" handle="316083832" fMod="1513764272" tMod="2133520941" fPlg="4" tPlg="5"/>
+            <line type="Line" handle="1958826184" fMod="147463324" tMod="1513764272" fPlg="1" tPlg="8"/>
+            <line type="Line" handle="1872418907" fMod="1513764272" tMod="793750454" fPlg="7"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="1049" t="0" b="844"/>
+        <StructLocation l="0" r="1296" t="0" b="797"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
@@ -116,22 +136,29 @@
                 <Pin name="MIDI Excluded" datatype="midi" direction="out"/>
             </Audio>
         </Plugin>
-        <Plugin id="MIDI Learn" name="MIDI Learn" flags="384" category="mx/MIDI">
+        <Plugin id="MIDI Learn2" name="MIDI Learn2" flags="384" category="mx/MIDI">
             <Parameters>
                 <Parameter id="0" datatype="bool" name=""/>
                 <Parameter id="1" datatype="bool" name=""/>
+                <Parameter id="2" datatype="int" name=""/>
             </Parameters>
             <Audio>
                 <Pin name="MIDI In" datatype="midi"/>
                 <Pin name="Note lo/hi" datatype="enum" direction="out"/>
                 <Pin name="Gate" datatype="bool" private="true" parameterId="0"/>
                 <Pin name="GateOut" datatype="bool" direction="out" private="true" parameterId="1"/>
-                <Pin name="Note#" datatype="int" direction="out"/>
+                <Pin name="Note number" datatype="int" direction="out"/>
+                <Pin name="Note" datatype="int" direction="out" private="true" parameterId="2"/>
             </Audio>
             <GUI>
                 <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="♯/♭" datatype="bool"/>
                 <Pin name="Gate" datatype="bool" private="true" parameterId="0"/>
                 <Pin name="GateIn" datatype="bool" private="true" parameterId="1"/>
+                <Pin name="Note Name" datatype="string" direction="out"/>
+                <Pin name="Note#In" datatype="int" private="true" parameterId="2"/>
+                <Pin name="" datatype="string" direction="out" private="true"/>
+                <Pin name="Note number" datatype="int" direction="out"/>
             </GUI>
         </Plugin>
         <Plugin id="SE Keyboard (MIDI)" name="Keyboard (MIDI)" flags="384" category="Controls">
@@ -168,6 +195,25 @@
                 <Pin name="Text" datatype="string" direction="out"/>
                 <Pin name="Text Color" datatype="string" default="FF00FFFF" isMinimised="true"/>
                 <Pin name="Text Font" datatype="string" default="Times New Roman" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="ShowIntGui" name="Show Int Gui" flags="384" category="mx/Show">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Int" datatype="int"/>
+                <Pin name="Int" datatype="int" direction="out"/>
+                <Pin name="TextColor" datatype="string" isMinimised="true"/>
+                <Pin name="Font" datatype="string" default="Georgia" isMinimised="true"/>
+                <Pin name="Text" datatype="string" private="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="ShowTextGui" name="Show Text Gui" flags="384" category="mx/Show">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Top Color" datatype="string"/>
+                <Pin name="Bottom Color" datatype="string"/>
+                <Pin name="Text Color" datatype="string" default="FF000000"/>
+                <Pin name="Font" datatype="string" default="Times New Roman" isMinimised="true"/>
+                <Pin name="Text" datatype="string"/>
             </GUI>
         </Plugin>
     </PluginList>
