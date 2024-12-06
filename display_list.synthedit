@@ -10,46 +10,37 @@
             <Parameters>
                 <param type="1" handle="147956635" private="true" module="1631601810" moduleParamId="0">
                     <patch-list>
-                        <s>ffff00e7</s>
+                        <s>ffff00ff</s>
                         <s repeat="127"></s>
-                    </patch-list>
-                </param>
-                <param type="8" handle="331925135" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="2115993142" hostControl="14" RangeMinimum="1" RangeMaximum="128">
-                    <patch-list>
-                        <s>768</s>
-                    </patch-list>
-                </param>
-                <param type="6" handle="346459861" shortName="BenderRange" ignorePC="true" automation="50331648" private="true" module="2115993142" hostControl="42" RangeMaximum="127.99219">
-                    <patch-list>
-                        <s>2</s>
                     </patch-list>
                 </param>
                 <param type="1" handle="476990531" private="true" module="1637742414" moduleParamId="0">
                     <patch-list>
-                        <s>ffff0000</s>
+                        <s>ff0012ff</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="982291288" private="true" module="1891320935" moduleParamId="0">
                     <patch-list>
-                        <s>ff2bff00</s>
+                        <s>ffa500ff</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="1017975134" private="true" module="898743249" moduleParamId="0">
                     <patch-list>
-                        <s>ffdcff00</s>
+                        <s>ff00ff00</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="0" handle="1212657105" shortName="Oscillator Waveform" vstParameterNumber="0" module="724157444" moduleParamId="0" MetaData="Sine, Saw, Ramp, Triangle, Pulse,White Noise,Pink Noise">
                     <patch-list>
-                        <s repeat="128">1</s>
+                        <s>0</s>
+                        <s repeat="127">1</s>
                     </patch-list>
                 </param>
                 <param type="1" handle="1429225647" private="true" module="107201370" moduleParamId="2">
                     <patch-list>
-                        <s>ff00f1ff</s>
+                        <s>ff0012ff</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
@@ -60,25 +51,20 @@
                 </param>
                 <param type="1" handle="1742018450" private="true" module="2102918018" moduleParamId="0">
                     <patch-list>
-                        <s>ff00f1ff</s>
+                        <s>ff00ffff</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="2104366307" private="true" module="551136835" moduleParamId="0">
                     <patch-list>
-                        <s>ff0012ff</s>
+                        <s>ff007eff</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="2123140745" private="true" module="1764816114" moduleParamId="0">
                     <patch-list>
-                        <s>ffffa800</s>
+                        <s>ffff7a00</s>
                         <s repeat="127"></s>
-                    </patch-list>
-                </param>
-                <param type="6" handle="2130184965" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="2115993142" hostControl="40">
-                    <patch-list>
-                        <s>0</s>
                     </patch-list>
                 </param>
             </Parameters>
@@ -90,14 +76,14 @@
                     <plug default="1"/>
                     <plug idx="7"/>
                 </plugs>
-                <structRect l="80" r="212" t="51" b="179"/>
+                <structRect l="144" r="276" t="72" b="156"/>
                 <modules>
                     <module type="Oscillator" handle="617828523">
-                        <structRect l="168" r="252" t="216" b="300"/>
+                        <structRect l="156" r="240" t="204" b="288"/>
                     </module>
                     <module type="DisplayList" handle="107201370">
-                        <structRect l="432" r="540" t="96" b="228"/>
-                        <panelRect l="48" r="148" t="40" b="140"/>
+                        <structRect l="432" r="540" t="72" b="204"/>
+                        <panelRect l="48" r="148" t="40" b="96"/>
                     </module>
                     <module type="Container" handle="1840882743" name="store7colors" ViewOpenFlags="256" skin="resized">
                         <plugs>
@@ -109,7 +95,7 @@
                             <plug name="ColorAdj" direction="1" datatype="4"/>
                             <plug/>
                         </plugs>
-                        <structRect l="300" r="372" t="168" b="254"/>
+                        <structRect l="252" r="324" t="144" b="230"/>
                         <modules>
                             <module type="Container" handle="243714865" name="dummy" skin="default2">
                                 <plugs>
@@ -277,7 +263,7 @@
                         </lines>
                         <PanelWndPosition l="40" r="50" t="40" b="50"/>
                         <PanelLocation l="30" r="545" t="30" b="436"/>
-                        <StructLocation l="823" r="1446" t="7" b="768"/>
+                        <StructLocation l="18" r="638" t="127" b="853"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="0" y="0"/>
                         <PanelWndOffset cx="40" cy="40"/>
@@ -295,13 +281,13 @@
                     <line type="Line" handle="752578651" fMod="1840882743" tMod="107201370" fPlg="10" tPlg="14"/>
                     <line type="Line" handle="890689769" fMod="1840882743" tMod="107201370" fPlg="8" tPlg="8"/>
                     <line type="Line" handle="1863226459" fMod="1840882743" tMod="107201370" fPlg="9" tPlg="2"/>
-                    <line type="Line" handle="1095227844" lineType="1" fMod="724157444" tMod="617828523" fPlg="13" tPlg="2"/>
+                    <line type="Line" handle="2132012285" fMod="724157444" tMod="617828523" fPlg="13" tPlg="2"/>
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
                 <PanelLocation l="30" r="814" t="30" b="325"/>
-                <StructLocation l="22" r="682" t="424" b="860"/>
+                <StructLocation l="786" r="1446" t="0" b="401"/>
                 <PanelScroll x="0" y="0"/>
-                <StructScroll x="1" y="0"/>
+                <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
                 <panel_rect l="16" r="184" t="16" b="160"/>
             </module>
@@ -309,9 +295,9 @@
         <lines/>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="654" t="30" b="561"/>
-        <StructLocation l="0" r="685" t="0" b="416"/>
+        <StructLocation l="928" r="1364" t="467" b="756"/>
         <PanelScroll x="0" y="0"/>
-        <StructScroll x="4" y="0"/>
+        <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
         <panel_rect l="16" r="312" t="16" b="216"/>
     </master_container>
