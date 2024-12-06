@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+<Document file_format="150000" vst_latencyCompensation="1" AutoPlay="true" autoplay="true" vst_preset_count="64">
     <master_container type="Container" handle="696708932" name="Main" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -28,20 +28,10 @@
                         <s>0</s>
                     </patch-list>
                 </param>
-                <param type="6" handle="847869888" shortName="BenderRange" ignorePC="true" automation="50331648" private="true" module="696708932" hostControl="42" RangeMaximum="127.99219">
-                    <patch-list>
-                        <s>2</s>
-                    </patch-list>
-                </param>
                 <param type="8" handle="872126795" stateful="false" module="1778339706" moduleParamId="0"/>
                 <param type="8" handle="977347731" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1105975871" hostControl="14" RangeMinimum="1" RangeMaximum="128">
                     <patch-list>
                         <s>768</s>
-                    </patch-list>
-                </param>
-                <param type="6" handle="987652728" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="696708932" hostControl="40">
-                    <patch-list>
-                        <s>0</s>
                     </patch-list>
                 </param>
                 <param type="10" handle="1242944552" private="true" hostControl="49">
@@ -52,11 +42,6 @@
                 <param type="6" handle="1631565805" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="1105975871" hostControl="40">
                     <patch-list>
                         <s>0</s>
-                    </patch-list>
-                </param>
-                <param type="8" handle="2088379462" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="696708932" hostControl="14" RangeMinimum="1" RangeMaximum="128">
-                    <patch-list>
-                        <s>768</s>
                     </patch-list>
                 </param>
             </Parameters>
