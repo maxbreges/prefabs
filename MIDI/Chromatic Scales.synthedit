@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+<Document file_format="150000" vst_processor_id="{DD44D235-7D66-425E-A25A-651BC12CCA4E}" vst_controller_id="{54684812-3D1B-41F0-A2B6-C5B66E5FD9C6}" vst_4char_id="c31A" vst_dll_name="Chromatic Scales" vst_product="Chromatic Scales" vst_flags="5" vst_preset_count="1">
     <master_container type="Container" handle="44870970" name="Main" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -288,7 +288,7 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="1140" t="0" b="887"/>
+        <StructLocation l="0" r="585" t="0" b="255"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="1" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
