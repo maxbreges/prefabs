@@ -82,7 +82,7 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Container" handle="447208825" name="Chromatic Scales" ViewOpenFlags="256" skin="default2">
+            <module type="Container" handle="447208825" name="Chromatic Scales" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -93,6 +93,7 @@
                 <modules>
                     <module type="DisplayList" handle="213454219" name="Root">
                         <plugs>
+                            <plug default="Output"/>
                             <plug default="FF664466" idx="2"/>
                         </plugs>
                         <structRect l="834" r="942" t="389" b="536"/>
@@ -104,6 +105,7 @@
                     </module>
                     <module type="DisplayList" handle="350697907" name="Root">
                         <plugs>
+                            <plug default="Scale"/>
                             <plug default="FF666600" idx="2"/>
                         </plugs>
                         <structRect l="520" r="628" t="52" b="199"/>
@@ -176,7 +178,7 @@
                                 <panelRect l="247" r="247" t="129" b="129"/>
                             </module>
                             <module type="SE MIDI to CV 2" handle="1675121006">
-                                <structRect l="128" r="212" t="79" b="163"/>
+                                <structRect l="129" r="213" t="72" b="156"/>
                                 <panelRect l="0" r="0" t="0" b="0"/>
                             </module>
                             <module type="IO Mod" handle="45487776">
@@ -185,7 +187,7 @@
                                     <plug name="Pitch" tiedtomod="757444066" tiedtopin="8"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="383" r="443" t="118" b="154"/>
+                                <structRect l="384" r="444" t="109" b="145"/>
                             </module>
                             <module type="IO Mod" handle="1673419711">
                                 <plugs>
@@ -230,6 +232,7 @@
                     </module>
                     <module type="DisplayList" handle="1625524962" name="Root">
                         <plugs>
+                            <plug default="Root"/>
                             <plug default="FF666600" idx="2"/>
                         </plugs>
                         <structRect l="526" r="634" t="368" b="515"/>
@@ -244,7 +247,7 @@
                             <plug name="MIDI Data" direction="1" datatype="2" tiedtomod="447208825" tiedtopin="7"/>
                             <plug/>
                         </plugs>
-                        <structRect l="20" r="104" t="20" b="44"/>
+                        <structRect l="40" r="124" t="69" b="93"/>
                     </module>
                 </modules>
                 <lines>
