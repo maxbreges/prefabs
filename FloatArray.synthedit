@@ -17,8 +17,8 @@
                 </param>
                 <param type="6" handle="465339102" module="1470117927" moduleParamId="0">
                     <patch-list>
-                        <s>6.88</s>
-                        <s>8.36</s>
+                        <s>5.92</s>
+                        <s>0</s>
                         <s>9.36</s>
                         <s repeat="125">0</s>
                     </patch-list>
@@ -30,17 +30,16 @@
                 </param>
                 <param type="1" handle="1852328669" module="1470117927" moduleParamId="1">
                     <patch-list>
-                        <s>2000ff</s>
-                        <s>ff00fc</s>
+                        <s>0073ff</s>
+                        <s>ff0000</s>
                         <s>ff0063</s>
                         <s repeat="125"></s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1866784645" module="1683778674" moduleParamId="0" RangeMaximum="255">
                     <patch-list>
-                        <s>216</s>
                         <s>255</s>
-                        <s repeat="126">0</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
             </Parameters>
