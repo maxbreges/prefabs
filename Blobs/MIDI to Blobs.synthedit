@@ -41,10 +41,6 @@
                 <structRect l="504" r="612" t="492" b="552"/>
                 <panelRect l="224" r="224" t="176" b="176"/>
             </module>
-            <module type="MidiToBlobs" handle="2102603280">
-                <structRect l="324" r="420" t="540" b="600"/>
-                <panelRect l="240" r="240" t="176" b="176"/>
-            </module>
             <module type="ShowInt" handle="435622999" name="">
                 <plugs>
                     <plug default="FF666600" idx="2"/>
@@ -133,15 +129,11 @@
             </module>
         </modules>
         <lines>
-            <line type="Line" handle="1616131221" lineType="1" fMod="151674787" tMod="2102603280" fPlg="1"/>
             <line type="Line" handle="1790945243" lineType="1" fMod="151674787" tMod="1453699961" fPlg="1"/>
             <line type="Line" handle="1409018780" lineType="1" fMod="760463413" tMod="1423420134" fPlg="1"/>
             <line type="Line" handle="1055286220" lineType="1" fMod="1735226325" tMod="1174002549" fPlg="1"/>
             <line type="Line" handle="1391430752" lineType="1" fMod="32719601" tMod="760463413" fPlg="5"/>
             <line type="Line" handle="657766487" lineType="1" fMod="1021195938" tMod="1735226325" fPlg="5"/>
-            <line type="Line" handle="1007379326" lineType="1" fMod="2102603280" tMod="32719601" fPlg="4" tPlg="8"/>
-            <line type="Line" handle="1424901995" lineType="1" fMod="2102603280" tMod="1021195938" fPlg="3" tPlg="8"/>
-            <line type="Line" handle="390804366" lineType="1" fMod="1494921288" tMod="2102603280" fPlg="3"/>
             <line type="Line" handle="2010757975" lineType="1" fMod="1453699961" tMod="435622999" fPlg="8" tPlg="6"/>
             <line type="Line" handle="606814448" lineType="1" fMod="1453699961" tMod="1945396952" fPlg="7" tPlg="6"/>
             <line type="Line" handle="1698923004" lineType="1" fMod="1453699961" tMod="1138610691" fPlg="6" tPlg="6"/>
@@ -185,16 +177,6 @@
                 <Pin name="PinY4" datatype="int" direction="out"/>
                 <Pin name="PinY5" datatype="int" direction="out"/>
                 <Pin name="PinY6" datatype="int" direction="out"/>
-            </Audio>
-            <GUI/>
-        </Plugin>
-        <Plugin id="MidiToBlobs" name="Midi To Blobs" flags="384" category="mx/MIDI">
-            <Audio>
-                <Pin name="MIDI In" datatype="midi"/>
-                <Pin name="Fret Count" datatype="int" default="24"/>
-                <Pin name="String Count" datatype="int" default="6"/>
-                <Pin name="PinX" datatype="blob" direction="out" isPolyphonic="true"/>
-                <Pin name="PinY" datatype="blob" direction="out" isPolyphonic="true"/>
             </Audio>
             <GUI/>
         </Plugin>
