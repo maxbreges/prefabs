@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+    <master_container type="Container" handle="336118527" name="Main" ViewOpenFlags="384" skin="default2">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="0" handle="420510620" shortName="Oscillator Waveform" module="1756753636" moduleParamId="0" MetaData="Sine, Saw, Ramp, Triangle, Pulse,White Noise,Pink Noise">
+                    <patch-list>
+                        <s>3</s>
+                        <s repeat="127">1</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="538463732" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="1604715539" module="230081056" moduleParamId="0">
+                    <patch-list>
+                        <s>Triangle</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="SpinCtrl" handle="286061500">
+                <plugs>
+                    <plug default="1" idx="5"/>
+                    <plug default="150" idx="7"/>
+                </plugs>
+                <structRect l="480" r="552" t="156" b="228"/>
+                <panelRect l="424" r="425" t="168" b="169"/>
+            </module>
+            <module type="SE Listbox" handle="377347680">
+                <structRect l="312" r="420" t="48" b="264"/>
+                <panelRect l="168" r="268" t="32" b="168"/>
+            </module>
+            <module type="SE Text Entry4" handle="987375842">
+                <structRect l="456" r="564" t="276" b="420"/>
+                <panelRect l="32" r="136" t="144" b="168"/>
+            </module>
+            <module type="SE PatchMemory Text2" handle="230081056">
+                <structRect l="300" r="408" t="300" b="372"/>
+                <panelRect l="272" r="273" t="192" b="193"/>
+            </module>
+            <module type="Image3" handle="1727048595">
+                <plugs>
+                    <plug default="arrow_right.png" idx="1"/>
+                    <plug default="2" idx="9"/>
+                </plugs>
+                <structRect l="600" r="720" t="216" b="326"/>
+                <panelRect l="96" r="118" t="72" b="94"/>
+            </module>
+            <module type="Oscillator" handle="1934115388">
+                <structRect l="132" r="216" t="204" b="288"/>
+            </module>
+            <module type="SE PatchMemory List3" handle="1756753636">
+                <structRect l="84" r="192" t="72" b="156"/>
+                <panelRect l="384" r="385" t="216" b="217"/>
+            </module>
+            <module type="Image3" handle="1952916887">
+                <plugs>
+                    <plug default="arrow_left.png" idx="1"/>
+                    <plug default="2" idx="9"/>
+                </plugs>
+                <structRect l="600" r="720" t="84" b="194"/>
+                <panelRect l="48" r="70" t="72" b="94"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="1979824470" lineType="1" fMod="1756753636" tMod="1934115388" fPlg="13" tPlg="2"/>
+            <line type="Line" handle="333077454" lineType="1" fMod="1756753636" tMod="286061500" fPlg="7"/>
+            <line type="Line" handle="1919200592" lineType="1" fMod="1756753636" tMod="286061500" fPlg="8" tPlg="1"/>
+            <line type="Line" handle="1579243126" lineType="1" fMod="286061500" tMod="1952916887" fPlg="3" tPlg="6"/>
+            <line type="Line" handle="270433940" lineType="1" fMod="286061500" tMod="1727048595" fPlg="4" tPlg="6"/>
+            <line type="Line" handle="151126606" lineType="1" fMod="230081056" tMod="987375842" fPlg="6"/>
+            <line type="Line" handle="942579909" lineType="1" fMod="230081056" tMod="286061500" fPlg="6" tPlg="2"/>
+            <line type="Line" handle="878349261" lineType="1" fMod="1756753636" tMod="377347680" fPlg="7"/>
+            <line type="Line" handle="1860156598" lineType="1" fMod="1756753636" tMod="377347680" fPlg="8" tPlg="1"/>
+        </lines>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="872" r="1409" t="159" b="524"/>
+        <StructLocation l="0" r="796" t="0" b="762"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="8" r="152" t="8" b="184"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Image3" name="Image2" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Filename" datatype="string" default="knob_sm" isFilename="true" metadata="bmp"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Frame Count" datatype="int" private="true"/>
+                <Pin name="Frame Count" datatype="int" direction="out"/>
+                <Pin name="Mouse Response" datatype="enum" default="-1" isMinimised="true" metadata="off=-2, auto=-1, vertical=0, horizontal=1, clicks=2, rotary=3, step=4"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Oscillator" class="1" name="Oscillator" flags="4352" category="Waveform">
+            <Audio>
+                <Pin name="Pitch" datatype="float" rate="audio" default="0.5" metadata="100, 0, 10, 0"/>
+                <Pin name="Pulse Width" datatype="float" rate="audio" default="0.5"/>
+                <Pin name="Waveform" datatype="enum" default="1" metadata="Sine, Saw, Ramp, Triangle, Pulse,White Noise,Pink Noise"/>
+                <Pin name="Audio Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Sync" datatype="float" rate="audio" metadata="100, 0, 5, -5"/>
+                <Pin name="Phase Mod" datatype="float" rate="audio" metadata="100, 0, 10, 0"/>
+                <Pin name="Freq Scale" datatype="enum" isMinimised="true" metadata="1 Volt/Octave, 1 Volt/kHz "/>
+                <Pin name="PM Depth" datatype="float" rate="audio" default="0.5" metadata="100, 0, 10, 0"/>
+                <Pin name="Smooth Peaks (Gibbs Effect)" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Sync X-Fade (Anti Alias)" datatype="bool" default="1" isMinimised="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE Listbox" name="Listbox" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Choice" datatype="int"/>
+                <Pin name="Item List" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory List3" name="PatchMemory List3" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="enum" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="enum" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="List Values" datatype="string" private="true" parameterId="0" parameterField="EnumList"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Choice" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Text2" name="PatchMemory Text2" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="string" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="string" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="string" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="string" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="File Extension" datatype="string" private="true" parameterId="0" parameterField="FileExtension"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="string" direction="out"/>
+                <Pin name="File Extension" datatype="string" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Text Entry4" name="Text Entry4" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Text" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Multiline" datatype="bool"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SpinCtrl" name="Spin Control" flags="384" category="mx/Sub-Controls">
+            <GUI>
+                <Pin name="Choice" datatype="int"/>
+                <Pin name="Item List" datatype="string"/>
+                <Pin name="Selection" datatype="string"/>
+                <Pin name="Decr" datatype="bool" direction="out"/>
+                <Pin name="Incr" datatype="bool" direction="out"/>
+                <Pin name="Wrap" datatype="bool"/>
+                <Pin name="Hold Delay" datatype="int" default="600" isMinimised="true"/>
+                <Pin name="Repeat Rate" datatype="int" default="120" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+    </PluginList>
+</Document>
