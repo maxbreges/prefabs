@@ -15,7 +15,7 @@
                 </param>
                 <param type="8" handle="1794293058" shortName="Speed" module="9751914" moduleParamId="0" RangeMaximum="60">
                     <patch-list>
-                        <s>15</s>
+                        <s>3</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
