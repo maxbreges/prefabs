@@ -36,7 +36,7 @@
         <modules>
             <module type="DisplayList" handle="461705183">
                 <structRect l="156" r="324" t="420" b="528"/>
-                <panelRect l="264" r="364" t="152" b="252"/>
+                <panelRect l="112" r="212" t="40" b="140"/>
             </module>
             <module type="FileDialog" handle="1881486986">
                 <structRect l="192" r="288" t="312" b="396"/>
@@ -98,11 +98,11 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="856" r="1356" t="41" b="341"/>
-        <StructLocation l="0" r="1438" t="0" b="903"/>
+        <StructLocation l="0" r="797" t="0" b="715"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="8" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
-        <panel_rect l="16" r="312" t="16" b="216"/>
+        <panel_rect l="16" r="312" t="16" b="160"/>
     </master_container>
     <PluginList>
         <Plugin id="Container" class="1" name="Container" flags="384" category="">
