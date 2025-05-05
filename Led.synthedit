@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Jeff McClintock" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
     <master_container type="Container" handle="1125290250" name="Main" ViewOpenFlags="384" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -8,6 +8,18 @@
         <PatchManager>
             <ProgramNames/>
             <Parameters>
+                <param type="6" handle="25805736" module="79193374" moduleParamId="0">
+                    <patch-list>
+                        <s>1</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="128167196" module="222464694" moduleParamId="0" RangeMaximum="2">
+                    <patch-list>
+                        <s>2</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
                 <param type="6" handle="168072689" module="57191097" moduleParamId="0">
                     <patch-list>
                         <s>1</s>
@@ -16,7 +28,7 @@
                 </param>
                 <param type="6" handle="168991921" module="2085089049" moduleParamId="0">
                     <patch-list>
-                        <s>10</s>
+                        <s>2.45</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -28,7 +40,7 @@
                 </param>
                 <param type="6" handle="300071559" module="2124509121" moduleParamId="0">
                     <patch-list>
-                        <s>7.05</s>
+                        <s>6.55</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -42,6 +54,12 @@
                     <patch-list>
                         <s>ff00e9ff</s>
                         <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="376931314" module="709295059" moduleParamId="0">
+                    <patch-list>
+                        <s>1</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="1" handle="421281085" module="1907735391" moduleParamId="2">
@@ -62,37 +80,37 @@
                 </param>
                 <param type="6" handle="475424307" module="1106463430" moduleParamId="0" RangeMaximum="2">
                     <patch-list>
-                        <s>1.99</s>
+                        <s>1.89</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="671339913" module="1500237413" moduleParamId="0" RangeMaximum="2">
                     <patch-list>
-                        <s>0.13</s>
+                        <s>1.02</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="720707193" module="2133945865" moduleParamId="0">
                     <patch-list>
-                        <s>0.065</s>
+                        <s>0.51</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="730519183" module="1214132401" moduleParamId="0">
                     <patch-list>
-                        <s>9.55</s>
+                        <s>9.9</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="732321628" module="1069916683" moduleParamId="0">
                     <patch-list>
-                        <s>1</s>
+                        <s>0.245</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="733671969" module="146378631" moduleParamId="0">
                     <patch-list>
-                        <s>9.5</s>
+                        <s>5.15</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -104,18 +122,18 @@
                 </param>
                 <param type="6" handle="926792922" module="1802882086" moduleParamId="0">
                     <patch-list>
-                        <s>0.95</s>
+                        <s>0.515</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
-                <param type="4" handle="1158771132" module="1553012906" moduleParamId="0">
+                <param type="4" handle="1158771132" shortName="Grayscale Led" module="1553012906" moduleParamId="0">
                     <patch-list>
                         <s repeat="128">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1196471355" module="287549321" moduleParamId="0">
                     <patch-list>
-                        <s>0.995</s>
+                        <s>0.945</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -139,19 +157,25 @@
                 </param>
                 <param type="6" handle="1281665548" module="1907735391" moduleParamId="0">
                     <patch-list>
-                        <s>1</s>
+                        <s>0.92</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1296186483" module="2048791954" moduleParamId="0">
                     <patch-list>
-                        <s>10</s>
+                        <s>9.2</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1370000710" module="1050008868" moduleParamId="0" RangeMaximum="2">
+                    <patch-list>
+                        <s>2</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1504512699" module="720642917" moduleParamId="0">
                     <patch-list>
-                        <s>0.955</s>
+                        <s>0.99</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -163,23 +187,35 @@
                 </param>
                 <param type="6" handle="1641082695" module="1136657819" moduleParamId="0" RangeMaximum="2">
                     <patch-list>
-                        <s>2</s>
+                        <s>1.99</s>
                         <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="1692846692" module="709295059" moduleParamId="2">
+                    <patch-list>
+                        <s>ffbdff00</s>
+                        <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1724098670" module="683360309" moduleParamId="0">
                     <patch-list>
-                        <s>1</s>
+                        <s>0.995</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
-                <param type="4" handle="1735110464" module="472467877" moduleParamId="0">
+                <param type="4" handle="1735110464" shortName="Grayscale Halo" module="472467877" moduleParamId="0">
                     <patch-list>
                         <s>1</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="1" handle="1786532772" module="57191097" moduleParamId="2">
+                    <patch-list>
+                        <s>ffbdff00</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="2005814756" module="79193374" moduleParamId="2">
                     <patch-list>
                         <s>ffbdff00</s>
                         <s repeat="127"></s>
@@ -194,53 +230,66 @@
                     <plug default="1"/>
                     <plug idx="7"/>
                 </plugs>
-                <structRect l="36" r="396" t="36" b="608"/>
+                <structRect l="36" r="444" t="36" b="528"/>
                 <modules>
+                    <module type="SE:GUIFixedValues_text" handle="1454482207">
+                        <plugs>
+                            <plug name="Gradient Center Position" default="Gradient Center Position"/>
+                            <plug name="On / Off" default="On / Off" id="1"/>
+                            <plug name="Grayscale Led" default="Grayscale Led" id="2"/>
+                            <plug name="Grayscale Halo" default="Grayscale Halo" id="3"/>
+                            <plug id="4"/>
+                        </plugs>
+                        <structRect l="288" r="444" t="456" b="516"/>
+                        <panelRect l="288" r="289" t="344" b="345"/>
+                    </module>
                     <module type="Container" handle="1682243010" name="On / Off" skin="default2">
                         <plugs>
                             <plug default="1" idx="1"/>
                             <plug default="1"/>
                             <plug name="Value" direction="1" datatype="4" idx="7"/>
+                            <plug name="Mouse Over" direction="1" datatype="4"/>
                             <plug/>
                         </plugs>
-                        <structRect l="168" r="228" t="60" b="130"/>
+                        <structRect l="264" r="348" t="48" b="118"/>
                         <modules>
+                            <module type="ImageX" handle="1141294437">
+                                <plugs>
+                                    <plug default="on-off.png" idx="1"/>
+                                </plugs>
+                                <structRect l="396" r="516" t="96" b="214"/>
+                                <panelRect l="296" r="296" t="248" b="248"/>
+                            </module>
                             <module type="SE PatchMemory Bool" handle="1553012906">
                                 <structRect l="240" r="360" t="36" b="120"/>
                                 <panelRect l="320" r="321" t="488" b="489"/>
                             </module>
-                            <module type="Image3" handle="1348421099">
-                                <plugs>
-                                    <plug default="Button.bmp" idx="1"/>
-                                    <plug default="4" idx="9"/>
-                                </plugs>
-                                <structRect l="372" r="492" t="24" b="142"/>
-                                <panelRect l="408" r="426" t="88" b="118"/>
-                            </module>
                             <module type="IO Mod" handle="1067519184">
                                 <plugs>
                                     <plug name="Value" datatype="4" tiedtomod="1682243010" tiedtopin="7"/>
+                                    <plug name="Mouse Over" datatype="4" tiedtomod="1682243010" tiedtopin="8"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="612" r="612" t="24" b="24"/>
+                                <structRect l="612" r="696" t="24" b="60"/>
                             </module>
                             <module type="IO Mod" handle="1804992108">
                                 <plugs>
                                     <plug/>
                                 </plugs>
-                                <structRect l="20" r="20" t="20" b="20"/>
+                                <structRect l="20" r="80" t="20" b="32"/>
                             </module>
                         </modules>
                         <lines>
-                            <line type="Line" handle="753191699" lineType="1" fMod="1553012906" tMod="1348421099" fPlg="8"/>
                             <line type="Line" handle="418358719" lineType="1" fMod="1553012906" tMod="1067519184" fPlg="7"/>
+                            <line type="Line" handle="369256511" lineType="1" fMod="1553012906" tMod="1141294437" fPlg="8"/>
+                            <line type="Line" handle="1057655839" lineType="1" fMod="1141294437" tMod="1067519184" fPlg="10" tPlg="1"/>
                         </lines>
-                        <PanelWndPosition l="168" r="186" t="96" b="126"/>
+                        <PanelWndPosition l="120" r="138" t="48" b="78"/>
                         <PanelLocation l="30" r="530" t="30" b="330"/>
                         <StructLocation l="0" r="696" t="0" b="400"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="-240" cy="8"/>
+                        <PanelWndOffset cx="-288" cy="-40"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="Container" handle="1507491097" name="On / Off" skin="default2">
@@ -248,46 +297,42 @@
                             <plug default="1" idx="1"/>
                             <plug default="1"/>
                             <plug name="Value" direction="1" datatype="4" idx="7"/>
+                            <plug name="Mouse Over" direction="1" datatype="4"/>
                             <plug/>
                         </plugs>
-                        <structRect l="360" r="420" t="720" b="790"/>
+                        <structRect l="12" r="96" t="48" b="118"/>
                         <modules>
-                            <module type="SE PatchMemory Bool" handle="472467877">
-                                <structRect l="240" r="360" t="36" b="120"/>
-                                <panelRect l="320" r="321" t="488" b="489"/>
-                            </module>
-                            <module type="Image3" handle="20340836">
+                            <module type="ImageX" handle="174872399">
                                 <plugs>
-                                    <plug default="Button.bmp" idx="1"/>
-                                    <plug default="4" idx="9"/>
+                                    <plug default="on-off.png" idx="1"/>
                                 </plugs>
-                                <structRect l="372" r="492" t="24" b="142"/>
-                                <panelRect l="408" r="426" t="88" b="118"/>
+                                <structRect l="180" r="300" t="108" b="226"/>
+                                <panelRect l="320" r="320" t="240" b="240"/>
+                            </module>
+                            <module type="SE PatchMemory Bool" handle="472467877">
+                                <structRect l="36" r="156" t="36" b="120"/>
+                                <panelRect l="320" r="321" t="488" b="489"/>
                             </module>
                             <module type="IO Mod" handle="377570675">
                                 <plugs>
                                     <plug name="Value" datatype="4" tiedtomod="1507491097" tiedtopin="7"/>
+                                    <plug name="Mouse Over" datatype="4" tiedtomod="1507491097" tiedtopin="8"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="612" r="612" t="24" b="24"/>
-                            </module>
-                            <module type="IO Mod" handle="1446893336">
-                                <plugs>
-                                    <plug/>
-                                </plugs>
-                                <structRect l="20" r="20" t="20" b="20"/>
+                                <structRect l="324" r="408" t="48" b="84"/>
                             </module>
                         </modules>
                         <lines>
-                            <line type="Line" handle="619364692" lineType="1" fMod="472467877" tMod="20340836" fPlg="8"/>
                             <line type="Line" handle="85713998" lineType="1" fMod="472467877" tMod="377570675" fPlg="7"/>
+                            <line type="Line" handle="804377090" lineType="1" fMod="472467877" tMod="174872399" fPlg="8"/>
+                            <line type="Line" handle="2142355469" lineType="1" fMod="174872399" tMod="377570675" fPlg="10" tPlg="1"/>
                         </lines>
-                        <PanelWndPosition l="168" r="186" t="160" b="190"/>
+                        <PanelWndPosition l="48" r="66" t="48" b="78"/>
                         <PanelLocation l="30" r="530" t="30" b="330"/>
                         <StructLocation l="0" r="696" t="0" b="400"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="-240" cy="72"/>
+                        <PanelWndOffset cx="-360" cy="-40"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="Container" handle="976033963" name="On / Off" skin="default2">
@@ -295,46 +340,48 @@
                             <plug default="1" idx="1"/>
                             <plug default="1"/>
                             <plug name="Value" direction="1" datatype="4" idx="7"/>
+                            <plug name="Mouse Over" direction="1" datatype="4"/>
                             <plug/>
                         </plugs>
-                        <structRect l="228" r="288" t="720" b="790"/>
+                        <structRect l="288" r="372" t="660" b="730"/>
                         <modules>
+                            <module type="ImageX" handle="1068624933">
+                                <plugs>
+                                    <plug default="on-off.png" idx="1"/>
+                                </plugs>
+                                <structRect l="396" r="516" t="108" b="226"/>
+                                <panelRect l="248" r="248" t="176" b="176"/>
+                            </module>
                             <module type="SE PatchMemory Bool" handle="159054182">
                                 <structRect l="240" r="360" t="36" b="120"/>
                                 <panelRect l="320" r="321" t="488" b="489"/>
                             </module>
-                            <module type="Image3" handle="1845591573">
-                                <plugs>
-                                    <plug default="Button.bmp" idx="1"/>
-                                    <plug default="4" idx="9"/>
-                                </plugs>
-                                <structRect l="372" r="492" t="24" b="142"/>
-                                <panelRect l="408" r="426" t="88" b="118"/>
-                            </module>
                             <module type="IO Mod" handle="689588596">
                                 <plugs>
                                     <plug name="Value" datatype="4" tiedtomod="976033963" tiedtopin="7"/>
+                                    <plug name="Mouse Over" datatype="4" tiedtomod="976033963" tiedtopin="8"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="612" r="612" t="24" b="24"/>
+                                <structRect l="564" r="648" t="48" b="84"/>
                             </module>
                             <module type="IO Mod" handle="491696440">
                                 <plugs>
                                     <plug/>
                                 </plugs>
-                                <structRect l="20" r="20" t="20" b="20"/>
+                                <structRect l="20" r="80" t="20" b="32"/>
                             </module>
                         </modules>
                         <lines>
                             <line type="Line" handle="921728827" lineType="1" fMod="159054182" tMod="689588596" fPlg="7"/>
-                            <line type="Line" handle="1572668290" lineType="1" fMod="159054182" tMod="1845591573" fPlg="8"/>
+                            <line type="Line" handle="352554994" lineType="1" fMod="159054182" tMod="1068624933" fPlg="8"/>
+                            <line type="Line" handle="342666676" lineType="1" fMod="1068624933" tMod="689588596" fPlg="10" tPlg="1"/>
                         </lines>
-                        <PanelWndPosition l="392" r="410" t="96" b="126"/>
+                        <PanelWndPosition l="384" r="411" t="115" b="133"/>
                         <PanelLocation l="30" r="530" t="30" b="330"/>
                         <StructLocation l="0" r="696" t="0" b="400"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="-16" cy="8"/>
+                        <PanelWndOffset cx="136" cy="-61"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="SE Bools To Int2" handle="170782162">
@@ -347,8 +394,14 @@
                             <plug id="7"/>
                             <plug id="8"/>
                             <plug id="9"/>
+                            <plug id="10"/>
+                            <plug id="11"/>
+                            <plug id="12"/>
+                            <plug id="13"/>
+                            <plug id="14"/>
+                            <plug id="15"/>
                         </plugs>
-                        <structRect l="192" r="264" t="372" b="492"/>
+                        <structRect l="288" r="360" t="252" b="444"/>
                         <panelRect l="336" r="337" t="464" b="465"/>
                     </module>
                     <module type="Container" handle="628036318" name="Gradient Point Position" skin="default2">
@@ -357,9 +410,10 @@
                             <plug default="1"/>
                             <plug name="Animation Position" direction="1" datatype="6" idx="7"/>
                             <plug name="Animation Position" direction="1" datatype="6"/>
+                            <plug name="Mouse Over" direction="1" datatype="4"/>
                             <plug/>
                         </plugs>
-                        <structRect l="312" r="444" t="36" b="200"/>
+                        <structRect l="684" r="816" t="684" b="860"/>
                         <modules>
                             <module type="SE PatchMemory Float" handle="2124509121">
                                 <structRect l="108" r="228" t="132" b="216"/>
@@ -377,9 +431,10 @@
                                 <plugs>
                                     <plug name="Animation Position" default="0.45" datatype="6" tiedtomod="628036318" tiedtopin="7"/>
                                     <plug name="Animation Position" default="0.55" datatype="6" tiedtomod="628036318" tiedtopin="8"/>
+                                    <plug name="Mouse Over" datatype="4" tiedtomod="628036318" tiedtopin="9"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="444" r="564" t="96" b="132"/>
+                                <structRect l="444" r="564" t="96" b="144"/>
                             </module>
                         </modules>
                         <lines>
@@ -387,13 +442,14 @@
                             <line type="Line" handle="1395774456" lineType="1" fMod="246202429" tMod="581105990" fPlg="8"/>
                             <line type="Line" handle="1245700953" lineType="1" fMod="2124509121" tMod="1065583363" fPlg="8" tPlg="11"/>
                             <line type="Line" handle="1123017461" lineType="1" fMod="246202429" tMod="1065583363" fPlg="8" tPlg="10"/>
+                            <line type="Line" handle="1383037505" lineType="1" fMod="1065583363" tMod="581105990" fPlg="14" tPlg="2"/>
                         </lines>
-                        <PanelWndPosition l="216" r="328" t="232" b="344"/>
+                        <PanelWndPosition l="216" r="328" t="208" b="320"/>
                         <PanelLocation l="30" r="530" t="30" b="330"/>
                         <StructLocation l="0" r="756" t="0" b="420"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="32" cy="80"/>
+                        <PanelWndOffset cx="32" cy="56"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="1430568153">
@@ -406,9 +462,15 @@
                             <plug name="Hex Out" id="7"/>
                             <plug name="Text Out" id="8"/>
                             <plug name="Text Out" id="9"/>
-                            <plug id="10"/>
+                            <plug name="Text Out" id="10"/>
+                            <plug name="Text Out" id="11"/>
+                            <plug id="12"/>
+                            <plug id="13"/>
+                            <plug id="14"/>
+                            <plug id="15"/>
+                            <plug id="16"/>
                         </plugs>
-                        <structRect l="324" r="396" t="360" b="492"/>
+                        <structRect l="372" r="444" t="252" b="456"/>
                         <panelRect l="304" r="305" t="472" b="473"/>
                     </module>
                     <module type="SE Text Entry4" handle="1164153967">
@@ -417,8 +479,8 @@
                             <plug default="1"/>
                             <plug default="0"/>
                         </plugs>
-                        <structRect l="636" r="744" t="96" b="240"/>
-                        <panelRect l="192" r="360" t="376" b="488"/>
+                        <structRect l="648" r="852" t="24" b="312"/>
+                        <panelRect l="192" r="360" t="336" b="512"/>
                     </module>
                     <module type="Container" handle="1528347152" skin="default2">
                         <plugs>
@@ -428,7 +490,7 @@
                             <plug name="HexOut" direction="1" datatype="1"/>
                             <plug/>
                         </plugs>
-                        <structRect l="492" r="564" t="348" b="410"/>
+                        <structRect l="516" r="588" t="444" b="506"/>
                         <modules>
                             <module type="SE BoolToInt GUI" handle="1757028900">
                                 <structRect l="240" r="312" t="60" b="84"/>
@@ -464,14 +526,14 @@
                                     <plug name="HexOut" default="ffffffff" datatype="1" tiedtomod="1528347152" tiedtopin="8"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="516" r="516" t="24" b="24"/>
+                                <structRect l="516" r="576" t="24" b="48"/>
                             </module>
                             <module type="IO Mod" handle="192165154">
                                 <plugs>
                                     <plug name="Bool Val" direction="1" datatype="4" tiedtomod="1528347152" tiedtopin="7"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="20" r="20" t="20" b="20"/>
+                                <structRect l="20" r="92" t="20" b="44"/>
                             </module>
                         </modules>
                         <lines>
@@ -499,7 +561,7 @@
                             <plug name="Value Out" direction="1" datatype="6"/>
                             <plug/>
                         </plugs>
-                        <structRect l="336" r="408" t="552" b="626"/>
+                        <structRect l="396" r="468" t="600" b="674"/>
                         <modules>
                             <module type="SE Float Scaler2" handle="573735351">
                                 <structRect l="384" r="468" t="84" b="132"/>
@@ -569,7 +631,7 @@
                             <plug name="Value Out" direction="1" datatype="6"/>
                             <plug/>
                         </plugs>
-                        <structRect l="420" r="492" t="444" b="518"/>
+                        <structRect l="444" r="516" t="516" b="590"/>
                         <modules>
                             <module type="SE Float Scaler2" handle="727175973">
                                 <structRect l="396" r="480" t="48" b="96"/>
@@ -639,7 +701,7 @@
                             <plug name="Mouse Over" direction="1" datatype="4"/>
                             <plug/>
                         </plugs>
-                        <structRect l="24" r="108" t="96" b="224"/>
+                        <structRect l="180" r="264" t="48" b="176"/>
                         <modules>
                             <module type="SE PatchMemory Float" handle="1106463430">
                                 <structRect l="240" r="360" t="24" b="108"/>
@@ -688,15 +750,15 @@
                         <plugs>
                             <plug default="0" idx="1"/>
                         </plugs>
-                        <structRect l="336" r="420" t="264" b="300"/>
+                        <structRect l="348" r="432" t="60" b="96"/>
                         <panelRect l="352" r="352" t="528" b="528"/>
                     </module>
                     <module type="GrayscaleHex" handle="71956920">
-                        <structRect l="456" r="540" t="648" b="684"/>
+                        <structRect l="84" r="168" t="48" b="84"/>
                         <panelRect l="312" r="312" t="488" b="488"/>
                     </module>
                     <module type="Led" handle="1739599054">
-                        <structRect l="612" r="792" t="324" b="636"/>
+                        <structRect l="660" r="840" t="336" b="648"/>
                         <panelRect l="224" r="324" t="72" b="172"/>
                     </module>
                     <module type="Container" handle="594402057" skin="default2">
@@ -708,7 +770,7 @@
                             <plug name="Mouse Over" direction="1" datatype="4"/>
                             <plug/>
                         </plugs>
-                        <structRect l="24" r="108" t="180" b="308"/>
+                        <structRect l="180" r="264" t="144" b="272"/>
                         <modules>
                             <module type="SE PatchMemory Float" handle="1214132401">
                                 <structRect l="240" r="360" t="24" b="108"/>
@@ -745,66 +807,12 @@
                             <line type="Line" handle="2000169527" lineType="1" fMod="1214132401" tMod="296260990" fPlg="8"/>
                             <line type="Line" handle="1465952344" lineType="1" fMod="1214132401" tMod="720642917" fPlg="8" tPlg="1"/>
                         </lines>
-                        <PanelWndPosition l="96" r="160" t="208" b="272"/>
+                        <PanelWndPosition l="96" r="160" t="144" b="208"/>
                         <PanelLocation l="30" r="959" t="30" b="786"/>
                         <StructLocation l="0" r="576" t="0" b="468"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="40" cy="152"/>
-                        <panel_rect l="16" r="312" t="16" b="216"/>
-                    </module>
-                    <module type="Container" handle="201439411" skin="default2">
-                        <plugs>
-                            <plug default="1" idx="1"/>
-                            <plug default="1"/>
-                            <plug name="0-1" direction="1" datatype="6" idx="7"/>
-                            <plug name="Text Out" direction="1" datatype="1"/>
-                            <plug name="Mouse Over" direction="1" datatype="4"/>
-                            <plug/>
-                        </plugs>
-                        <structRect l="24" r="108" t="264" b="392"/>
-                        <modules>
-                            <module type="SE PatchMemory Float" handle="2085089049">
-                                <structRect l="240" r="360" t="24" b="108"/>
-                                <panelRect l="48" r="49" t="64" b="65"/>
-                            </module>
-                            <module type="BlobKnob" handle="1069916683">
-                                <plugs>
-                                    <plug default="" idx="2"/>
-                                    <plug default="Halo Size"/>
-                                    <plug default="2" idx="8"/>
-                                </plugs>
-                                <structRect l="252" r="372" t="120" b="288"/>
-                                <panelRect l="56" r="120" t="56" b="120"/>
-                            </module>
-                            <module type="IO Mod" handle="1012220092">
-                                <plugs>
-                                    <plug name="0-1" datatype="6" tiedtomod="201439411" tiedtopin="7"/>
-                                    <plug name="Text Out" datatype="1" tiedtomod="201439411" tiedtopin="8"/>
-                                    <plug name="Mouse Over" datatype="4" tiedtomod="201439411" tiedtopin="9"/>
-                                    <plug/>
-                                </plugs>
-                                <structRect l="492" r="576" t="24" b="72"/>
-                            </module>
-                            <module type="IO Mod" handle="2023338412">
-                                <plugs>
-                                    <plug/>
-                                </plugs>
-                                <structRect l="20" r="80" t="20" b="32"/>
-                            </module>
-                        </modules>
-                        <lines>
-                            <line type="Line" handle="1114651303" lineType="1" fMod="1069916683" tMod="1012220092" fPlg="5" tPlg="2"/>
-                            <line type="Line" handle="10221504" lineType="1" fMod="1069916683" tMod="1012220092" fPlg="14" tPlg="1"/>
-                            <line type="Line" handle="1993064262" lineType="1" fMod="2085089049" tMod="1069916683" fPlg="8" tPlg="1"/>
-                            <line type="Line" handle="659757171" lineType="1" fMod="2085089049" tMod="1012220092" fPlg="8"/>
-                        </lines>
-                        <PanelWndPosition l="96" r="160" t="272" b="336"/>
-                        <PanelLocation l="30" r="959" t="30" b="786"/>
-                        <StructLocation l="0" r="576" t="0" b="468"/>
-                        <PanelScroll x="0" y="0"/>
-                        <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="40" cy="216"/>
+                        <PanelWndOffset cx="40" cy="88"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="Container" handle="1136600592" skin="default2">
@@ -816,7 +824,7 @@
                             <plug name="Mouse Over" direction="1" datatype="4"/>
                             <plug/>
                         </plugs>
-                        <structRect l="24" r="108" t="348" b="476"/>
+                        <structRect l="180" r="264" t="240" b="368"/>
                         <modules>
                             <module type="SE PatchMemory Float" handle="2048791954">
                                 <structRect l="240" r="360" t="24" b="108"/>
@@ -825,7 +833,7 @@
                             <module type="BlobKnob" handle="1907735391">
                                 <plugs>
                                     <plug default="" idx="2"/>
-                                    <plug default="Led Gradient Stop"/>
+                                    <plug default="Led Gradient Size"/>
                                     <plug default="2" idx="8"/>
                                 </plugs>
                                 <structRect l="252" r="372" t="120" b="288"/>
@@ -853,174 +861,12 @@
                             <line type="Line" handle="934962876" lineType="1" fMod="2048791954" tMod="768081569" fPlg="8"/>
                             <line type="Line" handle="76662044" lineType="1" fMod="2048791954" tMod="1907735391" fPlg="8" tPlg="1"/>
                         </lines>
-                        <PanelWndPosition l="96" r="160" t="336" b="400"/>
+                        <PanelWndPosition l="96" r="160" t="216" b="280"/>
                         <PanelLocation l="30" r="959" t="30" b="786"/>
                         <StructLocation l="0" r="576" t="0" b="468"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="40" cy="280"/>
-                        <panel_rect l="16" r="312" t="16" b="216"/>
-                    </module>
-                    <module type="Container" handle="13979684" skin="default2">
-                        <plugs>
-                            <plug default="1" idx="1"/>
-                            <plug default="1"/>
-                            <plug name="0-1" direction="1" datatype="6" idx="7"/>
-                            <plug name="Text Out" direction="1" datatype="1"/>
-                            <plug name="Mouse Over" direction="1" datatype="4"/>
-                            <plug/>
-                        </plugs>
-                        <structRect l="24" r="108" t="432" b="560"/>
-                        <modules>
-                            <module type="SE PatchMemory Float" handle="146378631">
-                                <structRect l="240" r="360" t="24" b="108"/>
-                                <panelRect l="48" r="49" t="64" b="65"/>
-                            </module>
-                            <module type="BlobKnob" handle="1802882086">
-                                <plugs>
-                                    <plug default="" idx="2"/>
-                                    <plug default="Halo Gradient Stop"/>
-                                    <plug default="2" idx="8"/>
-                                </plugs>
-                                <structRect l="252" r="372" t="120" b="288"/>
-                                <panelRect l="56" r="120" t="56" b="120"/>
-                            </module>
-                            <module type="IO Mod" handle="1942075087">
-                                <plugs>
-                                    <plug name="0-1" datatype="6" tiedtomod="13979684" tiedtopin="7"/>
-                                    <plug name="Text Out" datatype="1" tiedtomod="13979684" tiedtopin="8"/>
-                                    <plug name="Mouse Over" datatype="4" tiedtomod="13979684" tiedtopin="9"/>
-                                    <plug/>
-                                </plugs>
-                                <structRect l="492" r="576" t="24" b="72"/>
-                            </module>
-                            <module type="IO Mod" handle="848071831">
-                                <plugs>
-                                    <plug/>
-                                </plugs>
-                                <structRect l="20" r="80" t="20" b="32"/>
-                            </module>
-                        </modules>
-                        <lines>
-                            <line type="Line" handle="1902483120" lineType="1" fMod="1802882086" tMod="1942075087" fPlg="5" tPlg="2"/>
-                            <line type="Line" handle="905754752" lineType="1" fMod="1802882086" tMod="1942075087" fPlg="14" tPlg="1"/>
-                            <line type="Line" handle="503461206" lineType="1" fMod="146378631" tMod="1802882086" fPlg="8" tPlg="1"/>
-                            <line type="Line" handle="1650925374" lineType="1" fMod="146378631" tMod="1942075087" fPlg="8"/>
-                        </lines>
-                        <PanelWndPosition l="96" r="160" t="400" b="464"/>
-                        <PanelLocation l="30" r="959" t="30" b="786"/>
-                        <StructLocation l="0" r="576" t="0" b="468"/>
-                        <PanelScroll x="0" y="0"/>
-                        <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="40" cy="344"/>
-                        <panel_rect l="16" r="312" t="16" b="216"/>
-                    </module>
-                    <module type="Container" handle="385643732" skin="default2">
-                        <plugs>
-                            <plug default="1" idx="1"/>
-                            <plug default="1"/>
-                            <plug name="0-1" direction="1" datatype="6" idx="7"/>
-                            <plug name="Hex Out" direction="1" datatype="1"/>
-                            <plug name="Mouse Over" direction="1" datatype="4"/>
-                            <plug/>
-                        </plugs>
-                        <structRect l="24" r="108" t="516" b="644"/>
-                        <modules>
-                            <module type="SE PatchMemory Float" handle="1136657819">
-                                <structRect l="240" r="360" t="24" b="108"/>
-                                <panelRect l="48" r="49" t="64" b="65"/>
-                            </module>
-                            <module type="BlobKnob" handle="683360309">
-                                <plugs>
-                                    <plug default="" idx="2"/>
-                                    <plug default="Brightness"/>
-                                    <plug default="2" idx="8"/>
-                                </plugs>
-                                <structRect l="252" r="372" t="120" b="288"/>
-                                <panelRect l="56" r="120" t="56" b="120"/>
-                            </module>
-                            <module type="IO Mod" handle="825935184">
-                                <plugs>
-                                    <plug name="0-1" datatype="6" tiedtomod="385643732" tiedtopin="7"/>
-                                    <plug name="Hex Out" datatype="1" tiedtomod="385643732" tiedtopin="8"/>
-                                    <plug name="Mouse Over" datatype="4" tiedtomod="385643732" tiedtopin="9"/>
-                                    <plug/>
-                                </plugs>
-                                <structRect l="492" r="576" t="24" b="72"/>
-                            </module>
-                            <module type="IO Mod" handle="2067021838">
-                                <plugs>
-                                    <plug/>
-                                </plugs>
-                                <structRect l="20" r="80" t="20" b="32"/>
-                            </module>
-                        </modules>
-                        <lines>
-                            <line type="Line" handle="737113033" lineType="1" fMod="683360309" tMod="825935184" fPlg="14" tPlg="1"/>
-                            <line type="Line" handle="2010179524" lineType="1" fMod="683360309" tMod="825935184" fPlg="5" tPlg="2"/>
-                            <line type="Line" handle="885853929" lineType="1" fMod="1136657819" tMod="825935184" fPlg="8"/>
-                            <line type="Line" handle="61836751" lineType="1" fMod="1136657819" tMod="683360309" fPlg="8" tPlg="1"/>
-                        </lines>
-                        <PanelWndPosition l="96" r="160" t="464" b="528"/>
-                        <PanelLocation l="30" r="959" t="30" b="786"/>
-                        <StructLocation l="0" r="576" t="0" b="468"/>
-                        <PanelScroll x="0" y="0"/>
-                        <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="40" cy="408"/>
-                        <panel_rect l="16" r="312" t="16" b="216"/>
-                    </module>
-                    <module type="Container" handle="1991036000" skin="default2">
-                        <plugs>
-                            <plug default="1" idx="1"/>
-                            <plug default="1"/>
-                            <plug name="0-1" direction="1" datatype="6" idx="7"/>
-                            <plug name="Text Out" direction="1" datatype="1"/>
-                            <plug name="Mouse Over" direction="1" datatype="4"/>
-                            <plug/>
-                        </plugs>
-                        <structRect l="24" r="108" t="588" b="716"/>
-                        <modules>
-                            <module type="SE PatchMemory Float" handle="1154956892">
-                                <structRect l="240" r="360" t="24" b="108"/>
-                                <panelRect l="48" r="49" t="64" b="65"/>
-                            </module>
-                            <module type="BlobKnob" handle="57191097">
-                                <plugs>
-                                    <plug default="" idx="2"/>
-                                    <plug default="Opacity"/>
-                                    <plug default="2" idx="8"/>
-                                </plugs>
-                                <structRect l="252" r="372" t="120" b="288"/>
-                                <panelRect l="56" r="120" t="56" b="120"/>
-                            </module>
-                            <module type="IO Mod" handle="1423574950">
-                                <plugs>
-                                    <plug name="0-1" datatype="6" tiedtomod="1991036000" tiedtopin="7"/>
-                                    <plug name="Text Out" datatype="1" tiedtomod="1991036000" tiedtopin="8"/>
-                                    <plug name="Mouse Over" datatype="4" tiedtomod="1991036000" tiedtopin="9"/>
-                                    <plug/>
-                                </plugs>
-                                <structRect l="492" r="576" t="24" b="72"/>
-                            </module>
-                            <module type="IO Mod" handle="1891439805">
-                                <plugs>
-                                    <plug/>
-                                </plugs>
-                                <structRect l="20" r="80" t="20" b="32"/>
-                            </module>
-                        </modules>
-                        <lines>
-                            <line type="Line" handle="511578880" lineType="1" fMod="57191097" tMod="1423574950" fPlg="5" tPlg="2"/>
-                            <line type="Line" handle="1960924893" lineType="1" fMod="57191097" tMod="1423574950" fPlg="14" tPlg="1"/>
-                            <line type="Line" handle="815618162" lineType="1" fMod="1154956892" tMod="57191097" fPlg="8" tPlg="1"/>
-                            <line type="Line" handle="886597451" lineType="1" fMod="1154956892" tMod="1423574950" fPlg="8"/>
-                        </lines>
-                        <PanelWndPosition l="96" r="160" t="528" b="592"/>
-                        <PanelLocation l="30" r="959" t="30" b="786"/>
-                        <StructLocation l="0" r="576" t="0" b="468"/>
-                        <PanelScroll x="0" y="0"/>
-                        <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="40" cy="472"/>
+                        <PanelWndOffset cx="40" cy="160"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="Container" handle="21831903" skin="default2">
@@ -1032,7 +878,7 @@
                             <plug name="Mouse Over" direction="1" datatype="4"/>
                             <plug/>
                         </plugs>
-                        <structRect l="24" r="108" t="660" b="788"/>
+                        <structRect l="12" r="96" t="132" b="260"/>
                         <modules>
                             <module type="SE PatchMemory Float" handle="1500237413">
                                 <structRect l="240" r="360" t="24" b="108"/>
@@ -1069,41 +915,344 @@
                             <line type="Line" handle="1580802683" lineType="1" fMod="1500237413" tMod="1964548421" fPlg="8"/>
                             <line type="Line" handle="389882242" lineType="1" fMod="1500237413" tMod="2133945865" fPlg="8" tPlg="1"/>
                         </lines>
-                        <PanelWndPosition l="96" r="160" t="144" b="208"/>
+                        <PanelWndPosition l="24" r="88" t="80" b="144"/>
                         <PanelLocation l="30" r="959" t="30" b="786"/>
                         <StructLocation l="0" r="576" t="0" b="468"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="40" cy="88"/>
+                        <PanelWndOffset cx="-32" cy="24"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
-                    <module type="IO Mod" handle="1624782374">
+                    <module type="Container" handle="201439411" skin="default2">
                         <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="0-1" direction="1" datatype="6" idx="7"/>
+                            <plug name="Text Out" direction="1" datatype="1"/>
+                            <plug name="Mouse Over" direction="1" datatype="4"/>
                             <plug/>
                         </plugs>
-                        <structRect l="780" r="840" t="48" b="60"/>
+                        <structRect l="12" r="96" t="228" b="356"/>
+                        <modules>
+                            <module type="SE PatchMemory Float" handle="2085089049">
+                                <structRect l="240" r="360" t="24" b="108"/>
+                                <panelRect l="48" r="49" t="64" b="65"/>
+                            </module>
+                            <module type="BlobKnob" handle="1069916683">
+                                <plugs>
+                                    <plug default="" idx="2"/>
+                                    <plug default="Halo Size"/>
+                                    <plug default="2" idx="8"/>
+                                </plugs>
+                                <structRect l="252" r="372" t="120" b="288"/>
+                                <panelRect l="56" r="120" t="56" b="120"/>
+                            </module>
+                            <module type="IO Mod" handle="1012220092">
+                                <plugs>
+                                    <plug name="0-1" datatype="6" tiedtomod="201439411" tiedtopin="7"/>
+                                    <plug name="Text Out" datatype="1" tiedtomod="201439411" tiedtopin="8"/>
+                                    <plug name="Mouse Over" datatype="4" tiedtomod="201439411" tiedtopin="9"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="492" r="576" t="24" b="72"/>
+                            </module>
+                            <module type="IO Mod" handle="2023338412">
+                                <plugs>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="20" r="80" t="20" b="32"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="1114651303" lineType="1" fMod="1069916683" tMod="1012220092" fPlg="5" tPlg="2"/>
+                            <line type="Line" handle="10221504" lineType="1" fMod="1069916683" tMod="1012220092" fPlg="14" tPlg="1"/>
+                            <line type="Line" handle="1993064262" lineType="1" fMod="2085089049" tMod="1069916683" fPlg="8" tPlg="1"/>
+                            <line type="Line" handle="659757171" lineType="1" fMod="2085089049" tMod="1012220092" fPlg="8"/>
+                        </lines>
+                        <PanelWndPosition l="24" r="88" t="144" b="208"/>
+                        <PanelLocation l="30" r="959" t="30" b="786"/>
+                        <StructLocation l="0" r="576" t="0" b="468"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="-32" cy="88"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
-                    <module type="IO Mod" handle="606183619">
+                    <module type="Container" handle="13979684" skin="default2">
                         <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="0-1" direction="1" datatype="6" idx="7"/>
+                            <plug name="Text Out" direction="1" datatype="1"/>
+                            <plug name="Mouse Over" direction="1" datatype="4"/>
                             <plug/>
                         </plugs>
-                        <structRect l="20" r="80" t="20" b="32"/>
+                        <structRect l="12" r="96" t="324" b="452"/>
+                        <modules>
+                            <module type="SE PatchMemory Float" handle="146378631">
+                                <structRect l="240" r="360" t="24" b="108"/>
+                                <panelRect l="48" r="49" t="64" b="65"/>
+                            </module>
+                            <module type="BlobKnob" handle="1802882086">
+                                <plugs>
+                                    <plug default="" idx="2"/>
+                                    <plug default="Halo Gradient Stop"/>
+                                    <plug default="2" idx="8"/>
+                                </plugs>
+                                <structRect l="252" r="372" t="120" b="288"/>
+                                <panelRect l="56" r="120" t="56" b="120"/>
+                            </module>
+                            <module type="IO Mod" handle="1942075087">
+                                <plugs>
+                                    <plug name="0-1" datatype="6" tiedtomod="13979684" tiedtopin="7"/>
+                                    <plug name="Text Out" datatype="1" tiedtomod="13979684" tiedtopin="8"/>
+                                    <plug name="Mouse Over" datatype="4" tiedtomod="13979684" tiedtopin="9"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="492" r="576" t="24" b="72"/>
+                            </module>
+                            <module type="IO Mod" handle="848071831">
+                                <plugs>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="20" r="80" t="20" b="32"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="1902483120" lineType="1" fMod="1802882086" tMod="1942075087" fPlg="5" tPlg="2"/>
+                            <line type="Line" handle="905754752" lineType="1" fMod="1802882086" tMod="1942075087" fPlg="14" tPlg="1"/>
+                            <line type="Line" handle="503461206" lineType="1" fMod="146378631" tMod="1802882086" fPlg="8" tPlg="1"/>
+                            <line type="Line" handle="1650925374" lineType="1" fMod="146378631" tMod="1942075087" fPlg="8"/>
+                        </lines>
+                        <PanelWndPosition l="24" r="88" t="216" b="280"/>
+                        <PanelLocation l="30" r="959" t="30" b="786"/>
+                        <StructLocation l="0" r="576" t="0" b="468"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="-32" cy="160"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
+                    </module>
+                    <module type="Container" handle="1502417535" skin="default2">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="0-1" direction="1" datatype="6" idx="7"/>
+                            <plug name="Text Out" direction="1" datatype="1"/>
+                            <plug name="Mouse Over" direction="1" datatype="4"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="180" r="264" t="336" b="464"/>
+                        <modules>
+                            <module type="SE PatchMemory Float" handle="1050008868">
+                                <structRect l="240" r="360" t="24" b="108"/>
+                                <panelRect l="48" r="49" t="64" b="65"/>
+                            </module>
+                            <module type="BlobKnob" handle="709295059">
+                                <plugs>
+                                    <plug default="" idx="2"/>
+                                    <plug default="Led Gradient Opacity"/>
+                                    <plug default="2" idx="8"/>
+                                </plugs>
+                                <structRect l="252" r="372" t="120" b="288"/>
+                                <panelRect l="56" r="120" t="56" b="120"/>
+                            </module>
+                            <module type="IO Mod" handle="863038772">
+                                <plugs>
+                                    <plug name="0-1" datatype="6" tiedtomod="1502417535" tiedtopin="7"/>
+                                    <plug name="Text Out" datatype="1" tiedtomod="1502417535" tiedtopin="8"/>
+                                    <plug name="Mouse Over" datatype="4" tiedtomod="1502417535" tiedtopin="9"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="492" r="576" t="24" b="72"/>
+                            </module>
+                            <module type="IO Mod" handle="1594025442">
+                                <plugs>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="20" r="80" t="20" b="32"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="175404996" lineType="1" fMod="1050008868" tMod="863038772" fPlg="8"/>
+                            <line type="Line" handle="2033286404" lineType="1" fMod="1050008868" tMod="709295059" fPlg="8" tPlg="1"/>
+                            <line type="Line" handle="1368317216" lineType="1" fMod="709295059" tMod="863038772" fPlg="14" tPlg="1"/>
+                            <line type="Line" handle="526589148" lineType="1" fMod="709295059" tMod="863038772" fPlg="5" tPlg="2"/>
+                        </lines>
+                        <PanelWndPosition l="96" r="160" t="280" b="344"/>
+                        <PanelLocation l="30" r="959" t="30" b="786"/>
+                        <StructLocation l="0" r="576" t="0" b="468"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="40" cy="224"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
+                    </module>
+                    <module type="Container" handle="385643732" skin="default2">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="0-1" direction="1" datatype="6" idx="7"/>
+                            <plug name="Hex Out" direction="1" datatype="1"/>
+                            <plug name="Mouse Over" direction="1" datatype="4"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="180" r="264" t="444" b="572"/>
+                        <modules>
+                            <module type="SE PatchMemory Float" handle="1136657819">
+                                <structRect l="240" r="360" t="24" b="108"/>
+                                <panelRect l="48" r="49" t="64" b="65"/>
+                            </module>
+                            <module type="BlobKnob" handle="683360309">
+                                <plugs>
+                                    <plug default="" idx="2"/>
+                                    <plug default="Brightness"/>
+                                    <plug default="2" idx="8"/>
+                                </plugs>
+                                <structRect l="252" r="372" t="120" b="288"/>
+                                <panelRect l="56" r="120" t="56" b="120"/>
+                            </module>
+                            <module type="IO Mod" handle="825935184">
+                                <plugs>
+                                    <plug name="0-1" datatype="6" tiedtomod="385643732" tiedtopin="7"/>
+                                    <plug name="Hex Out" datatype="1" tiedtomod="385643732" tiedtopin="8"/>
+                                    <plug name="Mouse Over" datatype="4" tiedtomod="385643732" tiedtopin="9"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="492" r="576" t="24" b="72"/>
+                            </module>
+                            <module type="IO Mod" handle="2067021838">
+                                <plugs>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="20" r="80" t="20" b="32"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="737113033" lineType="1" fMod="683360309" tMod="825935184" fPlg="14" tPlg="1"/>
+                            <line type="Line" handle="2010179524" lineType="1" fMod="683360309" tMod="825935184" fPlg="5" tPlg="2"/>
+                            <line type="Line" handle="885853929" lineType="1" fMod="1136657819" tMod="825935184" fPlg="8"/>
+                            <line type="Line" handle="61836751" lineType="1" fMod="1136657819" tMod="683360309" fPlg="8" tPlg="1"/>
+                        </lines>
+                        <PanelWndPosition l="96" r="160" t="344" b="408"/>
+                        <PanelLocation l="30" r="959" t="30" b="786"/>
+                        <StructLocation l="0" r="576" t="0" b="468"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="40" cy="288"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
+                    </module>
+                    <module type="Container" handle="1991036000" skin="default2">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="0-1" direction="1" datatype="6" idx="7"/>
+                            <plug name="Text Out" direction="1" datatype="1"/>
+                            <plug name="Mouse Over" direction="1" datatype="4"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="180" r="264" t="540" b="668"/>
+                        <modules>
+                            <module type="SE PatchMemory Float" handle="1154956892">
+                                <structRect l="240" r="360" t="24" b="108"/>
+                                <panelRect l="48" r="49" t="64" b="65"/>
+                            </module>
+                            <module type="BlobKnob" handle="57191097">
+                                <plugs>
+                                    <plug default="" idx="2"/>
+                                    <plug default="Opacity"/>
+                                    <plug default="2" idx="8"/>
+                                </plugs>
+                                <structRect l="252" r="372" t="120" b="288"/>
+                                <panelRect l="56" r="120" t="56" b="120"/>
+                            </module>
+                            <module type="IO Mod" handle="1423574950">
+                                <plugs>
+                                    <plug name="0-1" datatype="6" tiedtomod="1991036000" tiedtopin="7"/>
+                                    <plug name="Text Out" datatype="1" tiedtomod="1991036000" tiedtopin="8"/>
+                                    <plug name="Mouse Over" datatype="4" tiedtomod="1991036000" tiedtopin="9"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="492" r="576" t="24" b="72"/>
+                            </module>
+                            <module type="IO Mod" handle="1891439805">
+                                <plugs>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="20" r="80" t="20" b="32"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="511578880" lineType="1" fMod="57191097" tMod="1423574950" fPlg="5" tPlg="2"/>
+                            <line type="Line" handle="1960924893" lineType="1" fMod="57191097" tMod="1423574950" fPlg="14" tPlg="1"/>
+                            <line type="Line" handle="815618162" lineType="1" fMod="1154956892" tMod="57191097" fPlg="8" tPlg="1"/>
+                            <line type="Line" handle="886597451" lineType="1" fMod="1154956892" tMod="1423574950" fPlg="8"/>
+                        </lines>
+                        <PanelWndPosition l="96" r="160" t="408" b="472"/>
+                        <PanelLocation l="30" r="959" t="30" b="786"/>
+                        <StructLocation l="0" r="576" t="0" b="468"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="40" cy="352"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
+                    </module>
+                    <module type="Container" handle="1236378234" skin="default2">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="0-1" direction="1" datatype="6" idx="7"/>
+                            <plug name="Text Out" direction="1" datatype="1"/>
+                            <plug name="Mouse Over" direction="1" datatype="4"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="12" r="96" t="420" b="548"/>
+                        <modules>
+                            <module type="SE PatchMemory Float" handle="222464694">
+                                <structRect l="240" r="360" t="24" b="108"/>
+                                <panelRect l="48" r="49" t="64" b="65"/>
+                            </module>
+                            <module type="BlobKnob" handle="79193374">
+                                <plugs>
+                                    <plug default="" idx="2"/>
+                                    <plug default="Halo Opacity"/>
+                                    <plug default="2" idx="8"/>
+                                </plugs>
+                                <structRect l="252" r="372" t="120" b="288"/>
+                                <panelRect l="56" r="120" t="56" b="120"/>
+                            </module>
+                            <module type="IO Mod" handle="211275487">
+                                <plugs>
+                                    <plug name="0-1" datatype="6" tiedtomod="1236378234" tiedtopin="7"/>
+                                    <plug name="Text Out" datatype="1" tiedtomod="1236378234" tiedtopin="8"/>
+                                    <plug name="Mouse Over" datatype="4" tiedtomod="1236378234" tiedtopin="9"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="492" r="576" t="24" b="72"/>
+                            </module>
+                            <module type="IO Mod" handle="840384027">
+                                <plugs>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="20" r="80" t="20" b="32"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="354008986" lineType="1" fMod="222464694" tMod="211275487" fPlg="8"/>
+                            <line type="Line" handle="372906340" lineType="1" fMod="222464694" tMod="79193374" fPlg="8" tPlg="1"/>
+                            <line type="Line" handle="654382753" lineType="1" fMod="79193374" tMod="211275487" fPlg="14" tPlg="1"/>
+                            <line type="Line" handle="495699637" lineType="1" fMod="79193374" tMod="211275487" fPlg="5" tPlg="2"/>
+                        </lines>
+                        <PanelWndPosition l="24" r="88" t="280" b="344"/>
+                        <PanelLocation l="30" r="959" t="30" b="786"/>
+                        <StructLocation l="0" r="576" t="0" b="468"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="-32" cy="224"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                 </modules>
                 <lines>
-                    <line type="Line" handle="291906700" lineType="1" fMod="594402057" tMod="1739599054" fPlg="7" tPlg="4"/>
-                    <line type="Line" handle="988107733" lineType="1" fMod="201439411" tMod="1739599054" fPlg="7" tPlg="5"/>
-                    <line type="Line" handle="1191015662" lineType="1" fMod="13979684" tMod="1739599054" fPlg="7" tPlg="9"/>
-                    <line type="Line" handle="101173965" lineType="1" fMod="1991036000" tMod="1739599054" fPlg="7" tPlg="11"/>
                     <line type="Line" handle="516618789" lineType="1" fMod="21831903" tMod="71956920" fPlg="7"/>
-                    <line type="Line" handle="1125454855" lineType="1" fMod="71956920" tMod="1739599054" fPlg="2" tPlg="12"/>
                     <line type="Line" handle="443574787" lineType="1" fMod="1386582687" tMod="30444993" fPlg="7"/>
-                    <line type="Line" handle="731442555" lineType="1" fMod="30444993" tMod="1739599054" fPlg="2" tPlg="3"/>
                     <line type="Line" handle="138290082" lineType="1" fMod="1136600592" tMod="753808762" fPlg="7" tPlg="8"/>
-                    <line type="Line" handle="783216940" lineType="1" fMod="753808762" tMod="1739599054" fPlg="9" tPlg="6"/>
                     <line type="Line" handle="1392391482" lineType="1" fMod="385643732" tMod="1850500632" fPlg="7" tPlg="8"/>
-                    <line type="Line" handle="1891914029" lineType="1" fMod="1850500632" tMod="1739599054" fPlg="9" tPlg="10"/>
-                    <line type="Line" handle="1147089982" lineType="1" fMod="1528347152" tMod="1739599054" fPlg="8" tPlg="2"/>
                     <line type="Line" handle="1538170171" lineType="1" fMod="1430568153" tMod="1164153967" fPlg="1"/>
                     <line type="Line" handle="1803001502" lineType="1" fMod="1386582687" tMod="1430568153" fPlg="8" tPlg="2"/>
                     <line type="Line" handle="1126243037" lineType="1" fMod="594402057" tMod="1430568153" fPlg="8" tPlg="3"/>
@@ -1113,8 +1262,6 @@
                     <line type="Line" handle="1853249460" lineType="1" fMod="385643732" tMod="1430568153" fPlg="8" tPlg="7"/>
                     <line type="Line" handle="982789260" lineType="1" fMod="1991036000" tMod="1430568153" fPlg="8" tPlg="8"/>
                     <line type="Line" handle="1652953321" lineType="1" fMod="21831903" tMod="1430568153" fPlg="8" tPlg="9"/>
-                    <line type="Line" handle="1163187405" lineType="1" fMod="628036318" tMod="1739599054" fPlg="7" tPlg="7"/>
-                    <line type="Line" handle="1846854139" lineType="1" fMod="628036318" tMod="1739599054" fPlg="8" tPlg="8"/>
                     <line type="Line" handle="1084221453" lineType="1" fMod="170782162" tMod="1430568153"/>
                     <line type="Line" handle="1207962447" lineType="1" fMod="1386582687" tMod="170782162" fPlg="9" tPlg="1"/>
                     <line type="Line" handle="733947683" lineType="1" fMod="594402057" tMod="170782162" fPlg="9" tPlg="2"/>
@@ -1129,24 +1276,49 @@
                     <line type="Line" handle="1580817356" lineType="1" fMod="976033963" tMod="1850500632" fPlg="7" tPlg="7"/>
                     <line type="Line" handle="1552489638" lineType="1" fMod="1507491097" tMod="71956920" fPlg="7" tPlg="1"/>
                     <line type="Line" handle="2037158334" lineType="1" fMod="1682243010" tMod="30444993" fPlg="7" tPlg="1"/>
+                    <line type="Line" handle="384758041" lineType="1" fMod="1528347152" tMod="1739599054" fPlg="8" tPlg="1"/>
+                    <line type="Line" handle="1216817855" lineType="1" fMod="30444993" tMod="1739599054" fPlg="2" tPlg="2"/>
+                    <line type="Line" handle="1189449608" lineType="1" fMod="594402057" tMod="1739599054" fPlg="7" tPlg="3"/>
+                    <line type="Line" handle="799241576" lineType="1" fMod="201439411" tMod="1739599054" fPlg="7" tPlg="4"/>
+                    <line type="Line" handle="646396741" lineType="1" fMod="753808762" tMod="1739599054" fPlg="9" tPlg="5"/>
+                    <line type="Line" handle="1427177548" lineType="1" fMod="628036318" tMod="1739599054" fPlg="7" tPlg="6"/>
+                    <line type="Line" handle="12023748" lineType="1" fMod="628036318" tMod="1739599054" fPlg="8" tPlg="7"/>
+                    <line type="Line" handle="577755018" lineType="1" fMod="13979684" tMod="1739599054" fPlg="7" tPlg="9"/>
+                    <line type="Line" handle="1589833936" lineType="1" fMod="1850500632" tMod="1739599054" fPlg="9" tPlg="10"/>
+                    <line type="Line" handle="398315464" lineType="1" fMod="1991036000" tMod="1739599054" fPlg="7" tPlg="11"/>
+                    <line type="Line" handle="664671153" lineType="1" fMod="71956920" tMod="1739599054" fPlg="2" tPlg="12"/>
+                    <line type="Line" handle="812162552" lineType="1" fMod="1502417535" tMod="1430568153" fPlg="8" tPlg="10"/>
+                    <line type="Line" handle="1930986298" lineType="1" fMod="1502417535" tMod="170782162" fPlg="9" tPlg="9"/>
+                    <line type="Line" handle="389676994" lineType="1" fMod="1502417535" tMod="1739599054" fPlg="7" tPlg="8"/>
+                    <line type="Line" handle="94939511" lineType="1" fMod="1236378234" tMod="1430568153" fPlg="8" tPlg="11"/>
+                    <line type="Line" handle="617211812" lineType="1" fMod="1236378234" tMod="170782162" fPlg="9" tPlg="10"/>
+                    <line type="Line" handle="384151075" lineType="1" fMod="1236378234" tMod="1739599054" fPlg="7" tPlg="13"/>
+                    <line type="Line" handle="1897197148" lineType="1" fMod="628036318" tMod="170782162" fPlg="9" tPlg="11"/>
+                    <line type="Line" handle="1218219794" lineType="1" fMod="1454482207" tMod="1430568153" tPlg="12"/>
+                    <line type="Line" handle="590773469" lineType="1" fMod="976033963" tMod="170782162" fPlg="8" tPlg="12"/>
+                    <line type="Line" handle="1579600426" lineType="1" fMod="1454482207" tMod="1430568153" fPlg="1" tPlg="13"/>
+                    <line type="Line" handle="998614782" lineType="1" fMod="1682243010" tMod="170782162" fPlg="8" tPlg="13"/>
+                    <line type="Line" handle="1426681888" lineType="1" fMod="1454482207" tMod="1430568153" fPlg="2" tPlg="14"/>
+                    <line type="Line" handle="661365878" lineType="1" fMod="1507491097" tMod="170782162" fPlg="8" tPlg="14"/>
+                    <line type="Line" handle="829515812" lineType="1" fMod="1454482207" tMod="1430568153" fPlg="3" tPlg="15"/>
                 </lines>
-                <PanelWndPosition l="0" r="338" t="0" b="544"/>
-                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <PanelWndPosition l="8" r="395" t="8" b="472"/>
+                <PanelLocation l="482" r="1026" t="282" b="915"/>
                 <StructLocation l="0" r="946" t="0" b="958"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
-                <PanelWndOffset cx="-72" cy="-48"/>
-                <panel_rect l="16" r="312" t="16" b="216"/>
+                <PanelWndOffset cx="-16" cy="-40"/>
+                <panel_rect l="16" r="472" t="16" b="560"/>
             </module>
         </modules>
         <lines/>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
-        <PanelLocation l="970" r="1353" t="17" b="627"/>
-        <StructLocation l="0" r="490" t="0" b="838"/>
-        <PanelScroll x="0" y="0"/>
+        <PanelLocation l="677" r="1353" t="17" b="801"/>
+        <StructLocation l="0" r="602" t="0" b="839"/>
+        <PanelScroll x="1" y="0"/>
         <StructScroll x="1" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
-        <panel_rect l="112" r="296" t="336" b="464"/>
+        <panel_rect l="152" r="360" t="256" b="472"/>
     </master_container>
     <PluginList>
         <Plugin id="BlobKnob" name="Color Knob" flags="384" category="mx/Sub-Controls">
@@ -1200,7 +1372,7 @@
                 <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
             </Audio>
         </Plugin>
-        <Plugin id="Image3" name="Image2" flags="384" category="Sub-Controls">
+        <Plugin id="ImageX" name="ImageX" flags="384" category="Sub-Controls">
             <GUI graphicsApi="GmpiGui">
                 <Pin name="Animation Position" datatype="float"/>
                 <Pin name="Filename" datatype="string" default="knob_sm" isFilename="true" metadata="bmp"/>
@@ -1212,6 +1384,7 @@
                 <Pin name="Frame Count" datatype="int" private="true"/>
                 <Pin name="Frame Count" datatype="int" direction="out"/>
                 <Pin name="Mouse Response" datatype="enum" default="-1" isMinimised="true" metadata="off=-2, auto=-1, vertical=0, horizontal=1, clicks=2, rotary=3, step=4"/>
+                <Pin name="Mouse Over" datatype="bool" direction="out"/>
             </GUI>
         </Plugin>
         <Plugin id="JoystickImage" name="Joystick Image" flags="384" category="mx/Sub-Controls">
@@ -1230,12 +1403,12 @@
                 <Pin name="Position Y" datatype="float"/>
                 <Pin name="Jump to Mouse" datatype="bool"/>
                 <Pin name="Ctrl-Clk Reset Value" datatype="float" default="0.5"/>
+                <Pin name="Mouse Over" datatype="bool" direction="out"/>
             </GUI>
         </Plugin>
         <Plugin id="Led" name="Led" flags="384" category="mx/Sub-Controls">
             <GUI graphicsApi="GmpiGui">
                 <Pin name="On/Off" datatype="bool" private="true"/>
-                <Pin name="White Color" datatype="string" default="99ffffff" private="true"/>
                 <Pin name="Outer Color" datatype="string" default="ffffffff"/>
                 <Pin name="Color" datatype="string" default="ff000000"/>
                 <Pin name="Led Size" datatype="float" default="0.5"/>
@@ -1243,10 +1416,12 @@
                 <Pin name="Led Gradient Stop" datatype="float" default="1"/>
                 <Pin name="Gradient Center X" datatype="float" default="0.45"/>
                 <Pin name="Gradient Center Y" datatype="float" default="0.55"/>
+                <Pin name="Gradient Opacity" datatype="float" default="1"/>
                 <Pin name="Halo Gradient Stop" datatype="float" default="0.5"/>
                 <Pin name="Brightness" datatype="float" default="0.5"/>
                 <Pin name="Opacity" datatype="float" default="1"/>
                 <Pin name="Halo Color" datatype="string" default="ff000000"/>
+                <Pin name="Halo Opacity" datatype="float" default="1"/>
             </GUI>
         </Plugin>
         <Plugin id="SE BoolToInt GUI" name="Bool To Int" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
@@ -1346,6 +1521,11 @@
         <Plugin id="SE:GUIFixedValues_float" name="Fixed Values (float)" flags="384" category="Experimental/Sub-Controls/Conversion">
             <GUI>
                 <Pin name="Val" datatype="float" direction="out" autoRename="true" settableOutput="true" autoDuplicate="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE:GUIFixedValues_text" name="Fixed Values (text)" flags="384" category="Experimental/Sub-Controls/Conversion">
+            <GUI>
+                <Pin name="Val" datatype="string" direction="out" autoRename="true" settableOutput="true" autoDuplicate="true"/>
             </GUI>
         </Plugin>
     </PluginList>
