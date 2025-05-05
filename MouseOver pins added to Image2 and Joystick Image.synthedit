@@ -21,17 +21,8 @@
                     <plug id="2" idx="2"/>
                     <plug id="3"/>
                 </plugs>
-                <structRect l="204" r="276" t="216" b="264"/>
+                <structRect l="168" r="240" t="228" b="276"/>
                 <panelRect l="232" r="232" t="176" b="176"/>
-            </module>
-            <module type="SE:GUIFixedValues_text" handle="164767605">
-                <plugs>
-                    <plug name="switch" default="switch"/>
-                    <plug name="joystick" default="joystick" id="1"/>
-                    <plug id="2"/>
-                </plugs>
-                <structRect l="204" r="276" t="288" b="324"/>
-                <panelRect l="248" r="248" t="184" b="184"/>
             </module>
             <module type="SE GuiSwitch &lt; (Text)" handle="948088682">
                 <plugs>
@@ -39,32 +30,36 @@
                     <plug name="joystick" id="3"/>
                     <plug id="4"/>
                 </plugs>
-                <structRect l="300" r="372" t="240" b="300"/>
-                <panelRect l="248" r="248" t="120" b="120"/>
+                <structRect l="252" r="324" t="216" b="276"/>
+                <panelRect l="248" r="249" t="120" b="121"/>
             </module>
             <module type="SE Text Entry4" handle="1309795">
-                <structRect l="384" r="492" t="192" b="336"/>
+                <structRect l="336" r="444" t="180" b="324"/>
                 <panelRect l="16" r="116" t="240" b="264"/>
             </module>
             <module type="JoystickImage" handle="1943327919">
+                <plugs>
+                    <plug default="joystick" idx="2"/>
+                </plugs>
                 <structRect l="24" r="156" t="192" b="420"/>
                 <panelRect l="16" r="112" t="120" b="208"/>
             </module>
             <module type="ImageX" handle="1570246704">
                 <plugs>
                     <plug default="switch.png" idx="1"/>
+                    <plug default="switch"/>
                 </plugs>
-                <structRect l="24" r="144" t="36" b="169"/>
+                <structRect l="24" r="144" t="36" b="181"/>
                 <panelRect l="48" r="81" t="64" b="97"/>
             </module>
         </modules>
         <lines>
             <line type="Line" handle="1534783247" lineType="1" fMod="1156766114" tMod="948088682"/>
-            <line type="Line" handle="1631261731" lineType="1" fMod="1570246704" tMod="1156766114" fPlg="10" tPlg="1"/>
-            <line type="Line" handle="852132552" lineType="1" fMod="1943327919" tMod="1156766114" fPlg="14" tPlg="2"/>
-            <line type="Line" handle="388642954" lineType="1" fMod="164767605" tMod="948088682" tPlg="2"/>
-            <line type="Line" handle="1914375989" lineType="1" fMod="164767605" tMod="948088682" fPlg="1" tPlg="3"/>
             <line type="Line" handle="474550962" lineType="1" fMod="948088682" tMod="1309795" fPlg="1"/>
+            <line type="Line" handle="1310161382" lineType="1" fMod="1570246704" tMod="1156766114" fPlg="10" tPlg="1"/>
+            <line type="Line" handle="1554150019" lineType="1" fMod="1943327919" tMod="1156766114" fPlg="14" tPlg="2"/>
+            <line type="Line" handle="970595332" lineType="1" fMod="1570246704" tMod="948088682" fPlg="11" tPlg="2"/>
+            <line type="Line" handle="444952202" lineType="1" fMod="1943327919" tMod="948088682" fPlg="15" tPlg="3"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="613" r="881" t="4" b="387"/>
@@ -102,9 +97,10 @@
                 <Pin name="Frame Count" datatype="int" direction="out"/>
                 <Pin name="Mouse Response" datatype="enum" default="-1" isMinimised="true" metadata="off=-2, auto=-1, vertical=0, horizontal=1, clicks=2, rotary=3, step=4"/>
                 <Pin name="Mouse Over" datatype="bool" direction="out"/>
+                <Pin name="Hint Out" datatype="string" direction="out"/>
             </GUI>
         </Plugin>
-        <Plugin id="JoystickImage" name="Joystick ImageX" flags="384" category="Sub-Controls">
+        <Plugin id="JoystickImage" name="Joystick Image" flags="384" category="mx/Sub-Controls">
             <GUI graphicsApi="GmpiGui">
                 <Pin name="Animation Position" datatype="float"/>
                 <Pin name="Filename" datatype="string" default="joystick_knob" isFilename="true" metadata="bmp"/>
@@ -121,6 +117,7 @@
                 <Pin name="Jump to Mouse" datatype="bool"/>
                 <Pin name="Ctrl-Clk Reset Value" datatype="float" default="0.5"/>
                 <Pin name="Mouse Over" datatype="bool" direction="out"/>
+                <Pin name="Hint Out" datatype="string" direction="out"/>
             </GUI>
         </Plugin>
         <Plugin id="SE Bools To Int2" name="Bools To Int" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
@@ -148,11 +145,6 @@
                 <Pin name="Menu Selection" datatype="int"/>
                 <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
                 <Pin name="Mouse Down" datatype="bool"/>
-            </GUI>
-        </Plugin>
-        <Plugin id="SE:GUIFixedValues_text" name="Fixed Values (text)" flags="384" category="Experimental/Sub-Controls/Conversion">
-            <GUI>
-                <Pin name="Val" datatype="string" direction="out" autoRename="true" settableOutput="true" autoDuplicate="true"/>
             </GUI>
         </Plugin>
     </PluginList>
