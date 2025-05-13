@@ -40,7 +40,7 @@
                     <plug default="1"/>
                     <plug idx="7"/>
                 </plugs>
-                <structRect l="168" r="480" t="12" b="106"/>
+                <structRect l="192" r="504" t="48" b="142"/>
                 <modules>
                     <module type="Button" handle="55247742">
                         <plugs>
@@ -151,7 +151,7 @@
                         <plugs>
                             <plug default="1" idx="3"/>
                             <plug default="1"/>
-                            <plug default="Hint"/>
+                            <plug default="*Hint"/>
                             <plug default="3" idx="8"/>
                             <plug default="0" idx="17"/>
                             <plug default="Verdana" idx="19"/>
@@ -171,9 +171,9 @@
                     <line type="Line" handle="784362826" lineType="1" fMod="506462713" tMod="1371986791" fPlg="8" tPlg="14"/>
                     <line type="Line" handle="926170689" lineType="1" fMod="506462713" tMod="55247742" fPlg="8" tPlg="14"/>
                 </lines>
-                <PanelWndPosition l="104" r="400" t="88" b="306"/>
+                <PanelWndPosition l="104" r="392" t="88" b="154"/>
                 <PanelLocation l="920" r="1297" t="578" b="901"/>
-                <StructLocation l="5" r="756" t="408" b="906"/>
+                <StructLocation l="9" r="760" t="381" b="879"/>
                 <PanelScroll x="0" y="1"/>
                 <StructScroll x="1" y="0"/>
                 <PanelWndOffset cx="80" cy="8"/>
