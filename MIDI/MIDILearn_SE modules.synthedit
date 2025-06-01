@@ -55,7 +55,7 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Container" handle="1176308379" name="MIDI Learn" skin="default2">
+            <module type="Container" handle="1176308379" name="MIDI Learn" ViewOpenFlags="256" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -65,7 +65,7 @@
                     <plug name="Note#" direction="1" datatype="8"/>
                     <plug/>
                 </plugs>
-                <structRect l="358" r="478" t="249" b="335"/>
+                <structRect l="357" r="477" t="249" b="335"/>
                 <modules>
                     <module type="IO Mod" handle="1955331699">
                         <plugs>
