@@ -28,7 +28,7 @@
                 <structRect l="18" r="150" t="149" b="213"/>
                 <panelRect l="371" r="378" t="248" b="255"/>
             </module>
-            <module type="Container" handle="15409" name="PD303" skin="default">
+            <module type="Container" handle="15409" name="PD303" ViewOpenFlags="256" skin="default">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -338,7 +338,7 @@
                     </Parameters>
                 </PatchManager>
                 <modules>
-                    <module type="Container" handle="1773779664" name="onSetIntVal" skin="default2">
+                    <module type="Container" handle="1773779664" name="onSetIntVal" ViewOpenFlags="256" skin="default2">
                         <plugs>
                             <plug default="1" idx="1"/>
                             <plug default="1"/>
@@ -424,7 +424,7 @@
                         </lines>
                         <PanelWndPosition l="216" r="226" t="180" b="190"/>
                         <PanelLocation l="30" r="530" t="30" b="330"/>
-                        <StructLocation l="18" r="1218" t="454" b="909"/>
+                        <StructLocation l="26" r="1226" t="543" b="953"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="1" y="0"/>
                         <PanelWndOffset cx="216" cy="180"/>
@@ -736,9 +736,9 @@
                 </lines>
                 <PanelWndPosition l="88" r="88" t="104" b="104"/>
                 <PanelLocation l="152" r="749" t="480" b="931"/>
-                <StructLocation l="303" r="1439" t="4" b="908"/>
+                <StructLocation l="167" r="1303" t="31" b="533"/>
                 <PanelScroll x="0" y="0"/>
-                <StructScroll x="1" y="0"/>
+                <StructScroll x="1" y="361"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
                 <panel_rect l="0" r="382" t="0" b="172"/>
             </module>
