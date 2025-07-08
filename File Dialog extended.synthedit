@@ -10,19 +10,19 @@
             <Parameters>
                 <param type="8" handle="89080333" vstParameterNumber="0" module="984077963" moduleParamId="0">
                     <patch-list>
-                        <s>6</s>
+                        <s>8</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="1" handle="295297069" vstParameterNumber="1" module="1516648926" moduleParamId="0">
                     <patch-list>
-                        <s>20'' Swift Kick,22'' 60's Kick,22'' Deep Kick,22'' Double Head Kick A,22'' Double Head Kick B,22'' Gated Kick,22'' Power Kick,24'' Power Kick,909 Kick,alakick,Electronic Kick 1,Electronic Kick 2,Jungle Kick,Low Kick,Sonic Kick</s>
+                        <s>909 Claps,Agogo Bell,alaclave,Cabasa,Conga Slap High,Conga Slap Low,Cow Bell Large,Cow Bell Medium,Drum Sticks,Finger Snap,Glass Lid,Hand Claps,Jungle Percussion,Maracas A,Maracas B,PG Modulated Hat,Rosewood Claves,Shaker,Tambourine,Timbale,Tin Lid,Triangle,Wood Block Large,Wood Block Small</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="1035019230" shortName="Wave Player File Name" vstParameterNumber="5" module="206203875" moduleParamId="0" MetaData="wav">
                     <patch-list>
-                        <s>C:\Program Files (x86)\Steinberg\Cubase 5\VSTPlugins\Drums\Dr.Modus\bass drums\22'' Power Kick.wav</s>
+                        <s>C:\Program Files (x86)\Steinberg\Cubase 5\VSTPlugins\Drums\Dr.Modus\miscellaneous\Drum Sticks.wav</s>
                         <s repeat="127">Wavefile</s>
                     </patch-list>
                 </param>
@@ -33,13 +33,13 @@
                 </param>
                 <param type="1" handle="1713404088" vstParameterNumber="7" module="800197930" moduleParamId="0">
                     <patch-list>
-                        <s>C:\Program Files (x86)\Steinberg\Cubase 5\VSTPlugins\Drums\Dr.Modus\bass drums</s>
+                        <s>C:\Program Files (x86)\Steinberg\Cubase 5\VSTPlugins\Drums\Dr.Modus\miscellaneous</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="1855193001" vstParameterNumber="6" module="1881486986" moduleParamId="0">
                     <patch-list>
-                        <s>20'' Swift Kick,22'' 60's Kick,22'' Deep Kick,22'' Double Head Kick A,22'' Double Head Kick B,22'' Gated Kick,22'' Power Kick,24'' Power Kick,909 Kick,alakick,Electronic Kick 1,Electronic Kick 2,Jungle Kick,Low Kick,Sonic Kick</s>
+                        <s>909 Claps,Agogo Bell,alaclave,Cabasa,Conga Slap High,Conga Slap Low,Cow Bell Large,Cow Bell Medium,Drum Sticks,Finger Snap,Glass Lid,Hand Claps,Jungle Percussion,Maracas A,Maracas B,PG Modulated Hat,Rosewood Claves,Shaker,Tambourine,Timbale,Tin Lid,Triangle,Wood Block Large,Wood Block Small</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
@@ -61,7 +61,7 @@
                     <plug name="Bool Val" direction="1" datatype="4"/>
                     <plug/>
                 </plugs>
-                <structRect l="372" r="444" t="432" b="504"/>
+                <structRect l="386" r="458" t="441" b="513"/>
                 <modules>
                     <module type="SE FloatToBool GUI" handle="1281070395">
                         <structRect l="228" r="300" t="144" b="168"/>
@@ -101,20 +101,20 @@
                     <line type="Line" handle="1119726544" lineType="1" fMod="13939951" tMod="137385488"/>
                     <line type="Line" handle="874656706" lineType="1" fMod="137385488" tMod="1829327811" fPlg="1"/>
                 </lines>
-                <PanelWndPosition l="184" r="204" t="160" b="180"/>
+                <PanelWndPosition l="152" r="172" t="184" b="204"/>
                 <PanelLocation l="318" r="429" t="12" b="75"/>
                 <StructLocation l="257" r="986" t="12" b="478"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
-                <PanelWndOffset cx="138" cy="136"/>
+                <PanelWndOffset cx="106" cy="160"/>
                 <panel_rect l="0" r="93" t="0" b="45"/>
             </module>
             <module type="DisplayList" handle="461705183">
-                <structRect l="168" r="336" t="432" b="540"/>
+                <structRect l="167" r="335" t="432" b="540"/>
                 <panelRect l="112" r="212" t="40" b="140"/>
             </module>
             <module type="FileDialog" handle="1881486986">
-                <structRect l="192" r="288" t="300" b="396"/>
+                <structRect l="204" r="300" t="310" b="406"/>
                 <panelRect l="280" r="281" t="120" b="121"/>
             </module>
             <module type="Oscillator" handle="35804384">
@@ -152,7 +152,7 @@
                     <plug default="file_button.bmp" idx="1"/>
                 </plugs>
                 <structRect l="348" r="468" t="288" b="393"/>
-                <panelRect l="48" r="88" t="48" b="65"/>
+                <panelRect l="48" r="88" t="80" b="97"/>
             </module>
             <module type="SE PatchMemory Text2" handle="1516648926">
                 <structRect l="24" r="132" t="384" b="456"/>
@@ -170,16 +170,16 @@
             <line type="Line" handle="1954543115" lineType="1" fMod="984077963" tMod="1881486986" fPlg="7" tPlg="2"/>
             <line type="Line" handle="204156867" lineType="1" fMod="1516648926" tMod="1881486986" fPlg="6" tPlg="3"/>
             <line type="Line" handle="53670874" lineType="1" fMod="1881486986" tMod="1734488141" fPlg="4" tPlg="6"/>
-            <line type="Line" handle="881480572" lineType="1" fMod="1881486986" tMod="163614558" fPlg="4" tPlg="7"/>
             <line type="Line" handle="2094021457" lineType="1" fMod="800197930" tMod="1881486986" fPlg="6" tPlg="6"/>
+            <line type="Line" handle="1558657381" lineType="1" fMod="1881486986" tMod="163614558" fPlg="9" tPlg="7"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
-        <PanelLocation l="931" r="1431" t="13" b="313"/>
-        <StructLocation l="0" r="797" t="0" b="715"/>
-        <PanelScroll x="0" y="0"/>
-        <StructScroll x="8" y="0"/>
+        <PanelLocation l="931" r="1369" t="13" b="381"/>
+        <StructLocation l="0" r="785" t="0" b="800"/>
+        <PanelScroll x="1" y="0"/>
+        <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
-        <panel_rect l="16" r="312" t="16" b="160"/>
+        <panel_rect l="16" r="304" t="16" b="160"/>
     </master_container>
     <PluginList>
         <Plugin id="Container" class="1" name="Container" flags="384" category="">
@@ -196,7 +196,7 @@
                 <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
             </GUI>
         </Plugin>
-        <Plugin id="DisplayList" name="Display List" flags="384" category="mx/Sub-Controls">
+        <Plugin id="DisplayList" name="Display List" flags="384" category="mx/Controls">
             <GUI graphicsApi="GmpiGui">
                 <Pin name="Hint" datatype="string" isMinimised="true"/>
                 <Pin name="BgColor" datatype="string" default="FF000000" private="true"/>
@@ -228,8 +228,9 @@
                 <Pin name="Trigger" datatype="bool" direction="out"/>
                 <Pin name="Save Mode" datatype="bool"/>
                 <Pin name="Directory" datatype="string"/>
-                <Pin name="Debug" datatype="string" direction="out"/>
+                <Pin name="Debug" datatype="string" direction="out" private="true"/>
                 <Pin name="ParentPath" datatype="string" private="true" parameterId="0"/>
+                <Pin name="Opened" datatype="bool" direction="out"/>
             </GUI>
         </Plugin>
         <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
