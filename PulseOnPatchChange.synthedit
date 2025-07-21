@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Jeff McClintock" vst_processor_id="{823E243B-7679-4F6F-A72D-4E4899DC4A24}" vst_controller_id="{28958287-5280-4153-B1DB-2CE40E0D8C8B}" vst_4char_id="bIO7" vst_dll_name="PD303" vst_product="PD303" vst_panel_size_w="379" vst_panel_size_h="152" vst_flags="7" vst_preset_count="128">
+<Document file_format="150000" vst_latencyCompensation="1" AutoPlay="true" vst_user_email="Jeff McClintock" vst_processor_id="{823E243B-7679-4F6F-A72D-4E4899DC4A24}" vst_controller_id="{28958287-5280-4153-B1DB-2CE40E0D8C8B}" autoplay="true" vst_4char_id="bIO7" vst_dll_name="PD303" vst_product="PD303" vst_panel_size_w="379" vst_panel_size_h="152" vst_flags="7" vst_preset_count="128">
     <master_container type="Container" handle="335964254" name="Main" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -18,15 +18,8 @@
         </PatchManager>
         <modules>
             <module type="MIDI In" handle="29077">
-                <structRect l="30" r="114" t="39" b="81"/>
+                <structRect l="11" r="95" t="25" b="67"/>
                 <panelRect l="88" r="88" t="104" b="104"/>
-            </module>
-            <module type="SE Keyboard (MIDI)" handle="791227591">
-                <plugs>
-                    <plug default="0"/>
-                </plugs>
-                <structRect l="18" r="150" t="149" b="213"/>
-                <panelRect l="371" r="378" t="248" b="255"/>
             </module>
             <module type="Container" handle="15409" name="PD303" ViewOpenFlags="256" skin="default">
                 <plugs>
@@ -39,7 +32,7 @@
                     <plug name="Right" direction="1"/>
                     <plug direction="1" datatype="-1"/>
                 </plugs>
-                <structRect l="167" r="563" t="79" b="309"/>
+                <structRect l="105" r="501" t="47" b="277"/>
                 <PatchManager>
                     <ProgramNames/>
                     <Parameters>
@@ -330,9 +323,24 @@
                                 <s>127</s>
                             </patch-list>
                         </param>
+                        <param type="8" handle="630392029" shortName="ReserveVoices" ignorePC="true" private="true" module="15409" hostControl="22" RangeMaximum="128">
+                            <patch-list>
+                                <s>3</s>
+                            </patch-list>
+                        </param>
                         <param type="10" handle="885605192" private="true" hostControl="49">
                             <patch-list>
                                 <s repeat="128"></s>
+                            </patch-list>
+                        </param>
+                        <param type="8" handle="1069372808" shortName="Polyphony" ignorePC="true" private="true" module="15409" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                            <patch-list>
+                                <s>6</s>
+                            </patch-list>
+                        </param>
+                        <param type="8" handle="1957837516" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="15409" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                            <patch-list>
+                                <s>768</s>
                             </patch-list>
                         </param>
                     </Parameters>
@@ -353,57 +361,57 @@
                                     <plug name="5" default="5"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="631" r="715" t="216" b="240"/>
+                                <structRect l="384" r="468" t="198" b="222"/>
                             </module>
                             <module type="Multiply" handle="1525345604">
                                 <plugs>
                                     <plug default="-1" idx="1"/>
                                 </plugs>
-                                <structRect l="732" r="792" t="181" b="217"/>
+                                <structRect l="485" r="545" t="163" b="199"/>
                             </module>
                             <module type="Monostable" handle="1044265508">
                                 <plugs>
                                     <plug default="1" idx="1"/>
                                 </plugs>
-                                <structRect l="641" r="761" t="309" b="345"/>
+                                <structRect l="394" r="514" t="291" b="327"/>
                             </module>
                             <module type="Sample and Hold" handle="1666857269">
-                                <structRect l="998" r="1058" t="157" b="193"/>
+                                <structRect l="695" r="755" t="147" b="183"/>
                             </module>
                             <module type="Feedback Delay" handle="1089052037">
-                                <structRect l="349" r="457" t="179" b="215"/>
+                                <structRect l="102" r="210" t="161" b="197"/>
                             </module>
                             <module type="Comparator" handle="585515431">
                                 <plugs>
                                     <plug default="0" idx="1"/>
                                 </plugs>
-                                <structRect l="526" r="610" t="64" b="124"/>
+                                <structRect l="279" r="363" t="46" b="106"/>
                             </module>
                             <module type="IO Mod" handle="772894236">
                                 <plugs>
                                     <plug name="Signal Out" tiedtomod="1773779664" tiedtopin="8"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="851" r="935" t="194" b="218"/>
+                                <structRect l="593" r="677" t="170" b="194"/>
                             </module>
                             <module type="Monostable" handle="1731775291">
                                 <plugs>
                                     <plug default="1" idx="1"/>
                                 </plugs>
-                                <structRect l="643" r="763" t="37" b="73"/>
+                                <structRect l="396" r="516" t="19" b="55"/>
                             </module>
                             <module type="Comparator" handle="441209070">
                                 <plugs>
                                     <plug default="0" idx="1"/>
                                 </plugs>
-                                <structRect l="524" r="608" t="242" b="302"/>
+                                <structRect l="277" r="361" t="224" b="284"/>
                             </module>
                             <module type="IO Mod" handle="1945155054">
                                 <plugs>
                                     <plug name="Value Out" direction="1" datatype="8" tiedtomod="1773779664" tiedtopin="7"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="28" r="100" t="152" b="176"/>
+                                <structRect l="6" r="78" t="160" b="184"/>
                             </module>
                         </modules>
                         <lines>
@@ -418,20 +426,20 @@
                             <line type="Line" handle="2004174284" fMod="441209070" tMod="1044265508" fPlg="2"/>
                             <line type="Line" handle="1506049261" fMod="1044265508" tMod="772894236" fPlg="2"/>
                             <line type="Line" handle="1333329642" lineType="1" fMod="1731775291" tMod="1525345604" fPlg="2"/>
-                            <line type="Line" handle="2093518000" lineType="1" fMod="1525345604" tMod="1666857269" fPlg="2" tPlg="1"/>
-                            <line type="Line" handle="2069401121" lineType="1" fMod="1070248392" tMod="1666857269" tPlg="1"/>
+                            <line type="Line" handle="2093518000" fMod="1525345604" tMod="1666857269" fPlg="2" tPlg="1"/>
+                            <line type="Line" handle="2069401121" fMod="1070248392" tMod="1666857269" tPlg="1"/>
                             <line type="Line" handle="1859671586" lineType="1" fMod="1044265508" tMod="1525345604" fPlg="2"/>
                         </lines>
                         <PanelWndPosition l="216" r="226" t="180" b="190"/>
                         <PanelLocation l="30" r="530" t="30" b="330"/>
-                        <StructLocation l="26" r="1226" t="543" b="953"/>
+                        <StructLocation l="641" r="1444" t="0" b="389"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="1" y="0"/>
                         <PanelWndOffset cx="216" cy="180"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="SE PatchMemory Int" handle="612654663" name="Patch ID">
-                        <structRect l="299" r="419" t="630" b="714"/>
+                        <structRect l="300" r="420" t="630" b="714"/>
                         <panelRect l="376" r="376" t="272" b="272"/>
                     </module>
                     <module type="SE Patch Automator" handle="471698994">
@@ -736,9 +744,9 @@
                 </lines>
                 <PanelWndPosition l="88" r="88" t="104" b="104"/>
                 <PanelLocation l="152" r="749" t="480" b="931"/>
-                <StructLocation l="167" r="1303" t="31" b="533"/>
+                <StructLocation l="65" r="1201" t="493" b="895"/>
                 <PanelScroll x="0" y="0"/>
-                <StructScroll x="1" y="361"/>
+                <StructScroll x="1" y="481"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
                 <panel_rect l="0" r="382" t="0" b="172"/>
             </module>
@@ -748,20 +756,19 @@
                     <plug name="Right"/>
                     <plug/>
                 </plugs>
-                <structRect l="585" r="645" t="41" b="77"/>
+                <structRect l="521" r="581" t="35" b="71"/>
             </module>
         </modules>
         <lines>
-            <line type="Line" handle="350383266" lineType="1" fMod="791227591" tMod="15409" fPlg="1" tPlg="7"/>
             <line type="Line" handle="466953725" lineType="1" fMod="15409" tMod="13232" fPlg="8"/>
             <line type="Line" handle="334900563" lineType="1" fMod="15409" tMod="13232" fPlg="9" tPlg="1"/>
             <line type="Line" handle="437507233" lineType="1" fMod="29077" tMod="15409" fPlg="1" tPlg="7"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="719" t="0" b="461"/>
+        <StructLocation l="0" r="633" t="0" b="391"/>
         <PanelScroll x="0" y="0"/>
-        <StructScroll x="0" y="0"/>
+        <StructScroll x="1" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
         <panel_rect l="16" r="312" t="16" b="216"/>
     </master_container>
@@ -937,13 +944,6 @@
                 <Pin name="Wave2" datatype="enum" metadata="None=-1,Saw,Square,Pulse,Dbl Sine,Saw-Pulse,Reso1,Reso2,Reso3"/>
                 <Pin name="Freq Scale" datatype="enum" isMinimised="true" metadata="1 Volt/Octave, 1 Volt/kHz "/>
             </Audio>
-        </Plugin>
-        <Plugin id="SE Keyboard (MIDI)" name="Keyboard (MIDI)" flags="384" category="Controls">
-            <Audio>
-                <Pin name="Channel" datatype="enum" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
-                <Pin name="MIDI Out" datatype="midi" direction="out"/>
-            </Audio>
-            <GUI graphicsApi="GmpiGui"/>
         </Plugin>
         <Plugin id="SE Patch Automator" class="1" name="Patch Automator" flags="320" category="MIDI">
             <Audio>
