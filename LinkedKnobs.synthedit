@@ -152,28 +152,12 @@
                         <PanelWndOffset cx="-8" cy="48"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
-                    <module type="SE Bool Splitter" handle="1243392524">
-                        <plugs>
-                            <plug id="2" idx="2"/>
-                            <plug id="3"/>
-                        </plugs>
-                        <structRect l="300" r="348" t="60" b="108"/>
-                        <panelRect l="416" r="417" t="240" b="241"/>
-                    </module>
-                    <module type="SE Bool Splitter" handle="1267046004">
-                        <plugs>
-                            <plug id="2" idx="2"/>
-                            <plug id="3"/>
-                        </plugs>
-                        <structRect l="996" r="1044" t="72" b="120"/>
-                        <panelRect l="368" r="369" t="264" b="265"/>
-                    </module>
                     <module type="DoubleClick" handle="1967485522">
-                        <structRect l="840" r="936" t="48" b="96"/>
+                        <structRect l="816" r="912" t="60" b="108"/>
                         <panelRect l="336" r="337" t="256" b="257"/>
                     </module>
                     <module type="DoubleClick" handle="1364623343">
-                        <structRect l="180" r="276" t="60" b="108"/>
+                        <structRect l="216" r="312" t="72" b="120"/>
                         <panelRect l="296" r="297" t="192" b="193"/>
                     </module>
                     <module type="SE PatchMemory Float" handle="842187443">
@@ -224,14 +208,10 @@
                     <line type="Line" handle="489309491" lineType="1" fMod="842187443" tMod="1927559648" fPlg="8" tPlg="7"/>
                     <line type="Line" handle="1316857021" lineType="1" fMod="1557989673" tMod="1772926370" fPlg="8"/>
                     <line type="Line" handle="1859094767" lineType="1" fMod="64099550" tMod="629329572" fPlg="8"/>
-                    <line type="Line" handle="795663165" lineType="1" fMod="1557989673" tMod="1267046004" fPlg="11" tPlg="2"/>
-                    <line type="Line" handle="1490900699" lineType="1" fMod="64099550" tMod="1243392524" fPlg="11" tPlg="2"/>
-                    <line type="Line" handle="2049551802" lineType="1" fMod="1364623343" tMod="1243392524" tPlg="1"/>
                     <line type="Line" handle="225419024" lineType="1" fMod="64099550" tMod="1364623343" fPlg="8" tPlg="4"/>
                     <line type="Line" handle="2013000880" lineType="1" fMod="1557989673" tMod="1967485522" fPlg="8" tPlg="4"/>
                     <line type="Line" handle="937583298" lineType="1" fMod="1557989673" tMod="1772926370" fPlg="11" tPlg="4"/>
                     <line type="Line" handle="829366032" lineType="1" fMod="64099550" tMod="629329572" fPlg="11" tPlg="4"/>
-                    <line type="Line" handle="2092246645" lineType="1" fMod="1967485522" tMod="1267046004" tPlg="1"/>
                     <line type="Line" handle="91973900" lineType="1" fMod="1557989673" tMod="1772926370" fPlg="10" tPlg="3"/>
                     <line type="Line" handle="78745790" lineType="1" fMod="1557989673" tMod="1772926370" fPlg="9" tPlg="2"/>
                     <line type="Line" handle="183648386" lineType="1" fMod="64099550" tMod="629329572" fPlg="10" tPlg="3"/>
@@ -242,6 +222,8 @@
                     <line type="Line" handle="1586701118" lineType="1" fMod="1557989673" tMod="1598319858" fPlg="11" tPlg="2"/>
                     <line type="Line" handle="1645396723" lineType="1" fMod="64099550" tMod="1598319858" fPlg="8" tPlg="3"/>
                     <line type="Line" handle="262531638" lineType="1" fMod="1557989673" tMod="1598319858" fPlg="8" tPlg="4"/>
+                    <line type="Line" handle="1489919265" lineType="1" fMod="1557989673" tMod="1967485522" fPlg="11"/>
+                    <line type="Line" handle="665502785" lineType="1" fMod="64099550" tMod="1364623343" fPlg="11"/>
                 </lines>
                 <PanelWndPosition l="128" r="128" t="128" b="128"/>
                 <PanelLocation l="341" r="1138" t="416" b="858"/>
@@ -563,32 +545,16 @@
                         <PanelWndOffset cx="-8" cy="48"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
-                    <module type="SE Bool Splitter" handle="1627483666">
-                        <plugs>
-                            <plug id="2" idx="2"/>
-                            <plug id="3"/>
-                        </plugs>
-                        <structRect l="300" r="348" t="60" b="108"/>
-                        <panelRect l="416" r="417" t="240" b="241"/>
-                    </module>
-                    <module type="SE Bool Splitter" handle="833977384">
-                        <plugs>
-                            <plug id="2" idx="2"/>
-                            <plug id="3"/>
-                        </plugs>
-                        <structRect l="996" r="1044" t="72" b="120"/>
-                        <panelRect l="368" r="369" t="264" b="265"/>
-                    </module>
                     <module type="SE FloatToInt GUI" handle="1554792426">
                         <structRect l="420" r="492" t="372" b="396"/>
                         <panelRect l="280" r="281" t="200" b="201"/>
                     </module>
                     <module type="DoubleClick" handle="1478488815">
-                        <structRect l="840" r="936" t="48" b="96"/>
+                        <structRect l="780" r="876" t="72" b="120"/>
                         <panelRect l="336" r="337" t="256" b="257"/>
                     </module>
                     <module type="DoubleClick" handle="410992157">
-                        <structRect l="180" r="276" t="60" b="108"/>
+                        <structRect l="204" r="300" t="84" b="132"/>
                         <panelRect l="296" r="297" t="192" b="193"/>
                     </module>
                     <module type="SE PatchMemory Float" handle="36145854">
@@ -636,14 +602,10 @@
                     <line type="Line" handle="466760754" lineType="1" fMod="2121057" tMod="1453811038" fPlg="9" tPlg="2"/>
                     <line type="Line" handle="1757415657" lineType="1" fMod="2121057" tMod="1453811038" fPlg="10" tPlg="3"/>
                     <line type="Line" handle="1127638618" lineType="1" fMod="36145854" tMod="1554792426" fPlg="7"/>
-                    <line type="Line" handle="859338528" lineType="1" fMod="1478488815" tMod="833977384" tPlg="1"/>
                     <line type="Line" handle="684054610" lineType="1" fMod="2129714787" tMod="474070925" fPlg="11" tPlg="4"/>
                     <line type="Line" handle="1795712154" lineType="1" fMod="2121057" tMod="1453811038" fPlg="11" tPlg="4"/>
                     <line type="Line" handle="446788690" lineType="1" fMod="2121057" tMod="1478488815" fPlg="8" tPlg="4"/>
                     <line type="Line" handle="1906071816" lineType="1" fMod="2129714787" tMod="410992157" fPlg="8" tPlg="4"/>
-                    <line type="Line" handle="1017266932" lineType="1" fMod="410992157" tMod="1627483666" tPlg="1"/>
-                    <line type="Line" handle="131002270" lineType="1" fMod="2129714787" tMod="1627483666" fPlg="11" tPlg="2"/>
-                    <line type="Line" handle="1418718402" lineType="1" fMod="2121057" tMod="833977384" fPlg="11" tPlg="2"/>
                     <line type="Line" handle="1183762540" lineType="1" fMod="2129714787" tMod="474070925" fPlg="8"/>
                     <line type="Line" handle="1156688964" lineType="1" fMod="2121057" tMod="1453811038" fPlg="8"/>
                     <line type="Line" handle="709466441" lineType="1" fMod="36145854" tMod="26939185" fPlg="8" tPlg="7"/>
@@ -657,6 +619,8 @@
                     <line type="Line" handle="114885241" lineType="1" fMod="2129714787" tMod="697321783" fPlg="8" tPlg="9"/>
                     <line type="Line" handle="210657753" lineType="1" fMod="2129714787" tMod="697321783" fPlg="11" tPlg="10"/>
                     <line type="Line" handle="325326518" lineType="1" fMod="1554792426" tMod="697321783" fPlg="1" tPlg="11"/>
+                    <line type="Line" handle="277059262" lineType="1" fMod="2121057" tMod="1478488815" fPlg="11"/>
+                    <line type="Line" handle="1546966133" lineType="1" fMod="2129714787" tMod="410992157" fPlg="11"/>
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
                 <PanelLocation l="341" r="1138" t="416" b="858"/>
@@ -726,7 +690,7 @@
         </Plugin>
         <Plugin id="DoubleClick" name="Double Click" flags="384" category="mx/Sub-Controls">
             <GUI>
-                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool"/>
                 <Pin name="Time ms" datatype="int" default="250"/>
                 <Pin name="Countdown Out" datatype="int" direction="out" private="true"/>
                 <Pin name="Click Count" datatype="int" direction="out" isMinimised="true"/>
