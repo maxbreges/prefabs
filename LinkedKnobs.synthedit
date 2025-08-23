@@ -63,12 +63,12 @@
                 </plugs>
                 <structRect l="552" r="804" t="84" b="296"/>
                 <modules>
-                    <module type="Float Link" handle="1598319858">
-                        <structRect l="708" r="840" t="348" b="408"/>
+                    <module type="Float Link" handle="1598319858" name="Float Link 10$">
+                        <structRect l="708" r="840" t="360" b="420"/>
                         <panelRect l="376" r="376" t="248" b="248"/>
                     </module>
                     <module type="SE FloatToBool GUI" handle="966753087">
-                        <structRect l="456" r="528" t="360" b="384"/>
+                        <structRect l="420" r="492" t="396" b="420"/>
                         <panelRect l="392" r="392" t="248" b="248"/>
                     </module>
                     <module type="SE FloatToText GUI" handle="841356859">
@@ -270,13 +270,13 @@
                             <plug name="No Link/Linked" datatype="8"/>
                             <plug/>
                         </plugs>
-                        <structRect l="864" r="984" t="312" b="410"/>
+                        <structRect l="792" r="912" t="300" b="398"/>
                         <modules>
                             <module type="SE Float Splitter" handle="1984744077">
                                 <plugs>
                                     <plug id="2" idx="2"/>
                                 </plugs>
-                                <structRect l="840" r="888" t="144" b="180"/>
+                                <structRect l="816" r="864" t="204" b="240"/>
                                 <panelRect l="616" r="617" t="400" b="401"/>
                             </module>
                             <module type="SE Float Splitter" handle="77261802">
