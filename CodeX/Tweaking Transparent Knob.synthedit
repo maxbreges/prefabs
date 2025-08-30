@@ -21,20 +21,18 @@
                 </param>
                 <param type="1" handle="585689605" module="1145569646" moduleParamId="0">
                     <patch-list>
-                        <s>FF000000</s>
+                        <s>FF005566</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1131270848" module="312240714" moduleParamId="0" RangeMaximum="1">
                     <patch-list>
-                        <s>1</s>
-                        <s repeat="127">0</s>
+                        <s repeat="128">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1572343460" module="1396780032" moduleParamId="0" RangeMaximum="100">
                     <patch-list>
-                        <s>18</s>
-                        <s repeat="127">0</s>
+                        <s repeat="128">0</s>
                     </patch-list>
                 </param>
                 <param type="1" handle="1681557015" module="2081287" moduleParamId="0">
@@ -216,7 +214,7 @@
             </module>
             <module type="SE GuiSwitch &lt; (Text)" handle="720458301">
                 <plugs>
-                    <plug name="Value" id="2" idx="2"/>
+                    <plug name="Value" idx="2"/>
                     <plug name="Value" id="3"/>
                     <plug id="4"/>
                 </plugs>
@@ -229,7 +227,7 @@
             </module>
             <module type="SE GuiSwitch &lt; (Text)" handle="301069450">
                 <plugs>
-                    <plug name="Value" id="2" idx="2"/>
+                    <plug name="Value" idx="2"/>
                     <plug name="Value" id="3"/>
                     <plug id="4"/>
                 </plugs>

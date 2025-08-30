@@ -337,7 +337,7 @@
                                     <plug default="0" idx="1"/>
                                     <plug default="1"/>
                                 </plugs>
-                                <structRect l="876" r="948" t="540" b="588"/>
+                                <structRect l="852" r="924" t="552" b="600"/>
                                 <panelRect l="632" r="633" t="456" b="457"/>
                             </module>
                             <module type="SE Float Splitter" handle="486402453" name="dummy">
@@ -353,7 +353,7 @@
                                     <plug name="Animation Position" id="3"/>
                                     <plug id="4"/>
                                 </plugs>
-                                <structRect l="744" r="864" t="468" b="528"/>
+                                <structRect l="768" r="888" t="456" b="516"/>
                                 <panelRect l="568" r="569" t="352" b="353"/>
                             </module>
                             <module type="FloatSubtract" handle="1094583146">
@@ -365,7 +365,7 @@
                                     <plug id="2" idx="2"/>
                                     <plug id="3"/>
                                 </plugs>
-                                <structRect l="912" r="960" t="456" b="504"/>
+                                <structRect l="948" r="996" t="456" b="504"/>
                                 <panelRect l="472" r="473" t="256" b="257"/>
                             </module>
                             <module type="Float Clipper" handle="533452057">

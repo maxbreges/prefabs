@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" reverseGuiPins="true" vst_user_email="Maxim Brezhestovski" vst_mono_use_ok="true" vst_panel_size_h="10" vst_preset_count="64">
+    <master_container type="Container" handle="1695452388" name="Main" ViewOpenFlags="256" skin="default">
+        <plugs>
+            <plug default="0" idx="1"/>
+            <plug default="0"/>
+            <plug default="" direction="1" idx="7"/>
+        </plugs>
+        <structRect l="0" r="20" t="16" b="36"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="6" handle="27529" shortName="Pan" module="2145549898" moduleParamId="0" RangeMinimum="-5" RangeMaximum="5">
+                    <patch-list>
+                        <s>0.600004</s>
+                        <s repeat="127">-0.000009</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="1532967260" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="Container" handle="580433978" name="Stereo Pan Set" show_controls_on_panel_legacy="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="0"/>
+                    <plug name="Input L" idx="7"/>
+                    <plug name="Input R"/>
+                    <plug name="Out L" default="" direction="1"/>
+                    <plug name="Out R" default="" direction="1"/>
+                    <plug default="" direction="1"/>
+                </plugs>
+                <structRect l="175" r="247" t="96" b="225"/>
+                <modules>
+                    <module type="IO Mod" handle="1274361444">
+                        <plugs>
+                            <plug name="Out L" default="" tiedtomod="580433978" tiedtopin="9"/>
+                            <plug name="Out R" default="" tiedtomod="580433978" tiedtopin="10"/>
+                            <plug default="" direction="1"/>
+                        </plugs>
+                        <structRect l="516" r="576" t="158" b="194"/>
+                    </module>
+                    <module type="Fixed Values" handle="1351351539" name="Fixed Values">
+                        <plugs>
+                            <plug name="-5" default="-5"/>
+                            <plug name="5" default="5"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="21" r="105" t="136" b="172"/>
+                    </module>
+                    <module type="X-Mix" handle="1255347878">
+                        <structRect l="392" r="476" t="202" b="250"/>
+                    </module>
+                    <module type="X-Mix" handle="1761041">
+                        <structRect l="391" r="475" t="78" b="126"/>
+                    </module>
+                    <module type="Pan" handle="1259501798">
+                        <plugs>
+                            <plug default="-5" idx="1"/>
+                            <plug default="10" idx="4"/>
+                        </plugs>
+                        <structRect l="231" r="303" t="34" b="94"/>
+                    </module>
+                    <module type="Pan" handle="1145282489">
+                        <plugs>
+                            <plug default="5" idx="1"/>
+                            <plug default="10" idx="4"/>
+                        </plugs>
+                        <structRect l="213" r="285" t="137" b="197"/>
+                    </module>
+                    <module type="Slider" handle="2145549898" name="Pan">
+                        <plugs>
+                            <plug default="0" idx="4"/>
+                            <plug default="0"/>
+                            <plug default="-5.000" idx="7"/>
+                            <plug default="5.000"/>
+                            <plug default="2"/>
+                            <plug default="0" idx="12"/>
+                            <plug parameterId="-1" default="0.600004"/>
+                            <plug parameterId="-1"/>
+                        </plugs>
+                        <structRect l="239" r="323" t="272" b="341"/>
+                        <panelRect l="207" r="267" t="56" b="113"/>
+                    </module>
+                    <module type="IO Mod" handle="1050719207">
+                        <plugs>
+                            <plug name="Input L" default="" direction="1" tiedtomod="580433978" tiedtopin="7"/>
+                            <plug name="Input R" default="" direction="1" tiedtomod="580433978" tiedtopin="8"/>
+                            <plug default="" direction="1"/>
+                        </plugs>
+                        <structRect l="27" r="87" t="40" b="76"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="693679761" lineType="1" fMod="1259501798" tMod="1255347878" fPlg="3"/>
+                    <line type="Line" handle="371178342" lineType="1" fMod="1259501798" tMod="1761041" fPlg="2"/>
+                    <line type="Line" handle="2005040535" lineType="1" fMod="1145282489" tMod="1255347878" fPlg="3" tPlg="1"/>
+                    <line type="Line" handle="972906661" lineType="1" fMod="1145282489" tMod="1761041" fPlg="2" tPlg="1"/>
+                    <line type="Line" handle="1536390398" lineType="1" fMod="1050719207" tMod="1259501798" fPlg="1"/>
+                    <line type="Line" handle="2056893276" lineType="1" fMod="1050719207" tMod="1145282489"/>
+                    <line type="Line" handle="821366426" lineType="1" fMod="1255347878" tMod="1274361444" fPlg="3" tPlg="1"/>
+                    <line type="Line" handle="1900636360" lineType="1" fMod="1761041" tMod="1274361444" fPlg="3"/>
+                    <line type="Line" handle="1818947938" lineType="1" fMod="1351351539" tMod="1259501798" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1335658532" lineType="1" fMod="1351351539" tMod="1145282489" tPlg="1"/>
+                    <line type="Line" handle="571998614" lineType="1" fMod="2145549898" tMod="1255347878" fPlg="6" tPlg="2"/>
+                    <line type="Line" handle="747846915" lineType="1" fMod="2145549898" tMod="1761041" fPlg="6" tPlg="2"/>
+                </lines>
+                <PanelWndPosition l="0" r="0" t="0" b="0"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="677" t="0" b="565"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+        </modules>
+        <lines/>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="30" r="530" t="30" b="330"/>
+        <StructLocation l="0" r="854" t="0" b="489"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="312" t="16" b="216"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Fixed Values" class="1" name="Fixed Values (Volts)" flags="4352" category="Controls">
+            <Audio>
+                <Pin name="Spare Value" datatype="float" rate="audio" direction="out" autoRename="true" settableOutput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Pan" class="1" name="Pan" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Input" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Pan" datatype="float" rate="audio" metadata="5,-5,5,-5"/>
+                <Pin name="Left Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Right Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Volume" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Fade Law" datatype="enum" default="1" isMinimised="true" metadata="Equal Intensity (0dB), Equal Power(+3dB), Sqr Root"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Slider" class="1" name="Slider" flags="4480" category="Controls">
+            <Parameters>
+                <Parameter id="0" datatype="float" name="patchValue"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI In" datatype="midi" private="true"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out" private="true"/>
+                <Pin name="MIDI Controller ID" datatype="enum" default="-1" private="true"/>
+                <Pin name="Ignore Program Change" datatype="bool" private="true"/>
+                <Pin name="MIDI NRPN" datatype="enum" private="true" metadata="range 0,16255"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out" autoConfigureParameter="true"/>
+                <Pin name="Lo Value" datatype="float" private="true"/>
+                <Pin name="Hi Value" datatype="float" default="10" private="true"/>
+                <Pin name="Appearance" datatype="enum" default="1" isMinimised="true" metadata="None=-1,Plain Slider, Vert Slider, Horiz Slider, Knob, Button, Button (toggle),Plain Button, Small Knob, Small Button, Small Button (Toggle)"/>
+                <Pin name="Show Readout" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Show Title On Panel" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="patchValue" datatype="float" private="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin id="13" name="patchValue" datatype="float" direction="out" private="true" parameterId="0"/>
+                <Pin name="Hint" datatype="string" direction="out" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="X-Mix" class="1" name="X-Mix" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Input A" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Input B" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Mix" datatype="float" rate="audio" metadata="5,-5,5,-5"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Fade Law" datatype="enum" default="1" isMinimised="true" metadata="Equal Intensity (0dB), Equal Power(+3dB), Sqr Root"/>
+            </Audio>
+        </Plugin>
+    </PluginList>
+</Document>

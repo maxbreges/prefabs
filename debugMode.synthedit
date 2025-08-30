@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+<Document file_format="150000" vst_latencyCompensation="1" AutoPlay="true" autoplay="true" vst_preset_count="64">
     <master_container type="Container" handle="1695610615" name="Main" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>

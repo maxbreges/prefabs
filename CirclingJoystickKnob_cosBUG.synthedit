@@ -13,48 +13,68 @@
                         <s repeat="128"></s>
                     </patch-list>
                 </param>
+                <param type="1" handle="580829207" shortName="Waveshaper2B Formula" vstParameterNumber="0" module="1722501143" moduleParamId="0">
+                    <patch-list>
+                        <s repeat="128">5 * sin(x/PI)</s>
+                    </patch-list>
+                </param>
                 <param type="6" handle="703220795" ignorePC="true" stateful="false" module="2044470963" moduleParamId="0" RangeMinimum="-5" RangeMaximum="5"/>
                 <param type="6" handle="1153691743" ignorePC="true" stateful="false" module="399126380" moduleParamId="0" RangeMinimum="-5" RangeMaximum="5"/>
+                <param type="1" handle="1876685470" shortName="Waveshaper2B Formula" vstParameterNumber="1" module="34157322" moduleParamId="0">
+                    <patch-list>
+                        <s>5 * cos(x/pi)</s>
+                        <s repeat="127">5 * cos(x/PI)</s>
+                    </patch-list>
+                </param>
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Oscillator" handle="1493418541">
+            <module type="Text Entry" handle="34157322">
                 <plugs>
-                    <plug default="0.0005"/>
-                    <plug default=""/>
-                    <plug default="3"/>
-                    <plug default="-5" idx="5"/>
-                    <plug default="1"/>
+                    <plug parameterId="-1" idx="9"/>
+                    <plug parameterId="-1"/>
                 </plugs>
-                <structRect l="34" r="118" t="292" b="376"/>
+                <structRect l="12" r="120" t="264" b="312"/>
+                <panelRect l="336" r="336" t="240" b="240"/>
+            </module>
+            <module type="Text Entry" handle="1722501143">
+                <plugs>
+                    <plug parameterId="-1" idx="9"/>
+                    <plug parameterId="-1"/>
+                </plugs>
+                <structRect l="12" r="120" t="84" b="132"/>
+                <panelRect l="264" r="264" t="152" b="152"/>
             </module>
             <module type="SE Waveshaper2B" handle="27461151">
-                <structRect l="151" r="235" t="280" b="316"/>
+                <plugs>
+                    <plug default="5 * cos(x/PI)"/>
+                </plugs>
+                <structRect l="144" r="228" t="264" b="300"/>
                 <panelRect l="0" r="0" t="0" b="0"/>
             </module>
             <module type="SE Waveshaper2B" handle="1534779251">
-                <structRect l="133" r="217" t="110" b="146"/>
+                <structRect l="144" r="228" t="108" b="144"/>
                 <panelRect l="0" r="0" t="0" b="0"/>
             </module>
             <module type="SE PatchMemory Float Out" handle="2044470963">
-                <structRect l="378" r="498" t="182" b="254"/>
+                <structRect l="360" r="480" t="228" b="300"/>
                 <panelRect l="352" r="352" t="208" b="208"/>
             </module>
             <module type="SE PatchMemory Float Out" handle="399126380">
-                <structRect l="383" r="503" t="61" b="133"/>
+                <structRect l="360" r="480" t="96" b="168"/>
                 <panelRect l="256" r="256" t="184" b="184"/>
             </module>
             <module type="VoltsToFloat2" handle="578717921">
                 <plugs>
                     <plug default="60" idx="2"/>
                 </plugs>
-                <structRect l="277" r="361" t="234" b="282"/>
+                <structRect l="252" r="336" t="252" b="300"/>
             </module>
             <module type="VoltsToFloat2" handle="365790126">
                 <plugs>
                     <plug default="60" idx="2"/>
                 </plugs>
-                <structRect l="269" r="353" t="57" b="105"/>
+                <structRect l="252" r="336" t="108" b="156"/>
             </module>
             <module type="Sound Out" handle="739310332">
                 <plugs>
@@ -63,7 +83,7 @@
                 <structRect l="46" r="94" t="37" b="49"/>
             </module>
             <module type="ImageJoystick" handle="1469055889">
-                <structRect l="562" r="682" t="46" b="278"/>
+                <structRect l="528" r="648" t="96" b="328"/>
                 <panelRect l="240" r="240" t="184" b="184"/>
             </module>
             <module type="Oscillator" handle="381763015">
@@ -74,7 +94,7 @@
                     <plug default="0" idx="5"/>
                     <plug default="1"/>
                 </plugs>
-                <structRect l="34" r="118" t="127" b="211"/>
+                <structRect l="36" r="120" t="156" b="240"/>
             </module>
         </modules>
         <lines>
@@ -84,12 +104,14 @@
             <line type="Line" handle="554022804" lineType="1" fMod="381763015" tMod="1534779251" fPlg="3" tPlg="1"/>
             <line type="Line" handle="1944466371" lineType="1" fMod="399126380" tMod="1469055889" fPlg="8" tPlg="10"/>
             <line type="Line" handle="1268435112" lineType="1" fMod="2044470963" tMod="1469055889" fPlg="8" tPlg="11"/>
-            <line type="Line" handle="987170216" lineType="1" fMod="1493418541" tMod="27461151" fPlg="3" tPlg="1"/>
             <line type="Line" handle="1178853253" lineType="1" fMod="27461151" tMod="578717921" fPlg="2"/>
+            <line type="Line" handle="1807639512" lineType="1" fMod="1722501143" tMod="1534779251" fPlg="6"/>
+            <line type="Line" handle="1688133013" lineType="1" fMod="34157322" tMod="27461151" fPlg="6"/>
+            <line type="Line" handle="1601685108" lineType="1" fMod="381763015" tMod="27461151" fPlg="3" tPlg="1"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="1321" t="0" b="927"/>
+        <StructLocation l="0" r="1047" t="0" b="616"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
@@ -174,6 +196,26 @@
             <Audio>
                 <Pin name="Out" datatype="float" rate="audio" autoRename="true" linearInput="true" autoDuplicate="true"/>
             </Audio>
+        </Plugin>
+        <Plugin id="Text Entry" class="1" name="Text Entry" flags="4480" category="Controls">
+            <Parameters>
+                <Parameter id="0" datatype="string" name="patchValue"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI In" datatype="midi" private="true"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out" private="true"/>
+                <Pin name="MIDI Controller ID" datatype="enum" default="-1" private="true"/>
+                <Pin name="Ignore Program Change" datatype="bool" private="true"/>
+                <Pin name="MIDI NRPN" datatype="enum" private="true" metadata="range 0,16255"/>
+                <Pin name="Text Out" datatype="string" direction="out" autoConfigureParameter="true"/>
+                <Pin name="Show Title On Panel" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="patchValue" datatype="string" default="0" private="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin id="9" name="patchValue" datatype="string" direction="out" private="true" parameterId="0"/>
+                <Pin name="Hint" datatype="string" direction="out" isMinimised="true"/>
+            </GUI>
         </Plugin>
         <Plugin id="VoltsToFloat2" class="1" name="Volts to Float2" flags="256" category="Conversion">
             <Audio>
