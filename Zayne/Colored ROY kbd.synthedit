@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+    <master_container type="Container" handle="990274997" name="Main" ViewOpenFlags="256" skin="default2">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="6" handle="34632217" module="1862954521" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s>255</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="485664365" shortName="KeyboardDataOut" ignorePC="true" private="true" module="1855474014" moduleParamId="0">
+                    <patch-list>
+                        <s></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="550372871" module="1237114696" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s repeat="128">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="581212299" module="2085134725" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s repeat="128">0</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="725881614" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="972520621" module="2034904176" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s repeat="128">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1231308307" module="1496604197" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s>255</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1505426281" module="1363377216" moduleParamId="0" RangeMaximum="255">
+                    <patch-list>
+                        <s>255</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="1573072263" shortName="KeyboardDataIn" ignorePC="true" private="true" module="1855474014" moduleParamId="1">
+                    <patch-list>
+                        <s>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="SE Text Entry4" handle="1088981194">
+                <structRect l="936" r="1092" t="576" b="720"/>
+                <panelRect l="336" r="336" t="224" b="224"/>
+            </module>
+            <module type="Container" handle="619455562" name="G" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Text Val" direction="1" datatype="1" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="288" r="408" t="552" b="692"/>
+                <modules>
+                    <module type="SE FloatToText GUI" handle="1685718487">
+                        <plugs>
+                            <plug default="0" idx="1"/>
+                        </plugs>
+                        <structRect l="252" r="360" t="180" b="216"/>
+                        <panelRect l="344" r="344" t="256" b="256"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1237114696">
+                        <structRect l="240" r="360" t="36" b="120"/>
+                        <panelRect l="336" r="336" t="256" b="256"/>
+                    </module>
+                    <module type="SE Vector Knob2" handle="455850398">
+                        <plugs>
+                            <plug default="FF0000FF" idx="5"/>
+                        </plugs>
+                        <structRect l="384" r="504" t="24" b="192"/>
+                        <panelRect l="328" r="328" t="256" b="256"/>
+                    </module>
+                    <module type="IO Mod" handle="761600721">
+                        <plugs>
+                            <plug name="Text Val" datatype="1" tiedtomod="619455562" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="624" r="696" t="24" b="48"/>
+                    </module>
+                    <module type="IO Mod" handle="1559545086">
+                        <plugs>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="80" t="20" b="32"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="186971180" lineType="1" fMod="1685718487" tMod="761600721" fPlg="2"/>
+                    <line type="Line" handle="1229253747" lineType="1" fMod="1237114696" tMod="1685718487" fPlg="7"/>
+                    <line type="Line" handle="177132474" lineType="1" fMod="1237114696" tMod="455850398" fPlg="8"/>
+                </lines>
+                <PanelWndPosition l="224" r="224" t="312" b="312"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="708" t="0" b="420"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="Container" handle="1014217500" name="G" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Text Val" direction="1" datatype="1" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="156" r="276" t="552" b="692"/>
+                <modules>
+                    <module type="SE FloatToText GUI" handle="957465916">
+                        <plugs>
+                            <plug default="0" idx="1"/>
+                        </plugs>
+                        <structRect l="252" r="360" t="180" b="216"/>
+                        <panelRect l="344" r="344" t="256" b="256"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="2034904176">
+                        <structRect l="240" r="360" t="36" b="120"/>
+                        <panelRect l="336" r="336" t="256" b="256"/>
+                    </module>
+                    <module type="SE Vector Knob2" handle="337528658">
+                        <plugs>
+                            <plug default="FF00FF00" idx="5"/>
+                        </plugs>
+                        <structRect l="384" r="504" t="24" b="192"/>
+                        <panelRect l="328" r="328" t="256" b="256"/>
+                    </module>
+                    <module type="IO Mod" handle="348526536">
+                        <plugs>
+                            <plug name="Text Val" datatype="1" tiedtomod="1014217500" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="624" r="696" t="24" b="48"/>
+                    </module>
+                    <module type="IO Mod" handle="874286780">
+                        <plugs>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="80" t="20" b="32"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="2112089255" lineType="1" fMod="2034904176" tMod="337528658" fPlg="8"/>
+                    <line type="Line" handle="2124260141" lineType="1" fMod="2034904176" tMod="957465916" fPlg="7"/>
+                    <line type="Line" handle="1108241841" lineType="1" fMod="957465916" tMod="348526536" fPlg="2"/>
+                </lines>
+                <PanelWndPosition l="152" r="152" t="232" b="232"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="708" t="0" b="420"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="Container" handle="1841664149" name="R" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Text Val" direction="1" datatype="1" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="24" r="144" t="552" b="692"/>
+                <modules>
+                    <module type="SE FloatToText GUI" handle="1127259232">
+                        <plugs>
+                            <plug default="0" idx="1"/>
+                        </plugs>
+                        <structRect l="156" r="264" t="180" b="216"/>
+                        <panelRect l="344" r="344" t="256" b="256"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="2085134725">
+                        <structRect l="144" r="264" t="36" b="120"/>
+                        <panelRect l="336" r="336" t="256" b="256"/>
+                    </module>
+                    <module type="SE Vector Knob2" handle="438873523">
+                        <plugs>
+                            <plug default="FFFF0000" idx="5"/>
+                        </plugs>
+                        <structRect l="288" r="408" t="24" b="192"/>
+                        <panelRect l="328" r="328" t="256" b="256"/>
+                    </module>
+                    <module type="IO Mod" handle="295142951">
+                        <plugs>
+                            <plug name="Text Val" datatype="1" tiedtomod="1841664149" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="324" r="396" t="240" b="264"/>
+                    </module>
+                    <module type="IO Mod" handle="1790339532">
+                        <plugs>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="80" t="20" b="32"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="259491516" lineType="1" fMod="1127259232" tMod="295142951" fPlg="2"/>
+                    <line type="Line" handle="191615495" lineType="1" fMod="2085134725" tMod="1127259232" fPlg="7"/>
+                    <line type="Line" handle="1737085167" lineType="1" fMod="2085134725" tMod="438873523" fPlg="8"/>
+                </lines>
+                <PanelWndPosition l="40" r="40" t="80" b="80"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="708" t="0" b="420"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="SE:GUIFixedValues_text" handle="989740186">
+                <plugs>
+                    <plug name="RGB(" default="RGB("/>
+                    <plug name="Comma" default="," id="1"/>
+                    <plug name="Close the parenthesis &quot;)&quot;" default=")" id="2"/>
+                    <plug id="3"/>
+                </plugs>
+                <structRect l="300" r="456" t="456" b="504"/>
+                <panelRect l="312" r="312" t="256" b="256"/>
+            </module>
+            <module type="TextAppendGui" handle="679823597">
+                <plugs>
+                    <plug id="2" idx="2"/>
+                    <plug id="3"/>
+                    <plug id="4"/>
+                    <plug id="5"/>
+                    <plug id="6"/>
+                    <plug id="7"/>
+                    <plug id="8"/>
+                </plugs>
+                <structRect l="612" r="684" t="456" b="564"/>
+                <panelRect l="272" r="272" t="248" b="248"/>
+            </module>
+            <module type="Container" handle="989469441" name="G" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Text Val" direction="1" datatype="1" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="288" r="408" t="144" b="284"/>
+                <modules>
+                    <module type="SE FloatToText GUI" handle="799965066">
+                        <plugs>
+                            <plug default="0" idx="1"/>
+                        </plugs>
+                        <structRect l="252" r="360" t="180" b="216"/>
+                        <panelRect l="344" r="344" t="256" b="256"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1862954521">
+                        <structRect l="240" r="360" t="36" b="120"/>
+                        <panelRect l="336" r="336" t="256" b="256"/>
+                    </module>
+                    <module type="SE Vector Knob2" handle="1057253099">
+                        <plugs>
+                            <plug default="FF0000FF" idx="5"/>
+                        </plugs>
+                        <structRect l="384" r="504" t="24" b="192"/>
+                        <panelRect l="328" r="328" t="256" b="256"/>
+                    </module>
+                    <module type="IO Mod" handle="731361292">
+                        <plugs>
+                            <plug name="Text Val" datatype="1" tiedtomod="989469441" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="624" r="696" t="24" b="48"/>
+                    </module>
+                    <module type="IO Mod" handle="1969235100">
+                        <plugs>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="80" t="20" b="32"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="488163904" lineType="1" fMod="1862954521" tMod="1057253099" fPlg="8"/>
+                    <line type="Line" handle="1977549331" lineType="1" fMod="1862954521" tMod="799965066" fPlg="7"/>
+                    <line type="Line" handle="495593584" lineType="1" fMod="799965066" tMod="731361292" fPlg="2"/>
+                </lines>
+                <PanelWndPosition l="184" r="184" t="232" b="232"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="708" t="0" b="420"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="Container" handle="1880362965" name="G" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Text Val" direction="1" datatype="1" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="156" r="276" t="144" b="284"/>
+                <modules>
+                    <module type="SE FloatToText GUI" handle="1945231221">
+                        <plugs>
+                            <plug default="0" idx="1"/>
+                        </plugs>
+                        <structRect l="252" r="360" t="180" b="216"/>
+                        <panelRect l="344" r="344" t="256" b="256"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1363377216">
+                        <structRect l="240" r="360" t="36" b="120"/>
+                        <panelRect l="336" r="336" t="256" b="256"/>
+                    </module>
+                    <module type="SE Vector Knob2" handle="1677940308">
+                        <plugs>
+                            <plug default="FF00FF00" idx="5"/>
+                        </plugs>
+                        <structRect l="384" r="504" t="24" b="192"/>
+                        <panelRect l="328" r="328" t="256" b="256"/>
+                    </module>
+                    <module type="IO Mod" handle="1597957274">
+                        <plugs>
+                            <plug name="Text Val" datatype="1" tiedtomod="1880362965" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="624" r="696" t="24" b="48"/>
+                    </module>
+                    <module type="IO Mod" handle="1264339577">
+                        <plugs>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="80" t="20" b="32"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="2029660941" lineType="1" fMod="1945231221" tMod="1597957274" fPlg="2"/>
+                    <line type="Line" handle="413736614" lineType="1" fMod="1363377216" tMod="1945231221" fPlg="7"/>
+                    <line type="Line" handle="1456859413" lineType="1" fMod="1363377216" tMod="1677940308" fPlg="8"/>
+                </lines>
+                <PanelWndPosition l="112" r="112" t="152" b="152"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="708" t="0" b="420"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="Container" handle="1988424238" name="R" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Text Val" direction="1" datatype="1" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="24" r="144" t="144" b="284"/>
+                <modules>
+                    <module type="SE FloatToText GUI" handle="2136600238">
+                        <plugs>
+                            <plug default="0" idx="1"/>
+                        </plugs>
+                        <structRect l="156" r="264" t="180" b="216"/>
+                        <panelRect l="344" r="344" t="256" b="256"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1496604197">
+                        <structRect l="144" r="264" t="36" b="120"/>
+                        <panelRect l="336" r="336" t="256" b="256"/>
+                    </module>
+                    <module type="SE Vector Knob2" handle="896933000">
+                        <plugs>
+                            <plug default="FFFF0000" idx="5"/>
+                        </plugs>
+                        <structRect l="288" r="408" t="24" b="192"/>
+                        <panelRect l="328" r="328" t="256" b="256"/>
+                    </module>
+                    <module type="IO Mod" handle="1918592418">
+                        <plugs>
+                            <plug name="Text Val" datatype="1" tiedtomod="1988424238" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="324" r="396" t="240" b="264"/>
+                    </module>
+                    <module type="IO Mod" handle="1444789833">
+                        <plugs>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="80" t="20" b="32"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="578389178" lineType="1" fMod="1496604197" tMod="896933000" fPlg="8"/>
+                    <line type="Line" handle="780457676" lineType="1" fMod="1496604197" tMod="2136600238" fPlg="7"/>
+                    <line type="Line" handle="1629153048" lineType="1" fMod="2136600238" tMod="1918592418" fPlg="2"/>
+                </lines>
+                <PanelWndPosition l="0" r="0" t="0" b="0"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="708" t="0" b="420"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="SE Text Entry4" handle="166858875">
+                <structRect l="936" r="1092" t="60" b="204"/>
+                <panelRect l="248" r="248" t="176" b="176"/>
+            </module>
+            <module type="SE:GUIFixedValues_text" handle="1928452930">
+                <plugs>
+                    <plug name="RGB(" default="RGB("/>
+                    <plug name="Comma" default="," id="1"/>
+                    <plug name="Close the parenthesis &quot;)&quot;" default=")" id="2"/>
+                    <plug id="3"/>
+                </plugs>
+                <structRect l="300" r="456" t="48" b="96"/>
+                <panelRect l="272" r="272" t="176" b="176"/>
+            </module>
+            <module type="TextAppendGui" handle="243567648">
+                <plugs>
+                    <plug id="2" idx="2"/>
+                    <plug id="3"/>
+                    <plug id="4"/>
+                    <plug id="5"/>
+                    <plug id="6"/>
+                    <plug id="7"/>
+                    <plug id="8"/>
+                </plugs>
+                <structRect l="612" r="684" t="48" b="156"/>
+                <panelRect l="232" r="232" t="168" b="168"/>
+            </module>
+            <module type="RoyMidiKeyboard" handle="1855474014">
+                <plugs>
+                    <plug default="RGB(180,219,219)" idx="4"/>
+                </plugs>
+                <structRect l="828" r="1200" t="300" b="492"/>
+                <panelRect l="280" r="280" t="120" b="120"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="1377737521" lineType="1" fMod="1928452930" tMod="243567648" tPlg="1"/>
+            <line type="Line" handle="432896957" lineType="1" fMod="1928452930" tMod="243567648" fPlg="1" tPlg="3"/>
+            <line type="Line" handle="228802145" lineType="1" fMod="1988424238" tMod="243567648" fPlg="7" tPlg="2"/>
+            <line type="Line" handle="1681287463" lineType="1" fMod="1880362965" tMod="243567648" fPlg="7" tPlg="4"/>
+            <line type="Line" handle="1488489092" lineType="1" fMod="1928452930" tMod="243567648" fPlg="1" tPlg="5"/>
+            <line type="Line" handle="1210244179" lineType="1" fMod="989469441" tMod="243567648" fPlg="7" tPlg="6"/>
+            <line type="Line" handle="1699115168" lineType="1" fMod="243567648" tMod="166858875"/>
+            <line type="Line" handle="1292828304" lineType="1" fMod="1928452930" tMod="243567648" fPlg="2" tPlg="7"/>
+            <line type="Line" handle="1809565097" lineType="1" fMod="989740186" tMod="679823597" tPlg="1"/>
+            <line type="Line" handle="685776605" lineType="1" fMod="989740186" tMod="679823597" fPlg="1" tPlg="3"/>
+            <line type="Line" handle="1489919685" lineType="1" fMod="1841664149" tMod="679823597" fPlg="7" tPlg="2"/>
+            <line type="Line" handle="815853101" lineType="1" fMod="1014217500" tMod="679823597" fPlg="7" tPlg="4"/>
+            <line type="Line" handle="1872341833" lineType="1" fMod="989740186" tMod="679823597" fPlg="1" tPlg="5"/>
+            <line type="Line" handle="350604783" lineType="1" fMod="619455562" tMod="679823597" fPlg="7" tPlg="6"/>
+            <line type="Line" handle="528659004" lineType="1" fMod="989740186" tMod="679823597" fPlg="2" tPlg="7"/>
+            <line type="Line" handle="67240980" lineType="1" fMod="243567648" tMod="1855474014" tPlg="4"/>
+            <line type="Line" handle="941554963" lineType="1" fMod="679823597" tMod="1855474014" tPlg="5"/>
+            <line type="Line" handle="106504308" lineType="1" fMod="679823597" tMod="1088981194"/>
+        </lines>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="30" r="530" t="30" b="330"/>
+        <StructLocation l="0" r="1374" t="0" b="895"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="312" t="16" b="216"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="RoyMidiKeyboard" name="Roy Midi Keyboard" flags="384" category="RoyTech Modules/Midi" helpUrl="ROY_MPACK_LTE.chm::/roy_midi_keyboard.html">
+            <Parameters>
+                <Parameter id="0" datatype="blob" name="KeyboardDataOut" private="true" ignorePatchChange="true"/>
+                <Parameter id="1" datatype="blob" name="KeyboardDataIn" private="true" ignorePatchChange="true"/>
+            </Parameters>
+            <Audio>
+                <Pin name="KeyDataOut" datatype="blob" direction="out" private="true" parameterId="0"/>
+                <Pin name="KeyDataIn" datatype="blob" private="true" parameterId="1"/>
+                <Pin name="Midi In" datatype="midi"/>
+                <Pin name="Channel" datatype="enum" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="Velocity" datatype="float" default="8"/>
+                <Pin name="Midi Out" datatype="midi" direction="out"/>
+                <Pin name="Midi Out Version" datatype="enum" isMinimised="true" metadata="MIDI 1.0,MIDI 2.0"/>
+                <Pin name="Group" datatype="enum" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+            </Audio>
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="KeyDataIn" datatype="blob" private="true" parameterId="0"/>
+                <Pin name="KeyDataOut" datatype="blob" private="true" parameterId="1"/>
+                <Pin name="Octave" datatype="int" metadata=",,4,-3"/>
+                <Pin name="Latch" datatype="bool"/>
+                <Pin name="W Key Color" datatype="string" default="RGB(219,219,219)"/>
+                <Pin name="B Key Color" datatype="string" default="RGB(0,0,0)"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE FloatToText GUI" name="Float To Text" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Float Val" datatype="float"/>
+                <Pin name="Decimal Places" datatype="int" default="-1"/>
+                <Pin name="Text Val" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Float" name="PatchMemory Float3" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="float" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="float" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="float" direction="out"/>
+                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Text Entry4" name="Text Entry4" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Text" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Multiline" datatype="bool"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Vector Knob2" name="Vector Knob B" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Background" datatype="string" default="FF000000"/>
+                <Pin name="Forground" datatype="string" default="FFFFFFFF"/>
+                <Pin name="Read-only" datatype="bool" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE:GUIFixedValues_text" name="Fixed Values (text)" flags="384" category="Experimental/Sub-Controls/Conversion">
+            <GUI>
+                <Pin name="Val" datatype="string" direction="out" autoRename="true" settableOutput="true" autoDuplicate="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="TextAppendGui" name="Text Append Gui" flags="384" category="mx/Sub-Controls">
+            <GUI>
+                <Pin name="Text Out" datatype="string" direction="out"/>
+                <Pin name="Text In" datatype="string" autoDuplicate="true"/>
+            </GUI>
+        </Plugin>
+    </PluginList>
+</Document>
