@@ -8,101 +8,114 @@
         <PatchManager>
             <ProgramNames/>
             <Parameters>
-                <param type="8" handle="909585898" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="959362533" hostControl="14" RangeMinimum="1" RangeMaximum="128">
-                    <patch-list>
-                        <s>768</s>
-                    </patch-list>
-                </param>
+                <param type="8" handle="133685034" stateful="false" module="1180538206" moduleParamId="0"/>
+                <param type="1" handle="777635165" ignorePC="true" stateful="false" module="1360383802" moduleParamId="0"/>
                 <param type="10" handle="1051466535" private="true" hostControl="49">
                     <patch-list>
                         <s repeat="128"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="1602243867" ignorePC="true" stateful="false" module="949064379" moduleParamId="0"/>
-                <param type="8" handle="1628593637" shortName="ReserveVoices" ignorePC="true" private="true" module="959362533" hostControl="22" RangeMaximum="128">
-                    <patch-list>
-                        <s>3</s>
-                    </patch-list>
-                </param>
-                <param type="8" handle="1667001737" shortName="Polyphony" ignorePC="true" private="true" module="959362533" hostControl="21" RangeMinimum="1" RangeMaximum="128">
-                    <patch-list>
-                        <s>6</s>
-                    </patch-list>
-                </param>
+                <param type="1" handle="1912538957" ignorePC="true" stateful="false" module="1993492464" moduleParamId="0"/>
                 <param type="1" handle="2145550963" ignorePC="true" stateful="false" module="1196691104" moduleParamId="0"/>
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="SE Midi Monitor" handle="1196691104">
-                <structRect l="252" r="492" t="252" b="360"/>
-                <panelRect l="384" r="384" t="216" b="216"/>
+            <module type="SE Midi Monitor" handle="1360383802">
+                <structRect l="612" r="852" t="192" b="300"/>
+                <panelRect l="416" r="416" t="216" b="216"/>
             </module>
-            <module type="DeleteDoubles" handle="196088507">
-                <structRect l="168" r="240" t="312" b="336"/>
+            <module type="DeleteDoubles" handle="1947850862">
+                <structRect l="528" r="600" t="180" b="204"/>
                 <panelRect l="0" r="0" t="0" b="0"/>
             </module>
-            <module type="Container" handle="1987726402" name="" ViewOpenFlags="256" skin="default2">
+            <module type="SE Midi Monitor" handle="1993492464">
+                <structRect l="552" r="792" t="24" b="132"/>
+                <panelRect l="432" r="432" t="248" b="248"/>
+            </module>
+            <module type="MIDI In" handle="1180538206">
+                <structRect l="360" r="444" t="24" b="66"/>
+                <panelRect l="264" r="264" t="152" b="152"/>
+            </module>
+            <module type="MIDI Out" handle="1952567121">
+                <structRect l="156" r="228" t="48" b="60"/>
+            </module>
+            <module type="Container" handle="1117291193" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
                     <plug name="MIDI Out" direction="1" datatype="2" idx="7"/>
                     <plug/>
                 </plugs>
-                <structRect l="36" r="156" t="108" b="248"/>
+                <structRect l="24" r="144" t="108" b="248"/>
                 <PatchManager>
                     <ProgramNames/>
                     <Parameters>
-                        <param type="8" handle="183072472" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1987726402" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                        <param type="8" handle="462616331" shortName="ReserveVoices" ignorePC="true" private="true" module="1117291193" hostControl="22" RangeMaximum="128">
                             <patch-list>
-                                <s>768</s>
+                                <s>3</s>
                             </patch-list>
                         </param>
-                        <param type="8" handle="730980781" shortName="Polyphony" ignorePC="true" private="true" module="1987726402" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                        <param type="8" handle="1154475011" shortName="Polyphony" ignorePC="true" private="true" module="1117291193" hostControl="21" RangeMinimum="1" RangeMaximum="128">
                             <patch-list>
                                 <s>6</s>
                             </patch-list>
                         </param>
-                        <param type="10" handle="1087170120" private="true" hostControl="49">
+                        <param type="10" handle="1371607661" private="true" hostControl="49">
                             <patch-list>
                                 <s repeat="128"></s>
                             </patch-list>
                         </param>
-                        <param type="8" handle="2016959441" shortName="ReserveVoices" ignorePC="true" private="true" module="1987726402" hostControl="22" RangeMaximum="128">
+                        <param type="8" handle="1417952195" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1117291193" hostControl="14" RangeMinimum="1" RangeMaximum="128">
                             <patch-list>
-                                <s>3</s>
+                                <s>768</s>
                             </patch-list>
                         </param>
                     </Parameters>
                 </PatchManager>
                 <modules>
-                    <module type="SE Patch Automator" handle="292365558">
-                        <structRect l="36" r="108" t="36" b="60"/>
+                    <module type="SE Patch Automator" handle="974481964">
+                        <structRect l="396" r="468" t="24" b="48"/>
                     </module>
-                    <module type="SE Keyboard2" handle="1662805781">
-                        <structRect l="24" r="180" t="108" b="300"/>
-                        <panelRect l="536" r="536" t="368" b="368"/>
+                    <module type="SE Keyboard2" handle="2135938461">
+                        <structRect l="240" r="396" t="72" b="264"/>
+                        <panelRect l="520" r="520" t="304" b="304"/>
                     </module>
-                    <module type="IO Mod" handle="406376320">
+                    <module type="IO Mod" handle="1175188360">
                         <plugs>
-                            <plug name="MIDI Out" datatype="2" tiedtomod="1987726402" tiedtopin="7"/>
+                            <plug name="MIDI Out" datatype="2" tiedtomod="1117291193" tiedtopin="7"/>
                             <plug/>
                         </plugs>
-                        <structRect l="204" r="276" t="48" b="72"/>
+                        <structRect l="588" r="588" t="24" b="24"/>
+                    </module>
+                    <module type="IO Mod" handle="858866545">
+                        <plugs>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="20" t="20" b="20"/>
                     </module>
                 </modules>
                 <lines>
-                    <line type="Line" handle="1790400428" lineType="1" fMod="292365558" tMod="406376320" fPlg="2"/>
+                    <line type="Line" handle="901263247" lineType="1" fMod="974481964" tMod="1175188360" fPlg="2"/>
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
                 <PanelLocation l="30" r="530" t="30" b="330"/>
-                <StructLocation l="557" r="873" t="41" b="446"/>
+                <StructLocation l="0" r="672" t="0" b="444"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
                 <panel_rect l="16" r="312" t="16" b="216"/>
             </module>
+            <module type="SE Midi Monitor" handle="1196691104">
+                <structRect l="264" r="504" t="336" b="444"/>
+                <panelRect l="384" r="384" t="216" b="216"/>
+            </module>
+            <module type="DeleteDoubles" handle="196088507">
+                <structRect l="156" r="228" t="300" b="324"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
             <module type="SE Midi Monitor" handle="949064379">
-                <structRect l="252" r="492" t="120" b="228"/>
+                <structRect l="240" r="480" t="120" b="276"/>
                 <panelRect l="336" r="336" t="224" b="224"/>
             </module>
             <module type="Sound Out" handle="1317719443">
@@ -113,13 +126,17 @@
             </module>
         </modules>
         <lines>
-            <line type="Line" handle="1639642149" lineType="1" fMod="1987726402" tMod="949064379" fPlg="7" tPlg="1"/>
-            <line type="Line" handle="313660531" lineType="1" fMod="1987726402" tMod="196088507" fPlg="7"/>
             <line type="Line" handle="947780551" lineType="1" fMod="196088507" tMod="1196691104" fPlg="1" tPlg="1"/>
+            <line type="Line" handle="53050406" lineType="1" fMod="1117291193" tMod="196088507" fPlg="7"/>
+            <line type="Line" handle="1457714608" lineType="1" fMod="1117291193" tMod="1952567121" fPlg="7"/>
+            <line type="Line" handle="1835777441" lineType="1" fMod="1117291193" tMod="949064379" fPlg="7" tPlg="1"/>
+            <line type="Line" handle="1279991321" lineType="1" fMod="1180538206" tMod="1993492464" fPlg="1" tPlg="1"/>
+            <line type="Line" handle="1331548376" lineType="1" fMod="1947850862" tMod="1360383802" fPlg="1" tPlg="1"/>
+            <line type="Line" handle="986103186" lineType="1" fMod="1180538206" tMod="1947850862" fPlg="1"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="532" t="0" b="954"/>
+        <StructLocation l="0" r="940" t="0" b="832"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
@@ -149,6 +166,24 @@
         <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
             <Audio>
                 <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="MIDI In" class="2" name="MIDI In" flags="384" category="MIDI">
+            <Parameters>
+                <Parameter id="0" datatype="int" name="" persistant="false"/>
+            </Parameters>
+            <Audio>
+                <Pin name="MIDI Data" datatype="midi" direction="out"/>
+                <Pin name="Activity" datatype="int" direction="out" private="true" parameterId="0"/>
+                <Pin name="MPE Mode" datatype="bool"/>
+            </Audio>
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Activity" datatype="int" private="true" parameterId="0"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="MIDI Out" class="1" name="MIDI Out" flags="4352" category="MIDI">
+            <Audio>
+                <Pin name="MIDI In" datatype="midi"/>
             </Audio>
         </Plugin>
         <Plugin id="SE Keyboard2" name="Keyboard (CV)" flags="480" category="Controls" helpUrl="Keyboard2.html" polyphonicSource="true" polyphonic="true" cloned="true">

@@ -14,13 +14,84 @@
                     </patch-list>
                 </param>
                 <param type="1" handle="492039649" ignorePC="true" stateful="false" module="1786562125" moduleParamId="0"/>
+                <param type="10" handle="965820016" ignorePC="true" stateful="false" module="2012749290" moduleParamId="0"/>
                 <param type="1" handle="1154057746" shortName="Clicked" ignorePC="true" private="true" stateful="false" module="1666146633" moduleParamId="0"/>
+                <param type="10" handle="1375499613" ignorePC="true" stateful="false" module="2012749290" moduleParamId="1"/>
                 <param type="10" handle="1380443161" ignorePC="true" stateful="false" module="1567031902" moduleParamId="0"/>
             </Parameters>
         </PatchManager>
         <modules>
+            <module type="SE BlobToText GUI" handle="507025491">
+                <structRect l="372" r="444" t="72" b="96"/>
+                <panelRect l="264" r="264" t="184" b="184"/>
+            </module>
+            <module type="Container" handle="1903834849" name="ShowText" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Text" datatype="1" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="492" r="612" t="108" b="168"/>
+                <modules>
+                    <module type="SE Text Entry4" handle="123174026">
+                        <structRect l="240" r="348" t="24" b="156"/>
+                        <panelRect l="104" r="204" t="144" b="164"/>
+                    </module>
+                    <module type="IO Mod" handle="1160162452">
+                        <plugs>
+                            <plug/>
+                        </plugs>
+                        <structRect l="468" r="468" t="24" b="24"/>
+                    </module>
+                    <module type="IO Mod" handle="2094210973">
+                        <plugs>
+                            <plug name="Text" direction="1" datatype="1" tiedtomod="1903834849" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="20" t="20" b="20"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="596806361" lineType="1" fMod="2094210973" tMod="123174026"/>
+                </lines>
+                <PanelWndPosition l="176" r="484" t="184" b="444"/>
+                <PanelLocation l="30" r="640" t="30" b="532"/>
+                <StructLocation l="0" r="552" t="0" b="400"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="72" cy="40"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="SE TextToBlob GUI" handle="728426820">
+                <structRect l="504" r="576" t="192" b="216"/>
+                <panelRect l="240" r="240" t="168" b="168"/>
+            </module>
+            <module type="TextAppendGui" handle="1210140479">
+                <plugs>
+                    <plug id="2" idx="2"/>
+                    <plug id="3"/>
+                    <plug id="4"/>
+                </plugs>
+                <structRect l="360" r="432" t="504" b="564"/>
+                <panelRect l="256" r="256" t="160" b="160"/>
+            </module>
+            <module type="SE:GUIFixedValues_text" handle="1912656193">
+                <plugs>
+                    <plug name="Text In" default="1F "/>
+                    <plug name="Text In" default="44 " id="1"/>
+                    <plug name="Text In" default="3f" id="2"/>
+                    <plug id="3"/>
+                </plugs>
+                <structRect l="240" r="300" t="516" b="564"/>
+                <panelRect l="280" r="280" t="120" b="120"/>
+            </module>
+            <module type="MidiToBlobs" handle="2012749290">
+                <structRect l="216" r="288" t="240" b="276"/>
+                <panelRect l="264" r="264" t="152" b="152"/>
+            </module>
             <module type="SE BlobToText GUI" handle="1646798108">
-                <structRect l="324" r="396" t="264" b="288"/>
+                <structRect l="336" r="408" t="240" b="264"/>
                 <panelRect l="224" r="224" t="128" b="128"/>
             </module>
             <module type="Container" handle="447028592" name="ShowText" skin="default2">
@@ -30,7 +101,7 @@
                     <plug name="Text" datatype="1" idx="7"/>
                     <plug/>
                 </plugs>
-                <structRect l="300" r="420" t="324" b="384"/>
+                <structRect l="444" r="564" t="600" b="660"/>
                 <modules>
                     <module type="SE Text Entry4" handle="1373837897">
                         <structRect l="240" r="348" t="24" b="156"/>
@@ -68,15 +139,19 @@
                 <structRect l="660" r="708" t="60" b="72"/>
             </module>
             <module type="SE Midi Monitor" handle="1786562125">
-                <structRect l="948" r="1140" t="336" b="504"/>
+                <structRect l="1020" r="1212" t="348" b="516"/>
                 <panelRect l="272" r="272" t="176" b="176"/>
             </module>
             <module type="DAM_DSP Midi2 Key Guitar" handle="492151607">
+                <plugs>
+                    <plug default="0" idx="3"/>
+                    <plug default="0" idx="5"/>
+                </plugs>
                 <structRect l="216" r="288" t="48" b="108"/>
                 <panelRect l="0" r="0" t="0" b="0"/>
             </module>
             <module type="DAM_DSP Midi2 Guitar" handle="773011769">
-                <structRect l="948" r="1056" t="96" b="204"/>
+                <structRect l="1032" r="1140" t="96" b="204"/>
                 <panelRect l="0" r="0" t="0" b="0"/>
             </module>
             <module type="DAM_DSP Midi2 Key Capture" handle="1567031902">
@@ -87,23 +162,38 @@
                 <panelRect l="240" r="240" t="168" b="168"/>
             </module>
             <module type="SE Keyboard (MIDI)" handle="523657052">
+                <plugs>
+                    <plug default="1"/>
+                </plugs>
                 <structRect l="24" r="288" t="348" b="444"/>
                 <panelRect l="256" r="256" t="160" b="160"/>
             </module>
             <module type="DAM_DSP Midi2 Fretboard Layers" handle="1666146633">
-                <structRect l="480" r="804" t="180" b="612"/>
+                <plugs>
+                    <plug default="1" idx="3"/>
+                    <plug default="0" idx="12"/>
+                </plugs>
+                <structRect l="636" r="960" t="216" b="648"/>
                 <panelRect l="264" r="264" t="152" b="152"/>
             </module>
         </modules>
         <lines>
-            <line type="Line" handle="1896675920" lineType="1" fMod="1567031902" tMod="1666146633" fPlg="1" tPlg="1"/>
             <line type="Line" handle="2007489885" lineType="1" fMod="1666146633" tMod="773011769" fPlg="32"/>
             <line type="Line" handle="1186118383" lineType="1" fMod="523657052" tMod="492151607" fPlg="1"/>
             <line type="Line" handle="1058953126" lineType="1" fMod="492151607" tMod="1567031902" fPlg="7" tPlg="2"/>
             <line type="Line" handle="173095605" lineType="1" fMod="492151607" tMod="773011769" fPlg="7"/>
             <line type="Line" handle="76761059" lineType="1" fMod="773011769" tMod="1786562125" fPlg="8" tPlg="1"/>
-            <line type="Line" handle="1336793916" lineType="1" fMod="1567031902" tMod="1646798108" fPlg="1"/>
-            <line type="Line" handle="790494180" lineType="1" fMod="1646798108" tMod="447028592" fPlg="1" tPlg="7"/>
+            <line type="Line" handle="842421177" lineType="1" fMod="523657052" tMod="2012749290" fPlg="1" tPlg="4"/>
+            <line type="Line" handle="1909779022" lineType="1" fMod="2012749290" tMod="1646798108" fPlg="2"/>
+            <line type="Line" handle="988379762" lineType="1" fMod="1912656193" tMod="1210140479" tPlg="1"/>
+            <line type="Line" handle="1818312931" lineType="1" fMod="1210140479" tMod="447028592" tPlg="7"/>
+            <line type="Line" handle="1787145367" lineType="1" fMod="1912656193" tMod="1210140479" fPlg="1" tPlg="2"/>
+            <line type="Line" handle="1141275889" lineType="1" fMod="1210140479" tMod="728426820"/>
+            <line type="Line" handle="1130441428" lineType="1" fMod="728426820" tMod="1666146633" fPlg="1" tPlg="1"/>
+            <line type="Line" handle="1498674150" lineType="1" fMod="2012749290" tMod="507025491" fPlg="3"/>
+            <line type="Line" handle="218278161" lineType="1" fMod="507025491" tMod="1903834849" fPlg="1" tPlg="7"/>
+            <line type="Line" handle="950337449" lineType="1" fMod="2012749290" tMod="1666146633" fPlg="3" tPlg="2"/>
+            <line type="Line" handle="1720660066" lineType="1" fMod="1912656193" tMod="1210140479" fPlg="2" tPlg="3"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
@@ -214,6 +304,23 @@
                 <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
             </Audio>
         </Plugin>
+        <Plugin id="MidiToBlobs" name="Midi To Blobs" flags="384" category="mx/MIDI">
+            <Parameters>
+                <Parameter id="0" datatype="blob" name="" ignorePatchChange="true" persistant="false"/>
+                <Parameter id="1" datatype="blob" name="" ignorePatchChange="true" persistant="false"/>
+            </Parameters>
+            <Audio>
+                <Pin name="MIDI In" datatype="midi"/>
+                <Pin name="PinX" datatype="blob" direction="out" private="true" autoConfigureParameter="true" parameterId="0"/>
+                <Pin name="PinY" datatype="blob" direction="out" private="true" autoConfigureParameter="true" parameterId="1"/>
+            </Audio>
+            <GUI>
+                <Pin name="PinX" datatype="blob" private="true" parameterId="0"/>
+                <Pin name="PinY" datatype="blob" private="true" parameterId="1"/>
+                <Pin name="PinX" datatype="blob" direction="out"/>
+                <Pin name="PinY" datatype="blob" direction="out"/>
+            </GUI>
+        </Plugin>
         <Plugin id="SE BlobToText GUI" name="Blob to Text" flags="384" category="Sub-Controls/Conversion" helpUrl="converters.htm">
             <GUI>
                 <Pin name="Value In" datatype="blob"/>
@@ -253,10 +360,27 @@
                 <Pin name="Mouse Down" datatype="bool"/>
             </GUI>
         </Plugin>
+        <Plugin id="SE TextToBlob GUI" name="Text to Blob" flags="384" category="Sub-Controls/Conversion" helpUrl="converters.htm">
+            <GUI>
+                <Pin name="Value In" datatype="string"/>
+                <Pin name="Value Out" datatype="blob" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE:GUIFixedValues_text" name="Fixed Values (text)" flags="384" category="Experimental/Sub-Controls/Conversion">
+            <GUI>
+                <Pin name="Val" datatype="string" direction="out" autoRename="true" settableOutput="true" autoDuplicate="true"/>
+            </GUI>
+        </Plugin>
         <Plugin id="Sound Out" class="1" name="Sound Out" flags="4352" category="Input-Output">
             <Audio>
                 <Pin name="Out" datatype="float" rate="audio" autoRename="true" linearInput="true" autoDuplicate="true"/>
             </Audio>
+        </Plugin>
+        <Plugin id="TextAppendGui" name="Text Append Gui" flags="384" category="mx/Sub-Controls">
+            <GUI>
+                <Pin name="Text Out" datatype="string" direction="out"/>
+                <Pin name="Text In" datatype="string" autoDuplicate="true"/>
+            </GUI>
         </Plugin>
     </PluginList>
 </Document>
