@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+    <master_container type="Container" handle="1940268012" name="Main" ViewOpenFlags="256" skin="default2">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="6" handle="286353891" shortName="Scaled" module="1996986437" moduleParamId="0">
+                    <patch-list>
+                        <s>1.50001</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="449679767" shortName="Scaled" module="336294640" moduleParamId="0">
+                    <patch-list>
+                        <s>8.4</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="472910641" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="516723751" shortName="Brightness" module="933229040" moduleParamId="0">
+                    <patch-list>
+                        <s>7.15</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="801756939" shortName="Brightness" module="1416828188" moduleParamId="0">
+                    <patch-list>
+                        <s>6.55</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1366817692" shortName="Opacity" module="1587532028" moduleParamId="0">
+                    <patch-list>
+                        <s>10</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="1383920369" shortName="Color" module="1996986437" moduleParamId="1">
+                    <patch-list>
+                        <s>ffe600</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="1874812628" shortName="Color" module="336294640" moduleParamId="1">
+                    <patch-list>
+                        <s>ff00f6</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1900113065" shortName="Opacity" module="653035261" moduleParamId="0">
+                    <patch-list>
+                        <s>10</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="Container" handle="1897108263" name="" ViewOpenFlags="256" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Hex Out" direction="1" datatype="1" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="24" r="372" t="276" b="416"/>
+                <modules>
+                    <module type="AnimPos to Hex" handle="1996986437">
+                        <structRect l="36" r="156" t="48" b="84"/>
+                        <panelRect l="336" r="336" t="376" b="376"/>
+                    </module>
+                    <module type="Brightness" handle="134526721">
+                        <plugs>
+                            <plug default="0.6" idx="2"/>
+                        </plugs>
+                        <structRect l="48" r="132" t="156" b="204"/>
+                        <panelRect l="400" r="400" t="344" b="344"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="933229040" name="Brightness">
+                        <structRect l="24" r="144" t="588" b="672"/>
+                        <panelRect l="272" r="272" t="136" b="136"/>
+                    </module>
+                    <module type="SE Vector Knob2" handle="952064040">
+                        <plugs>
+                            <plug default="FF005577" idx="5"/>
+                        </plugs>
+                        <structRect l="192" r="312" t="600" b="768"/>
+                        <panelRect l="264" r="364" t="64" b="164"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1587532028" name="Opacity">
+                        <structRect l="24" r="144" t="324" b="408"/>
+                        <panelRect l="232" r="232" t="144" b="144"/>
+                    </module>
+                    <module type="SE Vector Knob2" handle="1751439244">
+                        <plugs>
+                            <plug default="FF005566" idx="5"/>
+                        </plugs>
+                        <structRect l="192" r="312" t="360" b="528"/>
+                        <panelRect l="152" r="252" t="64" b="164"/>
+                    </module>
+                    <module type="Brightness" handle="444090476">
+                        <structRect l="336" r="420" t="48" b="96"/>
+                        <panelRect l="304" r="304" t="264" b="264"/>
+                    </module>
+                    <module type="SE Vector Knob2" handle="229876693">
+                        <plugs>
+                            <plug default="ff005555" idx="5"/>
+                        </plugs>
+                        <structRect l="192" r="312" t="108" b="276"/>
+                        <panelRect l="40" r="140" t="64" b="164"/>
+                    </module>
+                    <module type="IO Mod" handle="1485861826">
+                        <plugs>
+                            <plug name="Hex Out" default="FF9A9AAA" datatype="1" tiedtomod="1897108263" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="348" r="420" t="168" b="192"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1608969800" lineType="1" fMod="134526721" tMod="229876693" fPlg="3" tPlg="5"/>
+                    <line type="Line" handle="943982648" lineType="1" fMod="1587532028" tMod="1751439244" fPlg="6" tPlg="1"/>
+                    <line type="Line" handle="1867050407" lineType="1" fMod="933229040" tMod="952064040" fPlg="6" tPlg="1"/>
+                    <line type="Line" handle="2088442168" lineType="1" fMod="933229040" tMod="444090476" fPlg="8" tPlg="2"/>
+                    <line type="Line" handle="587018866" lineType="1" fMod="1587532028" tMod="444090476" fPlg="8" tPlg="1"/>
+                    <line type="Line" handle="1155634278" lineType="1" fMod="933229040" tMod="952064040" fPlg="8"/>
+                    <line type="Line" handle="911362063" lineType="1" fMod="1587532028" tMod="1751439244" fPlg="8"/>
+                    <line type="Line" handle="265301244" lineType="1" fMod="444090476" tMod="1485861826" fPlg="3"/>
+                    <line type="Line" handle="1446324770" lineType="1" fMod="1996986437" tMod="229876693" fPlg="3"/>
+                    <line type="Line" handle="849608700" lineType="1" fMod="1996986437" tMod="444090476" fPlg="5"/>
+                    <line type="Line" handle="526873165" lineType="1" fMod="1996986437" tMod="134526721" fPlg="5"/>
+                </lines>
+                <PanelWndPosition l="136" r="136" t="128" b="128"/>
+                <PanelLocation l="30" r="756" t="30" b="721"/>
+                <StructLocation l="882" r="1390" t="11" b="899"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="400" t="16" b="216"/>
+            </module>
+            <module type="Container" handle="542878924" name="" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Hex Out" direction="1" datatype="1" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="24" r="372" t="36" b="176"/>
+                <modules>
+                    <module type="Brightness" handle="1215702851">
+                        <plugs>
+                            <plug default="0.6" idx="2"/>
+                        </plugs>
+                        <structRect l="120" r="204" t="144" b="192"/>
+                        <panelRect l="400" r="400" t="344" b="344"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1416828188" name="Brightness">
+                        <structRect l="60" r="180" t="588" b="672"/>
+                        <panelRect l="272" r="272" t="136" b="136"/>
+                    </module>
+                    <module type="SE Vector Knob2" handle="1597506984">
+                        <plugs>
+                            <plug default="FF005577" idx="5"/>
+                        </plugs>
+                        <structRect l="228" r="348" t="600" b="768"/>
+                        <panelRect l="264" r="364" t="64" b="164"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="653035261" name="Opacity">
+                        <structRect l="60" r="180" t="324" b="408"/>
+                        <panelRect l="232" r="232" t="144" b="144"/>
+                    </module>
+                    <module type="SE Vector Knob2" handle="1819264192">
+                        <plugs>
+                            <plug default="FF005566" idx="5"/>
+                        </plugs>
+                        <structRect l="228" r="348" t="360" b="528"/>
+                        <panelRect l="152" r="252" t="64" b="164"/>
+                    </module>
+                    <module type="Brightness" handle="1971997961">
+                        <structRect l="396" r="480" t="276" b="324"/>
+                        <panelRect l="304" r="304" t="264" b="264"/>
+                    </module>
+                    <module type="AnimPos to Hex" handle="336294640">
+                        <structRect l="36" r="156" t="36" b="72"/>
+                        <panelRect l="312" r="312" t="232" b="232"/>
+                    </module>
+                    <module type="SE Vector Knob2" handle="94900021">
+                        <plugs>
+                            <plug default="ff005555" idx="5"/>
+                        </plugs>
+                        <structRect l="228" r="348" t="108" b="276"/>
+                        <panelRect l="40" r="140" t="64" b="164"/>
+                    </module>
+                    <module type="IO Mod" handle="1065370028">
+                        <plugs>
+                            <plug name="Hex Out" default="FF9A9AAA" datatype="1" tiedtomod="542878924" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="396" r="468" t="408" b="432"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1336299911" lineType="1" fMod="336294640" tMod="1971997961" fPlg="5"/>
+                    <line type="Line" handle="478527479" lineType="1" fMod="1971997961" tMod="1065370028" fPlg="3"/>
+                    <line type="Line" handle="1331197245" lineType="1" fMod="653035261" tMod="1819264192" fPlg="8"/>
+                    <line type="Line" handle="1806399882" lineType="1" fMod="1416828188" tMod="1597506984" fPlg="8"/>
+                    <line type="Line" handle="302701234" lineType="1" fMod="653035261" tMod="1971997961" fPlg="8" tPlg="1"/>
+                    <line type="Line" handle="212532226" lineType="1" fMod="1416828188" tMod="1971997961" fPlg="8" tPlg="2"/>
+                    <line type="Line" handle="1520449754" lineType="1" fMod="1416828188" tMod="1597506984" fPlg="6" tPlg="1"/>
+                    <line type="Line" handle="1228955462" lineType="1" fMod="653035261" tMod="1819264192" fPlg="6" tPlg="1"/>
+                    <line type="Line" handle="1054182699" lineType="1" fMod="336294640" tMod="1215702851" fPlg="5"/>
+                    <line type="Line" handle="1828047764" lineType="1" fMod="1215702851" tMod="94900021" fPlg="3" tPlg="5"/>
+                    <line type="Line" handle="45716294" lineType="1" fMod="336294640" tMod="94900021" fPlg="3"/>
+                </lines>
+                <PanelWndPosition l="0" r="0" t="0" b="0"/>
+                <PanelLocation l="30" r="756" t="30" b="721"/>
+                <StructLocation l="63" r="633" t="53" b="917"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="400" t="16" b="216"/>
+            </module>
+            <module type="SE Rectangle XP" handle="566698942">
+                <structRect l="432" r="732" t="168" b="408"/>
+                <panelRect l="264" r="264" t="160" b="160"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="1556724998" lineType="1" fMod="542878924" tMod="566698942" fPlg="7" tPlg="5"/>
+            <line type="Line" handle="1896284510" lineType="1" fMod="1897108263" tMod="566698942" fPlg="7" tPlg="6"/>
+        </lines>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="30" r="530" t="30" b="330"/>
+        <StructLocation l="9" r="820" t="12" b="575"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="312" t="16" b="216"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="AnimPos to Hex" name="AnimPos to Hex" flags="384" category="mx/Sub-Controls/Conversion">
+            <Parameters>
+                <Parameter id="0" datatype="float" name=""/>
+                <Parameter id="1" datatype="string" name=""/>
+            </Parameters>
+            <GUI>
+                <Pin name="Scale In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Scaled" datatype="float" direction="out"/>
+                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="HexIn" datatype="string" private="true" parameterId="1"/>
+                <Pin name="Hex" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Brightness" name="Brightness" flags="384" category="mx/Sub-Controls">
+            <GUI>
+                <Pin name="Hex In" datatype="string"/>
+                <Pin name="Opacity" datatype="float" default="1"/>
+                <Pin name="Brightness" datatype="float" default="1"/>
+                <Pin name="Hex Out" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE PatchMemory Float" name="PatchMemory Float3" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="float" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="float" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="float" direction="out"/>
+                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Rectangle XP" name="Rectangle" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Corner Radius" datatype="float" default="10" isMinimised="true"/>
+                <Pin name="Top Left" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Top Right" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Bottom Left" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Bottom Right" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Top Color" datatype="string" default="FF9A9AAA"/>
+                <Pin name="Bottom Color" datatype="string" default="FF858595"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Vector Knob2" name="Vector Knob B" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Background" datatype="string" default="FF000000"/>
+                <Pin name="Forground" datatype="string" default="FFFFFFFF"/>
+                <Pin name="Read-only" datatype="bool" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+    </PluginList>
+</Document>
