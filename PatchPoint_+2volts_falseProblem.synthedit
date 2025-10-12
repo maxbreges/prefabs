@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" OpenComment="Problems with Patch Point 
+
+by Fernando Tanzo
+
+OP
+
+ — 09/10/2025, 09:33
+ &quot;
+Hello, everyone. I have a serious problem with Patch Points. When Pitch is connected to (Patch Point In), the signal passes stably in accordance with the pressed note. But at the output, there is a shift to +2 V for any oscillator. This indicates a serious problem. Does anyone know if there is an analogue of this module?&quot;
+
+
+
+I don&apos;t see the shift Fernando Tanzo mentions." AutoPlay="true" autoplay="true" vst_preset_count="64">
+    <master_container type="Container" handle="1991176922" name="Main" ViewOpenFlags="256" skin="default2">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="10" handle="247519964" shortName="Capture Data A" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="1636543286" moduleParamId="0"/>
+                <param type="10" handle="506973859" shortName="Capture Data A" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="2013212724" moduleParamId="0"/>
+                <param type="8" handle="985273545" shortName="ReserveVoices" ignorePC="true" private="true" module="1991176922" hostControl="22" RangeMaximum="128">
+                    <patch-list>
+                        <s>3</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1059993177" shortName="Polyphony" ignorePC="true" private="true" module="1991176922" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>6</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="1175613083" private="true" hostControl="49">
+                    <patch-list>
+                        <s>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPENhYmxlcz4KICAgIDxDYWJsZSBmbT0iNzYzNzU3NTE4IiB0bT0iMTQ4NzM4MzMyOSIgZnA9IjEiIHRwPSIwIiBjPSIxIi8+CjwvQ2FibGVzPgoA</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="1558990224" shortName="Capture Data B" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="2013212724" moduleParamId="1"/>
+                <param type="10" handle="1584653983" shortName="Capture Data B" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="1636543286" moduleParamId="1"/>
+                <param type="4" handle="1612390900" shortName="polyDetect" ignorePC="true" private="true" stateful="false" module="1636543286" moduleParamId="2"/>
+                <param type="4" handle="1895144530" shortName="polyDetect" ignorePC="true" private="true" stateful="false" module="2013212724" moduleParamId="2"/>
+                <param type="8" handle="1966444233" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1991176922" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>768</s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="SE Scope3 XP" handle="2013212724">
+                <structRect l="576" r="816" t="348" b="516"/>
+                <panelRect l="304" r="304" t="184" b="184"/>
+            </module>
+            <module type="Sound Out" handle="1084685604">
+                <plugs>
+                    <plug/>
+                </plugs>
+                <structRect l="108" r="156" t="60" b="72"/>
+            </module>
+            <module type="SE Scope3 XP" handle="1636543286">
+                <structRect l="492" r="732" t="120" b="288"/>
+                <panelRect l="240" r="240" t="136" b="136"/>
+            </module>
+            <module type="SE Keyboard2" handle="601434217">
+                <structRect l="36" r="252" t="156" b="360"/>
+                <panelRect l="240" r="240" t="168" b="168"/>
+            </module>
+            <module type="SE Patch Point in" handle="1487383329">
+                <structRect l="420" r="480" t="360" b="396"/>
+                <panelRect l="280" r="280" t="120" b="120"/>
+            </module>
+            <module type="SE Patch Point out" handle="763757518">
+                <structRect l="336" r="396" t="264" b="300"/>
+                <panelRect l="264" r="264" t="152" b="152"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="662639224" lineType="1" fMod="601434217" tMod="763757518" fPlg="14"/>
+            <line type="Line" handle="471315679" lineType="1" fMod="601434217" tMod="1636543286" fPlg="14" tPlg="6"/>
+            <line type="Line" handle="1861406160" lineType="1" fMod="1487383329" tMod="2013212724" fPlg="1" tPlg="6"/>
+        </lines>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="30" r="530" t="30" b="330"/>
+        <StructLocation l="0" r="1083" t="0" b="762"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="312" t="16" b="216"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Keyboard2" name="Keyboard (CV)" flags="480" category="Controls" helpUrl="Keyboard2.html" polyphonicSource="true" polyphonic="true" cloned="true">
+            <Audio>
+                <Pin name="PitchX" datatype="float" private="true" hostConnect="Voice/Pitch"/>
+                <Pin name="TriggerX" datatype="float" private="true" hostConnect="Voice/Trigger"/>
+                <Pin name="GateX" datatype="float" private="true" hostConnect="Voice/Gate"/>
+                <Pin name="VelocityKeyOnX" datatype="float" private="true" hostConnect="Voice/VelocityKeyOn"/>
+                <Pin name="VelocityKeyOffX" datatype="float" private="true" hostConnect="Voice/VelocityKeyOff"/>
+                <Pin name="AftertouchX" datatype="float" private="true" hostConnect="Voice/Aftertouch"/>
+                <Pin name="Unused" datatype="int" private="true"/>
+                <Pin name="VoiceReset" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Active"/>
+                <Pin name="Bender" datatype="float" private="true" hostConnect="Bender"/>
+                <Pin name="Glide Type" datatype="enum" metadata="Constant Time,Constant Rate"/>
+                <Pin name="Glide Rate" datatype="float" rate="audio"/>
+                <Pin name="Bend Range" datatype="float" rate="audio" default="0.2"/>
+                <Pin name="Pitch" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Trigger" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Gate" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Velocity" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Aftertouch" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Raw Pitch" datatype="float" direction="out"/>
+                <Pin name="Raw Velocity-On" datatype="float" direction="out"/>
+                <Pin name="Raw Velocity-Off" datatype="float" direction="out"/>
+                <Pin name="HoldPedal" datatype="float" private="true" hostConnect="HoldPedal"/>
+            </Audio>
+            <GUI graphicsApi="GmpiGui">
+                <Pin id="2" name="Gate" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Gate"/>
+                <Pin name="Velocity" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/VelocityKeyOn"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Patch Point in" class="2" name="Patch Point&lt;-" flags="384" category="Flow Control" simdOverwritesBufferEnd="true">
+            <Audio>
+                <Pin name="Input" datatype="float" rate="audio" linearInput="true" isMinimised="true"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+            <GUI graphicsApi="GmpiGui"/>
+            <PatchPoints>
+                <PatchPoint pinId="0" center="10,10" radius="5"/>
+            </PatchPoints>
+        </Plugin>
+        <Plugin id="SE Patch Point out" class="2" name="Patch Point-&gt;" flags="384" category="Flow Control" simdOverwritesBufferEnd="true">
+            <Audio>
+                <Pin name="Input" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out" isMinimised="true"/>
+            </Audio>
+            <GUI graphicsApi="GmpiGui"/>
+            <PatchPoints>
+                <PatchPoint pinId="1" center="10,10" radius="5"/>
+            </PatchPoints>
+        </Plugin>
+        <Plugin id="SE Scope3 XP" name="Scope3" flags="384" category="Controls">
+            <Parameters>
+                <Parameter id="0" datatype="blob" name="Capture Data A" private="true" ignorePatchChange="true" isPolyphonic="true" persistant="false"/>
+                <Parameter id="1" datatype="blob" name="Capture Data B" private="true" ignorePatchChange="true" isPolyphonic="true" persistant="false"/>
+                <Parameter id="2" datatype="bool" name="polyDetect" private="true" ignorePatchChange="true" persistant="false"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Capture Data A" datatype="blob" direction="out" private="true" isPolyphonic="true" parameterId="0"/>
+                <Pin name="Capture Data B" datatype="blob" direction="out" private="true" isPolyphonic="true" parameterId="1"/>
+                <Pin name="Signal A" datatype="float" rate="audio"/>
+                <Pin name="Signal B" datatype="float" rate="audio"/>
+                <Pin name="VoiceActive" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Active"/>
+                <Pin name="polydetect" datatype="bool" direction="out" private="true" parameterId="2"/>
+            </Audio>
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Capture Data A" datatype="blob" private="true" isPolyphonic="true" parameterId="0"/>
+                <Pin name="Capture Data B" datatype="blob" private="true" isPolyphonic="true" parameterId="1"/>
+                <Pin id="3" name="VoiceGate" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Gate"/>
+                <Pin name="polydetect" datatype="bool" private="true" parameterId="2"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Sound Out" class="1" name="Sound Out" flags="4352" category="Input-Output">
+            <Audio>
+                <Pin name="Out" datatype="float" rate="audio" autoRename="true" linearInput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+    </PluginList>
+</Document>
