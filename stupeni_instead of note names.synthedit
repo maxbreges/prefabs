@@ -176,7 +176,7 @@
                 <structRect l="780" r="852" t="528" b="564"/>
                 <panelRect l="224" r="224" t="176" b="176"/>
             </module>
-            <module type="TextX" handle="1174805360">
+            <module type="TextX" handle="1174805360" name="scale degree">
                 <plugs>
                     <plug default="heading 1" idx="4"/>
                 </plugs>
