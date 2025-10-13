@@ -35,9 +35,24 @@
                 <PatchManager>
                     <ProgramNames/>
                     <Parameters>
+                        <param type="8" handle="24084801" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1636850011" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                            <patch-list>
+                                <s>768</s>
+                            </patch-list>
+                        </param>
+                        <param type="8" handle="35413003" shortName="ReserveVoices" ignorePC="true" private="true" module="1636850011" hostControl="22" RangeMaximum="128">
+                            <patch-list>
+                                <s>3</s>
+                            </patch-list>
+                        </param>
                         <param type="6" handle="872951998" shortName="Start/Stop" ignorePC="true" automation="33554489" private="true" module="1665870332" moduleParamId="0">
                             <patch-list>
                                 <s>0</s>
+                            </patch-list>
+                        </param>
+                        <param type="8" handle="1375660847" shortName="Polyphony" ignorePC="true" private="true" module="1636850011" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                            <patch-list>
+                                <s>6</s>
                             </patch-list>
                         </param>
                         <param type="1" handle="1675928185" shortName="Midi Monitor Out" ignorePC="true" private="true" stateful="false" module="612968610" moduleParamId="0"/>
@@ -142,12 +157,27 @@
                         <param type="1" handle="306544923" shortName="Midi Monitor Out" ignorePC="true" private="true" stateful="false" module="1067650303" moduleParamId="0"/>
                         <param type="6" handle="894955661" shortName="Start/Stop" ignorePC="true" automation="33554489" private="true" vstParameterNumber="0" module="797200274" moduleParamId="0">
                             <patch-list>
-                                <s>0</s>
+                                <s>10</s>
                             </patch-list>
                         </param>
                         <param type="10" handle="1184580303" shortName="PatchAutomatorVST" ignorePC="true" private="true" hostControl="49">
                             <patch-list>
                                 <s></s>
+                            </patch-list>
+                        </param>
+                        <param type="8" handle="1391437389" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="271228139" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                            <patch-list>
+                                <s>768</s>
+                            </patch-list>
+                        </param>
+                        <param type="8" handle="1641962228" shortName="Polyphony" ignorePC="true" private="true" module="271228139" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                            <patch-list>
+                                <s>6</s>
+                            </patch-list>
+                        </param>
+                        <param type="8" handle="1979747959" shortName="ReserveVoices" ignorePC="true" private="true" module="271228139" hostControl="22" RangeMaximum="128">
+                            <patch-list>
+                                <s>3</s>
                             </patch-list>
                         </param>
                     </Parameters>
