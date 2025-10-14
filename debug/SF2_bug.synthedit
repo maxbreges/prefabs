@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Jeff McClintock" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
+    <master_container type="Container" handle="752657050" name="Main" ViewOpenFlags="256" skin="default2">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="10" handle="380120604" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="2100381878" stateful="false" module="1771796940" moduleParamId="0"/>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="MIDI In" handle="1771796940">
+                <structRect l="60" r="144" t="72" b="114"/>
+                <panelRect l="96" r="96" t="48" b="48"/>
+            </module>
+            <module type="Sound Out" handle="1837690005">
+                <plugs>
+                    <plug name="Left"/>
+                    <plug name="Right"/>
+                    <plug/>
+                </plugs>
+                <structRect l="732" r="792" t="72" b="108"/>
+            </module>
+            <module type="Container" handle="14543" name="Sample Oscilator Example" ViewOpenFlags="384" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Output" direction="1" idx="7"/>
+                    <plug name="Output" direction="1"/>
+                    <plug name="MIDI In" datatype="2"/>
+                    <plug/>
+                </plugs>
+                <structRect l="264" r="672" t="60" b="342"/>
+                <PatchManager>
+                    <ProgramNames>
+                        <Name idx="1" text="(Copy 1) Patch   1"/>
+                        <Name idx="2" text="(Copy 2) Patch   1"/>
+                        <Name idx="3" text="(Copy 3) Patch   1"/>
+                        <Name idx="4" text="(Copy 4) Patch   1"/>
+                        <Name idx="5" text="(Copy 5) Patch   1"/>
+                        <Name idx="6" text="(Copy 6) Patch   1"/>
+                        <Name idx="7" text="(Copy 7) Patch   1"/>
+                        <Name idx="8" text="(Copy 8) Patch   1"/>
+                        <Name idx="9" text="(Copy 9) Patch   1"/>
+                        <Name idx="10" text="(Copy 10) Patch   1"/>
+                        <Name idx="11" text="(Copy 11) Patch   1"/>
+                        <Name idx="12" text="(Copy 12) Patch   1"/>
+                        <Name idx="13" text="(Copy 13) Patch   1"/>
+                        <Name idx="14" text="(Copy 14) Patch   1"/>
+                        <Name idx="15" text="(Copy 15) Patch   1"/>
+                        <Name idx="16" text="(Copy 16) Patch   1"/>
+                        <Name idx="17" text="(Copy 17) Patch   1"/>
+                        <Name idx="18" text="(Copy 18) Patch   1"/>
+                        <Name idx="19" text="(Copy 19) Patch   1"/>
+                        <Name idx="20" text="(Copy 20) Patch   1"/>
+                        <Name idx="21" text="(Copy 21) Patch   1"/>
+                        <Name idx="22" text="(Copy 22) Patch   1"/>
+                        <Name idx="23" text="(Copy 23) Patch   1"/>
+                        <Name idx="24" text="(Copy 24) Patch   1"/>
+                        <Name idx="25" text="(Copy 25) Patch   1"/>
+                        <Name idx="26" text="(Copy 26) Patch   1"/>
+                        <Name idx="27" text="(Copy 27) Patch   1"/>
+                        <Name idx="28" text="(Copy 28) Patch   1"/>
+                        <Name idx="29" text="(Copy 29) Patch   1"/>
+                        <Name idx="30" text="(Copy 30) Patch   1"/>
+                        <Name idx="31" text="(Copy 31) Patch   1"/>
+                        <Name idx="32" text="(Copy 32) Patch   1"/>
+                        <Name idx="33" text="(Copy 33) Patch   1"/>
+                        <Name idx="34" text="(Copy 34) Patch   1"/>
+                        <Name idx="35" text="(Copy 35) Patch   1"/>
+                        <Name idx="36" text="(Copy 36) Patch   1"/>
+                        <Name idx="37" text="(Copy 37) Patch   1"/>
+                        <Name idx="38" text="(Copy 38) Patch   1"/>
+                        <Name idx="39" text="(Copy 39) Patch   1"/>
+                        <Name idx="40" text="(Copy 40) Patch   1"/>
+                        <Name idx="41" text="(Copy 41) Patch   1"/>
+                        <Name idx="42" text="(Copy 42) Patch   1"/>
+                        <Name idx="43" text="(Copy 43) Patch   1"/>
+                        <Name idx="44" text="(Copy 44) Patch   1"/>
+                        <Name idx="45" text="(Copy 45) Patch   1"/>
+                        <Name idx="46" text="(Copy 46) Patch   1"/>
+                        <Name idx="47" text="(Copy 47) Patch   1"/>
+                        <Name idx="48" text="(Copy 48) Patch   1"/>
+                        <Name idx="49" text="(Copy 49) Patch   1"/>
+                        <Name idx="50" text="(Copy 50) Patch   1"/>
+                        <Name idx="51" text="(Copy 51) Patch   1"/>
+                        <Name idx="52" text="(Copy 52) Patch   1"/>
+                        <Name idx="53" text="(Copy 53) Patch   1"/>
+                        <Name idx="54" text="(Copy 54) Patch   1"/>
+                        <Name idx="55" text="(Copy 55) Patch   1"/>
+                        <Name idx="56" text="(Copy 56) Patch   1"/>
+                        <Name idx="57" text="(Copy 57) Patch   1"/>
+                        <Name idx="58" text="(Copy 58) Patch   1"/>
+                        <Name idx="59" text="(Copy 59) Patch   1"/>
+                        <Name idx="60" text="(Copy 60) Patch   1"/>
+                        <Name idx="61" text="(Copy 61) Patch   1"/>
+                        <Name idx="62" text="(Copy 62) Patch   1"/>
+                        <Name idx="63" text="(Copy 63) Patch   1"/>
+                        <Name idx="64" text="(Copy 64) Patch   1"/>
+                        <Name idx="65" text="(Copy 65) Patch   1"/>
+                        <Name idx="66" text="(Copy 66) Patch   1"/>
+                        <Name idx="67" text="(Copy 67) Patch   1"/>
+                        <Name idx="68" text="(Copy 68) Patch   1"/>
+                        <Name idx="69" text="(Copy 69) Patch   1"/>
+                        <Name idx="70" text="(Copy 70) Patch   1"/>
+                        <Name idx="71" text="(Copy 71) Patch   1"/>
+                        <Name idx="72" text="(Copy 72) Patch   1"/>
+                        <Name idx="73" text="(Copy 73) Patch   1"/>
+                        <Name idx="74" text="(Copy 74) Patch   1"/>
+                        <Name idx="75" text="(Copy 75) Patch   1"/>
+                        <Name idx="76" text="(Copy 76) Patch   1"/>
+                        <Name idx="77" text="(Copy 77) Patch   1"/>
+                        <Name idx="78" text="(Copy 78) Patch   1"/>
+                        <Name idx="79" text="(Copy 79) Patch   1"/>
+                        <Name idx="80" text="(Copy 80) Patch   1"/>
+                        <Name idx="81" text="(Copy 81) Patch   1"/>
+                        <Name idx="82" text="(Copy 82) Patch   1"/>
+                        <Name idx="83" text="(Copy 83) Patch   1"/>
+                        <Name idx="84" text="(Copy 84) Patch   1"/>
+                        <Name idx="85" text="(Copy 85) Patch   1"/>
+                        <Name idx="86" text="(Copy 86) Patch   1"/>
+                        <Name idx="87" text="(Copy 87) Patch   1"/>
+                        <Name idx="88" text="(Copy 88) Patch   1"/>
+                        <Name idx="89" text="(Copy 89) Patch   1"/>
+                        <Name idx="90" text="(Copy 90) Patch   1"/>
+                        <Name idx="91" text="(Copy 91) Patch   1"/>
+                        <Name idx="92" text="(Copy 92) Patch   1"/>
+                        <Name idx="93" text="(Copy 93) Patch   1"/>
+                        <Name idx="94" text="(Copy 94) Patch   1"/>
+                        <Name idx="95" text="(Copy 95) Patch   1"/>
+                        <Name idx="96" text="(Copy 96) Patch   1"/>
+                        <Name idx="97" text="(Copy 97) Patch   1"/>
+                        <Name idx="98" text="(Copy 98) Patch   1"/>
+                        <Name idx="99" text="(Copy 99) Patch   1"/>
+                        <Name idx="100" text="(Copy 100) Patch   1"/>
+                        <Name idx="101" text="(Copy 101) Patch   1"/>
+                        <Name idx="102" text="(Copy 102) Patch   1"/>
+                        <Name idx="103" text="(Copy 103) Patch   1"/>
+                        <Name idx="104" text="(Copy 104) Patch   1"/>
+                        <Name idx="105" text="(Copy 105) Patch   1"/>
+                        <Name idx="106" text="(Copy 106) Patch   1"/>
+                        <Name idx="107" text="(Copy 107) Patch   1"/>
+                        <Name idx="108" text="(Copy 108) Patch   1"/>
+                        <Name idx="109" text="(Copy 109) Patch   1"/>
+                        <Name idx="110" text="(Copy 110) Patch   1"/>
+                        <Name idx="111" text="(Copy 111) Patch   1"/>
+                        <Name idx="112" text="(Copy 112) Patch   1"/>
+                        <Name idx="113" text="(Copy 113) Patch   1"/>
+                        <Name idx="114" text="(Copy 114) Patch   1"/>
+                        <Name idx="115" text="(Copy 115) Patch   1"/>
+                        <Name idx="116" text="(Copy 116) Patch   1"/>
+                        <Name idx="117" text="(Copy 117) Patch   1"/>
+                        <Name idx="118" text="(Copy 118) Patch   1"/>
+                        <Name idx="119" text="(Copy 119) Patch   1"/>
+                        <Name idx="120" text="(Copy 120) Patch   1"/>
+                        <Name idx="121" text="(Copy 121) Patch   1"/>
+                        <Name idx="122" text="(Copy 122) Patch   1"/>
+                        <Name idx="123" text="(Copy 123) Patch   1"/>
+                        <Name idx="124" text="(Copy 124) Patch   1"/>
+                        <Name idx="125" text="(Copy 125) Patch   1"/>
+                        <Name idx="126" text="(Copy 126) Patch   1"/>
+                        <Name idx="127" text="(Copy 127) Patch   1"/>
+                    </ProgramNames>
+                    <Parameters>
+                        <param type="8" handle="13951" shortName="Sample Loader2 Bank" automation="-16777216" vstParameterNumber="0" module="19418" moduleParamId="0">
+                            <patch-list>
+                                <s repeat="128">0</s>
+                            </patch-list>
+                        </param>
+                        <param type="1" handle="14039" shortName="Sample Loader2 Filename" automation="-16777216" vstParameterNumber="1" module="8094" moduleParamId="0" MetaData="sf2">
+                            <patch-list>
+                                <s>sf2/vibraphone.sf2</s>
+                                <s repeat="127"></s>
+                            </patch-list>
+                        </param>
+                        <param type="0" handle="24414" shortName="Sample Oscillator2 Quality" vstParameterNumber="3" module="5290" moduleParamId="0" MetaData="None=0,Low (Linear)=2,Mid (Cubic)= 4,High (sinc8)=8">
+                            <patch-list>
+                                <s repeat="128">8</s>
+                            </patch-list>
+                        </param>
+                        <param type="8" handle="24461" shortName="Sample Loader2 Patch" automation="-16777216" vstParameterNumber="2" module="12839" moduleParamId="0">
+                            <patch-list>
+                                <s>11</s>
+                                <s repeat="127">0</s>
+                            </patch-list>
+                        </param>
+                        <param type="8" handle="1373072232" shortName="Polyphony" ignorePC="true" private="true" module="14543" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                            <patch-list>
+                                <s>6</s>
+                            </patch-list>
+                        </param>
+                        <param type="8" handle="1584576190" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="14543" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                            <patch-list>
+                                <s>769</s>
+                            </patch-list>
+                        </param>
+                        <param type="8" handle="1781913511" shortName="ReserveVoices" ignorePC="true" private="true" module="14543" hostControl="22" RangeMaximum="128">
+                            <patch-list>
+                                <s>3</s>
+                            </patch-list>
+                        </param>
+                        <param type="10" handle="2052195918" private="true" hostControl="49">
+                            <patch-list>
+                                <s repeat="128"></s>
+                            </patch-list>
+                        </param>
+                    </Parameters>
+                </PatchManager>
+                <modules>
+                    <module type="Sample Loader2" handle="1256531088">
+                        <structRect l="768" r="852" t="192" b="240"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="Sample Loader2Gui" handle="1359542360">
+                        <structRect l="432" r="528" t="180" b="240"/>
+                        <panelRect l="288" r="289" t="152" b="153"/>
+                    </module>
+                    <module type="Sample Oscillator2" handle="1931461919">
+                        <structRect l="960" r="1044" t="192" b="288"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE List Entry4" handle="1528997594">
+                        <structRect l="252" r="360" t="528" b="648"/>
+                        <panelRect l="336" r="423" t="169" b="192"/>
+                    </module>
+                    <module type="SE Polyphony Control" handle="1185235129">
+                        <structRect l="75" r="195" t="550" b="646"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="VCA" handle="1097037308">
+                        <structRect l="1125" r="1233" t="437" b="485"/>
+                    </module>
+                    <module type="SE Patch Automator" handle="1611627402">
+                        <structRect l="876" r="948" t="60" b="84"/>
+                    </module>
+                    <module type="SE Keyboard2" handle="1675228308">
+                        <structRect l="489" r="705" t="408" b="580"/>
+                        <panelRect l="35" r="415" t="226" b="266"/>
+                    </module>
+                    <module type="Container" handle="18731" name="File Select" m_locked="true" skin="default">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="Value In" direction="1" datatype="1" idx="7"/>
+                            <plug name="Value Out" direction="1" datatype="1"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="60" r="360" t="56" b="129"/>
+                        <modules>
+                            <module type="SE FileDialog" handle="19629">
+                                <structRect l="228" r="293" t="113" b="178"/>
+                                <panelRect l="0" r="0" t="0" b="0"/>
+                            </module>
+                            <module type="Image3" handle="1581396265">
+                                <plugs>
+                                    <plug default="browse.png" idx="1"/>
+                                </plugs>
+                                <structRect l="352" r="441" t="76" b="198"/>
+                                <panelRect l="278" r="299" t="32" b="53"/>
+                            </module>
+                            <module type="SE Text Entry4" handle="46442786" name="Text Entry3 - Filename">
+                                <structRect l="220" r="347" t="204" b="361"/>
+                                <panelRect l="21" r="276" t="32" b="51"/>
+                            </module>
+                            <module type="SE PatchMemory Text2" handle="8094" name="PatchMem Text - Filename">
+                                <structRect l="37" r="181" t="193" b="282"/>
+                                <panelRect l="252" r="252" t="146" b="146"/>
+                            </module>
+                            <module type="IO Mod" handle="23544">
+                                <plugs>
+                                    <plug name="Value In" datatype="1" tiedtomod="18731" tiedtopin="7"/>
+                                    <plug name="Value Out" datatype="1" tiedtomod="18731" tiedtopin="8"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="252" r="302" t="31" b="84"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="1125391553" lineType="1" fMod="19629" tMod="1581396265" fPlg="2" tPlg="6"/>
+                            <line type="Line" handle="771589366" lineType="1" fMod="8094" tMod="46442786" fPlg="9" tPlg="7"/>
+                            <line type="Line" handle="1800937563" lineType="1" fMod="8094" tMod="46442786" fPlg="8" tPlg="6"/>
+                            <line type="Line" handle="2014279185" lineType="1" fMod="8094" tMod="46442786" fPlg="6"/>
+                            <line type="Line" handle="856" lineType="1" fMod="8094" tMod="19629" fPlg="6"/>
+                            <line type="Line" handle="18646" lineType="1" fMod="8094" tMod="19629" fPlg="7" tPlg="1"/>
+                            <line type="Line" handle="16179" lineType="1" fMod="8094" tMod="23544" fPlg="6"/>
+                            <line type="Line" handle="28569" lineType="1" fMod="8094" tMod="23544" fPlg="11" tPlg="1"/>
+                        </lines>
+                        <PanelWndPosition l="37" r="315" t="48" b="69"/>
+                        <PanelLocation l="30" r="530" t="30" b="330"/>
+                        <StructLocation l="0" r="531" t="0" b="443"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="16" cy="16"/>
+                        <panel_rect l="0" r="482" t="0" b="282"/>
+                    </module>
+                    <module type="SE List Entry4" handle="742396920" name="List Entry3 - Bank">
+                        <structRect l="612" r="720" t="60" b="204"/>
+                        <panelRect l="41" r="136" t="104" b="123"/>
+                    </module>
+                    <module type="SE PatchMemory Int" handle="19418" name="PatchMem Int - Bank">
+                        <structRect l="231" r="351" t="160" b="244"/>
+                        <panelRect l="0" r="1" t="0" b="1"/>
+                    </module>
+                    <module type="SE PatchMemory Int" handle="12839" name="PatchMem Int - Patch">
+                        <structRect l="229" r="349" t="288" b="372"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE List Entry4" handle="806770853" name="List Entry3 - Patch">
+                        <structRect l="576" r="684" t="240" b="384"/>
+                        <panelRect l="41" r="144" t="80" b="99"/>
+                    </module>
+                    <module type="List Entry" handle="5290" name="Quality">
+                        <plugs>
+                            <plug default="0" idx="4"/>
+                            <plug default="0"/>
+                            <plug default="0" idx="7"/>
+                            <plug default="0" idx="9"/>
+                            <plug parameterId="-1"/>
+                            <plug parameterId="-1"/>
+                        </plugs>
+                        <structRect l="925" r="1045" t="384" b="440"/>
+                        <panelRect l="145" r="256" t="160" b="200"/>
+                    </module>
+                    <module type="IO Mod" handle="13834">
+                        <plugs>
+                            <plug name="Output" tiedtomod="14543" tiedtopin="7"/>
+                            <plug name="Output" tiedtomod="14543" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="1211" r="1271" t="368" b="404"/>
+                    </module>
+                    <module type="SynthEdit ADSR" handle="18413">
+                        <plugs>
+                            <plug default="6" idx="5"/>
+                        </plugs>
+                        <structRect l="986" r="1082" t="472" b="568"/>
+                        <panelRect l="233" r="233" t="143" b="143"/>
+                    </module>
+                    <module type="VCA" handle="10097">
+                        <structRect l="1098" r="1206" t="344" b="392"/>
+                    </module>
+                    <module type="IO Mod" handle="30798">
+                        <plugs>
+                            <plug name="MIDI In" direction="1" datatype="2" tiedtomod="14543" tiedtopin="9"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="755" r="827" t="48" b="72"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="492016721" lineType="1" fMod="30798" tMod="1611627402" tPlg="1"/>
+                    <line type="Line" handle="327106366" lineType="1" fMod="1185235129" tMod="1528997594" fPlg="8" tPlg="1"/>
+                    <line type="Line" handle="1524879878" lineType="1" fMod="1185235129" tMod="1528997594" fPlg="7"/>
+                    <line type="Line" handle="1182107831" lineType="1" fMod="19418" tMod="742396920" fPlg="7"/>
+                    <line type="Line" handle="1167390465" lineType="1" fMod="12839" tMod="806770853" fPlg="7"/>
+                    <line type="Line" handle="14298" lineType="1" fMod="10097" tMod="13834" fPlg="2"/>
+                    <line type="Line" handle="636098667" lineType="1" fMod="1097037308" tMod="13834" fPlg="2" tPlg="1"/>
+                    <line type="Line" handle="2040010443" lineType="1" fMod="1675228308" tMod="18413" fPlg="15"/>
+                    <line type="Line" handle="481460868" lineType="1" fMod="1675228308" tMod="18413" fPlg="16" tPlg="1"/>
+                    <line type="Line" handle="529531394" lineType="1" fMod="1675228308" tMod="18413" fPlg="17" tPlg="6"/>
+                    <line type="Line" handle="1659553180" lineType="1" fMod="18413" tMod="1097037308" fPlg="7" tPlg="1"/>
+                    <line type="Line" handle="709067739" lineType="1" fMod="18413" tMod="10097" fPlg="7" tPlg="1"/>
+                    <line type="Line" handle="1798671867" lineType="1" fMod="1256531088" tMod="1931461919" fPlg="3"/>
+                    <line type="Line" handle="121333720" lineType="1" fMod="18731" tMod="1256531088" fPlg="8"/>
+                    <line type="Line" handle="805929639" lineType="1" fMod="18731" tMod="1359542360" fPlg="7"/>
+                    <line type="Line" handle="89114729" lineType="1" fMod="19418" tMod="1359542360" fPlg="7" tPlg="1"/>
+                    <line type="Line" handle="1420835805" lineType="1" fMod="12839" tMod="1359542360" fPlg="7" tPlg="4"/>
+                    <line type="Line" handle="708475414" lineType="1" fMod="19418" tMod="1256531088" fPlg="13" tPlg="1"/>
+                    <line type="Line" handle="1310752563" lineType="1" fMod="12839" tMod="1256531088" fPlg="13" tPlg="2"/>
+                    <line type="Line" handle="1402294522" lineType="1" fMod="1675228308" tMod="1931461919" fPlg="14" tPlg="1"/>
+                    <line type="Line" handle="1344662029" lineType="1" fMod="1675228308" tMod="1931461919" fPlg="15" tPlg="2"/>
+                    <line type="Line" handle="1280162491" lineType="1" fMod="1675228308" tMod="1931461919" fPlg="16" tPlg="3"/>
+                    <line type="Line" handle="1957127757" lineType="1" fMod="1675228308" tMod="1931461919" fPlg="17" tPlg="4"/>
+                    <line type="Line" handle="997316256" lineType="1" fMod="5290" tMod="1931461919" fPlg="6" tPlg="5"/>
+                    <line type="Line" handle="1757273043" lineType="1" fMod="1931461919" tMod="10097" fPlg="6"/>
+                    <line type="Line" handle="1417597332" lineType="1" fMod="1931461919" tMod="1097037308" fPlg="7"/>
+                    <line type="Line" handle="8286116" lineType="1" fMod="1359542360" tMod="742396920" fPlg="2" tPlg="1"/>
+                    <line type="Line" handle="1583483668" lineType="1" fMod="1359542360" tMod="806770853" fPlg="3" tPlg="1"/>
+                </lines>
+                <PanelWndPosition l="291" r="291" t="212" b="212"/>
+                <PanelLocation l="5" r="512" t="533" b="891"/>
+                <StructLocation l="138" r="1443" t="123" b="869"/>
+                <PanelScroll x="1" y="0"/>
+                <StructScroll x="40" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="0" r="459" t="0" b="282"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="1907102959" lineType="1" fMod="14543" tMod="1837690005" fPlg="7"/>
+            <line type="Line" handle="800073601" lineType="1" fMod="14543" tMod="1837690005" fPlg="8" tPlg="1"/>
+            <line type="Line" handle="1692388795" lineType="1" fMod="1771796940" tMod="14543" fPlg="1" tPlg="9"/>
+        </lines>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="30" r="530" t="30" b="330"/>
+        <StructLocation l="0" r="1164" t="0" b="551"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="312" t="16" b="216"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Image3" name="Image2" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Filename" datatype="string" default="knob_sm" isFilename="true" metadata="bmp"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Frame Count" datatype="int" private="true"/>
+                <Pin name="Frame Count" datatype="int" direction="out"/>
+                <Pin name="Mouse Response" datatype="enum" default="-1" isMinimised="true" metadata="off=-2, auto=-1, vertical=0, horizontal=1, clicks=2, rotary=3, step=4"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="List Entry" class="1" name="List Entry" flags="4480" category="Controls">
+            <Parameters>
+                <Parameter id="0" datatype="enum" name="patchValue"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI In" datatype="midi" private="true"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out" private="true"/>
+                <Pin name="MIDI Controller ID" datatype="enum" default="-1" private="true"/>
+                <Pin name="Ignore Program Change" datatype="bool" private="true"/>
+                <Pin name="MIDI NRPN" datatype="enum" private="true" metadata="range 0,16255"/>
+                <Pin name="Choice" datatype="enum" direction="out" autoConfigureParameter="true"/>
+                <Pin name="Appearance" datatype="enum" isMinimised="true" metadata="Combo Box=0, LED Stack, Labeled LED Stack, Selector, Button Stack, Rotary Switch, Rotary (No Text), Up/Down Select"/>
+                <Pin name="Show Title On Panel" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="patchValue" datatype="enum" private="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin id="10" name="patchValue" datatype="enum" direction="out" private="true" parameterId="0"/>
+                <Pin name="Hint" datatype="string" direction="out" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="MIDI In" class="2" name="MIDI In" flags="384" category="MIDI">
+            <Parameters>
+                <Parameter id="0" datatype="int" name="" persistant="false"/>
+            </Parameters>
+            <Audio>
+                <Pin name="MIDI Data" datatype="midi" direction="out"/>
+                <Pin name="Activity" datatype="int" direction="out" private="true" parameterId="0"/>
+                <Pin name="MPE Mode" datatype="bool"/>
+            </Audio>
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Activity" datatype="int" private="true" parameterId="0"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE FileDialog" name="File Dialog" flags="384" category="Sub-Controls">
+            <GUI>
+                <Pin name="File Name" datatype="string"/>
+                <Pin name="File Extension" datatype="string"/>
+                <Pin name="Trigger" datatype="bool" direction="out"/>
+                <Pin name="Save Mode" datatype="bool"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Keyboard2" name="Keyboard (CV)" flags="480" category="Controls" helpUrl="Keyboard2.html" polyphonicSource="true" polyphonic="true" cloned="true">
+            <Audio>
+                <Pin name="PitchX" datatype="float" private="true" hostConnect="Voice/Pitch"/>
+                <Pin name="TriggerX" datatype="float" private="true" hostConnect="Voice/Trigger"/>
+                <Pin name="GateX" datatype="float" private="true" hostConnect="Voice/Gate"/>
+                <Pin name="VelocityKeyOnX" datatype="float" private="true" hostConnect="Voice/VelocityKeyOn"/>
+                <Pin name="VelocityKeyOffX" datatype="float" private="true" hostConnect="Voice/VelocityKeyOff"/>
+                <Pin name="AftertouchX" datatype="float" private="true" hostConnect="Voice/Aftertouch"/>
+                <Pin name="Unused" datatype="int" private="true"/>
+                <Pin name="VoiceReset" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Active"/>
+                <Pin name="Bender" datatype="float" private="true" hostConnect="Bender"/>
+                <Pin name="Glide Type" datatype="enum" metadata="Constant Time,Constant Rate"/>
+                <Pin name="Glide Rate" datatype="float" rate="audio"/>
+                <Pin name="Bend Range" datatype="float" rate="audio" default="0.2"/>
+                <Pin name="Pitch" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Trigger" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Gate" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Velocity" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Aftertouch" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Raw Pitch" datatype="float" direction="out"/>
+                <Pin name="Raw Velocity-On" datatype="float" direction="out"/>
+                <Pin name="Raw Velocity-Off" datatype="float" direction="out"/>
+                <Pin name="HoldPedal" datatype="float" private="true" hostConnect="HoldPedal"/>
+            </Audio>
+            <GUI graphicsApi="GmpiGui">
+                <Pin id="2" name="Gate" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Gate"/>
+                <Pin name="Velocity" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/VelocityKeyOn"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE List Entry4" name="List Entry4" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Choice" datatype="int"/>
+                <Pin name="Item List" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Patch Automator" class="1" name="Patch Automator" flags="320" category="MIDI">
+            <Audio>
+                <Pin name="Channel" datatype="enum" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI In" datatype="midi"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out"/>
+                <Pin name="Hidden Output" datatype="midi" direction="out" private="true"/>
+                <Pin name="Send All On Patch Change" datatype="bool" isMinimised="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE PatchMemory Int" name="PatchMemory Int" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="int" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="int" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="int" direction="out"/>
+                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Text2" name="PatchMemory Text2" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="string" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="string" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="string" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="string" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="File Extension" datatype="string" private="true" parameterId="0" parameterField="FileExtension"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="string" direction="out"/>
+                <Pin name="File Extension" datatype="string" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Polyphony Control" name="Polyphony Control" flags="384" category="Old" helpUrl="synthedit.chm::/mdl_sdk3/PolyphonyControl.htm">
+            <GUI>
+                <Pin name="Host Polyphony" datatype="int" private="true" hostConnect="Polyphony"/>
+                <Pin name="Host Polyphony Reserve" datatype="int" private="true" hostConnect="ReserveVoices"/>
+                <Pin name="Host VoiceAllocationMode" datatype="int" private="true" hostConnect="VoiceAllocationMode"/>
+                <Pin name="Polyphony" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Polyphony Reserve" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Allocation Mode" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Mono Note Priority" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Text Entry4" name="Text Entry4" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Text" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Multiline" datatype="bool"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Sample Loader2" name="Sample Loader2" flags="256" category="mx/Waveform" helpUrl="SampleOscillator2.htm">
+            <Audio>
+                <Pin name="Filename" datatype="string" isFilename="true" metadata="sf2"/>
+                <Pin name="Bank" datatype="int"/>
+                <Pin name="Patch" datatype="int"/>
+                <Pin name="Sample ID" datatype="int" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Sample Loader2Gui" name="Sample Loader2 GUI" flags="384" category="mx/Waveform" helpUrl="SampleOscillator2.htm">
+            <GUI>
+                <Pin name="Filename" datatype="string" isFilename="true" metadata="sf2"/>
+                <Pin name="Bank" datatype="int"/>
+                <Pin name="Bank Names" datatype="string" direction="out"/>
+                <Pin name="Patch Names" datatype="string" direction="out"/>
+                <Pin name="Patch" datatype="int"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Sample Oscillator2" name="Sample Oscillator2" flags="256" category="mx/Waveform" helpUrl="SampleOscillator2.htm">
+            <Audio>
+                <Pin name="Sample ID" datatype="int"/>
+                <Pin name="Pitch" datatype="float" rate="audio" default="0.5"/>
+                <Pin name="Trigger" datatype="float" rate="audio" default="1"/>
+                <Pin name="Gate" datatype="float" rate="audio" default="1"/>
+                <Pin name="Velocity" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Quality" datatype="enum" default="8" metadata="None=0,Low (Linear)=2,Mid (Cubic)= 4,High (sinc8)=8"/>
+                <Pin name="Left (mono)" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Right" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Sound Out" class="1" name="Sound Out" flags="4352" category="Input-Output">
+            <Audio>
+                <Pin name="Out" datatype="float" rate="audio" autoRename="true" linearInput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SynthEdit ADSR" name="ADSR2" flags="256" category="Waveform" helpUrl="EnveloperAdsr.htm">
+            <Audio>
+                <Pin name="Trigger" datatype="float" rate="audio" default="0.1"/>
+                <Pin name="Gate" datatype="float" rate="audio" default="0.1"/>
+                <Pin name="Attack" datatype="float" rate="audio"/>
+                <Pin name="Decay" datatype="float" rate="audio" default="0.5"/>
+                <Pin name="Sustain" datatype="float" rate="audio" default="0.7"/>
+                <Pin name="Release" datatype="float" rate="audio" default="0.4"/>
+                <Pin name="Overall Level" datatype="float" rate="audio" default="1"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="VoiceReset" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Active"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="VCA" class="1" name="VCA" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Signal" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Volume" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Response Curve" datatype="enum" default="1" metadata="Exponential=1,Linear,Decibel,Decibel (old)=0"/>
+            </Audio>
+        </Plugin>
+    </PluginList>
+</Document>
