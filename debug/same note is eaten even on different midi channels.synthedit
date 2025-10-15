@@ -167,7 +167,7 @@
                     <plug name="MIDI In" datatype="2"/>
                     <plug/>
                 </plugs>
-                <structRect l="240" r="732" t="60" b="279"/>
+                <structRect l="240" r="732" t="60" b="359"/>
                 <modules>
                     <module type="SE List Entry4" handle="1801037285" name="List Entry3 - Bank">
                         <structRect l="816" r="924" t="696" b="840"/>
