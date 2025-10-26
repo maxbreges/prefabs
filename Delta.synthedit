@@ -81,7 +81,7 @@
                 <plugs>
                     <plug default="5" idx="1"/>
                 </plugs>
-                <structRect l="276" r="360" t="312" b="372"/>
+                <structRect l="276" r="360" t="324" b="384"/>
             </module>
             <module type="Comparator" handle="84447869">
                 <plugs>
