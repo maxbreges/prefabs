@@ -8,6 +8,7 @@
         <PatchManager>
             <ProgramNames/>
             <Parameters>
+                <param type="6" handle="274083926" shortName="patchValue" ignorePC="true" stateful="false" module="2126624420" moduleParamId="0"/>
                 <param type="6" handle="526773413" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="1678187955" hostControl="40">
                     <patch-list>
                         <s>0</s>
@@ -23,7 +24,6 @@
                         <s repeat="128"></s>
                     </patch-list>
                 </param>
-                <param type="6" handle="1485422783" shortName="patchValue" ignorePC="true" stateful="false" module="511668510" moduleParamId="0"/>
                 <param type="8" handle="1630599717" shortName="Polyphony" ignorePC="true" private="true" module="1678187955" hostControl="21" RangeMinimum="1" RangeMaximum="128">
                     <patch-list>
                         <s>1</s>
@@ -39,15 +39,32 @@
                         <s>2</s>
                     </patch-list>
                 </param>
+                <param type="6" handle="1980608705" shortName="patchValue" ignorePC="true" stateful="false" module="2138318262" moduleParamId="0"/>
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="SE Volt Meter" handle="511668510">
-                <structRect l="756" r="864" t="300" b="348"/>
-                <panelRect l="400" r="400" t="216" b="216"/>
+            <module type="Sample and Hold" handle="705456704">
+                <structRect l="696" r="756" t="372" b="408"/>
+            </module>
+            <module type="SE Volt Meter" handle="2138318262">
+                <structRect l="684" r="792" t="432" b="480"/>
+                <panelRect l="336" r="336" t="224" b="224"/>
+            </module>
+            <module type="ComparatorEq" handle="1772965820">
+                <plugs>
+                    <plug default="1" idx="3"/>
+                    <plug default="0"/>
+                    <plug default="-1"/>
+                </plugs>
+                <structRect l="552" r="648" t="396" b="468"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="SE Volt Meter" handle="2126624420">
+                <structRect l="732" r="840" t="240" b="288"/>
+                <panelRect l="264" r="264" t="136" b="136"/>
             </module>
             <module type="Sample and Hold" handle="130246191">
-                <structRect l="648" r="708" t="312" b="348"/>
+                <structRect l="636" r="696" t="252" b="288"/>
             </module>
             <module type="Sample and Hold" handle="548179338">
                 <structRect l="420" r="480" t="324" b="360"/>
@@ -55,20 +72,22 @@
             <module type="Comparator" handle="2013184239">
                 <plugs>
                     <plug default="5" idx="1"/>
+                    <plug default="1" idx="3"/>
+                    <plug default="-1"/>
                 </plugs>
-                <structRect l="516" r="600" t="252" b="312"/>
+                <structRect l="516" r="600" t="264" b="324"/>
             </module>
             <module type="Comparator" handle="698743769">
                 <plugs>
                     <plug default="5" idx="1"/>
                 </plugs>
-                <structRect l="264" r="348" t="300" b="360"/>
+                <structRect l="276" r="360" t="312" b="372"/>
             </module>
             <module type="Comparator" handle="84447869">
                 <plugs>
                     <plug default="5" idx="1"/>
                 </plugs>
-                <structRect l="264" r="348" t="204" b="264"/>
+                <structRect l="276" r="360" t="192" b="252"/>
             </module>
             <module type="Sample and Hold" handle="1493244027">
                 <structRect l="420" r="480" t="192" b="228"/>
@@ -81,7 +100,7 @@
                     <plug name="Note Number" direction="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="48" r="144" t="240" b="312"/>
+                <structRect l="72" r="168" t="240" b="312"/>
                 <modules>
                     <module type="Fixed Values" handle="533074401">
                         <plugs>
@@ -150,7 +169,7 @@
                 <panel_rect l="16" r="312" t="16" b="216"/>
             </module>
             <module type="SE Keyboard (MIDI)" handle="740891586">
-                <structRect l="36" r="144" t="108" b="208"/>
+                <structRect l="36" r="192" t="108" b="204"/>
                 <panelRect l="280" r="280" t="120" b="120"/>
             </module>
             <module type="Sound Out" handle="1618313398">
@@ -172,7 +191,12 @@
             <line type="Line" handle="1973515053" lineType="1" fMod="548179338" tMod="2013184239" fPlg="2" tPlg="1"/>
             <line type="Line" handle="1429250992" lineType="1" fMod="2013184239" tMod="130246191" fPlg="2"/>
             <line type="Line" handle="1314991310" lineType="1" fMod="1678187955" tMod="130246191" fPlg="8" tPlg="1"/>
-            <line type="Line" handle="541222063" lineType="1" fMod="130246191" tMod="511668510" fPlg="2" tPlg="2"/>
+            <line type="Line" handle="1070826775" lineType="1" fMod="130246191" tMod="2126624420" fPlg="2" tPlg="2"/>
+            <line type="Line" handle="1859950642" lineType="1" fMod="1493244027" tMod="1772965820" fPlg="2"/>
+            <line type="Line" handle="1828609853" lineType="1" fMod="548179338" tMod="1772965820" fPlg="2" tPlg="1"/>
+            <line type="Line" handle="452368305" lineType="1" fMod="1772965820" tMod="705456704" fPlg="2"/>
+            <line type="Line" handle="656727959" lineType="1" fMod="1678187955" tMod="705456704" fPlg="8" tPlg="1"/>
+            <line type="Line" handle="1909195522" lineType="1" fMod="705456704" tMod="2138318262" fPlg="2" tPlg="2"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
@@ -189,6 +213,16 @@
                 <Pin name="Input B" datatype="float" rate="audio" default="0.8"/>
                 <Pin name="Output" datatype="float" rate="audio" direction="out"/>
                 <Pin name="Hi Out Val" datatype="float" default="5"/>
+                <Pin name="Lo Out Val" datatype="float" default="-5"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="ComparatorEq" name="Comparator" flags="256" category="mx/Modifiers">
+            <Audio>
+                <Pin name="Input A" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Input B" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Hi Out Val" datatype="float" default="5"/>
+                <Pin name="Equal Out Val" datatype="float"/>
                 <Pin name="Lo Out Val" datatype="float" default="-5"/>
             </Audio>
         </Plugin>
