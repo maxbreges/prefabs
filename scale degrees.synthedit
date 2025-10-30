@@ -16,13 +16,12 @@
                 </param>
                 <param type="6" handle="88046496" vstParameterNumber="3" module="415285401" moduleParamId="0">
                     <patch-list>
-                        <s>1.81818</s>
-                        <s repeat="127">0</s>
+                        <s repeat="128">0</s>
                     </patch-list>
                 </param>
                 <param type="1" handle="222271003" vstParameterNumber="4" module="415285401" moduleParamId="1">
                     <patch-list>
-                        <s>e8ff00</s>
+                        <s>ff0000</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
@@ -86,7 +85,7 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Container" handle="24595012" name="MIDI to scale degree" ViewOpenFlags="384" skin="default2">
+            <module type="Container" handle="24595012" name="MIDI to scale degree" ViewOpenFlags="256" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -115,7 +114,7 @@
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="344187420" name="minors">
                         <plugs>
-                            <plug name="C" id="2" idx="2"/>
+                            <plug name="C" idx="2"/>
                             <plug name="C♯ " id="3"/>
                             <plug name="D" id="4"/>
                             <plug name="D♯/E♭" id="5"/>
@@ -153,7 +152,7 @@
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="932212561" name="minors">
                         <plugs>
-                            <plug name="C" id="2" idx="2"/>
+                            <plug name="C" idx="2"/>
                             <plug name="C♯ " id="3"/>
                             <plug name="D" id="4"/>
                             <plug name="D♯" id="5"/>
@@ -193,7 +192,7 @@
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="395466335" name="majors asc">
                         <plugs>
-                            <plug name="C" id="2" idx="2"/>
+                            <plug name="C" idx="2"/>
                             <plug name="C♯ " id="3"/>
                             <plug name="D" id="4"/>
                             <plug name="E♭" id="5"/>
@@ -229,16 +228,9 @@
                         <structRect l="48" r="96" t="732" b="888"/>
                         <panelRect l="376" r="377" t="288" b="289"/>
                     </module>
-                    <module type="SE GuiSwitch &lt; (Text)" handle="449788196">
-                        <plugs>
-                            <plug id="2" idx="2"/>
-                        </plugs>
-                        <structRect l="72" r="132" t="636" b="672"/>
-                        <panelRect l="392" r="393" t="280" b="281"/>
-                    </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="1578928849">
                         <plugs>
-                            <plug name="Value" id="2" idx="2"/>
+                            <plug name="Value" idx="2"/>
                             <plug name="Value" id="3"/>
                             <plug name="Value" id="4"/>
                             <plug id="5"/>
@@ -248,7 +240,7 @@
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="1525193037" name="majors desc">
                         <plugs>
-                            <plug name="C" id="2" idx="2"/>
+                            <plug name="C" idx="2"/>
                             <plug name="C♯ " id="3"/>
                             <plug name="D" id="4"/>
                             <plug name="E♭" id="5"/>
@@ -286,7 +278,7 @@
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="1877848923" name="minors">
                         <plugs>
-                            <plug name="C" id="2" idx="2"/>
+                            <plug name="C" idx="2"/>
                             <plug name="C♯ " id="3"/>
                             <plug name="D" id="4"/>
                             <plug name="D♯" id="5"/>
@@ -326,7 +318,7 @@
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="415792251" name="majors asc">
                         <plugs>
-                            <plug name="C" id="2" idx="2"/>
+                            <plug name="C" idx="2"/>
                             <plug name="C♯ " id="3"/>
                             <plug name="D" id="4"/>
                             <plug name="E♭" id="5"/>
@@ -779,7 +771,7 @@
                 <PanelLocation l="78" r="636" t="477" b="856"/>
                 <StructLocation l="0" r="1393" t="0" b="954"/>
                 <PanelScroll x="0" y="0"/>
-                <StructScroll x="1" y="248"/>
+                <StructScroll x="1" y="0"/>
                 <PanelWndOffset cx="16" cy="16"/>
                 <panel_rect l="8" r="448" t="8" b="208"/>
             </module>
