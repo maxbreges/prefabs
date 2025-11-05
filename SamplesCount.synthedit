@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Jeff McClintock" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
     <master_container type="Container" handle="1133930889" name="Main" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -22,17 +22,21 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Sound Out" handle="2072898381">
+            <module type="Sound Out" handle="1558846906">
                 <plugs>
                     <plug/>
                 </plugs>
-                <structRect l="24" r="72" t="36" b="48"/>
+                <structRect l="36" r="84" t="48" b="60"/>
+            </module>
+            <module type="Samples Count" handle="1297251948">
+                <structRect l="348" r="408" t="120" b="156"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
             </module>
             <module type="Monostable" handle="1835615528">
                 <plugs>
-                    <plug default="10" idx="1"/>
+                    <plug default="10.0004" idx="1"/>
                 </plugs>
-                <structRect l="144" r="264" t="60" b="96"/>
+                <structRect l="168" r="288" t="204" b="240"/>
             </module>
             <module type="Slider" handle="1498216685">
                 <plugs>
@@ -42,25 +46,14 @@
                     <plug parameterId="-1" idx="13"/>
                     <plug parameterId="-1"/>
                 </plugs>
-                <structRect l="48" r="132" t="252" b="314"/>
+                <structRect l="12" r="96" t="168" b="230"/>
                 <panelRect l="248" r="248" t="176" b="176"/>
             </module>
             <module type="Monostable" handle="1290407520">
                 <plugs>
-                    <plug default="0.001" idx="1"/>
+                    <plug default="0.01" idx="1"/>
                 </plugs>
-                <structRect l="36" r="156" t="180" b="216"/>
-            </module>
-            <module type="Counter" handle="1959883912">
-                <plugs>
-                    <plug default="1000000" idx="2"/>
-                </plugs>
-                <structRect l="336" r="396" t="216" b="264"/>
-                <panelRect l="0" r="0" t="0" b="0"/>
-            </module>
-            <module type="sampleframes" handle="958046710" name="sampleframes">
-                <structRect l="252" r="312" t="156" b="180"/>
-                <panelRect l="0" r="0" t="0" b="0"/>
+                <structRect l="36" r="156" t="96" b="132"/>
             </module>
             <module type="Container" handle="1771640502" name="" skin="default2">
                 <plugs>
@@ -70,7 +63,7 @@
                     <plug name="Decimal Places" default="0" datatype="8"/>
                     <plug/>
                 </plugs>
-                <structRect l="480" r="588" t="72" b="148"/>
+                <structRect l="468" r="576" t="120" b="196"/>
                 <modules>
                     <module type="VoltsToFloat2" handle="354456319">
                         <plugs>
@@ -115,16 +108,15 @@
             </module>
         </modules>
         <lines>
-            <line type="Line" handle="311731214" lineType="1" fMod="1959883912" tMod="1771640502" fPlg="3" tPlg="7"/>
-            <line type="Line" handle="159516465" lineType="1" fMod="958046710" tMod="1959883912" fPlg="1"/>
             <line type="Line" handle="157169892" lineType="1" fMod="1498216685" tMod="1290407520" fPlg="6"/>
-            <line type="Line" handle="2056622469" lineType="1" fMod="1290407520" tMod="1959883912" fPlg="2" tPlg="1"/>
-            <line type="Line" handle="1632418357" lineType="1" fMod="1290407520" tMod="1835615528" fPlg="2"/>
-            <line type="Line" handle="530027044" lineType="1" fMod="1835615528" tMod="958046710" fPlg="2"/>
+            <line type="Line" handle="632650742" lineType="1" fMod="1297251948" tMod="1771640502" fPlg="3" tPlg="7"/>
+            <line type="Line" handle="801217237" lineType="1" fMod="1835615528" tMod="1297251948" fPlg="2" tPlg="2"/>
+            <line type="Line" handle="1283392175" lineType="1" fMod="1290407520" tMod="1835615528" fPlg="2"/>
+            <line type="Line" handle="301079883" lineType="1" fMod="1290407520" tMod="1297251948" fPlg="2" tPlg="1"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="932" t="0" b="936"/>
+        <StructLocation l="0" r="1375" t="0" b="936"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
@@ -144,14 +136,6 @@
                 <Pin name="Visible" datatype="bool"/>
                 <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
             </GUI>
-        </Plugin>
-        <Plugin id="Counter" name="Counter" flags="256" category="mx/Logic">
-            <Audio>
-                <Pin name="Clock" datatype="float" rate="audio"/>
-                <Pin name="Reset" datatype="float" rate="audio"/>
-                <Pin name="Steps" datatype="float" rate="audio" default="10"/>
-                <Pin name="Count" datatype="float" rate="audio" direction="out"/>
-            </Audio>
         </Plugin>
         <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
             <Audio>
@@ -186,6 +170,14 @@
                 <Pin name="Menu Items" datatype="string" direction="out"/>
                 <Pin name="Menu Selection" datatype="int" direction="out"/>
             </GUI>
+        </Plugin>
+        <Plugin id="Samples Count" name="Samples Count" flags="256" category="mx/Logic">
+            <Audio>
+                <Pin name="Clock" datatype="float" rate="audio" private="true"/>
+                <Pin name="Reset" datatype="float" rate="audio"/>
+                <Pin name="Gate" datatype="float" rate="audio"/>
+                <Pin name="Count" datatype="float" rate="audio" direction="out"/>
+            </Audio>
         </Plugin>
         <Plugin id="Show Float" name="Show Float Gui" flags="384" category="mx/Show">
             <GUI graphicsApi="GmpiGui">
@@ -232,12 +224,6 @@
                 <Pin name="Response" datatype="enum" default="4" metadata="dB VU,dB PPM,dB Peak,dB HeadRoom, Volts DC (Fast), Volts DC Average, Volts RMS, Clip Detect"/>
                 <Pin name="Update Rate" datatype="enum" default="10" metadata="1 Hz=1,5 Hz=5,10 Hz=10,20 Hz=20,40 Hz=40,60 Hz=60"/>
                 <Pin name="Float Out" datatype="float" direction="out"/>
-            </Audio>
-        </Plugin>
-        <Plugin id="sampleframes" name="sample frames" flags="256" category="mx/Modifiers">
-            <Audio>
-                <Pin name="on/off" datatype="float" rate="audio" default="0.1" linearInput="true"/>
-                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
             </Audio>
         </Plugin>
     </PluginList>
