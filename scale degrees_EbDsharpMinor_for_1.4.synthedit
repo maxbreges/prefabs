@@ -18,7 +18,7 @@
         </PatchManager>
         <modules>
             <module type="SE Keyboard (MIDI)" handle="1339254675">
-                <structRect l="96" r="384" t="24" b="126"/>
+                <structRect l="132" r="420" t="36" b="138"/>
                 <panelRect l="280" r="280" t="184" b="184"/>
             </module>
             <module type="Container" handle="24595012" name="MIDI to scale degree" skin="default2">
@@ -37,7 +37,7 @@
                         <param type="1" handle="33392104" ignorePC="true" private="true" stateful="false" module="2080663257" moduleParamId="0"/>
                         <param type="1" handle="40711334" ignorePC="true" private="true" stateful="false" module="1054857481" moduleParamId="0"/>
                         <param type="8" handle="65830015" shortName="2" ignorePC="true" private="true" stateful="false" module="321739089" moduleParamId="0" RangeMinimum="2" RangeMaximum="2"/>
-                        <param type="8" handle="105332995" shortName="Int To List Signal in" private="true" vstParameterNumber="5" module="1597746743" moduleParamId="0">
+                        <param type="8" handle="105332995" shortName="ROOT" private="true" vstParameterNumber="5" module="1597746743" moduleParamId="0">
                             <patch-list>
                                 <s>10</s>
                                 <s repeat="127">0</s>
@@ -71,56 +71,51 @@
                                 <s>2</s>
                             </patch-list>
                         </param>
-                        <param type="1" handle="362512880" vstParameterNumber="4" module="1534045154" moduleParamId="0">
+                        <param type="1" handle="362512880" ignorePC="true" private="true" vstParameterNumber="4" module="1534045154" moduleParamId="0">
                             <patch-list>
                                 <s>Ⅰ,Ⅱ♭,Ⅱ,Ⅲ,Ⅲ♯,Ⅳ,Ⅳ♯,Ⅴ,Ⅵ,Ⅵ♯,Ⅶ,Ⅶ♯</s>
-                                <s repeat="127"></s>
                             </patch-list>
                         </param>
-                        <param type="1" handle="376608868" vstParameterNumber="5" module="2133611171" moduleParamId="0">
+                        <param type="1" handle="376608868" ignorePC="true" private="true" vstParameterNumber="5" module="2133611171" moduleParamId="0">
                             <patch-list>
                                 <s>Ⅰ,Ⅱ♭,Ⅱ,Ⅲ♭,Ⅲ,Ⅳ,Ⅳ♯,Ⅴ,Ⅵ♭,Ⅵ,Ⅶ♭,Ⅶ</s>
-                                <s repeat="127"></s>
                             </patch-list>
                         </param>
-                        <param type="6" handle="537683699" shortName="ADSR2 Overall Level" vstParameterNumber="9" module="1796305958" moduleParamId="0">
+                        <param type="6" handle="537683699" shortName="ADSR2 Overall Level" private="true" vstParameterNumber="9" module="1796305958" moduleParamId="0">
                             <patch-list>
                                 <s>9.65</s>
                                 <s repeat="127">10</s>
                             </patch-list>
                         </param>
                         <param type="1" handle="539381343" ignorePC="true" private="true" stateful="false" module="1878964828" moduleParamId="0"/>
-                        <param type="1" handle="547414862" vstParameterNumber="2" module="1812989186" moduleParamId="0">
+                        <param type="1" handle="547414862" ignorePC="true" private="true" vstParameterNumber="2" module="1812989186" moduleParamId="0">
                             <patch-list>
                                 <s>A=0,B♭=1,B=2,C=3,C♯=4,D=5,E♭=8,E=10,F=11,F♯=12,G=13,G♯=14</s>
-                                <s repeat="127"></s>
                             </patch-list>
                         </param>
-                        <param type="1" handle="633460777" vstParameterNumber="3" module="1705863695" moduleParamId="0">
+                        <param type="1" handle="633460777" ignorePC="true" private="true" vstParameterNumber="3" module="1705863695" moduleParamId="0">
                             <patch-list>
                                 <s>A=0,B♭=1,B=2,C=3,C♯=4,D=5,&gt;&gt;&gt;&gt;D♯/E♭,D♯=7,E♭=8,&lt;&lt;&lt;&lt;,E=10,F=11,F♯=12,G=13,G♯=14</s>
-                                <s repeat="127"></s>
                             </patch-list>
                         </param>
-                        <param type="1" handle="654951235" vstParameterNumber="6" module="674007835" moduleParamId="0">
+                        <param type="1" handle="654951235" shortName="LABEL" ignorePC="true" private="true" vstParameterNumber="6" module="674007835" moduleParamId="0">
                             <patch-list>
                                 <s>Mode                 Root                Degree              Name</s>
-                                <s repeat="127"></s>
                             </patch-list>
                         </param>
-                        <param type="8" handle="752994263" ignorePC="true" stateful="false" module="1490192092" moduleParamId="0"/>
-                        <param type="8" handle="802913760" ignorePC="true" stateful="false" module="594892147" moduleParamId="0"/>
+                        <param type="8" handle="752994263" ignorePC="true" private="true" stateful="false" module="1490192092" moduleParamId="0"/>
+                        <param type="8" handle="802913760" ignorePC="true" private="true" stateful="false" module="594892147" moduleParamId="0"/>
                         <param type="1" handle="832881503" ignorePC="true" private="true" stateful="false" module="1247640701" moduleParamId="0"/>
                         <param type="1" handle="842410401" ignorePC="true" private="true" stateful="false" module="892314680" moduleParamId="0"/>
                         <param type="1" handle="884854165" ignorePC="true" private="true" stateful="false" module="308987980" moduleParamId="0"/>
-                        <param type="1" handle="904528553" vstParameterNumber="7" module="2092842041" moduleParamId="0">
+                        <param type="1" handle="904528553" private="true" vstParameterNumber="7" module="2092842041" moduleParamId="0">
                             <patch-list>
                                 <s>FF666666</s>
                                 <s repeat="127"></s>
                             </patch-list>
                         </param>
                         <param type="1" handle="963615211" ignorePC="true" private="true" stateful="false" module="1685272558" moduleParamId="0"/>
-                        <param type="8" handle="996017659" shortName="Volt Meter Signal in" vstParameterNumber="10" module="1652438937" moduleParamId="0">
+                        <param type="8" handle="996017659" shortName="Volt Meter Signal in" private="true" vstParameterNumber="10" module="1652438937" moduleParamId="0">
                             <patch-list>
                                 <s repeat="128">0</s>
                             </patch-list>
@@ -129,7 +124,7 @@
                         <param type="8" handle="1150079328" ignorePC="true" private="true" stateful="false" module="460646208" moduleParamId="0"/>
                         <param type="1" handle="1163654151" ignorePC="true" private="true" stateful="false" module="343916891" moduleParamId="0"/>
                         <param type="1" handle="1201810887" ignorePC="true" private="true" stateful="false" module="947620797" moduleParamId="0"/>
-                        <param type="8" handle="1242956132" ignorePC="true" stateful="false" module="1773142284" moduleParamId="0"/>
+                        <param type="8" handle="1242956132" ignorePC="true" private="true" stateful="false" module="1773142284" moduleParamId="0"/>
                         <param type="1" handle="1263918452" ignorePC="true" private="true" stateful="false" module="1004077445" moduleParamId="0"/>
                         <param type="1" handle="1357006114" ignorePC="true" private="true" stateful="false" module="1098572035" moduleParamId="0"/>
                         <param type="10" handle="1371309674" private="true" hostControl="49">
@@ -140,7 +135,7 @@
                         <param type="1" handle="1411329741" ignorePC="true" private="true" stateful="false" module="1889971445" moduleParamId="0"/>
                         <param type="1" handle="1413781447" ignorePC="true" private="true" stateful="false" module="908920567" moduleParamId="0"/>
                         <param type="1" handle="1451198976" ignorePC="true" private="true" stateful="false" module="3455645" moduleParamId="0"/>
-                        <param type="8" handle="1503509853" vstParameterNumber="0" module="2048839919" moduleParamId="0">
+                        <param type="8" handle="1503509853" shortName="MODE" private="true" vstParameterNumber="0" module="2048839919" moduleParamId="0">
                             <patch-list>
                                 <s repeat="128">0</s>
                             </patch-list>
@@ -154,15 +149,15 @@
                         <param type="1" handle="1544591204" ignorePC="true" private="true" stateful="false" module="95859302" moduleParamId="0"/>
                         <param type="1" handle="1583619228" ignorePC="true" private="true" stateful="false" module="827155012" moduleParamId="0"/>
                         <param type="1" handle="1610047391" ignorePC="true" private="true" stateful="false" module="99642144" moduleParamId="0"/>
-                        <param type="1" handle="1625343798" ignorePC="true" stateful="false" module="1669107954" moduleParamId="0"/>
+                        <param type="1" handle="1625343798" ignorePC="true" private="true" stateful="false" module="1669107954" moduleParamId="0"/>
                         <param type="1" handle="1646792622" ignorePC="true" private="true" stateful="false" module="940422948" moduleParamId="0"/>
                         <param type="1" handle="1686942717" ignorePC="true" private="true" stateful="false" module="1127585092" moduleParamId="0"/>
                         <param type="1" handle="1748344357" ignorePC="true" private="true" stateful="false" module="1075134929" moduleParamId="0"/>
-                        <param type="8" handle="1812731551" ignorePC="true" stateful="false" module="218579388" moduleParamId="0"/>
+                        <param type="8" handle="1812731551" ignorePC="true" private="true" stateful="false" module="218579388" moduleParamId="0"/>
                         <param type="1" handle="1874018273" ignorePC="true" private="true" stateful="false" module="1326272690" moduleParamId="0"/>
                         <param type="1" handle="1909528403" ignorePC="true" private="true" stateful="false" module="1699261408" moduleParamId="0"/>
                         <param type="1" handle="1927573240" ignorePC="true" private="true" stateful="false" module="86391277" moduleParamId="0"/>
-                        <param type="1" handle="1936184024" vstParameterNumber="8" module="357190340" moduleParamId="0">
+                        <param type="1" handle="1936184024" private="true" vstParameterNumber="8" module="357190340" moduleParamId="0">
                             <patch-list>
                                 <s>Ⅰ,Ⅰ♯,Ⅱ,Ⅱ♯,Ⅲ,Ⅳ,Ⅳ♯,Ⅴ,Ⅴ♯,Ⅵ,Ⅶ♭,Ⅶ</s>
                                 <s repeat="127"></s>
@@ -170,14 +165,14 @@
                         </param>
                         <param type="1" handle="1985038143" ignorePC="true" private="true" stateful="false" module="414002618" moduleParamId="0"/>
                         <param type="1" handle="2004277717" ignorePC="true" private="true" stateful="false" module="1633643467" moduleParamId="0"/>
-                        <param type="8" handle="2007754706" ignorePC="true" stateful="false" module="1497887931" moduleParamId="0"/>
+                        <param type="8" handle="2007754706" ignorePC="true" private="true" stateful="false" module="1497887931" moduleParamId="0"/>
                         <param type="1" handle="2034738572" ignorePC="true" private="true" stateful="false" module="2024071404" moduleParamId="0"/>
                         <param type="1" handle="2139509653" ignorePC="true" private="true" stateful="false" module="276849097" moduleParamId="0"/>
                     </Parameters>
                 </PatchManager>
                 <modules>
                     <module type="SE PatchMemory Text2" handle="674007835">
-                        <structRect l="1113" r="1221" t="516" b="588"/>
+                        <structRect l="1092" r="1200" t="516" b="588"/>
                         <panelRect l="291" r="291" t="163" b="163"/>
                     </module>
                     <module type="TextX" handle="1965541402">
@@ -222,7 +217,7 @@
                             <plug default="1"/>
                             <plug name="Degree" default="8" idx="7"/>
                             <plug name="Hold" default="8"/>
-                            <plug name="incr On/Off" default="" datatype="4"/>
+                            <plug name="incr On/Off" datatype="4"/>
                             <plug name="Color" direction="1" datatype="1"/>
                             <plug/>
                         </plugs>
@@ -635,7 +630,7 @@
                     <module type="Container" handle="501224457" skin="default2">
                         <plugs>
                             <plug default="1" idx="1"/>
-                            <plug name="Text" default="" datatype="1" idx="7"/>
+                            <plug name="Text" datatype="1" idx="7"/>
                             <plug/>
                         </plugs>
                         <structRect l="348" r="468" t="564" b="652"/>
@@ -679,7 +674,7 @@
                     <module type="Container" handle="414239041" skin="default2">
                         <plugs>
                             <plug default="1" idx="1"/>
-                            <plug name="Text" default="" datatype="1" idx="7"/>
+                            <plug name="Text" datatype="1" idx="7"/>
                             <plug/>
                         </plugs>
                         <structRect l="348" r="468" t="456" b="544"/>
@@ -724,7 +719,7 @@
                         <plugs>
                             <plug default="1" idx="1"/>
                             <plug default="0"/>
-                            <plug name="Text" default="" datatype="1" idx="7"/>
+                            <plug name="Text" datatype="1" idx="7"/>
                             <plug/>
                         </plugs>
                         <structRect l="348" r="468" t="348" b="436"/>
@@ -1241,7 +1236,7 @@
                         <modules>
                             <module type="SE GuiSwitch &lt; (Text)" handle="762303060" name="majors desc">
                                 <plugs>
-                                    <plug name="A" id="2" idx="2"/>
+                                    <plug name="A" idx="2"/>
                                     <plug name="B♭" id="3"/>
                                     <plug name="B" id="4"/>
                                     <plug name="C" id="5"/>
@@ -1341,7 +1336,7 @@
                         <modules>
                             <module type="SE GuiSwitch &lt; (Text)" handle="50636778" name="majors asc">
                                 <plugs>
-                                    <plug name="A" id="2" idx="2"/>
+                                    <plug name="A" idx="2"/>
                                     <plug name="B♭" id="3"/>
                                     <plug name="B" id="4"/>
                                     <plug name="C" id="5"/>
@@ -1466,7 +1461,7 @@
                         <modules>
                             <module type="SE GuiSwitch &lt; (Text)" handle="738912200" name="minors">
                                 <plugs>
-                                    <plug name="A" id="2" idx="2"/>
+                                    <plug name="A" idx="2"/>
                                     <plug name="B♭" id="3"/>
                                     <plug name="B" id="4"/>
                                     <plug name="C" id="5"/>
@@ -1677,7 +1672,7 @@
                         <structRect l="48" r="132" t="396" b="456"/>
                     </module>
                     <module type="SE PatchMemory Int" handle="2048839919">
-                        <structRect l="36" r="156" t="660" b="744"/>
+                        <structRect l="36" r="156" t="684" b="768"/>
                         <panelRect l="464" r="465" t="402" b="403"/>
                     </module>
                     <module type="DisplayList" handle="1565654645" name="Scale mode">
@@ -1725,7 +1720,7 @@
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="973185341">
                         <plugs>
-                            <plug name="Value" id="2" idx="2"/>
+                            <plug name="Value" idx="2"/>
                             <plug name="Value" id="3"/>
                             <plug id="4"/>
                         </plugs>
@@ -1751,7 +1746,7 @@
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="1578928849">
                         <plugs>
-                            <plug name="Value" id="2" idx="2"/>
+                            <plug name="Value" idx="2"/>
                             <plug name="Value" id="3"/>
                             <plug name="Value" id="4"/>
                             <plug id="5"/>
@@ -1765,7 +1760,7 @@
                             <plug default="28" idx="6"/>
                             <plug default="C=0,B=1,Bb=2,A=3,Ab=4,G=5,F#=6,F=7,E=8,Eb=9,D=10,C#=11" idx="10"/>
                         </plugs>
-                        <structRect l="612" r="720" t="444" b="576"/>
+                        <structRect l="648" r="756" t="444" b="576"/>
                         <panelRect l="215" r="314" t="50" b="99"/>
                     </module>
                     <module type="Container" handle="2127089738" name="sound" ViewOpenFlags="32768" skin="default">
@@ -1829,7 +1824,7 @@
                         <plugs>
                             <plug default="1,1♯,2,2♯,3,4,4♯,5,5♯,6,7♭,7,1,1♯,2,2♯,3,4,4♯,5,5♯,6,7♭,7" idx="1"/>
                         </plugs>
-                        <structRect l="600" r="672" t="360" b="396"/>
+                        <structRect l="564" r="636" t="360" b="396"/>
                         <panelRect l="216" r="217" t="194" b="195"/>
                     </module>
                     <module type="IO Mod" handle="229938550">
@@ -1989,7 +1984,7 @@
                 <PanelLocation l="849" r="1473" t="77" b="434"/>
                 <StructLocation l="0" r="1456" t="0" b="954"/>
                 <PanelScroll x="0" y="0"/>
-                <StructScroll x="0" y="240"/>
+                <StructScroll x="0" y="250"/>
                 <PanelWndOffset cx="16" cy="16"/>
                 <panel_rect l="8" r="448" t="8" b="280"/>
             </module>
