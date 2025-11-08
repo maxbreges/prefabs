@@ -62,27 +62,27 @@
                 </plugs>
                 <structRect l="444" r="696" t="360" b="444"/>
                 <modules>
+                    <module type="Multiply" handle="1893401121">
+                        <plugs>
+                            <plug default="-1.25" idx="1"/>
+                        </plugs>
+                        <structRect l="1128" r="1188" t="540" b="576"/>
+                    </module>
                     <module type="Multiply" handle="1103463822">
                         <plugs>
                             <plug default="-1" idx="1"/>
                         </plugs>
                         <structRect l="1020" r="1080" t="300" b="336"/>
                     </module>
-                    <module type="Multiply" handle="966341356">
-                        <plugs>
-                            <plug default="1.8" idx="1"/>
-                        </plugs>
-                        <structRect l="1092" r="1152" t="600" b="636"/>
-                    </module>
                     <module type="Multiply" handle="2026835710">
                         <plugs>
-                            <plug default="-1.8" idx="1"/>
+                            <plug default="-1.25" idx="1"/>
                         </plugs>
                         <structRect l="684" r="744" t="192" b="228"/>
                     </module>
                     <module type="Monostable" handle="1592635540">
                         <plugs>
-                            <plug default="0.001" idx="1"/>
+                            <plug default="0.0001" idx="1"/>
                         </plugs>
                         <structRect l="876" r="996" t="300" b="336"/>
                     </module>
@@ -130,7 +130,7 @@
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="Counter" handle="2008446642">
-                        <structRect l="900" r="960" t="192" b="240"/>
+                        <structRect l="900" r="960" t="216" b="264"/>
                         <panelRect l="0" r="0" t="0" b="0"/>
                     </module>
                     <module type="Comparator" handle="1709228785">
@@ -138,23 +138,23 @@
                             <plug default="0"/>
                             <plug default="0"/>
                         </plugs>
-                        <structRect l="780" r="864" t="192" b="252"/>
+                        <structRect l="768" r="852" t="240" b="300"/>
                     </module>
                     <module type="Monostable" handle="1932063331">
                         <plugs>
-                            <plug default="0.001" idx="1"/>
+                            <plug default="0.0001" idx="1"/>
                         </plugs>
                         <structRect l="576" r="696" t="108" b="144"/>
                     </module>
                     <module type="Monostable" handle="1350608867">
                         <plugs>
-                            <plug default="0.001" idx="1"/>
+                            <plug default="0.0001" idx="1"/>
                         </plugs>
                         <structRect l="348" r="468" t="300" b="336"/>
                     </module>
                     <module type="Monostable" handle="1059733817">
                         <plugs>
-                            <plug default="0.001" idx="1"/>
+                            <plug default="0.0001" idx="1"/>
                         </plugs>
                         <structRect l="960" r="1080" t="540" b="576"/>
                     </module>
@@ -358,26 +358,25 @@
                     <line type="Line" handle="92494242" lineType="1" fMod="195297404" tMod="1895261801" fPlg="2"/>
                     <line type="Line" handle="929389552" lineType="1" fMod="1932063331" tMod="2026835710" fPlg="2"/>
                     <line type="Line" handle="1629678762" lineType="1" fMod="2026835710" tMod="959166844" fPlg="2"/>
-                    <line type="Line" handle="771298989" lineType="1" fMod="1059733817" tMod="966341356" fPlg="2"/>
-                    <line type="Line" handle="449509980" lineType="1" fMod="966341356" tMod="959166844" fPlg="2"/>
                     <line type="Line" handle="1265255221" lineType="1" fMod="1592635540" tMod="1103463822" fPlg="2"/>
                     <line type="Line" handle="699852211" lineType="1" fMod="1103463822" tMod="959166844" fPlg="2"/>
+                    <line type="Line" handle="1608979118" lineType="1" fMod="1059733817" tMod="1893401121" fPlg="2"/>
+                    <line type="Line" handle="1137427576" lineType="1" fMod="1893401121" tMod="959166844" fPlg="2"/>
                 </lines>
                 <PanelWndPosition l="120" r="120" t="112" b="112"/>
                 <PanelLocation l="51" r="700" t="205" b="766"/>
                 <StructLocation l="0" r="1320" t="0" b="780"/>
                 <PanelScroll x="0" y="0"/>
-                <StructScroll x="1" y="0"/>
+                <StructScroll x="91" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
                 <panel_rect l="16" r="312" t="16" b="216"/>
             </module>
             <module type="SE Wave Recorder2" handle="2142934044">
                 <plugs>
-                    <plug id="3" idx="3"/>
-                    <plug id="4"/>
+                    <plug id="4" idx="4"/>
                     <plug id="5"/>
                 </plugs>
-                <structRect l="756" r="828" t="276" b="324"/>
+                <structRect l="756" r="828" t="288" b="336"/>
                 <panelRect l="0" r="0" t="0" b="0"/>
             </module>
             <module type="Sound Out" handle="1747713752">
