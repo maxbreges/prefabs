@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+<Document file_format="150000" vst_latencyCompensation="1" vst_processor_id="{D9DC144A-9500-40ED-99A7-7B1249290E2A}" vst_controller_id="{41DA4099-ABC7-4DA8-9227-9E0570704E6D}" vst_4char_id="lMiG" vst_dll_name="Knob" vst_product="Knob" vst_flags="7" vst_preset_count="1">
     <master_container type="Container" handle="455244713" name="Main" ViewOpenFlags="384" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -8,25 +8,31 @@
         <PatchManager>
             <ProgramNames/>
             <Parameters>
-                <param type="8" handle="429894627" module="1391951653" moduleParamId="0">
+                <param type="6" handle="7909184" shortName="bg knob" module="604726505" moduleParamId="0" RangeMaximum="100">
                     <patch-list>
-                        <s>5</s>
+                        <s>50</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
-                <param type="1" handle="1224636445" module="1051322962" moduleParamId="2">
+                <param type="1" handle="901581010" shortName="front knob color" module="50878854" moduleParamId="2">
                     <patch-list>
-                        <s>ff00ff19</s>
+                        <s>ff009fff</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
-                <param type="1" handle="1460740824" module="942249706" moduleParamId="2">
+                <param type="1" handle="908073823" shortName="bg knob color" module="880749142" moduleParamId="2">
                     <patch-list>
-                        <s>ffff00a9</s>
+                        <s>ff00e6ff</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
-                <param type="6" handle="1588790628" module="2018011788" moduleParamId="0" RangeMaximum="100">
+                <param type="4" handle="966597729" module="1757432270" moduleParamId="0">
+                    <patch-list>
+                        <s repeat="128">0</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1115384076" stateful="false" module="1034459720" moduleParamId="0"/>
+                <param type="6" handle="1786437145" shortName="front knob" module="790262917" moduleParamId="0" RangeMaximum="100">
                     <patch-list>
                         <s>50</s>
                         <s repeat="127">0</s>
@@ -40,107 +46,339 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Container" handle="729747430" name="Knob" ViewOpenFlags="256" skin="default2">
+            <module type="Sound Out" handle="927320472">
+                <plugs>
+                    <plug idx="2"/>
+                </plugs>
+                <structRect l="300" r="348" t="48" b="84"/>
+            </module>
+            <module type="MIDI In" handle="1034459720">
+                <structRect l="24" r="108" t="48" b="90"/>
+                <panelRect l="24" r="32" t="24" b="38"/>
+            </module>
+            <module type="Container" handle="819393213" name="Knob" ViewOpenFlags="256" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
-                    <plug name="Value Out" direction="1" datatype="6" idx="7"/>
+                    <plug name="MIDI Data" datatype="2" idx="7"/>
+                    <plug name="Out" direction="1"/>
+                    <plug name="Out" direction="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="60" r="180" t="72" b="232"/>
+                <structRect l="132" r="252" t="72" b="304"/>
                 <modules>
-                    <module type="Float Link" handle="308789574">
+                    <module type="OR Gate GuiLR" handle="1397338627">
                         <plugs>
-                            <plug default="0"/>
+                            <plug name="Mouse Down" idx="1"/>
+                            <plug name="Bool" id="2"/>
+                            <plug id="3"/>
                         </plugs>
-                        <structRect l="456" r="588" t="432" b="492"/>
-                        <panelRect l="224" r="224" t="176" b="176"/>
+                        <structRect l="216" r="312" t="312" b="360"/>
+                        <panelRect l="376" r="376" t="328" b="328"/>
                     </module>
-                    <module type="SE PatchMemory Int" handle="1391951653">
-                        <structRect l="96" r="216" t="288" b="372"/>
-                        <panelRect l="232" r="232" t="144" b="144"/>
-                    </module>
-                    <module type="exKnob" handle="1051322962">
+                    <module type="OR Gate GuiLR" handle="605362082">
                         <plugs>
-                            <plug default="3" idx="10"/>
-                            <plug default="1" idx="12"/>
-                            <plug default="3"/>
+                            <plug name="Mouse Down" idx="1"/>
+                            <plug name="Bool" id="2"/>
+                            <plug id="3"/>
                         </plugs>
-                        <structRect l="300" r="420" t="48" b="240"/>
-                        <panelRect l="96" r="160" t="88" b="152"/>
+                        <structRect l="216" r="312" t="204" b="252"/>
+                        <panelRect l="304" r="304" t="248" b="248"/>
                     </module>
-                    <module type="SE FloatToText GUI" handle="699792756">
+                    <module type="My FloatTrigger" handle="1170447722">
+                        <structRect l="156" r="204" t="216" b="240"/>
+                        <panelRect l="312" r="312" t="304" b="304"/>
+                    </module>
+                    <module type="My FloatTrigger" handle="829273886">
+                        <structRect l="156" r="204" t="324" b="348"/>
+                        <panelRect l="240" r="240" t="240" b="240"/>
+                    </module>
+                    <module type="SE PatchMemory Bool" handle="1757432270">
+                        <structRect l="156" r="276" t="456" b="540"/>
+                        <panelRect l="264" r="264" t="232" b="232"/>
+                    </module>
+                    <module type="Container" handle="163614558" name="LED2" m_locked="true" skin="default">
                         <plugs>
-                            <plug default="0" idx="1"/>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug default="1"/>
+                            <plug default="0" idx="5"/>
+                            <plug default="2"/>
+                            <plug name="Modified" datatype="4"/>
+                            <plug name="Bool Val" direction="1" datatype="4"/>
+                            <plug/>
                         </plugs>
-                        <structRect l="180" r="288" t="192" b="228"/>
-                        <panelRect l="336" r="337" t="224" b="225"/>
+                        <structRect l="312" r="384" t="540" b="612"/>
+                        <modules>
+                            <module type="SE FloatToBool GUI" handle="1281070395">
+                                <structRect l="228" r="300" t="144" b="168"/>
+                                <panelRect l="64" r="64" t="40" b="40"/>
+                            </module>
+                            <module type="SE BoolToFloat GUI" handle="137385488">
+                                <structRect l="216" r="288" t="60" b="84"/>
+                                <panelRect l="72" r="72" t="56" b="56"/>
+                            </module>
+                            <module type="Image3" handle="1829327811">
+                                <plugs>
+                                    <plug default="led2.bmp" idx="1"/>
+                                </plugs>
+                                <structRect l="481" r="601" t="42" b="150"/>
+                                <panelRect l="46" r="66" t="24" b="44"/>
+                            </module>
+                            <module type="SE ImageTinted XP" handle="374671938" name="Tinted Bitmap Image">
+                                <plugs>
+                                    <plug default="led2_L2.bmp" idx="1"/>
+                                    <plug default="0.5" idx="12"/>
+                                </plugs>
+                                <structRect l="470" r="590" t="184" b="328"/>
+                                <panelRect l="46" r="66" t="24" b="44"/>
+                            </module>
+                            <module type="IO Mod" handle="13939951">
+                                <plugs>
+                                    <plug name="Modified" direction="1" datatype="4" tiedtomod="163614558" tiedtopin="7"/>
+                                    <plug name="Bool Val" datatype="4" tiedtomod="163614558" tiedtopin="8"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="9" r="81" t="42" b="78"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="455407839" lineType="1" fMod="1281070395" tMod="13939951" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="1757421680" lineType="1" fMod="137385488" tMod="1281070395" fPlg="1"/>
+                            <line type="Line" handle="1119726544" lineType="1" fMod="13939951" tMod="137385488"/>
+                            <line type="Line" handle="874656706" lineType="1" fMod="137385488" tMod="1829327811" fPlg="1"/>
+                        </lines>
+                        <PanelWndPosition l="135" r="155" t="26" b="46"/>
+                        <PanelLocation l="318" r="429" t="12" b="75"/>
+                        <StructLocation l="257" r="986" t="12" b="478"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="89" cy="2"/>
+                        <panel_rect l="0" r="93" t="0" b="45"/>
                     </module>
-                    <module type="TextX" handle="1942812632">
+                    <module type="TextX" handle="875412606">
                         <plugs>
                             <plug default="ff000000" idx="1"/>
                             <plug default="ffff4500"/>
                             <plug default="heading 3" idx="4"/>
                         </plugs>
-                        <structRect l="300" r="408" t="276" b="376"/>
-                        <panelRect l="96" r="160" t="168" b="192"/>
+                        <structRect l="468" r="576" t="504" b="604"/>
+                        <panelRect l="112" r="176" t="170" b="194"/>
                     </module>
-                    <module type="SE PatchMemory Float" handle="2018011788">
-                        <structRect l="60" r="180" t="84" b="168"/>
-                        <panelRect l="352" r="353" t="184" b="185"/>
-                    </module>
-                    <module type="IO Mod" handle="491915903">
+                    <module type="SE ListToText" handle="1445969400">
                         <plugs>
-                            <plug name="Value Out" datatype="6" tiedtomod="729747430" tiedtopin="7"/>
-                            <plug/>
+                            <plug default="FFFFFFFF,FF000000" idx="1"/>
                         </plugs>
-                        <structRect l="492" r="564" t="60" b="84"/>
+                        <structRect l="456" r="528" t="408" b="444"/>
+                        <panelRect l="296" r="296" t="208" b="208"/>
                     </module>
-                    <module type="exKnob" handle="942249706">
+                    <module type="SE BoolToInt GUI" handle="1656454281">
+                        <structRect l="564" r="636" t="372" b="396"/>
+                        <panelRect l="232" r="232" t="144" b="144"/>
+                    </module>
+                    <module type="SE ListToText" handle="442468176">
                         <plugs>
+                            <plug default="FF000000,FFFFFFFF" idx="1"/>
+                        </plugs>
+                        <structRect l="456" r="528" t="348" b="384"/>
+                        <panelRect l="256" r="256" t="152" b="152"/>
+                    </module>
+                    <module type="DoubleClick" handle="2128302125">
+                        <structRect l="48" r="144" t="168" b="216"/>
+                        <panelRect l="248" r="248" t="176" b="176"/>
+                    </module>
+                    <module type="LatchGui" handle="877170887">
+                        <structRect l="648" r="720" t="492" b="528"/>
+                        <panelRect l="232" r="232" t="168" b="168"/>
+                    </module>
+                    <module type="OR Gate GuiLR" handle="1213830685">
+                        <plugs>
+                            <plug name="Ctrl+click" idx="1"/>
+                            <plug name="Ctrl+click" id="2"/>
+                            <plug id="3"/>
+                        </plugs>
+                        <structRect l="684" r="756" t="360" b="408"/>
+                        <panelRect l="256" r="256" t="160" b="160"/>
+                    </module>
+                    <module type="Float Link" handle="1399352913">
+                        <plugs>
+                            <plug default="0"/>
+                        </plugs>
+                        <structRect l="348" r="480" t="288" b="348"/>
+                        <panelRect l="224" r="224" t="176" b="176"/>
+                    </module>
+                    <module type="exKnob" handle="50878854">
+                        <plugs>
+                            <plug default="" idx="1"/>
                             <plug default="3" idx="10"/>
                             <plug default="1" idx="12"/>
-                            <plug default="5"/>
+                            <plug default="3"/>
                         </plugs>
-                        <structRect l="480" r="600" t="192" b="384"/>
-                        <panelRect l="80" r="176" t="72" b="168"/>
+                        <structRect l="348" r="468" t="36" b="228"/>
+                        <panelRect l="112" r="176" t="66" b="130"/>
+                    </module>
+                    <module type="SE FloatToText GUI" handle="643787921">
+                        <plugs>
+                            <plug default="0" idx="1"/>
+                        </plugs>
+                        <structRect l="48" r="156" t="240" b="276"/>
+                        <panelRect l="336" r="337" t="224" b="225"/>
+                    </module>
+                    <module type="TextX" handle="1029244846">
+                        <plugs>
+                            <plug default="ff000000" idx="1"/>
+                            <plug default="ffff4500"/>
+                            <plug default="heading 3" idx="4"/>
+                        </plugs>
+                        <structRect l="540" r="648" t="192" b="292"/>
+                        <panelRect l="112" r="176" t="146" b="170"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="790262917">
+                        <structRect l="36" r="156" t="60" b="144"/>
+                        <panelRect l="352" r="353" t="184" b="185"/>
+                    </module>
+                    <module type="IO Mod" handle="1571690923">
+                        <plugs>
+                            <plug name="MIDI Data" direction="1" datatype="2" tiedtomod="819393213" tiedtopin="7"/>
+                            <plug name="Out" tiedtomod="819393213" tiedtopin="8"/>
+                            <plug name="Out" tiedtomod="819393213" tiedtopin="9"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="636" r="720" t="48" b="96"/>
+                    </module>
+                    <module type="Container" handle="1586047796" name="Bg Knob container" skin="default2">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="Ctrl+click" direction="1" datatype="4" idx="7"/>
+                            <plug name="Color Out" direction="1" datatype="1"/>
+                            <plug name="Text Val" direction="1" datatype="1"/>
+                            <plug name="Mouse Down" direction="1" datatype="4"/>
+                            <plug name="Animation Position" direction="1" datatype="6"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="24" r="144" t="360" b="548"/>
+                        <modules>
+                            <module type="SE PatchMemory Float" handle="604726505">
+                                <structRect l="240" r="360" t="168" b="252"/>
+                                <panelRect l="304" r="304" t="296" b="296"/>
+                            </module>
+                            <module type="SE FloatToText GUI" handle="1931153545">
+                                <plugs>
+                                    <plug default="0" idx="1"/>
+                                </plugs>
+                                <structRect l="444" r="552" t="300" b="336"/>
+                                <panelRect l="472" r="473" t="352" b="353"/>
+                            </module>
+                            <module type="DoubleClick" handle="1801687042">
+                                <structRect l="324" r="420" t="288" b="336"/>
+                                <panelRect l="408" r="408" t="296" b="296"/>
+                            </module>
+                            <module type="exKnob" handle="880749142">
+                                <plugs>
+                                    <plug default="1" idx="12"/>
+                                </plugs>
+                                <structRect l="672" r="792" t="24" b="240"/>
+                                <panelRect l="184" r="280" t="88" b="188"/>
+                            </module>
+                            <module type="IO Mod" handle="1186509408">
+                                <plugs>
+                                    <plug name="Ctrl+click" datatype="4" tiedtomod="1586047796" tiedtopin="7"/>
+                                    <plug name="Color Out" datatype="1" tiedtomod="1586047796" tiedtopin="8"/>
+                                    <plug name="Text Val" datatype="1" tiedtomod="1586047796" tiedtopin="9"/>
+                                    <plug name="Mouse Down" datatype="4" tiedtomod="1586047796" tiedtopin="10"/>
+                                    <plug name="Animation Position" datatype="6" tiedtomod="1586047796" tiedtopin="11"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="912" r="1032" t="24" b="96"/>
+                            </module>
+                            <module type="IO Mod" handle="173661519">
+                                <plugs>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="20" r="80" t="20" b="32"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="868302448" lineType="1" fMod="604726505" tMod="1801687042" fPlg="8" tPlg="4"/>
+                            <line type="Line" handle="1389128909" lineType="1" fMod="604726505" tMod="1801687042" fPlg="11"/>
+                            <line type="Line" handle="1612172411" lineType="1" fMod="604726505" tMod="880749142" fPlg="9" tPlg="2"/>
+                            <line type="Line" handle="662051395" lineType="1" fMod="604726505" tMod="880749142" fPlg="10" tPlg="3"/>
+                            <line type="Line" handle="1178737038" lineType="1" fMod="604726505" tMod="880749142" fPlg="11" tPlg="4"/>
+                            <line type="Line" handle="487639358" lineType="1" fMod="604726505" tMod="880749142" fPlg="8"/>
+                            <line type="Line" handle="271195251" lineType="1" fMod="604726505" tMod="1931153545" fPlg="7"/>
+                            <line type="Line" handle="1576811953" lineType="1" fMod="880749142" tMod="1186509408" fPlg="18"/>
+                            <line type="Line" handle="1026882642" lineType="1" fMod="880749142" tMod="1186509408" fPlg="16" tPlg="1"/>
+                            <line type="Line" handle="434471928" lineType="1" fMod="1931153545" tMod="1186509408" fPlg="2" tPlg="2"/>
+                            <line type="Line" handle="69139886" lineType="1" fMod="604726505" tMod="1186509408" fPlg="11" tPlg="3"/>
+                            <line type="Line" handle="261849668" lineType="1" fMod="604726505" tMod="1186509408" fPlg="8" tPlg="4"/>
+                        </lines>
+                        <PanelWndPosition l="96" r="192" t="48" b="148"/>
+                        <PanelLocation l="30" r="530" t="30" b="330"/>
+                        <StructLocation l="0" r="996" t="0" b="540"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="-88" cy="-40"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                 </modules>
                 <lines>
-                    <line type="Line" handle="2009081387" lineType="1" fMod="2018011788" tMod="699792756" fPlg="7"/>
-                    <line type="Line" handle="1858016108" lineType="1" fMod="699792756" tMod="1942812632" fPlg="2"/>
-                    <line type="Line" handle="491182438" lineType="1" fMod="2018011788" tMod="1051322962" fPlg="8"/>
-                    <line type="Line" handle="1459020857" lineType="1" fMod="2018011788" tMod="1051322962" fPlg="9" tPlg="2"/>
-                    <line type="Line" handle="1765534406" lineType="1" fMod="2018011788" tMod="1051322962" fPlg="10" tPlg="3"/>
-                    <line type="Line" handle="1265455406" lineType="1" fMod="2018011788" tMod="1051322962" fPlg="11" tPlg="4"/>
-                    <line type="Line" handle="975058880" lineType="1" fMod="1051322962" tMod="1942812632" fPlg="16" tPlg="2"/>
-                    <line type="Line" handle="1220871724" lineType="1" fMod="2018011788" tMod="491915903" fPlg="13"/>
-                    <line type="Line" handle="15969367" lineType="1" fMod="1391951653" tMod="942249706" fPlg="8"/>
-                    <line type="Line" handle="831680040" lineType="1" fMod="1391951653" tMod="942249706" fPlg="9" tPlg="2"/>
-                    <line type="Line" handle="1513877630" lineType="1" fMod="1391951653" tMod="942249706" fPlg="10" tPlg="3"/>
-                    <line type="Line" handle="1250779086" lineType="1" fMod="1391951653" tMod="942249706" fPlg="11" tPlg="4"/>
-                    <line type="Line" handle="1785358380" lineType="1" fMod="2018011788" tMod="308789574" fPlg="11" tPlg="1"/>
-                    <line type="Line" handle="1396402155" lineType="1" fMod="1391951653" tMod="308789574" fPlg="11" tPlg="2"/>
-                    <line type="Line" handle="1568212259" lineType="1" fMod="2018011788" tMod="308789574" fPlg="8" tPlg="4"/>
-                    <line type="Line" handle="342764583" lineType="1" fMod="1391951653" tMod="308789574" fPlg="8" tPlg="3"/>
+                    <line type="Line" handle="2000028155" lineType="1" fMod="442468176" tMod="875412606" fPlg="2" tPlg="3"/>
+                    <line type="Line" handle="929842105" lineType="1" fMod="1445969400" tMod="875412606" fPlg="2" tPlg="1"/>
+                    <line type="Line" handle="67018297" lineType="1" fMod="1445969400" tMod="1029244846" fPlg="2" tPlg="1"/>
+                    <line type="Line" handle="1957076094" lineType="1" fMod="1656454281" tMod="1445969400" fPlg="1"/>
+                    <line type="Line" handle="1295533154" lineType="1" fMod="442468176" tMod="1029244846" fPlg="2" tPlg="3"/>
+                    <line type="Line" handle="1572101783" lineType="1" fMod="1656454281" tMod="442468176" fPlg="1"/>
+                    <line type="Line" handle="300685350" lineType="1" fMod="790262917" tMod="2128302125" fPlg="8" tPlg="4"/>
+                    <line type="Line" handle="1716533938" lineType="1" fMod="790262917" tMod="2128302125" fPlg="11"/>
+                    <line type="Line" handle="1211352771" lineType="1" fMod="50878854" tMod="1213830685" fPlg="18" tPlg="1"/>
+                    <line type="Line" handle="1343965214" lineType="1" fMod="790262917" tMod="50878854" fPlg="11" tPlg="4"/>
+                    <line type="Line" handle="2141772528" lineType="1" fMod="790262917" tMod="50878854" fPlg="10" tPlg="3"/>
+                    <line type="Line" handle="390649628" lineType="1" fMod="790262917" tMod="50878854" fPlg="9" tPlg="2"/>
+                    <line type="Line" handle="1309825862" lineType="1" fMod="790262917" tMod="50878854" fPlg="8"/>
+                    <line type="Line" handle="1531031005" lineType="1" fMod="643787921" tMod="1029244846" fPlg="2"/>
+                    <line type="Line" handle="575974277" lineType="1" fMod="790262917" tMod="643787921" fPlg="7"/>
+                    <line type="Line" handle="1919915352" lineType="1" fMod="1586047796" tMod="1213830685" fPlg="7" tPlg="2"/>
+                    <line type="Line" handle="1963030466" lineType="1" fMod="1586047796" tMod="875412606" fPlg="8" tPlg="2"/>
+                    <line type="Line" handle="573942668" lineType="1" fMod="1586047796" tMod="875412606" fPlg="9"/>
+                    <line type="Line" handle="1905299464" lineType="1" fMod="50878854" tMod="1029244846" fPlg="16" tPlg="2"/>
+                    <line type="Line" handle="1348725780" lineType="1" fMod="1757432270" tMod="1399352913" fPlg="7"/>
+                    <line type="Line" handle="647880678" lineType="1" fMod="1213830685" tMod="877170887"/>
+                    <line type="Line" handle="1567034495" lineType="1" fMod="1757432270" tMod="877170887" fPlg="7" tPlg="2"/>
+                    <line type="Line" handle="1862452147" lineType="1" fMod="1757432270" tMod="163614558" fPlg="7" tPlg="7"/>
+                    <line type="Line" handle="1884349092" lineType="1" fMod="1757432270" tMod="1656454281" fPlg="7"/>
+                    <line type="Line" handle="1153881201" lineType="1" fMod="1586047796" tMod="829273886" fPlg="11"/>
+                    <line type="Line" handle="850567976" lineType="1" fMod="790262917" tMod="1170447722" fPlg="8"/>
+                    <line type="Line" handle="968646368" lineType="1" fMod="790262917" tMod="605362082" fPlg="11" tPlg="1"/>
+                    <line type="Line" handle="60246049" lineType="1" fMod="1170447722" tMod="605362082" fPlg="1" tPlg="2"/>
+                    <line type="Line" handle="209784663" lineType="1" fMod="605362082" tMod="1399352913" tPlg="1"/>
+                    <line type="Line" handle="1581855963" lineType="1" fMod="1586047796" tMod="1397338627" fPlg="10" tPlg="1"/>
+                    <line type="Line" handle="1559332980" lineType="1" fMod="829273886" tMod="1397338627" fPlg="1" tPlg="2"/>
+                    <line type="Line" handle="172599630" lineType="1" fMod="1397338627" tMod="1399352913" tPlg="2"/>
+                    <line type="Line" handle="784247303" lineType="1" fMod="1586047796" tMod="1399352913" fPlg="11" tPlg="4"/>
+                    <line type="Line" handle="1950484786" lineType="1" fMod="790262917" tMod="1399352913" fPlg="8" tPlg="3"/>
                 </lines>
-                <PanelWndPosition l="32" r="128" t="40" b="160"/>
-                <PanelLocation l="30" r="530" t="30" b="330"/>
-                <StructLocation l="567" r="1390" t="365" b="929"/>
+                <PanelWndPosition l="112" r="208" t="56" b="224"/>
+                <PanelLocation l="30" r="530" t="30" b="487"/>
+                <StructLocation l="500" r="1393" t="20" b="812"/>
                 <PanelScroll x="0" y="0"/>
-                <StructScroll x="0" y="0"/>
-                <PanelWndOffset cx="-48" cy="-32"/>
-                <panel_rect l="16" r="312" t="16" b="216"/>
+                <StructScroll x="1" y="0"/>
+                <PanelWndOffset cx="16" cy="30"/>
+                <panel_rect l="16" r="272" t="16" b="272"/>
             </module>
         </modules>
-        <lines/>
+        <lines>
+            <line type="Line" handle="1541735511" lineType="1" fMod="1034459720" tMod="819393213" fPlg="1" tPlg="7"/>
+            <line type="Line" handle="1879167258" lineType="1" fMod="819393213" tMod="927320472" fPlg="8"/>
+            <line type="Line" handle="639935334" lineType="1" fMod="819393213" tMod="927320472" fPlg="9" tPlg="1"/>
+        </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
-        <PanelLocation l="814" r="1314" t="37" b="337"/>
-        <StructLocation l="0" r="449" t="0" b="819"/>
+        <PanelLocation l="16" r="421" t="450" b="936"/>
+        <StructLocation l="11" r="451" t="9" b="442"/>
         <PanelScroll x="0" y="0"/>
-        <StructScroll x="0" y="0"/>
+        <StructScroll x="1" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
-        <panel_rect l="16" r="312" t="16" b="216"/>
+        <panel_rect l="16" r="312" t="16" b="280"/>
     </master_container>
     <PluginList>
         <Plugin id="Container" class="1" name="Container" flags="384" category="">
@@ -157,13 +395,23 @@
                 <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
             </GUI>
         </Plugin>
+        <Plugin id="DoubleClick" name="Double Click" flags="384" category="mx/Sub-Controls">
+            <GUI>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Time ms" datatype="int" default="250"/>
+                <Pin name="Countdown Out" datatype="int" direction="out" private="true"/>
+                <Pin name="Click Count" datatype="int" direction="out" isMinimised="true"/>
+                <Pin name="AnimPos" datatype="float"/>
+                <Pin name="Reset Value" datatype="float" default="0.5"/>
+            </GUI>
+        </Plugin>
         <Plugin id="Float Link" name="Float Link" flags="384" category="mx/Sub-Controls">
             <GUI>
                 <Pin name="Link" datatype="bool"/>
                 <Pin name="mDown1" datatype="bool"/>
                 <Pin name="mDown2" datatype="bool"/>
-                <Pin name="Animation Position 2" datatype="float"/>
                 <Pin name="Animation Position 1" datatype="float"/>
+                <Pin name="Animation Position 2" datatype="float"/>
             </GUI>
         </Plugin>
         <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
@@ -171,11 +419,124 @@
                 <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
             </Audio>
         </Plugin>
+        <Plugin id="Image3" name="Image2" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Filename" datatype="string" default="knob_sm" isFilename="true" metadata="bmp"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Frame Count" datatype="int" private="true"/>
+                <Pin name="Frame Count" datatype="int" direction="out"/>
+                <Pin name="Mouse Response" datatype="enum" default="-1" isMinimised="true" metadata="off=-2, auto=-1, vertical=0, horizontal=1, clicks=2, rotary=3, step=4"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="LatchGui" name="Latch Gui" flags="384" category="mx/Sub-Controls">
+            <GUI>
+                <Pin name="Click In" datatype="bool"/>
+                <Pin name="Latch Out" datatype="bool" direction="out"/>
+                <Pin name="Latch Out" datatype="bool"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="MIDI In" class="2" name="MIDI In" flags="384" category="MIDI">
+            <Parameters>
+                <Parameter id="0" datatype="int" name="" persistant="false"/>
+            </Parameters>
+            <Audio>
+                <Pin name="MIDI Data" datatype="midi" direction="out"/>
+                <Pin name="Activity" datatype="int" direction="out" private="true" parameterId="0"/>
+                <Pin name="MPE Mode" datatype="bool"/>
+            </Audio>
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Activity" datatype="int" private="true" parameterId="0"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="My FloatTrigger" name="Float Trigger" flags="384" category="mx/Sub-Controls" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Float" datatype="float"/>
+                <Pin name="Bool" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="OR Gate GuiLR" name="OR Gate Gui &lt;&gt;" flags="384" category="mx/Sub-Controls/Logic">
+            <GUI>
+                <Pin name="Bool Out" datatype="bool" direction="out"/>
+                <Pin name="Spare In" datatype="bool" autoRename="true" autoDuplicate="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE BoolToFloat GUI" name="Bool To Float" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Bool Val" datatype="bool"/>
+                <Pin name="Float Val" datatype="float" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE BoolToInt GUI" name="Bool To Int" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Bool Val" datatype="bool"/>
+                <Pin name="Int Val" datatype="int" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE FloatToBool GUI" name="Float To Bool" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Float Val" datatype="float"/>
+                <Pin name="Bool Val" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
         <Plugin id="SE FloatToText GUI" name="Float To Text" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
             <GUI>
                 <Pin name="Float Val" datatype="float"/>
                 <Pin name="Decimal Places" datatype="int" default="-1"/>
                 <Pin name="Text Val" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE ImageTinted XP" name="Image Tinted (XP)" flags="384" category="Debug/DirectX">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Filename" datatype="string" default="knob_sm" isFilename="true" metadata="bmp"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Frame Count" datatype="int" private="true"/>
+                <Pin name="Frame Count" datatype="int" direction="out"/>
+                <Pin name="Hue" datatype="float" direction="out" private="true"/>
+                <Pin name="Saturation" datatype="float" direction="out" private="true"/>
+                <Pin name="Brightness" datatype="float" direction="out" private="true"/>
+                <Pin name="Hue" datatype="float"/>
+                <Pin name="Saturation" datatype="float" default="1"/>
+                <Pin name="Brightness" datatype="float" default="1"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE ListToText" name="List to Text" flags="384" category="Sub-Controls/Conversion" helpUrl="synthedit.chm::/mdl_sdk3/ListToText.htm">
+            <GUI>
+                <Pin name="Choice" datatype="int"/>
+                <Pin name="Item List" datatype="string"/>
+                <Pin name="Item Text" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Bool" name="PatchMemory Bool" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="bool" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="bool" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="bool" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="bool" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="bool" direction="out"/>
+                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
             </GUI>
         </Plugin>
         <Plugin id="SE PatchMemory Float" name="PatchMemory Float3" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
@@ -201,28 +562,10 @@
                 <Pin name="Mouse Down" datatype="bool" direction="out"/>
             </GUI>
         </Plugin>
-        <Plugin id="SE PatchMemory Int" name="PatchMemory Int" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
-            <Parameters>
-                <Parameter id="0" datatype="int" name=""/>
-            </Parameters>
+        <Plugin id="Sound Out" class="1" name="Sound Out" flags="4352" category="Input-Output">
             <Audio>
-                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
-                <Pin name="Value Out" datatype="int" direction="out" autoConfigureParameter="true"/>
+                <Pin name="Out" datatype="float" rate="audio" autoRename="true" linearInput="true" autoDuplicate="true"/>
             </Audio>
-            <GUI>
-                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
-                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
-                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
-                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
-                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
-                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
-                <Pin name="Name" datatype="string" direction="out"/>
-                <Pin name="Value" datatype="int" direction="out"/>
-                <Pin name="Animation Position" datatype="float" direction="out"/>
-                <Pin name="Menu Items" datatype="string" direction="out"/>
-                <Pin name="Menu Selection" datatype="int" direction="out"/>
-                <Pin name="Mouse Down" datatype="bool" direction="out"/>
-            </GUI>
         </Plugin>
         <Plugin id="TextX" name="Text Entry" flags="384" category="mx/Sub-Controls">
             <GUI graphicsApi="GmpiGui">
@@ -256,12 +599,13 @@
                 <Pin name="Current Step" datatype="int"/>
                 <Pin name="Line Style" datatype="enum" default="2" isMinimised="true" metadata="Flat,Square,Round,Triangle"/>
                 <Pin name="Hex In" datatype="string" default="ffff6b00" private="true"/>
-                <Pin name="Circle Size" datatype="float" default="0.93" isMinimised="true"/>
+                <Pin name="Circle Size" datatype="float" default="0.93"/>
                 <Pin name="Line Thickness" datatype="float" default="4" isMinimised="true"/>
                 <Pin name="ColorAdj" datatype="bool" private="true"/>
                 <Pin name="Hex" datatype="string" private="true" parameterId="2"/>
                 <Pin name="Color Out" datatype="string" direction="out"/>
                 <Pin name="Start Angle" datatype="float" default="35" isMinimised="true"/>
+                <Pin name="Ctrl+click" datatype="bool" direction="out"/>
             </GUI>
         </Plugin>
     </PluginList>
