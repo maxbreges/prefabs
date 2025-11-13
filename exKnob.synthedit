@@ -10,7 +10,7 @@
             <Parameters>
                 <param type="6" handle="7909184" shortName="bg knob" module="604726505" moduleParamId="0" RangeMaximum="100">
                     <patch-list>
-                        <s>50</s>
+                        <s>100</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -28,13 +28,14 @@
                 </param>
                 <param type="4" handle="966597729" module="1757432270" moduleParamId="0">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>1</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1115384076" stateful="false" module="1034459720" moduleParamId="0"/>
                 <param type="6" handle="1786437145" shortName="front knob" module="790262917" moduleParamId="0" RangeMaximum="100">
                     <patch-list>
-                        <s>50</s>
+                        <s>100</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
