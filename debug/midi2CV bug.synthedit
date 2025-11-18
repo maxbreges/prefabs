@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Jeff McClintock" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_preset_count="64">
+    <master_container type="Container" handle="1173507681" name="Main" ViewOpenFlags="256" skin="default2">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="6" handle="27515068" shortName="BenderRange" ignorePC="true" automation="50331648" private="true" module="1034953582" hostControl="42" RangeMaximum="127.99219">
+                    <patch-list>
+                        <s>2</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="45468313" shortName="Polyphony" ignorePC="true" private="true" module="1034953582" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>4</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="52659032" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1173507681" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>768</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="65628985" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="72649589" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1034953582" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>768</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="212208849" shortName="BenderRange" ignorePC="true" automation="50331648" private="true" module="36353889" hostControl="42" RangeMaximum="127.99219">
+                    <patch-list>
+                        <s>2</s>
+                    </patch-list>
+                </param>
+                <param type="0" handle="278910025" shortName="Switch &lt; (MIDI) Choice" vstParameterNumber="1" module="931274556" moduleParamId="0" MetaData="Poly Container,4 MIDI2CV mono">
+                    <patch-list>
+                        <s>1</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="439511480" shortName="BenderRange" ignorePC="true" automation="50331648" private="true" module="667702367" hostControl="42" RangeMaximum="127.99219">
+                    <patch-list>
+                        <s>2</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="467921013" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1591482879" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>768</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="526773413" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="1678187955" hostControl="40">
+                    <patch-list>
+                        <s>0</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="749125926" shortName="Polyphony" ignorePC="true" private="true" module="667702367" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>1</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="813012970" shortName="Polyphony" ignorePC="true" private="true" module="1173507681" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>6</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="854641042" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="1591482879" hostControl="40">
+                    <patch-list>
+                        <s>0</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="878239940" shortName="ReserveVoices" ignorePC="true" private="true" module="1034953582" hostControl="22" RangeMaximum="128">
+                    <patch-list>
+                        <s>4</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="922965028" shortName="ReserveVoices" ignorePC="true" private="true" module="667702367" hostControl="22" RangeMaximum="128">
+                    <patch-list>
+                        <s>1</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1020715503" shortName="Polyphony" ignorePC="true" private="true" module="36353889" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>1</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1093409020" shortName="Polyphony" ignorePC="true" private="true" module="1477159376" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>4</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1108309463" shortName="ReserveVoices" ignorePC="true" private="true" module="1678187955" hostControl="22" RangeMaximum="128">
+                    <patch-list>
+                        <s>1</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1216879512" shortName="ReserveVoices" ignorePC="true" private="true" module="1591482879" hostControl="22" RangeMaximum="128">
+                    <patch-list>
+                        <s>1</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1240732192" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="36353889" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>768</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1241212101" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1477159376" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>2</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1506566668" shortName="BenderRange" ignorePC="true" automation="50331648" private="true" module="1477159376" hostControl="42" RangeMaximum="127.99219">
+                    <patch-list>
+                        <s>2</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1630599717" shortName="Polyphony" ignorePC="true" private="true" module="1678187955" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>1</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1662314945" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="1034953582" hostControl="40">
+                    <patch-list>
+                        <s>0</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1669959612" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1678187955" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>768</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1673038443" shortName="BenderRange" ignorePC="true" automation="50331648" private="true" module="1678187955" hostControl="42" RangeMaximum="127.99219">
+                    <patch-list>
+                        <s>2</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1727925760" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="667702367" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>768</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1740928317" shortName="ReserveVoices" ignorePC="true" private="true" module="36353889" hostControl="22" RangeMaximum="128">
+                    <patch-list>
+                        <s>1</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1832909592" shortName="ReserveVoices" ignorePC="true" private="true" module="1173507681" hostControl="22" RangeMaximum="128">
+                    <patch-list>
+                        <s>3</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1835163506" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="1477159376" hostControl="40">
+                    <patch-list>
+                        <s>0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1864781080" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="667702367" hostControl="40">
+                    <patch-list>
+                        <s>0</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1903059718" shortName="ReserveVoices" ignorePC="true" private="true" module="1477159376" hostControl="22" RangeMaximum="128">
+                    <patch-list>
+                        <s>4</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1903191230" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="36353889" hostControl="40">
+                    <patch-list>
+                        <s>0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1929703024" shortName="BenderRange" ignorePC="true" automation="50331648" private="true" module="1591482879" hostControl="42" RangeMaximum="127.99219">
+                    <patch-list>
+                        <s>2</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1969044747" shortName="MIDI Player2 Gate" vstParameterNumber="0" module="572157377" moduleParamId="0">
+                    <patch-list>
+                        <s>0</s>
+                        <s repeat="127">1</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="2018211008" shortName="Polyphony" ignorePC="true" private="true" module="1591482879" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>1</s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="Container" handle="1477159376" name="MIDI2CV 4 voices OLD" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="MIDI In" datatype="2" idx="7"/>
+                    <plug name="Channel" default="-1" datatype="0"/>
+                    <plug name="Output" direction="1"/>
+                    <plug/>
+                </plugs>
+                <structRect l="624" r="960" t="84" b="300"/>
+                <modules>
+                    <module type="SE Listbox" handle="1865703666">
+                        <structRect l="648" r="756" t="708" b="912"/>
+                        <panelRect l="328" r="384" t="88" b="176"/>
+                    </module>
+                    <module type="SE Listbox" handle="867715336">
+                        <structRect l="648" r="792" t="468" b="672"/>
+                        <panelRect l="200" r="304" t="24" b="112"/>
+                    </module>
+                    <module type="SE Polyphony Control" handle="1340264452">
+                        <structRect l="156" r="276" t="636" b="732"/>
+                        <panelRect l="328" r="328" t="224" b="224"/>
+                    </module>
+                    <module type="VCA" handle="1328840518">
+                        <structRect l="492" r="600" t="144" b="192"/>
+                    </module>
+                    <module type="Oscillator" handle="1287156382">
+                        <structRect l="396" r="480" t="84" b="168"/>
+                    </module>
+                    <module type="SynthEdit ADSR" handle="987394900">
+                        <structRect l="288" r="384" t="84" b="180"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE Listbox" handle="1656444781">
+                        <structRect l="528" r="636" t="396" b="600"/>
+                        <panelRect l="136" r="192" t="24" b="112"/>
+                    </module>
+                    <module type="SE Listbox" handle="1766210711">
+                        <structRect l="403" r="511" t="385" b="576"/>
+                        <panelRect l="72" r="136" t="40" b="120"/>
+                    </module>
+                    <module type="SE MIDI to CV 2" handle="1814260101">
+                        <structRect l="95" r="179" t="82" b="166"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="IO Mod" handle="246583699">
+                        <plugs>
+                            <plug name="Output" tiedtomod="1477159376" tiedtopin="9"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="648" r="708" t="168" b="192"/>
+                    </module>
+                    <module type="IO Mod" handle="800923840">
+                        <plugs>
+                            <plug name="MIDI In" direction="1" datatype="2" tiedtomod="1477159376" tiedtopin="7"/>
+                            <plug name="Channel" direction="1" datatype="0" tiedtomod="1477159376" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="92" t="20" b="56"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="2038424420" lineType="1" fMod="800923840" tMod="1814260101"/>
+                    <line type="Line" handle="650947187" lineType="1" fMod="800923840" tMod="1814260101" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="723256046" lineType="1" fMod="1814260101" tMod="987394900" fPlg="2"/>
+                    <line type="Line" handle="176766087" lineType="1" fMod="987394900" tMod="1328840518" fPlg="7" tPlg="1"/>
+                    <line type="Line" handle="2114032280" lineType="1" fMod="1287156382" tMod="1328840518" fPlg="3"/>
+                    <line type="Line" handle="1539686936" lineType="1" fMod="1814260101" tMod="987394900" fPlg="3" tPlg="1"/>
+                    <line type="Line" handle="1458395333" lineType="1" fMod="1814260101" tMod="1287156382" fPlg="4"/>
+                    <line type="Line" handle="486729703" lineType="1" fMod="1814260101" tMod="987394900" fPlg="5" tPlg="6"/>
+                    <line type="Line" handle="1109275631" lineType="1" fMod="1328840518" tMod="246583699" fPlg="2"/>
+                    <line type="Line" handle="988884686" lineType="1" fMod="1340264452" tMod="1766210711" fPlg="3"/>
+                    <line type="Line" handle="186172390" lineType="1" fMod="1340264452" tMod="1766210711" fPlg="4" tPlg="1"/>
+                    <line type="Line" handle="1655858642" lineType="1" fMod="1340264452" tMod="1656444781" fPlg="5"/>
+                    <line type="Line" handle="611166642" lineType="1" fMod="1340264452" tMod="1656444781" fPlg="6" tPlg="1"/>
+                    <line type="Line" handle="965932968" lineType="1" fMod="1340264452" tMod="867715336" fPlg="7"/>
+                    <line type="Line" handle="385354664" lineType="1" fMod="1340264452" tMod="867715336" fPlg="8" tPlg="1"/>
+                    <line type="Line" handle="359957247" lineType="1" fMod="1340264452" tMod="1865703666" fPlg="9"/>
+                    <line type="Line" handle="206082060" lineType="1" fMod="1340264452" tMod="1865703666" fPlg="10" tPlg="1"/>
+                </lines>
+                <PanelWndPosition l="440" r="440" t="216" b="216"/>
+                <PanelLocation l="30" r="654" t="30" b="392"/>
+                <StructLocation l="0" r="875" t="0" b="861"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="List Entry" handle="931274556" name="">
+                <plugs>
+                    <plug default="3" idx="7"/>
+                    <plug parameterId="-1" idx="10"/>
+                    <plug parameterId="-1"/>
+                </plugs>
+                <structRect l="372" r="528" t="48" b="100"/>
+                <panelRect l="256" r="256" t="136" b="136"/>
+            </module>
+            <module type="Switch (Many-&gt;1)" handle="734549084">
+                <plugs>
+                    <plug name="Poly Container" idx="2"/>
+                    <plug name="4 MIDI2CV mono"/>
+                    <plug/>
+                </plugs>
+                <structRect l="660" r="780" t="492" b="552"/>
+            </module>
+            <module type="Container" handle="1034953582" name="MIDI2CV 4 voices" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="MIDI In" datatype="2" idx="7"/>
+                    <plug name="Channel" default="-1" datatype="0"/>
+                    <plug name="Output" direction="1"/>
+                    <plug/>
+                </plugs>
+                <structRect l="384" r="528" t="144" b="304"/>
+                <modules>
+                    <module type="VCA" handle="789805228">
+                        <structRect l="492" r="600" t="144" b="192"/>
+                    </module>
+                    <module type="Oscillator" handle="233845660">
+                        <structRect l="396" r="480" t="84" b="168"/>
+                    </module>
+                    <module type="SynthEdit ADSR" handle="1056729981">
+                        <structRect l="288" r="384" t="84" b="180"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE Listbox" handle="1108442166">
+                        <structRect l="360" r="468" t="336" b="540"/>
+                        <panelRect l="136" r="192" t="24" b="112"/>
+                    </module>
+                    <module type="SE Listbox" handle="820160541">
+                        <structRect l="235" r="343" t="325" b="516"/>
+                        <panelRect l="72" r="136" t="40" b="120"/>
+                    </module>
+                    <module type="SE MIDI to CV 2" handle="522040009">
+                        <structRect l="95" r="179" t="82" b="166"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE Polyphony Control2" handle="2680099">
+                        <structRect l="84" r="204" t="336" b="564"/>
+                        <panelRect l="376" r="376" t="208" b="208"/>
+                    </module>
+                    <module type="IO Mod" handle="913251165">
+                        <plugs>
+                            <plug name="Output" tiedtomod="1034953582" tiedtopin="9"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="648" r="708" t="168" b="192"/>
+                    </module>
+                    <module type="IO Mod" handle="1471951217">
+                        <plugs>
+                            <plug name="MIDI In" direction="1" datatype="2" tiedtomod="1034953582" tiedtopin="7"/>
+                            <plug name="Channel" direction="1" datatype="0" tiedtomod="1034953582" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="92" t="20" b="56"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1105023325" lineType="1" fMod="789805228" tMod="913251165" fPlg="2"/>
+                    <line type="Line" handle="1345075213" lineType="1" fMod="522040009" tMod="1056729981" fPlg="5" tPlg="6"/>
+                    <line type="Line" handle="2113344674" lineType="1" fMod="522040009" tMod="233845660" fPlg="4"/>
+                    <line type="Line" handle="2086979164" lineType="1" fMod="522040009" tMod="1056729981" fPlg="3" tPlg="1"/>
+                    <line type="Line" handle="1423083143" lineType="1" fMod="233845660" tMod="789805228" fPlg="3"/>
+                    <line type="Line" handle="42915981" lineType="1" fMod="1056729981" tMod="789805228" fPlg="7" tPlg="1"/>
+                    <line type="Line" handle="1858712471" lineType="1" fMod="522040009" tMod="1056729981" fPlg="2"/>
+                    <line type="Line" handle="1761632630" lineType="1" fMod="1471951217" tMod="522040009" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="2084569522" lineType="1" fMod="1471951217" tMod="522040009"/>
+                    <line type="Line" handle="2063043986" lineType="1" fMod="2680099" tMod="820160541" fPlg="5"/>
+                    <line type="Line" handle="1972020948" lineType="1" fMod="2680099" tMod="820160541" fPlg="6" tPlg="1"/>
+                    <line type="Line" handle="1776582969" lineType="1" fMod="2680099" tMod="1108442166" fPlg="7"/>
+                    <line type="Line" handle="1332276561" lineType="1" fMod="2680099" tMod="1108442166" fPlg="8" tPlg="1"/>
+                </lines>
+                <PanelWndPosition l="352" r="352" t="240" b="240"/>
+                <PanelLocation l="30" r="654" t="30" b="392"/>
+                <StructLocation l="0" r="875" t="0" b="861"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="SE Switch &lt; (MIDI)" handle="1277808206">
+                <plugs>
+                    <plug name="Poly Container" idx="2"/>
+                    <plug name="4 MIDI2CV mono" id="3"/>
+                    <plug id="4"/>
+                </plugs>
+                <structRect l="192" r="312" t="480" b="540"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="Slider" handle="572157377" name="Play/Stop">
+                <plugs>
+                    <plug default="5" idx="9"/>
+                    <plug default="0"/>
+                    <plug parameterId="-1" idx="13"/>
+                    <plug parameterId="-1"/>
+                </plugs>
+                <structRect l="12" r="96" t="96" b="158"/>
+                <panelRect l="256" r="256" t="144" b="144"/>
+            </module>
+            <module type="Container" handle="1591482879" name="MIDI2CV mono" skin="default2">
+                <plugs>
+                    <plug name="MIDI In" datatype="2" idx="7"/>
+                    <plug name="Channel" default="3" datatype="0"/>
+                    <plug name="Output" direction="1"/>
+                    <plug/>
+                </plugs>
+                <structRect l="504" r="576" t="648" b="708"/>
+                <modules>
+                    <module type="VCA" handle="1054877889">
+                        <structRect l="492" r="600" t="144" b="192"/>
+                    </module>
+                    <module type="Oscillator" handle="1424574356">
+                        <structRect l="396" r="480" t="84" b="168"/>
+                    </module>
+                    <module type="SynthEdit ADSR" handle="734171650">
+                        <structRect l="288" r="384" t="84" b="180"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE Listbox" handle="1775133707">
+                        <structRect l="360" r="468" t="336" b="490"/>
+                        <panelRect l="264" r="264" t="192" b="192"/>
+                    </module>
+                    <module type="SE Listbox" handle="368798390">
+                        <structRect l="235" r="343" t="325" b="479"/>
+                        <panelRect l="224" r="224" t="152" b="152"/>
+                    </module>
+                    <module type="SE MIDI to CV 2" handle="305062339">
+                        <structRect l="95" r="179" t="82" b="166"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE Polyphony Control2" handle="473359389">
+                        <structRect l="84" r="204" t="336" b="564"/>
+                        <panelRect l="376" r="376" t="208" b="208"/>
+                    </module>
+                    <module type="IO Mod" handle="1448541379">
+                        <plugs>
+                            <plug name="Output" tiedtomod="1591482879" tiedtopin="9"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="648" r="708" t="168" b="192"/>
+                    </module>
+                    <module type="IO Mod" handle="997941916">
+                        <plugs>
+                            <plug name="MIDI In" direction="1" datatype="2" tiedtomod="1591482879" tiedtopin="7"/>
+                            <plug name="Channel" direction="1" datatype="0" tiedtomod="1591482879" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="92" t="20" b="56"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="104434175" lineType="1" fMod="473359389" tMod="1775133707" fPlg="8" tPlg="1"/>
+                    <line type="Line" handle="1924778530" lineType="1" fMod="473359389" tMod="1775133707" fPlg="7"/>
+                    <line type="Line" handle="1025178481" lineType="1" fMod="473359389" tMod="368798390" fPlg="6" tPlg="1"/>
+                    <line type="Line" handle="619829035" lineType="1" fMod="473359389" tMod="368798390" fPlg="5"/>
+                    <line type="Line" handle="2001798057" lineType="1" fMod="997941916" tMod="305062339"/>
+                    <line type="Line" handle="209802722" lineType="1" fMod="997941916" tMod="305062339" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1068785750" lineType="1" fMod="305062339" tMod="734171650" fPlg="2"/>
+                    <line type="Line" handle="561461590" lineType="1" fMod="734171650" tMod="1054877889" fPlg="7" tPlg="1"/>
+                    <line type="Line" handle="392707829" lineType="1" fMod="1424574356" tMod="1054877889" fPlg="3"/>
+                    <line type="Line" handle="676360270" lineType="1" fMod="305062339" tMod="734171650" fPlg="3" tPlg="1"/>
+                    <line type="Line" handle="405166869" lineType="1" fMod="305062339" tMod="1424574356" fPlg="4"/>
+                    <line type="Line" handle="1298615169" lineType="1" fMod="305062339" tMod="734171650" fPlg="5" tPlg="6"/>
+                    <line type="Line" handle="2085850084" lineType="1" fMod="1054877889" tMod="1448541379" fPlg="2"/>
+                </lines>
+                <PanelWndPosition l="432" r="432" t="216" b="216"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="875" t="0" b="861"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="Container" handle="667702367" name="MIDI2CV mono" skin="default2">
+                <plugs>
+                    <plug name="MIDI In" datatype="2" idx="7"/>
+                    <plug name="Channel" default="2" datatype="0"/>
+                    <plug name="Output" direction="1"/>
+                    <plug/>
+                </plugs>
+                <structRect l="504" r="576" t="564" b="624"/>
+                <modules>
+                    <module type="VCA" handle="1695548668">
+                        <structRect l="492" r="600" t="144" b="192"/>
+                    </module>
+                    <module type="Oscillator" handle="67879433">
+                        <structRect l="396" r="480" t="84" b="168"/>
+                    </module>
+                    <module type="SynthEdit ADSR" handle="1677290637">
+                        <structRect l="288" r="384" t="84" b="180"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE Listbox" handle="63608200">
+                        <structRect l="360" r="468" t="336" b="490"/>
+                        <panelRect l="264" r="264" t="192" b="192"/>
+                    </module>
+                    <module type="SE Listbox" handle="1561977470">
+                        <structRect l="235" r="343" t="325" b="479"/>
+                        <panelRect l="224" r="224" t="152" b="152"/>
+                    </module>
+                    <module type="SE MIDI to CV 2" handle="2144668769">
+                        <structRect l="95" r="179" t="82" b="166"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE Polyphony Control2" handle="801319066">
+                        <structRect l="84" r="204" t="336" b="564"/>
+                        <panelRect l="376" r="376" t="208" b="208"/>
+                    </module>
+                    <module type="IO Mod" handle="1495216159">
+                        <plugs>
+                            <plug name="Output" tiedtomod="667702367" tiedtopin="9"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="648" r="708" t="168" b="192"/>
+                    </module>
+                    <module type="IO Mod" handle="847617693">
+                        <plugs>
+                            <plug name="MIDI In" direction="1" datatype="2" tiedtomod="667702367" tiedtopin="7"/>
+                            <plug name="Channel" direction="1" datatype="0" tiedtomod="667702367" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="92" t="20" b="56"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1322647893" lineType="1" fMod="801319066" tMod="63608200" fPlg="8" tPlg="1"/>
+                    <line type="Line" handle="1989266981" lineType="1" fMod="801319066" tMod="63608200" fPlg="7"/>
+                    <line type="Line" handle="1243171362" lineType="1" fMod="801319066" tMod="1561977470" fPlg="6" tPlg="1"/>
+                    <line type="Line" handle="1655337878" lineType="1" fMod="801319066" tMod="1561977470" fPlg="5"/>
+                    <line type="Line" handle="1675188096" lineType="1" fMod="847617693" tMod="2144668769"/>
+                    <line type="Line" handle="2083188601" lineType="1" fMod="847617693" tMod="2144668769" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1885892461" lineType="1" fMod="2144668769" tMod="1677290637" fPlg="2"/>
+                    <line type="Line" handle="1598584415" lineType="1" fMod="1677290637" tMod="1695548668" fPlg="7" tPlg="1"/>
+                    <line type="Line" handle="1383122738" lineType="1" fMod="67879433" tMod="1695548668" fPlg="3"/>
+                    <line type="Line" handle="764956536" lineType="1" fMod="2144668769" tMod="1677290637" fPlg="3" tPlg="1"/>
+                    <line type="Line" handle="315836659" lineType="1" fMod="2144668769" tMod="67879433" fPlg="4"/>
+                    <line type="Line" handle="2087475783" lineType="1" fMod="2144668769" tMod="1677290637" fPlg="5" tPlg="6"/>
+                    <line type="Line" handle="1213143949" lineType="1" fMod="1695548668" tMod="1495216159" fPlg="2"/>
+                </lines>
+                <PanelWndPosition l="400" r="400" t="216" b="216"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="875" t="0" b="861"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="Container" handle="36353889" name="MIDI2CV mono" skin="default2">
+                <plugs>
+                    <plug name="MIDI In" datatype="2" idx="7"/>
+                    <plug name="Channel" default="1" datatype="0"/>
+                    <plug name="Output" direction="1"/>
+                    <plug/>
+                </plugs>
+                <structRect l="504" r="576" t="468" b="542"/>
+                <modules>
+                    <module type="VCA" handle="389947987">
+                        <structRect l="492" r="600" t="144" b="192"/>
+                    </module>
+                    <module type="Oscillator" handle="1060603677">
+                        <structRect l="396" r="480" t="84" b="168"/>
+                    </module>
+                    <module type="SynthEdit ADSR" handle="1577079580">
+                        <structRect l="288" r="384" t="84" b="180"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE Listbox" handle="420578401">
+                        <structRect l="360" r="468" t="336" b="490"/>
+                        <panelRect l="264" r="264" t="192" b="192"/>
+                    </module>
+                    <module type="SE Listbox" handle="1649092507">
+                        <structRect l="235" r="343" t="325" b="479"/>
+                        <panelRect l="224" r="224" t="152" b="152"/>
+                    </module>
+                    <module type="SE MIDI to CV 2" handle="429521995">
+                        <structRect l="95" r="179" t="82" b="166"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE Polyphony Control2" handle="1219293444">
+                        <structRect l="84" r="204" t="336" b="564"/>
+                        <panelRect l="376" r="376" t="208" b="208"/>
+                    </module>
+                    <module type="IO Mod" handle="735857944">
+                        <plugs>
+                            <plug name="Output" tiedtomod="36353889" tiedtopin="9"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="648" r="708" t="168" b="192"/>
+                    </module>
+                    <module type="IO Mod" handle="1800447454">
+                        <plugs>
+                            <plug name="MIDI In" direction="1" datatype="2" tiedtomod="36353889" tiedtopin="7"/>
+                            <plug name="Channel" direction="1" datatype="0" tiedtomod="36353889" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="92" t="20" b="56"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1447163572" lineType="1" fMod="389947987" tMod="735857944" fPlg="2"/>
+                    <line type="Line" handle="538335632" lineType="1" fMod="429521995" tMod="1577079580" fPlg="5" tPlg="6"/>
+                    <line type="Line" handle="1457974196" lineType="1" fMod="429521995" tMod="1060603677" fPlg="4"/>
+                    <line type="Line" handle="285643616" lineType="1" fMod="429521995" tMod="1577079580" fPlg="3" tPlg="1"/>
+                    <line type="Line" handle="1194421632" lineType="1" fMod="1060603677" tMod="389947987" fPlg="3"/>
+                    <line type="Line" handle="1643280601" lineType="1" fMod="1577079580" tMod="389947987" fPlg="7" tPlg="1"/>
+                    <line type="Line" handle="2038966798" lineType="1" fMod="429521995" tMod="1577079580" fPlg="2"/>
+                    <line type="Line" handle="1952935067" lineType="1" fMod="1800447454" tMod="429521995" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="314215211" lineType="1" fMod="1800447454" tMod="429521995"/>
+                    <line type="Line" handle="854577854" lineType="1" fMod="1219293444" tMod="1649092507" fPlg="5"/>
+                    <line type="Line" handle="1854502919" lineType="1" fMod="1219293444" tMod="1649092507" fPlg="6" tPlg="1"/>
+                    <line type="Line" handle="467207646" lineType="1" fMod="1219293444" tMod="420578401" fPlg="7"/>
+                    <line type="Line" handle="344436320" lineType="1" fMod="1219293444" tMod="420578401" fPlg="8" tPlg="1"/>
+                </lines>
+                <PanelWndPosition l="360" r="360" t="248" b="248"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="875" t="0" b="861"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="Container" handle="1678187955" name="MIDI2CV mono" skin="default2">
+                <plugs>
+                    <plug name="MIDI In" datatype="2" idx="7"/>
+                    <plug name="Channel" default="0" datatype="0"/>
+                    <plug name="Output" direction="1"/>
+                    <plug/>
+                </plugs>
+                <structRect l="504" r="576" t="384" b="444"/>
+                <modules>
+                    <module type="VCA" handle="1861882740">
+                        <structRect l="492" r="600" t="144" b="192"/>
+                    </module>
+                    <module type="Oscillator" handle="1929263745">
+                        <structRect l="396" r="480" t="84" b="168"/>
+                    </module>
+                    <module type="SynthEdit ADSR" handle="871071898">
+                        <structRect l="288" r="384" t="84" b="180"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE Listbox" handle="2106289901">
+                        <structRect l="360" r="468" t="336" b="490"/>
+                        <panelRect l="264" r="264" t="192" b="192"/>
+                    </module>
+                    <module type="SE Listbox" handle="156762617">
+                        <structRect l="235" r="343" t="325" b="479"/>
+                        <panelRect l="224" r="224" t="152" b="152"/>
+                    </module>
+                    <module type="SE MIDI to CV 2" handle="1567538000">
+                        <structRect l="95" r="179" t="82" b="166"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE Polyphony Control2" handle="1813304258">
+                        <structRect l="84" r="204" t="336" b="564"/>
+                        <panelRect l="376" r="376" t="208" b="208"/>
+                    </module>
+                    <module type="IO Mod" handle="2011659413">
+                        <plugs>
+                            <plug name="Output" tiedtomod="1678187955" tiedtopin="9"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="648" r="708" t="168" b="192"/>
+                    </module>
+                    <module type="IO Mod" handle="432643671">
+                        <plugs>
+                            <plug name="MIDI In" direction="1" datatype="2" tiedtomod="1678187955" tiedtopin="7"/>
+                            <plug name="Channel" direction="1" datatype="0" tiedtomod="1678187955" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="92" t="20" b="56"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1907449158" lineType="1" fMod="1813304258" tMod="2106289901" fPlg="8" tPlg="1"/>
+                    <line type="Line" handle="106543956" lineType="1" fMod="1813304258" tMod="2106289901" fPlg="7"/>
+                    <line type="Line" handle="553304775" lineType="1" fMod="1813304258" tMod="156762617" fPlg="6" tPlg="1"/>
+                    <line type="Line" handle="1503396826" lineType="1" fMod="1813304258" tMod="156762617" fPlg="5"/>
+                    <line type="Line" handle="1093474409" lineType="1" fMod="432643671" tMod="1567538000"/>
+                    <line type="Line" handle="84750640" lineType="1" fMod="432643671" tMod="1567538000" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="603631943" lineType="1" fMod="1567538000" tMod="871071898" fPlg="2"/>
+                    <line type="Line" handle="1062000348" lineType="1" fMod="871071898" tMod="1861882740" fPlg="7" tPlg="1"/>
+                    <line type="Line" handle="1236660771" lineType="1" fMod="1929263745" tMod="1861882740" fPlg="3"/>
+                    <line type="Line" handle="252982956" lineType="1" fMod="1567538000" tMod="871071898" fPlg="3" tPlg="1"/>
+                    <line type="Line" handle="1148252234" lineType="1" fMod="1567538000" tMod="1929263745" fPlg="4"/>
+                    <line type="Line" handle="730658344" lineType="1" fMod="1567538000" tMod="871071898" fPlg="5" tPlg="6"/>
+                    <line type="Line" handle="1484988543" lineType="1" fMod="1861882740" tMod="2011659413" fPlg="2"/>
+                </lines>
+                <PanelWndPosition l="280" r="280" t="224" b="224"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="875" t="0" b="861"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="SE MIDI Player2" handle="798668124">
+                <plugs>
+                    <plug default="D:\Users\Jeff\Documents\GitHub\MIDI files &amp; cprs\bach\bwv 878 in E\bwv 878 in E.mid"/>
+                    <plug default="0" idx="5"/>
+                </plugs>
+                <structRect l="132" r="216" t="72" b="132"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="Sound Out" handle="1837690005">
+                <plugs>
+                    <plug name="Output"/>
+                    <plug name="Output"/>
+                    <plug/>
+                </plugs>
+                <structRect l="876" r="936" t="480" b="516"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="132766217" lineType="1" fMod="572157377" tMod="798668124" fPlg="6" tPlg="2"/>
+            <line type="Line" handle="1054602692" lineType="1" fMod="798668124" tMod="1277808206" fPlg="3" tPlg="1"/>
+            <line type="Line" handle="503166266" lineType="1" fMod="734549084" tMod="1837690005" fPlg="1"/>
+            <line type="Line" handle="1985056231" lineType="1" fMod="1678187955" tMod="734549084" fPlg="9" tPlg="3"/>
+            <line type="Line" handle="20340543" lineType="1" fMod="36353889" tMod="734549084" fPlg="9" tPlg="3"/>
+            <line type="Line" handle="404153060" lineType="1" fMod="667702367" tMod="734549084" fPlg="9" tPlg="3"/>
+            <line type="Line" handle="1118055412" lineType="1" fMod="1591482879" tMod="734549084" fPlg="9" tPlg="3"/>
+            <line type="Line" handle="1576842433" lineType="1" fMod="1277808206" tMod="1678187955" fPlg="3" tPlg="7"/>
+            <line type="Line" handle="350699075" lineType="1" fMod="1277808206" tMod="36353889" fPlg="3" tPlg="7"/>
+            <line type="Line" handle="2128943671" lineType="1" fMod="1277808206" tMod="667702367" fPlg="3" tPlg="7"/>
+            <line type="Line" handle="557499303" lineType="1" fMod="1277808206" tMod="1591482879" fPlg="3" tPlg="7"/>
+            <line type="Line" handle="690833732" lineType="1" fMod="931274556" tMod="1277808206" fPlg="6"/>
+            <line type="Line" handle="1109006756" lineType="1" fMod="931274556" tMod="734549084" fPlg="6"/>
+            <line type="Line" handle="1244154944" lineType="1" fMod="572157377" tMod="798668124" fPlg="6" tPlg="1"/>
+            <line type="Line" handle="1439785046" lineType="1" fMod="734549084" tMod="1837690005" fPlg="1" tPlg="1"/>
+            <line type="Line" handle="614900326" lineType="1" fMod="1277808206" tMod="1477159376" fPlg="2" tPlg="7"/>
+            <line type="Line" handle="1482151159" lineType="1" fMod="1477159376" tMod="734549084" fPlg="9" tPlg="2"/>
+        </lines>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="30" r="530" t="30" b="330"/>
+        <StructLocation l="0" r="1117" t="0" b="947"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="312" t="16" b="216"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="List Entry" class="1" name="List Entry" flags="4480" category="Controls">
+            <Parameters>
+                <Parameter id="0" datatype="enum" name="patchValue"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI In" datatype="midi" private="true"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out" private="true"/>
+                <Pin name="MIDI Controller ID" datatype="enum" default="-1" private="true"/>
+                <Pin name="Ignore Program Change" datatype="bool" private="true"/>
+                <Pin name="MIDI NRPN" datatype="enum" private="true" metadata="range 0,16255"/>
+                <Pin name="Choice" datatype="enum" direction="out" autoConfigureParameter="true"/>
+                <Pin name="Appearance" datatype="enum" isMinimised="true" metadata="Combo Box=0, LED Stack, Labeled LED Stack, Selector, Button Stack, Rotary Switch, Rotary (No Text), Up/Down Select"/>
+                <Pin name="Show Title On Panel" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="patchValue" datatype="enum" private="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin id="10" name="patchValue" datatype="enum" direction="out" private="true" parameterId="0"/>
+                <Pin name="Hint" datatype="string" direction="out" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Oscillator" class="1" name="Oscillator" flags="4352" category="Waveform">
+            <Audio>
+                <Pin name="Pitch" datatype="float" rate="audio" default="0.5" metadata="100, 0, 10, 0"/>
+                <Pin name="Pulse Width" datatype="float" rate="audio" default="0.5"/>
+                <Pin name="Waveform" datatype="enum" default="1" metadata="Sine, Saw, Ramp, Triangle, Pulse,White Noise,Pink Noise"/>
+                <Pin name="Audio Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Sync" datatype="float" rate="audio" metadata="100, 0, 5, -5"/>
+                <Pin name="Phase Mod" datatype="float" rate="audio" metadata="100, 0, 10, 0"/>
+                <Pin name="Freq Scale" datatype="enum" isMinimised="true" metadata="1 Volt/Octave, 1 Volt/kHz "/>
+                <Pin name="PM Depth" datatype="float" rate="audio" default="0.5" metadata="100, 0, 10, 0"/>
+                <Pin name="Smooth Peaks (Gibbs Effect)" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Sync X-Fade (Anti Alias)" datatype="bool" default="1" isMinimised="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE Listbox" name="Listbox" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Choice" datatype="int"/>
+                <Pin name="Item List" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE MIDI Player2" name="MIDI Player2" flags="256" category="MIDI">
+            <Audio>
+                <Pin name="File Name" datatype="string" default="popcorn" isFilename="true" metadata="mid"/>
+                <Pin name="Trigger" datatype="float" rate="audio" default="0.1"/>
+                <Pin name="Gate" datatype="float" rate="audio" default="0.1"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out"/>
+                <Pin name="Host BPM" datatype="float" private="true" hostConnect="Time/BPM"/>
+                <Pin name="Tempo from" datatype="enum" default="1" isMinimised="true" metadata="Host=1,MIDI File=0"/>
+                <Pin name="Loop Mode" datatype="bool"/>
+                <Pin name="Send Clocks" datatype="bool" default="1" private="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE MIDI to CV 2" class="2" name="MIDI-CV 2" flags="352" category="MIDI" polyphonicSource="true" polyphonic="true" cloned="true">
+            <Audio>
+                <Pin name="MIDI In" datatype="midi"/>
+                <Pin name="Channel" datatype="enum" default="-1" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="Trigger" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Gate" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Pitch" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Velocity" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Aftertouch" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Voice/Active" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Active"/>
+                <Pin name="Voice/Gate" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Gate"/>
+                <Pin name="Voice/Trigger" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Trigger"/>
+                <Pin name="Voice/VelocityKeyOn" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/VelocityKeyOn"/>
+                <Pin name="Voice/Pitch" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Pitch"/>
+                <Pin name="Voice/VirtualVoiceId" datatype="int" private="true" isPolyphonic="true" hostConnect="Voice/VirtualVoiceId"/>
+                <Pin name="Bender" datatype="float" private="true" hostConnect="Bender"/>
+                <Pin name="HoldPedal" datatype="float" private="true" hostConnect="HoldPedal"/>
+                <Pin name="GlideStartPitch" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/GlideStartPitch"/>
+                <Pin name="VoiceAllocationMode" datatype="int" private="true" hostConnect="VoiceAllocationMode"/>
+                <Pin name="Portamento" datatype="float" private="true" hostConnect="Portamento"/>
+                <Pin name="BenderRange" datatype="float" private="true" hostConnect="BenderRange"/>
+                <Pin name="Voice/Aftertouch" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Aftertouch"/>
+                <Pin name="ChannelPressure" datatype="float" private="true" isPolyphonic="true" hostConnect="Channel Pressure"/>
+                <Pin name="Voice/Bender" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Bender"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE Polyphony Control" name="Polyphony Control" flags="384" category="Old" helpUrl="synthedit.chm::/mdl_sdk3/PolyphonyControl.htm">
+            <GUI>
+                <Pin name="Host Polyphony" datatype="int" private="true" hostConnect="Polyphony"/>
+                <Pin name="Host Polyphony Reserve" datatype="int" private="true" hostConnect="ReserveVoices"/>
+                <Pin name="Host VoiceAllocationMode" datatype="int" private="true" hostConnect="VoiceAllocationMode"/>
+                <Pin name="Polyphony" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Polyphony Reserve" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Allocation Mode" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Mono Note Priority" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Polyphony Control2" name="Polyphony Control" flags="384" category="MIDI" helpUrl="synthedit.chm::/mdl_sdk3/PolyphonyControl.htm">
+            <GUI>
+                <Pin name="Host Polyphony" datatype="int" private="true" hostConnect="Polyphony"/>
+                <Pin name="Host Polyphony Reserve" datatype="int" private="true" hostConnect="ReserveVoices"/>
+                <Pin name="Host VoiceAllocationMode" datatype="int" private="true" hostConnect="VoiceAllocationMode"/>
+                <Pin name="Host PortamentoTime" datatype="float" private="true" hostConnect="Portamento"/>
+                <Pin name="Host BenderRange" datatype="float" private="true" hostConnect="BenderRange"/>
+                <Pin name="Polyphony" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Polyphony Reserve" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Voice Stealing" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Mono Mode" datatype="bool" direction="out"/>
+                <Pin name="Mono Retrigger" datatype="bool" direction="out"/>
+                <Pin name="Mono Note Priority" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Glide" datatype="float" direction="out"/>
+                <Pin name="Glide Mode" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Glide Timing" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="BenderRange" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Voice Refresh" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Switch &lt; (MIDI)" name="Switch &lt; (MIDI)" flags="256" category="Switches">
+            <Audio>
+                <Pin name="Choice" datatype="enum" metadata="{AUTO}"/>
+                <Pin name="Input" datatype="midi"/>
+                <Pin name="Spare Output" datatype="midi" direction="out" autoRename="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Slider" class="1" name="Slider" flags="4480" category="Controls">
+            <Parameters>
+                <Parameter id="0" datatype="float" name="patchValue"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI In" datatype="midi" private="true"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out" private="true"/>
+                <Pin name="MIDI Controller ID" datatype="enum" default="-1" private="true"/>
+                <Pin name="Ignore Program Change" datatype="bool" private="true"/>
+                <Pin name="MIDI NRPN" datatype="enum" private="true" metadata="range 0,16255"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out" autoConfigureParameter="true"/>
+                <Pin name="Lo Value" datatype="float" private="true"/>
+                <Pin name="Hi Value" datatype="float" default="10" private="true"/>
+                <Pin name="Appearance" datatype="enum" default="1" isMinimised="true" metadata="None=-1,Plain Slider, Vert Slider, Horiz Slider, Knob, Button, Button (toggle),Plain Button, Small Knob, Small Button, Small Button (Toggle)"/>
+                <Pin name="Show Readout" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Show Title On Panel" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="patchValue" datatype="float" private="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin id="13" name="patchValue" datatype="float" direction="out" private="true" parameterId="0"/>
+                <Pin name="Hint" datatype="string" direction="out" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Sound Out" class="1" name="Sound Out" flags="4352" category="Input-Output">
+            <Audio>
+                <Pin name="Out" datatype="float" rate="audio" autoRename="true" linearInput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Switch (Many-&gt;1)" class="1" name="Switch (Many-&gt;1)" flags="4352" category="Flow Control">
+            <Audio>
+                <Pin name="Choice" datatype="enum" metadata="{AUTO}"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Spare Input" datatype="float" rate="audio" autoRename="true" linearInput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SynthEdit ADSR" name="ADSR2" flags="256" category="Waveform" helpUrl="EnveloperAdsr.htm">
+            <Audio>
+                <Pin name="Trigger" datatype="float" rate="audio" default="0.1"/>
+                <Pin name="Gate" datatype="float" rate="audio" default="0.1"/>
+                <Pin name="Attack" datatype="float" rate="audio"/>
+                <Pin name="Decay" datatype="float" rate="audio" default="0.5"/>
+                <Pin name="Sustain" datatype="float" rate="audio" default="0.7"/>
+                <Pin name="Release" datatype="float" rate="audio" default="0.4"/>
+                <Pin name="Overall Level" datatype="float" rate="audio" default="1"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="VoiceReset" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Active"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="VCA" class="1" name="VCA" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Signal" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Volume" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Response Curve" datatype="enum" default="1" metadata="Exponential=1,Linear,Decibel,Decibel (old)=0"/>
+            </Audio>
+        </Plugin>
+    </PluginList>
+</Document>
