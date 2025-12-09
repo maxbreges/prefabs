@@ -8,12 +8,6 @@
         <PatchManager>
             <ProgramNames/>
             <Parameters>
-                <param type="1" handle="295147928" module="679118290" moduleParamId="2">
-                    <patch-list>
-                        <s>ff00b5ff</s>
-                        <s repeat="127"></s>
-                    </patch-list>
-                </param>
                 <param type="10" handle="499362846" private="true" hostControl="49">
                     <patch-list>
                         <s repeat="128"></s>
@@ -21,13 +15,19 @@
                 </param>
                 <param type="6" handle="608027032" module="1826470327" moduleParamId="0">
                     <patch-list>
-                        <s>4.99</s>
+                        <s>5</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
-                <param type="1" handle="946654800" module="1732251609" moduleParamId="2">
+                <param type="1" handle="633701399" module="1732251609" moduleParamId="2">
                     <patch-list>
-                        <s>ff59ff00</s>
+                        <s>ff00c0ff</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="1388984652" module="679118290" moduleParamId="2">
+                    <patch-list>
+                        <s>ffff00a0</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
@@ -40,7 +40,7 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Container" handle="1881350696" name="Linked knobs" ViewOpenFlags="256" skin="default2">
+            <module type="Container" handle="1881350696" name="Linked knobs" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -48,6 +48,33 @@
                 </plugs>
                 <structRect l="72" r="348" t="84" b="236"/>
                 <modules>
+                    <module type="OR Gate GuiROutLIn" handle="1560452216">
+                        <plugs>
+                            <plug name="Bool" idx="1"/>
+                            <plug name="Mouse Down" id="2"/>
+                            <plug id="3"/>
+                        </plugs>
+                        <structRect l="204" r="300" t="384" b="432"/>
+                        <panelRect l="312" r="312" t="216" b="216"/>
+                    </module>
+                    <module type="OR Gate GuiROutLIn" handle="1828758121">
+                        <plugs>
+                            <plug name="Bool" idx="1"/>
+                            <plug name="Mouse Down" id="2"/>
+                            <plug id="3"/>
+                        </plugs>
+                        <structRect l="732" r="828" t="408" b="456"/>
+                        <panelRect l="288" r="288" t="160" b="160"/>
+                    </module>
+                    <module type="OR Gate GuiROutLIn" handle="1091193705">
+                        <plugs>
+                            <plug name="Ctrl+click" idx="1"/>
+                            <plug name="Ctrl+click" id="2"/>
+                            <plug id="3"/>
+                        </plugs>
+                        <structRect l="372" r="444" t="132" b="180"/>
+                        <panelRect l="296" r="296" t="200" b="200"/>
+                    </module>
                     <module type="DoubleClick" handle="171093668">
                         <structRect l="744" r="840" t="132" b="180"/>
                         <panelRect l="360" r="360" t="232" b="232"/>
@@ -55,24 +82,6 @@
                     <module type="DoubleClick" handle="2007294468">
                         <structRect l="48" r="144" t="372" b="420"/>
                         <panelRect l="288" r="288" t="168" b="168"/>
-                    </module>
-                    <module type="OR Gate GuiLR" handle="1430456583">
-                        <plugs>
-                            <plug name="Bool" idx="1"/>
-                            <plug name="Mouse Down" id="2"/>
-                            <plug id="3"/>
-                        </plugs>
-                        <structRect l="744" r="840" t="420" b="468"/>
-                        <panelRect l="440" r="441" t="304" b="305"/>
-                    </module>
-                    <module type="OR Gate GuiLR" handle="1571656283">
-                        <plugs>
-                            <plug name="Bool" idx="1"/>
-                            <plug name="Mouse Down" id="2"/>
-                            <plug id="3"/>
-                        </plugs>
-                        <structRect l="204" r="300" t="384" b="432"/>
-                        <panelRect l="384" r="385" t="280" b="281"/>
                     </module>
                     <module type="My FloatTrigger" handle="777270188">
                         <structRect l="744" r="792" t="228" b="252"/>
@@ -146,26 +155,11 @@
                         <structRect l="564" r="636" t="132" b="168"/>
                         <panelRect l="312" r="313" t="216" b="217"/>
                     </module>
-                    <module type="OR Gate GuiLR" handle="21925149">
-                        <plugs>
-                            <plug name="Ctrl+click" idx="1"/>
-                            <plug name="Ctrl+click" id="2"/>
-                            <plug id="3"/>
-                        </plugs>
-                        <structRect l="456" r="528" t="132" b="180"/>
-                        <panelRect l="312" r="313" t="240" b="241"/>
-                    </module>
                     <module type="exKnob" handle="679118290">
-                        <plugs>
-                            <plug default="" idx="1"/>
-                        </plugs>
                         <structRect l="888" r="1008" t="144" b="360"/>
                         <panelRect l="192" r="292" t="64" b="164"/>
                     </module>
                     <module type="exKnob" handle="1732251609">
-                        <plugs>
-                            <plug default="" idx="1"/>
-                        </plugs>
                         <structRect l="192" r="312" t="144" b="360"/>
                         <panelRect l="32" r="132" t="64" b="164"/>
                     </module>
@@ -187,29 +181,29 @@
                     </module>
                 </modules>
                 <lines>
-                    <line type="Line" handle="1786913055" lineType="1" fMod="1732251609" tMod="21925149" fPlg="18" tPlg="1"/>
-                    <line type="Line" handle="251912503" lineType="1" fMod="679118290" tMod="21925149" fPlg="18" tPlg="2"/>
-                    <line type="Line" handle="214654543" lineType="1" fMod="21925149" tMod="1016022999"/>
                     <line type="Line" handle="2128332025" lineType="1" fMod="1016022999" tMod="1387485338" fPlg="1"/>
-                    <line type="Line" handle="460088974" lineType="1" fMod="1097506295" tMod="1732251609" fPlg="8"/>
-                    <line type="Line" handle="413858123" lineType="1" fMod="1826470327" tMod="679118290" fPlg="8"/>
                     <line type="Line" handle="1452570939" lineType="1" fMod="1097506295" tMod="1387485338" fPlg="8" tPlg="3"/>
                     <line type="Line" handle="1710721919" lineType="1" fMod="1826470327" tMod="1387485338" fPlg="8" tPlg="4"/>
-                    <line type="Line" handle="1069073958" lineType="1" fMod="1097506295" tMod="1732251609" fPlg="11" tPlg="4"/>
-                    <line type="Line" handle="2070738180" lineType="1" fMod="1826470327" tMod="679118290" fPlg="11" tPlg="4"/>
                     <line type="Line" handle="121597597" lineType="1" fMod="1016022999" tMod="163614558" fPlg="1" tPlg="7"/>
                     <line type="Line" handle="1624114885" lineType="1" fMod="1097506295" tMod="1036961591" fPlg="8"/>
-                    <line type="Line" handle="1265639124" lineType="1" fMod="1036961591" tMod="1571656283" fPlg="1" tPlg="1"/>
-                    <line type="Line" handle="2051364748" lineType="1" fMod="1097506295" tMod="1571656283" fPlg="11" tPlg="2"/>
                     <line type="Line" handle="1528016002" lineType="1" fMod="1826470327" tMod="777270188" fPlg="8"/>
-                    <line type="Line" handle="1387092680" lineType="1" fMod="777270188" tMod="1430456583" fPlg="1" tPlg="1"/>
-                    <line type="Line" handle="2105610114" lineType="1" fMod="1826470327" tMod="1430456583" fPlg="11" tPlg="2"/>
                     <line type="Line" handle="1796595835" lineType="1" fMod="1097506295" tMod="2007294468" fPlg="8" tPlg="4"/>
                     <line type="Line" handle="1645434484" lineType="1" fMod="1097506295" tMod="2007294468" fPlg="11"/>
                     <line type="Line" handle="1787825313" lineType="1" fMod="1826470327" tMod="171093668" fPlg="11"/>
                     <line type="Line" handle="1337845481" lineType="1" fMod="1826470327" tMod="171093668" fPlg="8" tPlg="4"/>
-                    <line type="Line" handle="335900167" lineType="1" fMod="1571656283" tMod="1387485338" tPlg="1"/>
-                    <line type="Line" handle="735426407" lineType="1" fMod="1430456583" tMod="1387485338" tPlg="2"/>
+                    <line type="Line" handle="936502525" lineType="1" fMod="1097506295" tMod="1732251609" fPlg="8"/>
+                    <line type="Line" handle="1382614925" lineType="1" fMod="1097506295" tMod="1732251609" fPlg="11" tPlg="4"/>
+                    <line type="Line" handle="643163261" lineType="1" fMod="1826470327" tMod="679118290" fPlg="8"/>
+                    <line type="Line" handle="2110170699" lineType="1" fMod="1826470327" tMod="679118290" fPlg="11" tPlg="4"/>
+                    <line type="Line" handle="1679924086" lineType="1" fMod="1732251609" tMod="1091193705" fPlg="18" tPlg="1"/>
+                    <line type="Line" handle="485560939" lineType="1" fMod="679118290" tMod="1091193705" fPlg="18" tPlg="2"/>
+                    <line type="Line" handle="875563111" lineType="1" fMod="1091193705" tMod="1016022999"/>
+                    <line type="Line" handle="1520465209" lineType="1" fMod="777270188" tMod="1828758121" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1974983767" lineType="1" fMod="1826470327" tMod="1828758121" fPlg="11" tPlg="2"/>
+                    <line type="Line" handle="1199875586" lineType="1" fMod="1828758121" tMod="1387485338" tPlg="2"/>
+                    <line type="Line" handle="1600000011" lineType="1" fMod="1036961591" tMod="1560452216" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1498650273" lineType="1" fMod="1097506295" tMod="1560452216" fPlg="11" tPlg="2"/>
+                    <line type="Line" handle="1213195141" lineType="1" fMod="1560452216" tMod="1387485338" tPlg="1"/>
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
                 <PanelLocation l="793" r="1362" t="19" b="389"/>
@@ -295,7 +289,7 @@
                 <Pin name="Bool" datatype="bool" direction="out"/>
             </GUI>
         </Plugin>
-        <Plugin id="OR Gate GuiLR" name="OR Gate Gui &lt;&gt;" flags="384" category="mx/Sub-Controls/Logic">
+        <Plugin id="OR Gate GuiROutLIn" name="OR &gt;Gate&gt;" flags="384" category="mx/Sub-Controls/Logic">
             <GUI>
                 <Pin name="Bool Out" datatype="bool" direction="out"/>
                 <Pin name="Spare In" datatype="bool" autoRename="true" autoDuplicate="true"/>
@@ -342,7 +336,7 @@
             </Parameters>
             <GUI graphicsApi="GmpiGui">
                 <Pin name="Animation Position" datatype="float"/>
-                <Pin name="Hint" datatype="string" default="Hold Shift and Drag to change color"/>
+                <Pin name="Hint" datatype="string"/>
                 <Pin name="Menu Items" datatype="string"/>
                 <Pin name="Menu Selection" datatype="int"/>
                 <Pin name="Mouse Down" datatype="bool"/>

@@ -8,15 +8,21 @@
         <PatchManager>
             <ProgramNames/>
             <Parameters>
+                <param type="6" handle="67741097" module="1720799967" moduleParamId="0">
+                    <patch-list>
+                        <s>1.75001</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
                 <param type="6" handle="286353891" shortName="Scaled" module="1996986437" moduleParamId="0">
                     <patch-list>
-                        <s>1.50001</s>
+                        <s>9.30001</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="449679767" shortName="Scaled" module="336294640" moduleParamId="0">
                     <patch-list>
-                        <s>8.4</s>
+                        <s>1.75001</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -27,13 +33,19 @@
                 </param>
                 <param type="6" handle="516723751" shortName="Brightness" module="933229040" moduleParamId="0">
                     <patch-list>
-                        <s>7.15</s>
+                        <s>8.6</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="801756939" shortName="Brightness" module="1416828188" moduleParamId="0">
                     <patch-list>
-                        <s>6.55</s>
+                        <s>5.75</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1358692279" module="860427429" moduleParamId="0">
+                    <patch-list>
+                        <s>9.30001</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -45,13 +57,13 @@
                 </param>
                 <param type="1" handle="1383920369" shortName="Color" module="1996986437" moduleParamId="1">
                     <patch-list>
-                        <s>ffe600</s>
+                        <s>ffff006c</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="1874812628" shortName="Color" module="336294640" moduleParamId="1">
                     <patch-list>
-                        <s>ff00f6</s>
+                        <s>fff3ff00</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
@@ -73,6 +85,10 @@
                 </plugs>
                 <structRect l="24" r="372" t="276" b="416"/>
                 <modules>
+                    <module type="SE PatchMemory Float" handle="860427429">
+                        <structRect l="24" r="144" t="204" b="288"/>
+                        <panelRect l="352" r="352" t="368" b="368"/>
+                    </module>
                     <module type="AnimPos to Hex" handle="1996986437">
                         <structRect l="36" r="156" t="48" b="84"/>
                         <panelRect l="336" r="336" t="376" b="376"/>
@@ -81,7 +97,7 @@
                         <plugs>
                             <plug default="0.6" idx="2"/>
                         </plugs>
-                        <structRect l="48" r="132" t="156" b="204"/>
+                        <structRect l="60" r="144" t="120" b="168"/>
                         <panelRect l="400" r="400" t="344" b="344"/>
                     </module>
                     <module type="SE PatchMemory Float" handle="933229040" name="Brightness">
@@ -112,6 +128,7 @@
                     </module>
                     <module type="SE Vector Knob2" handle="229876693">
                         <plugs>
+                            <plug default="Hue" idx="1"/>
                             <plug default="ff005555" idx="5"/>
                         </plugs>
                         <structRect l="192" r="312" t="108" b="276"/>
@@ -134,9 +151,10 @@
                     <line type="Line" handle="1155634278" lineType="1" fMod="933229040" tMod="952064040" fPlg="8"/>
                     <line type="Line" handle="911362063" lineType="1" fMod="1587532028" tMod="1751439244" fPlg="8"/>
                     <line type="Line" handle="265301244" lineType="1" fMod="444090476" tMod="1485861826" fPlg="3"/>
-                    <line type="Line" handle="1446324770" lineType="1" fMod="1996986437" tMod="229876693" fPlg="3"/>
                     <line type="Line" handle="849608700" lineType="1" fMod="1996986437" tMod="444090476" fPlg="5"/>
                     <line type="Line" handle="526873165" lineType="1" fMod="1996986437" tMod="134526721" fPlg="5"/>
+                    <line type="Line" handle="1284420229" lineType="1" fMod="860427429" tMod="1996986437" fPlg="8" tPlg="3"/>
+                    <line type="Line" handle="248501522" lineType="1" fMod="860427429" tMod="229876693" fPlg="8"/>
                 </lines>
                 <PanelWndPosition l="136" r="136" t="128" b="128"/>
                 <PanelLocation l="30" r="756" t="30" b="721"/>
@@ -155,11 +173,15 @@
                 </plugs>
                 <structRect l="24" r="372" t="36" b="176"/>
                 <modules>
+                    <module type="SE PatchMemory Float" handle="1720799967">
+                        <structRect l="12" r="132" t="180" b="264"/>
+                        <panelRect l="344" r="344" t="336" b="336"/>
+                    </module>
                     <module type="Brightness" handle="1215702851">
                         <plugs>
                             <plug default="0.6" idx="2"/>
                         </plugs>
-                        <structRect l="120" r="204" t="144" b="192"/>
+                        <structRect l="96" r="180" t="108" b="156"/>
                         <panelRect l="400" r="400" t="344" b="344"/>
                     </module>
                     <module type="SE PatchMemory Float" handle="1416828188" name="Brightness">
@@ -194,6 +216,7 @@
                     </module>
                     <module type="SE Vector Knob2" handle="94900021">
                         <plugs>
+                            <plug default="Color" idx="1"/>
                             <plug default="ff005555" idx="5"/>
                         </plugs>
                         <structRect l="228" r="348" t="108" b="276"/>
@@ -218,7 +241,8 @@
                     <line type="Line" handle="1228955462" lineType="1" fMod="653035261" tMod="1819264192" fPlg="6" tPlg="1"/>
                     <line type="Line" handle="1054182699" lineType="1" fMod="336294640" tMod="1215702851" fPlg="5"/>
                     <line type="Line" handle="1828047764" lineType="1" fMod="1215702851" tMod="94900021" fPlg="3" tPlg="5"/>
-                    <line type="Line" handle="45716294" lineType="1" fMod="336294640" tMod="94900021" fPlg="3"/>
+                    <line type="Line" handle="1460382553" lineType="1" fMod="1720799967" tMod="94900021" fPlg="8"/>
+                    <line type="Line" handle="828019441" lineType="1" fMod="1720799967" tMod="336294640" fPlg="8" tPlg="3"/>
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
                 <PanelLocation l="30" r="756" t="30" b="721"/>
@@ -255,7 +279,7 @@
                 <Pin name="Scale In" datatype="float" private="true" parameterId="0"/>
                 <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
                 <Pin name="Scaled" datatype="float" direction="out"/>
-                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Animation Position" datatype="float"/>
                 <Pin name="HexIn" datatype="string" private="true" parameterId="1"/>
                 <Pin name="Hex" datatype="string" direction="out"/>
             </GUI>

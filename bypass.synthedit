@@ -95,8 +95,7 @@
                     </module>
                     <module type="SE Text Entry4" handle="690765404">
                         <plugs>
-                            <plug default="user 3" idx="1"/>
-                            <plug default="0"/>
+                            <plug default="0" idx="2"/>
                             <plug default="0"/>
                         </plugs>
                         <structRect l="480" r="588" t="312" b="444"/>
@@ -123,7 +122,7 @@
                             <plug default="1"/>
                             <plug default="0"/>
                         </plugs>
-                        <structRect l="480" r="588" t="456" b="636"/>
+                        <structRect l="480" r="588" t="468" b="648"/>
                         <panelRect l="168" r="268" t="80" b="144"/>
                     </module>
                     <module type="SE Int To List" handle="277226096">

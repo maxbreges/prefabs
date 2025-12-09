@@ -56,7 +56,8 @@
                 <param type="8" handle="1242956132" ignorePC="true" stateful="false" module="1773142284" moduleParamId="0"/>
                 <param type="8" handle="1503509853" vstParameterNumber="0" module="2048839919" moduleParamId="0">
                     <patch-list>
-                        <s repeat="128">0</s>
+                        <s>1</s>
+                        <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1514430166" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="567715459" hostControl="14" RangeMinimum="1" RangeMaximum="128">
@@ -72,7 +73,7 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Container" handle="24595012" name="MIDI to scale degree" ViewOpenFlags="384" skin="default2">
+            <module type="Container" handle="24595012" name="MIDI to scale degree" ViewOpenFlags="256" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -189,12 +190,12 @@
                         <panelRect l="248" r="248" t="184" b="184"/>
                     </module>
                     <module type="SE PatchMemory Int" handle="1597746743" name="Root Note">
-                        <structRect l="312" r="432" t="888" b="972"/>
+                        <structRect l="348" r="468" t="936" b="1020"/>
                         <panelRect l="280" r="280" t="224" b="224"/>
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="762303060" name="majors desc">
                         <plugs>
-                            <plug name="A" id="2" idx="2"/>
+                            <plug name="A" idx="2"/>
                             <plug name="B♭" id="3"/>
                             <plug name="B" id="4"/>
                             <plug name="C" id="5"/>
@@ -216,7 +217,7 @@
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="50636778" name="majors asc">
                         <plugs>
-                            <plug name="A" id="2" idx="2"/>
+                            <plug name="A" idx="2"/>
                             <plug name="B♭" id="3"/>
                             <plug name="B" id="4"/>
                             <plug name="C" id="5"/>
@@ -238,7 +239,7 @@
                     </module>
                     <module type="SE:GUIFixedValues_text" handle="1575327309" name="submenu signs">
                         <plugs>
-                            <plug name="&gt;&gt;&lt;&lt;" id="0"/>
+                            <plug name="&gt;&gt;&lt;&lt;"/>
                             <plug id="1"/>
                         </plugs>
                         <structRect l="312" r="372" t="1044" b="1068"/>
@@ -246,7 +247,7 @@
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="738912200" name="minors">
                         <plugs>
-                            <plug name="A" id="2" idx="2"/>
+                            <plug name="A" idx="2"/>
                             <plug name="B♭" id="3"/>
                             <plug name="B" id="4"/>
                             <plug name="C" id="5"/>
@@ -268,7 +269,7 @@
                     </module>
                     <module type="SE GuiSwitch &lt; (Int)" handle="1352991971">
                         <plugs>
-                            <plug name="A" id="2" idx="2"/>
+                            <plug name="A" idx="2"/>
                             <plug name="B♭" id="3"/>
                             <plug name="B" id="4"/>
                             <plug name="C" id="5"/>
@@ -433,7 +434,7 @@
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="973185341">
                         <plugs>
-                            <plug name="Value" id="2" idx="2"/>
+                            <plug name="Value" idx="2"/>
                             <plug name="Value" id="3"/>
                             <plug id="4"/>
                         </plugs>
@@ -453,7 +454,7 @@
                             <plug default="28" idx="6"/>
                             <plug default="C=0,B=1,Bb=2,A=3,Ab=4,G=5,F#=6,F=7,E=8,&gt;&gt;&gt;&gt;Eb/D#,Eb=9,D#=10,&lt;&lt;&lt;&lt;,D=11,C#=12" idx="10"/>
                         </plugs>
-                        <structRect l="912" r="1020" t="888" b="1020"/>
+                        <structRect l="948" r="1056" t="888" b="1020"/>
                         <panelRect l="128" r="228" t="24" b="72"/>
                     </module>
                     <module type="SE:GUIFixedValues_text" handle="460192793" name="minors">
@@ -478,7 +479,7 @@
                     </module>
                     <module type="SE GuiSwitch &lt; (Text)" handle="1578928849">
                         <plugs>
-                            <plug name="Value" id="2" idx="2"/>
+                            <plug name="Value" idx="2"/>
                             <plug name="Value" id="3"/>
                             <plug name="Value" id="4"/>
                             <plug id="5"/>
@@ -745,7 +746,7 @@
                 <PanelLocation l="74" r="568" t="516" b="873"/>
                 <StructLocation l="0" r="1450" t="0" b="954"/>
                 <PanelScroll x="0" y="0"/>
-                <StructScroll x="1" y="0"/>
+                <StructScroll x="1" y="484"/>
                 <PanelWndOffset cx="16" cy="16"/>
                 <panel_rect l="8" r="448" t="8" b="280"/>
             </module>

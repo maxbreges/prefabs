@@ -10,7 +10,7 @@
             <Parameters>
                 <param type="6" handle="92830832" module="2121057" moduleParamId="0">
                     <patch-list>
-                        <s>2.25</s>
+                        <s>4.3</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -26,7 +26,7 @@
                 </param>
                 <param type="6" handle="1272817740" module="2129714787" moduleParamId="0">
                     <patch-list>
-                        <s>2.25</s>
+                        <s>4.3</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>

@@ -34,9 +34,10 @@
                     <plug default="1"/>
                     <plug name="Int Val" direction="1" datatype="8" idx="7"/>
                     <plug name="Concatenated" datatype="1"/>
+                    <plug name="Pulse Length (ds)" default="2.5"/>
                     <plug/>
                 </plugs>
-                <structRect l="252" r="348" t="240" b="340"/>
+                <structRect l="252" r="372" t="240" b="352"/>
                 <modules>
                     <module type="SE Vector Knob2" handle="598914928">
                         <plugs>
@@ -57,9 +58,10 @@
                         <plugs>
                             <plug name="Int Val" datatype="8" tiedtomod="953414972" tiedtopin="7"/>
                             <plug name="Concatenated" direction="1" datatype="1" tiedtomod="953414972" tiedtopin="8"/>
+                            <plug name="Pulse Length (ds)" direction="1" tiedtomod="953414972" tiedtopin="9"/>
                             <plug/>
                         </plugs>
-                        <structRect l="348" r="444" t="84" b="120"/>
+                        <structRect l="348" r="468" t="84" b="132"/>
                     </module>
                     <module type="Container" handle="1777784344" name="dbl-clk reset" skin="default2">
                         <plugs>
@@ -67,9 +69,10 @@
                             <plug default="1"/>
                             <plug name="Normalised Value" datatype="6" idx="7"/>
                             <plug name="Value" direction="1" datatype="4"/>
+                            <plug name="Pulse Length (ds)" default="4.5"/>
                             <plug/>
                         </plugs>
-                        <structRect l="180" r="300" t="336" b="398"/>
+                        <structRect l="180" r="300" t="336" b="410"/>
                         <modules>
                             <module type="Shift Register" handle="1233754640">
                                 <plugs>
@@ -121,9 +124,10 @@
                             <module type="IO Mod" handle="1981535104">
                                 <plugs>
                                     <plug name="Normalised Value" direction="1" datatype="6" tiedtomod="1777784344" tiedtopin="7"/>
+                                    <plug name="Pulse Length (ds)" direction="1" tiedtomod="1777784344" tiedtopin="9"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="20" r="140" t="20" b="44"/>
+                                <structRect l="20" r="140" t="20" b="56"/>
                             </module>
                         </modules>
                         <lines>
@@ -136,6 +140,7 @@
                             <line type="Line" handle="553728836" lineType="1" fMod="233283472" tMod="1233754640" tPlg="2"/>
                             <line type="Line" handle="1527877574" lineType="1" fMod="512209684" tMod="636833892" fPlg="2"/>
                             <line type="Line" handle="1790368269" lineType="1" fMod="1594538170" tMod="2016147465" fPlg="6" tPlg="1"/>
+                            <line type="Line" handle="881859753" lineType="1" fMod="1981535104" tMod="512209684" fPlg="1" tPlg="1"/>
                         </lines>
                         <PanelWndPosition l="155" r="165" t="141" b="151"/>
                         <PanelLocation l="30" r="530" t="30" b="330"/>
@@ -153,6 +158,7 @@
                     <line type="Line" handle="256044898" lineType="1" fMod="2103052472" tMod="1061706880" fPlg="7"/>
                     <line type="Line" handle="774882873" lineType="1" fMod="2103052472" tMod="598914928" fPlg="8"/>
                     <line type="Line" handle="1648482784" lineType="1" fMod="1053410526" tMod="598914928" fPlg="1" tPlg="5"/>
+                    <line type="Line" handle="831286229" lineType="1" fMod="1053410526" tMod="1777784344" fPlg="2" tPlg="9"/>
                 </lines>
                 <PanelWndPosition l="416" r="464" t="208" b="256"/>
                 <PanelLocation l="858" r="1388" t="475" b="874"/>
