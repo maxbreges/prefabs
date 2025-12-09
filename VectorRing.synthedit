@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" OpenComment="Use modifier keys Shift and Ctrl to change color and ring size." vst_preset_count="64">
+    <master_container type="Container" handle="2144792950" name="Main" ViewOpenFlags="256" skin="default2">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="6" handle="644280455" module="1066392395" moduleParamId="0">
+                    <patch-list>
+                        <s>2.51</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="662154711" module="1113594608" moduleParamId="0">
+                    <patch-list>
+                        <s>2.48</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="809369253" module="749321984" moduleParamId="2">
+                    <patch-list>
+                        <s>ff83ff00</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1003452857" module="8295569" moduleParamId="0">
+                    <patch-list>
+                        <s repeat="128">0</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="1113867580" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="Container" handle="1695929386" name="" ViewOpenFlags="384" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug idx="7"/>
+                </plugs>
+                <structRect l="0" r="192" t="72" b="260"/>
+                <modules>
+                    <module type="SE PatchMemory Int" handle="8295569">
+                        <structRect l="48" r="168" t="432" b="516"/>
+                        <panelRect l="232" r="233" t="176" b="177"/>
+                    </module>
+                    <module type="SE Increment3B" handle="1065449178">
+                        <plugs>
+                            <plug default="0,1" idx="1"/>
+                        </plugs>
+                        <structRect l="312" r="396" t="372" b="432"/>
+                        <panelRect l="248" r="249" t="184" b="185"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1113594608">
+                        <structRect l="12" r="132" t="312" b="396"/>
+                        <panelRect l="248" r="249" t="128" b="129"/>
+                    </module>
+                    <module type="SE GuiSwitch &lt; (Float)" handle="736050410">
+                        <plugs>
+                            <plug name="Animation Position" idx="2"/>
+                            <plug name="Animation Position" id="3"/>
+                            <plug id="4"/>
+                        </plugs>
+                        <structRect l="96" r="216" t="180" b="240"/>
+                        <panelRect l="232" r="233" t="160" b="161"/>
+                    </module>
+                    <module type="exKnob" handle="749321984">
+                        <plugs>
+                            <plug default="Hold Shift and Drag to change color" idx="1"/>
+                            <plug default="0.8" idx="12"/>
+                        </plugs>
+                        <structRect l="228" r="348" t="48" b="264"/>
+                        <panelRect l="117" r="213" t="75" b="175"/>
+                    </module>
+                    <module type="SE PatchMemory Float" handle="1066392395">
+                        <structRect l="12" r="132" t="48" b="132"/>
+                        <panelRect l="344" r="345" t="248" b="249"/>
+                    </module>
+                    <module type="VectorRing" handle="953884241">
+                        <plugs>
+                            <plug default="0" idx="2"/>
+                        </plugs>
+                        <structRect l="348" r="528" t="36" b="276"/>
+                        <panelRect l="77" r="253" t="45" b="205"/>
+                    </module>
+                    <module type="IO Mod" handle="2130767966">
+                        <plugs>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="80" t="20" b="32"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="636772233" lineType="1" fMod="1066392395" tMod="736050410" fPlg="8" tPlg="2"/>
+                    <line type="Line" handle="1692708042" lineType="1" fMod="1113594608" tMod="736050410" fPlg="8" tPlg="3"/>
+                    <line type="Line" handle="66014520" lineType="1" fMod="8295569" tMod="1065449178" fPlg="7"/>
+                    <line type="Line" handle="675666608" lineType="1" fMod="8295569" tMod="736050410" fPlg="7"/>
+                    <line type="Line" handle="1036618610" lineType="1" fMod="1066392395" tMod="953884241" fPlg="8" tPlg="3"/>
+                    <line type="Line" handle="506845647" lineType="1" fMod="1113594608" tMod="953884241" fPlg="8" tPlg="4"/>
+                    <line type="Line" handle="959624334" lineType="1" fMod="736050410" tMod="749321984" fPlg="1"/>
+                    <line type="Line" handle="803960724" lineType="1" fMod="749321984" tMod="953884241" fPlg="16" tPlg="1"/>
+                    <line type="Line" handle="811123267" lineType="1" fMod="749321984" tMod="1065449178" fPlg="18" tPlg="2"/>
+                </lines>
+                <PanelWndPosition l="0" r="0" t="0" b="0"/>
+                <PanelLocation l="816" r="1316" t="2" b="309"/>
+                <StructLocation l="217" r="783" t="331" b="918"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+        </modules>
+        <lines/>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="30" r="530" t="30" b="330"/>
+        <StructLocation l="786" r="1312" t="331" b="858"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="224" t="16" b="208"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE GuiSwitch &lt; (Float)" name="Switch &lt; (Float)" flags="384" category="Switches/GUI">
+            <GUI>
+                <Pin name="Choice" datatype="int"/>
+                <Pin name="Value" datatype="float" direction="out"/>
+                <Pin name="Spare" datatype="float" autoRename="true" autoDuplicate="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Increment3B" name="Increment3B" flags="384" category="Sub-Controls" helpUrl="Increment3.htm">
+            <GUI>
+                <Pin name="Choice" datatype="int"/>
+                <Pin name="Item List" datatype="string" default="range 0,10"/>
+                <Pin name="Increment" datatype="bool"/>
+                <Pin name="Decrement" datatype="bool"/>
+                <Pin name="Wrap" datatype="bool" default="1"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Float" name="PatchMemory Float3" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="float" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="float" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="float" direction="out"/>
+                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Int" name="PatchMemory Int" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="int" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="int" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="int" direction="out"/>
+                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="VectorRing" name="Vector Ring" flags="384" category="mx/Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Gradient Color" datatype="string" default="00000000"/>
+                <Pin name="Color" datatype="string" default="FF005555"/>
+                <Pin name="Gray Scale" datatype="bool" default="1"/>
+                <Pin name="Thickness" datatype="float" default="0.5"/>
+                <Pin name="Graient Stop" datatype="float" default="0.5"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="exKnob" name="exKnob" flags="384" category="mx/Sub-Controls">
+            <Parameters>
+                <Parameter id="2" datatype="string" name=""/>
+            </Parameters>
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Background" datatype="string" default="FF000000" private="true"/>
+                <Pin name="Line Color" datatype="string" default="FFFFFFFF"/>
+                <Pin name="Read-only" datatype="bool" isMinimised="true"/>
+                <Pin name="Steps" datatype="int" default="11"/>
+                <Pin name="Current Step" datatype="int"/>
+                <Pin name="Line Style" datatype="enum" default="2" isMinimised="true" metadata="Flat,Square,Round,Triangle"/>
+                <Pin name="Hex In" datatype="string" default="ffff6b00" private="true"/>
+                <Pin name="Circle Size" datatype="float" default="0.93"/>
+                <Pin name="Line Thickness" datatype="float" default="4" isMinimised="true"/>
+                <Pin name="ColorAdj" datatype="bool" private="true"/>
+                <Pin name="Hex" datatype="string" private="true" parameterId="2"/>
+                <Pin name="Color Out" datatype="string" direction="out"/>
+                <Pin name="Start Angle" datatype="float" default="35" isMinimised="true"/>
+                <Pin name="Ctrl+click" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+    </PluginList>
+</Document>

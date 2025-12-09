@@ -41,7 +41,7 @@
                             <plug name="Out" direction="1"/>
                             <plug/>
                         </plugs>
-                        <structRect l="732" r="792" t="108" b="156"/>
+                        <structRect l="732" r="792" t="132" b="180"/>
                         <modules>
                             <module type="IO Mod" handle="1906579698">
                                 <plugs>
@@ -66,7 +66,7 @@
                             <plug name="MIDI Data" datatype="2" idx="7"/>
                             <plug/>
                         </plugs>
-                        <structRect l="24" r="108" t="60" b="96"/>
+                        <structRect l="48" r="132" t="84" b="120"/>
                         <modules>
                             <module type="IO Mod" handle="2023230528">
                                 <plugs>
@@ -90,11 +90,11 @@
                             <plug name="Text" default="Instances Count"/>
                             <plug id="1"/>
                         </plugs>
-                        <structRect l="492" r="540" t="48" b="72"/>
+                        <structRect l="492" r="540" t="36" b="60"/>
                         <panelRect l="496" r="497" t="180" b="181"/>
                     </module>
                     <module type="TextX" handle="1453122942">
-                        <structRect l="552" r="660" t="48" b="148"/>
+                        <structRect l="552" r="660" t="36" b="136"/>
                         <panelRect l="256" r="356" t="40" b="64"/>
                     </module>
                     <module type="Container" handle="439171321" name="show volts" skin="default2">
@@ -104,7 +104,7 @@
                             <plug name="Value In" datatype="8" idx="7"/>
                             <plug/>
                         </plugs>
-                        <structRect l="552" r="672" t="168" b="240"/>
+                        <structRect l="552" r="672" t="180" b="252"/>
                         <modules>
                             <module type="SE IntToText GUI" handle="1307992862">
                                 <structRect l="300" r="372" t="144" b="168"/>
@@ -164,7 +164,7 @@
                             <plug name="Value In" datatype="8" idx="7"/>
                             <plug/>
                         </plugs>
-                        <structRect l="372" r="492" t="156" b="228"/>
+                        <structRect l="372" r="492" t="180" b="252"/>
                         <modules>
                             <module type="SE IntToText GUI" handle="1866616581">
                                 <structRect l="300" r="372" t="144" b="168"/>
@@ -224,7 +224,7 @@
                             <plug name="Value In" datatype="8" idx="7"/>
                             <plug/>
                         </plugs>
-                        <structRect l="192" r="312" t="156" b="228"/>
+                        <structRect l="192" r="312" t="180" b="252"/>
                         <modules>
                             <module type="SE IntToText GUI" handle="1782591474">
                                 <structRect l="300" r="372" t="144" b="168"/>
@@ -266,7 +266,7 @@
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="PluginID" handle="1978641387">
-                        <structRect l="24" r="168" t="108" b="144"/>
+                        <structRect l="24" r="168" t="144" b="180"/>
                         <panelRect l="0" r="0" t="0" b="0"/>
                     </module>
                     <module type="IO Mod" handle="1641267143">
@@ -275,26 +275,26 @@
                             <plug name="Out" tiedtomod="68205630" tiedtopin="9"/>
                             <plug/>
                         </plugs>
-                        <structRect l="720" r="780" t="24" b="60"/>
+                        <structRect l="720" r="780" t="48" b="84"/>
                     </module>
                     <module type="IO Mod" handle="261534879">
                         <plugs>
                             <plug name="MIDI Data" direction="1" datatype="2" tiedtomod="68205630" tiedtopin="7"/>
                             <plug/>
                         </plugs>
-                        <structRect l="20" r="104" t="20" b="44"/>
+                        <structRect l="12" r="96" t="36" b="60"/>
                     </module>
                 </modules>
                 <lines>
-                    <line type="Line" handle="2098273458" lineType="1" fMod="1978641387" tMod="98145416" fPlg="1" tPlg="7"/>
                     <line type="Line" handle="1049871589" lineType="1" fMod="894853015" tMod="2094256159"/>
                     <line type="Line" handle="1950720219" lineType="1" fMod="352737693" tMod="1750825387"/>
-                    <line type="Line" handle="1061445901" lineType="1" fMod="1978641387" tMod="2020811839" fPlg="2" tPlg="7"/>
                     <line type="Line" handle="440554977" lineType="1" fMod="1646222173" tMod="1453122942"/>
-                    <line type="Line" handle="1112526536" lineType="1" fMod="1978641387" tMod="439171321" fPlg="3" tPlg="7"/>
                     <line type="Line" handle="99518822" lineType="1" fMod="261534879" tMod="310257229" tPlg="7"/>
                     <line type="Line" handle="2096909973" lineType="1" fMod="366220805" tMod="1641267143" fPlg="7"/>
                     <line type="Line" handle="447088985" lineType="1" fMod="366220805" tMod="1641267143" fPlg="8" tPlg="1"/>
+                    <line type="Line" handle="1976733722" lineType="1" fMod="1978641387" tMod="98145416" fPlg="1" tPlg="7"/>
+                    <line type="Line" handle="1920091158" lineType="1" fMod="1978641387" tMod="2020811839" fPlg="2" tPlg="7"/>
+                    <line type="Line" handle="1473566945" lineType="1" fMod="1978641387" tMod="439171321" fPlg="3" tPlg="7"/>
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
                 <PanelLocation l="30" r="530" t="30" b="330"/>
