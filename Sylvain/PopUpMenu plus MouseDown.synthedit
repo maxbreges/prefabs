@@ -10,25 +10,25 @@
             <Parameters>
                 <param type="0" handle="138154433" shortName="Oscillator Waveform" module="1087291303" moduleParamId="0" MetaData="Sine, Saw, Ramp, Triangle, Pulse,White Noise,Pink Noise">
                     <patch-list>
-                        <s>0</s>
+                        <s>3</s>
                         <s repeat="127">1</s>
                     </patch-list>
                 </param>
                 <param type="1" handle="158751732" module="657225553" moduleParamId="0">
                     <patch-list>
-                        <s>Sine</s>
+                        <s>Triangle</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="8" handle="199445744" module="1094410664" moduleParamId="0">
                     <patch-list>
-                        <s>5</s>
+                        <s>6</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1172847137" module="1260322479" moduleParamId="0">
                     <patch-list>
-                        <s>6</s>
+                        <s>9</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>

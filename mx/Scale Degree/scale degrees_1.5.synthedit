@@ -30,7 +30,7 @@
                     <plug name="Right" direction="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="113" r="545" t="157" b="419"/>
+                <structRect l="24" r="456" t="168" b="430"/>
                 <PatchManager>
                     <ProgramNames/>
                     <Parameters>
@@ -46,7 +46,8 @@
                         </param>
                         <param type="6" handle="288960725" vstParameterNumber="0" module="1856092772" moduleParamId="0">
                             <patch-list>
-                                <s repeat="128">0</s>
+                                <s>0.000022</s>
+                                <s repeat="127">0</s>
                             </patch-list>
                         </param>
                         <param type="8" handle="336894849" shortName="ReserveVoices" ignorePC="true" private="true" module="24595012" hostControl="22" RangeMaximum="128">
@@ -106,7 +107,7 @@
                         </param>
                         <param type="8" handle="1649743259" shortName="Int To List Signal in" private="true" module="7221965" moduleParamId="0">
                             <patch-list>
-                                <s>13</s>
+                                <s>10</s>
                                 <s repeat="127">0</s>
                             </patch-list>
                         </param>
@@ -195,7 +196,7 @@
                             <plug name="minors menu" default="A=0,B♭=1,B=2,C=3,C♯=4,D=5,&gt;&gt;&gt;&gt;D♯/E♭,D♯=7,E♭=8,&lt;&lt;&lt;&lt;,E=10,F=11,F♯=12,G=13,G♯=14" id="1"/>
                             <plug id="2"/>
                         </plugs>
-                        <structRect l="454" r="550" t="855" b="891"/>
+                        <structRect l="432" r="528" t="816" b="852"/>
                         <panelRect l="896" r="896" t="664" b="664"/>
                     </module>
                     <module type="SE:GUIFixedValues_text" handle="725552882">
@@ -263,7 +264,7 @@
                             <plug name="PopUp open" id="2"/>
                             <plug id="3"/>
                         </plugs>
-                        <structRect l="792" r="876" t="468" b="516"/>
+                        <structRect l="816" r="900" t="648" b="696"/>
                         <panelRect l="520" r="520" t="503" b="503"/>
                     </module>
                     <module type="TextX" handle="1965541402">
@@ -289,7 +290,7 @@
                             <plug name="Item List" datatype="1"/>
                             <plug/>
                         </plugs>
-                        <structRect l="1274" r="1430" t="168" b="384"/>
+                        <structRect l="1325" r="1481" t="170" b="386"/>
                         <modules>
                             <module type="SE Listbox" handle="1635918079">
                                 <structRect l="367" r="475" t="84" b="238"/>
@@ -325,7 +326,7 @@
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="SE Polyphony Control2" handle="132669567">
-                        <structRect l="1137" r="1257" t="178" b="406"/>
+                        <structRect l="1188" r="1308" t="180" b="408"/>
                         <panelRect l="648" r="648" t="633" b="633"/>
                     </module>
                     <module type="SE Patch Automator" handle="1971517249">
@@ -401,7 +402,7 @@
                         <plugs>
                             <plug default="1,1♯,2,2♯,3,4,4♯,5,5♯,6,7♭,7,1,1♯,2,2♯,3,4,4♯,5,5♯,6,7♭,7" idx="1"/>
                         </plugs>
-                        <structRect l="804" r="876" t="588" b="624"/>
+                        <structRect l="792" r="864" t="564" b="600"/>
                         <panelRect l="520" r="521" t="561" b="562"/>
                     </module>
                     <module type="DisplayList" handle="1878893637" name="Note Name">
@@ -500,7 +501,7 @@
                             <plug name="minors menu" id="3"/>
                             <plug id="4"/>
                         </plugs>
-                        <structRect l="580" r="676" t="822" b="882"/>
+                        <structRect l="564" r="660" t="792" b="852"/>
                         <panelRect l="640" r="641" t="593" b="594"/>
                     </module>
                     <module type="DisplayList" handle="356782163" name="Root Note">
@@ -518,7 +519,7 @@
                             <plug default="28" idx="6"/>
                             <plug default="C=0,B=1,Bb=2,A=3,Ab=4,G=5,F#=6,F=7,E=8,Eb=9,D=10,C#=11" idx="10"/>
                         </plugs>
-                        <structRect l="656" r="764" t="442" b="574"/>
+                        <structRect l="660" r="768" t="420" b="552"/>
                         <panelRect l="449" r="548" t="354" b="403"/>
                     </module>
                     <module type="Container" handle="2127089738" name="sound" ViewOpenFlags="32768" skin="default">
@@ -546,12 +547,13 @@
                             </module>
                             <module type="Oscillator" handle="1252059371">
                                 <plugs>
-                                    <plug default="4" idx="2"/>
+                                    <plug default="0" idx="1"/>
+                                    <plug default="4"/>
                                 </plugs>
-                                <structRect l="249" r="333" t="306" b="390"/>
+                                <structRect l="240" r="324" t="312" b="396"/>
                             </module>
                             <module type="SynthEdit ADSR" handle="1552942143">
-                                <structRect l="293" r="389" t="155" b="251"/>
+                                <structRect l="288" r="384" t="168" b="264"/>
                                 <panelRect l="235" r="235" t="149" b="149"/>
                             </module>
                             <module type="Oscillator" handle="1259000076">
@@ -566,7 +568,7 @@
                                     <plug name="Right" tiedtomod="2127089738" tiedtopin="8"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="600" r="660" t="144" b="180"/>
+                                <structRect l="612" r="672" t="240" b="276"/>
                             </module>
                             <module type="IO Mod" handle="1260612634">
                                 <plugs>
@@ -576,7 +578,7 @@
                                     <plug name="Overall Level" direction="1" tiedtomod="2127089738" tiedtopin="12"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="31" r="127" t="133" b="193"/>
+                                <structRect l="48" r="144" t="192" b="252"/>
                             </module>
                         </modules>
                         <lines>
@@ -645,7 +647,7 @@
                             <plug name="Value" direction="1" datatype="8"/>
                             <plug/>
                         </plugs>
-                        <structRect l="264" r="336" t="612" b="702"/>
+                        <structRect l="276" r="348" t="540" b="630"/>
                         <modules>
                             <module type="SE:GUIFixedValues_text" handle="1209699041">
                                 <plugs>
@@ -697,7 +699,7 @@
                                             <plug name="A♭" id="16"/>
                                             <plug id="17"/>
                                         </plugs>
-                                        <structRect l="240" r="300" t="24" b="240"/>
+                                        <structRect l="240" r="300" t="48" b="264"/>
                                         <panelRect l="504" r="505" t="344" b="345"/>
                                     </module>
                                     <module type="IO Mod" handle="2100993671">
@@ -725,7 +727,7 @@
                                             <plug name="B" direction="1" datatype="1" tiedtomod="1764125830" tiedtopin="20"/>
                                             <plug/>
                                         </plugs>
-                                        <structRect l="12" r="72" t="20" b="200"/>
+                                        <structRect l="12" r="72" t="72" b="252"/>
                                     </module>
                                 </modules>
                                 <lines>
@@ -1064,7 +1066,7 @@
                                     <module type="SE:GUIFixedValues_text" handle="1631817728" name="majors desc">
                                         <plugs>
                                             <plug name="C" default="C,D♭,D,E♭,E,F,F♯,G,A♭,A,B♭,B"/>
-                                            <plug name="C♯ " default="C♯,D♮,D♯,E♮,E♯,F♯,F𝄪,G♯,A♮,A♯,B♮,B♯" id="1"/>
+                                            <plug name="C♯ " default="C♯,D♮,D♯,E♮,E♯,F♯,F♯♯,G♯,A♮,A♯,B♮,B♯" id="1"/>
                                             <plug name="D" default="D,E♭,E,F♮,F♯,G,G♯,A,B♭,B,C♮,C♯" id="2"/>
                                             <plug name="E♭" default="E♭,F♭,F,G♭,G,A♭,A♮,B♭,C♭,C,D♭,D" id="3"/>
                                             <plug name="E" default="E,F♮,F♯,G♮,G♯,A,A♯,B,C♮,C♯,D♮,D♯" id="4"/>
@@ -1144,7 +1146,7 @@
                                     <module type="SE:GUIFixedValues_text" handle="1327153362" name="majors asc">
                                         <plugs>
                                             <plug name="C" default="C,C♯,D,D♯,E,F,F♯,G,G♯,A,B♭,B"/>
-                                            <plug name="C♯ " default="C♯,C♯♯,D♯,D𝄪,E♯,F♯,F♯♯,G♯,G♯♯,A♯,B♮,B♯" id="1"/>
+                                            <plug name="C♯ " default="C♯,C♯♯,D♯,D♯♯,E♯,F♯,F♯♯,G♯,G♯♯,A♯,B♮,B♯" id="1"/>
                                             <plug name="D" default="D,D♯,E,E♯,F♯,G,G♯,A,A♯,B,C♮,C♯" id="2"/>
                                             <plug name="E♭" default="E♭,E♮,F,F♯,G,A♭,A♮,B♭,B♮,C,D♭,D" id="3"/>
                                             <plug name="E" default="E,E♯,F♯,F♯♯,G♯,A,A♯,B,B♯,C♯,D♮,D♯" id="4"/>
@@ -1154,7 +1156,7 @@
                                             <plug name="A♭" default="A♭,A♮,B♭,B♮,C,D♭,D♮,E♭,E♮,F,G♭,G" id="8"/>
                                             <plug name="A" default="A,A♯,B,B♯,C♯,D,D♯,E,E♯,F♯,G♮,G♯" id="9"/>
                                             <plug name="B♭" default="B♭,B♮,C,C♯,D,E♭,E♮,F,F♯,G,A♭,A" id="10"/>
-                                            <plug name="B" default="B,B♯,C♯,C𝄪,D♯,E,E♯,F♯,F𝄪,G♯,A♮,A♯" id="11"/>
+                                            <plug name="B" default="B,B♯,C♯,C♯♯,D♯,E,E♯,F♯,F♯♯G♯,A♮,A♯" id="11"/>
                                             <plug id="12"/>
                                         </plugs>
                                         <structRect l="240" r="288" t="24" b="180"/>
@@ -1202,7 +1204,7 @@
                                 <panel_rect l="16" r="312" t="16" b="216"/>
                             </module>
                             <module type="SE PatchMemory Int" handle="7221965" name="Root Note">
-                                <structRect l="202" r="322" t="78" b="162"/>
+                                <structRect l="120" r="240" t="84" b="168"/>
                                 <panelRect l="488" r="488" t="280" b="280"/>
                             </module>
                             <module type="SE GuiSwitch &lt; (Text)" handle="1768257135">
@@ -1395,9 +1397,9 @@
                 </lines>
                 <PanelWndPosition l="32" r="368" t="40" b="208"/>
                 <PanelLocation l="510" r="1344" t="253" b="814"/>
-                <StructLocation l="5" r="1131" t="13" b="931"/>
+                <StructLocation l="5" r="1445" t="13" b="954"/>
                 <PanelScroll x="196" y="311"/>
-                <StructScroll x="671" y="0"/>
+                <StructScroll x="0" y="240"/>
                 <PanelWndOffset cx="16" cy="16"/>
                 <panel_rect l="237" r="661" t="317" b="525"/>
             </module>
@@ -1422,9 +1424,9 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="820" r="1415" t="22" b="413"/>
-        <StructLocation l="19" r="1266" t="13" b="915"/>
+        <StructLocation l="19" r="857" t="13" b="577"/>
         <PanelScroll x="0" y="0"/>
-        <StructScroll x="18" y="0"/>
+        <StructScroll x="1" y="1"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
         <panel_rect l="16" r="376" t="16" b="232"/>
     </master_container>

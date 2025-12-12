@@ -8,15 +8,27 @@
         <PatchManager>
             <ProgramNames/>
             <Parameters>
+                <param type="6" handle="132913267" module="1993023820" moduleParamId="0">
+                    <patch-list>
+                        <s>1.04</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="841168429" module="1324293818" moduleParamId="0">
+                    <patch-list>
+                        <s>1.04</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
                 <param type="1" handle="843349645" vstParameterNumber="1" module="520527895" moduleParamId="0">
                     <patch-list>
-                        <s>10Hz take, 30Hz take, 30Hz take PatchMemBoolOut, 4Hz take, Boreal Owl and Black Woodpecker, Delayed Bass0, Delayed Bass1, Delayed Bass2, Delayed Bass3, Delayed Bass4, Delayed Bass5, Delayed Bass6, Delayed Bass7, Delayed Bass8, DelayedBass, djembe take, Funkyclav 0 , Funkyclav 1 , Funkyclav 2 , Funkyclav 3 , Funkyclav 4 , Funkyclav 5 , offLineRendering, Wavefile, Wavefile1, Wavefile_, Wavefile_22050_2sec</s>
+                        <s>20'' Swift Kick, 22'' 60's Kick, 22'' Deep Kick, 22'' Double Head Kick A, 22'' Double Head Kick B, 22'' Gated Kick, 22'' Power Kick, 24'' Power Kick, 909 Kick, alakick, Electronic Kick 1, Electronic Kick 2, Jungle Kick, Low Kick, PG Kick, Sonic Kick</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="881514000" vstParameterNumber="5" module="1802052042" moduleParamId="0">
                     <patch-list>
-                        <s>C:/Users/Max/Documents/30Hz take.wav</s>
+                        <s>C:/Program Files (x86)/Steinberg/Cubase 5/VSTPlugins/Drums/Dr.Modus/bass drums/22'' Double Head Kick B.wav</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
@@ -25,16 +37,22 @@
                         <s repeat="128"></s>
                     </patch-list>
                 </param>
+                <param type="1" handle="1322657768" module="1993023820" moduleParamId="1">
+                    <patch-list>
+                        <s>ffff9f00</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
                 <param type="1" handle="1327031502" shortName="Wave Player File Name" vstParameterNumber="2" module="1880716180" moduleParamId="0" MetaData="wav">
                     <patch-list>
-                        <s>C:/Users/Max/Documents/30Hz take.wav</s>
+                        <s>C:/Program Files (x86)/Steinberg/Cubase 5/VSTPlugins/Drums/Dr.Modus/bass drums/22'' Double Head Kick B.wav</s>
                         <s repeat="127">Wavefile</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="1517912175" stateful="false" module="576463374" moduleParamId="0"/>
                 <param type="8" handle="2030471656" shortName="onSetIntVal Pulse Int Val" vstParameterNumber="8" module="37945900" moduleParamId="0" RangeMaximum="127">
                     <patch-list>
-                        <s>1</s>
+                        <s>4</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -60,21 +78,29 @@
                     <plug name="Out" direction="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="154" r="454" t="66" b="162"/>
+                <structRect l="154" r="454" t="66" b="178"/>
                 <modules>
-                    <module type="SE Popup Menu XP" handle="1054225335">
-                        <structRect l="472" r="664" t="277" b="434"/>
-                        <panelRect l="134" r="323" t="35" b="67"/>
+                    <module type="SE PatchMemory Float" handle="1324293818">
+                        <structRect l="168" r="288" t="420" b="504"/>
+                        <panelRect l="376" r="376" t="184" b="184"/>
+                    </module>
+                    <module type="AnimPos to Hex" handle="1993023820">
+                        <structRect l="384" r="504" t="216" b="252"/>
+                        <panelRect l="352" r="352" t="216" b="216"/>
+                    </module>
+                    <module type="DisplayList" handle="1905198155">
+                        <structRect l="540" r="672" t="252" b="396"/>
+                        <panelRect l="128" r="312" t="24" b="72"/>
                     </module>
                     <module type="Image3" handle="26518027">
                         <plugs>
                             <plug default="file_button.bmp" idx="1"/>
                         </plugs>
-                        <structRect l="497" r="617" t="70" b="175"/>
+                        <structRect l="480" r="600" t="72" b="177"/>
                         <panelRect l="39" r="79" t="39" b="56"/>
                     </module>
                     <module type="My CheckingStringOnMac" handle="574165555">
-                        <structRect l="266" r="362" t="277" b="373"/>
+                        <structRect l="180" r="276" t="276" b="372"/>
                         <panelRect l="368" r="369" t="200" b="201"/>
                     </module>
                     <module type="SE PatchMemory Int" handle="37945900">
@@ -86,7 +112,7 @@
                         <panelRect l="320" r="320" t="232" b="232"/>
                     </module>
                     <module type="SE FileDialog" handle="2089482552">
-                        <structRect l="262" r="358" t="170" b="218"/>
+                        <structRect l="216" r="312" t="156" b="204"/>
                         <panelRect l="336" r="336" t="192" b="192"/>
                     </module>
                     <module type="SE PatchMemory Text2" handle="1880716180">
@@ -110,13 +136,16 @@
                 <lines>
                     <line type="Line" handle="2047500837" lineType="1" fMod="1802052042" tMod="2089482552" fPlg="6"/>
                     <line type="Line" handle="151427705" lineType="1" fMod="2089482552" tMod="26518027" fPlg="2" tPlg="6"/>
-                    <line type="Line" handle="1738646473" lineType="1" fMod="520527895" tMod="1054225335" fPlg="6" tPlg="1"/>
-                    <line type="Line" handle="395489776" lineType="1" fMod="37945900" tMod="1054225335" fPlg="7"/>
                     <line type="Line" handle="49350210" lineType="1" fMod="1802052042" tMod="574165555" fPlg="6"/>
                     <line type="Line" handle="624622387" lineType="1" fMod="520527895" tMod="574165555" fPlg="6" tPlg="1"/>
                     <line type="Line" handle="476838997" lineType="1" fMod="37945900" tMod="574165555" fPlg="7" tPlg="2"/>
                     <line type="Line" handle="765495641" lineType="1" fMod="1880716180" tMod="574165555" fPlg="6" tPlg="7"/>
-                    <line type="Line" handle="1636456429" lineType="1" fMod="574165555" tMod="1054225335" fPlg="6" tPlg="8"/>
+                    <line type="Line" handle="333262852" lineType="1" fMod="520527895" tMod="1905198155" fPlg="6" tPlg="10"/>
+                    <line type="Line" handle="131129215" lineType="1" fMod="37945900" tMod="1905198155" fPlg="7" tPlg="9"/>
+                    <line type="Line" handle="1104029556" lineType="1" fMod="574165555" tMod="1905198155" fPlg="6" tPlg="15"/>
+                    <line type="Line" handle="1567922430" lineType="1" fMod="1324293818" tMod="1905198155" fPlg="8" tPlg="7"/>
+                    <line type="Line" handle="1417447309" lineType="1" fMod="1324293818" tMod="1993023820" fPlg="8" tPlg="3"/>
+                    <line type="Line" handle="622575672" lineType="1" fMod="1993023820" tMod="1905198155" fPlg="5" tPlg="2"/>
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
                 <PanelLocation l="733" r="1424" t="287" b="707"/>
@@ -134,13 +163,27 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="639" t="0" b="620"/>
+        <StructLocation l="0" r="639" t="0" b="615"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
         <panel_rect l="16" r="312" t="16" b="216"/>
     </master_container>
     <PluginList>
+        <Plugin id="AnimPos to Hex" name="AnimPos to Hex" flags="384" category="mx/Sub-Controls/Conversion">
+            <Parameters>
+                <Parameter id="0" datatype="float" name=""/>
+                <Parameter id="1" datatype="string" name=""/>
+            </Parameters>
+            <GUI>
+                <Pin name="Scale In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Scaled" datatype="float" direction="out"/>
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="HexIn" datatype="string" private="true" parameterId="1"/>
+                <Pin name="Hex" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
         <Plugin id="Container" class="1" name="Container" flags="384" category="">
             <Audio>
                 <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
@@ -153,6 +196,26 @@
                 <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
                 <Pin name="Visible" datatype="bool"/>
                 <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="DisplayList" name="Display List" flags="384" category="mx/Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Hint" datatype="string" isMinimised="true"/>
+                <Pin name="BgColor" datatype="string" default="FF000000" private="true"/>
+                <Pin name="Color" datatype="string" default="FF666666"/>
+                <Pin name="Text" datatype="string" direction="out" private="true"/>
+                <Pin name="Text Color" datatype="string" default="ffffffff"/>
+                <Pin name="Text Font" datatype="string" default="Times New Roman" isMinimised="true"/>
+                <Pin name="Font Size" datatype="int" default="16" isMinimised="true"/>
+                <Pin name="AnimPos+Shift" datatype="float"/>
+                <Pin name="AnimPos+Ctrl" datatype="float" private="true"/>
+                <Pin name="Choice" datatype="int"/>
+                <Pin name="List Items" datatype="string"/>
+                <Pin name="List Size" datatype="int" private="true"/>
+                <Pin name="PopUp open" datatype="bool" direction="out"/>
+                <Pin name="Shift+Drag" datatype="bool" private="true"/>
+                <Pin name="Corner Radius" datatype="int" default="5" isMinimised="true"/>
+                <Pin name="Selection" datatype="string"/>
             </GUI>
         </Plugin>
         <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
@@ -207,6 +270,29 @@
                 <Pin name="Save Mode" datatype="bool"/>
             </GUI>
         </Plugin>
+        <Plugin id="SE PatchMemory Float" name="PatchMemory Float3" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="float" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="float" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="float" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="float" direction="out"/>
+                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
         <Plugin id="SE PatchMemory Int" name="PatchMemory Int" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
             <Parameters>
                 <Parameter id="0" datatype="int" name=""/>
@@ -249,21 +335,6 @@
                 <Pin name="File Extension" datatype="string" direction="out"/>
                 <Pin name="Menu Items" datatype="string" direction="out"/>
                 <Pin name="Menu Selection" datatype="int" direction="out"/>
-            </GUI>
-        </Plugin>
-        <Plugin id="SE Popup Menu XP" name="Popup Menu" flags="384" category="Sub-Controls">
-            <GUI graphicsApi="GmpiGui">
-                <Pin name="Choice" datatype="int"/>
-                <Pin name="Item List" datatype="string"/>
-                <Pin name="Style" datatype="string" default="normal"/>
-                <Pin name="Writeable" datatype="bool" default="1"/>
-                <Pin name="Greyed" datatype="bool"/>
-                <Pin name="Hint" datatype="string"/>
-                <Pin name="Menu Items" datatype="string"/>
-                <Pin name="Menu Selection" datatype="int"/>
-                <Pin name="Heading" datatype="string" default="Menu"/>
-                <Pin name="Momentary" datatype="bool"/>
-                <Pin name="Enable Special Strings" datatype="bool" default="1" private="true"/>
             </GUI>
         </Plugin>
         <Plugin id="Sound Out" class="1" name="Sound Out" flags="4352" category="Input-Output">

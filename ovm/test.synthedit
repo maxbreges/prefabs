@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_user_email="Overdrive Music" vst_processor_id="{8509BFFB-08BE-45EC-8917-6E49B0756C39}" vst_controller_id="{0559C34B-8CBA-40C0-A8EF-4B0D561E08C5}" vst_4char_id="Tkb8" vst_dll_name="test kb OVM" vst_product="test kb OVM" vst_flags="6" vst_preset_count="1">
+    <master_container type="Container" handle="981336087" name="Main" ViewOpenFlags="256" skin="default2">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="8" handle="771143820" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="321152815" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>768</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="879970051" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+                <param type="0" handle="1144553765" shortName="Key Choice" vstParameterNumber="0" module="670992789" moduleParamId="0" MetaData="C,C#,D,Eb,E,F,F#,G,Ab,A,Bb,B">
+                    <patch-list>
+                        <s>10</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1352017150" shortName="BenderRange" ignorePC="true" automation="50331648" private="true" module="1191815320" hostControl="42" RangeMaximum="127.99219">
+                    <patch-list>
+                        <s>2</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1409748271" shortName="BenderRange" ignorePC="true" automation="50331648" private="true" module="321152815" hostControl="42" RangeMaximum="127.99219">
+                    <patch-list>
+                        <s>2</s>
+                    </patch-list>
+                </param>
+                <param type="0" handle="1430303576" shortName="Switch (Many-&gt;1) Choice" vstParameterNumber="2" module="2090977582" moduleParamId="0" MetaData="MAJOR,MINOR">
+                    <patch-list>
+                        <s repeat="128">0</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1532123324" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1191815320" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>768</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1549281769" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="321152815" hostControl="40">
+                    <patch-list>
+                        <s>0</s>
+                    </patch-list>
+                </param>
+                <param type="0" handle="1751676834" shortName="Switch &gt; (Int) Choice" vstParameterNumber="1" module="2050333456" moduleParamId="0" MetaData="Off (harmonic),On (melodic)">
+                    <patch-list>
+                        <s repeat="128">0</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="2083137418" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="1191815320" hostControl="40">
+                    <patch-list>
+                        <s>0</s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="Sound Out" handle="1937770140">
+                <plugs>
+                    <plug name="Out L"/>
+                    <plug name="Out R"/>
+                    <plug/>
+                </plugs>
+                <structRect l="576" r="636" t="36" b="72"/>
+            </module>
+            <module type="Container" handle="1523563508" name="test kb OVM" ViewOpenFlags="384" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Out L" direction="1" idx="7"/>
+                    <plug name="Out R" direction="1"/>
+                    <plug/>
+                </plugs>
+                <structRect l="84" r="564" t="72" b="372"/>
+                <modules>
+                    <module type="Container" handle="584666046" name="" skin="default2">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="Value Out" direction="1" datatype="0" idx="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="156" r="252" t="156" b="260"/>
+                        <modules>
+                            <module type="SE Listbox" handle="1936147340">
+                                <structRect l="408" r="516" t="36" b="192"/>
+                                <panelRect l="480" r="552" t="144" b="184"/>
+                            </module>
+                            <module type="SE Text Entry4" handle="1847451722">
+                                <plugs>
+                                    <plug default="MODE"/>
+                                    <plug default="heading 3"/>
+                                    <plug default="0" idx="3"/>
+                                </plugs>
+                                <structRect l="240" r="348" t="132" b="264"/>
+                                <panelRect l="480" r="544" t="120" b="144"/>
+                            </module>
+                            <module type="SE PatchMemory List3" handle="2090977582">
+                                <structRect l="240" r="348" t="24" b="108"/>
+                                <panelRect l="360" r="361" t="288" b="289"/>
+                            </module>
+                            <module type="IO Mod" handle="2011393469">
+                                <plugs>
+                                    <plug name="Value Out" default="3" datatype="0" tiedtomod="584666046" tiedtopin="7"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="420" r="492" t="216" b="240"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="5869606" lineType="1" fMod="2090977582" tMod="1936147340" fPlg="7"/>
+                            <line type="Line" handle="1766132029" lineType="1" fMod="2090977582" tMod="1936147340" fPlg="8" tPlg="1"/>
+                            <line type="Line" handle="184617592" lineType="1" fMod="2090977582" tMod="2011393469" fPlg="13"/>
+                        </lines>
+                        <PanelWndPosition l="72" r="144" t="24" b="88"/>
+                        <PanelLocation l="722" r="1422" t="228" b="793"/>
+                        <StructLocation l="0" r="720" t="0" b="444"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="-408" cy="-96"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
+                    </module>
+                    <module type="Container" handle="171337036" name="" skin="default2">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="Value Out" direction="1" datatype="0" idx="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="300" r="420" t="156" b="260"/>
+                        <modules>
+                            <module type="SE Listbox" handle="696884939">
+                                <structRect l="408" r="516" t="36" b="192"/>
+                                <panelRect l="456" r="552" t="144" b="184"/>
+                            </module>
+                            <module type="SE Text Entry4" handle="567415287">
+                                <plugs>
+                                    <plug default="ARP"/>
+                                    <plug default="heading 3"/>
+                                    <plug default="0" idx="3"/>
+                                </plugs>
+                                <structRect l="240" r="348" t="132" b="264"/>
+                                <panelRect l="464" r="536" t="120" b="144"/>
+                            </module>
+                            <module type="SE PatchMemory List3" handle="2050333456">
+                                <structRect l="240" r="348" t="24" b="108"/>
+                                <panelRect l="360" r="361" t="288" b="289"/>
+                            </module>
+                            <module type="IO Mod" handle="1027049581">
+                                <plugs>
+                                    <plug name="Value Out" default="3" datatype="0" tiedtomod="171337036" tiedtopin="7"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="420" r="492" t="216" b="240"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="2117342012" lineType="1" fMod="2050333456" tMod="1027049581" fPlg="13"/>
+                            <line type="Line" handle="1718128655" lineType="1" fMod="2050333456" tMod="696884939" fPlg="8" tPlg="1"/>
+                            <line type="Line" handle="650540159" lineType="1" fMod="2050333456" tMod="696884939" fPlg="7"/>
+                        </lines>
+                        <PanelWndPosition l="152" r="248" t="24" b="88"/>
+                        <PanelLocation l="722" r="1422" t="228" b="793"/>
+                        <StructLocation l="0" r="720" t="0" b="444"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="-304" cy="-96"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
+                    </module>
+                    <module type="Container" handle="402175927" name="arp" skin="default2">
+                        <plugs>
+                            <plug name="MIDI In" datatype="2" idx="7"/>
+                            <plug name="On" datatype="0"/>
+                            <plug name="MIDI Out" direction="1" datatype="2"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="444" r="516" t="36" b="96"/>
+                        <modules>
+                            <module type="SE Int To List" handle="676750502">
+                                <structRect l="540" r="612" t="228" b="252"/>
+                            </module>
+                            <module type="SE Switch &gt; (Int)" handle="559757163">
+                                <plugs>
+                                    <plug name="Off (harmonic)" idx="2"/>
+                                    <plug name="On (melodic)" id="3"/>
+                                    <plug id="4"/>
+                                </plugs>
+                                <structRect l="408" r="516" t="216" b="276"/>
+                                <panelRect l="0" r="0" t="0" b="0"/>
+                            </module>
+                            <module type="SE:Fixed Values_Int" handle="890128909">
+                                <plugs>
+                                    <plug name="0"/>
+                                    <plug name="1" default="1"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="264" r="348" t="240" b="276"/>
+                            </module>
+                            <module type="SE MIDItoGate2" handle="1078712190">
+                                <structRect l="120" r="192" t="156" b="192"/>
+                                <panelRect l="0" r="0" t="0" b="0"/>
+                            </module>
+                            <module type="Comparator" handle="1711837488">
+                                <plugs>
+                                    <plug default="-5" idx="1"/>
+                                </plugs>
+                                <structRect l="372" r="456" t="60" b="120"/>
+                            </module>
+                            <module type="Oscillator" handle="1151141544">
+                                <plugs>
+                                    <plug default="-2"/>
+                                    <plug default="2" idx="2"/>
+                                </plugs>
+                                <structRect l="264" r="348" t="24" b="108"/>
+                            </module>
+                            <module type="SE Arpeggiator" handle="605733894">
+                                <structRect l="684" r="756" t="84" b="156"/>
+                                <panelRect l="0" r="0" t="0" b="0"/>
+                            </module>
+                            <module type="IO Mod" handle="127480450">
+                                <plugs>
+                                    <plug name="MIDI Out" datatype="2" tiedtomod="402175927" tiedtopin="9"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="828" r="900" t="144" b="168"/>
+                            </module>
+                            <module type="IO Mod" handle="182003337">
+                                <plugs>
+                                    <plug name="MIDI In" direction="1" datatype="2" tiedtomod="402175927" tiedtopin="7"/>
+                                    <plug name="On" direction="1" datatype="0" tiedtomod="402175927" tiedtopin="8"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="12" r="84" t="132" b="168"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="301241574" lineType="1" fMod="1151141544" tMod="1711837488" fPlg="3"/>
+                            <line type="Line" handle="1763211480" lineType="1" fMod="1711837488" tMod="605733894" fPlg="2"/>
+                            <line type="Line" handle="937668127" fMod="1078712190" tMod="605733894" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="599961738" lineType="1" fMod="182003337" tMod="1078712190"/>
+                            <line type="Line" handle="2092773867" fMod="1078712190" tMod="1151141544" fPlg="2" tPlg="4"/>
+                            <line type="Line" handle="509095430" lineType="1" fMod="182003337" tMod="605733894" tPlg="4"/>
+                            <line type="Line" handle="398768619" lineType="1" fMod="890128909" tMod="559757163" tPlg="2"/>
+                            <line type="Line" handle="1064079688" lineType="1" fMod="890128909" tMod="559757163" fPlg="1" tPlg="3"/>
+                            <line type="Line" handle="2049727525" lineType="1" fMod="559757163" tMod="676750502" fPlg="1"/>
+                            <line type="Line" handle="1383291044" lineType="1" fMod="676750502" tMod="605733894" fPlg="1" tPlg="2"/>
+                            <line type="Line" handle="1132948753" lineType="1" fMod="182003337" tMod="559757163" fPlg="1">
+                                <nodes>
+                                    <node x="126" y="222"/>
+                                </nodes>
+                            </line>
+                            <line type="Line" handle="475991553" lineType="1" fMod="605733894" tMod="127480450" fPlg="5"/>
+                        </lines>
+                        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+                        <PanelLocation l="30" r="530" t="30" b="330"/>
+                        <StructLocation l="36" r="1151" t="39" b="439"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="-99999" cy="-99999"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
+                    </module>
+                    <module type="Container" handle="1704085455" name="" skin="default2">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="Value Out" direction="1" datatype="0" idx="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="36" r="108" t="132" b="412"/>
+                        <modules>
+                            <module type="SE Listbox" handle="1748804187">
+                                <structRect l="408" r="516" t="36" b="192"/>
+                                <panelRect l="504" r="552" t="144" b="360"/>
+                            </module>
+                            <module type="SE Text Entry4" handle="689411261">
+                                <plugs>
+                                    <plug default="KEY"/>
+                                    <plug default="heading 3"/>
+                                    <plug default="0" idx="3"/>
+                                </plugs>
+                                <structRect l="240" r="348" t="132" b="264"/>
+                                <panelRect l="496" r="552" t="120" b="144"/>
+                            </module>
+                            <module type="SE PatchMemory List3" handle="670992789">
+                                <structRect l="240" r="348" t="24" b="108"/>
+                                <panelRect l="360" r="361" t="288" b="289"/>
+                            </module>
+                            <module type="IO Mod" handle="1693173597">
+                                <plugs>
+                                    <plug name="Value Out" default="3" datatype="0" tiedtomod="1704085455" tiedtopin="7"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="420" r="492" t="216" b="240"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="199708837" lineType="1" fMod="670992789" tMod="1748804187" fPlg="7"/>
+                            <line type="Line" handle="1128948621" lineType="1" fMod="670992789" tMod="1748804187" fPlg="8" tPlg="1"/>
+                            <line type="Line" handle="282082858" lineType="1" fMod="670992789" tMod="1693173597" fPlg="13"/>
+                        </lines>
+                        <PanelWndPosition l="408" r="464" t="16" b="256"/>
+                        <PanelLocation l="30" r="962" t="30" b="595"/>
+                        <StructLocation l="0" r="720" t="0" b="444"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="-88" cy="-104"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
+                    </module>
+                    <module type="SE Keyboard (MIDI)" handle="358950402">
+                        <structRect l="12" r="252" t="24" b="120"/>
+                        <panelRect l="24" r="408" t="96" b="224"/>
+                    </module>
+                    <module type="Container" handle="1191815320" name="chord" skin="default2">
+                        <plugs>
+                            <plug name="MIDI In" datatype="2" idx="7"/>
+                            <plug name="MIDI Out" direction="1" datatype="2"/>
+                            <plug name="Key" default="3" datatype="0"/>
+                            <plug name="Scale" default="0" datatype="0"/>
+                            <plug name="On" default="1" datatype="0"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="288" r="360" t="24" b="108"/>
+                        <modules>
+                            <module type="Container" handle="1511878139" name="KEY" skin="default2">
+                                <plugs>
+                                    <plug name="Key" datatype="0" idx="7"/>
+                                    <plug name="Out" direction="1"/>
+                                    <plug direction="1"/>
+                                </plugs>
+                                <structRect l="180" r="240" t="120" b="168"/>
+                                <modules>
+                                    <module type="Fixed Values" handle="1530783000" name="Fixed Values">
+                                        <plugs>
+                                            <plug name="3" default="0.25"/>
+                                            <plug name="4" default="0.33333333333"/>
+                                            <plug name="5" default="0.4166666666666"/>
+                                            <plug name="6" default="0.5"/>
+                                            <plug name="7" default="0.583333333"/>
+                                            <plug name="8" default="0.66666666666666666666"/>
+                                            <plug name="9" default="0.75"/>
+                                            <plug name="10" default="0.8333333333333333"/>
+                                            <plug name="11" default="0.91666666666"/>
+                                            <plug name="0"/>
+                                            <plug name="1" default="0.0833333333"/>
+                                            <plug name="2" default="0.166666666666"/>
+                                            <plug/>
+                                        </plugs>
+                                        <structRect l="96" r="180" t="60" b="216"/>
+                                    </module>
+                                    <module type="Switch (Many-&gt;1)" handle="428852223" name="Key">
+                                        <plugs>
+                                            <plug name="C" idx="2"/>
+                                            <plug name="C#"/>
+                                            <plug name="D"/>
+                                            <plug name="Eb"/>
+                                            <plug name="E"/>
+                                            <plug name="F"/>
+                                            <plug name="F#"/>
+                                            <plug name="G"/>
+                                            <plug name="Ab"/>
+                                            <plug name="A"/>
+                                            <plug name="Bb"/>
+                                            <plug name="B"/>
+                                            <plug/>
+                                        </plugs>
+                                        <structRect l="276" r="360" t="36" b="216"/>
+                                    </module>
+                                    <module type="SynthEdit Inverter2" handle="635704637">
+                                        <structRect l="432" r="516" t="48" b="72"/>
+                                        <panelRect l="328" r="328" t="200" b="200"/>
+                                    </module>
+                                    <module type="IO Mod" handle="1739674675">
+                                        <plugs>
+                                            <plug name="Key" direction="1" datatype="0" tiedtomod="1511878139" tiedtopin="7"/>
+                                            <plug direction="1"/>
+                                        </plugs>
+                                        <structRect l="20" r="80" t="36" b="60"/>
+                                    </module>
+                                    <module type="IO Mod" handle="2073758466">
+                                        <plugs>
+                                            <plug name="Out" tiedtomod="1511878139" tiedtopin="8"/>
+                                            <plug direction="1"/>
+                                        </plugs>
+                                        <structRect l="564" r="624" t="60" b="84"/>
+                                    </module>
+                                </modules>
+                                <lines>
+                                    <line type="Line" handle="1736327321" lineType="1" fMod="1739674675" tMod="428852223"/>
+                                    <line type="Line" handle="116853228" lineType="1" fMod="428852223" tMod="635704637" fPlg="1"/>
+                                    <line type="Line" handle="1330111766" lineType="1" fMod="1530783000" tMod="428852223" fPlg="8" tPlg="10"/>
+                                    <line type="Line" handle="358978580" lineType="1" fMod="1530783000" tMod="428852223" fPlg="7" tPlg="9"/>
+                                    <line type="Line" handle="209487537" lineType="1" fMod="1530783000" tMod="428852223" fPlg="6" tPlg="8"/>
+                                    <line type="Line" handle="1819888451" lineType="1" fMod="1530783000" tMod="428852223" fPlg="5" tPlg="7"/>
+                                    <line type="Line" handle="721870392" lineType="1" fMod="1530783000" tMod="428852223" fPlg="4" tPlg="6"/>
+                                    <line type="Line" handle="336036010" lineType="1" fMod="1530783000" tMod="428852223" fPlg="3" tPlg="5"/>
+                                    <line type="Line" handle="850252919" lineType="1" fMod="1530783000" tMod="428852223" fPlg="2" tPlg="4"/>
+                                    <line type="Line" handle="1998675232" lineType="1" fMod="1530783000" tMod="428852223" fPlg="1" tPlg="3"/>
+                                    <line type="Line" handle="201798750" lineType="1" fMod="1530783000" tMod="428852223" tPlg="2"/>
+                                    <line type="Line" handle="41638458" lineType="1" fMod="1530783000" tMod="428852223" fPlg="9" tPlg="11"/>
+                                    <line type="Line" handle="2032796173" lineType="1" fMod="1530783000" tMod="428852223" fPlg="10" tPlg="12"/>
+                                    <line type="Line" handle="133784512" lineType="1" fMod="1530783000" tMod="428852223" fPlg="11" tPlg="13"/>
+                                    <line type="Line" handle="1932871668" lineType="1" fMod="635704637" tMod="2073758466" fPlg="1"/>
+                                </lines>
+                                <PanelWndPosition l="164" r="164" t="211" b="211"/>
+                                <PanelLocation l="30" r="914" t="30" b="498"/>
+                                <StructLocation l="195" r="875" t="47" b="388"/>
+                                <PanelScroll x="0" y="0"/>
+                                <StructScroll x="0" y="0"/>
+                                <PanelWndOffset cx="-99999" cy="-99999"/>
+                                <panel_rect l="0" r="482" t="0" b="282"/>
+                            </module>
+                            <module type="SE Switch &lt; (MIDI)" handle="2002517526">
+                                <plugs>
+                                    <plug name="Off" idx="2"/>
+                                    <plug name="On" id="3"/>
+                                    <plug id="4"/>
+                                </plugs>
+                                <structRect l="144" r="240" t="36" b="96"/>
+                                <panelRect l="0" r="0" t="0" b="0"/>
+                            </module>
+                            <module type="Switch (Many-&gt;1)" handle="830489728">
+                                <plugs>
+                                    <plug name="MAJOR" idx="2"/>
+                                    <plug name="MINOR"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="156" r="240" t="204" b="264"/>
+                            </module>
+                            <module type="Fixed Values" handle="671787068">
+                                <plugs>
+                                    <plug name="0"/>
+                                    <plug name="-0.25" default="-0.25"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="24" r="108" t="228" b="264"/>
+                            </module>
+                            <module type="SE:Fixed Values_Int" handle="1398905732">
+                                <plugs>
+                                    <plug name="7" default="7"/>
+                                    <plug name="6" default="6"/>
+                                    <plug name="7" default="7"/>
+                                    <plug name="6" default="6"/>
+                                    <plug name="7" default="7"/>
+                                    <plug name="7" default="7"/>
+                                    <plug name="6" default="6"/>
+                                    <plug name="7" default="7"/>
+                                    <plug name="6" default="6"/>
+                                    <plug name="7" default="7"/>
+                                    <plug name="6" default="6"/>
+                                    <plug name="6" default="6"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="672" r="756" t="504" b="660"/>
+                            </module>
+                            <module type="SE Switch &gt; (Int)" handle="1102793104" name="5th (Major scale)">
+                                <plugs>
+                                    <plug name="0" idx="2"/>
+                                    <plug name="1" id="3"/>
+                                    <plug name="2" id="4"/>
+                                    <plug name="3" id="5"/>
+                                    <plug name="4" id="6"/>
+                                    <plug name="5" id="7"/>
+                                    <plug name="6" id="8"/>
+                                    <plug name="7" id="9"/>
+                                    <plug name="8" id="10"/>
+                                    <plug name="9" id="11"/>
+                                    <plug name="10" id="12"/>
+                                    <plug name="11" id="13"/>
+                                    <plug id="14"/>
+                                </plugs>
+                                <structRect l="864" r="948" t="480" b="660"/>
+                                <panelRect l="293" r="293" t="189" b="189"/>
+                            </module>
+                            <module type="SE:Fixed Values_Int" handle="1100156315">
+                                <plugs>
+                                    <plug name="4" default="4"/>
+                                    <plug name="3" default="3"/>
+                                    <plug name="3" default="3"/>
+                                    <plug name="3" default="3"/>
+                                    <plug name="3" default="3"/>
+                                    <plug name="4" default="4"/>
+                                    <plug name="3" default="3"/>
+                                    <plug name="4" default="4"/>
+                                    <plug name="3" default="3"/>
+                                    <plug name="3" default="3"/>
+                                    <plug name="3" default="3"/>
+                                    <plug name="3" default="3"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="672" r="756" t="300" b="456"/>
+                            </module>
+                            <module type="SE Int To List" handle="375040270">
+                                <structRect l="756" r="828" t="264" b="288"/>
+                            </module>
+                            <module type="Multiply" handle="544593254" name="* 12">
+                                <plugs>
+                                    <plug default="12" idx="1"/>
+                                </plugs>
+                                <structRect l="660" r="720" t="240" b="276"/>
+                            </module>
+                            <module type="Subtract" handle="1069796059">
+                                <structRect l="576" r="636" t="216" b="252"/>
+                            </module>
+                            <module type="Floor" handle="646166897">
+                                <structRect l="468" r="552" t="240" b="264"/>
+                            </module>
+                            <module type="SE Switch &gt; (Int)" handle="1784696819" name="3rd (Major scale)">
+                                <plugs>
+                                    <plug name="0" idx="2"/>
+                                    <plug name="1" id="3"/>
+                                    <plug name="2" id="4"/>
+                                    <plug name="3" id="5"/>
+                                    <plug name="4" id="6"/>
+                                    <plug name="5" id="7"/>
+                                    <plug name="6" id="8"/>
+                                    <plug name="7" id="9"/>
+                                    <plug name="8" id="10"/>
+                                    <plug name="9" id="11"/>
+                                    <plug name="10" id="12"/>
+                                    <plug name="11" id="13"/>
+                                    <plug id="14"/>
+                                </plugs>
+                                <structRect l="864" r="948" t="276" b="456"/>
+                                <panelRect l="225" r="225" t="145" b="145"/>
+                            </module>
+                            <module type="Multiply" handle="197632406" name="* quantizer">
+                                <plugs>
+                                    <plug default="0.083" idx="1"/>
+                                </plugs>
+                                <structRect l="996" r="1056" t="492" b="528"/>
+                            </module>
+                            <module type="Multiply" handle="618656663" name="* quantizer">
+                                <plugs>
+                                    <plug default="0.083" idx="1"/>
+                                </plugs>
+                                <structRect l="996" r="1056" t="288" b="324"/>
+                            </module>
+                            <module type="Trigger to MIDI" handle="1627030775">
+                                <structRect l="1164" r="1236" t="504" b="564"/>
+                            </module>
+                            <module type="Container" handle="510894159" name="PITCH" skin="default">
+                                <plugs>
+                                    <plug name="" idx="7"/>
+                                    <plug name="" direction="1"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="1032" r="1092" t="144" b="192"/>
+                                <modules>
+                                    <module type="IO Mod" handle="1194218023">
+                                        <plugs>
+                                            <plug name="" tiedtomod="510894159" tiedtopin="8"/>
+                                            <plug/>
+                                        </plugs>
+                                        <structRect l="183" r="243" t="44" b="68"/>
+                                    </module>
+                                    <module type="IO Mod" handle="1273184339">
+                                        <plugs>
+                                            <plug name="" direction="1" tiedtomod="510894159" tiedtopin="7"/>
+                                            <plug/>
+                                        </plugs>
+                                        <structRect l="20" r="80" t="20" b="44"/>
+                                    </module>
+                                </modules>
+                                <lines>
+                                    <line type="Line" handle="1817230588" lineType="1" fMod="1273184339" tMod="1194218023"/>
+                                </lines>
+                                <PanelWndPosition l="302" r="302" t="253" b="253"/>
+                                <PanelLocation l="30" r="530" t="30" b="330"/>
+                                <StructLocation l="0" r="500" t="0" b="400"/>
+                                <PanelScroll x="0" y="0"/>
+                                <StructScroll x="0" y="0"/>
+                                <PanelWndOffset cx="-99999" cy="-99999"/>
+                                <panel_rect l="16" r="312" t="16" b="216"/>
+                            </module>
+                            <module type="Container" handle="2120902444" name="GATE" skin="default">
+                                <plugs>
+                                    <plug name="" idx="7"/>
+                                    <plug name="" direction="1"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="1032" r="1092" t="72" b="120"/>
+                                <modules>
+                                    <module type="IO Mod" handle="694665514">
+                                        <plugs>
+                                            <plug name="" tiedtomod="2120902444" tiedtopin="8"/>
+                                            <plug/>
+                                        </plugs>
+                                        <structRect l="183" r="243" t="44" b="68"/>
+                                    </module>
+                                    <module type="IO Mod" handle="1093970893">
+                                        <plugs>
+                                            <plug name="" direction="1" tiedtomod="2120902444" tiedtopin="7"/>
+                                            <plug/>
+                                        </plugs>
+                                        <structRect l="20" r="80" t="20" b="44"/>
+                                    </module>
+                                </modules>
+                                <lines>
+                                    <line type="Line" handle="1389362036" lineType="1" fMod="1093970893" tMod="694665514"/>
+                                </lines>
+                                <PanelWndPosition l="310" r="310" t="221" b="221"/>
+                                <PanelLocation l="30" r="530" t="30" b="330"/>
+                                <StructLocation l="0" r="500" t="0" b="400"/>
+                                <PanelScroll x="0" y="0"/>
+                                <StructScroll x="0" y="0"/>
+                                <PanelWndOffset cx="-99999" cy="-99999"/>
+                                <panel_rect l="16" r="312" t="16" b="216"/>
+                            </module>
+                            <module type="Trigger to MIDI" handle="306210838">
+                                <structRect l="1164" r="1236" t="300" b="360"/>
+                            </module>
+                            <module type="Trigger to MIDI" handle="1923984509">
+                                <structRect l="1164" r="1236" t="156" b="216"/>
+                            </module>
+                            <module type="SE MIDI to CV 2" handle="737335010">
+                                <structRect l="276" r="360" t="36" b="120"/>
+                                <panelRect l="0" r="0" t="0" b="0"/>
+                            </module>
+                            <module type="IO Mod" handle="1516391155">
+                                <plugs>
+                                    <plug name="MIDI Out" datatype="2" tiedtomod="1191815320" tiedtopin="8"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="1344" r="1416" t="348" b="372"/>
+                            </module>
+                            <module type="IO Mod" handle="1137190982">
+                                <plugs>
+                                    <plug name="MIDI In" direction="1" datatype="2" tiedtomod="1191815320" tiedtopin="7"/>
+                                    <plug name="Key" direction="1" datatype="0" tiedtomod="1191815320" tiedtopin="9"/>
+                                    <plug name="Scale" direction="1" datatype="0" tiedtomod="1191815320" tiedtopin="10"/>
+                                    <plug name="On" direction="1" datatype="0" tiedtomod="1191815320" tiedtopin="11"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="12" r="84" t="48" b="108"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="1551636486" lineType="1" fMod="1137190982" tMod="2002517526" fPlg="3"/>
+                            <line type="Line" handle="974721279" fMod="2002517526" tMod="737335010" fPlg="3"/>
+                            <line type="Line" handle="1478625701" lineType="1" fMod="2002517526" tMod="1516391155" fPlg="2">
+                                <nodes>
+                                    <node x="282" y="18"/>
+                                    <node x="1350" y="18"/>
+                                </nodes>
+                            </line>
+                            <line type="Line" handle="989578782" lineType="1" fMod="1137190982" tMod="2002517526" tPlg="1"/>
+                            <line type="Line" handle="668877900" lineType="1" fMod="737335010" tMod="510894159" fPlg="4" tPlg="7"/>
+                            <line type="Line" handle="608610660" lineType="1" fMod="737335010" tMod="646166897" fPlg="4"/>
+                            <line type="Line" handle="375803339" lineType="1" fMod="737335010" tMod="1069796059" fPlg="4"/>
+                            <line type="Line" handle="165992776" lineType="1" fMod="737335010" tMod="2120902444" fPlg="3" tPlg="7"/>
+                            <line type="Line" handle="1888658294" fMod="830489728" tMod="646166897" fPlg="1"/>
+                            <line type="Line" handle="1363998877" lineType="1" fMod="830489728" tMod="1069796059" fPlg="1"/>
+                            <line type="Line" handle="1336064841" fMod="1137190982" tMod="830489728" fPlg="2"/>
+                            <line type="Line" handle="1203341007" lineType="1" fMod="671787068" tMod="830489728" fPlg="1" tPlg="3"/>
+                            <line type="Line" handle="1492421739" lineType="1" fMod="671787068" tMod="830489728" tPlg="2"/>
+                            <line type="Line" handle="2067161901" lineType="1" fMod="1102793104" tMod="197632406" fPlg="1"/>
+                            <line type="Line" handle="1797449845" lineType="1" fMod="1784696819" tMod="618656663" fPlg="1"/>
+                            <line type="Line" handle="1101281348" lineType="1" fMod="375040270" tMod="1102793104" fPlg="1"/>
+                            <line type="Line" handle="1581636182" lineType="1" fMod="1398905732" tMod="1102793104" fPlg="11" tPlg="13"/>
+                            <line type="Line" handle="1969006825" lineType="1" fMod="1398905732" tMod="1102793104" fPlg="10" tPlg="12"/>
+                            <line type="Line" handle="449717002" lineType="1" fMod="1398905732" tMod="1102793104" fPlg="9" tPlg="11"/>
+                            <line type="Line" handle="1524699666" lineType="1" fMod="1398905732" tMod="1102793104" fPlg="8" tPlg="10"/>
+                            <line type="Line" handle="218027502" lineType="1" fMod="1398905732" tMod="1102793104" fPlg="7" tPlg="9"/>
+                            <line type="Line" handle="1735678742" lineType="1" fMod="1398905732" tMod="1102793104" fPlg="6" tPlg="8"/>
+                            <line type="Line" handle="1021551024" lineType="1" fMod="1398905732" tMod="1102793104" fPlg="5" tPlg="7"/>
+                            <line type="Line" handle="769977090" lineType="1" fMod="1398905732" tMod="1102793104" fPlg="4" tPlg="6"/>
+                            <line type="Line" handle="1064632761" lineType="1" fMod="1398905732" tMod="1102793104" fPlg="3" tPlg="5"/>
+                            <line type="Line" handle="1604333521" lineType="1" fMod="1398905732" tMod="1102793104" fPlg="2" tPlg="4"/>
+                            <line type="Line" handle="228114077" lineType="1" fMod="1398905732" tMod="1102793104" fPlg="1" tPlg="3"/>
+                            <line type="Line" handle="1145952698" lineType="1" fMod="1398905732" tMod="1102793104" tPlg="2"/>
+                            <line type="Line" handle="578476003" lineType="1" fMod="375040270" tMod="1784696819" fPlg="1"/>
+                            <line type="Line" handle="463800118" lineType="1" fMod="1100156315" tMod="1784696819" fPlg="11" tPlg="13"/>
+                            <line type="Line" handle="1500369783" lineType="1" fMod="1100156315" tMod="1784696819" fPlg="10" tPlg="12"/>
+                            <line type="Line" handle="44118760" lineType="1" fMod="1100156315" tMod="1784696819" fPlg="9" tPlg="11"/>
+                            <line type="Line" handle="1538442877" lineType="1" fMod="1100156315" tMod="1784696819" fPlg="8" tPlg="10"/>
+                            <line type="Line" handle="1223854200" lineType="1" fMod="1100156315" tMod="1784696819" fPlg="7" tPlg="9"/>
+                            <line type="Line" handle="590871417" lineType="1" fMod="1100156315" tMod="1784696819" fPlg="6" tPlg="8"/>
+                            <line type="Line" handle="789942419" lineType="1" fMod="1100156315" tMod="1784696819" fPlg="5" tPlg="7"/>
+                            <line type="Line" handle="299020686" lineType="1" fMod="1100156315" tMod="1784696819" fPlg="4" tPlg="6"/>
+                            <line type="Line" handle="519582369" lineType="1" fMod="1100156315" tMod="1784696819" fPlg="3" tPlg="5"/>
+                            <line type="Line" handle="1749548621" lineType="1" fMod="1100156315" tMod="1784696819" fPlg="2" tPlg="4"/>
+                            <line type="Line" handle="191913292" lineType="1" fMod="1100156315" tMod="1784696819" fPlg="1" tPlg="3"/>
+                            <line type="Line" handle="995246599" lineType="1" fMod="1100156315" tMod="1784696819" tPlg="2"/>
+                            <line type="Line" handle="281728960" lineType="1" fMod="544593254" tMod="375040270" fPlg="2"/>
+                            <line type="Line" handle="713640907" lineType="1" fMod="1069796059" tMod="544593254" fPlg="2"/>
+                            <line type="Line" handle="511006665" lineType="1" fMod="646166897" tMod="1069796059" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="791510052" lineType="1" fMod="197632406" tMod="1627030775" fPlg="2" tPlg="1"/>
+                            <line type="Line" handle="268184491" lineType="1" fMod="618656663" tMod="306210838" fPlg="2" tPlg="1"/>
+                            <line type="Line" handle="647403217" fMod="1627030775" tMod="1516391155" fPlg="4"/>
+                            <line type="Line" handle="996457213" lineType="1" fMod="306210838" tMod="1516391155" fPlg="4"/>
+                            <line type="Line" handle="2021158170" fMod="1923984509" tMod="1516391155" fPlg="4"/>
+                            <line type="Line" handle="297578086" fMod="510894159" tMod="1627030775" fPlg="8" tPlg="1"/>
+                            <line type="Line" handle="1026212485" fMod="510894159" tMod="306210838" fPlg="8" tPlg="1"/>
+                            <line type="Line" handle="1353081433" lineType="1" fMod="510894159" tMod="1923984509" fPlg="8" tPlg="1"/>
+                            <line type="Line" handle="630601941" fMod="2120902444" tMod="1627030775" fPlg="8"/>
+                            <line type="Line" handle="962214385" fMod="2120902444" tMod="306210838" fPlg="8"/>
+                            <line type="Line" handle="659244161" fMod="2120902444" tMod="1923984509" fPlg="8"/>
+                            <line type="Line" handle="1247375565" fMod="1511878139" tMod="1069796059" fPlg="8"/>
+                            <line type="Line" handle="919403529" fMod="1511878139" tMod="646166897" fPlg="8"/>
+                            <line type="Line" handle="1765308975" fMod="1137190982" tMod="1511878139" fPlg="1" tPlg="7"/>
+                        </lines>
+                        <PanelWndPosition l="296" r="296" t="208" b="208"/>
+                        <PanelLocation l="30" r="530" t="30" b="330"/>
+                        <StructLocation l="4" r="1463" t="229" b="953"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="6"/>
+                        <PanelWndOffset cx="-99999" cy="-99999"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
+                    </module>
+                    <module type="Container" handle="321152815" name="engine" skin="default2">
+                        <plugs>
+                            <plug name="MIDI In" datatype="2" idx="7"/>
+                            <plug name="Output" direction="1"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="576" r="648" t="60" b="108"/>
+                        <modules>
+                            <module type="Fixed Values" handle="1348750973">
+                                <plugs>
+                                    <plug name="Pitch" default="2"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="108" r="192" t="192" b="216"/>
+                            </module>
+                            <module type="VCA" handle="13250539">
+                                <structRect l="552" r="660" t="120" b="168"/>
+                            </module>
+                            <module type="Oscillator" handle="233471401">
+                                <plugs>
+                                    <plug default="0" idx="1"/>
+                                    <plug default="3"/>
+                                </plugs>
+                                <structRect l="396" r="480" t="168" b="252"/>
+                            </module>
+                            <module type="SynthEdit ADSR" handle="344998038">
+                                <plugs>
+                                    <plug default="7" idx="3"/>
+                                    <plug default="10"/>
+                                    <plug default="8" idx="6"/>
+                                </plugs>
+                                <structRect l="396" r="492" t="48" b="144"/>
+                                <panelRect l="266" r="266" t="180" b="180"/>
+                            </module>
+                            <module type="SE MIDI to CV 2" handle="1815867737">
+                                <structRect l="240" r="324" t="24" b="108"/>
+                                <panelRect l="0" r="0" t="0" b="0"/>
+                            </module>
+                            <module type="IO Mod" handle="877838840">
+                                <plugs>
+                                    <plug name="Output" tiedtomod="321152815" tiedtopin="8"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="780" r="840" t="24" b="48"/>
+                            </module>
+                            <module type="IO Mod" handle="1830568819">
+                                <plugs>
+                                    <plug name="MIDI In" direction="1" datatype="2" tiedtomod="321152815" tiedtopin="7"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="20" r="92" t="20" b="44"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="1012386806" lineType="1" fMod="1815867737" tMod="233471401" fPlg="4"/>
+                            <line type="Line" handle="306454802" lineType="1" fMod="1815867737" tMod="344998038" fPlg="3" tPlg="1"/>
+                            <line type="Line" handle="400799375" lineType="1" fMod="1815867737" tMod="344998038" fPlg="2"/>
+                            <line type="Line" handle="1682856891" lineType="1" fMod="233471401" tMod="13250539" fPlg="3"/>
+                            <line type="Line" handle="2146895480" lineType="1" fMod="344998038" tMod="13250539" fPlg="7" tPlg="1"/>
+                            <line type="Line" handle="560516595" lineType="1" fMod="1830568819" tMod="1815867737"/>
+                            <line type="Line" handle="550088692" lineType="1" fMod="13250539" tMod="877838840" fPlg="2"/>
+                            <line type="Line" handle="296491584" lineType="1" fMod="1348750973" tMod="233471401"/>
+                        </lines>
+                        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+                        <PanelLocation l="30" r="530" t="30" b="330"/>
+                        <StructLocation l="0" r="864" t="0" b="432"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="0" y="0"/>
+                        <PanelWndOffset cx="-99999" cy="-99999"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
+                    </module>
+                    <module type="IO Mod" handle="157215561">
+                        <plugs>
+                            <plug name="Out L" tiedtomod="1523563508" tiedtopin="7"/>
+                            <plug name="Out R" tiedtomod="1523563508" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="720" r="780" t="84" b="120"/>
+                    </module>
+                    <module type="SE Rectangle XP" handle="907171099">
+                        <plugs>
+                            <plug default="0"/>
+                        </plugs>
+                        <structRect l="564" r="672" t="144" b="244"/>
+                        <panelRect l="16" r="480" t="16" b="264"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="426711257" lineType="1" fMod="321152815" tMod="157215561" fPlg="8"/>
+                    <line type="Line" handle="1263428270" lineType="1" fMod="321152815" tMod="157215561" fPlg="8" tPlg="1"/>
+                    <line type="Line" handle="996790946" lineType="1" fMod="358950402" tMod="1191815320" fPlg="1" tPlg="7"/>
+                    <line type="Line" handle="1670741059" lineType="1" fMod="1704085455" tMod="1191815320" fPlg="7" tPlg="9"/>
+                    <line type="Line" handle="1015342511" lineType="1" fMod="1191815320" tMod="402175927" fPlg="8" tPlg="7"/>
+                    <line type="Line" handle="1123568713" lineType="1" fMod="402175927" tMod="321152815" fPlg="9" tPlg="7"/>
+                    <line type="Line" handle="288579615" lineType="1" fMod="171337036" tMod="402175927" fPlg="7" tPlg="8"/>
+                    <line type="Line" handle="478566510" lineType="1" fMod="584666046" tMod="1191815320" fPlg="7" tPlg="10"/>
+                </lines>
+                <PanelWndPosition l="330" r="330" t="167" b="167"/>
+                <PanelLocation l="83" r="600" t="479" b="799"/>
+                <StructLocation l="624" r="1443" t="2" b="477"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="480" t="16" b="264"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="809771495" lineType="1" fMod="1523563508" tMod="1937770140" fPlg="7"/>
+            <line type="Line" handle="2129976098" lineType="1" fMod="1523563508" tMod="1937770140" fPlg="8" tPlg="1"/>
+        </lines>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="30" r="530" t="30" b="330"/>
+        <StructLocation l="0" r="617" t="0" b="477"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="312" t="16" b="216"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Comparator" class="1" name="Comparator" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Input A" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Input B" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Hi Out Val" datatype="float" default="5"/>
+                <Pin name="Lo Out Val" datatype="float" default="-5"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Fixed Values" class="1" name="Fixed Values (Volts)" flags="4352" category="Controls">
+            <Audio>
+                <Pin name="Spare Value" datatype="float" rate="audio" direction="out" autoRename="true" settableOutput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Floor" class="1" name="Floor" flags="4352" category="Math">
+            <Audio>
+                <Pin name="Signal in" datatype="float" rate="audio"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Multiply" class="1" name="Multiply" flags="4352" category="Math">
+            <Audio>
+                <Pin name="Input 1" datatype="float" rate="audio" default="0.8" linearInput="true"/>
+                <Pin name="Input 2" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Oscillator" class="1" name="Oscillator" flags="4352" category="Waveform">
+            <Audio>
+                <Pin name="Pitch" datatype="float" rate="audio" default="0.5" metadata="100, 0, 10, 0"/>
+                <Pin name="Pulse Width" datatype="float" rate="audio" default="0.5"/>
+                <Pin name="Waveform" datatype="enum" default="1" metadata="Sine, Saw, Ramp, Triangle, Pulse,White Noise,Pink Noise"/>
+                <Pin name="Audio Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Sync" datatype="float" rate="audio" metadata="100, 0, 5, -5"/>
+                <Pin name="Phase Mod" datatype="float" rate="audio" metadata="100, 0, 10, 0"/>
+                <Pin name="Freq Scale" datatype="enum" isMinimised="true" metadata="1 Volt/Octave, 1 Volt/kHz "/>
+                <Pin name="PM Depth" datatype="float" rate="audio" default="0.5" metadata="100, 0, 10, 0"/>
+                <Pin name="Smooth Peaks (Gibbs Effect)" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Sync X-Fade (Anti Alias)" datatype="bool" default="1" isMinimised="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE Arpeggiator" name="Arpeggiator" flags="256" category="MIDI">
+            <Audio>
+                <Pin name="Clock" datatype="bool"/>
+                <Pin name="Reset" datatype="bool"/>
+                <Pin name="Mode" datatype="enum" default="1" metadata="Off,Up,Down,Up/Down,Random"/>
+                <Pin name="Octave" datatype="enum" metadata="1=0,2,3,4,5"/>
+                <Pin name="MIDI In" datatype="midi"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE Int To List" class="1" name="Int To List" flags="4352" category="Conversion">
+            <Audio>
+                <Pin name="Signal in" datatype="int"/>
+                <Pin name="List Out" datatype="enum" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE Keyboard (MIDI)" name="Keyboard (MIDI)" flags="384" category="Controls">
+            <Audio>
+                <Pin name="Channel" datatype="enum" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out"/>
+            </Audio>
+            <GUI graphicsApi="GmpiGui"/>
+        </Plugin>
+        <Plugin id="SE Listbox" name="Listbox" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Choice" datatype="int"/>
+                <Pin name="Item List" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE MIDI to CV 2" class="2" name="MIDI-CV 2" flags="352" category="MIDI" polyphonicSource="true" polyphonic="true" cloned="true">
+            <Audio>
+                <Pin name="MIDI In" datatype="midi"/>
+                <Pin name="Channel" datatype="enum" default="-1" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="Trigger" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Gate" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Pitch" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Velocity" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Aftertouch" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Voice/Active" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Active"/>
+                <Pin name="Voice/Gate" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Gate"/>
+                <Pin name="Voice/Trigger" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Trigger"/>
+                <Pin name="Voice/VelocityKeyOn" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/VelocityKeyOn"/>
+                <Pin name="Voice/Pitch" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Pitch"/>
+                <Pin name="Voice/VirtualVoiceId" datatype="int" private="true" isPolyphonic="true" hostConnect="Voice/VirtualVoiceId"/>
+                <Pin name="Bender" datatype="float" private="true" hostConnect="Bender"/>
+                <Pin name="HoldPedal" datatype="float" private="true" hostConnect="HoldPedal"/>
+                <Pin name="GlideStartPitch" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/GlideStartPitch"/>
+                <Pin name="VoiceAllocationMode" datatype="int" private="true" hostConnect="VoiceAllocationMode"/>
+                <Pin name="Portamento" datatype="float" private="true" hostConnect="Portamento"/>
+                <Pin name="BenderRange" datatype="float" private="true" hostConnect="BenderRange"/>
+                <Pin name="Voice/Aftertouch" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Aftertouch"/>
+                <Pin name="ChannelPressure" datatype="float" private="true" isPolyphonic="true" hostConnect="Channel Pressure"/>
+                <Pin name="Voice/Bender" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Bender"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE MIDItoGate2" name="MIDI to Gate2" flags="256" category="MIDI">
+            <Audio>
+                <Pin name="MIDI In" datatype="midi"/>
+                <Pin name="Trigger" datatype="bool" direction="out"/>
+                <Pin name="Gate" datatype="bool" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE PatchMemory List3" name="PatchMemory List3" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="enum" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="enum" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="List Values" datatype="string" private="true" parameterId="0" parameterField="EnumList"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Choice" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Rectangle XP" name="Rectangle" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Corner Radius" datatype="float" default="10" isMinimised="true"/>
+                <Pin name="Top Left" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Top Right" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Bottom Left" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Bottom Right" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Top Color" datatype="string" default="FF9A9AAA"/>
+                <Pin name="Bottom Color" datatype="string" default="FF858595"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Switch &lt; (MIDI)" name="Switch &lt; (MIDI)" flags="256" category="Switches">
+            <Audio>
+                <Pin name="Choice" datatype="enum" metadata="{AUTO}"/>
+                <Pin name="Input" datatype="midi"/>
+                <Pin name="Spare Output" datatype="midi" direction="out" autoRename="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE Switch &gt; (Int)" name="Switch &gt; (Int)" flags="256" category="Switches">
+            <Audio>
+                <Pin name="Choice" datatype="enum" metadata="{AUTO}"/>
+                <Pin name="Output" datatype="int" direction="out"/>
+                <Pin name="Spare Input" datatype="int" autoRename="true" linearInput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE Text Entry4" name="Text Entry4" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Text" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Multiline" datatype="bool"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE:Fixed Values_Int" class="1" name="Fixed Values (int)" flags="4352" category="Controls">
+            <Audio>
+                <Pin name="Spare Value" datatype="int" direction="out" autoRename="true" settableOutput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Sound Out" class="1" name="Sound Out" flags="4352" category="Input-Output">
+            <Audio>
+                <Pin name="Out" datatype="float" rate="audio" autoRename="true" linearInput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Subtract" class="1" name="Subtract" flags="4352" category="Math">
+            <Audio>
+                <Pin name="Input 1" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Input 2" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Switch (Many-&gt;1)" class="1" name="Switch (Many-&gt;1)" flags="4352" category="Flow Control">
+            <Audio>
+                <Pin name="Choice" datatype="enum" metadata="{AUTO}"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Spare Input" datatype="float" rate="audio" autoRename="true" linearInput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SynthEdit ADSR" name="ADSR2" flags="256" category="Waveform" helpUrl="EnveloperAdsr.htm">
+            <Audio>
+                <Pin name="Trigger" datatype="float" rate="audio" default="0.1"/>
+                <Pin name="Gate" datatype="float" rate="audio" default="0.1"/>
+                <Pin name="Attack" datatype="float" rate="audio"/>
+                <Pin name="Decay" datatype="float" rate="audio" default="0.5"/>
+                <Pin name="Sustain" datatype="float" rate="audio" default="0.7"/>
+                <Pin name="Release" datatype="float" rate="audio" default="0.4"/>
+                <Pin name="Overall Level" datatype="float" rate="audio" default="1"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="VoiceReset" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Active"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SynthEdit Inverter2" name="Inverter2" flags="256" category="Modifiers" helpUrl="Inverter2.htm">
+            <Audio>
+                <Pin name="Signal In" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Trigger to MIDI" class="1" name="Trigger To MIDI" flags="4352" category="MIDI">
+            <Audio>
+                <Pin name="Gate" datatype="float" rate="audio"/>
+                <Pin name="Pitch" datatype="float" rate="audio" default="0.5"/>
+                <Pin name="Velocity" datatype="float" rate="audio" default="0.5"/>
+                <Pin name="Channel" datatype="enum" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out"/>
+                <Pin name="Freq Scale" datatype="enum" isMinimised="true" metadata="1 Volt/Octave, 1 Volt/kHz "/>
+            </Audio>
+        </Plugin>
+        <Plugin id="VCA" class="1" name="VCA" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Signal" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Volume" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Response Curve" datatype="enum" default="1" metadata="Exponential=1,Linear,Decibel,Decibel (old)=0"/>
+            </Audio>
+        </Plugin>
+    </PluginList>
+</Document>
