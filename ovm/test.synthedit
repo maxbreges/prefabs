@@ -317,7 +317,7 @@
                         <structRect l="12" r="252" t="24" b="120"/>
                         <panelRect l="24" r="408" t="96" b="224"/>
                     </module>
-                    <module type="Container" handle="1191815320" name="chord" skin="default2">
+                    <module type="Container" handle="1191815320" name="chord" ViewOpenFlags="256" skin="default2">
                         <plugs>
                             <plug name="MIDI In" datatype="2" idx="7"/>
                             <plug name="MIDI Out" direction="1" datatype="2"/>
@@ -328,6 +328,16 @@
                         </plugs>
                         <structRect l="288" r="360" t="24" b="108"/>
                         <modules>
+                            <module type="Subtract" handle="1793070623">
+                                <structRect l="363" r="423" t="460" b="496"/>
+                            </module>
+                            <module type="Rectifier" handle="471250496">
+                                <structRect l="439" r="523" t="426" b="450"/>
+                            </module>
+                            <module type="SE VoltsToInt" handle="1973734647">
+                                <structRect l="291" r="339" t="512" b="536"/>
+                                <panelRect l="0" r="0" t="0" b="0"/>
+                            </module>
                             <module type="Container" handle="1511878139" name="KEY" skin="default2">
                                 <plugs>
                                     <plug name="Key" datatype="0" idx="7"/>
@@ -503,13 +513,13 @@
                                 <plugs>
                                     <plug default="12" idx="1"/>
                                 </plugs>
-                                <structRect l="660" r="720" t="240" b="276"/>
+                                <structRect l="625" r="685" t="239" b="275"/>
                             </module>
                             <module type="Subtract" handle="1069796059">
-                                <structRect l="576" r="636" t="216" b="252"/>
+                                <structRect l="525" r="585" t="218" b="254"/>
                             </module>
                             <module type="Floor" handle="646166897">
-                                <structRect l="468" r="552" t="240" b="264"/>
+                                <structRect l="415" r="499" t="255" b="279"/>
                             </module>
                             <module type="SE Switch &gt; (Int)" handle="1784696819" name="3rd (Major scale)">
                                 <plugs>
@@ -689,7 +699,6 @@
                             <line type="Line" handle="191913292" lineType="1" fMod="1100156315" tMod="1784696819" fPlg="1" tPlg="3"/>
                             <line type="Line" handle="995246599" lineType="1" fMod="1100156315" tMod="1784696819" tPlg="2"/>
                             <line type="Line" handle="281728960" lineType="1" fMod="544593254" tMod="375040270" fPlg="2"/>
-                            <line type="Line" handle="713640907" lineType="1" fMod="1069796059" tMod="544593254" fPlg="2"/>
                             <line type="Line" handle="511006665" lineType="1" fMod="646166897" tMod="1069796059" fPlg="1" tPlg="1"/>
                             <line type="Line" handle="791510052" lineType="1" fMod="197632406" tMod="1627030775" fPlg="2" tPlg="1"/>
                             <line type="Line" handle="268184491" lineType="1" fMod="618656663" tMod="306210838" fPlg="2" tPlg="1"/>
@@ -705,6 +714,15 @@
                             <line type="Line" handle="1247375565" fMod="1511878139" tMod="1069796059" fPlg="8"/>
                             <line type="Line" handle="919403529" fMod="1511878139" tMod="646166897" fPlg="8"/>
                             <line type="Line" handle="1765308975" fMod="1137190982" tMod="1511878139" fPlg="1" tPlg="7"/>
+                            <line type="Line" handle="1033146182" lineType="1" fMod="1511878139" tMod="1973734647" fPlg="8"/>
+                            <line type="Line" handle="2134100688" lineType="1" fMod="830489728" tMod="1973734647" fPlg="1"/>
+                            <line type="Line" handle="383763858" lineType="1" fMod="737335010" tMod="1973734647" fPlg="4"/>
+                            <line type="Line" handle="1131134145" lineType="1" fMod="830489728" tMod="1793070623" fPlg="1"/>
+                            <line type="Line" handle="1204588320" lineType="1" fMod="1511878139" tMod="1793070623" fPlg="8"/>
+                            <line type="Line" handle="1415568548" lineType="1" fMod="737335010" tMod="1793070623" fPlg="4"/>
+                            <line type="Line" handle="127216615" lineType="1" fMod="1973734647" tMod="1793070623" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="1217475892" lineType="1" fMod="1793070623" tMod="471250496" fPlg="2"/>
+                            <line type="Line" handle="741298930" lineType="1" fMod="471250496" tMod="544593254" fPlg="1"/>
                         </lines>
                         <PanelWndPosition l="296" r="296" t="208" b="208"/>
                         <PanelLocation l="30" r="530" t="30" b="330"/>
@@ -893,6 +911,12 @@
                 <Pin name="Sync X-Fade (Anti Alias)" datatype="bool" default="1" isMinimised="true"/>
             </Audio>
         </Plugin>
+        <Plugin id="Rectifier" class="1" name="Rectifier" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Signal in" datatype="float" rate="audio"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
         <Plugin id="SE Arpeggiator" name="Arpeggiator" flags="256" category="MIDI">
             <Audio>
                 <Pin name="Clock" datatype="bool"/>
@@ -1022,6 +1046,12 @@
                 <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
                 <Pin name="Mouse Down" datatype="bool"/>
             </GUI>
+        </Plugin>
+        <Plugin id="SE VoltsToInt" name="Volts to Int" flags="33554688" category="Conversion" helpUrl="converters.htm">
+            <Audio>
+                <Pin name="In" datatype="float" rate="audio"/>
+                <Pin name="Out" datatype="int" direction="out"/>
+            </Audio>
         </Plugin>
         <Plugin id="SE:Fixed Values_Int" class="1" name="Fixed Values (int)" flags="4352" category="Controls">
             <Audio>
