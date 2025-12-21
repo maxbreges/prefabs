@@ -26,7 +26,7 @@
                 <structRect l="108" r="444" t="36" b="136"/>
                 <panelRect l="232" r="332" t="128" b="228"/>
             </module>
-            <module type="Container" handle="1303764461" name="Scale Degree" skin="default2">
+            <module type="Container" handle="1303764461" name="Scale Degree" ViewOpenFlags="256" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -1024,7 +1024,7 @@
                 <PanelLocation l="728" r="1424" t="43" b="499"/>
                 <StructLocation l="35" r="1267" t="100" b="917"/>
                 <PanelScroll x="171" y="90"/>
-                <StructScroll x="198" y="402"/>
+                <StructScroll x="198" y="45"/>
                 <PanelWndOffset cx="-194" cy="-90"/>
                 <panel_rect l="184" r="616" t="80" b="296"/>
             </module>
