@@ -244,22 +244,25 @@
                 </plugs>
                 <structRect l="792" r="900" t="336" b="412"/>
                 <modules>
+                    <module type="SE FloatToText GUI" handle="2034573032">
+                        <plugs>
+                            <plug default="3" idx="1"/>
+                        </plugs>
+                        <structRect l="336" r="444" t="216" b="252"/>
+                        <panelRect l="280" r="280" t="128" b="128"/>
+                    </module>
+                    <module type="SE Text Entry4" handle="744950400">
+                        <structRect l="504" r="612" t="84" b="200"/>
+                        <panelRect l="264" r="344" t="120" b="144"/>
+                    </module>
                     <module type="VoltsToFloat2" handle="1808099323">
                         <plugs>
                             <plug default="60" idx="2"/>
                         </plugs>
-                        <structRect l="60" r="144" t="192" b="240"/>
-                    </module>
-                    <module type="Show Float" handle="1016070485">
-                        <plugs>
-                            <plug default="Times New Roman" idx="3"/>
-                            <plug default="6" idx="5"/>
-                        </plugs>
-                        <structRect l="360" r="468" t="48" b="112"/>
-                        <panelRect l="240" r="240" t="168" b="168"/>
+                        <structRect l="96" r="180" t="132" b="180"/>
                     </module>
                     <module type="SE PatchMemory Float Out" handle="1395478354">
-                        <structRect l="180" r="300" t="108" b="180"/>
+                        <structRect l="252" r="372" t="84" b="156"/>
                         <panelRect l="256" r="256" t="160" b="160"/>
                     </module>
                     <module type="IO Mod" handle="716331331">
@@ -268,18 +271,19 @@
                             <plug name="Decimal Places" direction="1" datatype="8" tiedtomod="1365290692" tiedtopin="8"/>
                             <plug/>
                         </plugs>
-                        <structRect l="24" r="132" t="60" b="96"/>
+                        <structRect l="12" r="120" t="216" b="252"/>
                     </module>
                 </modules>
                 <lines>
                     <line type="Line" handle="1566316351" lineType="1" fMod="1808099323" tMod="1395478354" fPlg="3" tPlg="11"/>
                     <line type="Line" handle="732039159" lineType="1" fMod="716331331" tMod="1808099323"/>
-                    <line type="Line" handle="1968834396" lineType="1" fMod="1395478354" tMod="1016070485" fPlg="6"/>
-                    <line type="Line" handle="1290915310" lineType="1" fMod="716331331" tMod="1016070485" fPlg="1" tPlg="5"/>
+                    <line type="Line" handle="5199421" lineType="1" fMod="1395478354" tMod="2034573032" fPlg="6"/>
+                    <line type="Line" handle="1873148039" lineType="1" fMod="2034573032" tMod="744950400" fPlg="2"/>
+                    <line type="Line" handle="782740811" lineType="1" fMod="716331331" tMod="2034573032" fPlg="1" tPlg="1"/>
                 </lines>
                 <PanelWndPosition l="448" r="448" t="208" b="208"/>
                 <PanelLocation l="30" r="530" t="30" b="330"/>
-                <StructLocation l="0" r="672" t="0" b="400"/>
+                <StructLocation l="0" r="720" t="0" b="445"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="208" cy="40"/>
@@ -304,7 +308,7 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="1116" t="0" b="791"/>
+        <StructLocation l="0" r="1145" t="0" b="940"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
@@ -363,6 +367,13 @@
                 <Pin name="Smooth Peaks (Gibbs Effect)" datatype="bool" default="1" isMinimised="true"/>
                 <Pin name="Sync X-Fade (Anti Alias)" datatype="bool" default="1" isMinimised="true"/>
             </Audio>
+        </Plugin>
+        <Plugin id="SE FloatToText GUI" name="Float To Text" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Float Val" datatype="float"/>
+                <Pin name="Decimal Places" datatype="int" default="-1"/>
+                <Pin name="Text Val" datatype="string" direction="out"/>
+            </GUI>
         </Plugin>
         <Plugin id="SE PatchMemory Float Out" name="PatchMemory Float Out3" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
             <Parameters>
@@ -450,6 +461,20 @@
                 <Pin name="Spare Input" datatype="string" autoRename="true" linearInput="true" autoDuplicate="true"/>
             </Audio>
         </Plugin>
+        <Plugin id="SE Text Entry4" name="Text Entry4" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Text" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Multiline" datatype="bool"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+            </GUI>
+        </Plugin>
         <Plugin id="SE:Fixed Values_Text" class="1" name="Fixed Values (text)" flags="4352" category="Controls">
             <Audio>
                 <Pin name="Spare Value" datatype="string" direction="out" autoRename="true" settableOutput="true" autoDuplicate="true"/>
@@ -461,16 +486,6 @@
                 <Pin name="Hold" datatype="float" rate="audio" default="0.8"/>
                 <Pin name="Output" datatype="float" rate="audio" direction="out"/>
             </Audio>
-        </Plugin>
-        <Plugin id="Show Float" name="Show Float Gui" flags="384" category="mx/Show">
-            <GUI graphicsApi="GmpiGui">
-                <Pin name="Float" datatype="float"/>
-                <Pin name="Float" datatype="float" direction="out"/>
-                <Pin name="TextColor" datatype="string" isMinimised="true"/>
-                <Pin name="Font" datatype="string" default="Georgia" isMinimised="true"/>
-                <Pin name="Text" datatype="string" private="true"/>
-                <Pin name="Decimal Places" datatype="int" default="2"/>
-            </GUI>
         </Plugin>
         <Plugin id="Slider" class="1" name="Slider" flags="4480" category="Controls">
             <Parameters>
