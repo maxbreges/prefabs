@@ -16,7 +16,7 @@
                 </param>
                 <param type="6" handle="1037852645" shortName="Level Adj Input 1" vstParameterNumber="4" module="1606975092" moduleParamId="0">
                     <patch-list>
-                        <s>10</s>
+                        <s>0</s>
                         <s repeat="127">8</s>
                     </patch-list>
                 </param>
