@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+    <master_container type="Container" handle="2083285525" name="Main" ViewOpenFlags="256" skin="default2">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="8" handle="237452907" shortName="Comparator Input B" vstParameterNumber="3" module="1615411244" moduleParamId="0">
+                    <patch-list>
+                        <s>10</s>
+                        <s repeat="127">8</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="1037852645" shortName="Level Adj Input 1" vstParameterNumber="4" module="1606975092" moduleParamId="0">
+                    <patch-list>
+                        <s>10</s>
+                        <s repeat="127">8</s>
+                    </patch-list>
+                </param>
+                <param type="0" handle="1601408115" shortName="Switch (Many-&gt;1) Choice" vstParameterNumber="2" module="1818749982" moduleParamId="0" MetaData="milliseconds,centiseconds,deciseconds,seconds">
+                    <patch-list>
+                        <s>3</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1862777998" shortName="Monostable Pulse Length (ds)" vstParameterNumber="5" module="1634426480" moduleParamId="0">
+                    <patch-list>
+                        <s>30</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="2040300939" ignorePC="true" stateful="false" module="81144020" moduleParamId="0"/>
+                <param type="10" handle="2058839206" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="Monostable" handle="1706002201">
+                <structRect l="660" r="780" t="372" b="408"/>
+            </module>
+            <module type="VCA" handle="1229489597">
+                <structRect l="828" r="936" t="528" b="576"/>
+            </module>
+            <module type="Oscillator" handle="2068809721">
+                <plugs>
+                    <plug default="5" idx="2"/>
+                </plugs>
+                <structRect l="672" r="756" t="492" b="576"/>
+            </module>
+            <module type="Container" handle="868957921" name="deciseconds" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Value" direction="1" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="528" r="624" t="516" b="580"/>
+                <modules>
+                    <module type="SE IntToText GUI" handle="1146392594">
+                        <structRect l="312" r="384" t="96" b="120"/>
+                        <panelRect l="256" r="256" t="152" b="152"/>
+                    </module>
+                    <module type="SE PatchMemory Int" handle="1634426480">
+                        <structRect l="60" r="180" t="120" b="204"/>
+                        <panelRect l="280" r="280" t="144" b="144"/>
+                    </module>
+                    <module type="SE Text Entry4" handle="866616983">
+                        <structRect l="504" r="612" t="84" b="228"/>
+                        <panelRect l="264" r="344" t="120" b="144"/>
+                    </module>
+                    <module type="IO Mod" handle="1433468070">
+                        <plugs>
+                            <plug name="Value" default="8" tiedtomod="868957921" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="312" r="372" t="216" b="240"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1513024483" lineType="1" fMod="1634426480" tMod="1433468070" fPlg="13"/>
+                    <line type="Line" handle="483750134" lineType="1" fMod="1146392594" tMod="866616983" fPlg="1"/>
+                    <line type="Line" handle="817211387" lineType="1" fMod="1634426480" tMod="1146392594" fPlg="7"/>
+                </lines>
+                <PanelWndPosition l="440" r="440" t="248" b="248"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="720" t="0" b="445"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="200" cy="80"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="Sound Out" handle="1236439644">
+                <plugs>
+                    <plug name="Output"/>
+                    <plug name="Output"/>
+                    <plug/>
+                </plugs>
+                <structRect l="984" r="1044" t="540" b="576"/>
+            </module>
+            <module type="Container" handle="880668487" name="sec" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Value In" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="456" r="552" t="216" b="280"/>
+                <modules>
+                    <module type="SE PatchMemory Int Out" handle="81144020">
+                        <structRect l="156" r="276" t="264" b="336"/>
+                        <panelRect l="232" r="232" t="128" b="128"/>
+                    </module>
+                    <module type="SE IntToText GUI" handle="1956675994">
+                        <structRect l="312" r="384" t="96" b="120"/>
+                        <panelRect l="256" r="256" t="152" b="152"/>
+                    </module>
+                    <module type="SE Text Entry4" handle="1152212266">
+                        <structRect l="504" r="612" t="84" b="228"/>
+                        <panelRect l="264" r="344" t="120" b="144"/>
+                    </module>
+                    <module type="IO Mod" handle="803255981">
+                        <plugs>
+                            <plug name="Value In" direction="1" tiedtomod="880668487" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="96" r="168" t="120" b="144"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="715327172" lineType="1" fMod="1956675994" tMod="1152212266" fPlg="1"/>
+                    <line type="Line" handle="1788700671" lineType="1" fMod="803255981" tMod="81144020" tPlg="10"/>
+                    <line type="Line" handle="642578559" lineType="1" fMod="81144020" tMod="1956675994" fPlg="6"/>
+                </lines>
+                <PanelWndPosition l="448" r="448" t="256" b="256"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="720" t="0" b="445"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="208" cy="88"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="Level Adj" handle="1686509579">
+                <structRect l="312" r="372" t="120" b="156"/>
+            </module>
+            <module type="Slider" handle="1606975092" name="On/Off">
+                <plugs>
+                    <plug default="5" idx="9"/>
+                    <plug default="0"/>
+                    <plug parameterId="-1" idx="13"/>
+                    <plug parameterId="-1"/>
+                </plugs>
+                <structRect l="60" r="144" t="36" b="98"/>
+                <panelRect l="232" r="232" t="144" b="144"/>
+            </module>
+            <module type="Container" handle="138624533" name="sec" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Value" direction="1" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="336" r="432" t="516" b="580"/>
+                <modules>
+                    <module type="SE IntToText GUI" handle="969049758">
+                        <structRect l="312" r="384" t="96" b="120"/>
+                        <panelRect l="256" r="256" t="152" b="152"/>
+                    </module>
+                    <module type="SE PatchMemory Int" handle="1615411244">
+                        <structRect l="60" r="180" t="120" b="204"/>
+                        <panelRect l="280" r="280" t="144" b="144"/>
+                    </module>
+                    <module type="SE Text Entry4" handle="876965435">
+                        <structRect l="504" r="612" t="84" b="228"/>
+                        <panelRect l="264" r="344" t="120" b="144"/>
+                    </module>
+                    <module type="IO Mod" handle="73633607">
+                        <plugs>
+                            <plug name="Value" default="8" tiedtomod="138624533" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="312" r="372" t="216" b="240"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="512069464" lineType="1" fMod="1615411244" tMod="969049758" fPlg="7"/>
+                    <line type="Line" handle="568319774" lineType="1" fMod="969049758" tMod="876965435" fPlg="1"/>
+                    <line type="Line" handle="601067122" lineType="1" fMod="1615411244" tMod="73633607" fPlg="13"/>
+                </lines>
+                <PanelWndPosition l="440" r="440" t="232" b="232"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="720" t="0" b="445"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="200" cy="64"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="Comparator" handle="1736449179">
+                <plugs>
+                    <plug default="20" idx="1"/>
+                    <plug default="10" idx="3"/>
+                    <plug default="0"/>
+                </plugs>
+                <structRect l="468" r="552" t="348" b="408"/>
+            </module>
+            <module type="Voltage To List2" handle="134186157">
+                <structRect l="60" r="132" t="288" b="312"/>
+            </module>
+            <module type="Fixed Values" handle="2014683014">
+                <plugs>
+                    <plug name="1" default="1"/>
+                    <plug name="0" default="0"/>
+                    <plug/>
+                </plugs>
+                <structRect l="48" r="132" t="348" b="384"/>
+            </module>
+            <module type="Switch (Many-&gt;1)" handle="1619983531">
+                <plugs>
+                    <plug name="1" idx="2"/>
+                    <plug name="0"/>
+                    <plug/>
+                </plugs>
+                <structRect l="192" r="276" t="324" b="384"/>
+            </module>
+            <module type="Feedback Delay" handle="982997476">
+                <structRect l="324" r="432" t="336" b="372"/>
+            </module>
+            <module type="Sample and Hold" handle="169252984">
+                <structRect l="348" r="408" t="264" b="300"/>
+            </module>
+            <module type="Container" handle="1948539371" name="Clock Rate" skin="default2">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="time" direction="1" idx="7"/>
+                    <plug/>
+                </plugs>
+                <structRect l="48" r="168" t="132" b="204"/>
+                <modules>
+                    <module type="SE List Entry4" handle="561759370">
+                        <structRect l="192" r="300" t="48" b="204"/>
+                        <panelRect l="112" r="212" t="40" b="72"/>
+                    </module>
+                    <module type="SE PatchMemory List3" handle="1818749982">
+                        <structRect l="36" r="144" t="84" b="168"/>
+                        <panelRect l="256" r="256" t="128" b="128"/>
+                    </module>
+                    <module type="Fixed Values" handle="442058810">
+                        <plugs>
+                            <plug name="milliseconds" default="1"/>
+                            <plug name="centiseconds" default="0.1"/>
+                            <plug name="deciseconds" default="0.01"/>
+                            <plug name="seconds" default="0.001"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="48" r="144" t="276" b="336"/>
+                    </module>
+                    <module type="Switch (Many-&gt;1)" handle="470159086">
+                        <plugs>
+                            <plug name="milliseconds" idx="2"/>
+                            <plug name="centiseconds"/>
+                            <plug name="deciseconds"/>
+                            <plug name="seconds"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="168" r="264" t="252" b="336"/>
+                    </module>
+                    <module type="IO Mod" handle="307722588">
+                        <plugs>
+                            <plug name="time" tiedtomod="1948539371" tiedtopin="7"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="288" r="348" t="264" b="288"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="129714355" lineType="1" fMod="1818749982" tMod="561759370" fPlg="7"/>
+                    <line type="Line" handle="410538601" lineType="1" fMod="1818749982" tMod="561759370" fPlg="8" tPlg="1"/>
+                    <line type="Line" handle="21997210" lineType="1" fMod="442058810" tMod="470159086" tPlg="2"/>
+                    <line type="Line" handle="970402292" lineType="1" fMod="442058810" tMod="470159086" fPlg="1" tPlg="3"/>
+                    <line type="Line" handle="1375728768" lineType="1" fMod="442058810" tMod="470159086" fPlg="2" tPlg="4"/>
+                    <line type="Line" handle="1166543947" lineType="1" fMod="442058810" tMod="470159086" fPlg="3" tPlg="5"/>
+                    <line type="Line" handle="1074157650" lineType="1" fMod="470159086" tMod="307722588" fPlg="1"/>
+                    <line type="Line" handle="749761753" lineType="1" fMod="1818749982" tMod="470159086" fPlg="13"/>
+                </lines>
+                <PanelWndPosition l="344" r="344" t="216" b="216"/>
+                <PanelLocation l="30" r="530" t="30" b="330"/>
+                <StructLocation l="0" r="408" t="0" b="822"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="-99999" cy="-99999"/>
+                <panel_rect l="16" r="312" t="16" b="216"/>
+            </module>
+            <module type="Oscillator" handle="89905691" name="Clock">
+                <plugs>
+                    <plug default="0.001"/>
+                    <plug default="0"/>
+                    <plug default="4"/>
+                    <plug default="1" idx="6"/>
+                </plugs>
+                <structRect l="204" r="288" t="144" b="228"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="96630715" lineType="1" fMod="1948539371" tMod="89905691" fPlg="7"/>
+            <line type="Line" handle="1902986690" lineType="1" fMod="1619983531" tMod="169252984" fPlg="1"/>
+            <line type="Line" handle="457512565" lineType="1" fMod="169252984" tMod="982997476" fPlg="2"/>
+            <line type="Line" handle="31055453" lineType="1" fMod="2014683014" tMod="1619983531" tPlg="2"/>
+            <line type="Line" handle="489305195" lineType="1" fMod="134186157" tMod="1619983531" fPlg="1"/>
+            <line type="Line" handle="235110937" lineType="1" fMod="982997476" tMod="1619983531" fPlg="1" tPlg="2"/>
+            <line type="Line" handle="1704093452" lineType="1" fMod="982997476" tMod="1736449179" fPlg="1"/>
+            <line type="Line" handle="546313786" lineType="1" fMod="1606975092" tMod="1686509579" fPlg="6"/>
+            <line type="Line" handle="13578846" lineType="1" fMod="89905691" tMod="1686509579" fPlg="3" tPlg="1"/>
+            <line type="Line" handle="481962931" lineType="1" fMod="1686509579" tMod="169252984" fPlg="2" tPlg="1"/>
+            <line type="Line" handle="1619091402" lineType="1" fMod="169252984" tMod="880668487" fPlg="2" tPlg="7"/>
+            <line type="Line" handle="1371948730" lineType="1" fMod="2014683014" tMod="1619983531" fPlg="1" tPlg="3"/>
+            <line type="Line" handle="1218127374" lineType="1" fMod="1736449179" tMod="134186157" fPlg="2">
+                <nodes>
+                    <node x="558" y="450"/>
+                    <node x="18" y="450"/>
+                    <node x="18" y="294"/>
+                </nodes>
+            </line>
+            <line type="Line" handle="834268295" lineType="1" fMod="1229489597" tMod="1236439644" fPlg="2"/>
+            <line type="Line" handle="1351519401" lineType="1" fMod="2068809721" tMod="1229489597" fPlg="3"/>
+            <line type="Line" handle="876832962" lineType="1" fMod="1736449179" tMod="1706002201" fPlg="2"/>
+            <line type="Line" handle="848709979" lineType="1" fMod="138624533" tMod="1736449179" fPlg="7" tPlg="1"/>
+            <line type="Line" handle="533862490" lineType="1" fMod="868957921" tMod="1706002201" fPlg="7" tPlg="1"/>
+            <line type="Line" handle="272490790" lineType="1" fMod="1706002201" tMod="1229489597" fPlg="2" tPlg="1"/>
+            <line type="Line" handle="65586215" lineType="1" fMod="1229489597" tMod="1236439644" fPlg="2" tPlg="1"/>
+        </lines>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="30" r="530" t="30" b="330"/>
+        <StructLocation l="0" r="1117" t="0" b="665"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="312" t="16" b="216"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Comparator" class="1" name="Comparator" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Input A" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Input B" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Hi Out Val" datatype="float" default="5"/>
+                <Pin name="Lo Out Val" datatype="float" default="-5"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Feedback Delay" class="1" name="Feedback - Volts" flags="135424" category="Special/Feedback">
+            <Audio>
+                <Pin name="Audio In" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Audio Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Delay Time Out" datatype="float" direction="out"/>
+                <Pin name="" datatype="midi" direction="out" private="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Fixed Values" class="1" name="Fixed Values (Volts)" flags="4352" category="Controls">
+            <Audio>
+                <Pin name="Spare Value" datatype="float" rate="audio" direction="out" autoRename="true" settableOutput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Level Adj" class="1" name="Level Adj" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Input 1" datatype="float" rate="audio" default="0.8" linearInput="true"/>
+                <Pin name="Input 2" datatype="float" rate="audio" default="0.8" linearInput="true"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Monostable" class="1" name="Monostable" flags="4352" category="Logic">
+            <Audio>
+                <Pin name="Signal in" datatype="float" rate="audio"/>
+                <Pin name="Pulse Length (ds)" datatype="float" rate="audio" default="0.01"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Oscillator" class="1" name="Oscillator" flags="4352" category="Waveform">
+            <Audio>
+                <Pin name="Pitch" datatype="float" rate="audio" default="0.5" metadata="100, 0, 10, 0"/>
+                <Pin name="Pulse Width" datatype="float" rate="audio" default="0.5"/>
+                <Pin name="Waveform" datatype="enum" default="1" metadata="Sine, Saw, Ramp, Triangle, Pulse,White Noise,Pink Noise"/>
+                <Pin name="Audio Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Sync" datatype="float" rate="audio" metadata="100, 0, 5, -5"/>
+                <Pin name="Phase Mod" datatype="float" rate="audio" metadata="100, 0, 10, 0"/>
+                <Pin name="Freq Scale" datatype="enum" isMinimised="true" metadata="1 Volt/Octave, 1 Volt/kHz "/>
+                <Pin name="PM Depth" datatype="float" rate="audio" default="0.5" metadata="100, 0, 10, 0"/>
+                <Pin name="Smooth Peaks (Gibbs Effect)" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Sync X-Fade (Anti Alias)" datatype="bool" default="1" isMinimised="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE IntToText GUI" name="Int To Text" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Int Val" datatype="int"/>
+                <Pin name="Text Val" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE List Entry4" name="List Entry4" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Choice" datatype="int"/>
+                <Pin name="Item List" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Int" name="PatchMemory Int" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="int" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="int" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="int" direction="out"/>
+                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Int Out" name="PatchMemory Int Out" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="int" name="" ignorePatchChange="true" persistant="false"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="int"/>
+                <Pin name="PM Value Out" datatype="int" direction="out" private="true" autoConfigureParameter="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin name="PM Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="PM Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="PM Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="PM Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="int" direction="out"/>
+                <Pin id="8" name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory List3" name="PatchMemory List3" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="enum" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="enum" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="List Values" datatype="string" private="true" parameterId="0" parameterField="EnumList"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Choice" datatype="int" direction="out"/>
+                <Pin name="Item List" datatype="string" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Text Entry4" name="Text Entry4" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Text" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Multiline" datatype="bool"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Sample and Hold" class="1" name="Sample And Hold" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Audio" datatype="float" rate="audio" default="0.8" linearInput="true"/>
+                <Pin name="Hold" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Slider" class="1" name="Slider" flags="4480" category="Controls">
+            <Parameters>
+                <Parameter id="0" datatype="float" name="patchValue"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI In" datatype="midi" private="true"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out" private="true"/>
+                <Pin name="MIDI Controller ID" datatype="enum" default="-1" private="true"/>
+                <Pin name="Ignore Program Change" datatype="bool" private="true"/>
+                <Pin name="MIDI NRPN" datatype="enum" private="true" metadata="range 0,16255"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out" autoConfigureParameter="true"/>
+                <Pin name="Lo Value" datatype="float" private="true"/>
+                <Pin name="Hi Value" datatype="float" default="10" private="true"/>
+                <Pin name="Appearance" datatype="enum" default="1" isMinimised="true" metadata="None=-1,Plain Slider, Vert Slider, Horiz Slider, Knob, Button, Button (toggle),Plain Button, Small Knob, Small Button, Small Button (Toggle)"/>
+                <Pin name="Show Readout" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Show Title On Panel" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="patchValue" datatype="float" private="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin id="13" name="patchValue" datatype="float" direction="out" private="true" parameterId="0"/>
+                <Pin name="Hint" datatype="string" direction="out" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Sound Out" class="1" name="Sound Out" flags="4352" category="Input-Output">
+            <Audio>
+                <Pin name="Out" datatype="float" rate="audio" autoRename="true" linearInput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Switch (Many-&gt;1)" class="1" name="Switch (Many-&gt;1)" flags="4352" category="Flow Control">
+            <Audio>
+                <Pin name="Choice" datatype="enum" metadata="{AUTO}"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Spare Input" datatype="float" rate="audio" autoRename="true" linearInput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="VCA" class="1" name="VCA" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Signal" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Volume" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Response Curve" datatype="enum" default="1" metadata="Exponential=1,Linear,Decibel,Decibel (old)=0"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Voltage To List2" class="1" name="Volts To List2" flags="4352" category="Conversion">
+            <Audio>
+                <Pin name="Signal in" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="List Out" datatype="enum" direction="out"/>
+            </Audio>
+        </Plugin>
+    </PluginList>
+</Document>
