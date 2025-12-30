@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Maxim Brezhestovski" vst_processor_id="{E8F21D03-F209-4D85-8031-9E2B7A3704B6}" vst_controller_id="{B6EB7A50-9183-471B-8723-565E53BCFA5E}" vst_4char_id="X8F5" vst_dll_name="Scale Degree" vst_product="Scale Degree" vst_flags="7" vst_preset_count="1">
+<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Maxim Brezhestovski" vst_processor_id="{C18EBD69-FBA9-4F98-B20D-B11433BB83E7}" vst_controller_id="{C83C8F4F-59C6-48D0-939E-FDD7B62C8D27}" vst_4char_id="X8F4" vst_dll_name="Scale Degree" vst_product="Scale Degree" vst_flags="7" vst_preset_count="1">
     <master_container type="Container" handle="1774174351" name="Main" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -35,25 +35,24 @@
                     <plug name="Out" direction="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="93" r="525" t="229" b="491"/>
+                <structRect l="96" r="528" t="228" b="490"/>
                 <PatchManager>
                     <ProgramNames/>
                     <Parameters>
                         <param type="8" handle="25736124" shortName="Degree" private="true" module="354970847" moduleParamId="1" RangeMaximum="11">
                             <patch-list>
-                                <s>6</s>
-                                <s repeat="127">0</s>
+                                <s repeat="128">0</s>
                             </patch-list>
                         </param>
-                        <param type="6" handle="79542276" shortName="CutOff" private="true" vstParameterNumber="1" module="1961213744" moduleParamId="0" RangeMinimum="3.8" RangeMaximum="8.5">
+                        <param type="6" handle="79542276" shortName="CutOff" private="true" vstParameterNumber="1" module="1961213744" moduleParamId="0" RangeMinimum="2.8" RangeMaximum="9">
                             <patch-list>
-                                <s>7.56</s>
+                                <s>4.4345</s>
                                 <s repeat="127">0</s>
                             </patch-list>
                         </param>
                         <param type="6" handle="299051633" shortName="Volume" private="true" vstParameterNumber="2" module="1350720572" moduleParamId="0">
                             <patch-list>
-                                <s>5</s>
+                                <s>2.2</s>
                                 <s repeat="127">0</s>
                             </patch-list>
                         </param>
@@ -95,14 +94,13 @@
                         </param>
                         <param type="0" handle="1299886883" shortName="Scale Degree Root" vstParameterNumber="1" module="1467732860" moduleParamId="0" MetaData="C,C♯,D,E♭,E,F,F♯,G,A♭,A,B♭,B">
                             <patch-list>
-                                <s>4</s>
+                                <s>9</s>
                                 <s repeat="127">0</s>
                             </patch-list>
                         </param>
                         <param type="8" handle="1406989421" shortName="Root" private="true" module="354970847" moduleParamId="3" RangeMaximum="11">
                             <patch-list>
-                                <s>4</s>
-                                <s repeat="127">0</s>
+                                <s repeat="128">0</s>
                             </patch-list>
                         </param>
                         <param type="0" handle="1448248989" shortName="Scale Degree Mode" vstParameterNumber="0" module="496961749" moduleParamId="0" MetaData="Major,Minor">
@@ -202,7 +200,7 @@
                         <panelRect l="552" r="552" t="288" b="288"/>
                     </module>
                     <module type="majors asc" handle="354970847">
-                        <structRect l="524" r="608" t="403" b="475"/>
+                        <structRect l="504" r="588" t="432" b="504"/>
                         <panelRect l="528" r="529" t="320" b="321"/>
                     </module>
                     <module type="DisplayText" handle="76092266">
@@ -454,7 +452,6 @@
                 </modules>
                 <lines>
                     <line type="Line" handle="2067086487" lineType="1" fMod="729884747" tMod="1314389322"/>
-                    <line type="Line" handle="603279800" lineType="1" fMod="1759264473" tMod="354970847" fPlg="4" tPlg="6"/>
                     <line type="Line" handle="1783094360" lineType="1" fMod="1927104641" tMod="1759264473" fPlg="14" tPlg="1"/>
                     <line type="Line" handle="1362039215" lineType="1" fMod="1927104641" tMod="1759264473" fPlg="16"/>
                     <line type="Line" handle="201537235" lineType="1" fMod="967360005" tMod="76092266" fPlg="3" tPlg="3"/>
@@ -466,16 +463,13 @@
                     <line type="Line" handle="1404168973" lineType="1" fMod="1846161018" tMod="20951462" tPlg="2"/>
                     <line type="Line" handle="526767843" lineType="1" fMod="34294266" tMod="967360005" fPlg="8" tPlg="2"/>
                     <line type="Line" handle="332514751" lineType="1" fMod="324509016" tMod="554118875" fPlg="7"/>
-                    <line type="Line" handle="532929484" lineType="1" fMod="354970847" tMod="1728864930" fPlg="3"/>
                     <line type="Line" handle="507203927" lineType="1" fMod="1728864930" tMod="554118875" fPlg="1" tPlg="1"/>
                     <line type="Line" handle="272723390" lineType="1" fMod="1652438937" tMod="20951462" fPlg="7"/>
                     <line type="Line" handle="649909755" lineType="1" fMod="554118875" tMod="729884747" fPlg="3" tPlg="3"/>
                     <line type="Line" handle="1974092616" lineType="1" fMod="1652438937" tMod="894827406" fPlg="7"/>
                     <line type="Line" handle="1524686477" lineType="1" fMod="1467732860" tMod="356782163" fPlg="8" tPlg="10"/>
                     <line type="Line" handle="581935547" lineType="1" fMod="1467732860" tMod="356782163" fPlg="7" tPlg="9"/>
-                    <line type="Line" handle="1662531247" lineType="1" fMod="1467732860" tMod="354970847" fPlg="13" tPlg="8"/>
                     <line type="Line" handle="1082870040" lineType="1" fMod="496961749" tMod="1565654645" fPlg="7" tPlg="9"/>
-                    <line type="Line" handle="1391787228" lineType="1" fMod="496961749" tMod="354970847" fPlg="13" tPlg="7"/>
                     <line type="Line" handle="123147934" lineType="1" fMod="76092266" tMod="1846161018" fPlg="11" tPlg="2"/>
                     <line type="Line" handle="1634007830" lineType="1" fMod="34294266" tMod="622099397" fPlg="8" tPlg="7"/>
                     <line type="Line" handle="1877940931" lineType="1" fMod="324509016" tMod="76092266" fPlg="8" tPlg="7"/>
@@ -522,18 +516,22 @@
                     <line type="Line" handle="515116576" lineType="1" fMod="1314389322" tMod="894827406" fPlg="1" tPlg="2"/>
                     <line type="Line" handle="1626575130" lineType="1" fMod="1365208491" tMod="894827406" tPlg="3"/>
                     <line type="Line" handle="110998616" lineType="1" fMod="894827406" tMod="967360005" fPlg="1"/>
-                    <line type="Line" handle="365109956" lineType="1" fMod="354970847" tMod="42493671" fPlg="3"/>
-                    <line type="Line" handle="1971878794" lineType="1" fMod="354970847" tMod="42493671" fPlg="4" tPlg="1"/>
                     <line type="Line" handle="1643579193" lineType="1" fMod="42493671" tMod="622099397" fPlg="2"/>
-                    <line type="Line" handle="1623603035" lineType="1" fMod="354970847" tMod="305088334" fPlg="3"/>
-                    <line type="Line" handle="526405220" lineType="1" fMod="354970847" tMod="305088334" fPlg="5" tPlg="1"/>
                     <line type="Line" handle="1079863316" lineType="1" fMod="305088334" tMod="76092266" fPlg="2"/>
+                    <line type="Line" handle="673681783" lineType="1" fMod="1759264473" tMod="354970847" fPlg="4" tPlg="6"/>
+                    <line type="Line" handle="2095964319" lineType="1" fMod="496961749" tMod="354970847" fPlg="13" tPlg="7"/>
+                    <line type="Line" handle="2044064985" lineType="1" fMod="1467732860" tMod="354970847" fPlg="13" tPlg="8"/>
+                    <line type="Line" handle="777245873" lineType="1" fMod="354970847" tMod="42493671" fPlg="3"/>
+                    <line type="Line" handle="1896222493" lineType="1" fMod="354970847" tMod="305088334" fPlg="3"/>
+                    <line type="Line" handle="360473522" lineType="1" fMod="354970847" tMod="1728864930" fPlg="3"/>
+                    <line type="Line" handle="1504872468" lineType="1" fMod="354970847" tMod="42493671" fPlg="4" tPlg="1"/>
+                    <line type="Line" handle="917059406" lineType="1" fMod="354970847" tMod="305088334" fPlg="5" tPlg="1"/>
                 </lines>
                 <PanelWndPosition l="104" r="518" t="128" b="326"/>
                 <PanelLocation l="753" r="1449" t="224" b="680"/>
                 <StructLocation l="35" r="1399" t="100" b="917"/>
                 <PanelScroll x="1" y="0"/>
-                <StructScroll x="1" y="120"/>
+                <StructScroll x="1" y="0"/>
                 <PanelWndOffset cx="-90" cy="38"/>
                 <panel_rect l="184" r="616" t="80" b="296"/>
             </module>
