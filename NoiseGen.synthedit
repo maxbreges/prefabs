@@ -42,16 +42,16 @@
         </PatchManager>
         <modules>
             <module type="Monostable" handle="1706002201">
-                <structRect l="660" r="780" t="372" b="408"/>
+                <structRect l="576" r="696" t="372" b="408"/>
             </module>
             <module type="VCA" handle="1229489597">
-                <structRect l="828" r="936" t="528" b="576"/>
+                <structRect l="624" r="732" t="432" b="480"/>
             </module>
             <module type="Oscillator" handle="2068809721">
                 <plugs>
                     <plug default="5" idx="2"/>
                 </plugs>
-                <structRect l="672" r="756" t="492" b="576"/>
+                <structRect l="504" r="588" t="432" b="516"/>
             </module>
             <module type="Container" handle="868957921" name="deciseconds" skin="default2">
                 <plugs>
@@ -60,7 +60,7 @@
                     <plug name="Value" direction="1" idx="7"/>
                     <plug/>
                 </plugs>
-                <structRect l="528" r="624" t="516" b="580"/>
+                <structRect l="396" r="492" t="396" b="460"/>
                 <modules>
                     <module type="SE IntToText GUI" handle="1146392594">
                         <structRect l="312" r="384" t="96" b="120"/>
@@ -101,7 +101,7 @@
                     <plug name="Output"/>
                     <plug/>
                 </plugs>
-                <structRect l="984" r="1044" t="540" b="576"/>
+                <structRect l="756" r="816" t="444" b="480"/>
             </module>
             <module type="Container" handle="880668487" name="sec" skin="default2">
                 <plugs>
@@ -110,7 +110,7 @@
                     <plug name="Value In" idx="7"/>
                     <plug/>
                 </plugs>
-                <structRect l="456" r="552" t="216" b="280"/>
+                <structRect l="456" r="552" t="192" b="256"/>
                 <modules>
                     <module type="SE PatchMemory Int Out" handle="81144020">
                         <structRect l="156" r="276" t="264" b="336"/>
@@ -146,7 +146,7 @@
                 <panel_rect l="16" r="312" t="16" b="216"/>
             </module>
             <module type="Level Adj" handle="1686509579">
-                <structRect l="312" r="372" t="120" b="156"/>
+                <structRect l="300" r="360" t="180" b="216"/>
             </module>
             <module type="Slider" handle="1606975092" name="On/Off">
                 <plugs>
@@ -155,7 +155,7 @@
                     <plug parameterId="-1" idx="13"/>
                     <plug parameterId="-1"/>
                 </plugs>
-                <structRect l="60" r="144" t="36" b="98"/>
+                <structRect l="192" r="276" t="72" b="134"/>
                 <panelRect l="232" r="232" t="144" b="144"/>
             </module>
             <module type="Container" handle="138624533" name="sec" skin="default2">
@@ -165,7 +165,7 @@
                     <plug name="Value" direction="1" idx="7"/>
                     <plug/>
                 </plugs>
-                <structRect l="336" r="432" t="516" b="580"/>
+                <structRect l="240" r="336" t="396" b="460"/>
                 <modules>
                     <module type="SE IntToText GUI" handle="969049758">
                         <structRect l="312" r="384" t="96" b="120"/>
@@ -206,10 +206,10 @@
                     <plug default="10" idx="3"/>
                     <plug default="0"/>
                 </plugs>
-                <structRect l="468" r="552" t="348" b="408"/>
+                <structRect l="456" r="540" t="312" b="372"/>
             </module>
             <module type="Voltage To List2" handle="134186157">
-                <structRect l="60" r="132" t="288" b="312"/>
+                <structRect l="60" r="132" t="252" b="276"/>
             </module>
             <module type="Fixed Values" handle="2014683014">
                 <plugs>
@@ -217,7 +217,7 @@
                     <plug name="0" default="0"/>
                     <plug/>
                 </plugs>
-                <structRect l="48" r="132" t="348" b="384"/>
+                <structRect l="48" r="132" t="312" b="348"/>
             </module>
             <module type="Switch (Many-&gt;1)" handle="1619983531">
                 <plugs>
@@ -225,13 +225,13 @@
                     <plug name="0"/>
                     <plug/>
                 </plugs>
-                <structRect l="192" r="276" t="324" b="384"/>
+                <structRect l="192" r="276" t="288" b="348"/>
             </module>
             <module type="Feedback Delay" handle="982997476">
-                <structRect l="324" r="432" t="336" b="372"/>
+                <structRect l="324" r="432" t="300" b="336"/>
             </module>
             <module type="Sample and Hold" handle="169252984">
-                <structRect l="348" r="408" t="264" b="300"/>
+                <structRect l="348" r="408" t="240" b="276"/>
             </module>
             <module type="Container" handle="1948539371" name="Clock Rate" skin="default2">
                 <plugs>
@@ -240,7 +240,7 @@
                     <plug name="time" direction="1" idx="7"/>
                     <plug/>
                 </plugs>
-                <structRect l="48" r="168" t="132" b="204"/>
+                <structRect l="36" r="156" t="144" b="216"/>
                 <modules>
                     <module type="SE List Entry4" handle="561759370">
                         <structRect l="192" r="300" t="48" b="204"/>
@@ -303,7 +303,7 @@
                     <plug default="4"/>
                     <plug default="1" idx="6"/>
                 </plugs>
-                <structRect l="204" r="288" t="144" b="228"/>
+                <structRect l="192" r="276" t="156" b="240"/>
             </module>
         </modules>
         <lines>
@@ -321,9 +321,9 @@
             <line type="Line" handle="1371948730" lineType="1" fMod="2014683014" tMod="1619983531" fPlg="1" tPlg="3"/>
             <line type="Line" handle="1218127374" lineType="1" fMod="1736449179" tMod="134186157" fPlg="2">
                 <nodes>
-                    <node x="558" y="450"/>
-                    <node x="18" y="450"/>
-                    <node x="18" y="294"/>
+                    <node x="546" y="378"/>
+                    <node x="18" y="378"/>
+                    <node x="18" y="258"/>
                 </nodes>
             </line>
             <line type="Line" handle="834268295" lineType="1" fMod="1229489597" tMod="1236439644" fPlg="2"/>
@@ -336,7 +336,7 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="1117" t="0" b="665"/>
+        <StructLocation l="0" r="952" t="0" b="653"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>

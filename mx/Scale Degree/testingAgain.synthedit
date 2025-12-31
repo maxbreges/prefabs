@@ -41,7 +41,8 @@
                     <Parameters>
                         <param type="8" handle="25736124" shortName="Degree" private="true" module="354970847" moduleParamId="1" RangeMaximum="11">
                             <patch-list>
-                                <s repeat="128">0</s>
+                                <s>1</s>
+                                <s repeat="127">0</s>
                             </patch-list>
                         </param>
                         <param type="6" handle="79542276" shortName="CutOff" private="true" vstParameterNumber="1" module="1961213744" moduleParamId="0" RangeMinimum="2.8" RangeMaximum="9">
@@ -84,7 +85,8 @@
                         </param>
                         <param type="8" handle="1062893638" shortName="Mode" private="true" module="354970847" moduleParamId="2" RangeMaximum="1">
                             <patch-list>
-                                <s repeat="128">0</s>
+                                <s>1</s>
+                                <s repeat="127">0</s>
                             </patch-list>
                         </param>
                         <param type="6" handle="1129408199" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="1303764461" hostControl="40">
@@ -100,7 +102,8 @@
                         </param>
                         <param type="8" handle="1406989421" shortName="Root" private="true" module="354970847" moduleParamId="3" RangeMaximum="11">
                             <patch-list>
-                                <s repeat="128">0</s>
+                                <s>9</s>
+                                <s repeat="127">0</s>
                             </patch-list>
                         </param>
                         <param type="0" handle="1448248989" shortName="Scale Degree Mode" vstParameterNumber="0" module="496961749" moduleParamId="0" MetaData="Major,Minor">
