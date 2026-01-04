@@ -94,11 +94,11 @@
                         </plugs>
                         <structRect l="492" r="612" t="276" b="312"/>
                     </module>
-                    <module type="FloatToVolts" handle="1956813271" name="4 samples for reset">
+                    <module type="FloatToVolts" handle="1956813271">
                         <plugs>
                             <plug default="1"/>
                         </plugs>
-                        <structRect l="48" r="132" t="120" b="156"/>
+                        <structRect l="84" r="168" t="108" b="144"/>
                     </module>
                     <module type="Shift Register" handle="1228150019">
                         <plugs>
