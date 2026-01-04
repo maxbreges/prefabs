@@ -46,7 +46,7 @@
                     <plug name="-1" default="-1"/>
                     <plug/>
                 </plugs>
-                <structRect l="204" r="288" t="444" b="468"/>
+                <structRect l="240" r="324" t="444" b="468"/>
             </module>
             <module type="SE Integer Counter2" handle="1467699743">
                 <structRect l="312" r="372" t="180" b="228"/>
@@ -143,7 +143,7 @@
                     <plug name="Value" direction="1" idx="7"/>
                     <plug/>
                 </plugs>
-                <structRect l="72" r="168" t="420" b="484"/>
+                <structRect l="96" r="192" t="372" b="436"/>
                 <modules>
                     <module type="SE IntToText GUI" handle="969049758">
                         <structRect l="312" r="384" t="96" b="120"/>
