@@ -49,7 +49,7 @@
                 <structRect l="240" r="324" t="444" b="468"/>
             </module>
             <module type="SE Integer Counter2" handle="1467699743">
-                <structRect l="312" r="372" t="180" b="228"/>
+                <structRect l="288" r="348" t="180" b="228"/>
                 <panelRect l="0" r="0" t="0" b="0"/>
             </module>
             <module type="Container" handle="868957921" name="deciseconds" skin="default2">
@@ -101,7 +101,7 @@
                     <plug name="Value In" idx="7"/>
                     <plug/>
                 </plugs>
-                <structRect l="456" r="552" t="204" b="268"/>
+                <structRect l="396" r="492" t="204" b="268"/>
                 <modules>
                     <module type="SE PatchMemory Int Out" handle="81144020">
                         <structRect l="156" r="276" t="264" b="336"/>
@@ -344,7 +344,7 @@
                     <plug default="10" idx="3"/>
                     <plug default="0"/>
                 </plugs>
-                <structRect l="372" r="456" t="372" b="432"/>
+                <structRect l="408" r="492" t="372" b="432"/>
             </module>
         </modules>
         <lines>
