@@ -439,7 +439,7 @@
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="SE PatchMemory Int" handle="612654663" name="Patch ID">
-                        <structRect l="300" r="420" t="630" b="714"/>
+                        <structRect l="300" r="420" t="636" b="720"/>
                         <panelRect l="376" r="376" t="272" b="272"/>
                     </module>
                     <module type="SE Patch Automator" handle="471698994">
@@ -517,7 +517,7 @@
                             <plug parameterId="-1" idx="13"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="156" r="252" t="431" b="491"/>
+                        <structRect l="156" r="252" t="431" b="495"/>
                         <panelRect l="147" r="221" t="103" b="147"/>
                     </module>
                     <module type="Slider" handle="1534" name="Portamento">
@@ -532,7 +532,7 @@
                             <plug parameterId="-1" idx="13"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="24" r="132" t="424" b="472"/>
+                        <structRect l="24" r="120" t="424" b="472"/>
                         <panelRect l="249" r="328" t="107" b="139"/>
                     </module>
                     <module type="List Entry" handle="330" name="Retrigger">
@@ -744,9 +744,9 @@
                 </lines>
                 <PanelWndPosition l="88" r="88" t="104" b="104"/>
                 <PanelLocation l="152" r="749" t="480" b="931"/>
-                <StructLocation l="65" r="1201" t="493" b="895"/>
+                <StructLocation l="8" r="1150" t="395" b="943"/>
                 <PanelScroll x="0" y="0"/>
-                <StructScroll x="1" y="481"/>
+                <StructScroll x="1" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
                 <panel_rect l="0" r="382" t="0" b="172"/>
             </module>
@@ -766,7 +766,7 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="633" t="0" b="391"/>
+        <StructLocation l="0" r="633" t="0" b="373"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="1" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
