@@ -354,7 +354,7 @@
                             <plug name="Signal Out" direction="1"/>
                             <plug/>
                         </plugs>
-                        <structRect l="469" r="553" t="639" b="701"/>
+                        <structRect l="576" r="660" t="624" b="686"/>
                         <modules>
                             <module type="Fixed Values" handle="1070248392">
                                 <plugs>
@@ -439,7 +439,7 @@
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="SE PatchMemory Int" handle="612654663" name="Patch ID">
-                        <structRect l="300" r="420" t="636" b="720"/>
+                        <structRect l="432" r="552" t="612" b="696"/>
                         <panelRect l="376" r="376" t="272" b="272"/>
                     </module>
                     <module type="SE Patch Automator" handle="471698994">
@@ -746,7 +746,7 @@
                 <PanelLocation l="152" r="749" t="480" b="931"/>
                 <StructLocation l="8" r="1150" t="395" b="943"/>
                 <PanelScroll x="0" y="0"/>
-                <StructScroll x="1" y="0"/>
+                <StructScroll x="1" y="361"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
                 <panel_rect l="0" r="382" t="0" b="172"/>
             </module>
