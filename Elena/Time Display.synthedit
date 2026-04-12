@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Duarte Vinagre" vst_preset_count="64">
+    <master_container type="Container" handle="519249449" name="Main" ViewOpenFlags="256" skin="default2">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="8" handle="387774111" ignorePC="true" private="true" stateful="false" module="1985339109" moduleParamId="0" RangeMaximum="60"/>
+                <param type="1" handle="489673398" ignorePC="true" private="true" module="1865518696" moduleParamId="0">
+                    <patch-list>
+                        <s>:</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="541794166" ignorePC="true" private="true" module="1215979805" moduleParamId="0">
+                    <patch-list>
+                        <s>:</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="747812634" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="773698246" shortName="ED Time Counter Trigger" vstParameterNumber="0" module="1790393934" moduleParamId="0">
+                    <patch-list>
+                        <s repeat="128">0</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="890333820" ignorePC="true" private="true" stateful="false" module="1261156637" moduleParamId="0" RangeMaximum="100"/>
+                <param type="8" handle="905734647" ignorePC="true" private="true" stateful="false" module="4734499" moduleParamId="0" RangeMaximum="100"/>
+                <param type="8" handle="1502598059" ignorePC="true" private="true" stateful="false" module="650728564" moduleParamId="0" RangeMaximum="60"/>
+                <param type="8" handle="1542857506" ignorePC="true" private="true" stateful="false" module="1166848391" moduleParamId="0" RangeMaximum="60"/>
+                <param type="8" handle="1861081456" ignorePC="true" private="true" stateful="false" module="425599471" moduleParamId="0" RangeMaximum="60"/>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="Slider" handle="1790393934">
+                <plugs>
+                    <plug default="4" idx="9"/>
+                    <plug parameterId="-1" idx="13"/>
+                    <plug parameterId="-1"/>
+                </plugs>
+                <structRect l="48" r="132" t="180" b="258"/>
+                <panelRect l="232" r="232" t="168" b="168"/>
+            </module>
+            <module type="Container" handle="579557625" name="End Time" ViewOpenFlags="256" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Length In" default="100000000" datatype="8" idx="7"/>
+                    <plug name="Rate In" default="1000" datatype="6"/>
+                    <plug/>
+                </plugs>
+                <structRect l="324" r="432" t="216" b="292"/>
+                <modules>
+                    <module type="SE Text Entry4" handle="864227240" name="Sep">
+                        <plugs>
+                            <plug default=":"/>
+                            <plug default="0" idx="3"/>
+                        </plugs>
+                        <structRect l="492" r="600" t="48" b="175"/>
+                        <panelRect l="73" r="90" t="40" b="59"/>
+                    </module>
+                    <module type="SE Text Entry4" handle="113329019" name="Seconds">
+                        <plugs>
+                            <plug default="0" idx="3"/>
+                        </plugs>
+                        <structRect l="348" r="456" t="180" b="307"/>
+                        <panelRect l="77" r="112" t="40" b="64"/>
+                    </module>
+                    <module type="SE Text Entry4" handle="2014956033" name="Seconds">
+                        <plugs>
+                            <plug default="0" idx="3"/>
+                        </plugs>
+                        <structRect l="408" r="516" t="240" b="367"/>
+                        <panelRect l="112" r="143" t="40" b="64"/>
+                    </module>
+                    <module type="SE Text Entry4" handle="1000444982" name="Sep">
+                        <plugs>
+                            <plug default=":"/>
+                            <plug default="0" idx="3"/>
+                        </plugs>
+                        <structRect l="552" r="660" t="108" b="235"/>
+                        <panelRect l="105" r="122" t="40" b="64"/>
+                    </module>
+                    <module type="Container" handle="1538127351" name="Min:Sec::Cents" ViewOpenFlags="256" skin="default">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="Length In" default="100000000" datatype="8" idx="7"/>
+                            <plug name="Rate In" default="48000" datatype="6"/>
+                            <plug name="Text Val" direction="1" datatype="1"/>
+                            <plug name="Text Val" direction="1" datatype="1"/>
+                            <plug name="Text Val" direction="1" datatype="1"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="168" r="240" t="36" b="134"/>
+                        <modules>
+                            <module type="SE IntToText GUI" handle="737588445">
+                                <structRect l="1032" r="1104" t="288" b="312"/>
+                                <panelRect l="361" r="361" t="243" b="243"/>
+                            </module>
+                            <module type="SE PatchMemory Int Out" handle="1166848391">
+                                <structRect l="900" r="1020" t="276" b="348"/>
+                                <panelRect l="343" r="343" t="259" b="259"/>
+                            </module>
+                            <module type="ED_IntWrap" handle="1524007513" name="ED Wrap (Int) (Remainder)">
+                                <plugs>
+                                    <plug default="1000" idx="1"/>
+                                </plugs>
+                                <structRect l="300" r="360" t="252" b="288"/>
+                                <panelRect l="236" r="236" t="178" b="178"/>
+                            </module>
+                            <module type="IO Mod" handle="1848733338">
+                                <plugs>
+                                    <plug name="Text Val" datatype="1" tiedtomod="1538127351" tiedtopin="9"/>
+                                    <plug name="Text Val" datatype="1" tiedtomod="1538127351" tiedtopin="10"/>
+                                    <plug name="Text Val" datatype="1" tiedtomod="1538127351" tiedtopin="11"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="1176" r="1248" t="144" b="192"/>
+                            </module>
+                            <module type="SE FloatToInt" handle="1519483856">
+                                <structRect l="792" r="864" t="228" b="252"/>
+                                <panelRect l="375" r="375" t="232" b="232"/>
+                            </module>
+                            <module type="SE IntToText GUI" handle="801662019">
+                                <structRect l="1032" r="1104" t="192" b="216"/>
+                                <panelRect l="313" r="313" t="203" b="203"/>
+                            </module>
+                            <module type="SE IntToText GUI" handle="1283497439">
+                                <structRect l="1032" r="1104" t="108" b="132"/>
+                                <panelRect l="277" r="277" t="127" b="127"/>
+                            </module>
+                            <module type="SE PatchMemory Int Out" handle="425599471">
+                                <structRect l="900" r="1020" t="180" b="252"/>
+                                <panelRect l="295" r="295" t="219" b="219"/>
+                            </module>
+                            <module type="SE PatchMemory Int Out" handle="1261156637">
+                                <structRect l="900" r="1020" t="96" b="168"/>
+                                <panelRect l="235" r="235" t="159" b="159"/>
+                            </module>
+                            <module type="SE FloatToInt" handle="405267960">
+                                <structRect l="792" r="864" t="144" b="168"/>
+                                <panelRect l="223" r="223" t="145" b="145"/>
+                            </module>
+                            <module type="ED_FloatWrap" handle="2099044534">
+                                <plugs>
+                                    <plug default="60" idx="1"/>
+                                </plugs>
+                                <structRect l="696" r="756" t="204" b="240"/>
+                                <panelRect l="243" r="243" t="156" b="156"/>
+                            </module>
+                            <module type="ED_FloatDiv" handle="307989908" name="ED Divide (Float) (Mins)">
+                                <plugs>
+                                    <plug default="60" idx="1"/>
+                                </plugs>
+                                <structRect l="696" r="756" t="120" b="156"/>
+                                <panelRect l="274" r="274" t="162" b="162"/>
+                            </module>
+                            <module type="ED_FloatAdd" handle="890568574" name="ED Add (Float) (Secs)">
+                                <structRect l="600" r="660" t="96" b="132"/>
+                                <panelRect l="272" r="272" t="144" b="144"/>
+                            </module>
+                            <module type="ED_FloatDiv" handle="1143984692">
+                                <structRect l="492" r="552" t="180" b="216"/>
+                                <panelRect l="280" r="280" t="137" b="137"/>
+                            </module>
+                            <module type="SE IntToFloat" handle="833863603">
+                                <structRect l="408" r="480" t="168" b="192"/>
+                                <panelRect l="345" r="345" t="196" b="196"/>
+                            </module>
+                            <module type="SE IntToFloat" handle="1952509709">
+                                <structRect l="408" r="480" t="84" b="108"/>
+                                <panelRect l="261" r="261" t="144" b="144"/>
+                            </module>
+                            <module type="ED_IntWrap" handle="1830413130" name="ED Wrap (Int) (Remainder)">
+                                <structRect l="300" r="360" t="144" b="180"/>
+                                <panelRect l="236" r="236" t="178" b="178"/>
+                            </module>
+                            <module type="SE FloatToInt" handle="982156562">
+                                <structRect l="168" r="240" t="144" b="168"/>
+                                <panelRect l="274" r="274" t="147" b="147"/>
+                            </module>
+                            <module type="ED_IntDiv" handle="97493709" name="ED Divide (Int) (Seconds)">
+                                <structRect l="300" r="360" t="60" b="96"/>
+                                <panelRect l="279" r="279" t="325" b="325"/>
+                            </module>
+                            <module type="IO Mod" handle="564377681">
+                                <plugs>
+                                    <plug name="Length In" direction="1" datatype="8" tiedtomod="1538127351" tiedtopin="7"/>
+                                    <plug name="Rate In" direction="1" datatype="6" tiedtomod="1538127351" tiedtopin="8"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="36" r="108" t="60" b="96"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="241448450" lineType="1" fMod="1524007513" tMod="1166848391" fPlg="2" tPlg="10"/>
+                            <line type="Line" handle="1276278766" lineType="1" fMod="982156562" tMod="1524007513" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="1361005490" lineType="1" fMod="737588445" tMod="1848733338" fPlg="1" tPlg="2"/>
+                            <line type="Line" handle="646929227" lineType="1" fMod="1166848391" tMod="737588445" fPlg="6"/>
+                            <line type="Line" handle="1725438725" lineType="1" fMod="564377681" tMod="1524007513"/>
+                            <line type="Line" handle="494209231" lineType="1" fMod="1519483856" tMod="425599471" fPlg="1" tPlg="10"/>
+                            <line type="Line" handle="395375720" lineType="1" fMod="2099044534" tMod="1519483856" fPlg="2"/>
+                            <line type="Line" handle="1428030763" lineType="1" fMod="425599471" tMod="801662019" fPlg="6"/>
+                            <line type="Line" handle="1469203621" lineType="1" fMod="1261156637" tMod="1283497439" fPlg="6"/>
+                            <line type="Line" handle="1106582212" lineType="1" fMod="405267960" tMod="1261156637" fPlg="1" tPlg="10"/>
+                            <line type="Line" handle="511546758" lineType="1" fMod="307989908" tMod="405267960" fPlg="2"/>
+                            <line type="Line" handle="239845785" lineType="1" fMod="890568574" tMod="2099044534" fPlg="2"/>
+                            <line type="Line" handle="1747095982" lineType="1" fMod="890568574" tMod="307989908" fPlg="2"/>
+                            <line type="Line" handle="316257398" lineType="1" fMod="1143984692" tMod="890568574" fPlg="2" tPlg="1"/>
+                            <line type="Line" handle="2075019132" lineType="1" fMod="1952509709" tMod="890568574" fPlg="1"/>
+                            <line type="Line" handle="1624480390" lineType="1" fMod="564377681" tMod="1143984692" fPlg="1" tPlg="1">
+                                <nodes>
+                                    <node x="162" y="198"/>
+                                </nodes>
+                            </line>
+                            <line type="Line" handle="1087144142" lineType="1" fMod="833863603" tMod="1143984692" fPlg="1"/>
+                            <line type="Line" handle="1773050080" lineType="1" fMod="1830413130" tMod="833863603" fPlg="2"/>
+                            <line type="Line" handle="1712738466" lineType="1" fMod="97493709" tMod="1952509709" fPlg="2"/>
+                            <line type="Line" handle="549240711" lineType="1" fMod="982156562" tMod="1830413130" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="538761911" lineType="1" fMod="564377681" tMod="1830413130"/>
+                            <line type="Line" handle="1622980458" lineType="1" fMod="982156562" tMod="97493709" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="1566725510" lineType="1" fMod="564377681" tMod="982156562" fPlg="1"/>
+                            <line type="Line" handle="1790632803" lineType="1" fMod="564377681" tMod="97493709"/>
+                            <line type="Line" handle="1610861149" lineType="1" fMod="1283497439" tMod="1848733338" fPlg="1"/>
+                            <line type="Line" handle="1993232390" lineType="1" fMod="801662019" tMod="1848733338" fPlg="1" tPlg="1"/>
+                        </lines>
+                        <PanelWndPosition l="109" r="119" t="47" b="57"/>
+                        <PanelLocation l="509" r="1009" t="449" b="749"/>
+                        <StructLocation l="9" r="1335" t="489" b="918"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="1" y="0"/>
+                        <PanelWndOffset cx="109" cy="47"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
+                    </module>
+                    <module type="SE PatchMemory Text2" handle="1215979805">
+                        <structRect l="492" r="600" t="228" b="300"/>
+                        <panelRect l="225" r="225" t="130" b="130"/>
+                    </module>
+                    <module type="SE Text Entry4" handle="1817273891" name="Minutes ">
+                        <plugs>
+                            <plug default="0" idx="3"/>
+                        </plugs>
+                        <structRect l="348" r="456" t="36" b="163"/>
+                        <panelRect l="55" r="85" t="40" b="64"/>
+                    </module>
+                    <module type="IO Mod" handle="402921613">
+                        <plugs>
+                            <plug name="Length In" direction="1" datatype="8" tiedtomod="579557625" tiedtopin="7"/>
+                            <plug name="Rate In" direction="1" datatype="6" tiedtomod="579557625" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="92" t="20" b="56"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1260399870" lineType="1" fMod="1215979805" tMod="1000444982" fPlg="6"/>
+                    <line type="Line" handle="1388142884" lineType="1" fMod="1538127351" tMod="2014956033" fPlg="11"/>
+                    <line type="Line" handle="1586295396" lineType="1" fMod="1215979805" tMod="864227240" fPlg="6"/>
+                    <line type="Line" handle="354291367" lineType="1" fMod="1538127351" tMod="1817273891" fPlg="9"/>
+                    <line type="Line" handle="1557623661" lineType="1" fMod="1538127351" tMod="113329019" fPlg="10"/>
+                    <line type="Line" handle="587408262" lineType="1" fMod="402921613" tMod="1538127351" tPlg="7"/>
+                    <line type="Line" handle="556646906" lineType="1" fMod="402921613" tMod="1538127351" fPlg="1" tPlg="8"/>
+                </lines>
+                <PanelWndPosition l="448" r="587" t="250" b="404"/>
+                <PanelLocation l="481" r="1302" t="418" b="718"/>
+                <StructLocation l="657" r="1391" t="21" b="477"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="393" cy="210"/>
+                <panel_rect l="10" r="310" t="10" b="210"/>
+            </module>
+            <module type="Samples Count" handle="538040656">
+                <structRect l="192" r="252" t="228" b="264"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="ED_TimeCounter" handle="837548423">
+                <plugs>
+                    <plug default="0"/>
+                </plugs>
+                <structRect l="180" r="252" t="144" b="180"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="Container" handle="734363042" name="End Time" ViewOpenFlags="256" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug name="Length In" default="100000000" datatype="8" idx="7"/>
+                    <plug name="Rate In" default="1000" datatype="6"/>
+                    <plug/>
+                </plugs>
+                <structRect l="324" r="432" t="108" b="184"/>
+                <modules>
+                    <module type="SE Text Entry4" handle="441805186" name="Sep">
+                        <plugs>
+                            <plug default=":"/>
+                            <plug default="0" idx="3"/>
+                        </plugs>
+                        <structRect l="492" r="600" t="48" b="175"/>
+                        <panelRect l="73" r="90" t="40" b="59"/>
+                    </module>
+                    <module type="SE Text Entry4" handle="383763248" name="Seconds">
+                        <plugs>
+                            <plug default="0" idx="3"/>
+                        </plugs>
+                        <structRect l="348" r="456" t="180" b="307"/>
+                        <panelRect l="77" r="112" t="40" b="64"/>
+                    </module>
+                    <module type="SE Text Entry4" handle="2064500478" name="Seconds">
+                        <plugs>
+                            <plug default="0" idx="3"/>
+                        </plugs>
+                        <structRect l="408" r="516" t="240" b="367"/>
+                        <panelRect l="112" r="143" t="40" b="64"/>
+                    </module>
+                    <module type="SE Text Entry4" handle="1170790830" name="Sep">
+                        <plugs>
+                            <plug default=":"/>
+                            <plug default="0" idx="3"/>
+                        </plugs>
+                        <structRect l="552" r="660" t="108" b="235"/>
+                        <panelRect l="105" r="122" t="40" b="64"/>
+                    </module>
+                    <module type="Container" handle="968960037" name="Min:Sec::Cents" ViewOpenFlags="256" skin="default">
+                        <plugs>
+                            <plug default="1" idx="1"/>
+                            <plug default="1"/>
+                            <plug name="Length In" default="100000000" datatype="8" idx="7"/>
+                            <plug name="Rate In" default="48000" datatype="6"/>
+                            <plug name="Text Val" direction="1" datatype="1"/>
+                            <plug name="Text Val" direction="1" datatype="1"/>
+                            <plug name="Text Val" direction="1" datatype="1"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="168" r="240" t="36" b="134"/>
+                        <modules>
+                            <module type="SE IntToText GUI" handle="800514980">
+                                <structRect l="1032" r="1104" t="288" b="312"/>
+                                <panelRect l="361" r="361" t="243" b="243"/>
+                            </module>
+                            <module type="SE PatchMemory Int Out" handle="1985339109">
+                                <structRect l="900" r="1020" t="276" b="348"/>
+                                <panelRect l="343" r="343" t="259" b="259"/>
+                            </module>
+                            <module type="ED_IntWrap" handle="1696308266" name="ED Wrap (Int) (Remainder)">
+                                <plugs>
+                                    <plug default="1000" idx="1"/>
+                                </plugs>
+                                <structRect l="300" r="360" t="252" b="288"/>
+                                <panelRect l="236" r="236" t="178" b="178"/>
+                            </module>
+                            <module type="IO Mod" handle="564386850">
+                                <plugs>
+                                    <plug name="Text Val" datatype="1" tiedtomod="968960037" tiedtopin="9"/>
+                                    <plug name="Text Val" datatype="1" tiedtomod="968960037" tiedtopin="10"/>
+                                    <plug name="Text Val" datatype="1" tiedtomod="968960037" tiedtopin="11"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="1176" r="1248" t="144" b="192"/>
+                            </module>
+                            <module type="SE FloatToInt" handle="629216676">
+                                <structRect l="792" r="864" t="228" b="252"/>
+                                <panelRect l="375" r="375" t="232" b="232"/>
+                            </module>
+                            <module type="SE IntToText GUI" handle="1095692227">
+                                <structRect l="1032" r="1104" t="192" b="216"/>
+                                <panelRect l="313" r="313" t="203" b="203"/>
+                            </module>
+                            <module type="SE IntToText GUI" handle="678308605">
+                                <structRect l="1032" r="1104" t="108" b="132"/>
+                                <panelRect l="277" r="277" t="127" b="127"/>
+                            </module>
+                            <module type="SE PatchMemory Int Out" handle="650728564">
+                                <structRect l="900" r="1020" t="180" b="252"/>
+                                <panelRect l="295" r="295" t="219" b="219"/>
+                            </module>
+                            <module type="SE PatchMemory Int Out" handle="4734499">
+                                <structRect l="900" r="1020" t="96" b="168"/>
+                                <panelRect l="235" r="235" t="159" b="159"/>
+                            </module>
+                            <module type="SE FloatToInt" handle="216902957">
+                                <structRect l="792" r="864" t="144" b="168"/>
+                                <panelRect l="223" r="223" t="145" b="145"/>
+                            </module>
+                            <module type="ED_FloatWrap" handle="89893657">
+                                <plugs>
+                                    <plug default="60" idx="1"/>
+                                </plugs>
+                                <structRect l="696" r="756" t="204" b="240"/>
+                                <panelRect l="243" r="243" t="156" b="156"/>
+                            </module>
+                            <module type="ED_FloatDiv" handle="728064729" name="ED Divide (Float) (Mins)">
+                                <plugs>
+                                    <plug default="60" idx="1"/>
+                                </plugs>
+                                <structRect l="696" r="756" t="120" b="156"/>
+                                <panelRect l="274" r="274" t="162" b="162"/>
+                            </module>
+                            <module type="ED_FloatAdd" handle="471068486" name="ED Add (Float) (Secs)">
+                                <structRect l="600" r="660" t="96" b="132"/>
+                                <panelRect l="272" r="272" t="144" b="144"/>
+                            </module>
+                            <module type="ED_FloatDiv" handle="756725858">
+                                <structRect l="492" r="552" t="180" b="216"/>
+                                <panelRect l="280" r="280" t="137" b="137"/>
+                            </module>
+                            <module type="SE IntToFloat" handle="103396485">
+                                <structRect l="408" r="480" t="168" b="192"/>
+                                <panelRect l="345" r="345" t="196" b="196"/>
+                            </module>
+                            <module type="SE IntToFloat" handle="2132192304">
+                                <structRect l="408" r="480" t="84" b="108"/>
+                                <panelRect l="261" r="261" t="144" b="144"/>
+                            </module>
+                            <module type="ED_IntWrap" handle="1722824718" name="ED Wrap (Int) (Remainder)">
+                                <structRect l="300" r="360" t="144" b="180"/>
+                                <panelRect l="236" r="236" t="178" b="178"/>
+                            </module>
+                            <module type="SE FloatToInt" handle="702806495">
+                                <structRect l="168" r="240" t="144" b="168"/>
+                                <panelRect l="274" r="274" t="147" b="147"/>
+                            </module>
+                            <module type="ED_IntDiv" handle="983517846" name="ED Divide (Int) (Seconds)">
+                                <structRect l="300" r="360" t="60" b="96"/>
+                                <panelRect l="279" r="279" t="325" b="325"/>
+                            </module>
+                            <module type="IO Mod" handle="476114367">
+                                <plugs>
+                                    <plug name="Length In" direction="1" datatype="8" tiedtomod="968960037" tiedtopin="7"/>
+                                    <plug name="Rate In" direction="1" datatype="6" tiedtomod="968960037" tiedtopin="8"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="36" r="108" t="60" b="96"/>
+                            </module>
+                        </modules>
+                        <lines>
+                            <line type="Line" handle="257437088" lineType="1" fMod="1095692227" tMod="564386850" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="540090508" lineType="1" fMod="678308605" tMod="564386850" fPlg="1"/>
+                            <line type="Line" handle="1499827408" lineType="1" fMod="476114367" tMod="983517846"/>
+                            <line type="Line" handle="1373148486" lineType="1" fMod="476114367" tMod="702806495" fPlg="1"/>
+                            <line type="Line" handle="1167803051" lineType="1" fMod="702806495" tMod="983517846" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="1167732503" lineType="1" fMod="476114367" tMod="1722824718"/>
+                            <line type="Line" handle="464885857" lineType="1" fMod="702806495" tMod="1722824718" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="605956615" lineType="1" fMod="983517846" tMod="2132192304" fPlg="2"/>
+                            <line type="Line" handle="299731807" lineType="1" fMod="1722824718" tMod="103396485" fPlg="2"/>
+                            <line type="Line" handle="1364539695" lineType="1" fMod="103396485" tMod="756725858" fPlg="1"/>
+                            <line type="Line" handle="77196561" lineType="1" fMod="476114367" tMod="756725858" fPlg="1" tPlg="1">
+                                <nodes>
+                                    <node x="162" y="198"/>
+                                </nodes>
+                            </line>
+                            <line type="Line" handle="1390033270" lineType="1" fMod="2132192304" tMod="471068486" fPlg="1"/>
+                            <line type="Line" handle="169425655" lineType="1" fMod="756725858" tMod="471068486" fPlg="2" tPlg="1"/>
+                            <line type="Line" handle="842650404" lineType="1" fMod="471068486" tMod="728064729" fPlg="2"/>
+                            <line type="Line" handle="1339750107" lineType="1" fMod="471068486" tMod="89893657" fPlg="2"/>
+                            <line type="Line" handle="1139858222" lineType="1" fMod="728064729" tMod="216902957" fPlg="2"/>
+                            <line type="Line" handle="97576064" lineType="1" fMod="216902957" tMod="4734499" fPlg="1" tPlg="10"/>
+                            <line type="Line" handle="2098989793" lineType="1" fMod="4734499" tMod="678308605" fPlg="6"/>
+                            <line type="Line" handle="1932231201" lineType="1" fMod="650728564" tMod="1095692227" fPlg="6"/>
+                            <line type="Line" handle="736681850" lineType="1" fMod="89893657" tMod="629216676" fPlg="2"/>
+                            <line type="Line" handle="187870677" lineType="1" fMod="629216676" tMod="650728564" fPlg="1" tPlg="10"/>
+                            <line type="Line" handle="1092331623" lineType="1" fMod="476114367" tMod="1696308266"/>
+                            <line type="Line" handle="776644829" lineType="1" fMod="1985339109" tMod="800514980" fPlg="6"/>
+                            <line type="Line" handle="1757974384" lineType="1" fMod="800514980" tMod="564386850" fPlg="1" tPlg="2"/>
+                            <line type="Line" handle="518178410" lineType="1" fMod="702806495" tMod="1696308266" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="1818834324" lineType="1" fMod="1696308266" tMod="1985339109" fPlg="2" tPlg="10"/>
+                        </lines>
+                        <PanelWndPosition l="109" r="119" t="47" b="57"/>
+                        <PanelLocation l="509" r="1009" t="449" b="749"/>
+                        <StructLocation l="9" r="1335" t="489" b="918"/>
+                        <PanelScroll x="0" y="0"/>
+                        <StructScroll x="1" y="0"/>
+                        <PanelWndOffset cx="109" cy="47"/>
+                        <panel_rect l="16" r="312" t="16" b="216"/>
+                    </module>
+                    <module type="SE PatchMemory Text2" handle="1865518696">
+                        <structRect l="492" r="600" t="228" b="300"/>
+                        <panelRect l="225" r="225" t="130" b="130"/>
+                    </module>
+                    <module type="SE Text Entry4" handle="738465431" name="Minutes ">
+                        <plugs>
+                            <plug default="0" idx="3"/>
+                        </plugs>
+                        <structRect l="348" r="456" t="36" b="163"/>
+                        <panelRect l="55" r="85" t="40" b="64"/>
+                    </module>
+                    <module type="IO Mod" handle="995524850">
+                        <plugs>
+                            <plug name="Length In" direction="1" datatype="8" tiedtomod="734363042" tiedtopin="7"/>
+                            <plug name="Rate In" direction="1" datatype="6" tiedtomod="734363042" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="20" r="92" t="20" b="56"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1714179986" lineType="1" fMod="995524850" tMod="968960037" fPlg="1" tPlg="8"/>
+                    <line type="Line" handle="1232933407" lineType="1" fMod="995524850" tMod="968960037" tPlg="7"/>
+                    <line type="Line" handle="199732490" lineType="1" fMod="968960037" tMod="383763248" fPlg="10"/>
+                    <line type="Line" handle="1405293306" lineType="1" fMod="968960037" tMod="738465431" fPlg="9"/>
+                    <line type="Line" handle="1164006498" lineType="1" fMod="1865518696" tMod="441805186" fPlg="6"/>
+                    <line type="Line" handle="1937549975" lineType="1" fMod="968960037" tMod="2064500478" fPlg="11"/>
+                    <line type="Line" handle="267049081" lineType="1" fMod="1865518696" tMod="1170790830" fPlg="6"/>
+                </lines>
+                <PanelWndPosition l="408" r="547" t="226" b="380"/>
+                <PanelLocation l="481" r="1302" t="418" b="718"/>
+                <StructLocation l="657" r="1391" t="21" b="477"/>
+                <PanelScroll x="0" y="0"/>
+                <StructScroll x="0" y="0"/>
+                <PanelWndOffset cx="353" cy="186"/>
+                <panel_rect l="10" r="310" t="10" b="210"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="1468784791" lineType="1" fMod="837548423" tMod="734363042" fPlg="1" tPlg="7"/>
+            <line type="Line" handle="95775418" lineType="1" fMod="538040656" tMod="579557625" fPlg="3" tPlg="7"/>
+            <line type="Line" handle="299927689" lineType="1" fMod="1790393934" tMod="837548423" fPlg="6"/>
+            <line type="Line" handle="1622211292" lineType="1" fMod="1790393934" tMod="538040656" fPlg="6" tPlg="2"/>
+            <line type="Line" handle="2065055571" lineType="1" fMod="1790393934" tMod="538040656" fPlg="6" tPlg="1"/>
+        </lines>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="30" r="530" t="30" b="330"/>
+        <StructLocation l="0" r="585" t="0" b="463"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="312" t="16" b="216"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="ED_FloatAdd" name="ED Add (Float)" flags="256" category="ELENA DESIGN - DSP/Math/Float" helpUrl="ED_DSP/MathAdd.txt">
+            <Audio>
+                <Pin name="Input 1" datatype="float"/>
+                <Pin name="Input 2" datatype="float"/>
+                <Pin name="Output" datatype="float" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="ED_FloatDiv" name="ED Divide (Float)" flags="256" category="ELENA DESIGN - DSP/Math/Float" helpUrl="ED_DSP/MathDivide.txt">
+            <Audio>
+                <Pin name="Input 1" datatype="float"/>
+                <Pin name="Input 2" datatype="float"/>
+                <Pin name="Output" datatype="float" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="ED_FloatWrap" name="ED Wrap (Float)" flags="256" category="ELENA DESIGN - DSP/Math/Float" helpUrl="ED_DSP/MathWrap.txt">
+            <Audio>
+                <Pin name="Input" datatype="float"/>
+                <Pin name="Range" datatype="float" default="10"/>
+                <Pin name="Output" datatype="float" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="ED_IntDiv" name="ED Divide (Int)" flags="256" category="ELENA DESIGN - DSP/Math/Int" helpUrl="ED_DSP/MathDivide.txt">
+            <Audio>
+                <Pin name="Input 1" datatype="int"/>
+                <Pin name="Input 2" datatype="int"/>
+                <Pin name="Output" datatype="int" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="ED_IntWrap" name="ED Wrap (Int)" flags="256" category="ELENA DESIGN - DSP/Math/Int" helpUrl="ED_DSP/MathWrap.txt">
+            <Audio>
+                <Pin name="Input" datatype="int"/>
+                <Pin name="Range" datatype="int" default="10"/>
+                <Pin name="Output" datatype="int" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="ED_TimeCounter" name="ED Time Counter" flags="256" category="ELENA DESIGN - DSP/Timers-Counters" helpUrl="ED_DSP/TimeCounter.txt">
+            <Audio>
+                <Pin name="Trigger" datatype="bool"/>
+                <Pin name="Samples" datatype="int" direction="out"/>
+                <Pin name="Secs" datatype="float" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE FloatToInt" name="Float To Int" flags="33554688" category="Conversion" helpUrl="converters.htm">
+            <Audio>
+                <Pin name="Float Val" datatype="float"/>
+                <Pin name="Int Val" datatype="int" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE IntToFloat" name="Int To Float" flags="33554688" category="Conversion" helpUrl="converters.htm">
+            <Audio>
+                <Pin name="Int Val" datatype="int"/>
+                <Pin name="Float Val" datatype="float" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE IntToText GUI" name="Int To Text" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Int Val" datatype="int"/>
+                <Pin name="Text Val" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Int Out" name="PatchMemory Int Out" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="int" name="" ignorePatchChange="true" persistant="false"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="int"/>
+                <Pin name="PM Value Out" datatype="int" direction="out" private="true" autoConfigureParameter="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin name="PM Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="PM Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="PM Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="PM Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="int" direction="out"/>
+                <Pin id="8" name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Text2" name="PatchMemory Text2" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="string" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="string" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="string" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="string" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="File Extension" datatype="string" private="true" parameterId="0" parameterField="FileExtension"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="string" direction="out"/>
+                <Pin name="File Extension" datatype="string" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Text Entry4" name="Text Entry4" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Text" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Multiline" datatype="bool"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Samples Count" name="Samples Count" flags="256" category="mx/Logic">
+            <Audio>
+                <Pin name="Clock" datatype="float" rate="audio" private="true"/>
+                <Pin name="Reset" datatype="float" rate="audio"/>
+                <Pin name="Gate" datatype="float" rate="audio"/>
+                <Pin name="Count" datatype="float" rate="audio" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Slider" class="1" name="Slider" flags="4480" category="Controls">
+            <Parameters>
+                <Parameter id="0" datatype="float" name="patchValue"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI In" datatype="midi" private="true"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out" private="true"/>
+                <Pin name="MIDI Controller ID" datatype="enum" default="-1" private="true"/>
+                <Pin name="Ignore Program Change" datatype="bool" private="true"/>
+                <Pin name="MIDI NRPN" datatype="enum" private="true" metadata="range 0,16255"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out" autoConfigureParameter="true"/>
+                <Pin name="Lo Value" datatype="float" private="true"/>
+                <Pin name="Hi Value" datatype="float" default="10" private="true"/>
+                <Pin name="Appearance" datatype="enum" default="1" isMinimised="true" metadata="None=-1,Plain Slider, Vert Slider, Horiz Slider, Knob, Button, Button (toggle),Plain Button, Small Knob, Small Button, Small Button (Toggle)"/>
+                <Pin name="Show Readout" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="Show Title On Panel" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="patchValue" datatype="float" private="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin id="13" name="patchValue" datatype="float" direction="out" private="true" parameterId="0"/>
+                <Pin name="Hint" datatype="string" direction="out" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+    </PluginList>
+</Document>
