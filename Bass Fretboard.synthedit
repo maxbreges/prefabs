@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Jeff McClintock" vst_processor_id="{B45871B0-BF56-47D2-8346-8AAB3DD092E9}" vst_controller_id="{C2EA02A1-B67A-4A1F-9B26-212B13E1E3F6}" vst_4char_id="2547" vst_dll_name="Bass Fretboard" vst_product="Bass Fretboard" vst_about_text="©2026
-
+ 
 www.SynthEdit.com
 
-Fingerboard by Max Brezhestovski" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_flags="7" vst_preset_count="1">
+
+
+Bass Fretboard by Max Brezhestovski
+
+
+
+https://github.com/maxbreges" vst_panel_size_w="-842150451" vst_panel_size_h="-842150451" vst_flags="7" vst_preset_count="1">
     <master_container type="Container" handle="2004738203" name="Main" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -66,11 +72,6 @@ Fingerboard by Max Brezhestovski" vst_panel_size_w="-842150451" vst_panel_size_h
                             </patch-list>
                         </param>
                         <param type="8" handle="491979649" ignorePC="true" stateful="false" module="1388108010" moduleParamId="4"/>
-                        <param type="8" handle="507785110" shortName="Polyphony" ignorePC="true" private="true" module="2127089738" hostControl="21" RangeMinimum="1" RangeMaximum="128">
-                            <patch-list>
-                                <s>6</s>
-                            </patch-list>
-                        </param>
                         <param type="10" handle="541050071" private="true" hostControl="49">
                             <patch-list>
                                 <s repeat="128"></s>
@@ -86,11 +87,6 @@ Fingerboard by Max Brezhestovski" vst_panel_size_w="-842150451" vst_panel_size_h
                         <param type="8" handle="1475468353" ignorePC="true" stateful="false" module="1388108010" moduleParamId="5"/>
                         <param type="8" handle="1644958659" ignorePC="true" stateful="false" module="1388108010" moduleParamId="1"/>
                         <param type="8" handle="1724480663" ignorePC="true" stateful="false" module="1388108010" moduleParamId="0"/>
-                        <param type="8" handle="2064181599" shortName="ReserveVoices" ignorePC="true" private="true" module="2127089738" hostControl="22" RangeMaximum="128">
-                            <patch-list>
-                                <s>3</s>
-                            </patch-list>
-                        </param>
                     </Parameters>
                 </PatchManager>
                 <modules>
