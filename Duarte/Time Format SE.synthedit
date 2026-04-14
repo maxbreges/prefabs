@@ -491,7 +491,7 @@
                 </lines>
                 <PanelWndPosition l="120" r="440" t="200" b="226"/>
                 <PanelLocation l="30" r="530" t="30" b="330"/>
-                <StructLocation l="739" r="1429" t="15" b="702"/>
+                <StructLocation l="720" r="1367" t="155" b="842"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="104" cy="72"/>
@@ -638,7 +638,7 @@
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
                 <PanelLocation l="30" r="641" t="30" b="481"/>
-                <StructLocation l="7" r="586" t="315" b="658"/>
+                <StructLocation l="15" r="594" t="325" b="668"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
@@ -652,7 +652,7 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="6" r="722" t="4" b="295"/>
+        <StructLocation l="13" r="709" t="9" b="304"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
