@@ -11,13 +11,13 @@
                 <param type="10" handle="75371821" shortName="Capture Data A" ignorePC="true" private="true" stateful="false" isPolyphonic="true" module="708607547" moduleParamId="0"/>
                 <param type="1" handle="229269721" vstParameterNumber="2" module="1245914450" moduleParamId="1">
                     <patch-list>
-                        <s>4bff00</s>
+                        <s>fffff000</s>
                         <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="6" handle="297529586" shortName="Level Adj Input 2" vstParameterNumber="0" module="1906942814" moduleParamId="0">
                     <patch-list>
-                        <s>10</s>
+                        <s>4.55</s>
                         <s repeat="127">8</s>
                     </patch-list>
                 </param>
@@ -25,13 +25,13 @@
                 <param type="4" handle="1151125524" shortName="polyDetect" ignorePC="true" private="true" stateful="false" module="708607547" moduleParamId="2"/>
                 <param type="6" handle="1209625712" shortName="VCA Volume" vstParameterNumber="1" module="1909865669" moduleParamId="0">
                     <patch-list>
-                        <s>6.35</s>
+                        <s>3.70001</s>
                         <s repeat="127">8</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1256881715" vstParameterNumber="3" module="1245914450" moduleParamId="0">
                     <patch-list>
-                        <s>2.84558</s>
+                        <s>1.56861</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -43,7 +43,7 @@
                 </param>
                 <param type="6" handle="1579492481" vstParameterNumber="5" module="93947038" moduleParamId="0">
                     <patch-list>
-                        <s>0.275</s>
+                        <s>0.26</s>
                         <s repeat="127">0</s>
                     </patch-list>
                 </param>
@@ -90,7 +90,7 @@
                 <panelRect l="21" r="99" t="222" b="294"/>
             </module>
             <module type="AnimPos to Hex" handle="1245914450">
-                <structRect l="348" r="432" t="744" b="780"/>
+                <structRect l="348" r="468" t="744" b="780"/>
                 <panelRect l="256" r="257" t="160" b="161"/>
             </module>
             <module type="SE PatchMemory Float Out" handle="1156996898">
@@ -111,8 +111,8 @@
                     <plug parameterId="-1" idx="13"/>
                     <plug parameterId="-1"/>
                 </plugs>
-                <structRect l="20" r="104" t="392" b="476"/>
-                <panelRect l="149" r="199" t="43" b="111"/>
+                <structRect l="20" r="104" t="392" b="480"/>
+                <panelRect l="149" r="199" t="43" b="115"/>
             </module>
             <module type="Oscillator" handle="1881079065">
                 <plugs>
@@ -151,15 +151,15 @@
                     <plug name="Output" direction="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="228" r="396" t="96" b="419"/>
+                <structRect l="228" r="396" t="96" b="423"/>
                 <modules>
                     <module type="Slider" handle="1909865669">
                         <plugs>
                             <plug parameterId="-1" idx="13"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="275" r="359" t="252" b="336"/>
-                        <panelRect l="32" r="82" t="186" b="254"/>
+                        <structRect l="275" r="359" t="252" b="340"/>
+                        <panelRect l="32" r="82" t="186" b="258"/>
                     </module>
                     <module type="VCA" handle="1228385113">
                         <structRect l="447" r="555" t="148" b="196"/>
@@ -212,7 +212,7 @@
                     <line type="Line" handle="821987463" lineType="1" fMod="1909865669" tMod="1228385113" fPlg="6" tPlg="1"/>
                     <line type="Line" handle="887564824" lineType="1" fMod="1909865669" tMod="653750921" fPlg="6" tPlg="1"/>
                 </lines>
-                <PanelWndPosition l="218" r="370" t="33" b="256"/>
+                <PanelWndPosition l="218" r="370" t="33" b="260"/>
                 <PanelLocation l="852" r="1373" t="11" b="357"/>
                 <StructLocation l="688" r="1401" t="371" b="940"/>
                 <PanelScroll x="0" y="0"/>
@@ -258,7 +258,7 @@
         <PanelLocation l="7" r="442" t="8" b="386"/>
         <StructLocation l="6" r="678" t="395" b="943"/>
         <PanelScroll x="0" y="0"/>
-        <StructScroll x="1" y="242"/>
+        <StructScroll x="1" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
         <panel_rect l="16" r="382" t="16" b="313"/>
     </master_container>
@@ -272,7 +272,7 @@
                 <Pin name="Scale In" datatype="float" private="true" parameterId="0"/>
                 <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
                 <Pin name="Scaled" datatype="float" direction="out"/>
-                <Pin name="AnimPosIn" datatype="float"/>
+                <Pin name="Animation Position" datatype="float"/>
                 <Pin name="HexIn" datatype="string" private="true" parameterId="1"/>
                 <Pin name="Hex" datatype="string" direction="out"/>
             </GUI>
