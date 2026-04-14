@@ -33,7 +33,7 @@
                 </param>
                 <param type="6" handle="1939564042" shortName="Multiply Input 2" vstParameterNumber="4" module="649699473" moduleParamId="0" RangeMaximum="1">
                     <patch-list>
-                        <s>0</s>
+                        <s>1</s>
                         <s repeat="127">1000</s>
                     </patch-list>
                 </param>
@@ -556,7 +556,7 @@
                     <plug name="Value Out" direction="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="12" r="240" t="108" b="206"/>
+                <structRect l="12" r="240" t="108" b="222"/>
                 <modules>
                     <module type="Multiply" handle="1796760029">
                         <plugs>
@@ -567,18 +567,17 @@
                     <module type="Slider" handle="649699473" name="Start / Stop">
                         <plugs>
                             <plug default="5" idx="9"/>
-                            <plug default="0"/>
                             <plug parameterId="-1" idx="13"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="108" r="204" t="204" b="266"/>
+                        <structRect l="108" r="204" t="204" b="282"/>
                         <panelRect l="192" r="268" t="48" b="94"/>
                     </module>
-                    <module type="Multiply" handle="835181218">
+                    <module type="Multiply" handle="835181218" name="*1000">
                         <plugs>
                             <plug default="1000" idx="1"/>
                         </plugs>
-                        <structRect l="324" r="384" t="204" b="240"/>
+                        <structRect l="312" r="372" t="192" b="228"/>
                     </module>
                     <module type="Switch (Many-&gt;1)" handle="1412276099">
                         <plugs>
