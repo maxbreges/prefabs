@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_user_email="Maxim Brezhestovski" vst_processor_id="{0042804E-088D-45EF-9D77-0C221DC3FBEB}" vst_controller_id="{1A44B638-0A0A-46AB-BD57-4E5F96761380}" vst_4char_id="VK7d" vst_dll_name="BYPASS" vst_product="BYPASS" vst_about_text="©2025" vst_flags="6" vst_preset_count="1">
+<Document file_format="150000" vst_user_email="Maxim Brezhestovski" vst_processor_id="{C7C58FFF-BE93-485C-895A-7405038E89DF}" vst_controller_id="{D22318ED-F04A-4BC8-BD12-A419F2A6D02F}" vst_4char_id="VK7f" vst_dll_name="BYPASS2" vst_product="BYPASS2" vst_about_text="©2025" vst_flags="6" vst_preset_count="1">
     <master_container type="Container" handle="1588725259" name="Main" ViewOpenFlags="384" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -26,25 +26,25 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Sound Out" handle="1834616061">
+            <module type="Sound In" handle="442611114">
                 <plugs>
-                    <plug name="Signal Out"/>
-                    <plug name="Signal Out"/>
-                    <plug name="Signal Out"/>
-                    <plug name="Signal Out"/>
+                    <plug name="Signal In"/>
+                    <plug name="Signal In"/>
+                    <plug name="Signal In"/>
+                    <plug name="Signal In"/>
                     <plug/>
                 </plugs>
-                <structRect l="444" r="528" t="144" b="204"/>
+                <structRect l="84" r="156" t="96" b="156"/>
             </module>
-            <module type="Sound In" handle="212133004">
+            <module type="Sound Out" handle="121236442">
                 <plugs>
-                    <plug name="Signal In"/>
-                    <plug name="Signal In"/>
-                    <plug name="Signal In"/>
-                    <plug name="Signal In"/>
+                    <plug name="Signal Out"/>
+                    <plug name="Signal Out"/>
+                    <plug name="Signal Out"/>
+                    <plug name="Signal Out"/>
                     <plug/>
                 </plugs>
-                <structRect l="24" r="96" t="96" b="156"/>
+                <structRect l="396" r="480" t="144" b="204"/>
             </module>
             <module type="Container" handle="1694133893" name="BYPASS" ViewOpenFlags="256" skin="default2">
                 <plugs>
@@ -67,7 +67,7 @@
                             <plug name="Signal Out" direction="1" idx="7"/>
                             <plug/>
                         </plugs>
-                        <structRect l="648" r="732" t="192" b="228"/>
+                        <structRect l="492" r="576" t="192" b="228"/>
                         <modules>
                             <module type="IO Mod" handle="630629704">
                                 <plugs>
@@ -201,20 +201,20 @@
             </module>
         </modules>
         <lines>
-            <line type="Line" handle="138495208" lineType="1" fMod="1694133893" tMod="1834616061" fPlg="14" tPlg="3"/>
-            <line type="Line" handle="1271738850" lineType="1" fMod="1694133893" tMod="1834616061" fPlg="13" tPlg="2"/>
-            <line type="Line" handle="568761838" lineType="1" fMod="1694133893" tMod="1834616061" fPlg="12" tPlg="1"/>
-            <line type="Line" handle="1851382833" lineType="1" fMod="1694133893" tMod="1834616061" fPlg="11"/>
-            <line type="Line" handle="1357814263" lineType="1" fMod="212133004" tMod="1694133893" fPlg="3" tPlg="10"/>
-            <line type="Line" handle="576237617" lineType="1" fMod="212133004" tMod="1694133893" fPlg="2" tPlg="9"/>
-            <line type="Line" handle="1920962330" lineType="1" fMod="212133004" tMod="1694133893" fPlg="1" tPlg="8"/>
-            <line type="Line" handle="768704676" lineType="1" fMod="212133004" tMod="1694133893" tPlg="7"/>
+            <line type="Line" handle="1264228891" lineType="1" fMod="1694133893" tMod="121236442" fPlg="11"/>
+            <line type="Line" handle="1889111188" lineType="1" fMod="1694133893" tMod="121236442" fPlg="12" tPlg="1"/>
+            <line type="Line" handle="42959375" lineType="1" fMod="1694133893" tMod="121236442" fPlg="13" tPlg="2"/>
+            <line type="Line" handle="1868146570" lineType="1" fMod="1694133893" tMod="121236442" fPlg="14" tPlg="3"/>
+            <line type="Line" handle="89222887" lineType="1" fMod="442611114" tMod="1694133893" tPlg="7"/>
+            <line type="Line" handle="1291201798" lineType="1" fMod="442611114" tMod="1694133893" fPlg="1" tPlg="8"/>
+            <line type="Line" handle="477633615" lineType="1" fMod="442611114" tMod="1694133893" fPlg="2" tPlg="9"/>
+            <line type="Line" handle="164728978" lineType="1" fMod="442611114" tMod="1694133893" fPlg="3" tPlg="10"/>
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="36" r="418" t="497" b="794"/>
-        <StructLocation l="4" r="589" t="20" b="426"/>
+        <StructLocation l="4" r="592" t="20" b="473"/>
         <PanelScroll x="0" y="0"/>
-        <StructScroll x="0" y="0"/>
+        <StructScroll x="10" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
         <panel_rect l="16" r="312" t="16" b="216"/>
     </master_container>
