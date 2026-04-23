@@ -20,7 +20,7 @@
                 </param>
                 <param type="6" handle="7594" automation="33554433" vstParameterNumber="0" module="28256" moduleParamId="0">
                     <patch-list>
-                        <s>4.85</s>
+                        <s>5.4</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="537106189" shortName="From GUI to DSP" ignorePC="true" private="true" module="2007935697" moduleParamId="0">
@@ -198,7 +198,7 @@
                     <plug default="1"/>
                     <plug default="1"/>
                     <plug default="2" idx="6"/>
-                    <plug name="Output" default="" direction="1"/>
+                    <plug name="Output" direction="1"/>
                     <plug name="Frame Count" direction="1" datatype="8"/>
                     <plug/>
                 </plugs>
@@ -234,7 +234,7 @@
                     </module>
                     <module type="IO Mod" handle="15067">
                         <plugs>
-                            <plug name="Output" default="" tiedtomod="20426" tiedtopin="7"/>
+                            <plug name="Output" tiedtomod="20426" tiedtopin="7"/>
                             <plug/>
                         </plugs>
                         <structRect l="432" r="528" t="276" b="312"/>
