@@ -24,7 +24,7 @@
                     <plug name="Signal In"/>
                     <plug/>
                 </plugs>
-                <structRect l="60" r="132" t="96" b="156"/>
+                <structRect l="24" r="96" t="48" b="108"/>
             </module>
             <module type="Container" handle="2021526927" name="Delay" ViewOpenFlags="256" skin="default2">
                 <plugs>
@@ -41,7 +41,7 @@
                     <plug name="Output" direction="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="228" r="600" t="72" b="308"/>
+                <structRect l="156" r="528" t="24" b="260"/>
                 <PatchManager>
                     <ProgramNames/>
                     <Parameters>
@@ -215,7 +215,7 @@
                 </lines>
                 <PanelWndPosition l="0" r="0" t="0" b="0"/>
                 <PanelLocation l="30" r="607" t="30" b="383"/>
-                <StructLocation l="0" r="1035" t="0" b="954"/>
+                <StructLocation l="385" r="1420" t="367" b="934"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
@@ -229,7 +229,7 @@
                     <plug name="Output"/>
                     <plug/>
                 </plugs>
-                <structRect l="696" r="756" t="144" b="204"/>
+                <structRect l="564" r="624" t="96" b="156"/>
             </module>
         </modules>
         <lines>
@@ -244,7 +244,7 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="1030" t="0" b="635"/>
+        <StructLocation l="0" r="719" t="0" b="355"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>

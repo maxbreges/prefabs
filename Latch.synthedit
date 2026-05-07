@@ -29,6 +29,12 @@
             </Parameters>
         </PatchManager>
         <modules>
+            <module type="Sound Out" handle="935326445">
+                <plugs>
+                    <plug/>
+                </plugs>
+                <structRect l="48" r="96" t="48" b="60"/>
+            </module>
             <module type="Container" handle="13981" name="LED2" m_locked="true" skin="default">
                 <plugs>
                     <plug default="1" idx="1"/>
@@ -269,6 +275,11 @@
                 <Pin id="13" name="patchValue" datatype="float" direction="out" private="true" parameterId="0"/>
                 <Pin name="Hint" datatype="string" direction="out" isMinimised="true"/>
             </GUI>
+        </Plugin>
+        <Plugin id="Sound Out" class="1" name="Sound Out" flags="4352" category="Input-Output">
+            <Audio>
+                <Pin name="Out" datatype="float" rate="audio" autoRename="true" linearInput="true" autoDuplicate="true"/>
+            </Audio>
         </Plugin>
         <Plugin id="SynthEdit Inverter2" name="Inverter2" flags="256" category="Modifiers" helpUrl="Inverter2.htm">
             <Audio>
