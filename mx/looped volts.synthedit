@@ -80,7 +80,7 @@
                 <plugs>
                     <plug default="100"/>
                 </plugs>
-                <structRect l="1164" r="1272" t="372" b="491"/>
+                <structRect l="1140" r="1248" t="372" b="491"/>
                 <panelRect l="1256" r="1356" t="24" b="124"/>
             </module>
             <module type="Container" handle="806473490" name="color driver knob" skin="default2">
@@ -94,7 +94,7 @@
                     <plug name="Forground" direction="1" datatype="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="1075" r="1159" t="399" b="497"/>
+                <structRect l="1051" r="1135" t="399" b="497"/>
                 <modules>
                     <module type="Clipper" handle="432570232">
                         <plugs>
@@ -405,7 +405,7 @@
                 <plugs>
                     <plug default="100"/>
                 </plugs>
-                <structRect l="1075" r="1183" t="255" b="374"/>
+                <structRect l="1051" r="1159" t="255" b="374"/>
                 <panelRect l="1144" r="1244" t="24" b="124"/>
             </module>
             <module type="Container" handle="544444826" name="color driver knob" skin="default2">
@@ -419,7 +419,7 @@
                     <plug name="Forground" direction="1" datatype="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="991" r="1075" t="279" b="377"/>
+                <structRect l="967" r="1051" t="279" b="377"/>
                 <modules>
                     <module type="Clipper" handle="1497057702">
                         <plugs>
@@ -730,7 +730,7 @@
                 <plugs>
                     <plug default="100"/>
                 </plugs>
-                <structRect l="967" r="1075" t="147" b="266"/>
+                <structRect l="943" r="1051" t="147" b="266"/>
                 <panelRect l="1032" r="1132" t="24" b="124"/>
             </module>
             <module type="Container" handle="1954601534" name="color driver knob" skin="default2">
@@ -744,7 +744,7 @@
                     <plug name="Forground" direction="1" datatype="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="883" r="967" t="171" b="269"/>
+                <structRect l="859" r="943" t="171" b="269"/>
                 <modules>
                     <module type="Clipper" handle="925972079">
                         <plugs>
@@ -1055,7 +1055,7 @@
                 <plugs>
                     <plug default="100"/>
                 </plugs>
-                <structRect l="852" r="960" t="36" b="155"/>
+                <structRect l="828" r="936" t="36" b="155"/>
                 <panelRect l="920" r="1020" t="24" b="124"/>
             </module>
             <module type="Container" handle="1537292295" name="color driver knob" skin="default2">
@@ -1069,7 +1069,7 @@
                     <plug name="Forground" direction="1" datatype="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="751" r="835" t="51" b="149"/>
+                <structRect l="727" r="811" t="51" b="149"/>
                 <modules>
                     <module type="Clipper" handle="833737350">
                         <plugs>
@@ -1380,7 +1380,7 @@
                 <plugs>
                     <plug default="100"/>
                 </plugs>
-                <structRect l="943" r="1051" t="399" b="518"/>
+                <structRect l="919" r="1027" t="399" b="518"/>
                 <panelRect l="808" r="908" t="24" b="124"/>
             </module>
             <module type="Container" handle="702310570" name="color driver knob" skin="default2">
@@ -1394,7 +1394,7 @@
                     <plug name="Forground" direction="1" datatype="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="859" r="943" t="423" b="521"/>
+                <structRect l="835" r="919" t="423" b="521"/>
                 <modules>
                     <module type="Clipper" handle="603467930">
                         <plugs>
@@ -1705,7 +1705,7 @@
                 <plugs>
                     <plug default="100"/>
                 </plugs>
-                <structRect l="859" r="967" t="279" b="398"/>
+                <structRect l="835" r="943" t="279" b="398"/>
                 <panelRect l="696" r="796" t="24" b="124"/>
             </module>
             <module type="Container" handle="144850088" name="color driver knob" skin="default2">
@@ -1719,7 +1719,7 @@
                     <plug name="Forground" direction="1" datatype="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="775" r="859" t="303" b="401"/>
+                <structRect l="751" r="835" t="303" b="401"/>
                 <modules>
                     <module type="Clipper" handle="378922886">
                         <plugs>
@@ -2030,7 +2030,7 @@
                 <plugs>
                     <plug default="100"/>
                 </plugs>
-                <structRect l="751" r="859" t="171" b="290"/>
+                <structRect l="727" r="835" t="171" b="290"/>
                 <panelRect l="584" r="684" t="24" b="124"/>
             </module>
             <module type="Container" handle="71079057" name="color driver knob" skin="default2">
@@ -2044,7 +2044,7 @@
                     <plug name="Forground" direction="1" datatype="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="667" r="751" t="195" b="293"/>
+                <structRect l="643" r="727" t="195" b="293"/>
                 <modules>
                     <module type="Clipper" handle="1344209873">
                         <plugs>
@@ -2355,7 +2355,7 @@
                 <plugs>
                     <plug default="100"/>
                 </plugs>
-                <structRect l="636" r="744" t="60" b="179"/>
+                <structRect l="612" r="720" t="60" b="179"/>
                 <panelRect l="472" r="572" t="24" b="124"/>
             </module>
             <module type="Container" handle="1426030483" name="color driver knob" skin="default2">
@@ -2369,7 +2369,7 @@
                     <plug name="Forground" direction="1" datatype="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="535" r="619" t="75" b="173"/>
+                <structRect l="511" r="595" t="75" b="173"/>
                 <modules>
                     <module type="Clipper" handle="545865015">
                         <plugs>
@@ -2680,7 +2680,7 @@
                 <plugs>
                     <plug default="100"/>
                 </plugs>
-                <structRect l="732" r="840" t="420" b="539"/>
+                <structRect l="708" r="816" t="420" b="539"/>
                 <panelRect l="360" r="460" t="24" b="124"/>
             </module>
             <module type="Container" handle="824880658" name="color driver knob" skin="default2">
@@ -2694,7 +2694,7 @@
                     <plug name="Forground" direction="1" datatype="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="648" r="732" t="444" b="542"/>
+                <structRect l="624" r="708" t="444" b="542"/>
                 <modules>
                     <module type="Clipper" handle="1569924969">
                         <plugs>
@@ -3005,7 +3005,7 @@
                 <plugs>
                     <plug default="100"/>
                 </plugs>
-                <structRect l="648" r="756" t="300" b="419"/>
+                <structRect l="624" r="732" t="300" b="419"/>
                 <panelRect l="248" r="348" t="24" b="124"/>
             </module>
             <module type="Container" handle="2095578681" name="color driver knob" skin="default2">
@@ -3019,7 +3019,7 @@
                     <plug name="Forground" direction="1" datatype="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="564" r="648" t="324" b="422"/>
+                <structRect l="540" r="624" t="324" b="422"/>
                 <modules>
                     <module type="Clipper" handle="1451319646">
                         <plugs>
@@ -3331,13 +3331,13 @@
                     <plug name="Input 1" default="5"/>
                     <plug/>
                 </plugs>
-                <structRect l="36" r="120" t="180" b="204"/>
+                <structRect l="36" r="120" t="264" b="288"/>
             </module>
             <module type="Multiply" handle="886219199">
                 <plugs>
                     <plug default="1.2" idx="1"/>
                 </plugs>
-                <structRect l="144" r="204" t="216" b="252"/>
+                <structRect l="144" r="204" t="312" b="348"/>
             </module>
             <module type="Oscillator" handle="951351257">
                 <plugs>
@@ -3345,13 +3345,13 @@
                     <plug default="3" idx="2"/>
                     <plug default="1" idx="6"/>
                 </plugs>
-                <structRect l="36" r="120" t="228" b="312"/>
+                <structRect l="36" r="120" t="312" b="396"/>
             </module>
             <module type="SE Rectangle XP" handle="398586116">
                 <plugs>
                     <plug default="100"/>
                 </plugs>
-                <structRect l="540" r="648" t="192" b="311"/>
+                <structRect l="516" r="624" t="192" b="311"/>
                 <panelRect l="136" r="236" t="24" b="124"/>
             </module>
             <module type="Container" handle="844411963" name="color driver knob" skin="default2">
@@ -3365,7 +3365,7 @@
                     <plug name="Forground" direction="1" datatype="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="456" r="540" t="216" b="314"/>
+                <structRect l="432" r="516" t="216" b="314"/>
                 <modules>
                     <module type="Clipper" handle="1191328610">
                         <plugs>
@@ -3676,13 +3676,13 @@
                 <plugs>
                     <plug/>
                 </plugs>
-                <structRect l="36" r="84" t="24" b="36"/>
+                <structRect l="48" r="96" t="36" b="48"/>
             </module>
             <module type="SE Rectangle XP" handle="2114187292">
                 <plugs>
                     <plug default="100"/>
                 </plugs>
-                <structRect l="425" r="533" t="81" b="200"/>
+                <structRect l="401" r="509" t="81" b="200"/>
                 <panelRect l="24" r="124" t="24" b="124"/>
             </module>
             <module type="Container" handle="529812473" name="color driver knob" skin="default2">
@@ -3696,7 +3696,7 @@
                     <plug name="Forground" direction="1" datatype="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="324" r="408" t="96" b="194"/>
+                <structRect l="312" r="396" t="96" b="194"/>
                 <modules>
                     <module type="Clipper" handle="1086893848">
                         <plugs>
@@ -4022,7 +4022,7 @@
                     <plug name="Volts Out"/>
                     <plug/>
                 </plugs>
-                <structRect l="264" r="336" t="240" b="434"/>
+                <structRect l="228" r="300" t="252" b="446"/>
                 <modules>
                     <module type="Comparator" handle="144432003">
                         <plugs>
