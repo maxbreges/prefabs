@@ -39,7 +39,7 @@
                     <plug name="Right" direction="1"/>
                     <plug direction="1" datatype="-1"/>
                 </plugs>
-                <structRect l="105" r="501" t="47" b="303"/>
+                <structRect l="105" r="501" t="47" b="295"/>
                 <PatchManager>
                     <ProgramNames>
                         <Name idx="0" text="Preset 000"/>
@@ -887,7 +887,7 @@
                 <PanelLocation l="138" r="735" t="499" b="898"/>
                 <StructLocation l="8" r="1446" t="375" b="943"/>
                 <PanelScroll x="0" y="0"/>
-                <StructScroll x="75" y="0"/>
+                <StructScroll x="75" y="480"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
                 <panel_rect l="0" r="382" t="0" b="216"/>
             </module>
