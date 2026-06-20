@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_user_email="Jeff McClintock" vst_processor_id="{832E96BF-CFA0-474F-BC06-70A9DD23114B}" vst_controller_id="{0AE6E424-1862-4E45-AA0F-4A7ED96E94D3}" vst_4char_id="bIOB" vst_dll_name="PD303-PatchPulse000" vst_product="PD303-PatchPulse000" vst_panel_size_w="379" vst_panel_size_h="152" vst_flags="3" vst_preset_count="16">
-    <master_container type="Container" handle="335964254" name="Main" ViewOpenFlags="256" skin="default2">
+<Document file_format="150000" vst_user_email="Jeff McClintock" vst_processor_id="{7DCDDEEC-8312-4982-9CE0-22240B1FD987}" vst_controller_id="{C7D6C83C-506C-476C-A5B5-931F404581BA}" SelectedViewHandle="15409" SelectedViewType="256" vst_4char_id="bIOD" vst_dll_name="PD303-PatchPulse1" vst_product="PD303-PatchPulse1" vst_panel_size_w="379" vst_panel_size_h="152" vst_flags="3" vst_preset_count="16" vst_copyright="©2026">
+    <master_container type="Container" handle="335964254" name="Main" PanelLocationZoom="1" StructLocationZoom="1" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
         </plugs>
@@ -18,10 +18,10 @@
         </PatchManager>
         <modules>
             <module type="MIDI In" handle="29077">
-                <structRect l="11" r="95" t="25" b="67"/>
+                <structRect l="11" r="83" t="25" b="67"/>
                 <panelRect l="88" r="88" t="104" b="104"/>
             </module>
-            <module type="Container" handle="15409" name="PD303-PatchPulse" ViewOpenFlags="384" skin="default">
+            <module type="Container" handle="15409" name="PD303-PatchPulse" PanelLocationZoom="1" StructLocationZoom="1" ViewOpenFlags="256" skin="default">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -210,136 +210,15 @@
                                 <s repeat="110">0.949666</s>
                             </patch-list>
                         </param>
-                        <param type="8" handle="455934836" shortName="Patch ID" vstParameterNumber="12" module="612654663" moduleParamId="0" RangeMaximum="127">
+                        <param type="8" handle="150537712" shortName="Patch ID" vstParameterNumber="7" stateful="false" hint="Patch ID" module="352170684" moduleParamId="0" RangeMaximum="127"/>
+                        <param type="8" handle="169537405" shortName="Polyphony" ignorePC="true" private="true" module="15409" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                            <patch-list>
+                                <s>6</s>
+                            </patch-list>
+                        </param>
+                        <param type="6" handle="419842110" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="15409" hostControl="40">
                             <patch-list>
                                 <s>0</s>
-                                <s>1</s>
-                                <s>2</s>
-                                <s>3</s>
-                                <s>4</s>
-                                <s>5</s>
-                                <s>6</s>
-                                <s>7</s>
-                                <s>8</s>
-                                <s>9</s>
-                                <s>10</s>
-                                <s>11</s>
-                                <s>12</s>
-                                <s>13</s>
-                                <s>14</s>
-                                <s>15</s>
-                                <s>16</s>
-                                <s>17</s>
-                                <s>18</s>
-                                <s>19</s>
-                                <s>20</s>
-                                <s>21</s>
-                                <s>22</s>
-                                <s>23</s>
-                                <s>24</s>
-                                <s>25</s>
-                                <s>26</s>
-                                <s>27</s>
-                                <s>28</s>
-                                <s>29</s>
-                                <s>30</s>
-                                <s>31</s>
-                                <s>32</s>
-                                <s>33</s>
-                                <s>34</s>
-                                <s>35</s>
-                                <s>36</s>
-                                <s>37</s>
-                                <s>38</s>
-                                <s>39</s>
-                                <s>40</s>
-                                <s>41</s>
-                                <s>42</s>
-                                <s>43</s>
-                                <s>44</s>
-                                <s>45</s>
-                                <s>46</s>
-                                <s>47</s>
-                                <s>48</s>
-                                <s>49</s>
-                                <s>50</s>
-                                <s>51</s>
-                                <s>52</s>
-                                <s>53</s>
-                                <s>54</s>
-                                <s>55</s>
-                                <s>56</s>
-                                <s>57</s>
-                                <s>58</s>
-                                <s>59</s>
-                                <s>60</s>
-                                <s>61</s>
-                                <s>62</s>
-                                <s>63</s>
-                                <s>64</s>
-                                <s>65</s>
-                                <s>66</s>
-                                <s>67</s>
-                                <s>68</s>
-                                <s>69</s>
-                                <s>70</s>
-                                <s>71</s>
-                                <s>72</s>
-                                <s>73</s>
-                                <s>74</s>
-                                <s>75</s>
-                                <s>76</s>
-                                <s>77</s>
-                                <s>78</s>
-                                <s>79</s>
-                                <s>80</s>
-                                <s>81</s>
-                                <s>82</s>
-                                <s>83</s>
-                                <s>84</s>
-                                <s>85</s>
-                                <s>86</s>
-                                <s>87</s>
-                                <s>88</s>
-                                <s>89</s>
-                                <s>90</s>
-                                <s>91</s>
-                                <s>92</s>
-                                <s>93</s>
-                                <s>94</s>
-                                <s>95</s>
-                                <s>96</s>
-                                <s>97</s>
-                                <s>98</s>
-                                <s>99</s>
-                                <s>100</s>
-                                <s>101</s>
-                                <s>102</s>
-                                <s>103</s>
-                                <s>104</s>
-                                <s>105</s>
-                                <s>106</s>
-                                <s>107</s>
-                                <s>108</s>
-                                <s>109</s>
-                                <s>110</s>
-                                <s>111</s>
-                                <s>112</s>
-                                <s>113</s>
-                                <s>114</s>
-                                <s>115</s>
-                                <s>116</s>
-                                <s>117</s>
-                                <s>118</s>
-                                <s>119</s>
-                                <s>120</s>
-                                <s>121</s>
-                                <s>122</s>
-                                <s>123</s>
-                                <s>124</s>
-                                <s>125</s>
-                                <s>126</s>
-                                <s>127</s>
                             </patch-list>
                         </param>
                         <param type="10" handle="885605192" private="true" hostControl="49">
@@ -347,21 +226,47 @@
                                 <s repeat="128"></s>
                             </patch-list>
                         </param>
+                        <param type="8" handle="1650516110" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="15409" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                            <patch-list>
+                                <s>768</s>
+                            </patch-list>
+                        </param>
                         <param type="29" handle="1826310363" shortName="ProgramCategory" private="true" hostControl="51">
                             <patch-list>
                                 <s repeat="128"></s>
                             </patch-list>
                         </param>
+                        <param type="8" handle="1827381685" shortName="ReserveVoices" ignorePC="true" private="true" module="15409" hostControl="22" RangeMaximum="128">
+                            <patch-list>
+                                <s>3</s>
+                            </patch-list>
+                        </param>
                     </Parameters>
                 </PatchManager>
                 <modules>
-                    <module type="Container" handle="1832232985" name="Beep" skin="default2">
+                    <module type="SE IntToText GUI" handle="114266305">
+                        <structRect l="876" r="936" t="840" b="864"/>
+                        <panelRect l="160" r="160" t="80" b="80"/>
+                    </module>
+                    <module type="SE IntToText GUI" handle="756884639">
+                        <structRect l="1032" r="1092" t="828" b="852"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="TextRedirect" handle="509937943">
+                        <structRect l="972" r="1008" t="840" b="864"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE PatchMemory Int" handle="352170684" name="Patch ID">
+                        <structRect l="456" r="564" t="564" b="660"/>
+                        <panelRect l="320" r="320" t="248" b="248"/>
+                    </module>
+                    <module type="Container" handle="1832232985" name="Beep" PanelLocationZoom="1" StructLocationZoom="1" skin="default2">
                         <plugs>
                             <plug name="Signal Out" idx="7"/>
                             <plug name="Output" direction="1"/>
                             <plug/>
                         </plugs>
-                        <structRect l="780" r="864" t="660" b="708"/>
+                        <structRect l="792" r="864" t="660" b="708"/>
                         <modules>
                             <module type="SynthEdit ADSR" handle="1755069723">
                                 <structRect l="240" r="336" t="24" b="120"/>
@@ -398,26 +303,29 @@
                             <line type="Line" handle="707988516" lineType="1" fMod="1751900887" tMod="1755069723" tPlg="1"/>
                             <line type="Line" handle="258897478" lineType="1" fMod="548012349" tMod="249181164" fPlg="2"/>
                         </lines>
+                        <PanelLocationCenter x="250" y="150"/>
+                        <StructLocationCenter x="328.5" y="206"/>
                         <PanelWndPosition l="0" r="0" t="0" b="0"/>
-                        <PanelLocation l="30" r="530" t="30" b="330"/>
-                        <StructLocation l="0" r="657" t="0" b="412"/>
-                        <PanelScroll x="0" y="0"/>
-                        <StructScroll x="0" y="0"/>
+                        <PanelLocation l="0" r="500" t="0" b="500"/>
+                        <StructLocation l="0" r="500" t="0" b="500"/>
+                        <PanelScroll x="0" y="-100"/>
+                        <StructScroll x="78" y="-44"/>
                         <PanelWndOffset cx="-99999" cy="-99999"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="SE Text Entry4" handle="1936488142" name="Label">
                         <plugs>
-                            <plug default="0" idx="3"/>
+                            <plug default="0" idx="2"/>
+                            <plug default="0"/>
                         </plugs>
                         <structRect l="492" r="600" t="696" b="831"/>
                         <panelRect l="192" r="253" t="160" b="184"/>
                     </module>
                     <module type="SE Text Entry4" handle="1598314903" name="Patch Name Entry">
-                        <structRect l="1140" r="1248" t="780" b="924"/>
+                        <structRect l="1152" r="1260" t="768" b="912"/>
                         <panelRect l="192" r="372" t="184" b="208"/>
                     </module>
-                    <module type="Container" handle="106568651" name="Patch ID Entry" skin="default2">
+                    <module type="Container" handle="106568651" name="Patch ID Entry" PanelLocationZoom="1" StructLocationZoom="1" skin="default2">
                         <plugs>
                             <plug default="1" idx="1"/>
                             <plug default="1"/>
@@ -446,15 +354,17 @@
                             <line type="Line" handle="376533068" lineType="1" fMod="1192451978" tMod="231718574" fPlg="1"/>
                             <line type="Line" handle="925640725" lineType="1" fMod="1984302041" tMod="1192451978"/>
                         </lines>
+                        <PanelLocationCenter x="250" y="150"/>
+                        <StructLocationCenter x="336" y="200"/>
                         <PanelWndPosition l="248" r="306" t="160" b="184"/>
-                        <PanelLocation l="30" r="530" t="30" b="330"/>
-                        <StructLocation l="0" r="672" t="0" b="400"/>
-                        <PanelScroll x="0" y="0"/>
-                        <StructScroll x="0" y="0"/>
+                        <PanelLocation l="0" r="500" t="0" b="500"/>
+                        <StructLocation l="0" r="500" t="0" b="500"/>
+                        <PanelScroll x="0" y="-100"/>
+                        <StructScroll x="86" y="-50"/>
                         <PanelWndOffset cx="138" cy="112"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
-                    <module type="Container" handle="886261796" name="PopUp + Incr" skin="default2">
+                    <module type="Container" handle="886261796" name="PopUp + Incr" PanelLocationZoom="1" StructLocationZoom="1" skin="default2">
                         <plugs>
                             <plug default="1" idx="1"/>
                             <plug default="1"/>
@@ -475,18 +385,18 @@
                                 <plugs>
                                     <plug default="arrow_left.png" idx="1"/>
                                 </plugs>
-                                <structRect l="372" r="492" t="312" b="422"/>
+                                <structRect l="372" r="480" t="312" b="422"/>
                                 <panelRect l="144" r="166" t="248" b="270"/>
                             </module>
                             <module type="SynthEdit Increment3" handle="949280819">
-                                <structRect l="372" r="456" t="216" b="276"/>
+                                <structRect l="372" r="444" t="216" b="276"/>
                                 <panelRect l="360" r="360" t="272" b="272"/>
                             </module>
                             <module type="Image3" handle="370471828">
                                 <plugs>
                                     <plug default="arrow_right.png" idx="1"/>
                                 </plugs>
-                                <structRect l="384" r="504" t="72" b="182"/>
+                                <structRect l="384" r="492" t="72" b="182"/>
                                 <panelRect l="272" r="294" t="248" b="270"/>
                             </module>
                             <module type="IO Mod" handle="721422829">
@@ -498,32 +408,34 @@
                                     <plug name="Preset Name" direction="1" datatype="1" tiedtomod="886261796" tiedtopin="11"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="24" r="144" t="108" b="180"/>
+                                <structRect l="24" r="132" t="108" b="180"/>
                             </module>
                         </modules>
                         <lines>
                             <line type="Line" handle="1467809663" lineType="1" fMod="949280819" tMod="370471828" fPlg="2" tPlg="6"/>
                             <line type="Line" handle="2051128310" lineType="1" fMod="949280819" tMod="1119629272" fPlg="3" tPlg="6"/>
-                            <line type="Line" handle="947711332" lineType="1" fMod="721422829" tMod="1476339376"/>
                             <line type="Line" handle="1277058578" lineType="1" fMod="721422829" tMod="949280819"/>
-                            <line type="Line" handle="1376531503" lineType="1" fMod="721422829" tMod="1476339376" fPlg="1" tPlg="1"/>
                             <line type="Line" handle="1260659486" lineType="1" fMod="721422829" tMod="949280819" fPlg="1" tPlg="1"/>
-                            <line type="Line" handle="49943667" lineType="1" fMod="721422829" tMod="1476339376" fPlg="2" tPlg="7"/>
-                            <line type="Line" handle="1354097823" lineType="1" fMod="721422829" tMod="1476339376" fPlg="3" tPlg="6"/>
+                            <line type="Line" handle="2076977377" lineType="1" fMod="721422829" tMod="1476339376"/>
+                            <line type="Line" handle="353421325" lineType="1" fMod="721422829" tMod="1476339376" fPlg="1" tPlg="1"/>
+                            <line type="Line" handle="390687307" lineType="1" fMod="721422829" tMod="1476339376" fPlg="3" tPlg="6"/>
+                            <line type="Line" handle="1813091890" lineType="1" fMod="721422829" tMod="1476339376" fPlg="2" tPlg="7"/>
                         </lines>
+                        <PanelLocationCenter x="250" y="150"/>
+                        <StructLocationCenter x="692" y="436"/>
                         <PanelWndPosition l="16" r="166" t="184" b="208"/>
-                        <PanelLocation l="30" r="530" t="30" b="330"/>
-                        <StructLocation l="744" r="1452" t="191" b="793"/>
-                        <PanelScroll x="0" y="0"/>
-                        <StructScroll x="0" y="0"/>
+                        <PanelLocation l="0" r="500" t="0" b="500"/>
+                        <StructLocation l="0" r="500" t="0" b="500"/>
+                        <PanelScroll x="0" y="-100"/>
+                        <StructScroll x="442" y="186"/>
                         <PanelWndOffset cx="-128" cy="-64"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
                     </module>
                     <module type="SE Patch Browser" handle="192501438">
-                        <structRect l="912" r="1044" t="696" b="780"/>
+                        <structRect l="912" r="1032" t="708" b="792"/>
                         <panelRect l="312" r="313" t="232" b="233"/>
                     </module>
-                    <module type="Container" handle="1773779664" name="onSetIntVal" skin="default2">
+                    <module type="Container" handle="1773779664" name="onSetIntVal" PanelLocationZoom="1" StructLocationZoom="1" skin="default2">
                         <plugs>
                             <plug default="1" idx="1"/>
                             <plug default="1"/>
@@ -531,7 +443,7 @@
                             <plug name="Signal Out" direction="1"/>
                             <plug/>
                         </plugs>
-                        <structRect l="648" r="732" t="651" b="713"/>
+                        <structRect l="648" r="720" t="651" b="713"/>
                         <modules>
                             <module type="Fixed Values" handle="1070248392">
                                 <plugs>
@@ -607,52 +519,46 @@
                             <line type="Line" handle="2069401121" fMod="1070248392" tMod="1666857269" tPlg="1"/>
                             <line type="Line" handle="1859671586" lineType="1" fMod="1044265508" tMod="1525345604" fPlg="2"/>
                         </lines>
+                        <PanelLocationCenter x="250" y="150"/>
+                        <StructLocationCenter x="402.5" y="187"/>
                         <PanelWndPosition l="120" r="130" t="172" b="182"/>
-                        <PanelLocation l="30" r="530" t="30" b="330"/>
-                        <StructLocation l="641" r="1444" t="0" b="374"/>
-                        <PanelScroll x="0" y="0"/>
-                        <StructScroll x="1" y="0"/>
+                        <PanelLocation l="0" r="500" t="0" b="500"/>
+                        <StructLocation l="0" r="500" t="0" b="500"/>
+                        <PanelScroll x="0" y="-100"/>
+                        <StructScroll x="152" y="-63"/>
                         <PanelWndOffset cx="120" cy="172"/>
                         <panel_rect l="16" r="312" t="16" b="216"/>
-                    </module>
-                    <module type="SE PatchMemory Int" handle="612654663" name="Patch ID">
-                        <structRect l="480" r="600" t="588" b="672"/>
-                        <panelRect l="376" r="377" t="272" b="273"/>
                     </module>
                     <module type="SE Patch Automator" handle="471698994">
                         <plugs>
                             <plug default="0" idx="4"/>
                         </plugs>
-                        <structRect l="180" r="252" t="72" b="96"/>
+                        <structRect l="180" r="240" t="72" b="96"/>
                     </module>
                     <module type="Slider" handle="18625" name="Amnt - Key Track">
                         <plugs>
                             <plug default="0"/>
                             <plug default="11" idx="3"/>
                             <plug default="1"/>
-                            <plug default="0.000" idx="7"/>
-                            <plug default="10.000"/>
-                            <plug default="7"/>
+                            <plug default="7" idx="9"/>
                             <plug default="0"/>
                             <plug parameterId="-1" idx="13"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="19" r="151" t="604" b="652"/>
-                        <panelRect l="24" r="139" t="104" b="136"/>
+                        <structRect l="19" r="139" t="604" b="651"/>
+                        <panelRect l="8" r="123" t="113" b="145"/>
                     </module>
                     <module type="Slider" handle="9574" name="Amnt -Delay">
                         <plugs>
                             <plug default="0"/>
                             <plug default="11" idx="3"/>
-                            <plug default="0.000" idx="7"/>
-                            <plug default="10.000"/>
-                            <plug default="7"/>
+                            <plug default="7" idx="9"/>
                             <plug default="0"/>
                             <plug default="0"/>
                             <plug parameterId="-1" idx="13"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="782" r="866" t="264" b="312"/>
+                        <structRect l="782" r="854" t="264" b="311"/>
                         <panelRect l="357" r="373" t="63" b="95"/>
                     </module>
                     <module type="Slider" handle="27049" name="Delay">
@@ -667,7 +573,7 @@
                             <plug parameterId="-1" idx="13"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="862" r="946" t="353" b="401"/>
+                        <structRect l="862" r="934" t="353" b="400"/>
                         <panelRect l="356" r="372" t="38" b="70"/>
                     </module>
                     <module type="Slider" handle="1594" name="Key Follow">
@@ -676,12 +582,11 @@
                             <plug default="11" idx="3"/>
                             <plug default="1"/>
                             <plug default="-10" idx="7"/>
-                            <plug default="10.000"/>
-                            <plug default="7"/>
+                            <plug default="7" idx="9"/>
                             <plug parameterId="-1" idx="13"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="156" r="252" t="431" b="495"/>
+                        <structRect l="156" r="240" t="431" b="493"/>
                         <panelRect l="147" r="221" t="103" b="147"/>
                     </module>
                     <module type="Slider" handle="1534" name="Portamento">
@@ -689,14 +594,12 @@
                             <plug default="0"/>
                             <plug default="11" idx="3"/>
                             <plug default="1"/>
-                            <plug default="0.000" idx="7"/>
-                            <plug default="10.000"/>
-                            <plug default="7"/>
+                            <plug default="7" idx="9"/>
                             <plug default="0"/>
                             <plug parameterId="-1" idx="13"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="24" r="120" t="424" b="472"/>
+                        <structRect l="24" r="120" t="424" b="471"/>
                         <panelRect l="249" r="330" t="107" b="139"/>
                     </module>
                     <module type="List Entry" handle="330" name="Retrigger">
@@ -708,7 +611,7 @@
                             <plug parameterId="-1" idx="10"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="23" r="107" t="336" b="408"/>
+                        <structRect l="23" r="107" t="336" b="407"/>
                         <panelRect l="281" r="345" t="27" b="83"/>
                     </module>
                     <module type="Fixed Values" handle="14027" name="Fixed Values">
@@ -717,41 +620,39 @@
                             <plug name="10" default="10"/>
                             <plug/>
                         </plugs>
-                        <structRect l="33" r="117" t="521" b="557"/>
+                        <structRect l="33" r="105" t="521" b="557"/>
                     </module>
                     <module type="Level Adj" handle="30467" name="Multiplier">
-                        <structRect l="366" r="426" t="504" b="540"/>
+                        <structRect l="366" r="414" t="504" b="540"/>
                     </module>
                     <module type="ADSR" handle="19821">
                         <plugs>
                             <plug default="-1" idx="1"/>
                             <plug default="0" idx="3"/>
                         </plugs>
-                        <structRect l="448" r="544" t="291" b="375"/>
+                        <structRect l="448" r="532" t="291" b="375"/>
                     </module>
                     <module type="Slider" handle="3241" name="Feedbk">
                         <plugs>
                             <plug default="0"/>
                             <plug default="11" idx="3"/>
-                            <plug default="0.000" idx="7"/>
-                            <plug default="10.000"/>
-                            <plug default="7"/>
+                            <plug default="7" idx="9"/>
                             <plug default="0"/>
                             <plug default="0"/>
                             <plug parameterId="-1" idx="13"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="863" r="947" t="417" b="465"/>
+                        <structRect l="863" r="935" t="417" b="464"/>
                         <panelRect l="356" r="372" t="85" b="117"/>
                     </module>
                     <module type="Level Adj" handle="2736" name="Multiplier">
-                        <structRect l="644" r="704" t="352" b="388"/>
+                        <structRect l="644" r="692" t="352" b="388"/>
                     </module>
                     <module type="VCA" handle="25546">
                         <plugs>
                             <plug default="8"/>
                         </plugs>
-                        <structRect l="707" r="815" t="415" b="463"/>
+                        <structRect l="707" r="803" t="415" b="463"/>
                     </module>
                     <module type="Midi to CV" handle="78300091" name="Midi to CV">
                         <plugs>
@@ -761,32 +662,32 @@
                             <plug default="0"/>
                             <plug default="0"/>
                         </plugs>
-                        <structRect l="155" r="275" t="158" b="314"/>
+                        <structRect l="155" r="263" t="158" b="314"/>
                     </module>
                     <module type="Level Adj" handle="16772" name="Multiplier">
-                        <structRect l="290" r="350" t="424" b="460"/>
+                        <structRect l="290" r="338" t="424" b="460"/>
                     </module>
                     <module type="Phase Dist Osc" handle="8354">
-                        <structRect l="709" r="829" t="104" b="164"/>
+                        <structRect l="709" r="817" t="104" b="164"/>
                     </module>
                     <module type="VCA" handle="23430">
                         <plugs>
                             <plug default="8"/>
                         </plugs>
-                        <structRect l="874" r="982" t="256" b="304"/>
+                        <structRect l="874" r="970" t="256" b="304"/>
                     </module>
                     <module type="Delay2" handle="1283213125">
                         <plugs>
                             <plug default="5" idx="1"/>
                         </plugs>
-                        <structRect l="981" r="1065" t="378" b="426"/>
+                        <structRect l="981" r="1053" t="378" b="426"/>
                     </module>
                     <module type="IO Mod" handle="20537">
                         <plugs>
                             <plug name="MIDI Out" direction="1" datatype="2" tiedtomod="15409" tiedtopin="7"/>
                             <plug direction="1" datatype="-1"/>
                         </plugs>
-                        <structRect l="36" r="108" t="72" b="96"/>
+                        <structRect l="36" r="96" t="72" b="96"/>
                     </module>
                     <module type="List Entry" handle="19337" name="Wave2">
                         <plugs>
@@ -797,7 +698,7 @@
                             <plug parameterId="-1" idx="10"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="589" r="697" t="224" b="276"/>
+                        <structRect l="589" r="697" t="224" b="275"/>
                         <panelRect l="1" r="90" t="66" b="102"/>
                     </module>
                     <module type="List Entry" handle="4760" name="Wave">
@@ -809,52 +710,46 @@
                             <plug parameterId="-1" idx="10"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="574" r="682" t="168" b="220"/>
+                        <structRect l="574" r="682" t="168" b="219"/>
                         <panelRect l="1" r="90" t="33" b="69"/>
                     </module>
                     <module type="Slider" handle="15097" name="Decay">
                         <plugs>
                             <plug default="0"/>
                             <plug default="11" idx="3"/>
-                            <plug default="0.000" idx="7"/>
-                            <plug default="10.000"/>
-                            <plug default="3"/>
+                            <plug default="3" idx="9"/>
                             <plug default="0"/>
                             <plug default="0"/>
                             <plug parameterId="-1" idx="13"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="314" r="398" t="322" b="386"/>
+                        <structRect l="314" r="386" t="322" b="385"/>
                         <panelRect l="232" r="264" t="24" b="72"/>
                     </module>
                     <module type="Slider" handle="11484" name="Env Mod">
                         <plugs>
                             <plug default="0"/>
                             <plug default="11" idx="3"/>
-                            <plug default="0.000" idx="7"/>
-                            <plug default="10.000"/>
-                            <plug default="3"/>
+                            <plug default="3" idx="9"/>
                             <plug default="0"/>
                             <plug default="0"/>
                             <plug parameterId="-1" idx="13"/>
                             <plug parameterId="-1"/>
                         </plugs>
-                        <structRect l="552" r="636" t="292" b="356"/>
+                        <structRect l="552" r="624" t="292" b="355"/>
                         <panelRect l="168" r="200" t="24" b="72"/>
                     </module>
                     <module type="Slider" handle="14011" name="Cuttoff">
                         <plugs>
                             <plug default="0"/>
                             <plug default="11" idx="3"/>
-                            <plug default="0.000" idx="7"/>
-                            <plug default="10.000"/>
-                            <plug default="3"/>
+                            <plug default="3" idx="9"/>
                             <plug default="0"/>
                             <plug default="0"/>
                             <plug parameterId="-1" idx="13"/>
                             <plug parameterId="-1" default="Controls the brightness of the Oscillator"/>
                         </plugs>
-                        <structRect l="582" r="666" t="88" b="152"/>
+                        <structRect l="582" r="654" t="88" b="151"/>
                         <panelRect l="104" r="136" t="24" b="72"/>
                     </module>
                     <module type="IO Mod" handle="776">
@@ -863,7 +758,7 @@
                             <plug name="Right" tiedtomod="15409" tiedtopin="9"/>
                             <plug direction="1" datatype="-1"/>
                         </plugs>
-                        <structRect l="971" r="1031" t="577" b="613"/>
+                        <structRect l="971" r="1019" t="577" b="613"/>
                     </module>
                 </modules>
                 <lines>
@@ -871,18 +766,12 @@
                     <line type="Line" handle="186309630" lineType="1" fMod="9574" tMod="23430" fPlg="6" tPlg="1"/>
                     <line type="Line" handle="1874796627" lineType="1" fMod="27049" tMod="1283213125" fPlg="6" tPlg="1"/>
                     <line type="Line" handle="2114513699" lineType="1" fMod="1594" tMod="16772" fPlg="6" tPlg="1"/>
-                    <line type="Line" handle="417700254" lineType="1" fMod="1534" tMod="78300091" fPlg="6" tPlg="9"/>
-                    <line type="Line" handle="2091029185" lineType="1" fMod="330" tMod="78300091" fPlg="6" tPlg="8"/>
                     <line type="Line" handle="697242397" lineType="1" fMod="3241" tMod="1283213125" fPlg="6" tPlg="5"/>
                     <line type="Line" handle="1367741721" lineType="1" fMod="19337" tMod="8354" fPlg="6" tPlg="4"/>
                     <line type="Line" handle="1057052947" lineType="1" fMod="4760" tMod="8354" fPlg="6" tPlg="3"/>
                     <line type="Line" handle="1772698999" lineType="1" fMod="15097" tMod="19821" fPlg="6" tPlg="2"/>
                     <line type="Line" handle="815931012" lineType="1" fMod="11484" tMod="2736" fPlg="6"/>
                     <line type="Line" handle="196329517" lineType="1" fMod="14011" tMod="8354" fPlg="6" tPlg="1"/>
-                    <line type="Line" handle="849895431" lineType="1" fMod="20537" tMod="78300091"/>
-                    <line type="Line" handle="1177216438" lineType="1" fMod="78300091" tMod="19821" fPlg="3"/>
-                    <line type="Line" handle="282657099" lineType="1" fMod="78300091" tMod="16772" fPlg="4"/>
-                    <line type="Line" handle="1544987565" lineType="1" fMod="78300091" tMod="8354" fPlg="4"/>
                     <line type="Line" handle="1236127620" lineType="1" fMod="23430" tMod="1283213125" fPlg="2"/>
                     <line type="Line" handle="2006490114" lineType="1" fMod="1283213125" tMod="776" fPlg="2"/>
                     <line type="Line" handle="735963228" lineType="1" fMod="1283213125" tMod="776" fPlg="2" tPlg="1"/>
@@ -898,24 +787,36 @@
                     <line type="Line" handle="20865" lineType="1" fMod="14027" tMod="30467" fPlg="1"/>
                     <line type="Line" handle="2976" lineType="1" fMod="14027" tMod="16772"/>
                     <line type="Line" handle="1621815289" lineType="1" fMod="20537" tMod="471698994" tPlg="1"/>
-                    <line type="Line" handle="1455217998" lineType="1" fMod="612654663" tMod="1773779664" fPlg="13" tPlg="7"/>
                     <line type="Line" handle="38426776" lineType="1" fMod="192501438" tMod="886261796" fPlg="4" tPlg="7"/>
                     <line type="Line" handle="1850162009" lineType="1" fMod="192501438" tMod="886261796" fPlg="5" tPlg="8"/>
                     <line type="Line" handle="1375890516" lineType="1" fMod="192501438" tMod="886261796" fPlg="6" tPlg="9"/>
                     <line type="Line" handle="706044724" lineType="1" fMod="192501438" tMod="886261796" fPlg="7" tPlg="10"/>
                     <line type="Line" handle="919394314" lineType="1" fMod="192501438" tMod="886261796" fPlg="10" tPlg="11"/>
-                    <line type="Line" handle="1058676993" lineType="1" fMod="612654663" tMod="106568651" fPlg="7" tPlg="7"/>
                     <line type="Line" handle="1761180591" lineType="1" fMod="192501438" tMod="1598314903" fPlg="10"/>
-                    <line type="Line" handle="768768529" lineType="1" fMod="612654663" tMod="1936488142" fPlg="6"/>
                     <line type="Line" handle="168060597" lineType="1" fMod="1773779664" tMod="1832232985" fPlg="8" tPlg="7"/>
                     <line type="Line" handle="1110695508" lineType="1" fMod="1832232985" tMod="776" fPlg="8" tPlg="1"/>
                     <line type="Line" handle="306135666" lineType="1" fMod="1832232985" tMod="776" fPlg="8"/>
+                    <line type="Line" handle="1965629829" lineType="1" fMod="20537" tMod="78300091"/>
+                    <line type="Line" handle="647500258" lineType="1" fMod="78300091" tMod="19821" fPlg="3"/>
+                    <line type="Line" handle="1007955480" lineType="1" fMod="78300091" tMod="8354" fPlg="4"/>
+                    <line type="Line" handle="1629468648" lineType="1" fMod="78300091" tMod="16772" fPlg="4"/>
+                    <line type="Line" handle="197568939" lineType="1" fMod="330" tMod="78300091" fPlg="6" tPlg="8"/>
+                    <line type="Line" handle="2022861789" lineType="1" fMod="1534" tMod="78300091" fPlg="6" tPlg="9"/>
+                    <line type="Line" handle="1570628983" lineType="1" fMod="352170684" tMod="106568651" fPlg="7" tPlg="7"/>
+                    <line type="Line" handle="1068964705" lineType="1" fMod="352170684" tMod="1773779664" fPlg="15" tPlg="7"/>
+                    <line type="Line" handle="258204939" lineType="1" fMod="352170684" tMod="1936488142" fPlg="6"/>
+                    <line type="Line" handle="439122758" lineType="1" fMod="192501438" tMod="756884639" fPlg="4"/>
+                    <line type="Line" handle="1231055528" lineType="1" fMod="756884639" tMod="509937943" fPlg="1"/>
+                    <line type="Line" handle="1010803159" lineType="1" fMod="114266305" tMod="509937943" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="856295964" lineType="1" fMod="352170684" tMod="114266305" fPlg="7"/>
                 </lines>
+                <PanelLocationCenter x="298.5" y="200.5"/>
+                <StructLocationCenter x="692" y="541.60577"/>
                 <PanelWndPosition l="88" r="88" t="104" b="104"/>
-                <PanelLocation l="341" r="938" t="519" b="918"/>
-                <StructLocation l="8" r="1446" t="375" b="943"/>
-                <PanelScroll x="0" y="0"/>
-                <StructScroll x="1" y="440"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="48" y="-49"/>
+                <StructScroll x="442" y="291"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
                 <panel_rect l="0" r="382" t="0" b="216"/>
             </module>
@@ -925,7 +826,7 @@
                     <plug name="Right"/>
                     <plug/>
                 </plugs>
-                <structRect l="521" r="581" t="35" b="71"/>
+                <structRect l="624" r="672" t="84" b="120"/>
             </module>
         </modules>
         <lines>
@@ -933,11 +834,13 @@
             <line type="Line" handle="334900563" lineType="1" fMod="15409" tMod="13232" fPlg="9" tPlg="1"/>
             <line type="Line" handle="437507233" lineType="1" fMod="29077" tMod="15409" fPlg="1" tPlg="7"/>
         </lines>
+        <PanelLocationCenter x="250" y="150"/>
+        <StructLocationCenter x="342.5" y="181.5"/>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
-        <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="683" t="0" b="363"/>
-        <PanelScroll x="0" y="0"/>
-        <StructScroll x="1" y="0"/>
+        <PanelLocation l="0" r="500" t="0" b="500"/>
+        <StructLocation l="0" r="500" t="0" b="500"/>
+        <PanelScroll x="0" y="-100"/>
+        <StructScroll x="92" y="-68"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
         <panel_rect l="16" r="312" t="16" b="216"/>
     </master_container>
@@ -1030,7 +933,7 @@
                 <Parameter id="0" datatype="enum" name="patchValue"/>
             </Parameters>
             <Audio>
-                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true"/>
                 <Pin name="MIDI In" datatype="midi" private="true"/>
                 <Pin name="MIDI Out" datatype="midi" direction="out" private="true"/>
                 <Pin name="MIDI Controller ID" datatype="enum" default="-1" private="true"/>
@@ -1088,6 +991,7 @@
                 <Pin name="Bender" datatype="float" private="true" hostConnect="Bender"/>
                 <Pin name="Voice/PortamentoEnable" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/PortamentoEnable"/>
                 <Pin name="HoldPedal" datatype="float" private="true" hostConnect="HoldPedal"/>
+                <Pin name="SostenutoPedal" datatype="float" private="true" isPolyphonic="true" hostConnect="SostenutoPedal"/>
             </Audio>
         </Plugin>
         <Plugin id="Monostable" class="1" name="Monostable" flags="4352" category="Logic">
@@ -1140,7 +1044,7 @@
                 <Pin name="MIDI In" datatype="midi"/>
                 <Pin name="MIDI Out" datatype="midi" direction="out"/>
                 <Pin name="Hidden Output" datatype="midi" direction="out" private="true"/>
-                <Pin name="Send All On Patch Change" datatype="bool" isMinimised="true"/>
+                <Pin name="Send All On Patch Change" datatype="bool" private="true" isMinimised="true"/>
             </Audio>
         </Plugin>
         <Plugin id="SE Patch Browser" name="Preset Browser" flags="384" category="MIDI" helpUrl="http://synthedit.com/downloads/preview#presets">
@@ -1183,6 +1087,8 @@
                 <Pin name="Menu Items" datatype="string" direction="out"/>
                 <Pin name="Menu Selection" datatype="int" direction="out"/>
                 <Pin name="Mouse Down" datatype="bool" direction="out"/>
+                <Pin name="Hint In" datatype="string_utf8" private="true" parameterId="0" parameterField="Hint"/>
+                <Pin name="Hint" datatype="string_utf8" direction="out"/>
             </GUI>
         </Plugin>
         <Plugin id="SE Popup Menu XP" name="Popup Menu" flags="384" category="Sub-Controls">
@@ -1198,6 +1104,7 @@
                 <Pin name="Heading" datatype="string" default="Menu"/>
                 <Pin name="Momentary" datatype="bool"/>
                 <Pin name="Enable Special Strings" datatype="bool" default="1" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
             </GUI>
         </Plugin>
         <Plugin id="SE Text Entry4" name="Text Entry4" flags="384" category="Sub-Controls">
@@ -1221,12 +1128,12 @@
                 <Pin name="Output" datatype="float" rate="audio" direction="out"/>
             </Audio>
         </Plugin>
-        <Plugin id="Slider" class="1" name="Slider" flags="4480" category="Controls">
+        <Plugin id="Slider" class="1" name="Slider" flags="4480" category="Old">
             <Parameters>
                 <Parameter id="0" datatype="float" name="patchValue"/>
             </Parameters>
             <Audio>
-                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true"/>
                 <Pin name="MIDI In" datatype="midi" private="true"/>
                 <Pin name="MIDI Out" datatype="midi" direction="out" private="true"/>
                 <Pin name="MIDI Controller ID" datatype="enum" default="-1" private="true"/>
@@ -1270,6 +1177,12 @@
                 <Pin name="Increment" datatype="bool" direction="out"/>
                 <Pin name="Decrement" datatype="bool" direction="out"/>
                 <Pin name="Wrap" datatype="bool" default="1"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="TextRedirect" name="Text Redirect" flags="384" category="mx/Sub-Controls">
+            <GUI>
+                <Pin name="Text" datatype="string"/>
+                <Pin name="Text" datatype="string"/>
             </GUI>
         </Plugin>
         <Plugin id="VCA" class="1" name="VCA" flags="4352" category="Modifiers">
