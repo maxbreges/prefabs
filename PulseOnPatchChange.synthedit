@@ -912,7 +912,7 @@
                     <line type="Line" handle="306135666" lineType="1" fMod="1832232985" tMod="776" fPlg="8"/>
                 </lines>
                 <PanelWndPosition l="88" r="88" t="104" b="104"/>
-                <PanelLocation l="341" r="938" t="519" b="918"/>
+                <PanelLocation l="495" r="1092" t="533" b="932"/>
                 <StructLocation l="8" r="1446" t="375" b="943"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="1" y="440"/>
