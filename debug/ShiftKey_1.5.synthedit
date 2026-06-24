@@ -21,7 +21,7 @@
                 <structRect l="24" r="108" t="48" b="90"/>
                 <panelRect l="16" r="24" t="24" b="38"/>
             </module>
-            <module type="Container" handle="2007690091" name="Value Box" ViewOpenFlags="256" skin="default2">
+            <module type="Container" handle="2007690091" name="Value Box" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -54,7 +54,7 @@
                         </param>
                         <param type="6" handle="1697413030" shortName="Float Value" module="1737961635" moduleParamId="0" RangeMinimum="-5" RangeMaximum="5">
                             <patch-list>
-                                <s>2.56</s>
+                                <s>3.8</s>
                                 <s repeat="127">0</s>
                             </patch-list>
                         </param>
@@ -77,8 +77,8 @@
                         <plugs>
                             <plug default="ff000000" idx="10"/>
                         </plugs>
-                        <structRect l="204" r="300" t="216" b="360"/>
-                        <panelRect l="368" r="368" t="176" b="176"/>
+                        <structRect l="204" r="300" t="216" b="336"/>
+                        <panelRect l="240" r="320" t="152" b="184"/>
                     </module>
                     <module type="Container" handle="618309257" name="" show_controls_on_panel_legacy="true" skin="default2">
                         <plugs>
@@ -186,12 +186,12 @@
                             <line type="Line" handle="651599048" lineType="1" fMod="1956368998" tMod="1953192557"/>
                             <line type="Line" handle="1292152046" lineType="1" fMod="1953192557" tMod="705087403" fPlg="1"/>
                         </lines>
-                        <PanelWndPosition l="328" r="348" t="112" b="132"/>
+                        <PanelWndPosition l="336" r="356" t="112" b="132"/>
                         <PanelLocation l="318" r="429" t="12" b="75"/>
                         <StructLocation l="257" r="986" t="12" b="478"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="282" cy="88"/>
+                        <PanelWndOffset cx="290" cy="88"/>
                         <panel_rect l="0" r="93" t="0" b="45"/>
                     </module>
                     <module type="Container" handle="163614558" name="LED2" m_locked="true" skin="default">
@@ -245,12 +245,12 @@
                             <line type="Line" handle="1757421680" lineType="1" fMod="137385488" tMod="1281070395" fPlg="1"/>
                             <line type="Line" handle="455407839" lineType="1" fMod="1281070395" tMod="13939951" fPlg="1" tPlg="1"/>
                         </lines>
-                        <PanelWndPosition l="192" r="212" t="112" b="132"/>
+                        <PanelWndPosition l="200" r="220" t="112" b="132"/>
                         <PanelLocation l="318" r="429" t="12" b="75"/>
                         <StructLocation l="257" r="986" t="12" b="478"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="146" cy="88"/>
+                        <PanelWndOffset cx="154" cy="88"/>
                         <panel_rect l="0" r="93" t="0" b="45"/>
                     </module>
                     <module type="Container" handle="1808627513" name="Show Text Gui" skin="default2">
@@ -287,12 +287,12 @@
                         <lines>
                             <line type="Line" handle="458494885" lineType="1" fMod="40127853" tMod="1330279939"/>
                         </lines>
-                        <PanelWndPosition l="96" r="456" t="184" b="256"/>
+                        <PanelWndPosition l="96" r="456" t="224" b="296"/>
                         <PanelLocation l="30" r="793" t="30" b="532"/>
                         <StructLocation l="0" r="552" t="0" b="400"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="0" y="0"/>
-                        <PanelWndOffset cx="80" cy="40"/>
+                        <PanelWndOffset cx="80" cy="80"/>
                         <panel_rect l="16" r="664" t="16" b="232"/>
                     </module>
                     <module type="IO Mod" handle="1200105419">
@@ -313,10 +313,10 @@
                 </modules>
                 <lines>
                     <line type="Line" handle="374217855" lineType="1" fMod="1566360845" tMod="1010272714" tPlg="1"/>
-                    <line type="Line" handle="1298879318" lineType="1" fMod="163614558" tMod="1737961635" fPlg="8" tPlg="14"/>
-                    <line type="Line" handle="1184044309" lineType="1" fMod="1737961635" tMod="1491230204" fPlg="13" tPlg="7"/>
-                    <line type="Line" handle="1049430357" lineType="1" fMod="1737961635" tMod="618309257" fPlg="20" tPlg="7"/>
-                    <line type="Line" handle="990494907" lineType="1" fMod="1737961635" tMod="1808627513" fPlg="6" tPlg="7"/>
+                    <line type="Line" handle="832962730" lineType="1" fMod="1737961635" tMod="1808627513" fPlg="6" tPlg="7"/>
+                    <line type="Line" handle="607617049" lineType="1" fMod="1737961635" tMod="1491230204" fPlg="13" tPlg="7"/>
+                    <line type="Line" handle="2098405200" lineType="1" fMod="163614558" tMod="1737961635" fPlg="8" tPlg="14"/>
+                    <line type="Line" handle="1756231151" lineType="1" fMod="1737961635" tMod="618309257" fPlg="18" tPlg="7"/>
                 </lines>
                 <PanelWndPosition l="40" r="412" t="56" b="220"/>
                 <PanelLocation l="30" r="709" t="30" b="443"/>
@@ -324,7 +324,7 @@
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="1"/>
                 <PanelWndOffset cx="-56" cy="-56"/>
-                <panel_rect l="72" r="480" t="64" b="304"/>
+                <panel_rect l="72" r="488" t="64" b="304"/>
             </module>
             <module type="Sound Out" handle="581634802">
                 <plugs>
@@ -424,8 +424,6 @@
                 <Pin name="Mouse Down" datatype="bool"/>
                 <Pin name="Float Out" datatype="float" direction="out"/>
                 <Pin name="Hint" datatype="string" default="Hint" isMinimised="true"/>
-                <Pin name="Test Low" datatype="float" default="-5"/>
-                <Pin name="Test High" datatype="float" default="5"/>
             </GUI>
         </Plugin>
         <Plugin id="SE BoolToFloat GUI" name="Bool To Float" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
