@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_processor_id="{9E23B905-D0B9-44F0-A5B9-72E0CA66181F}" vst_controller_id="{09879194-A18A-46DE-9A8B-515EE4634598}" SelectedViewHandle="272874317" SelectedViewType="256" vst_4char_id="kAlM" vst_dll_name="Value Box 1.6" vst_product="Value Box 1.6" emulate_ignore_pc="true" vst_flags="3" vst_preset_count="64" vst_version="1.0.0">
-    <master_container type="Container" handle="272874317" name="Main" PanelLocationZoom="1.1641532" StructLocationZoom="1" ViewOpenFlags="256" skin="default3">
+<Document file_format="150000" vst_latencyCompensation="1" vst_processor_id="{4B3377C1-6C95-481E-9ABF-572282A7C78D}" vst_controller_id="{B18B41D0-E71A-4CCE-9858-7B87CCD9F0C6}" vst_4char_id="kAlN" vst_dll_name="ValueBox15" vst_product="ValueBox15" vst_about_text="mx©2026" emulate_ignore_pc="true" vst_flags="3" vst_preset_count="16">
+    <master_container type="Container" handle="272874317" name="Main" ViewOpenFlags="256" skin="default3">
         <plugs>
             <plug idx="7"/>
         </plugs>
@@ -16,6 +16,11 @@
                 <param type="1" handle="279632889" shortName="Color Hex Cut Off" ignorePC="true" private="true" vstParameterNumber="6" module="1049337565" moduleParamId="1">
                     <patch-list>
                         <s>ffff6800</s>
+                    </patch-list>
+                </param>
+                <param type="6" handle="599337656" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="1373455416" hostControl="40">
+                    <patch-list>
+                        <s>0</s>
                     </patch-list>
                 </param>
                 <param type="8" handle="683224409" stateful="false" module="1000194953" moduleParamId="0"/>
@@ -42,6 +47,11 @@
                 <param type="6" handle="1224463524" shortName="Color Value Cut Off" ignorePC="true" private="true" vstParameterNumber="10" module="1049337565" moduleParamId="2">
                     <patch-list>
                         <s>0.679542</s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="1258490952" shortName="VoiceAllocationMode" ignorePC="true" private="true" module="1373455416" hostControl="14" RangeMinimum="1" RangeMaximum="128">
+                    <patch-list>
+                        <s>768</s>
                     </patch-list>
                 </param>
                 <param type="6" handle="1315682373" shortName="Volume" ignorePC="true" private="true" vstParameterNumber="14" module="1011693144" moduleParamId="0">
@@ -74,6 +84,11 @@
                         <s>ff00ff19</s>
                     </patch-list>
                 </param>
+                <param type="6" handle="1875784039" shortName="BenderRange" ignorePC="true" automation="50331648" private="true" module="1373455416" hostControl="42" RangeMaximum="127.99219">
+                    <patch-list>
+                        <s>2</s>
+                    </patch-list>
+                </param>
                 <param type="6" handle="1885525505" shortName="Brightness Top Volume" ignorePC="true" private="true" vstParameterNumber="5" module="1011693144" moduleParamId="3">
                     <patch-list>
                         <s>0.319999</s>
@@ -100,13 +115,13 @@
                 <plugs>
                     <plug idx="2"/>
                 </plugs>
-                <structRect l="4176" r="4212" t="3864" b="3900"/>
+                <structRect l="4176" r="4224" t="3864" b="3900"/>
             </module>
             <module type="MIDI In" handle="1000194953">
-                <structRect l="3624" r="3696" t="3924" b="3966"/>
+                <structRect l="3624" r="3708" t="3924" b="3966"/>
                 <panelRect l="3744" r="3752" t="3816" b="3830"/>
             </module>
-            <module type="Container" handle="1373455416" name="Value Box 1.6" PanelLocationZoom="3.8146973" StructLocationZoom="1" skin="default3">
+            <module type="Container" handle="1373455416" name="Value Box 1.6" skin="default3">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -117,7 +132,7 @@
                 </plugs>
                 <structRect l="3840" r="4104" t="3852" b="3948"/>
                 <modules>
-                    <module type="Container" handle="1350837137" name="Sub-Container" PanelLocationZoom="1" StructLocationZoom="1.5625001" skin="default3">
+                    <module type="Container" handle="1350837137" name="Sub-Container" skin="default3">
                         <plugs>
                             <plug default="1" idx="1"/>
                             <plug default="1"/>
@@ -169,12 +184,10 @@
                             </module>
                         </modules>
                         <lines>
-                            <line type="Line" handle="142070789" lineType="1" fMod="1049337565" tMod="328753248" fPlg="20"/>
-                            <line type="Line" handle="1407457442" lineType="1" fMod="549799349" tMod="328753248" fPlg="20" tPlg="1"/>
-                            <line type="Line" handle="60378079" lineType="1" fMod="1011693144" tMod="328753248" fPlg="20" tPlg="2"/>
+                            <line type="Line" handle="808262926" lineType="1" fMod="1049337565" tMod="328753248" fPlg="22"/>
+                            <line type="Line" handle="877062302" lineType="1" fMod="549799349" tMod="328753248" fPlg="22" tPlg="1"/>
+                            <line type="Line" handle="1758086615" lineType="1" fMod="1011693144" tMod="328753248" fPlg="22" tPlg="2"/>
                         </lines>
-                        <PanelLocationCenter x="3984" y="3984"/>
-                        <StructLocationCenter x="3937.979" y="3991.7473"/>
                         <PanelWndPosition l="3880" r="4128" t="3957" b="3989"/>
                         <PanelLocation l="0" r="500" t="0" b="500"/>
                         <StructLocation l="0" r="500" t="0" b="500"/>
@@ -184,21 +197,21 @@
                         <panel_rect l="3732" r="4212" t="3732" b="4212"/>
                     </module>
                     <module type="SE SV Filter2" handle="1543519759">
-                        <structRect l="3924" r="3996" t="3744" b="3816"/>
+                        <structRect l="3924" r="4008" t="3744" b="3816"/>
                         <panelRect l="0" r="0" t="0" b="0"/>
                     </module>
                     <module type="VCA" handle="118423005">
-                        <structRect l="3912" r="4008" t="3864" b="3912"/>
+                        <structRect l="3912" r="4020" t="3864" b="3912"/>
                     </module>
                     <module type="Oscillator" handle="1259000076">
-                        <structRect l="3738" r="3810" t="3780" b="3864"/>
+                        <structRect l="3738" r="3822" t="3780" b="3864"/>
                     </module>
                     <module type="SynthEdit ADSR" handle="1552942143">
-                        <structRect l="3732" r="3816" t="3888" b="3984"/>
+                        <structRect l="3732" r="3828" t="3888" b="3984"/>
                         <panelRect l="235" r="235" t="149" b="149"/>
                     </module>
                     <module type="SE MIDI to CV 2" handle="2006002571">
-                        <structRect l="3576" r="3648" t="3804" b="3888"/>
+                        <structRect l="3576" r="3660" t="3804" b="3888"/>
                         <panelRect l="0" r="0" t="0" b="0"/>
                     </module>
                     <module type="IO Mod" handle="1743474085">
@@ -207,22 +220,18 @@
                             <plug name="Out" tiedtomod="1373455416" tiedtopin="8"/>
                             <plug/>
                         </plugs>
-                        <structRect l="4092" r="4140" t="3876" b="3912"/>
+                        <structRect l="4092" r="4152" t="3876" b="3912"/>
                     </module>
                     <module type="IO Mod" handle="951235552">
                         <plugs>
                             <plug name="MIDI Data" direction="1" datatype="2" tiedtomod="1373455416" tiedtopin="9"/>
                             <plug/>
                         </plugs>
-                        <structRect l="3420" r="3492" t="3732" b="3756"/>
+                        <structRect l="3420" r="3504" t="3732" b="3756"/>
                     </module>
                 </modules>
                 <lines>
                     <line type="Line" handle="295553145" fMod="1552942143" tMod="118423005" fPlg="7" tPlg="1"/>
-                    <line type="Line" handle="1100024496" lineType="1" fMod="2006002571" tMod="1552942143" fPlg="2"/>
-                    <line type="Line" handle="601790694" lineType="1" fMod="2006002571" tMod="1552942143" fPlg="3" tPlg="1"/>
-                    <line type="Line" handle="27297105" lineType="1" fMod="2006002571" tMod="1259000076" fPlg="4"/>
-                    <line type="Line" handle="1487512437" lineType="1" fMod="951235552" tMod="2006002571"/>
                     <line type="Line" handle="1185371311" lineType="1" fMod="118423005" tMod="1743474085" fPlg="2"/>
                     <line type="Line" handle="1504262613" lineType="1" fMod="118423005" tMod="1743474085" fPlg="2" tPlg="1"/>
                     <line type="Line" handle="297154024" fMod="1259000076" tMod="1543519759" fPlg="3"/>
@@ -230,14 +239,16 @@
                     <line type="Line" handle="1806713541" lineType="1" fMod="1350837137" tMod="1543519759" fPlg="7" tPlg="1"/>
                     <line type="Line" handle="626923335" lineType="1" fMod="1350837137" tMod="1543519759" fPlg="8" tPlg="2"/>
                     <line type="Line" handle="1289034568" lineType="1" fMod="1350837137" tMod="1552942143" fPlg="9" tPlg="6"/>
+                    <line type="Line" handle="458509767" lineType="1" fMod="951235552" tMod="2006002571"/>
+                    <line type="Line" handle="758496875" lineType="1" fMod="2006002571" tMod="1552942143" fPlg="2"/>
+                    <line type="Line" handle="953955422" lineType="1" fMod="2006002571" tMod="1552942143" fPlg="3" tPlg="1"/>
+                    <line type="Line" handle="2037816388" lineType="1" fMod="2006002571" tMod="1259000076" fPlg="4"/>
                 </lines>
-                <PanelLocationCenter x="3986.5239" y="3995.3298"/>
-                <StructLocationCenter x="3984" y="3893.8992"/>
                 <PanelWndPosition l="3768" r="4016" t="3848" b="3880"/>
                 <PanelLocation l="0" r="500" t="0" b="500"/>
-                <StructLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="406" r="1171" t="125" b="812"/>
                 <PanelScroll x="3736" y="3745"/>
-                <StructScroll x="3734" y="3643"/>
+                <StructScroll x="3436" y="3525"/>
                 <PanelWndOffset cx="-92" cy="-120"/>
                 <panel_rect l="3856" r="4152" t="3912" b="4032"/>
             </module>
@@ -248,13 +259,11 @@
             <line type="Line" handle="1798537744" lineType="1" fMod="1000194953" tMod="1373455416" fPlg="1" tPlg="9"/>
             <line type="Line" handle="1816245817" lineType="1" fMod="2041995570" tMod="1373455416" fPlg="1" tPlg="9"/>
         </lines>
-        <PanelLocationCenter x="3975.4285" y="3927.2625"/>
-        <StructLocationCenter x="4164" y="3984"/>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="0" r="500" t="0" b="500"/>
-        <StructLocation l="0" r="500" t="0" b="500"/>
+        <StructLocation l="0" r="1270" t="0" b="633"/>
         <PanelScroll x="3725" y="3677"/>
-        <StructScroll x="3914" y="3734"/>
+        <StructScroll x="3475" y="3734"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
         <panel_rect l="3732" r="4040" t="3800" b="3928"/>
     </master_container>
@@ -301,7 +310,7 @@
             </Parameters>
             <Audio>
                 <Pin name="ValueIn" datatype="float" private="true" parameterId="0"/>
-                <Pin name="Float Out" datatype="float" direction="out"/>
+                <Pin name="Float Out" datatype="float" direction="out" autoConfigureParameter="true"/>
                 <Pin name="Int Out" datatype="int" direction="out"/>
             </Audio>
             <GUI graphicsApi="GmpiGui">
@@ -321,9 +330,11 @@
                 <Pin name="Entry Open" datatype="bool" direction="out"/>
                 <Pin name="Mouse Down" datatype="bool"/>
                 <Pin name="Float Out" datatype="float" direction="out"/>
-                <Pin name="Hint" datatype="string" default="Hint" isMinimised="true"/>
+                <Pin name="Hint" datatype="string" isMinimised="true"/>
                 <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
                 <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="HintAuto" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="Disable Hint" datatype="bool"/>
             </GUI>
         </Plugin>
         <Plugin id="Oscillator" class="1" name="Oscillator" flags="4352" category="Waveform">
@@ -364,7 +375,6 @@
                 <Pin name="Voice/VirtualVoiceId" datatype="int" private="true" isPolyphonic="true" hostConnect="Voice/VirtualVoiceId"/>
                 <Pin name="Bender" datatype="float" private="true" hostConnect="Bender"/>
                 <Pin name="HoldPedal" datatype="float" private="true" hostConnect="HoldPedal"/>
-                <Pin name="SostenutoPedal" datatype="float" private="true" isPolyphonic="true" hostConnect="SostenutoPedal"/>
                 <Pin name="GlideStartPitch" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/GlideStartPitch"/>
                 <Pin name="VoiceAllocationMode" datatype="int" private="true" hostConnect="VoiceAllocationMode"/>
                 <Pin name="Portamento" datatype="float" private="true" hostConnect="Portamento"/>

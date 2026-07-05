@@ -64,7 +64,7 @@
                     <plug name="Value Out" direction="1" datatype="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="252" r="492" t="192" b="292"/>
+                <structRect l="96" r="336" t="96" b="196"/>
                 <modules>
                     <module type="OR Gate GuiLOutLIn" handle="339590128">
                         <plugs>
@@ -80,7 +80,7 @@
                         <panelRect l="624" r="624" t="144" b="144"/>
                     </module>
                     <module type="My CheckingStringOnMac" handle="1790379903">
-                        <structRect l="228" r="324" t="372" b="468"/>
+                        <structRect l="240" r="336" t="372" b="468"/>
                         <panelRect l="600" r="600" t="128" b="128"/>
                     </module>
                     <module type="SE GUI Bool Inverter" handle="914084363">
@@ -137,7 +137,7 @@
                             <plug default="12"/>
                             <plug default="3" idx="14"/>
                         </plugs>
-                        <structRect l="204" r="360" t="216" b="324"/>
+                        <structRect l="204" r="360" t="216" b="336"/>
                         <panelRect l="159" r="309" t="78" b="96"/>
                     </module>
                     <module type="SynthEdit Increment3" handle="1482515562">
@@ -173,8 +173,6 @@
                     <line type="Line" handle="796652478" fMod="1516648926" tMod="8636940" fPlg="6" tPlg="1"/>
                     <line type="Line" handle="1161664549" lineType="1" fMod="1516648926" tMod="1482515562" fPlg="6" tPlg="1"/>
                     <line type="Line" handle="1763937962" lineType="1" fMod="984077963" tMod="1482515562" fPlg="7"/>
-                    <line type="Line" handle="1939819382" lineType="1" fMod="984077963" tMod="1934592252" fPlg="7" tPlg="9"/>
-                    <line type="Line" handle="291928381" lineType="1" fMod="1516648926" tMod="1934592252" fPlg="6" tPlg="10"/>
                     <line type="Line" handle="2055624840" lineType="1" fMod="1101211304" tMod="914199128" fPlg="2" tPlg="6"/>
                     <line type="Line" handle="437258358" lineType="1" fMod="984077963" tMod="1790379903" fPlg="7" tPlg="2"/>
                     <line type="Line" handle="1428916302" lineType="1" fMod="1516648926" tMod="1790379903" fPlg="6" tPlg="1"/>
@@ -186,6 +184,8 @@
                     <line type="Line" handle="1568021848" lineType="1" fMod="800197930" tMod="1790379903" fPlg="6" tPlg="7"/>
                     <line type="Line" handle="1921486293" lineType="1" fMod="800197930" tMod="1247803648" fPlg="6" tPlg="1"/>
                     <line type="Line" handle="98651826" lineType="1" fMod="800197930" tMod="1247803648" fPlg="11" tPlg="2"/>
+                    <line type="Line" handle="1096657006" lineType="1" fMod="984077963" tMod="1934592252" fPlg="7" tPlg="9"/>
+                    <line type="Line" handle="1258438076" lineType="1" fMod="1516648926" tMod="1934592252" fPlg="6" tPlg="10"/>
                 </lines>
                 <PanelWndPosition l="123" r="347" t="135" b="171"/>
                 <PanelLocation l="30" r="1059" t="30" b="325"/>
@@ -238,6 +238,7 @@
                 <Pin name="Shift+Drag" datatype="bool" private="true"/>
                 <Pin name="Corner Radius" datatype="int" default="5" isMinimised="true"/>
                 <Pin name="Selection" datatype="string"/>
+                <Pin name="Shift hold" datatype="bool" direction="out"/>
             </GUI>
         </Plugin>
         <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
