@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" SelectedViewHandle="1145791456" SelectedViewType="256" emulate_ignore_pc="true" vst_preset_count="64" vst_version="1.0.0">
+    <master_container type="Container" handle="1145791456" name="Main" PanelLocationZoom="1" StructLocationZoom="1" ViewOpenFlags="256" skin="default3">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="10" handle="58044091" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="Container" handle="1197757147" name="LED2" PanelLocationZoom="1" StructLocationZoom="1" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Modified" datatype="4"/>
+                    <plug name="Bool Val" direction="1" datatype="4"/>
+                    <plug/>
+                </plugs>
+                <structRect l="3912" r="3972" t="3912" b="3984"/>
+                <modules>
+                    <module type="SE FloatToBool GUI" handle="1414040091">
+                        <structRect l="228" r="300" t="144" b="168"/>
+                        <panelRect l="64" r="64" t="40" b="40"/>
+                    </module>
+                    <module type="SE BoolToFloat GUI" handle="1109606258">
+                        <structRect l="216" r="288" t="60" b="84"/>
+                        <panelRect l="72" r="72" t="56" b="56"/>
+                    </module>
+                    <module type="Image3" handle="1994601136">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="1970684888" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                            <plug default="0.5" idx="12"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="IO Mod" handle="28824607">
+                        <plugs>
+                            <plug name="Modified" direction="1" datatype="4" tiedtomod="1197757147" tiedtopin="7"/>
+                            <plug name="Bool Val" datatype="4" tiedtomod="1197757147" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="78"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="993730626" lineType="1" fMod="1414040091" tMod="28824607" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1902686382" lineType="1" fMod="1109606258" tMod="1414040091" fPlg="1"/>
+                    <line type="Line" handle="1478600437" lineType="1" fMod="28824607" tMod="1109606258"/>
+                    <line type="Line" handle="233014656" lineType="1" fMod="1109606258" tMod="1994601136" fPlg="1"/>
+                </lines>
+                <PanelLocationCenter x="55.5" y="31.5"/>
+                <StructLocationCenter x="364.5" y="233"/>
+                <PanelWndPosition l="3904" r="3924" t="3928" b="3948"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="-194" y="-218"/>
+                <StructScroll x="114" y="-17"/>
+                <PanelWndOffset cx="3858" cy="3904"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="Container" handle="290816194" name="LED2" PanelLocationZoom="1" StructLocationZoom="1" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Modified" datatype="4"/>
+                    <plug name="Bool Val" direction="1" datatype="4"/>
+                    <plug/>
+                </plugs>
+                <structRect l="3660" r="3720" t="3984" b="4056"/>
+                <modules>
+                    <module type="SE FloatToBool GUI" handle="892045664">
+                        <structRect l="228" r="300" t="144" b="168"/>
+                        <panelRect l="64" r="64" t="40" b="40"/>
+                    </module>
+                    <module type="SE BoolToFloat GUI" handle="1358417222">
+                        <structRect l="216" r="288" t="60" b="84"/>
+                        <panelRect l="72" r="72" t="56" b="56"/>
+                    </module>
+                    <module type="Image3" handle="400287311">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="1037737023" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                            <plug default="0.5" idx="12"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="IO Mod" handle="445347083">
+                        <plugs>
+                            <plug name="Modified" direction="1" datatype="4" tiedtomod="290816194" tiedtopin="7"/>
+                            <plug name="Bool Val" datatype="4" tiedtomod="290816194" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="78"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="271697872" lineType="1" fMod="892045664" tMod="445347083" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1998009359" lineType="1" fMod="1358417222" tMod="892045664" fPlg="1"/>
+                    <line type="Line" handle="486207025" lineType="1" fMod="445347083" tMod="1358417222"/>
+                    <line type="Line" handle="2035383782" lineType="1" fMod="1358417222" tMod="400287311" fPlg="1"/>
+                </lines>
+                <PanelLocationCenter x="55.5" y="31.5"/>
+                <StructLocationCenter x="364.5" y="233"/>
+                <PanelWndPosition l="3888" r="3908" t="3920" b="3940"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="-194" y="-218"/>
+                <StructScroll x="114" y="-17"/>
+                <PanelWndOffset cx="3842" cy="3896"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="Container" handle="1049320329" name="LED2" PanelLocationZoom="1" StructLocationZoom="1" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Modified" datatype="4"/>
+                    <plug name="Bool Val" direction="1" datatype="4"/>
+                    <plug/>
+                </plugs>
+                <structRect l="4056" r="4116" t="3984" b="4056"/>
+                <modules>
+                    <module type="SE FloatToBool GUI" handle="56778091">
+                        <structRect l="228" r="300" t="144" b="168"/>
+                        <panelRect l="64" r="64" t="40" b="40"/>
+                    </module>
+                    <module type="SE BoolToFloat GUI" handle="1797319221">
+                        <structRect l="216" r="288" t="60" b="84"/>
+                        <panelRect l="72" r="72" t="56" b="56"/>
+                    </module>
+                    <module type="Image3" handle="520681122">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="1676410256" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                            <plug default="0.5" idx="12"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="IO Mod" handle="1391799524">
+                        <plugs>
+                            <plug name="Modified" direction="1" datatype="4" tiedtomod="1049320329" tiedtopin="7"/>
+                            <plug name="Bool Val" datatype="4" tiedtomod="1049320329" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="78"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1290138387" lineType="1" fMod="56778091" tMod="1391799524" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1410209583" lineType="1" fMod="1797319221" tMod="56778091" fPlg="1"/>
+                    <line type="Line" handle="1097194007" lineType="1" fMod="1391799524" tMod="1797319221"/>
+                    <line type="Line" handle="1192303017" lineType="1" fMod="1797319221" tMod="520681122" fPlg="1"/>
+                </lines>
+                <PanelLocationCenter x="55.5" y="31.5"/>
+                <StructLocationCenter x="364.5" y="233"/>
+                <PanelWndPosition l="3888" r="3908" t="3904" b="3924"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="-194" y="-218"/>
+                <StructScroll x="114" y="-17"/>
+                <PanelWndOffset cx="3842" cy="3880"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="Container" handle="2110338380" name="LED2" PanelLocationZoom="1" StructLocationZoom="1" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Modified" datatype="4"/>
+                    <plug name="Bool Val" direction="1" datatype="4"/>
+                    <plug/>
+                </plugs>
+                <structRect l="4296" r="4356" t="3912" b="3984"/>
+                <modules>
+                    <module type="SE FloatToBool GUI" handle="619339343">
+                        <structRect l="228" r="300" t="144" b="168"/>
+                        <panelRect l="64" r="64" t="40" b="40"/>
+                    </module>
+                    <module type="SE BoolToFloat GUI" handle="327622981">
+                        <structRect l="216" r="288" t="60" b="84"/>
+                        <panelRect l="72" r="72" t="56" b="56"/>
+                    </module>
+                    <module type="Image3" handle="1101131018">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="1671484105" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                            <plug default="0.5" idx="12"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="IO Mod" handle="13247584">
+                        <plugs>
+                            <plug name="Modified" direction="1" datatype="4" tiedtomod="2110338380" tiedtopin="7"/>
+                            <plug name="Bool Val" datatype="4" tiedtomod="2110338380" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="78"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="113444854" lineType="1" fMod="619339343" tMod="13247584" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1963527826" lineType="1" fMod="327622981" tMod="619339343" fPlg="1"/>
+                    <line type="Line" handle="2089289440" lineType="1" fMod="13247584" tMod="327622981"/>
+                    <line type="Line" handle="109661888" lineType="1" fMod="327622981" tMod="1101131018" fPlg="1"/>
+                </lines>
+                <PanelLocationCenter x="55.5" y="31.5"/>
+                <StructLocationCenter x="364.5" y="233"/>
+                <PanelWndPosition l="3928" r="3948" t="3944" b="3964"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="-194" y="-218"/>
+                <StructScroll x="114" y="-17"/>
+                <PanelWndOffset cx="3882" cy="3920"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="Container" handle="1290158610" name="LED2" PanelLocationZoom="1" StructLocationZoom="1" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Modified" datatype="4"/>
+                    <plug name="Bool Val" direction="1" datatype="4"/>
+                    <plug/>
+                </plugs>
+                <structRect l="4296" r="4356" t="4020" b="4092"/>
+                <modules>
+                    <module type="SE FloatToBool GUI" handle="2099791666">
+                        <structRect l="228" r="300" t="144" b="168"/>
+                        <panelRect l="64" r="64" t="40" b="40"/>
+                    </module>
+                    <module type="SE BoolToFloat GUI" handle="1871389694">
+                        <structRect l="216" r="288" t="60" b="84"/>
+                        <panelRect l="72" r="72" t="56" b="56"/>
+                    </module>
+                    <module type="Image3" handle="1055518239">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="752804506" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                            <plug default="0.5" idx="12"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="IO Mod" handle="2135887856">
+                        <plugs>
+                            <plug name="Modified" direction="1" datatype="4" tiedtomod="1290158610" tiedtopin="7"/>
+                            <plug name="Bool Val" datatype="4" tiedtomod="1290158610" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="78"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1915122215" lineType="1" fMod="2099791666" tMod="2135887856" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="850829533" lineType="1" fMod="1871389694" tMod="2099791666" fPlg="1"/>
+                    <line type="Line" handle="841509478" lineType="1" fMod="2135887856" tMod="1871389694"/>
+                    <line type="Line" handle="220500310" lineType="1" fMod="1871389694" tMod="1055518239" fPlg="1"/>
+                </lines>
+                <PanelLocationCenter x="55.5" y="31.5"/>
+                <StructLocationCenter x="364.5" y="233"/>
+                <PanelWndPosition l="3928" r="3948" t="3928" b="3948"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="-194" y="-218"/>
+                <StructScroll x="114" y="-17"/>
+                <PanelWndOffset cx="3882" cy="3904"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="TextEntry16" handle="810999763">
+                <plugs>
+                    <plug default="Hint" idx="7"/>
+                    <plug default="0"/>
+                </plugs>
+                <structRect l="4152" r="4260" t="3912" b="4056"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="Container" handle="163614558" name="LED2" PanelLocationZoom="1" StructLocationZoom="1" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Modified" datatype="4"/>
+                    <plug name="Bool Val" direction="1" datatype="4"/>
+                    <plug/>
+                </plugs>
+                <structRect l="3912" r="3972" t="4020" b="4092"/>
+                <modules>
+                    <module type="SE FloatToBool GUI" handle="1281070395">
+                        <structRect l="228" r="300" t="144" b="168"/>
+                        <panelRect l="64" r="64" t="40" b="40"/>
+                    </module>
+                    <module type="SE BoolToFloat GUI" handle="137385488">
+                        <structRect l="216" r="288" t="60" b="84"/>
+                        <panelRect l="72" r="72" t="56" b="56"/>
+                    </module>
+                    <module type="Image3" handle="1829327811">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="374671938" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                            <plug default="0.5" idx="12"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="IO Mod" handle="13939951">
+                        <plugs>
+                            <plug name="Modified" direction="1" datatype="4" tiedtomod="163614558" tiedtopin="7"/>
+                            <plug name="Bool Val" datatype="4" tiedtomod="163614558" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="78"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="455407839" lineType="1" fMod="1281070395" tMod="13939951" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1757421680" lineType="1" fMod="137385488" tMod="1281070395" fPlg="1"/>
+                    <line type="Line" handle="1119726544" lineType="1" fMod="13939951" tMod="137385488"/>
+                    <line type="Line" handle="874656706" lineType="1" fMod="137385488" tMod="1829327811" fPlg="1"/>
+                </lines>
+                <PanelLocationCenter x="55.5" y="31.5"/>
+                <StructLocationCenter x="364.5" y="233"/>
+                <PanelWndPosition l="3840" r="3860" t="3856" b="3876"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="-194" y="-218"/>
+                <StructScroll x="114" y="-17"/>
+                <PanelWndOffset cx="3794" cy="3832"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="TextEntry15" handle="1527640973">
+                <plugs>
+                    <plug default="ff000000" idx="3"/>
+                    <plug default="ffff9900"/>
+                    <plug default="ffffffff"/>
+                    <plug default="Hint" idx="7"/>
+                    <plug default="0"/>
+                </plugs>
+                <structRect l="3768" r="3876" t="3912" b="4056"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="221588365" lineType="1" fMod="1527640973" tMod="163614558" fPlg="11" tPlg="7"/>
+            <line type="Line" handle="1009576066" lineType="1" fMod="810999763" tMod="2110338380" fPlg="10" tPlg="7"/>
+            <line type="Line" handle="399880515" lineType="1" fMod="810999763" tMod="1290158610" fPlg="11" tPlg="7"/>
+            <line type="Line" handle="546097089" lineType="1" fMod="1049320329" tMod="810999763" fPlg="8" tPlg="9"/>
+            <line type="Line" handle="741640947" lineType="1" fMod="290816194" tMod="1527640973" fPlg="8" tPlg="9"/>
+            <line type="Line" handle="1508996413" lineType="1" fMod="1527640973" tMod="1197757147" fPlg="10" tPlg="7"/>
+        </lines>
+        <PanelLocationCenter x="3984" y="3984"/>
+        <StructLocationCenter x="3984" y="3984"/>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="0" r="500" t="0" b="500"/>
+        <StructLocation l="0" r="500" t="0" b="500"/>
+        <PanelScroll x="3734" y="3734"/>
+        <StructScroll x="3734" y="3734"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="3732" r="4212" t="3732" b="4212"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Image3" name="Image2" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Filename" datatype="string" default="knob_sm" isFilename="true" metadata="bmp"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Frame Count" datatype="int" private="true"/>
+                <Pin name="Frame Count" datatype="int" direction="out"/>
+                <Pin name="Mouse Response" datatype="enum" default="-1" isMinimised="true" metadata="off=-2, auto=-1, vertical=0, horizontal=1, clicks=2, rotary=3, step=4"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE BoolToFloat GUI" name="Bool To Float" flags="33554816" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Bool Val" datatype="bool"/>
+                <Pin name="Float Val" datatype="float" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE FloatToBool GUI" name="Float To Bool" flags="33554816" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Float Val" datatype="float"/>
+                <Pin name="Bool Val" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE ImageTinted XP" name="Image Tinted (XP)" flags="384" category="Debug/DirectX">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Filename" datatype="string" default="knob_sm" isFilename="true" metadata="bmp"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Frame Count" datatype="int" private="true"/>
+                <Pin name="Frame Count" datatype="int" direction="out"/>
+                <Pin name="Hue" datatype="float" direction="out" private="true"/>
+                <Pin name="Saturation" datatype="float" direction="out" private="true"/>
+                <Pin name="Brightness" datatype="float" direction="out" private="true"/>
+                <Pin name="Hue" datatype="float"/>
+                <Pin name="Saturation" datatype="float" default="1"/>
+                <Pin name="Brightness" datatype="float" default="1"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="TextEntry15" name="Text Entry15" flags="384" category="mx/Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Text" datatype="string" default="Text"/>
+                <Pin name="Font Face" datatype="string" default="Times New Roman" isMinimised="true"/>
+                <Pin name="Font Size" datatype="int" default="20" isMinimised="true"/>
+                <Pin name="Text Color" datatype="string" default="ffffffff"/>
+                <Pin name="Top Color" datatype="string" default="ffbbbbbb"/>
+                <Pin name="Bg Color" datatype="string" default="ff000000"/>
+                <Pin name="Corner" datatype="int" default="5" isMinimised="true"/>
+                <Pin name="Hint" datatype="string" isMinimised="true"/>
+                <Pin name="Disable Hint" datatype="bool"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Mouse Over" datatype="bool" direction="out"/>
+                <Pin name="Entry Open" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="TextEntry16" name="Text Entry16" flags="384" category="mx/Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Text" datatype="string_utf8" default="Text"/>
+                <Pin name="Font Face" datatype="string_utf8" default="Times New Roman" isMinimised="true"/>
+                <Pin name="Font Size" datatype="int" default="20" isMinimised="true"/>
+                <Pin name="Text Color" datatype="string_utf8" default="ff000000"/>
+                <Pin name="Top Color" datatype="string_utf8" default="ffff9900"/>
+                <Pin name="Bg Color" datatype="string_utf8" default="ffffffff"/>
+                <Pin name="Corner" datatype="int" default="5" isMinimised="true"/>
+                <Pin name="Hint" datatype="string_utf8" isMinimised="true"/>
+                <Pin name="Disable Hint" datatype="bool"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Mouse Over" datatype="bool" direction="out"/>
+                <Pin name="Entry Open" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+    </PluginList>
+</Document>
