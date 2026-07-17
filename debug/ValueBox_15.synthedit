@@ -145,24 +145,33 @@
                         <modules>
                             <module type="My ValueBox" handle="1011693144">
                                 <plugs>
-                                    <plug default="16" idx="8"/>
-                                    <plug default="Volume" idx="16"/>
+                                    <plug default="" idx="2"/>
+                                    <plug default=""/>
+                                    <plug default="" idx="7"/>
+                                    <plug default="16"/>
+                                    <plug default="Volume" idx="18"/>
                                 </plugs>
                                 <structRect l="4086" r="4170" t="3924" b="4044"/>
                                 <panelRect l="4024" r="4096" t="3956" b="3988"/>
                             </module>
                             <module type="My ValueBox" handle="549799349">
                                 <plugs>
-                                    <plug default="16" idx="8"/>
-                                    <plug default="Resonance" idx="16"/>
+                                    <plug default="" idx="2"/>
+                                    <plug default=""/>
+                                    <plug default="" idx="7"/>
+                                    <plug default="16"/>
+                                    <plug default="Resonance" idx="18"/>
                                 </plugs>
                                 <structRect l="3942" r="4026" t="3924" b="4044"/>
                                 <panelRect l="3936" r="4008" t="3956" b="3988"/>
                             </module>
                             <module type="My ValueBox" handle="1049337565">
                                 <plugs>
-                                    <plug default="16" idx="8"/>
-                                    <plug default="Cut Off" idx="16"/>
+                                    <plug default="" idx="2"/>
+                                    <plug default=""/>
+                                    <plug default="" idx="7"/>
+                                    <plug default="16"/>
+                                    <plug default="Cut Off" idx="18"/>
                                 </plugs>
                                 <structRect l="3798" r="3882" t="3924" b="4044"/>
                                 <panelRect l="3848" r="3920" t="3956" b="3988"/>
@@ -184,9 +193,9 @@
                             </module>
                         </modules>
                         <lines>
-                            <line type="Line" handle="808262926" lineType="1" fMod="1049337565" tMod="328753248" fPlg="22"/>
-                            <line type="Line" handle="877062302" lineType="1" fMod="549799349" tMod="328753248" fPlg="22" tPlg="1"/>
-                            <line type="Line" handle="1758086615" lineType="1" fMod="1011693144" tMod="328753248" fPlg="22" tPlg="2"/>
+                            <line type="Line" handle="248842046" lineType="1" fMod="1049337565" tMod="328753248" fPlg="23"/>
+                            <line type="Line" handle="1377756243" lineType="1" fMod="549799349" tMod="328753248" fPlg="23" tPlg="1"/>
+                            <line type="Line" handle="1590875191" lineType="1" fMod="1011693144" tMod="328753248" fPlg="23" tPlg="2"/>
                         </lines>
                         <PanelWndPosition l="3880" r="4128" t="3957" b="3989"/>
                         <PanelLocation l="0" r="500" t="0" b="500"/>
@@ -316,25 +325,26 @@
             <GUI graphicsApi="GmpiGui">
                 <Pin name="Animation Position" datatype="float" private="true" parameterId="0"/>
                 <Pin name="Animation Position Color" datatype="float" private="true" parameterId="2"/>
-                <Pin name="Brightness Top" datatype="float" private="true" parameterId="3"/>
-                <Pin name="Brightness Bottom" datatype="float" private="true" parameterId="4"/>
+                <Pin name="Brightness Top" datatype="float" default="4" private="true" parameterId="3"/>
+                <Pin name="Brightness Bottom" datatype="float" default="10" private="true" parameterId="4"/>
                 <Pin name="Min" datatype="float" private="true" parameterId="0" parameterField="RangeMinimum"/>
                 <Pin name="Max" datatype="float" private="true" parameterId="0" parameterField="RangeMaximum"/>
                 <Pin name="Help" datatype="string" direction="out" private="true"/>
-                <Pin name="Color Hex" datatype="string" private="true" parameterId="1"/>
+                <Pin name="Color Hex" datatype="string" default="ffff9900" private="true" parameterId="1"/>
                 <Pin name="Font Size" datatype="float" default="12" isMinimised="true"/>
                 <Pin name="Font Face" datatype="string" default="Times New Roman" isMinimised="true"/>
                 <Pin name="Text Color" datatype="string" default="ffffffff" isMinimised="true"/>
                 <Pin name="Decimal Places" datatype="int" default="2" isMinimised="true"/>
                 <Pin name="Corner Radius" datatype="int" default="4" isMinimised="true"/>
                 <Pin name="Entry Open" datatype="bool" direction="out"/>
+                <Pin name="Mouse Over" datatype="bool" direction="out"/>
                 <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Disable Hint" datatype="bool"/>
                 <Pin name="Float Out" datatype="float" direction="out"/>
                 <Pin name="Hint" datatype="string" isMinimised="true"/>
                 <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
                 <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
                 <Pin name="HintAuto" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
-                <Pin name="Disable Hint" datatype="bool"/>
             </GUI>
         </Plugin>
         <Plugin id="Oscillator" class="1" name="Oscillator" flags="4352" category="Waveform">
