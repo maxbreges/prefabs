@@ -132,78 +132,38 @@
                 </plugs>
                 <structRect l="3840" r="4104" t="3852" b="3948"/>
                 <modules>
-                    <module type="Container" handle="1350837137" name="Sub-Container" skin="default3">
+                    <module type="My ValueBox" handle="1011693144">
                         <plugs>
-                            <plug default="1" idx="1"/>
-                            <plug default="1"/>
-                            <plug name="Float Out" direction="1" idx="7"/>
-                            <plug name="Float Out" direction="1"/>
-                            <plug name="Float Out" direction="1"/>
-                            <plug/>
+                            <plug default="" idx="2"/>
+                            <plug default=""/>
+                            <plug default="" idx="7"/>
+                            <plug default="16"/>
+                            <plug default="Volume" idx="18"/>
                         </plugs>
-                        <structRect l="3828" r="4092" t="3624" b="3720"/>
-                        <modules>
-                            <module type="My ValueBox" handle="1011693144">
-                                <plugs>
-                                    <plug default="" idx="2"/>
-                                    <plug default=""/>
-                                    <plug default="" idx="7"/>
-                                    <plug default="16"/>
-                                    <plug default="Volume" idx="18"/>
-                                </plugs>
-                                <structRect l="4086" r="4170" t="3924" b="4044"/>
-                                <panelRect l="4024" r="4096" t="3956" b="3988"/>
-                            </module>
-                            <module type="My ValueBox" handle="549799349">
-                                <plugs>
-                                    <plug default="" idx="2"/>
-                                    <plug default=""/>
-                                    <plug default="" idx="7"/>
-                                    <plug default="16"/>
-                                    <plug default="Resonance" idx="18"/>
-                                </plugs>
-                                <structRect l="3942" r="4026" t="3924" b="4044"/>
-                                <panelRect l="3936" r="4008" t="3956" b="3988"/>
-                            </module>
-                            <module type="My ValueBox" handle="1049337565">
-                                <plugs>
-                                    <plug default="" idx="2"/>
-                                    <plug default=""/>
-                                    <plug default="" idx="7"/>
-                                    <plug default="16"/>
-                                    <plug default="Cut Off" idx="18"/>
-                                </plugs>
-                                <structRect l="3798" r="3882" t="3924" b="4044"/>
-                                <panelRect l="3848" r="3920" t="3956" b="3988"/>
-                            </module>
-                            <module type="IO Mod" handle="328753248">
-                                <plugs>
-                                    <plug name="Float Out" default="5" tiedtomod="1350837137" tiedtopin="7"/>
-                                    <plug name="Float Out" default="5" tiedtomod="1350837137" tiedtopin="8"/>
-                                    <plug name="Float Out" default="10" tiedtomod="1350837137" tiedtopin="9"/>
-                                    <plug/>
-                                </plugs>
-                                <structRect l="4380" r="4440" t="3924" b="3972"/>
-                            </module>
-                            <module type="IO Mod" handle="65982619">
-                                <plugs>
-                                    <plug/>
-                                </plugs>
-                                <structRect l="3648" r="3696" t="3984" b="3996"/>
-                            </module>
-                        </modules>
-                        <lines>
-                            <line type="Line" handle="248842046" lineType="1" fMod="1049337565" tMod="328753248" fPlg="23"/>
-                            <line type="Line" handle="1377756243" lineType="1" fMod="549799349" tMod="328753248" fPlg="23" tPlg="1"/>
-                            <line type="Line" handle="1590875191" lineType="1" fMod="1011693144" tMod="328753248" fPlg="23" tPlg="2"/>
-                        </lines>
-                        <PanelWndPosition l="3880" r="4128" t="3957" b="3989"/>
-                        <PanelLocation l="0" r="500" t="0" b="500"/>
-                        <StructLocation l="0" r="500" t="0" b="500"/>
-                        <PanelScroll x="3734" y="3734"/>
-                        <StructScroll x="3687" y="3741"/>
-                        <PanelWndOffset cx="32" cy="1"/>
-                        <panel_rect l="3732" r="4212" t="3732" b="4212"/>
+                        <structRect l="3996" r="4092" t="3576" b="3696"/>
+                        <panelRect l="4936" r="5008" t="4844" b="4876"/>
+                    </module>
+                    <module type="My ValueBox" handle="549799349">
+                        <plugs>
+                            <plug default="" idx="2"/>
+                            <plug default=""/>
+                            <plug default="" idx="7"/>
+                            <plug default="16"/>
+                            <plug default="Resonance" idx="18"/>
+                        </plugs>
+                        <structRect l="3852" r="3948" t="3576" b="3696"/>
+                        <panelRect l="4848" r="4920" t="4844" b="4876"/>
+                    </module>
+                    <module type="My ValueBox" handle="1049337565">
+                        <plugs>
+                            <plug default="" idx="2"/>
+                            <plug default=""/>
+                            <plug default="" idx="7"/>
+                            <plug default="16"/>
+                            <plug default="Cut Off" idx="18"/>
+                        </plugs>
+                        <structRect l="3708" r="3804" t="3576" b="3696"/>
+                        <panelRect l="4760" r="4832" t="4844" b="4876"/>
                     </module>
                     <module type="SE SV Filter2" handle="1543519759">
                         <structRect l="3924" r="4008" t="3744" b="3816"/>
@@ -245,13 +205,13 @@
                     <line type="Line" handle="1504262613" lineType="1" fMod="118423005" tMod="1743474085" fPlg="2" tPlg="1"/>
                     <line type="Line" handle="297154024" fMod="1259000076" tMod="1543519759" fPlg="3"/>
                     <line type="Line" handle="931069158" fMod="1543519759" tMod="118423005" fPlg="5"/>
-                    <line type="Line" handle="1806713541" lineType="1" fMod="1350837137" tMod="1543519759" fPlg="7" tPlg="1"/>
-                    <line type="Line" handle="626923335" lineType="1" fMod="1350837137" tMod="1543519759" fPlg="8" tPlg="2"/>
-                    <line type="Line" handle="1289034568" lineType="1" fMod="1350837137" tMod="1552942143" fPlg="9" tPlg="6"/>
                     <line type="Line" handle="458509767" lineType="1" fMod="951235552" tMod="2006002571"/>
                     <line type="Line" handle="758496875" lineType="1" fMod="2006002571" tMod="1552942143" fPlg="2"/>
                     <line type="Line" handle="953955422" lineType="1" fMod="2006002571" tMod="1552942143" fPlg="3" tPlg="1"/>
                     <line type="Line" handle="2037816388" lineType="1" fMod="2006002571" tMod="1259000076" fPlg="4"/>
+                    <line type="Line" handle="1948798969" lineType="1" fMod="1049337565" tMod="1543519759" fPlg="23" tPlg="1"/>
+                    <line type="Line" handle="2101359411" lineType="1" fMod="549799349" tMod="1543519759" fPlg="23" tPlg="2"/>
+                    <line type="Line" handle="477545983" lineType="1" fMod="1011693144" tMod="1552942143" fPlg="23" tPlg="6"/>
                 </lines>
                 <PanelWndPosition l="3768" r="4016" t="3848" b="3880"/>
                 <PanelLocation l="0" r="500" t="0" b="500"/>
