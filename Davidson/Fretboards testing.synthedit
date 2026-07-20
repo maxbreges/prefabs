@@ -190,7 +190,7 @@
         <PanelLocation l="30" r="900" t="30" b="584"/>
         <StructLocation l="0" r="1353" t="0" b="897"/>
         <PanelScroll x="0" y="0"/>
-        <StructScroll x="3" y="0"/>
+        <StructScroll x="3" y="1"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
         <panel_rect l="8" r="664" t="16" b="272"/>
     </master_container>
