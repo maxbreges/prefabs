@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" vst_preset_count="64">
+    <master_container type="Container" handle="1131438659" name="Main" ViewOpenFlags="256" skin="default2">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="0" handle="21149050" shortName="VCA Response Curve" module="831060225" moduleParamId="0" MetaData="Exponential=1,Linear,Decibel,Decibel (old)=0">
+                    <patch-list>
+                        <s repeat="128">1</s>
+                    </patch-list>
+                </param>
+                <param type="0" handle="648931397" shortName="Switch (Many-&gt;1) Choice" module="1370989445" moduleParamId="0" MetaData="Env1,Env2">
+                    <patch-list>
+                        <s>1</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="0" handle="744093379" shortName="VCA Response Curve" module="494767246" moduleParamId="0" MetaData="Exponential=1,Linear,Decibel,Decibel (old)=0">
+                    <patch-list>
+                        <s repeat="128">1</s>
+                    </patch-list>
+                </param>
+                <param type="10" handle="871398085" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="SE:Fixed Values_Int" handle="436927763">
+                <plugs>
+                    <plug name="Exponential" default="1"/>
+                    <plug name="Linear" default="2"/>
+                    <plug name="Decibel" default="3"/>
+                    <plug name="Decibel (old)=0" default="0"/>
+                    <plug/>
+                </plugs>
+                <structRect l="358" r="466" t="129" b="189"/>
+            </module>
+            <module type="SE Switch &gt; (Int)" handle="503150586">
+                <plugs>
+                    <plug name="Exponential=1" id="2" idx="2"/>
+                    <plug name="Linear" id="3"/>
+                    <plug name="Decibel" id="4"/>
+                    <plug name="Decibel (old)=0" id="5"/>
+                    <plug id="6"/>
+                </plugs>
+                <structRect l="495" r="603" t="106" b="190"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="SE:Fixed Values_Int" handle="1989454914">
+                <plugs>
+                    <plug name="Exponential" default="1"/>
+                    <plug name="Linear" default="2"/>
+                    <plug name="Decibel" default="3"/>
+                    <plug name="Decibel (old)=0" default="0"/>
+                    <plug/>
+                </plugs>
+                <structRect l="360" r="468" t="553" b="613"/>
+            </module>
+            <module type="SE Switch &gt; (Int)" handle="1360753336">
+                <plugs>
+                    <plug name="Exponential=1" id="2" idx="2"/>
+                    <plug name="Linear" id="3"/>
+                    <plug name="Decibel" id="4"/>
+                    <plug name="Decibel (old)=0" id="5"/>
+                    <plug id="6"/>
+                </plugs>
+                <structRect l="492" r="600" t="530" b="614"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="SE Switch &gt; (Int)" handle="118121766">
+                <plugs>
+                    <plug name="Env1" id="2" idx="2"/>
+                    <plug name="Env2" id="3"/>
+                    <plug id="4"/>
+                </plugs>
+                <structRect l="663" r="747" t="377" b="437"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="SE Int To List" handle="1723514783">
+                <structRect l="763" r="835" t="394" b="418"/>
+            </module>
+            <module type="VCA" handle="1546035956">
+                <structRect l="842" r="950" t="332" b="380"/>
+            </module>
+            <module type="SynthEdit ADSR" handle="1842085176">
+                <structRect l="186" r="282" t="484" b="580"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="SynthEdit ADSR" handle="1348210895">
+                <structRect l="183" r="279" t="92" b="188"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="Switch (Many-&gt;1)" handle="27949996">
+                <plugs>
+                    <plug name="Env1" idx="2"/>
+                    <plug name="Env2"/>
+                    <plug/>
+                </plugs>
+                <structRect l="546" r="630" t="331" b="391"/>
+            </module>
+            <module type="List Entry" handle="1370989445">
+                <plugs>
+                    <plug parameterId="-1" idx="10"/>
+                    <plug parameterId="-1"/>
+                </plugs>
+                <structRect l="656" r="764" t="273" b="329"/>
+                <panelRect l="312" r="312" t="240" b="240"/>
+            </module>
+            <module type="List Entry" handle="831060225">
+                <plugs>
+                    <plug parameterId="-1" idx="10"/>
+                    <plug parameterId="-1"/>
+                </plugs>
+                <structRect l="182" r="290" t="398" b="454"/>
+                <panelRect l="328" r="328" t="200" b="200"/>
+            </module>
+            <module type="VCA" handle="1961657014">
+                <structRect l="364" r="472" t="371" b="419"/>
+            </module>
+            <module type="VCA" handle="875794872">
+                <structRect l="363" r="471" t="312" b="360"/>
+            </module>
+            <module type="List Entry" handle="494767246">
+                <plugs>
+                    <plug parameterId="-1" idx="10"/>
+                    <plug parameterId="-1"/>
+                </plugs>
+                <structRect l="181" r="289" t="278" b="334"/>
+                <panelRect l="264" r="264" t="152" b="152"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="1961106562" lineType="1" fMod="1370989445" tMod="27949996" fPlg="6"/>
+            <line type="Line" handle="781220552" lineType="1" fMod="1348210895" tMod="875794872" fPlg="7" tPlg="1"/>
+            <line type="Line" handle="585643014" lineType="1" fMod="1842085176" tMod="1961657014" fPlg="7" tPlg="1"/>
+            <line type="Line" handle="1726993743" lineType="1" fMod="1348210895" tMod="27949996" fPlg="7" tPlg="2"/>
+            <line type="Line" handle="547275460" lineType="1" fMod="1842085176" tMod="27949996" fPlg="7" tPlg="3"/>
+            <line type="Line" handle="1497415179" lineType="1" fMod="27949996" tMod="1546035956" fPlg="1" tPlg="1"/>
+            <line type="Line" handle="286683801" lineType="1" fMod="118121766" tMod="1723514783" fPlg="1"/>
+            <line type="Line" handle="129136803" lineType="1" fMod="1723514783" tMod="1546035956" fPlg="1" tPlg="3"/>
+            <line type="Line" handle="1092325854" lineType="1" fMod="1370989445" tMod="118121766" fPlg="6"/>
+            <line type="Line" handle="1444242401" lineType="1" fMod="831060225" tMod="1961657014" fPlg="6" tPlg="3"/>
+            <line type="Line" handle="1183763576" lineType="1" fMod="1989454914" tMod="1360753336" tPlg="2"/>
+            <line type="Line" handle="159200892" lineType="1" fMod="1989454914" tMod="1360753336" fPlg="1" tPlg="3"/>
+            <line type="Line" handle="1736656584" lineType="1" fMod="1989454914" tMod="1360753336" fPlg="2" tPlg="4"/>
+            <line type="Line" handle="1414512882" lineType="1" fMod="1989454914" tMod="1360753336" fPlg="3" tPlg="5"/>
+            <line type="Line" handle="708770657" lineType="1" fMod="831060225" tMod="1360753336" fPlg="6"/>
+            <line type="Line" handle="1786383031" lineType="1" fMod="436927763" tMod="503150586" tPlg="2"/>
+            <line type="Line" handle="1377120739" lineType="1" fMod="436927763" tMod="503150586" fPlg="1" tPlg="3"/>
+            <line type="Line" handle="342497695" lineType="1" fMod="436927763" tMod="503150586" fPlg="2" tPlg="4"/>
+            <line type="Line" handle="1816232570" lineType="1" fMod="436927763" tMod="503150586" fPlg="3" tPlg="5"/>
+            <line type="Line" handle="1689372883" lineType="1" fMod="494767246" tMod="875794872" fPlg="6" tPlg="3"/>
+            <line type="Line" handle="1321907762" lineType="1" fMod="494767246" tMod="503150586" fPlg="6"/>
+            <line type="Line" handle="1627976191" lineType="1" fMod="503150586" tMod="118121766" fPlg="1" tPlg="2"/>
+            <line type="Line" handle="1169621090" lineType="1" fMod="1360753336" tMod="118121766" fPlg="1" tPlg="3"/>
+        </lines>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="30" r="530" t="30" b="330"/>
+        <StructLocation l="0" r="1267" t="0" b="939"/>
+        <PanelScroll x="0" y="0"/>
+        <StructScroll x="0" y="0"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="16" r="312" t="16" b="216"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="List Entry" class="1" name="List Entry" flags="4480" category="Controls">
+            <Parameters>
+                <Parameter id="0" datatype="enum" name="patchValue"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="MIDI In" datatype="midi" private="true"/>
+                <Pin name="MIDI Out" datatype="midi" direction="out" private="true"/>
+                <Pin name="MIDI Controller ID" datatype="enum" default="-1" private="true"/>
+                <Pin name="Ignore Program Change" datatype="bool" private="true"/>
+                <Pin name="MIDI NRPN" datatype="enum" private="true" metadata="range 0,16255"/>
+                <Pin name="Choice" datatype="enum" direction="out" autoConfigureParameter="true"/>
+                <Pin name="Appearance" datatype="enum" isMinimised="true" metadata="Combo Box=0, LED Stack, Labeled LED Stack, Selector, Button Stack, Rotary Switch, Rotary (No Text), Up/Down Select"/>
+                <Pin name="Show Title On Panel" datatype="bool" default="1" isMinimised="true"/>
+                <Pin name="patchValue" datatype="enum" private="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin id="10" name="patchValue" datatype="enum" direction="out" private="true" parameterId="0"/>
+                <Pin name="Hint" datatype="string" direction="out" isMinimised="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Int To List" class="1" name="Int To List" flags="4352" category="Conversion">
+            <Audio>
+                <Pin name="Signal in" datatype="int"/>
+                <Pin name="List Out" datatype="enum" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE Switch &gt; (Int)" name="Switch &gt; (Int)" flags="256" category="Switches">
+            <Audio>
+                <Pin name="Choice" datatype="enum" metadata="{AUTO}"/>
+                <Pin name="Output" datatype="int" direction="out"/>
+                <Pin name="Spare Input" datatype="int" autoRename="true" linearInput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE:Fixed Values_Int" class="1" name="Fixed Values (int)" flags="4352" category="Controls">
+            <Audio>
+                <Pin name="Spare Value" datatype="int" direction="out" autoRename="true" settableOutput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Switch (Many-&gt;1)" class="1" name="Switch (Many-&gt;1)" flags="4352" category="Flow Control">
+            <Audio>
+                <Pin name="Choice" datatype="enum" metadata="{AUTO}"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Spare Input" datatype="float" rate="audio" autoRename="true" linearInput="true" autoDuplicate="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SynthEdit ADSR" name="ADSR2" flags="256" category="Waveform" helpUrl="EnveloperAdsr.htm">
+            <Audio>
+                <Pin name="Trigger" datatype="float" rate="audio" default="0.1"/>
+                <Pin name="Gate" datatype="float" rate="audio" default="0.1"/>
+                <Pin name="Attack" datatype="float" rate="audio"/>
+                <Pin name="Decay" datatype="float" rate="audio" default="0.5"/>
+                <Pin name="Sustain" datatype="float" rate="audio" default="0.7"/>
+                <Pin name="Release" datatype="float" rate="audio" default="0.4"/>
+                <Pin name="Overall Level" datatype="float" rate="audio" default="1"/>
+                <Pin name="Signal Out" datatype="float" rate="audio" direction="out"/>
+                <Pin name="VoiceReset" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Active"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="VCA" class="1" name="VCA" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Signal" datatype="float" rate="audio" linearInput="true"/>
+                <Pin name="Volume" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Response Curve" datatype="enum" default="1" metadata="Exponential=1,Linear,Decibel,Decibel (old)=0"/>
+            </Audio>
+        </Plugin>
+    </PluginList>
+</Document>
