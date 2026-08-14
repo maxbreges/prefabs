@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Maxim Brezhestovski" vst_processor_id="{5CD761E0-3580-43F9-B84B-61F5AA6FF277}" vst_controller_id="{2791D7DE-0996-4B5F-A0C4-6D8EF018F666}" vst_4char_id="jk9l" vst_dll_name="Fretboards" vst_product="Fretboards" vst_flags="1" vst_preset_count="16">
-    <master_container type="Container" handle="170317284" name="Main" ViewOpenFlags="256" skin="default2">
+<Document file_format="150000" vst_latencyCompensation="1" vst_user_email="Maxim Brezhestovski" vst_processor_id="{5CD761E0-3580-43F9-B84B-61F5AA6FF277}" vst_controller_id="{2791D7DE-0996-4B5F-A0C4-6D8EF018F666}" SelectedViewHandle="1857722923" SelectedViewType="256" vst_4char_id="jk9l" vst_dll_name="Fretboards" vst_product="Fretboards" vst_flags="1" vst_preset_count="16">
+    <master_container type="Container" handle="170317284" name="Main" PanelLocationZoom="1" StructLocationZoom="1" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
         </plugs>
@@ -32,7 +32,7 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Container" handle="1857722923" name="Fretboards" skin="default2">
+            <module type="Container" handle="1857722923" name="Fretboards" PanelLocationZoom="1.0737423" StructLocationZoom="1" ViewOpenFlags="384" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -40,8 +40,30 @@
                     <plug name="MIDI Out" direction="1" datatype="2"/>
                     <plug/>
                 </plugs>
-                <structRect l="408" r="1056" t="156" b="432"/>
+                <structRect l="360" r="1032" t="156" b="448"/>
                 <modules>
+                    <module type="SE FloatToInt GUI" handle="2056280576">
+                        <structRect l="240" r="300" t="636" b="660"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE Listbox" handle="1637870911">
+                        <plugs>
+                            <plug default="50%=50, 75%=75, 100%=100, 125%=125, 150%=150" idx="1"/>
+                        </plugs>
+                        <structRect l="360" r="468" t="588" b="756"/>
+                        <panelRect l="760" r="832" t="144" b="240"/>
+                    </module>
+                    <module type="SE Float Function GUI" handle="1622684145">
+                        <plugs>
+                            <plug default="B*100" idx="2"/>
+                        </plugs>
+                        <structRect l="168" r="252" t="552" b="600"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
+                    <module type="SE: Plugin UI Scale" handle="157304995">
+                        <structRect l="60" r="120" t="552" b="564"/>
+                        <panelRect l="0" r="0" t="0" b="0"/>
+                    </module>
                     <module type="DAM_DSP Midi2 Fretboard Layers" handle="1696484231">
                         <plugs>
                             <plug default="0" idx="5"/>
@@ -72,14 +94,14 @@
                         <panelRect l="128" r="752" t="200" b="304"/>
                     </module>
                     <module type="SE BPM Tempo" handle="173601074">
-                        <structRect l="612" r="732" t="600" b="636"/>
+                        <structRect l="612" r="720" t="600" b="636"/>
                         <panelRect l="0" r="0" t="0" b="0"/>
                     </module>
                     <module type="DAM_DSP Midi2 Key Capture" handle="1438536354">
                         <plugs>
                             <plug default="-1" idx="3"/>
                         </plugs>
-                        <structRect l="672" r="744" t="48" b="84"/>
+                        <structRect l="672" r="732" t="48" b="84"/>
                         <panelRect l="296" r="296" t="208" b="208"/>
                     </module>
                     <module type="DisplayFret" handle="631041800">
@@ -113,22 +135,31 @@
                             <plug name="MIDI Out" datatype="2" tiedtomod="1857722923" tiedtopin="8"/>
                             <plug/>
                         </plugs>
-                        <structRect l="672" r="744" t="312" b="336"/>
+                        <structRect l="672" r="732" t="312" b="336"/>
                     </module>
                     <module type="IO Mod" handle="1668568354">
                         <plugs>
                             <plug name="MIDI In" direction="1" datatype="2" tiedtomod="1857722923" tiedtopin="7"/>
                             <plug/>
                         </plugs>
-                        <structRect l="24" r="96" t="36" b="60"/>
+                        <structRect l="24" r="84" t="36" b="60"/>
                     </module>
                     <module type="SE Rectangle XP" handle="474369693">
                         <plugs>
                             <plug default="f5400000" idx="5"/>
                             <plug default="f5400000"/>
                         </plugs>
-                        <structRect l="408" r="516" t="516" b="616"/>
+                        <structRect l="60" r="168" t="168" b="268"/>
                         <panelRect l="128" r="752" t="200" b="304"/>
+                    </module>
+                    <module type="SE Rectangle XP" handle="201415492">
+                        <plugs>
+                            <plug default="4"/>
+                            <plug default="f54555555" idx="5"/>
+                            <plug default="f5400000"/>
+                        </plugs>
+                        <structRect l="48" r="156" t="336" b="436"/>
+                        <panelRect l="768" r="816" t="136" b="240"/>
                     </module>
                 </modules>
                 <lines>
@@ -138,14 +169,19 @@
                     <line type="Line" handle="124932940" lineType="1" fMod="1668568354" tMod="1438536354" tPlg="2"/>
                     <line type="Line" handle="503865964" lineType="1" fMod="1438536354" tMod="1696484231" fPlg="1" tPlg="1"/>
                     <line type="Line" handle="1065495328" lineType="1" fMod="173601074" tMod="631041800" fPlg="3" tPlg="23"/>
+                    <line type="Line" handle="1103567270" lineType="1" fMod="157304995" tMod="1622684145" fPlg="1"/>
+                    <line type="Line" handle="2025519756" lineType="1" fMod="1622684145" tMod="2056280576" fPlg="1"/>
+                    <line type="Line" handle="1081177613" lineType="1" fMod="2056280576" tMod="1637870911" fPlg="1"/>
                 </lines>
-                <PanelWndPosition l="0" r="0" t="0" b="0"/>
-                <PanelLocation l="-52" r="1072" t="36" b="623"/>
-                <StructLocation l="5" r="1277" t="132" b="919"/>
-                <PanelScroll x="1" y="0"/>
-                <StructScroll x="0" y="0"/>
-                <PanelWndOffset cx="-99999" cy="-99999"/>
-                <panel_rect l="96" r="792" t="56" b="328"/>
+                <PanelLocationCenter x="1117.2" y="426.46152"/>
+                <StructLocationCenter x="636" y="423.5"/>
+                <PanelWndPosition l="59" r="715" t="125" b="365"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="867" y="176"/>
+                <StructScroll x="386" y="173"/>
+                <PanelWndOffset cx="-69" cy="45"/>
+                <panel_rect l="96" r="848" t="56" b="320"/>
             </module>
             <module type="Slider" handle="179646694" name="">
                 <plugs>
@@ -154,18 +190,18 @@
                     <plug parameterId="-1" idx="13"/>
                     <plug parameterId="-1"/>
                 </plugs>
-                <structRect l="36" r="120" t="156" b="218"/>
+                <structRect l="36" r="108" t="156" b="217"/>
                 <panelRect l="16" r="34" t="296" b="342"/>
             </module>
             <module type="MIDI Filter" handle="1634227705">
-                <structRect l="156" r="264" t="240" b="360"/>
+                <structRect l="156" r="252" t="240" b="360"/>
             </module>
             <module type="SE MIDI Player2" handle="1883034787">
                 <plugs>
                     <plug default="C:\Users\Public\Documents\MIDI\bwv 933 bass fingering.mid"/>
                     <plug default="1" idx="6"/>
                 </plugs>
-                <structRect l="168" r="252" t="132" b="192"/>
+                <structRect l="168" r="240" t="132" b="192"/>
                 <panelRect l="0" r="0" t="0" b="0"/>
             </module>
             <module type="SE Midi Monitor" handle="663502531">
@@ -176,7 +212,7 @@
                 <plugs>
                     <plug/>
                 </plugs>
-                <structRect l="636" r="684" t="36" b="48"/>
+                <structRect l="636" r="672" t="36" b="48"/>
             </module>
         </modules>
         <lines>
@@ -186,11 +222,13 @@
             <line type="Line" handle="816549470" lineType="1" fMod="1883034787" tMod="1857722923" fPlg="3" tPlg="7"/>
             <line type="Line" handle="332981723" lineType="1" fMod="1857722923" tMod="663502531" fPlg="8" tPlg="1"/>
         </lines>
+        <PanelLocationCenter x="435" y="277"/>
+        <StructLocationCenter x="679.5" y="449.5"/>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
-        <PanelLocation l="30" r="900" t="30" b="584"/>
-        <StructLocation l="0" r="1353" t="0" b="897"/>
-        <PanelScroll x="0" y="0"/>
-        <StructScroll x="3" y="1"/>
+        <PanelLocation l="0" r="500" t="0" b="500"/>
+        <StructLocation l="0" r="500" t="0" b="500"/>
+        <PanelScroll x="185" y="27"/>
+        <StructScroll x="429" y="199"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
         <panel_rect l="8" r="664" t="16" b="272"/>
     </master_container>
@@ -347,6 +385,32 @@
                 <Pin name="Processor Resumed" datatype="bool" direction="out"/>
             </Audio>
         </Plugin>
+        <Plugin id="SE Float Function GUI" name="Float Function" flags="384" category="Sub-Controls/Conversion" helpUrl="synthedit.chm::/mdl_sdk3/FloatFunction.htm">
+            <GUI>
+                <Pin name="A" datatype="float"/>
+                <Pin name="B" datatype="float" direction="out"/>
+                <Pin name="Formula: A=" datatype="string" default="B*2"/>
+                <Pin name="Formula: B=" datatype="string" default="A/2"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE FloatToInt GUI" name="Float To Int" flags="33554816" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Float Val" datatype="float"/>
+                <Pin name="Int Val" datatype="int" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE Listbox" name="Listbox" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Choice" datatype="int"/>
+                <Pin name="Item List" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+            </GUI>
+        </Plugin>
         <Plugin id="SE MIDI Player2" name="MIDI Player2" flags="256" category="MIDI">
             <Audio>
                 <Pin name="File Name" datatype="string" default="popcorn" isFilename="true" metadata="mid"/>
@@ -382,12 +446,18 @@
                 <Pin name="Bottom Color" datatype="string" default="FF858595"/>
             </GUI>
         </Plugin>
-        <Plugin id="Slider" class="1" name="Slider" flags="4480" category="Controls">
+        <Plugin id="SE: Plugin UI Scale" name="Plugin UI Scale" flags="384" category="Special">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Host UI Scale" datatype="float" private="true" hostConnect="Plugin/UIScale"/>
+                <Pin name="UI Scale" datatype="float" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="Slider" class="1" name="Slider" flags="4480" category="Old">
             <Parameters>
                 <Parameter id="0" datatype="float" name="patchValue"/>
             </Parameters>
             <Audio>
-                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+                <Pin name="Channel" datatype="enum" default="-1" private="true" ignorePatchChange="true"/>
                 <Pin name="MIDI In" datatype="midi" private="true"/>
                 <Pin name="MIDI Out" datatype="midi" direction="out" private="true"/>
                 <Pin name="MIDI Controller ID" datatype="enum" default="-1" private="true"/>

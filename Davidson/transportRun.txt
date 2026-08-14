@@ -1,0 +1,50 @@
+        if (pinTransportRun) // If transport is running
+        {
+            // Handle NoteOn message
+            if (header.status == gmpi::midi_2_0::NoteOn)
+            {
+                if (chan < lastNote.size() && (!isActive[chan] || noteNumber != lastNote[chan]))
+                {
+                    lastNote[chan] = noteNumber;
+                    isActive[chan] = true; // Set active state
+                    setPinValue(chan, noteNumber); // Call a helper function to set the pin value
+                }
+            }
+            // Handle NoteOff message
+            else if (header.status == gmpi::midi_2_0::NoteOff)
+            {
+                if (chan < lastNote.size() && isActive[chan])
+                {
+                    lastNote[chan] = 0; // Clear the note
+                    isActive[chan] = false; // Update the active state
+                    setPinValue(chan, 0); // Set the pin value to 0 on Note Off
+                }
+            }
+        }
+        else // If transport is NOT running
+        {
+            // Handle NoteOn message
+            if (header.status == gmpi::midi_2_0::NoteOn)
+            {
+                // If the incoming channel is different from the last active one
+                for (int i = 0; i < lastNote.size(); ++i)
+                {
+                    if (isActive[i] && i != chan)
+                    {
+                        // Send NoteOff for the active channel that is not the current one
+                        setPinValue(i, 0); // Send NoteOff for the previous channel
+                        lastNote[i] = 0;   // Clear the note
+                        isActive[i] = false; // Update the active state
+                    }
+                }
+
+                // Now process the current NoteOn
+                if (chan < lastNote.size() && (!isActive[chan] || noteNumber != lastNote[chan]))
+                {
+                    lastNote[chan] = noteNumber;
+                    isActive[chan] = true; // Set active state
+                    setPinValue(chan, noteNumber); // Set the pin value for the new NoteOn
+                }
+            }
+            // NoteOff messages will be ignored; no changes to isActive or lastNote should happen here
+        }
