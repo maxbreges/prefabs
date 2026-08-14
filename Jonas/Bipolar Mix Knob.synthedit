@@ -24,26 +24,40 @@
             </Parameters>
         </PatchManager>
         <modules>
-            <module type="Container" handle="264215577" name="Bipolar knob mix" skin="default2">
+            <module type="Container" handle="264215577" name="Bipolar knob mix" ViewOpenFlags="256" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
                     <plug name="Signal Out" direction="1" idx="7"/>
                     <plug/>
                 </plugs>
-                <structRect l="60" r="420" t="132" b="348"/>
+                <structRect l="24" r="384" t="60" b="276"/>
                 <modules>
+                    <module type="Multiply" handle="1010875561">
+                        <plugs>
+                            <plug default="-1" idx="1"/>
+                        </plugs>
+                        <structRect l="360" r="420" t="588" b="624"/>
+                    </module>
+                    <module type="Comparator" handle="965076696" name="Hi 1v, Lo 0.5v">
+                        <plugs>
+                            <plug default="0"/>
+                            <plug default="1" idx="3"/>
+                            <plug default="0.5"/>
+                        </plugs>
+                        <structRect l="252" r="336" t="600" b="660"/>
+                    </module>
                     <module type="Multiply" handle="536625652">
                         <plugs>
                             <plug default="-1" idx="1"/>
                         </plugs>
-                        <structRect l="288" r="348" t="300" b="336"/>
+                        <structRect l="312" r="372" t="300" b="336"/>
                     </module>
                     <module type="FloatToVolts" handle="694183525">
-                        <structRect l="144" r="228" t="300" b="336"/>
+                        <structRect l="132" r="216" t="276" b="312"/>
                     </module>
                     <module type="SE Scope3 XP" handle="120710516">
-                        <structRect l="516" r="708" t="396" b="576"/>
+                        <structRect l="636" r="828" t="384" b="564"/>
                         <panelRect l="152" r="372" t="32" b="208"/>
                     </module>
                     <module type="Fixed Values" handle="1373704883">
@@ -51,48 +65,48 @@
                             <plug name="-5" default="-5"/>
                             <plug/>
                         </plugs>
-                        <structRect l="168" r="252" t="492" b="516"/>
+                        <structRect l="312" r="396" t="456" b="480"/>
                     </module>
                     <module type="DoubleClick" handle="321499255">
-                        <structRect l="192" r="288" t="60" b="108"/>
+                        <structRect l="180" r="276" t="36" b="84"/>
                         <panelRect l="320" r="320" t="216" b="216"/>
                     </module>
-                    <module type="Oscillator" handle="1831402567">
+                    <module type="Oscillator" handle="1831402567" name="Pulse">
                         <plugs>
                             <plug default="4" idx="2"/>
                         </plugs>
-                        <structRect l="48" r="132" t="564" b="648"/>
+                        <structRect l="36" r="120" t="540" b="624"/>
                     </module>
-                    <module type="Oscillator" handle="1339440276">
+                    <module type="Oscillator" handle="1339440276" name="Noise">
                         <plugs>
                             <plug default="5" idx="2"/>
                         </plugs>
-                        <structRect l="48" r="132" t="456" b="540"/>
+                        <structRect l="36" r="120" t="432" b="516"/>
                     </module>
-                    <module type="Oscillator" handle="526099181">
+                    <module type="Oscillator" handle="526099181" name="Sine">
                         <plugs>
                             <plug default="0" idx="2"/>
                         </plugs>
-                        <structRect l="48" r="132" t="348" b="432"/>
+                        <structRect l="36" r="120" t="324" b="408"/>
                     </module>
                     <module type="X-Mix" handle="1364148602" name="X-Mix +5">
                         <plugs>
                             <plug default="0" idx="4"/>
                         </plugs>
-                        <structRect l="348" r="432" t="552" b="600"/>
+                        <structRect l="492" r="576" t="540" b="588"/>
                     </module>
                     <module type="X-Mix" handle="736572754" name="X-Mix -5">
                         <plugs>
                             <plug default="0" idx="4"/>
                         </plugs>
-                        <structRect l="348" r="432" t="396" b="444"/>
+                        <structRect l="492" r="576" t="384" b="432"/>
                     </module>
                     <module type="SE PatchMemory Float" handle="428301913" name="Low 10v High -10v">
-                        <structRect l="24" r="144" t="192" b="276"/>
+                        <structRect l="12" r="132" t="168" b="252"/>
                         <panelRect l="376" r="376" t="160" b="160"/>
                     </module>
                     <module type="SE Vector Pan Knob" handle="511221290">
-                        <structRect l="384" r="528" t="96" b="288"/>
+                        <structRect l="372" r="516" t="72" b="264"/>
                         <panelRect l="32" r="132" t="72" b="172"/>
                     </module>
                     <module type="IO Mod" handle="1502016824">
@@ -100,17 +114,15 @@
                             <plug name="Signal Out" tiedtomod="264215577" tiedtopin="7"/>
                             <plug/>
                         </plugs>
-                        <structRect l="564" r="648" t="612" b="636"/>
+                        <structRect l="612" r="696" t="636" b="660"/>
                     </module>
                 </modules>
                 <lines>
-                    <line type="Line" handle="2120582599" lineType="1" fMod="694183525" tMod="1364148602" fPlg="2" tPlg="2"/>
                     <line type="Line" handle="823707334" lineType="1" fMod="428301913" tMod="694183525" fPlg="13" tPlg="1"/>
                     <line type="Line" handle="874170333" lineType="1" fMod="526099181" tMod="736572754" fPlg="3"/>
                     <line type="Line" handle="547051483" lineType="1" fMod="1339440276" tMod="736572754" fPlg="3" tPlg="1"/>
                     <line type="Line" handle="2009223680" lineType="1" fMod="428301913" tMod="511221290" fPlg="8"/>
                     <line type="Line" handle="1124121699" lineType="1" fMod="428301913" tMod="321499255" fPlg="8" tPlg="4"/>
-                    <line type="Line" handle="1276453147" lineType="1" fMod="1373704883" tMod="736572754" tPlg="2"/>
                     <line type="Line" handle="1318919779" lineType="1" fMod="428301913" tMod="511221290" fPlg="11" tPlg="4"/>
                     <line type="Line" handle="44737834" lineType="1" fMod="428301913" tMod="321499255" fPlg="11"/>
                     <line type="Line" handle="1745591134" lineType="1" fMod="1364148602" tMod="1502016824" fPlg="3"/>
@@ -120,10 +132,15 @@
                     <line type="Line" handle="1954978921" lineType="1" fMod="694183525" tMod="536625652" fPlg="2"/>
                     <line type="Line" handle="1744219290" lineType="1" fMod="1831402567" tMod="1364148602" fPlg="3"/>
                     <line type="Line" handle="965483308" lineType="1" fMod="736572754" tMod="1364148602" fPlg="3" tPlg="1"/>
+                    <line type="Line" handle="1242838728" lineType="1" fMod="1373704883" tMod="736572754" tPlg="2"/>
+                    <line type="Line" handle="2001921892" lineType="1" fMod="694183525" tMod="965076696" fPlg="2" tPlg="1"/>
+                    <line type="Line" handle="850777897" lineType="1" fMod="694183525" tMod="1010875561" fPlg="2"/>
+                    <line type="Line" handle="1570084506" lineType="1" fMod="965076696" tMod="1010875561" fPlg="2" tPlg="1"/>
+                    <line type="Line" handle="556319202" lineType="1" fMod="1010875561" tMod="1364148602" fPlg="2" tPlg="2"/>
                 </lines>
                 <PanelWndPosition l="152" r="152" t="160" b="160"/>
                 <PanelLocation l="30" r="703" t="30" b="524"/>
-                <StructLocation l="148" r="1386" t="61" b="853"/>
+                <StructLocation l="578" r="1443" t="3" b="757"/>
                 <PanelScroll x="0" y="0"/>
                 <StructScroll x="0" y="0"/>
                 <PanelWndOffset cx="-99999" cy="-99999"/>
@@ -135,7 +152,7 @@
                     <plug name="Signal Out"/>
                     <plug/>
                 </plugs>
-                <structRect l="480" r="564" t="144" b="180"/>
+                <structRect l="444" r="528" t="72" b="108"/>
             </module>
         </modules>
         <lines>
@@ -144,13 +161,22 @@
         </lines>
         <PanelWndPosition l="0" r="0" t="0" b="0"/>
         <PanelLocation l="30" r="530" t="30" b="330"/>
-        <StructLocation l="0" r="1202" t="0" b="873"/>
+        <StructLocation l="0" r="565" t="0" b="399"/>
         <PanelScroll x="0" y="0"/>
         <StructScroll x="0" y="0"/>
         <PanelWndOffset cx="-99999" cy="-99999"/>
         <panel_rect l="16" r="312" t="16" b="216"/>
     </master_container>
     <PluginList>
+        <Plugin id="Comparator" class="1" name="Comparator" flags="4352" category="Modifiers">
+            <Audio>
+                <Pin name="Input A" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Input B" datatype="float" rate="audio" default="0.8"/>
+                <Pin name="Output" datatype="float" rate="audio" direction="out"/>
+                <Pin name="Hi Out Val" datatype="float" default="5"/>
+                <Pin name="Lo Out Val" datatype="float" default="-5"/>
+            </Audio>
+        </Plugin>
         <Plugin id="Container" class="1" name="Container" flags="384" category="">
             <Audio>
                 <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
