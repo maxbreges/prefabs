@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document file_format="150000" vst_latencyCompensation="1" SelectedViewHandle="1534808156" SelectedViewType="256" emulate_ignore_pc="true" vst_preset_count="64" vst_version="1.0.0">
+    <WindowLayout>
+        <MainWindow l="-8" t="-8" r="1928" b="1040" monitor="\\.\DISPLAY1" ml="0" mt="0" mr="1920" mb="1080"/>
+    </WindowLayout>
+    <master_container type="Container" handle="1534808156" name="Main" PanelLocationZoom="1" StructLocationZoom="1" ViewOpenFlags="384" skin="default3">
+        <plugs>
+            <plug idx="7"/>
+        </plugs>
+        <structRect l="0" r="0" t="0" b="0"/>
+        <PatchManager>
+            <ProgramNames/>
+            <Parameters>
+                <param type="10" handle="686160423" private="true" hostControl="49">
+                    <patch-list>
+                        <s repeat="128"></s>
+                    </patch-list>
+                </param>
+                <param type="8" handle="974061025" module="1053853591" moduleParamId="0">
+                    <patch-list>
+                        <s>4</s>
+                        <s repeat="127">0</s>
+                    </patch-list>
+                </param>
+                <param type="1" handle="1699740658" module="54711051" moduleParamId="2">
+                    <patch-list>
+                        <s>ffff6600</s>
+                        <s repeat="127"></s>
+                    </patch-list>
+                </param>
+            </Parameters>
+        </PatchManager>
+        <modules>
+            <module type="Container" handle="596346532" name="LED2" PanelLocationZoom="1" StructLocationZoom="1" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Modified" datatype="4"/>
+                    <plug name="Bool Val" direction="1" datatype="4"/>
+                    <plug/>
+                </plugs>
+                <structRect l="4008" r="4068" t="4164" b="4236"/>
+                <modules>
+                    <module type="SE FloatToBool GUI" handle="16548152">
+                        <structRect l="228" r="300" t="144" b="168"/>
+                        <panelRect l="64" r="64" t="40" b="40"/>
+                    </module>
+                    <module type="SE BoolToFloat GUI" handle="4538126">
+                        <structRect l="216" r="288" t="60" b="84"/>
+                        <panelRect l="72" r="72" t="56" b="56"/>
+                    </module>
+                    <module type="Image3" handle="1731119890">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="1255088817" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                            <plug default="0.5" idx="12"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="IO Mod" handle="2145685637">
+                        <plugs>
+                            <plug name="Modified" direction="1" datatype="4" tiedtomod="596346532" tiedtopin="7"/>
+                            <plug name="Bool Val" datatype="4" tiedtomod="596346532" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="78"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="2095832960" lineType="1" fMod="16548152" tMod="2145685637" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1482207972" lineType="1" fMod="4538126" tMod="16548152" fPlg="1"/>
+                    <line type="Line" handle="331110926" lineType="1" fMod="2145685637" tMod="4538126"/>
+                    <line type="Line" handle="1372641784" lineType="1" fMod="4538126" tMod="1731119890" fPlg="1"/>
+                </lines>
+                <PanelLocationCenter x="55.5" y="31.5"/>
+                <StructLocationCenter x="364.5" y="233"/>
+                <PanelWndPosition l="3952" r="3972" t="3992" b="4012"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="-194" y="-218"/>
+                <StructScroll x="114" y="-17"/>
+                <PanelWndOffset cx="3906" cy="3968"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="SE IntToText GUI" handle="676484451">
+                <structRect l="3744" r="3792" t="3888" b="3912"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="PopUpMenu" handle="261787805">
+                <plugs>
+                    <plug default="range 0,5" idx="1"/>
+                </plugs>
+                <structRect l="4176" r="4284" t="3804" b="4008"/>
+                <panelRect l="4080" r="4180" t="3784" b="3884"/>
+            </module>
+            <module type="SE PatchMemory Int" handle="1053853591">
+                <structRect l="3612" r="3708" t="3792" b="3888"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+            <module type="Container" handle="1421085036" name="LED2" PanelLocationZoom="1" StructLocationZoom="1" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Modified" datatype="4"/>
+                    <plug name="Bool Val" direction="1" datatype="4"/>
+                    <plug/>
+                </plugs>
+                <structRect l="4008" r="4068" t="4080" b="4152"/>
+                <modules>
+                    <module type="SE FloatToBool GUI" handle="1274669877">
+                        <structRect l="228" r="300" t="144" b="168"/>
+                        <panelRect l="64" r="64" t="40" b="40"/>
+                    </module>
+                    <module type="SE BoolToFloat GUI" handle="1406071872">
+                        <structRect l="216" r="288" t="60" b="84"/>
+                        <panelRect l="72" r="72" t="56" b="56"/>
+                    </module>
+                    <module type="Image3" handle="1344681057">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="482145076" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                            <plug default="0.5" idx="12"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="IO Mod" handle="1245097615">
+                        <plugs>
+                            <plug name="Modified" direction="1" datatype="4" tiedtomod="1421085036" tiedtopin="7"/>
+                            <plug name="Bool Val" datatype="4" tiedtomod="1421085036" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="78"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1676247311" lineType="1" fMod="1274669877" tMod="1245097615" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1666869260" lineType="1" fMod="1406071872" tMod="1274669877" fPlg="1"/>
+                    <line type="Line" handle="112188957" lineType="1" fMod="1245097615" tMod="1406071872"/>
+                    <line type="Line" handle="125636635" lineType="1" fMod="1406071872" tMod="1344681057" fPlg="1"/>
+                </lines>
+                <PanelLocationCenter x="55.5" y="31.5"/>
+                <StructLocationCenter x="364.5" y="233"/>
+                <PanelWndPosition l="3888" r="3908" t="3920" b="3940"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="-194" y="-218"/>
+                <StructScroll x="114" y="-17"/>
+                <PanelWndOffset cx="3842" cy="3896"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="exKnob" handle="54711051">
+                <plugs>
+                    <plug default="6" idx="8"/>
+                </plugs>
+                <structRect l="3720" r="3828" t="3960" b="4188"/>
+                <panelRect l="3934" r="4034" t="3934" b="4034"/>
+            </module>
+            <module type="Container" handle="1974102936" name="LED2" PanelLocationZoom="1" StructLocationZoom="1" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Modified" datatype="4"/>
+                    <plug name="Bool Val" direction="1" datatype="4"/>
+                    <plug/>
+                </plugs>
+                <structRect l="4008" r="4068" t="3996" b="4068"/>
+                <modules>
+                    <module type="SE FloatToBool GUI" handle="231805825">
+                        <structRect l="228" r="300" t="144" b="168"/>
+                        <panelRect l="64" r="64" t="40" b="40"/>
+                    </module>
+                    <module type="SE BoolToFloat GUI" handle="1443553711">
+                        <structRect l="216" r="288" t="60" b="84"/>
+                        <panelRect l="72" r="72" t="56" b="56"/>
+                    </module>
+                    <module type="Image3" handle="983616654">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="1055143943" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                            <plug default="0.5" idx="12"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="IO Mod" handle="377992505">
+                        <plugs>
+                            <plug name="Modified" direction="1" datatype="4" tiedtomod="1974102936" tiedtopin="7"/>
+                            <plug name="Bool Val" datatype="4" tiedtomod="1974102936" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="78"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1814765199" lineType="1" fMod="231805825" tMod="377992505" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1564149175" lineType="1" fMod="1443553711" tMod="231805825" fPlg="1"/>
+                    <line type="Line" handle="1093994055" lineType="1" fMod="377992505" tMod="1443553711"/>
+                    <line type="Line" handle="1630955325" lineType="1" fMod="1443553711" tMod="983616654" fPlg="1"/>
+                </lines>
+                <PanelLocationCenter x="55.5" y="31.5"/>
+                <StructLocationCenter x="364.5" y="233"/>
+                <PanelWndPosition l="3888" r="3908" t="3904" b="3924"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="-194" y="-218"/>
+                <StructScroll x="114" y="-17"/>
+                <PanelWndOffset cx="3842" cy="3880"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="Container" handle="1055864331" name="LED2" PanelLocationZoom="1" StructLocationZoom="1" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Modified" datatype="4"/>
+                    <plug name="Bool Val" direction="1" datatype="4"/>
+                    <plug/>
+                </plugs>
+                <structRect l="4008" r="4068" t="3912" b="3984"/>
+                <modules>
+                    <module type="SE FloatToBool GUI" handle="1071505147">
+                        <structRect l="228" r="300" t="144" b="168"/>
+                        <panelRect l="64" r="64" t="40" b="40"/>
+                    </module>
+                    <module type="SE BoolToFloat GUI" handle="1127972735">
+                        <structRect l="216" r="288" t="60" b="84"/>
+                        <panelRect l="72" r="72" t="56" b="56"/>
+                    </module>
+                    <module type="Image3" handle="141228503">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="57659465" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                            <plug default="0.5" idx="12"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="IO Mod" handle="1498314918">
+                        <plugs>
+                            <plug name="Modified" direction="1" datatype="4" tiedtomod="1055864331" tiedtopin="7"/>
+                            <plug name="Bool Val" datatype="4" tiedtomod="1055864331" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="78"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="1248054879" lineType="1" fMod="1071505147" tMod="1498314918" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="662675664" lineType="1" fMod="1127972735" tMod="1071505147" fPlg="1"/>
+                    <line type="Line" handle="60517504" lineType="1" fMod="1498314918" tMod="1127972735"/>
+                    <line type="Line" handle="1397727450" lineType="1" fMod="1127972735" tMod="141228503" fPlg="1"/>
+                </lines>
+                <PanelLocationCenter x="55.5" y="31.5"/>
+                <StructLocationCenter x="364.5" y="233"/>
+                <PanelWndPosition l="3928" r="3948" t="3944" b="3964"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="-194" y="-218"/>
+                <StructScroll x="114" y="-17"/>
+                <PanelWndOffset cx="3882" cy="3920"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="Container" handle="63480414" name="LED2" PanelLocationZoom="1" StructLocationZoom="1" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Modified" datatype="4"/>
+                    <plug name="Bool Val" direction="1" datatype="4"/>
+                    <plug/>
+                </plugs>
+                <structRect l="4008" r="4068" t="3828" b="3900"/>
+                <modules>
+                    <module type="SE FloatToBool GUI" handle="485197450">
+                        <structRect l="228" r="300" t="144" b="168"/>
+                        <panelRect l="64" r="64" t="40" b="40"/>
+                    </module>
+                    <module type="SE BoolToFloat GUI" handle="553130231">
+                        <structRect l="216" r="288" t="60" b="84"/>
+                        <panelRect l="72" r="72" t="56" b="56"/>
+                    </module>
+                    <module type="Image3" handle="1112702588">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="530632267" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                            <plug default="0.5" idx="12"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="IO Mod" handle="1491829458">
+                        <plugs>
+                            <plug name="Modified" direction="1" datatype="4" tiedtomod="63480414" tiedtopin="7"/>
+                            <plug name="Bool Val" datatype="4" tiedtomod="63480414" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="78"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="2138483474" lineType="1" fMod="485197450" tMod="1491829458" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="742016340" lineType="1" fMod="553130231" tMod="485197450" fPlg="1"/>
+                    <line type="Line" handle="161195651" lineType="1" fMod="1491829458" tMod="553130231"/>
+                    <line type="Line" handle="1951383572" lineType="1" fMod="553130231" tMod="1112702588" fPlg="1"/>
+                </lines>
+                <PanelLocationCenter x="55.5" y="31.5"/>
+                <StructLocationCenter x="364.5" y="233"/>
+                <PanelWndPosition l="3928" r="3948" t="3928" b="3948"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="-194" y="-218"/>
+                <StructScroll x="114" y="-17"/>
+                <PanelWndOffset cx="3882" cy="3904"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="Container" handle="163614558" name="LED2" PanelLocationZoom="1" StructLocationZoom="1" m_locked="true" skin="default">
+                <plugs>
+                    <plug default="1" idx="1"/>
+                    <plug default="1"/>
+                    <plug default="1"/>
+                    <plug default="0" idx="5"/>
+                    <plug default="2"/>
+                    <plug name="Modified" datatype="4"/>
+                    <plug name="Bool Val" direction="1" datatype="4"/>
+                    <plug/>
+                </plugs>
+                <structRect l="4008" r="4068" t="3744" b="3816"/>
+                <modules>
+                    <module type="SE FloatToBool GUI" handle="1281070395">
+                        <structRect l="228" r="300" t="144" b="168"/>
+                        <panelRect l="64" r="64" t="40" b="40"/>
+                    </module>
+                    <module type="SE BoolToFloat GUI" handle="137385488">
+                        <structRect l="216" r="288" t="60" b="84"/>
+                        <panelRect l="72" r="72" t="56" b="56"/>
+                    </module>
+                    <module type="Image3" handle="1829327811">
+                        <plugs>
+                            <plug default="led2.bmp" idx="1"/>
+                        </plugs>
+                        <structRect l="481" r="601" t="42" b="150"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="SE ImageTinted XP" handle="374671938" name="Tinted Bitmap Image">
+                        <plugs>
+                            <plug default="led2_L2.bmp" idx="1"/>
+                            <plug default="0.5" idx="12"/>
+                        </plugs>
+                        <structRect l="470" r="590" t="184" b="328"/>
+                        <panelRect l="46" r="66" t="24" b="44"/>
+                    </module>
+                    <module type="IO Mod" handle="13939951">
+                        <plugs>
+                            <plug name="Modified" direction="1" datatype="4" tiedtomod="163614558" tiedtopin="7"/>
+                            <plug name="Bool Val" datatype="4" tiedtomod="163614558" tiedtopin="8"/>
+                            <plug/>
+                        </plugs>
+                        <structRect l="9" r="81" t="42" b="78"/>
+                    </module>
+                </modules>
+                <lines>
+                    <line type="Line" handle="455407839" lineType="1" fMod="1281070395" tMod="13939951" fPlg="1" tPlg="1"/>
+                    <line type="Line" handle="1757421680" lineType="1" fMod="137385488" tMod="1281070395" fPlg="1"/>
+                    <line type="Line" handle="1119726544" lineType="1" fMod="13939951" tMod="137385488"/>
+                    <line type="Line" handle="874656706" lineType="1" fMod="137385488" tMod="1829327811" fPlg="1"/>
+                </lines>
+                <PanelLocationCenter x="55.5" y="31.5"/>
+                <StructLocationCenter x="364.5" y="233"/>
+                <PanelWndPosition l="3840" r="3860" t="3856" b="3876"/>
+                <PanelLocation l="0" r="500" t="0" b="500"/>
+                <StructLocation l="0" r="500" t="0" b="500"/>
+                <PanelScroll x="-194" y="-218"/>
+                <StructScroll x="114" y="-17"/>
+                <PanelWndOffset cx="3794" cy="3832"/>
+                <panel_rect l="0" r="93" t="0" b="45"/>
+            </module>
+            <module type="SE:Int to Bools2" handle="1009490952">
+                <plugs>
+                    <plug default="1"/>
+                    <plug name="Modified"/>
+                    <plug name="Modified" id="2"/>
+                    <plug name="Modified" id="3"/>
+                    <plug name="Modified" id="4"/>
+                    <plug name="Modified" id="5"/>
+                    <plug name="Modified" id="6"/>
+                    <plug id="7"/>
+                </plugs>
+                <structRect l="3864" r="3924" t="3900" b="3996"/>
+                <panelRect l="0" r="0" t="0" b="0"/>
+            </module>
+        </modules>
+        <lines>
+            <line type="Line" handle="78923152" lineType="1" fMod="1009490952" tMod="163614558" fPlg="1" tPlg="7"/>
+            <line type="Line" handle="509454768" lineType="1" fMod="1009490952" tMod="63480414" fPlg="2" tPlg="7"/>
+            <line type="Line" handle="481312842" lineType="1" fMod="1009490952" tMod="1055864331" fPlg="3" tPlg="7"/>
+            <line type="Line" handle="1109177705" lineType="1" fMod="1009490952" tMod="1974102936" fPlg="4" tPlg="7"/>
+            <line type="Line" handle="2035662470" lineType="1" fMod="1009490952" tMod="1421085036" fPlg="5" tPlg="7"/>
+            <line type="Line" handle="1892770357" lineType="1" fMod="1053853591" tMod="1009490952" fPlg="7"/>
+            <line type="Line" handle="1226141132" lineType="1" fMod="1053853591" tMod="54711051" fPlg="7" tPlg="9"/>
+            <line type="Line" handle="1193659299" lineType="1" fMod="1053853591" tMod="261787805" fPlg="7"/>
+            <line type="Line" handle="2092081586" lineType="1" fMod="1053853591" tMod="676484451" fPlg="7"/>
+            <line type="Line" handle="1451737631" lineType="1" fMod="676484451" tMod="261787805" fPlg="1" tPlg="8"/>
+            <line type="Line" handle="2079412155" lineType="1" fMod="1009490952" tMod="596346532" fPlg="6" tPlg="7"/>
+        </lines>
+        <PanelLocationCenter x="3984" y="3911.5"/>
+        <StructLocationCenter x="3984" y="3984"/>
+        <PanelWndPosition l="0" r="0" t="0" b="0"/>
+        <PanelLocation l="0" r="500" t="0" b="500"/>
+        <StructLocation l="0" r="500" t="0" b="500"/>
+        <PanelScroll x="3734" y="3661"/>
+        <StructScroll x="3734" y="3734"/>
+        <PanelWndOffset cx="-99999" cy="-99999"/>
+        <panel_rect l="3732" r="4212" t="3732" b="4212"/>
+    </master_container>
+    <PluginList>
+        <Plugin id="Container" class="1" name="Container" flags="384" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+                <Pin name="Polyphony" datatype="enum" default="6" private="true" isMinimised="true" metadata="range 1,128"/>
+                <Pin name="MIDI Automation" datatype="bool" private="true" isMinimised="true"/>
+                <Pin name="Show Controls" datatype="enum" private="true" isMinimised="true" metadata="Off,On Panel,On Module"/>
+            </Audio>
+            <GUI>
+                <Pin name="Controls on Parent" datatype="bool" direction="out" isMinimised="true"/>
+                <Pin name="Controls on Module" datatype="bool" noAutomation="true"/>
+                <Pin name="Visible" datatype="bool"/>
+                <Pin name="Ignore Program Change" datatype="bool" noAutomation="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
+            <Audio>
+                <Pin name="Spare" datatype="float" rate="audio" autoRename="true" autoDuplicate="true" isContainerIoPlug="true"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="Image3" name="Image2" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Filename" datatype="string" default="knob_sm" isFilename="true" metadata="bmp"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Frame Count" datatype="int" private="true"/>
+                <Pin name="Frame Count" datatype="int" direction="out"/>
+                <Pin name="Mouse Response" datatype="enum" default="-1" isMinimised="true" metadata="off=-2, auto=-1, vertical=0, horizontal=1, clicks=2, rotary=3, step=4"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="PopUpMenu" name="Pop-Up Menu" flags="384" category="mx/Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Choice" datatype="int"/>
+                <Pin name="Item List" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Heading" datatype="string"/>
+                <Pin name="Momentary" datatype="bool"/>
+                <Pin name="Enable Special Strings" datatype="bool" default="1" private="true"/>
+                <Pin name="Pop-Up open" datatype="bool" direction="out"/>
+                <Pin name="Open externally" datatype="bool"/>
+                <Pin name="Selection" datatype="string"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE BoolToFloat GUI" name="Bool To Float" flags="33554816" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Bool Val" datatype="bool"/>
+                <Pin name="Float Val" datatype="float" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE FloatToBool GUI" name="Float To Bool" flags="33554816" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Float Val" datatype="float"/>
+                <Pin name="Bool Val" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE ImageTinted XP" name="Image Tinted (XP)" flags="384" category="Debug/DirectX" deprecated="true">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Filename" datatype="string" default="knob_sm" isFilename="true" metadata="bmp"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Frame Count" datatype="int" private="true"/>
+                <Pin name="Frame Count" datatype="int" direction="out"/>
+                <Pin name="Hue" datatype="float" direction="out" private="true"/>
+                <Pin name="Saturation" datatype="float" direction="out" private="true"/>
+                <Pin name="Brightness" datatype="float" direction="out" private="true"/>
+                <Pin name="Hue" datatype="float"/>
+                <Pin name="Saturation" datatype="float" default="1"/>
+                <Pin name="Brightness" datatype="float" default="1"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE IntToText GUI" name="Int To Text" flags="33554816" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
+            <GUI>
+                <Pin name="Int Val" datatype="int"/>
+                <Pin name="Text Val" datatype="string" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE PatchMemory Int" name="PatchMemory Int" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="int" name=""/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Value Out" datatype="int" direction="out" autoConfigureParameter="true"/>
+            </Audio>
+            <GUI>
+                <Pin name="Value In" datatype="int" private="true" parameterId="0"/>
+                <Pin name="Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin name="Mouse Down" datatype="bool" private="true" parameterId="0" parameterField="Grab"/>
+                <Pin name="AnimationIn" datatype="float" private="true" parameterId="0" parameterField="Normalized"/>
+                <Pin name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="int" direction="out"/>
+                <Pin name="Animation Position" datatype="float" direction="out"/>
+                <Pin name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out"/>
+                <Pin name="Hint In" datatype="string_utf8" private="true" parameterId="0" parameterField="Hint"/>
+                <Pin name="Hint" datatype="string_utf8" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE:Int to Bools2" name="Int to Bools2" flags="384" category="Sub-Controls/Conversion">
+            <GUI>
+                <Pin name="Value" datatype="int"/>
+                <Pin name="Spare" datatype="bool" direction="out" autoRename="true" autoDuplicate="true"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="exKnob" name="exKnob" flags="384" category="mx/Sub-Controls">
+            <Parameters>
+                <Parameter id="2" datatype="string" name=""/>
+            </Parameters>
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Animation Position" datatype="float"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool"/>
+                <Pin name="Background" datatype="string" default="FF000000" private="true"/>
+                <Pin name="Line Color" datatype="string" default="FFFFFFFF"/>
+                <Pin name="Read-only" datatype="bool" isMinimised="true"/>
+                <Pin name="Steps" datatype="int" default="11"/>
+                <Pin name="Current Step" datatype="int"/>
+                <Pin name="Line Style" datatype="enum" default="2" isMinimised="true" metadata="Flat,Square,Round,Triangle"/>
+                <Pin name="Hex In" datatype="string" default="ffff6b00" private="true"/>
+                <Pin name="Circle Size" datatype="float" default="0.93"/>
+                <Pin name="Line Thickness" datatype="float" default="4" isMinimised="true"/>
+                <Pin name="ColorAdj" datatype="bool" private="true"/>
+                <Pin name="Hex" datatype="string" private="true" parameterId="2"/>
+                <Pin name="Color Out" datatype="string" direction="out"/>
+                <Pin name="Start Angle" datatype="float" default="35" isMinimised="true"/>
+                <Pin name="Ctrl+click" datatype="bool" direction="out"/>
+            </GUI>
+        </Plugin>
+    </PluginList>
+    <PrefabList>
+        <Prefab id="*P=AudioGate.seprefab" name="AudioGate" file="AudioGate.seprefab"/>
+        <Prefab id="*P=color driver knob.seprefab" name="color driver knob" file="color driver knob.seprefab"/>
+        <Prefab id="*P=ColorKnob.seprefab" name="ColorKnob" file="ColorKnob.seprefab"/>
+        <Prefab id="*P=Concentric Knob S1.seprefab" name="Concentric Knob S1" file="Concentric Knob S1.seprefab"/>
+        <Prefab id="*P=Controls\Bar Meter.syntheditprefab" name="Bar Meter" category="Controls" file="Controls\Bar Meter.syntheditprefab"/>
+        <Prefab id="*P=Controls\Bender.seprefab" name="Bender" category="Controls" file="Controls\Bender.seprefab"/>
+        <Prefab id="*P=Controls\Bender.synthedit" name="Bender" category="Controls" file="Controls\Bender.synthedit"/>
+        <Prefab id="*P=Controls\Button Small2.syntheditprefab" name="Button Small2" category="Controls" file="Controls\Button Small2.syntheditprefab"/>
+        <Prefab id="*P=Controls\Button2.syntheditprefab" name="Button2" category="Controls" file="Controls\Button2.syntheditprefab"/>
+        <Prefab id="*P=Controls\Detuner.syntheditprefab" name="Detuner" category="Controls" file="Controls\Detuner.syntheditprefab"/>
+        <Prefab id="*P=Controls\HSlider2.syntheditprefab" name="HSlider2" category="Controls" file="Controls\HSlider2.syntheditprefab"/>
+        <Prefab id="*P=Controls\Joystick.syntheditprefab" name="Joystick" category="Controls" file="Controls\Joystick.syntheditprefab"/>
+        <Prefab id="*P=Controls\Knob.syntheditprefab" name="Knob" category="Controls" file="Controls\Knob.syntheditprefab"/>
+        <Prefab id="*P=Controls\Knob2.syntheditprefab" name="Knob2" category="Controls" file="Controls\Knob2.syntheditprefab"/>
+        <Prefab id="*P=Controls\Knob_Sm.syntheditprefab" name="Knob_Sm" category="Controls" file="Controls\Knob_Sm.syntheditprefab"/>
+        <Prefab id="*P=Controls\LED (blue).syntheditprefab" name="LED (blue)" category="Controls" file="Controls\LED (blue).syntheditprefab"/>
+        <Prefab id="*P=Controls\LED (green).syntheditprefab" name="LED (green)" category="Controls" file="Controls\LED (green).syntheditprefab"/>
+        <Prefab id="*P=Controls\LED (red).syntheditprefab" name="LED (red)" category="Controls" file="Controls\LED (red).syntheditprefab"/>
+        <Prefab id="*P=Controls\LED Gui.seprefab" name="LED Gui" category="Controls" file="Controls\LED Gui.seprefab"/>
+        <Prefab id="*P=Controls\LED Gui.synthedit" name="LED Gui" category="Controls" file="Controls\LED Gui.synthedit"/>
+        <Prefab id="*P=Controls\LED.seprefab" name="LED" category="Controls" file="Controls\LED.seprefab"/>
+        <Prefab id="*P=Controls\LED2.syntheditprefab" name="LED2" category="Controls" file="Controls\LED2.syntheditprefab"/>
+        <Prefab id="*P=Controls\Mod Wheel.syntheditprefab" name="Mod Wheel" category="Controls" file="Controls\Mod Wheel.syntheditprefab"/>
+        <Prefab id="*P=Controls\Peak Meter2.syntheditprefab" name="Peak Meter2" category="Controls" file="Controls\Peak Meter2.syntheditprefab"/>
+        <Prefab id="*P=Controls\Pitch Bender.syntheditprefab.synthedit" name="Pitch Bender.syntheditprefab" category="Controls" file="Controls\Pitch Bender.syntheditprefab.synthedit"/>
+        <Prefab id="*P=Controls\Show Volts.seprefab" name="Show Volts" category="Controls" file="Controls\Show Volts.seprefab"/>
+        <Prefab id="*P=Controls\Slider2.syntheditprefab" name="Slider2" category="Controls" file="Controls\Slider2.syntheditprefab"/>
+        <Prefab id="*P=Controls\Switch.syntheditprefab" name="Switch" category="Controls" file="Controls\Switch.syntheditprefab"/>
+        <Prefab id="*P=Controls\VU_meter.syntheditprefab" name="VU_meter" category="Controls" file="Controls\VU_meter.syntheditprefab"/>
+        <Prefab id="*P=CounterSE.seprefab" name="CounterSE" file="CounterSE.seprefab"/>
+        <Prefab id="*P=dbl_click_reset.seprefab" name="dbl_click_reset" file="dbl_click_reset.seprefab"/>
+        <Prefab id="*P=dbl_click_reset.synthedit" name="dbl_click_reset" file="dbl_click_reset.synthedit"/>
+        <Prefab id="*P=Effects\Echo.syntheditprefab.synthedit" name="Echo.syntheditprefab" category="Effects" file="Effects\Echo.syntheditprefab.synthedit"/>
+        <Prefab id="*P=Effects\Flanger.syntheditprefab.synthedit" name="Flanger.syntheditprefab" category="Effects" file="Effects\Flanger.syntheditprefab.synthedit"/>
+        <Prefab id="*P=Examples\Delayed LFO.syntheditprefab" name="Delayed LFO" category="Examples" file="Examples\Delayed LFO.syntheditprefab"/>
+        <Prefab id="*P=Examples\GammaTest.syntheditprefab" name="GammaTest" category="Examples" file="Examples\GammaTest.syntheditprefab"/>
+        <Prefab id="*P=Examples\Open Web Page.syntheditprefab" name="Open Web Page" category="Examples" file="Examples\Open Web Page.syntheditprefab"/>
+        <Prefab id="*P=Examples\Paged Panels2.syntheditprefab" name="Paged Panels2" category="Examples" file="Examples\Paged Panels2.syntheditprefab"/>
+        <Prefab id="*P=Examples\Radio Button.syntheditprefab" name="Radio Button" category="Examples" file="Examples\Radio Button.syntheditprefab"/>
+        <Prefab id="*P=Examples\Sample Oscillator2.syntheditprefab" name="Sample Oscillator2" category="Examples" file="Examples\Sample Oscillator2.syntheditprefab"/>
+        <Prefab id="*P=Examples\Step Sequencing.syntheditprefab" name="Step Sequencing" category="Examples" file="Examples\Step Sequencing.syntheditprefab"/>
+        <Prefab id="*P=Examples\Tempo_sync_LFO.syntheditprefab" name="Tempo_sync_LFO" category="Examples" file="Examples\Tempo_sync_LFO.syntheditprefab"/>
+        <Prefab id="*P=exPitchDetect.seprefab" name="exPitchDetect" file="exPitchDetect.seprefab"/>
+        <Prefab id="*P=Float Subtract.seprefab" name="Float Subtract" file="Float Subtract.seprefab"/>
+        <Prefab id="*P=hex numbers list.seprefab" name="hex numbers list" file="hex numbers list.seprefab"/>
+        <Prefab id="*P=JustDiatonic5Limit.seprefab" name="JustDiatonic5Limit" file="JustDiatonic5Limit.seprefab"/>
+        <Prefab id="*P=Latch.seprefab" name="Latch" file="Latch.seprefab"/>
+        <Prefab id="*P=looped volts.seprefab" name="looped volts" file="looped volts.seprefab"/>
+        <Prefab id="*P=majors asc sw.seprefab" name="majors asc sw" file="majors asc sw.seprefab"/>
+        <Prefab id="*P=majors asc.seprefab" name="majors asc" file="majors asc.seprefab"/>
+        <Prefab id="*P=majors desc sw.seprefab" name="majors desc sw" file="majors desc sw.seprefab"/>
+        <Prefab id="*P=majors desc.seprefab" name="majors desc" file="majors desc.seprefab"/>
+        <Prefab id="*P=MIDI Delta.seprefab" name="MIDI Delta" file="MIDI Delta.seprefab"/>
+        <Prefab id="*P=MIDI to scale degree.seprefab" name="MIDI to scale degree" file="MIDI to scale degree.seprefab"/>
+        <Prefab id="*P=MIDI2CV mono.seprefab" name="MIDI2CV mono" file="MIDI2CV mono.seprefab"/>
+        <Prefab id="*P=MIDI2CV mono.synthedit" name="MIDI2CV mono" file="MIDI2CV mono.synthedit"/>
+        <Prefab id="*P=MIDI_Learn.seprefab" name="MIDI_Learn" file="MIDI_Learn.seprefab"/>
+        <Prefab id="*P=minors sw.seprefab" name="minors sw" file="minors sw.seprefab"/>
+        <Prefab id="*P=minors.seprefab" name="minors" file="minors.seprefab"/>
+        <Prefab id="*P=MouseUp Trigger.seprefab" name="MouseUp Trigger" file="MouseUp Trigger.seprefab"/>
+        <Prefab id="*P=Note# To Pitch.seprefab" name="Note# To Pitch" file="Note# To Pitch.seprefab"/>
+        <Prefab id="*P=onSetIntVal.seprefab" name="onSetIntVal" file="onSetIntVal.seprefab"/>
+        <Prefab id="*P=Osc Sync Types.seprefab" name="Osc Sync Types" file="Osc Sync Types.seprefab"/>
+        <Prefab id="*P=Oversampling Control.seprefab" name="Oversampling Control" file="Oversampling Control.seprefab"/>
+        <Prefab id="*P=PitchToColor.seprefab" name="PitchToColor" file="PitchToColor.seprefab"/>
+        <Prefab id="*P=ProgramChangeList.seprefab" name="ProgramChangeList" file="ProgramChangeList.seprefab"/>
+        <Prefab id="*P=PulseGeneratorGui.seprefab" name="PulseGeneratorGui" file="PulseGeneratorGui.seprefab"/>
+        <Prefab id="*P=Scale Degree.seprefab" name="Scale Degree" file="Scale Degree.seprefab"/>
+        <Prefab id="*P=Scales.seprefab" name="Scales" file="Scales.seprefab"/>
+        <Prefab id="*P=ScalesFixedValues.seprefab" name="ScalesFixedValues" file="ScalesFixedValues.seprefab"/>
+        <Prefab id="*P=ShiftKeyBug_1.6.synthedit" name="ShiftKeyBug_1.6" file="ShiftKeyBug_1.6.synthedit"/>
+        <Prefab id="*P=Show\Show Floats Gui.seprefab" name="Show Floats Gui" category="Show" file="Show\Show Floats Gui.seprefab"/>
+        <Prefab id="*P=Show\Show Ints.seprefab" name="Show Ints" category="Show" file="Show\Show Ints.seprefab"/>
+        <Prefab id="*P=Show\Show Text Gui Colored.seprefab" name="Show Text Gui Colored" category="Show" file="Show\Show Text Gui Colored.seprefab"/>
+        <Prefab id="*P=Show\Show Text Gui Colored.synthedit" name="Show Text Gui Colored" category="Show" file="Show\Show Text Gui Colored.synthedit"/>
+        <Prefab id="*P=Show\Show Text Gui.seprefab" name="Show Text Gui" category="Show" file="Show\Show Text Gui.seprefab"/>
+        <Prefab id="*P=Show\Show Text Gui.syntheditprefab" name="Show Text Gui" category="Show" file="Show\Show Text Gui.syntheditprefab"/>
+        <Prefab id="*P=Show\Show Text.seprefab" name="Show Text" category="Show" file="Show\Show Text.seprefab"/>
+        <Prefab id="*P=Show\Show Text.synthedit" name="Show Text" category="Show" file="Show\Show Text.synthedit"/>
+        <Prefab id="*P=Show\Show Volts.seprefab" name="Show Volts" category="Show" file="Show\Show Volts.seprefab"/>
+        <Prefab id="*P=Show\Show Volts.synthedit" name="Show Volts" category="Show" file="Show\Show Volts.synthedit"/>
+        <Prefab id="*P=Show\ShowInts.synthedit" name="ShowInts" category="Show" file="Show\ShowInts.synthedit"/>
+        <Prefab id="*P=Smoother - Gaussion (Pitch assigned).seprefab" name="Smoother - Gaussion (Pitch assigned)" file="Smoother - Gaussion (Pitch assigned).seprefab"/>
+        <Prefab id="*P=SpinControl SE.seprefab" name="SpinControl SE" file="SpinControl SE.seprefab"/>
+        <Prefab id="*P=SpinControlSE.seprefab" name="SpinControlSE" file="SpinControlSE.seprefab"/>
+        <Prefab id="*P=Sub-Controls\Joystick Reset.seprefab" name="Joystick Reset" category="Sub-Controls" file="Sub-Controls\Joystick Reset.seprefab"/>
+        <Prefab id="*P=Synths\Fm_synth.syntheditprefab" name="Fm_synth" category="Synths" file="Synths\Fm_synth.syntheditprefab"/>
+        <Prefab id="*P=Synths\Minimal.syntheditprefab" name="Minimal" category="Synths" file="Synths\Minimal.syntheditprefab"/>
+        <Prefab id="*P=Synths\PD303.syntheditprefab" name="PD303" category="Synths" file="Synths\PD303.syntheditprefab"/>
+        <Prefab id="*P=Synths\Poly Synth.syntheditprefab" name="Poly Synth" category="Synths" file="Synths\Poly Synth.syntheditprefab"/>
+        <Prefab id="*P=Synths\Sample-based Instrument.syntheditprefab" name="Sample-based Instrument" category="Synths" file="Synths\Sample-based Instrument.syntheditprefab"/>
+        <Prefab id="*P=Tapered Knobs Example.seprefab" name="Tapered Knobs Example" file="Tapered Knobs Example.seprefab"/>
+        <Prefab id="*P=Time Format SE.seprefab" name="Time Format SE" file="Time Format SE.seprefab"/>
+        <Prefab id="*P=ValueBox.seprefab" name="ValueBox" file="ValueBox.seprefab"/>
+        <Prefab id="*P=Waveform\Audio Gate.seprefab" name="Audio Gate" category="Waveform" file="Waveform\Audio Gate.seprefab"/>
+    </PrefabList>
+</Document>

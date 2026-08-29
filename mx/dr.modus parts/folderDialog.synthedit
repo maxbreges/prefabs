@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Document file_format="150000" vst_latencyCompensation="1" vst_processor_id="{7458D6F1-E66F-4B3D-8C76-F3EA6E8CA279}" vst_controller_id="{8EB0F39E-F7C0-4F75-91F8-67BDB2E3EDB2}" vst_4char_id="jk9n" vst_dll_name="FileBrowserX" vst_product="FileBrowserX" vst_flags="3" vst_preset_count="16">
+<Document file_format="150000" vst_latencyCompensation="1" vst_processor_id="{0544E57E-79AB-46F0-8E82-3138B4012F29}" vst_controller_id="{8167295F-761B-40B5-A43D-4E3B68EA3CF6}" vst_4char_id="jk9m" vst_dll_name="FolderBrowser" vst_product="FolderBrowser" vst_flags="3" vst_preset_count="16">
     <master_container type="Container" handle="437713695" name="Main" ViewOpenFlags="256" skin="default2">
         <plugs>
             <plug idx="7"/>
@@ -27,26 +27,17 @@
                         <s>768</s>
                     </patch-list>
                 </param>
-                <param type="8" handle="1090481209" shortName="Polyphony" ignorePC="true" private="true" module="748932648" hostControl="21" RangeMinimum="1" RangeMaximum="128">
+                <param type="1" handle="850942285" ignorePC="true" stateful="false" module="1152832397" moduleParamId="0"/>
+                <param type="1" handle="1358765629" shortName="Concat text" vstParameterNumber="0" module="190392602" moduleParamId="0">
                     <patch-list>
-                        <s>6</s>
-                    </patch-list>
-                </param>
-                <param type="1" handle="1178638122" shortName="Wave Player File Name" private="true" module="430771364" moduleParamId="0" MetaData="wav">
-                    <patch-list>
-                        <s>D:\samples\miscellaneous\Conga Slap Low.wav</s>
-                        <s repeat="127">Wavefile</s>
+                        <s>13'' Brass Piccolo</s>
+                        <s repeat="127"></s>
                     </patch-list>
                 </param>
                 <param type="1" handle="1486393972" shortName="val" ignorePC="true" private="true" stateful="false" module="2068103234" moduleParamId="0"/>
                 <param type="6" handle="1502813583" shortName="Portamento" ignorePC="true" automation="33554437" private="true" module="748932648" hostControl="40">
                     <patch-list>
                         <s>0</s>
-                    </patch-list>
-                </param>
-                <param type="8" handle="1646768022" shortName="ReserveVoices" ignorePC="true" private="true" module="748932648" hostControl="22" RangeMaximum="128">
-                    <patch-list>
-                        <s>3</s>
                     </patch-list>
                 </param>
                 <param type="10" handle="1933652159" private="true" hostControl="49">
@@ -73,13 +64,13 @@
                     <plug name="Output"/>
                     <plug/>
                 </plugs>
-                <structRect l="803" r="863" t="48" b="84"/>
+                <structRect l="780" r="840" t="72" b="108"/>
             </module>
             <module type="MIDI In" handle="1649668395">
                 <structRect l="23" r="107" t="48" b="90"/>
                 <panelRect l="224" r="224" t="176" b="176"/>
             </module>
-            <module type="Container" handle="748932648" name="FileBrowserX" skin="default2">
+            <module type="Container" handle="748932648" name="Folder Browser" ViewOpenFlags="256" skin="default2">
                 <plugs>
                     <plug default="1" idx="1"/>
                     <plug default="1"/>
@@ -88,7 +79,7 @@
                     <plug name="Output" direction="1"/>
                     <plug/>
                 </plugs>
-                <structRect l="132" r="816" t="48" b="492"/>
+                <structRect l="144" r="744" t="48" b="193"/>
                 <modules>
                     <module type="IntSplitterX" handle="622191972">
                         <plugs>
@@ -109,7 +100,7 @@
                             <plug name="Vel" direction="1"/>
                             <plug/>
                         </plugs>
-                        <structRect l="252" r="516" t="264" b="414"/>
+                        <structRect l="228" r="504" t="240" b="390"/>
                         <modules>
                             <module type="VelocityInit" handle="551937336">
                                 <structRect l="492" r="576" t="312" b="348"/>
@@ -211,7 +202,7 @@
                                     <plug default="4" idx="9"/>
                                 </plugs>
                                 <structRect l="489" r="609" t="68" b="176"/>
-                                <panelRect l="334" r="390" t="76" b="96"/>
+                                <panelRect l="336" r="392" t="80" b="100"/>
                             </module>
                             <module type="IO Mod" handle="2114136029">
                                 <plugs>
@@ -235,13 +226,13 @@
                             <line type="Line" handle="1809321855" fMod="300025298" tMod="1916816525" fPlg="8" tPlg="2"/>
                             <line type="Line" handle="1583714013" fMod="2114136029" tMod="300025298" tPlg="4"/>
                         </lines>
-                        <PanelWndPosition l="120" r="368" t="39" b="89"/>
+                        <PanelWndPosition l="70" r="320" t="133" b="183"/>
                         <PanelLocation l="30" r="775" t="30" b="417"/>
                         <StructLocation l="529" r="1409" t="306" b="929"/>
                         <PanelScroll x="0" y="0"/>
                         <StructScroll x="1" y="0"/>
-                        <PanelWndOffset cx="-22" cy="-37"/>
-                        <panel_rect l="16" r="312" t="16" b="216"/>
+                        <PanelWndOffset cx="-72" cy="57"/>
+                        <panel_rect l="16" r="448" t="16" b="208"/>
                     </module>
                     <module type="Multiply" handle="1840637076">
                         <plugs>
@@ -268,112 +259,122 @@
                         <structRect l="36" r="120" t="240" b="324"/>
                         <panelRect l="0" r="0" t="0" b="0"/>
                     </module>
-                    <module type="Container" handle="359792426" name="File Browser" ViewOpenFlags="256" skin="default2">
+                    <module type="Container" handle="359792426" name="Folder Browser" ViewOpenFlags="256" skin="default2">
                         <plugs>
                             <plug default="1" idx="1"/>
                             <plug default="1"/>
-                            <plug name="Value Out" direction="1" datatype="1" idx="7"/>
+                            <plug name="text" direction="1" datatype="1" idx="7"/>
                             <plug/>
                         </plugs>
-                        <structRect l="108" r="756" t="36" b="352"/>
+                        <structRect l="108" r="708" t="36" b="150"/>
                         <modules>
+                            <module type="Container" handle="915323066" name="Show Text" skin="default2">
+                                <plugs>
+                                    <plug default="1" idx="1"/>
+                                    <plug default="1"/>
+                                    <plug name="Value In" datatype="1" idx="7"/>
+                                    <plug/>
+                                </plugs>
+                                <structRect l="24" r="624" t="408" b="472"/>
+                                <modules>
+                                    <module type="SE PatchMemory Text Out" handle="1152832397">
+                                        <structRect l="108" r="216" t="96" b="156"/>
+                                        <panelRect l="296" r="296" t="264" b="264"/>
+                                    </module>
+                                    <module type="SE Text Entry4" handle="1887519246">
+                                        <structRect l="240" r="348" t="24" b="156"/>
+                                        <panelRect l="24" r="600" t="32" b="56"/>
+                                    </module>
+                                    <module type="IO Mod" handle="1745350593">
+                                        <plugs>
+                                            <plug/>
+                                        </plugs>
+                                        <structRect l="372" r="432" t="24" b="36"/>
+                                    </module>
+                                    <module type="IO Mod" handle="958264706">
+                                        <plugs>
+                                            <plug name="Value In" direction="1" datatype="1" tiedtomod="915323066" tiedtopin="7"/>
+                                            <plug/>
+                                        </plugs>
+                                        <structRect l="20" r="92" t="20" b="44"/>
+                                    </module>
+                                </modules>
+                                <lines>
+                                    <line type="Line" handle="127789590" lineType="1" fMod="1152832397" tMod="1887519246" fPlg="5"/>
+                                    <line type="Line" handle="1231165508" lineType="1" fMod="958264706" tMod="1152832397" tPlg="8"/>
+                                </lines>
+                                <PanelWndPosition l="32" r="420" t="194" b="566"/>
+                                <PanelLocation l="30" r="640" t="30" b="532"/>
+                                <StructLocation l="0" r="552" t="0" b="400"/>
+                                <PanelScroll x="220" y="0"/>
+                                <StructScroll x="0" y="0"/>
+                                <PanelWndOffset cx="8" cy="162"/>
+                                <panel_rect l="16" r="608" t="16" b="96"/>
+                            </module>
+                            <module type="SE StringConcat" handle="1979819946">
+                                <plugs>
+                                    <plug default=".wav" idx="1"/>
+                                </plugs>
+                                <structRect l="288" r="336" t="336" b="372"/>
+                                <panelRect l="0" r="0" t="0" b="0"/>
+                            </module>
+                            <module type="SE StringConcat" handle="495602903">
+                                <structRect l="204" r="252" t="300" b="336"/>
+                                <panelRect l="0" r="0" t="0" b="0"/>
+                            </module>
+                            <module type="SE PatchMemory Text2" handle="190392602">
+                                <structRect l="24" r="132" t="228" b="300"/>
+                                <panelRect l="520" r="520" t="232" b="232"/>
+                            </module>
                             <module type="Image3" handle="1314158495">
                                 <plugs>
                                     <plug default="open_folder.png" idx="1"/>
                                 </plugs>
-                                <structRect l="288" r="408" t="516" b="632"/>
-                                <panelRect l="125" r="153" t="144" b="172"/>
+                                <structRect l="336" r="456" t="24" b="140"/>
+                                <panelRect l="29" r="57" t="146" b="174"/>
                             </module>
                             <module type="SE UserSettingText" handle="2068103234">
-                                <structRect l="60" r="132" t="588" b="648"/>
+                                <structRect l="36" r="108" t="108" b="168"/>
                                 <panelRect l="496" r="496" t="232" b="232"/>
                             </module>
                             <module type="mxFolderDialog" handle="1596853155">
-                                <structRect l="156" r="252" t="576" b="600"/>
+                                <structRect l="168" r="264" t="96" b="120"/>
                                 <panelRect l="488" r="488" t="240" b="240"/>
                             </module>
-                            <module type="DisplayList" handle="290295431">
-                                <structRect l="504" r="732" t="624" b="756"/>
-                                <panelRect l="576" r="576" t="320" b="320"/>
-                            </module>
                             <module type="My FolderListDir" handle="1376453440">
-                                <structRect l="168" r="252" t="648" b="684"/>
+                                <structRect l="168" r="252" t="156" b="192"/>
                                 <panelRect l="480" r="480" t="232" b="232"/>
                             </module>
                             <module type="DisplayList" handle="1171041278">
-                                <structRect l="588" r="816" t="432" b="564"/>
-                                <panelRect l="480" r="480" t="240" b="240"/>
-                            </module>
-                            <module type="My OpenFile" handle="1394444842">
-                                <structRect l="192" r="288" t="336" b="372"/>
-                                <panelRect l="376" r="376" t="216" b="216"/>
-                            </module>
-                            <module type="FolderList" handle="1973905107" name="FolderListDir">
-                                <structRect l="192" r="264" t="408" b="456"/>
-                                <panelRect l="376" r="376" t="216" b="216"/>
+                                <structRect l="288" r="516" t="168" b="300"/>
+                                <panelRect l="72" r="224" t="144" b="176"/>
                             </module>
                             <module type="IO Mod" handle="131903792">
                                 <plugs>
-                                    <plug name="Value Out" datatype="1" tiedtomod="359792426" tiedtopin="7"/>
+                                    <plug name="text" datatype="1" tiedtomod="359792426" tiedtopin="7"/>
                                     <plug/>
                                 </plugs>
-                                <structRect l="168" r="240" t="480" b="504"/>
-                            </module>
-                            <module type="TextEntry15" handle="301067443">
-                                <plugs>
-                                    <plug default="14" idx="2"/>
-                                </plugs>
-                                <structRect l="420" r="828" t="144" b="324"/>
-                                <panelRect l="16" r="640" t="83" b="147"/>
-                            </module>
-                            <module type="Image3" handle="1148289521">
-                                <plugs>
-                                    <plug default="C:\Users\Public\Documents\SynthEdit Projects\skins\Modus_Vera\arrow_left_wave_display.png" idx="1"/>
-                                </plugs>
-                                <structRect l="492" r="612" t="252" b="357"/>
-                                <panelRect l="113" r="126" t="45" b="62"/>
-                            </module>
-                            <module type="Image3" handle="1570290129">
-                                <plugs>
-                                    <plug default="C:\Users\Public\Documents\SynthEdit Projects\skins\Modus_Vera\arrow_right_wave_display.png" idx="1"/>
-                                </plugs>
-                                <structRect l="624" r="744" t="252" b="357"/>
-                                <panelRect l="281" r="294" t="45" b="62"/>
-                            </module>
-                            <module type="SE PatchMemory Text2" handle="430771364">
-                                <structRect l="36" r="144" t="372" b="444"/>
-                                <panelRect l="520" r="521" t="283" b="284"/>
-                            </module>
-                            <module type="SynthEdit Increment3" handle="692926808">
-                                <structRect l="528" r="612" t="396" b="456"/>
-                                <panelRect l="520" r="521" t="299" b="300"/>
-                            </module>
-                            <module type="Image3" handle="1652212314">
-                                <plugs>
-                                    <plug default="open_folder.png" idx="1"/>
-                                </plugs>
-                                <structRect l="324" r="444" t="264" b="380"/>
-                                <panelRect l="61" r="89" t="40" b="68"/>
+                                <structRect l="408" r="468" t="360" b="384"/>
                             </module>
                         </modules>
                         <lines>
-                            <line type="Line" handle="1986413924" lineType="1" fMod="430771364" tMod="131903792" fPlg="11"/>
-                            <line type="Line" handle="636584784" lineType="1" fMod="692926808" tMod="1570290129" fPlg="2" tPlg="6"/>
-                            <line type="Line" handle="383055474" lineType="1" fMod="692926808" tMod="1148289521" fPlg="3" tPlg="6"/>
-                            <line type="Line" handle="519536614" lineType="1" fMod="430771364" tMod="1394444842" fPlg="6" tPlg="1"/>
-                            <line type="Line" handle="2024822085" lineType="1" fMod="430771364" tMod="1973905107" fPlg="6"/>
-                            <line type="Line" handle="1988189121" lineType="1" fMod="1394444842" tMod="1652212314" tPlg="6"/>
                             <line type="Line" handle="147292495" lineType="1" fMod="2068103234" tMod="1596853155" fPlg="4"/>
                             <line type="Line" handle="1785154575" lineType="1" fMod="2068103234" tMod="1376453440" fPlg="4"/>
                             <line type="Line" handle="1225263412" lineType="1" fMod="1596853155" tMod="1314158495" fPlg="1" tPlg="6"/>
-                            <line type="Line" handle="1649840372" lineType="1" fMod="1376453440" tMod="301067443" fPlg="2"/>
-                            <line type="Line" handle="128973110" lineType="1" fMod="1376453440" tMod="692926808" fPlg="1"/>
+                            <line type="Line" handle="2008150664" lineType="1" fMod="1376453440" tMod="1171041278" fPlg="1" tPlg="9"/>
+                            <line type="Line" handle="448914273" lineType="1" fMod="1376453440" tMod="1171041278" fPlg="2" tPlg="10"/>
+                            <line type="Line" handle="279903133" lineType="1" fMod="2068103234" tMod="495602903" fPlg="6"/>
+                            <line type="Line" handle="571354572" lineType="1" fMod="190392602" tMod="495602903" fPlg="11" tPlg="1"/>
+                            <line type="Line" handle="1871550238" lineType="1" fMod="495602903" tMod="1979819946" fPlg="2"/>
+                            <line type="Line" handle="1259476502" lineType="1" fMod="1979819946" tMod="131903792" fPlg="2"/>
+                            <line type="Line" handle="1747553447" lineType="1" fMod="1979819946" tMod="915323066" fPlg="2" tPlg="7"/>
+                            <line type="Line" handle="509376884" lineType="1" fMod="190392602" tMod="1171041278" fPlg="6" tPlg="15"/>
                         </lines>
-                        <PanelWndPosition l="17" r="648" t="36" b="324"/>
+                        <PanelWndPosition l="37" r="616" t="140" b="214"/>
                         <PanelLocation l="315" r="1326" t="179" b="599"/>
                         <StructLocation l="492" r="1440" t="212" b="932"/>
                         <PanelScroll x="0" y="0"/>
-                        <StructScroll x="0" y="120"/>
+                        <StructScroll x="0" y="0"/>
                         <PanelWndOffset cx="8" cy="-4"/>
                         <panel_rect l="8" r="648" t="16" b="336"/>
                     </module>
@@ -405,6 +406,7 @@
                     <line type="Line" handle="1965104498" lineType="1" fMod="1021130902" tMod="650597193" fPlg="2"/>
                     <line type="Line" handle="1421912431" lineType="1" fMod="988138010" tMod="1924682300"/>
                     <line type="Line" handle="998217974" lineType="1" fMod="988138010" tMod="1176308379" tPlg="7"/>
+                    <line type="Line" handle="685645671" lineType="1" fMod="359792426" tMod="103515069" fPlg="7" tPlg="4"/>
                 </lines>
                 <PanelWndPosition l="112" r="112" t="152" b="152"/>
                 <PanelLocation l="30" r="764" t="30" b="567"/>
@@ -483,7 +485,7 @@
                 <Pin name="Hint" datatype="string" isMinimised="true"/>
                 <Pin name="BgColor" datatype="string" default="FF000000" private="true"/>
                 <Pin name="Color" datatype="string" default="FF666666"/>
-                <Pin name="Text" datatype="string" direction="out"/>
+                <Pin name="Text" datatype="string" direction="out" private="true"/>
                 <Pin name="Text Color" datatype="string" default="ffffffff"/>
                 <Pin name="Text Font" datatype="string" default="Times New Roman" isMinimised="true"/>
                 <Pin name="Font Size" datatype="float" default="16" isMinimised="true"/>
@@ -496,14 +498,6 @@
                 <Pin name="Shift+Drag" datatype="bool" private="true"/>
                 <Pin name="Corner Radius" datatype="float" default="5" isMinimised="true"/>
                 <Pin name="Selection" datatype="string"/>
-            </GUI>
-        </Plugin>
-        <Plugin id="FolderList" name="Folder List" flags="384" category="mx/Sub-Controls">
-            <GUI>
-                <Pin name="File Path" datatype="string"/>
-                <Pin name="Choice" datatype="int" direction="out"/>
-                <Pin name="Item List" datatype="string" direction="out"/>
-                <Pin name="Extension" datatype="string" direction="out"/>
             </GUI>
         </Plugin>
         <Plugin id="IO Mod" class="1" name="IO Mod" flags="4356" category="">
@@ -578,13 +572,6 @@
                 <Pin name="Extension" datatype="string" default=".wav" isMinimised="true"/>
             </GUI>
         </Plugin>
-        <Plugin id="My OpenFile" name="Open File" flags="384" category="mx/Sub-Controls">
-            <GUI>
-                <Pin name="Trigger" datatype="bool" direction="out"/>
-                <Pin name="File Path Out" datatype="string"/>
-                <Pin name="Status" datatype="bool"/>
-            </GUI>
-        </Plugin>
         <Plugin id="SE FloatToBool GUI" name="Float To Bool" flags="384" category="Sub-Controls/Conversion" helpUrl="Sub-control-converters.htm">
             <GUI>
                 <Pin name="Float Val" datatype="float"/>
@@ -624,6 +611,25 @@
                 <Pin name="Voice/Bender" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Bender"/>
             </Audio>
         </Plugin>
+        <Plugin id="SE PatchMemory Text Out" name="PatchMemory Text Out" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
+            <Parameters>
+                <Parameter id="0" datatype="string" name="" ignorePatchChange="true" persistant="false"/>
+            </Parameters>
+            <Audio>
+                <Pin name="Value In" datatype="string"/>
+                <Pin name="PM Value Out" datatype="string" direction="out" private="true" autoConfigureParameter="true" parameterId="0"/>
+            </Audio>
+            <GUI>
+                <Pin name="PM Value In" datatype="string" private="true" parameterId="0"/>
+                <Pin name="PM Name In" datatype="string" private="true" parameterId="0" parameterField="ShortName"/>
+                <Pin name="PM Menu Items" datatype="string" private="true" parameterId="0" parameterField="MenuItems"/>
+                <Pin name="PM Menu Selection" datatype="int" private="true" parameterId="0" parameterField="MenuSelection"/>
+                <Pin id="5" name="Name" datatype="string" direction="out"/>
+                <Pin name="Value" datatype="string" direction="out"/>
+                <Pin id="9" name="Menu Items" datatype="string" direction="out"/>
+                <Pin name="Menu Selection" datatype="int" direction="out"/>
+            </GUI>
+        </Plugin>
         <Plugin id="SE PatchMemory Text2" name="PatchMemory Text2" flags="384" category="Sub-Controls" helpUrl="Patchmemory.htm">
             <Parameters>
                 <Parameter id="0" datatype="string" name=""/>
@@ -643,6 +649,27 @@
                 <Pin name="File Extension" datatype="string" direction="out"/>
                 <Pin name="Menu Items" datatype="string" direction="out"/>
                 <Pin name="Menu Selection" datatype="int" direction="out"/>
+            </GUI>
+        </Plugin>
+        <Plugin id="SE StringConcat" name="Concat" flags="256" category="Conversion/String">
+            <Audio>
+                <Pin name="text" datatype="string"/>
+                <Pin name="text" datatype="string"/>
+                <Pin name="text" datatype="string" direction="out"/>
+            </Audio>
+        </Plugin>
+        <Plugin id="SE Text Entry4" name="Text Entry4" flags="384" category="Sub-Controls">
+            <GUI graphicsApi="GmpiGui">
+                <Pin name="Text" datatype="string"/>
+                <Pin name="Style" datatype="string" default="normal"/>
+                <Pin name="Multiline" datatype="bool"/>
+                <Pin name="Writeable" datatype="bool" default="1"/>
+                <Pin name="Greyed" datatype="bool"/>
+                <Pin name="Hint" datatype="string"/>
+                <Pin name="Menu Items" datatype="string"/>
+                <Pin name="Menu Selection" datatype="int"/>
+                <Pin name="Mouse Down" datatype="bool" direction="out" private="true"/>
+                <Pin name="Mouse Down" datatype="bool"/>
             </GUI>
         </Plugin>
         <Plugin id="SE UserSettingText" name="User Setting - Text" flags="384" category="Sub-Controls" helpUrl="synthedit.chm::/mdl_sdk3/UserSettingText.htm">
@@ -677,38 +704,6 @@
                 <Pin name="note" datatype="int" direction="out"/>
                 <Pin name="octave" datatype="int" direction="out" private="true"/>
                 <Pin name="Range" datatype="string"/>
-            </GUI>
-        </Plugin>
-        <Plugin id="SynthEdit Increment3" name="Increment3" flags="384" category="Sub-Controls" helpUrl="Increment3.htm">
-            <GUI>
-                <Pin name="Choice" datatype="int"/>
-                <Pin name="Item List" datatype="string" default="range 0,10"/>
-                <Pin name="Increment" datatype="bool" direction="out"/>
-                <Pin name="Decrement" datatype="bool" direction="out"/>
-                <Pin name="Wrap" datatype="bool" default="1"/>
-            </GUI>
-        </Plugin>
-        <Plugin id="TextEntry15" name="Text Entry15" flags="384" category="mx/Sub-Controls">
-            <GUI graphicsApi="GmpiGui">
-                <Pin name="Text" datatype="string" default="Text"/>
-                <Pin name="Font Face" datatype="string" default="Times New Roman" isMinimised="true"/>
-                <Pin name="Font Size" datatype="float" default="20" isMinimised="true"/>
-                <Pin name="Text Color" datatype="string" default="ffffffff"/>
-                <Pin name="Top Color" datatype="string" default="ffbbbbbb"/>
-                <Pin name="Bg Color" datatype="string" default="ff000000"/>
-                <Pin name="Corner Radius" datatype="float" default="5" isMinimised="true"/>
-                <Pin name="Hint" datatype="string" isMinimised="true"/>
-                <Pin name="Disable Hint" datatype="bool"/>
-                <Pin name="Mouse Down" datatype="bool"/>
-                <Pin name="Mouse Over" datatype="bool" direction="out"/>
-                <Pin name="Entry Open" datatype="bool" direction="out"/>
-                <Pin name="Top Left" datatype="bool" default="1" isMinimised="true"/>
-                <Pin name="Top Right" datatype="bool" default="1" isMinimised="true"/>
-                <Pin name="Bottom Right" datatype="bool" default="1" isMinimised="true"/>
-                <Pin name="Bottom Left" datatype="bool" default="1" isMinimised="true"/>
-                <Pin name="Menu Items" datatype="string"/>
-                <Pin name="Menu Selection" datatype="int"/>
-                <Pin name="Writeable" datatype="bool" default="1" isMinimised="true"/>
             </GUI>
         </Plugin>
         <Plugin id="VCA" class="1" name="VCA" flags="4352" category="Modifiers">
